@@ -2,7 +2,7 @@
 name: ProviderUpgrade
 on:
   schedule:
-    - cron: 0 6 * * *
+    - cron: 30 20 * * *
   workflow_dispatch: {}
 jobs:
   upgrade:
@@ -17,7 +17,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - name: Anti-tamper check
         run: git diff --exit-code
-      - run: yarn provider:upgrade
+      - run: yarn fetch
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
