@@ -35,7 +35,7 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.0.31",
+    "@cdktf/provider-project": "0.0.32",
     "dot-prop": "^5.2.0",
     "projen": "^0.3.37",
     "standard-version": "^8.0.1",
