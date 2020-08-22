@@ -69,7 +69,7 @@ export class UserGpgKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       armored_public_key: this._armoredPublicKey,
     };

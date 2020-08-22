@@ -59,7 +59,7 @@ export class UserInvitationAccepter extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       invitation_id: this._invitationId,
     };

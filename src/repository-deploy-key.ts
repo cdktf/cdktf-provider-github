@@ -97,7 +97,7 @@ export class RepositoryDeployKey extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       key: this._key,
       read_only: this._readOnly,

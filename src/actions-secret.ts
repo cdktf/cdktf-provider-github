@@ -91,7 +91,7 @@ export class ActionsSecret extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       plaintext_value: this._plaintextValue,
       repository: this._repository,

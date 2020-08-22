@@ -64,7 +64,7 @@ export class OrganizationBlock extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       username: this._username,
     };

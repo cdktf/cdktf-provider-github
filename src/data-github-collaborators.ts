@@ -169,7 +169,7 @@ export class DataGithubCollaborators extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       affiliation: this._affiliation,
       owner: this._owner,

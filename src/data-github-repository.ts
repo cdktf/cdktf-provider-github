@@ -165,7 +165,7 @@ export class DataGithubRepository extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       full_name: this._fullName,
       name: this._name,

@@ -86,7 +86,7 @@ export class TeamMembership extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       role: this._role,
       team_id: this._teamId,

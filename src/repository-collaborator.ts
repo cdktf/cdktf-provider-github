@@ -86,7 +86,7 @@ export class RepositoryCollaborator extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       permission: this._permission,
       repository: this._repository,

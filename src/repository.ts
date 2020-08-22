@@ -314,7 +314,7 @@ export class Repository extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_merge_commit: this._allowMergeCommit,
       allow_rebase_merge: this._allowRebaseMerge,

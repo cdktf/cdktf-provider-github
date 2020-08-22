@@ -151,7 +151,7 @@ export class BranchProtection extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       branch: this._branch,
       enforce_admins: this._enforceAdmins,

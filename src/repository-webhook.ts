@@ -120,7 +120,7 @@ export class RepositoryWebhook extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       active: this._active,
       events: this._events,

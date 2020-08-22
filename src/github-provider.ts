@@ -119,7 +119,7 @@ export class GithubProvider extends TerraformProvider {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       anonymous: this._anonymous,
       base_url: this._baseUrl,

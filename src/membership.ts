@@ -75,7 +75,7 @@ export class Membership extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       role: this._role,
       username: this._username,

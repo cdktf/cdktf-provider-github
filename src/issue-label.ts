@@ -102,7 +102,7 @@ export class IssueLabel extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       color: this._color,
       description: this._description,

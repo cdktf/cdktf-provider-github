@@ -80,7 +80,7 @@ export class DataGithubRepositories extends TerraformDataSource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       query: this._query,
       sort: this._sort,

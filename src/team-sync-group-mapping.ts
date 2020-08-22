@@ -81,7 +81,7 @@ export class TeamSyncGroupMapping extends TerraformResource {
   // SYNTHESIS
   // =========
 
-  public synthesizeAttributes(): { [name: string]: any } {
+  protected synthesizeAttributes(): { [name: string]: any } {
     return {
       team_slug: this._teamSlug,
       group: this._group,
