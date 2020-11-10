@@ -59,76 +59,112 @@ export class RepositoryFile extends TerraformResource {
   // branch - computed: false, optional: true, required: false
   private _branch?: string;
   public get branch() {
-    return this._branch;
+    return this.getStringAttribute('branch');
   }
-  public set branch(value: string | undefined) {
+  public set branch(value: string ) {
     this._branch = value;
+  }
+  public resetBranch() {
+    this._branch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch
   }
 
   // commit_author - computed: true, optional: true, required: false
   private _commitAuthor?: string;
   public get commitAuthor() {
-    return this._commitAuthor ?? this.getStringAttribute('commit_author');
+    return this.getStringAttribute('commit_author');
   }
-  public set commitAuthor(value: string | undefined) {
+  public set commitAuthor(value: string) {
     this._commitAuthor = value;
+  }
+  public resetCommitAuthor() {
+    this._commitAuthor = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commitAuthorInput() {
+    return this._commitAuthor
   }
 
   // commit_email - computed: true, optional: true, required: false
   private _commitEmail?: string;
   public get commitEmail() {
-    return this._commitEmail ?? this.getStringAttribute('commit_email');
+    return this.getStringAttribute('commit_email');
   }
-  public set commitEmail(value: string | undefined) {
+  public set commitEmail(value: string) {
     this._commitEmail = value;
+  }
+  public resetCommitEmail() {
+    this._commitEmail = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commitEmailInput() {
+    return this._commitEmail
   }
 
   // commit_message - computed: true, optional: true, required: false
   private _commitMessage?: string;
   public get commitMessage() {
-    return this._commitMessage ?? this.getStringAttribute('commit_message');
+    return this.getStringAttribute('commit_message');
   }
-  public set commitMessage(value: string | undefined) {
+  public set commitMessage(value: string) {
     this._commitMessage = value;
+  }
+  public resetCommitMessage() {
+    this._commitMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commitMessageInput() {
+    return this._commitMessage
   }
 
   // content - computed: false, optional: false, required: true
   private _content: string;
   public get content() {
-    return this._content;
+    return this.getStringAttribute('content');
   }
   public set content(value: string) {
     this._content = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentInput() {
+    return this._content
   }
 
   // file - computed: false, optional: false, required: true
   private _file: string;
   public get file() {
-    return this._file;
+    return this.getStringAttribute('file');
   }
   public set file(value: string) {
     this._file = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get fileInput() {
+    return this._file
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
+  }
 
-  // sha - computed: true, optional: false, required: true
+  // sha - computed: true, optional: false, required: false
   public get sha() {
     return this.getStringAttribute('sha');
   }

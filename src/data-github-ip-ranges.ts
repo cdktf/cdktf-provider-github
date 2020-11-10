@@ -35,31 +35,27 @@ export class DataGithubIpRanges extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // git - computed: true, optional: false, required: true
+  // git - computed: true, optional: false, required: false
   public get git() {
     return this.getListAttribute('git');
   }
 
-  // hooks - computed: true, optional: false, required: true
+  // hooks - computed: true, optional: false, required: false
   public get hooks() {
     return this.getListAttribute('hooks');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // importer - computed: true, optional: false, required: true
+  // importer - computed: true, optional: false, required: false
   public get importer() {
     return this.getListAttribute('importer');
   }
 
-  // pages - computed: true, optional: false, required: true
+  // pages - computed: true, optional: false, required: false
   public get pages() {
     return this.getListAttribute('pages');
   }

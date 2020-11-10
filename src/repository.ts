@@ -84,86 +84,142 @@ export class Repository extends TerraformResource {
   // allow_merge_commit - computed: false, optional: true, required: false
   private _allowMergeCommit?: boolean;
   public get allowMergeCommit() {
-    return this._allowMergeCommit;
+    return this.getBooleanAttribute('allow_merge_commit');
   }
-  public set allowMergeCommit(value: boolean | undefined) {
+  public set allowMergeCommit(value: boolean ) {
     this._allowMergeCommit = value;
+  }
+  public resetAllowMergeCommit() {
+    this._allowMergeCommit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowMergeCommitInput() {
+    return this._allowMergeCommit
   }
 
   // allow_rebase_merge - computed: false, optional: true, required: false
   private _allowRebaseMerge?: boolean;
   public get allowRebaseMerge() {
-    return this._allowRebaseMerge;
+    return this.getBooleanAttribute('allow_rebase_merge');
   }
-  public set allowRebaseMerge(value: boolean | undefined) {
+  public set allowRebaseMerge(value: boolean ) {
     this._allowRebaseMerge = value;
+  }
+  public resetAllowRebaseMerge() {
+    this._allowRebaseMerge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowRebaseMergeInput() {
+    return this._allowRebaseMerge
   }
 
   // allow_squash_merge - computed: false, optional: true, required: false
   private _allowSquashMerge?: boolean;
   public get allowSquashMerge() {
-    return this._allowSquashMerge;
+    return this.getBooleanAttribute('allow_squash_merge');
   }
-  public set allowSquashMerge(value: boolean | undefined) {
+  public set allowSquashMerge(value: boolean ) {
     this._allowSquashMerge = value;
+  }
+  public resetAllowSquashMerge() {
+    this._allowSquashMerge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowSquashMergeInput() {
+    return this._allowSquashMerge
   }
 
   // archived - computed: false, optional: true, required: false
   private _archived?: boolean;
   public get archived() {
-    return this._archived;
+    return this.getBooleanAttribute('archived');
   }
-  public set archived(value: boolean | undefined) {
+  public set archived(value: boolean ) {
     this._archived = value;
+  }
+  public resetArchived() {
+    this._archived = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get archivedInput() {
+    return this._archived
   }
 
   // auto_init - computed: false, optional: true, required: false
   private _autoInit?: boolean;
   public get autoInit() {
-    return this._autoInit;
+    return this.getBooleanAttribute('auto_init');
   }
-  public set autoInit(value: boolean | undefined) {
+  public set autoInit(value: boolean ) {
     this._autoInit = value;
+  }
+  public resetAutoInit() {
+    this._autoInit = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get autoInitInput() {
+    return this._autoInit
   }
 
   // default_branch - computed: true, optional: true, required: false
   private _defaultBranch?: string;
   public get defaultBranch() {
-    return this._defaultBranch ?? this.getStringAttribute('default_branch');
+    return this.getStringAttribute('default_branch');
   }
-  public set defaultBranch(value: string | undefined) {
+  public set defaultBranch(value: string) {
     this._defaultBranch = value;
+  }
+  public resetDefaultBranch() {
+    this._defaultBranch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultBranchInput() {
+    return this._defaultBranch
   }
 
   // delete_branch_on_merge - computed: false, optional: true, required: false
   private _deleteBranchOnMerge?: boolean;
   public get deleteBranchOnMerge() {
-    return this._deleteBranchOnMerge;
+    return this.getBooleanAttribute('delete_branch_on_merge');
   }
-  public set deleteBranchOnMerge(value: boolean | undefined) {
+  public set deleteBranchOnMerge(value: boolean ) {
     this._deleteBranchOnMerge = value;
+  }
+  public resetDeleteBranchOnMerge() {
+    this._deleteBranchOnMerge = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deleteBranchOnMergeInput() {
+    return this._deleteBranchOnMerge
   }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
   }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
+  }
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
-  // full_name - computed: true, optional: false, required: true
+  // full_name - computed: true, optional: false, required: false
   public get fullName() {
     return this.getStringAttribute('full_name');
   }
 
-  // git_clone_url - computed: true, optional: false, required: true
+  // git_clone_url - computed: true, optional: false, required: false
   public get gitCloneUrl() {
     return this.getStringAttribute('git_clone_url');
   }
@@ -171,104 +227,160 @@ export class Repository extends TerraformResource {
   // gitignore_template - computed: false, optional: true, required: false
   private _gitignoreTemplate?: string;
   public get gitignoreTemplate() {
-    return this._gitignoreTemplate;
+    return this.getStringAttribute('gitignore_template');
   }
-  public set gitignoreTemplate(value: string | undefined) {
+  public set gitignoreTemplate(value: string ) {
     this._gitignoreTemplate = value;
+  }
+  public resetGitignoreTemplate() {
+    this._gitignoreTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get gitignoreTemplateInput() {
+    return this._gitignoreTemplate
   }
 
   // has_downloads - computed: false, optional: true, required: false
   private _hasDownloads?: boolean;
   public get hasDownloads() {
-    return this._hasDownloads;
+    return this.getBooleanAttribute('has_downloads');
   }
-  public set hasDownloads(value: boolean | undefined) {
+  public set hasDownloads(value: boolean ) {
     this._hasDownloads = value;
+  }
+  public resetHasDownloads() {
+    this._hasDownloads = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasDownloadsInput() {
+    return this._hasDownloads
   }
 
   // has_issues - computed: false, optional: true, required: false
   private _hasIssues?: boolean;
   public get hasIssues() {
-    return this._hasIssues;
+    return this.getBooleanAttribute('has_issues');
   }
-  public set hasIssues(value: boolean | undefined) {
+  public set hasIssues(value: boolean ) {
     this._hasIssues = value;
+  }
+  public resetHasIssues() {
+    this._hasIssues = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasIssuesInput() {
+    return this._hasIssues
   }
 
   // has_projects - computed: false, optional: true, required: false
   private _hasProjects?: boolean;
   public get hasProjects() {
-    return this._hasProjects;
+    return this.getBooleanAttribute('has_projects');
   }
-  public set hasProjects(value: boolean | undefined) {
+  public set hasProjects(value: boolean ) {
     this._hasProjects = value;
+  }
+  public resetHasProjects() {
+    this._hasProjects = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasProjectsInput() {
+    return this._hasProjects
   }
 
   // has_wiki - computed: false, optional: true, required: false
   private _hasWiki?: boolean;
   public get hasWiki() {
-    return this._hasWiki;
+    return this.getBooleanAttribute('has_wiki');
   }
-  public set hasWiki(value: boolean | undefined) {
+  public set hasWiki(value: boolean ) {
     this._hasWiki = value;
+  }
+  public resetHasWiki() {
+    this._hasWiki = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasWikiInput() {
+    return this._hasWiki
   }
 
   // homepage_url - computed: false, optional: true, required: false
   private _homepageUrl?: string;
   public get homepageUrl() {
-    return this._homepageUrl;
+    return this.getStringAttribute('homepage_url');
   }
-  public set homepageUrl(value: string | undefined) {
+  public set homepageUrl(value: string ) {
     this._homepageUrl = value;
   }
+  public resetHomepageUrl() {
+    this._homepageUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get homepageUrlInput() {
+    return this._homepageUrl
+  }
 
-  // html_url - computed: true, optional: false, required: true
+  // html_url - computed: true, optional: false, required: false
   public get htmlUrl() {
     return this.getStringAttribute('html_url');
   }
 
-  // http_clone_url - computed: true, optional: false, required: true
+  // http_clone_url - computed: true, optional: false, required: false
   public get httpCloneUrl() {
     return this.getStringAttribute('http_clone_url');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // is_template - computed: false, optional: true, required: false
   private _isTemplate?: boolean;
   public get isTemplate() {
-    return this._isTemplate;
+    return this.getBooleanAttribute('is_template');
   }
-  public set isTemplate(value: boolean | undefined) {
+  public set isTemplate(value: boolean ) {
     this._isTemplate = value;
+  }
+  public resetIsTemplate() {
+    this._isTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isTemplateInput() {
+    return this._isTemplate
   }
 
   // license_template - computed: false, optional: true, required: false
   private _licenseTemplate?: string;
   public get licenseTemplate() {
-    return this._licenseTemplate;
+    return this.getStringAttribute('license_template');
   }
-  public set licenseTemplate(value: string | undefined) {
+  public set licenseTemplate(value: string ) {
     this._licenseTemplate = value;
+  }
+  public resetLicenseTemplate() {
+    this._licenseTemplate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get licenseTemplateInput() {
+    return this._licenseTemplate
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // node_id - computed: true, optional: false, required: true
+  // node_id - computed: true, optional: false, required: false
   public get nodeId() {
     return this.getStringAttribute('node_id');
   }
@@ -276,18 +388,25 @@ export class Repository extends TerraformResource {
   // private - computed: false, optional: true, required: false
   private _private?: boolean;
   public get private() {
-    return this._private;
+    return this.getBooleanAttribute('private');
   }
-  public set private(value: boolean | undefined) {
+  public set private(value: boolean ) {
     this._private = value;
   }
+  public resetPrivate() {
+    this._private = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateInput() {
+    return this._private
+  }
 
-  // ssh_clone_url - computed: true, optional: false, required: true
+  // ssh_clone_url - computed: true, optional: false, required: false
   public get sshCloneUrl() {
     return this.getStringAttribute('ssh_clone_url');
   }
 
-  // svn_url - computed: true, optional: false, required: true
+  // svn_url - computed: true, optional: false, required: false
   public get svnUrl() {
     return this.getStringAttribute('svn_url');
   }
@@ -295,19 +414,33 @@ export class Repository extends TerraformResource {
   // topics - computed: false, optional: true, required: false
   private _topics?: string[];
   public get topics() {
-    return this._topics;
+    return this.getListAttribute('topics');
   }
-  public set topics(value: string[] | undefined) {
+  public set topics(value: string[] ) {
     this._topics = value;
+  }
+  public resetTopics() {
+    this._topics = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get topicsInput() {
+    return this._topics
   }
 
   // template - computed: false, optional: true, required: false
   private _template?: RepositoryTemplate[];
   public get template() {
-    return this._template;
+    return this.interpolationForAttribute('template') as any;
   }
-  public set template(value: RepositoryTemplate[] | undefined) {
+  public set template(value: RepositoryTemplate[] ) {
     this._template = value;
+  }
+  public resetTemplate() {
+    this._template = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get templateInput() {
+    return this._template
   }
 
   // =========

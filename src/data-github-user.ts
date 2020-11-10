@@ -37,106 +37,102 @@ export class DataGithubUser extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // avatar_url - computed: true, optional: false, required: true
+  // avatar_url - computed: true, optional: false, required: false
   public get avatarUrl() {
     return this.getStringAttribute('avatar_url');
   }
 
-  // bio - computed: true, optional: false, required: true
+  // bio - computed: true, optional: false, required: false
   public get bio() {
     return this.getStringAttribute('bio');
   }
 
-  // blog - computed: true, optional: false, required: true
+  // blog - computed: true, optional: false, required: false
   public get blog() {
     return this.getStringAttribute('blog');
   }
 
-  // company - computed: true, optional: false, required: true
+  // company - computed: true, optional: false, required: false
   public get company() {
     return this.getStringAttribute('company');
   }
 
-  // created_at - computed: true, optional: false, required: true
+  // created_at - computed: true, optional: false, required: false
   public get createdAt() {
     return this.getStringAttribute('created_at');
   }
 
-  // email - computed: true, optional: false, required: true
+  // email - computed: true, optional: false, required: false
   public get email() {
     return this.getStringAttribute('email');
   }
 
-  // followers - computed: true, optional: false, required: true
+  // followers - computed: true, optional: false, required: false
   public get followers() {
     return this.getNumberAttribute('followers');
   }
 
-  // following - computed: true, optional: false, required: true
+  // following - computed: true, optional: false, required: false
   public get following() {
     return this.getNumberAttribute('following');
   }
 
-  // gpg_keys - computed: true, optional: false, required: true
+  // gpg_keys - computed: true, optional: false, required: false
   public get gpgKeys() {
     return this.getListAttribute('gpg_keys');
   }
 
-  // gravatar_id - computed: true, optional: false, required: true
+  // gravatar_id - computed: true, optional: false, required: false
   public get gravatarId() {
     return this.getStringAttribute('gravatar_id');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // location - computed: true, optional: false, required: true
+  // location - computed: true, optional: false, required: false
   public get location() {
     return this.getStringAttribute('location');
   }
 
-  // login - computed: true, optional: false, required: true
+  // login - computed: true, optional: false, required: false
   public get login() {
     return this.getStringAttribute('login');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // node_id - computed: true, optional: false, required: true
+  // node_id - computed: true, optional: false, required: false
   public get nodeId() {
     return this.getStringAttribute('node_id');
   }
 
-  // public_gists - computed: true, optional: false, required: true
+  // public_gists - computed: true, optional: false, required: false
   public get publicGists() {
     return this.getNumberAttribute('public_gists');
   }
 
-  // public_repos - computed: true, optional: false, required: true
+  // public_repos - computed: true, optional: false, required: false
   public get publicRepos() {
     return this.getNumberAttribute('public_repos');
   }
 
-  // site_admin - computed: true, optional: false, required: true
+  // site_admin - computed: true, optional: false, required: false
   public get siteAdmin() {
     return this.getBooleanAttribute('site_admin');
   }
 
-  // ssh_keys - computed: true, optional: false, required: true
+  // ssh_keys - computed: true, optional: false, required: false
   public get sshKeys() {
     return this.getListAttribute('ssh_keys');
   }
 
-  // updated_at - computed: true, optional: false, required: true
+  // updated_at - computed: true, optional: false, required: false
   public get updatedAt() {
     return this.getStringAttribute('updated_at');
   }
@@ -144,10 +140,14 @@ export class DataGithubUser extends TerraformDataSource {
   // username - computed: false, optional: false, required: true
   private _username: string;
   public get username() {
-    return this._username;
+    return this.getStringAttribute('username');
   }
   public set username(value: string) {
     this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username
   }
 
   // =========

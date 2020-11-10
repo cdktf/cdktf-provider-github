@@ -12,17 +12,17 @@ export interface DataGithubOrganizationTeamSyncGroupsConfig extends TerraformMet
 }
 export class DataGithubOrganizationTeamSyncGroupsGroups extends ComplexComputedList {
 
-  // group_description - computed: true, optional: false, required: true
+  // group_description - computed: true, optional: false, required: false
   public get groupDescription() {
     return this.getStringAttribute('group_description');
   }
 
-  // group_id - computed: true, optional: false, required: true
+  // group_id - computed: true, optional: false, required: false
   public get groupId() {
     return this.getStringAttribute('group_id');
   }
 
-  // group_name - computed: true, optional: false, required: true
+  // group_name - computed: true, optional: false, required: false
   public get groupName() {
     return this.getStringAttribute('group_name');
   }
@@ -53,18 +53,14 @@ export class DataGithubOrganizationTeamSyncGroups extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // groups - computed: true, optional: false, required: true
+  // groups - computed: true, optional: false, required: false
   public groups(index: string) {
     return new DataGithubOrganizationTeamSyncGroupsGroups(this, 'groups', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // =========

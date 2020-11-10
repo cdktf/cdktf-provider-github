@@ -42,15 +42,11 @@ export class RepositoryCollaborator extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // invitation_id - computed: true, optional: false, required: true
+  // invitation_id - computed: true, optional: false, required: false
   public get invitationId() {
     return this.getStringAttribute('invitation_id');
   }
@@ -58,28 +54,43 @@ export class RepositoryCollaborator extends TerraformResource {
   // permission - computed: false, optional: true, required: false
   private _permission?: string;
   public get permission() {
-    return this._permission;
+    return this.getStringAttribute('permission');
   }
-  public set permission(value: string | undefined) {
+  public set permission(value: string ) {
     this._permission = value;
+  }
+  public resetPermission() {
+    this._permission = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission
   }
 
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
   }
 
   // username - computed: false, optional: false, required: true
   private _username: string;
   public get username() {
-    return this._username;
+    return this.getStringAttribute('username');
   }
   public set username(value: string) {
     this._username = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usernameInput() {
+    return this._username
   }
 
   // =========

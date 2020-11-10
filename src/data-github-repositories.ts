@@ -39,21 +39,17 @@ export class DataGithubRepositories extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // full_names - computed: true, optional: false, required: true
+  // full_names - computed: true, optional: false, required: false
   public get fullNames() {
     return this.getListAttribute('full_names');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // names - computed: true, optional: false, required: true
+  // names - computed: true, optional: false, required: false
   public get names() {
     return this.getListAttribute('names');
   }
@@ -61,19 +57,30 @@ export class DataGithubRepositories extends TerraformDataSource {
   // query - computed: false, optional: false, required: true
   private _query: string;
   public get query() {
-    return this._query;
+    return this.getStringAttribute('query');
   }
   public set query(value: string) {
     this._query = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get queryInput() {
+    return this._query
   }
 
   // sort - computed: false, optional: true, required: false
   private _sort?: string;
   public get sort() {
-    return this._sort;
+    return this.getStringAttribute('sort');
   }
-  public set sort(value: string | undefined) {
+  public set sort(value: string ) {
     this._sort = value;
+  }
+  public resetSort() {
+    this._sort = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sortInput() {
+    return this._sort
   }
 
   // =========

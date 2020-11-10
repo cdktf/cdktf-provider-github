@@ -15,82 +15,82 @@ export interface DataGithubCollaboratorsConfig extends TerraformMetaArguments {
 }
 export class DataGithubCollaboratorsCollaborator extends ComplexComputedList {
 
-  // events_url - computed: true, optional: false, required: true
+  // events_url - computed: true, optional: false, required: false
   public get eventsUrl() {
     return this.getStringAttribute('events_url');
   }
 
-  // followers_url - computed: true, optional: false, required: true
+  // followers_url - computed: true, optional: false, required: false
   public get followersUrl() {
     return this.getStringAttribute('followers_url');
   }
 
-  // following_url - computed: true, optional: false, required: true
+  // following_url - computed: true, optional: false, required: false
   public get followingUrl() {
     return this.getStringAttribute('following_url');
   }
 
-  // gists_url - computed: true, optional: false, required: true
+  // gists_url - computed: true, optional: false, required: false
   public get gistsUrl() {
     return this.getStringAttribute('gists_url');
   }
 
-  // html_url - computed: true, optional: false, required: true
+  // html_url - computed: true, optional: false, required: false
   public get htmlUrl() {
     return this.getStringAttribute('html_url');
   }
 
-  // id - computed: true, optional: false, required: true
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getNumberAttribute('id');
   }
 
-  // login - computed: true, optional: false, required: true
+  // login - computed: true, optional: false, required: false
   public get login() {
     return this.getStringAttribute('login');
   }
 
-  // organizations_url - computed: true, optional: false, required: true
+  // organizations_url - computed: true, optional: false, required: false
   public get organizationsUrl() {
     return this.getStringAttribute('organizations_url');
   }
 
-  // permission - computed: true, optional: false, required: true
+  // permission - computed: true, optional: false, required: false
   public get permission() {
     return this.getStringAttribute('permission');
   }
 
-  // received_events_url - computed: true, optional: false, required: true
+  // received_events_url - computed: true, optional: false, required: false
   public get receivedEventsUrl() {
     return this.getStringAttribute('received_events_url');
   }
 
-  // repos_url - computed: true, optional: false, required: true
+  // repos_url - computed: true, optional: false, required: false
   public get reposUrl() {
     return this.getStringAttribute('repos_url');
   }
 
-  // site_admin - computed: true, optional: false, required: true
+  // site_admin - computed: true, optional: false, required: false
   public get siteAdmin() {
     return this.getBooleanAttribute('site_admin');
   }
 
-  // starred_url - computed: true, optional: false, required: true
+  // starred_url - computed: true, optional: false, required: false
   public get starredUrl() {
     return this.getStringAttribute('starred_url');
   }
 
-  // subscriptions_url - computed: true, optional: false, required: true
+  // subscriptions_url - computed: true, optional: false, required: false
   public get subscriptionsUrl() {
     return this.getStringAttribute('subscriptions_url');
   }
 
-  // type - computed: true, optional: false, required: true
+  // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
   }
 
-  // url - computed: true, optional: false, required: true
+  // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
   }
@@ -127,42 +127,53 @@ export class DataGithubCollaborators extends TerraformDataSource {
   // affiliation - computed: false, optional: true, required: false
   private _affiliation?: string;
   public get affiliation() {
-    return this._affiliation;
+    return this.getStringAttribute('affiliation');
   }
-  public set affiliation(value: string | undefined) {
+  public set affiliation(value: string ) {
     this._affiliation = value;
   }
+  public resetAffiliation() {
+    this._affiliation = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get affiliationInput() {
+    return this._affiliation
+  }
 
-  // collaborator - computed: true, optional: false, required: true
+  // collaborator - computed: true, optional: false, required: false
   public collaborator(index: string) {
     return new DataGithubCollaboratorsCollaborator(this, 'collaborator', index);
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // owner - computed: false, optional: false, required: true
   private _owner: string;
   public get owner() {
-    return this._owner;
+    return this.getStringAttribute('owner');
   }
   public set owner(value: string) {
     this._owner = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner
   }
 
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
   }
 
   // =========

@@ -42,27 +42,27 @@ export class DataGithubBranch extends TerraformDataSource {
   // branch - computed: false, optional: false, required: true
   private _branch: string;
   public get branch() {
-    return this._branch;
+    return this.getStringAttribute('branch');
   }
   public set branch(value: string) {
     this._branch = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch
+  }
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ref - computed: true, optional: false, required: true
+  // ref - computed: true, optional: false, required: false
   public get ref() {
     return this.getStringAttribute('ref');
   }
@@ -70,13 +70,17 @@ export class DataGithubBranch extends TerraformDataSource {
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
+  }
 
-  // sha - computed: true, optional: false, required: true
+  // sha - computed: true, optional: false, required: false
   public get sha() {
     return this.getStringAttribute('sha');
   }

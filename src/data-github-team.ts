@@ -37,41 +37,37 @@ export class DataGithubTeam extends TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // description - computed: true, optional: false, required: true
+  // description - computed: true, optional: false, required: false
   public get description() {
     return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // members - computed: true, optional: false, required: true
+  // members - computed: true, optional: false, required: false
   public get members() {
     return this.getListAttribute('members');
   }
 
-  // name - computed: true, optional: false, required: true
+  // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 
-  // node_id - computed: true, optional: false, required: true
+  // node_id - computed: true, optional: false, required: false
   public get nodeId() {
     return this.getStringAttribute('node_id');
   }
 
-  // permission - computed: true, optional: false, required: true
+  // permission - computed: true, optional: false, required: false
   public get permission() {
     return this.getStringAttribute('permission');
   }
 
-  // privacy - computed: true, optional: false, required: true
+  // privacy - computed: true, optional: false, required: false
   public get privacy() {
     return this.getStringAttribute('privacy');
   }
@@ -79,10 +75,14 @@ export class DataGithubTeam extends TerraformDataSource {
   // slug - computed: false, optional: false, required: true
   private _slug: string;
   public get slug() {
-    return this._slug;
+    return this.getStringAttribute('slug');
   }
   public set slug(value: string) {
     this._slug = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get slugInput() {
+    return this._slug
   }
 
   // =========

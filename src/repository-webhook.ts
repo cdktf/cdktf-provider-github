@@ -55,13 +55,20 @@ export class RepositoryWebhook extends TerraformResource {
   // active - computed: false, optional: true, required: false
   private _active?: boolean;
   public get active() {
-    return this._active;
+    return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean | undefined) {
+  public set active(value: boolean ) {
     this._active = value;
   }
+  public resetActive() {
+    this._active = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get activeInput() {
+    return this._active
+  }
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
@@ -69,40 +76,51 @@ export class RepositoryWebhook extends TerraformResource {
   // events - computed: false, optional: false, required: true
   private _events: string[];
   public get events() {
-    return this._events;
+    return this.getListAttribute('events');
   }
   public set events(value: string[]) {
     this._events = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get eventsInput() {
+    return this._events
+  }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // name - computed: false, optional: true, required: false
   private _name?: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string ) {
     this._name = value;
+  }
+  public resetName() {
+    this._name = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
   }
 
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
+  }
 
-  // url - computed: true, optional: false, required: true
+  // url - computed: true, optional: false, required: false
   public get url() {
     return this.getStringAttribute('url');
   }
@@ -110,10 +128,17 @@ export class RepositoryWebhook extends TerraformResource {
   // configuration - computed: false, optional: true, required: false
   private _configuration?: RepositoryWebhookConfiguration[];
   public get configuration() {
-    return this._configuration;
+    return this.interpolationForAttribute('configuration') as any;
   }
-  public set configuration(value: RepositoryWebhookConfiguration[] | undefined) {
+  public set configuration(value: RepositoryWebhookConfiguration[] ) {
     this._configuration = value;
+  }
+  public resetConfiguration() {
+    this._configuration = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get configurationInput() {
+    return this._configuration
   }
 
   // =========

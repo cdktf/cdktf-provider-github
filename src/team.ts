@@ -48,45 +48,59 @@ export class Team extends TerraformResource {
   // description - computed: false, optional: true, required: false
   private _description?: string;
   public get description() {
-    return this._description;
+    return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string ) {
     this._description = value;
   }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
+  }
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // ldap_dn - computed: false, optional: true, required: false
   private _ldapDn?: string;
   public get ldapDn() {
-    return this._ldapDn;
+    return this.getStringAttribute('ldap_dn');
   }
-  public set ldapDn(value: string | undefined) {
+  public set ldapDn(value: string ) {
     this._ldapDn = value;
+  }
+  public resetLdapDn() {
+    this._ldapDn = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ldapDnInput() {
+    return this._ldapDn
   }
 
   // name - computed: false, optional: false, required: true
   private _name: string;
   public get name() {
-    return this._name;
+    return this.getStringAttribute('name');
   }
   public set name(value: string) {
     this._name = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name
+  }
 
-  // node_id - computed: true, optional: false, required: true
+  // node_id - computed: true, optional: false, required: false
   public get nodeId() {
     return this.getStringAttribute('node_id');
   }
@@ -94,22 +108,36 @@ export class Team extends TerraformResource {
   // parent_team_id - computed: false, optional: true, required: false
   private _parentTeamId?: number;
   public get parentTeamId() {
-    return this._parentTeamId;
+    return this.getNumberAttribute('parent_team_id');
   }
-  public set parentTeamId(value: number | undefined) {
+  public set parentTeamId(value: number ) {
     this._parentTeamId = value;
+  }
+  public resetParentTeamId() {
+    this._parentTeamId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get parentTeamIdInput() {
+    return this._parentTeamId
   }
 
   // privacy - computed: false, optional: true, required: false
   private _privacy?: string;
   public get privacy() {
-    return this._privacy;
+    return this.getStringAttribute('privacy');
   }
-  public set privacy(value: string | undefined) {
+  public set privacy(value: string ) {
     this._privacy = value;
   }
+  public resetPrivacy() {
+    this._privacy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privacyInput() {
+    return this._privacy
+  }
 
-  // slug - computed: true, optional: false, required: true
+  // slug - computed: true, optional: false, required: false
   public get slug() {
     return this.getStringAttribute('slug');
   }

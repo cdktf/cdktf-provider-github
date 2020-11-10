@@ -38,21 +38,21 @@ export class UserInvitationAccepter extends TerraformResource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // invitation_id - computed: false, optional: false, required: true
   private _invitationId: string;
   public get invitationId() {
-    return this._invitationId;
+    return this.getStringAttribute('invitation_id');
   }
   public set invitationId(value: string) {
     this._invitationId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get invitationIdInput() {
+    return this._invitationId
   }
 
   // =========

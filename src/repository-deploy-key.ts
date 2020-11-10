@@ -43,54 +43,69 @@ export class RepositoryDeployKey extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // key - computed: false, optional: false, required: true
   private _key: string;
   public get key() {
-    return this._key;
+    return this.getStringAttribute('key');
   }
   public set key(value: string) {
     this._key = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyInput() {
+    return this._key
   }
 
   // read_only - computed: false, optional: true, required: false
   private _readOnly?: boolean;
   public get readOnly() {
-    return this._readOnly;
+    return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | undefined) {
+  public set readOnly(value: boolean ) {
     this._readOnly = value;
+  }
+  public resetReadOnly() {
+    this._readOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readOnlyInput() {
+    return this._readOnly
   }
 
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
   }
 
   // title - computed: false, optional: false, required: true
   private _title: string;
   public get title() {
-    return this._title;
+    return this.getStringAttribute('title');
   }
   public set title(value: string) {
     this._title = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get titleInput() {
+    return this._title
   }
 
   // =========

@@ -45,36 +45,43 @@ export class TeamSyncGroupMapping extends TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
   // team_slug - computed: false, optional: false, required: true
   private _teamSlug: string;
   public get teamSlug() {
-    return this._teamSlug;
+    return this.getStringAttribute('team_slug');
   }
   public set teamSlug(value: string) {
     this._teamSlug = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamSlugInput() {
+    return this._teamSlug
   }
 
   // group - computed: false, optional: true, required: false
   private _group?: TeamSyncGroupMappingGroup[];
   public get group() {
-    return this._group;
+    return this.interpolationForAttribute('group') as any;
   }
-  public set group(value: TeamSyncGroupMappingGroup[] | undefined) {
+  public set group(value: TeamSyncGroupMappingGroup[] ) {
     this._group = value;
+  }
+  public resetGroup() {
+    this._group = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get groupInput() {
+    return this._group
   }
 
   // =========

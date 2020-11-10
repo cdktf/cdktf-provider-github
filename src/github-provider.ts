@@ -57,8 +57,15 @@ export class GithubProvider extends TerraformProvider {
   public get anonymous() {
     return this._anonymous;
   }
-  public set anonymous(value: boolean | undefined) {
+  public set anonymous(value: boolean  | undefined) {
     this._anonymous = value;
+  }
+  public resetAnonymous() {
+    this._anonymous = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get anonymousInput() {
+    return this._anonymous
   }
 
   // base_url - computed: false, optional: true, required: false
@@ -66,8 +73,15 @@ export class GithubProvider extends TerraformProvider {
   public get baseUrl() {
     return this._baseUrl;
   }
-  public set baseUrl(value: string | undefined) {
+  public set baseUrl(value: string  | undefined) {
     this._baseUrl = value;
+  }
+  public resetBaseUrl() {
+    this._baseUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get baseUrlInput() {
+    return this._baseUrl
   }
 
   // individual - computed: false, optional: true, required: false
@@ -75,8 +89,15 @@ export class GithubProvider extends TerraformProvider {
   public get individual() {
     return this._individual;
   }
-  public set individual(value: boolean | undefined) {
+  public set individual(value: boolean  | undefined) {
     this._individual = value;
+  }
+  public resetIndividual() {
+    this._individual = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get individualInput() {
+    return this._individual
   }
 
   // insecure - computed: false, optional: true, required: false
@@ -84,8 +105,15 @@ export class GithubProvider extends TerraformProvider {
   public get insecure() {
     return this._insecure;
   }
-  public set insecure(value: boolean | undefined) {
+  public set insecure(value: boolean  | undefined) {
     this._insecure = value;
+  }
+  public resetInsecure() {
+    this._insecure = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insecureInput() {
+    return this._insecure
   }
 
   // organization - computed: false, optional: true, required: false
@@ -93,8 +121,15 @@ export class GithubProvider extends TerraformProvider {
   public get organization() {
     return this._organization;
   }
-  public set organization(value: string | undefined) {
+  public set organization(value: string  | undefined) {
     this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationInput() {
+    return this._organization
   }
 
   // token - computed: false, optional: true, required: false
@@ -102,8 +137,15 @@ export class GithubProvider extends TerraformProvider {
   public get token() {
     return this._token;
   }
-  public set token(value: string | undefined) {
+  public set token(value: string  | undefined) {
     this._token = value;
+  }
+  public resetToken() {
+    this._token = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tokenInput() {
+    return this._token
   }
 
   // alias - computed: false, optional: true, required: false
@@ -111,8 +153,15 @@ export class GithubProvider extends TerraformProvider {
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined) {
+  public set alias(value: string  | undefined) {
     this._alias = value;
+  }
+  public resetAlias() {
+    this._alias = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get aliasInput() {
+    return this._alias
   }
 
   // =========

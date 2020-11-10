@@ -40,27 +40,27 @@ export class UserGpgKey extends TerraformResource {
   // armored_public_key - computed: false, optional: false, required: true
   private _armoredPublicKey: string;
   public get armoredPublicKey() {
-    return this._armoredPublicKey;
+    return this.getStringAttribute('armored_public_key');
   }
   public set armoredPublicKey(value: string) {
     this._armoredPublicKey = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get armoredPublicKeyInput() {
+    return this._armoredPublicKey
+  }
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // key_id - computed: true, optional: false, required: true
+  // key_id - computed: true, optional: false, required: false
   public get keyId() {
     return this.getStringAttribute('key_id');
   }

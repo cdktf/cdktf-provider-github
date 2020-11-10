@@ -46,27 +46,27 @@ export class Branch extends TerraformResource {
   // branch - computed: false, optional: false, required: true
   private _branch: string;
   public get branch() {
-    return this._branch;
+    return this.getStringAttribute('branch');
   }
   public set branch(value: string) {
     this._branch = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get branchInput() {
+    return this._branch
+  }
 
-  // etag - computed: true, optional: false, required: true
+  // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
   }
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // ref - computed: true, optional: false, required: true
+  // ref - computed: true, optional: false, required: false
   public get ref() {
     return this.getStringAttribute('ref');
   }
@@ -74,13 +74,17 @@ export class Branch extends TerraformResource {
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
   }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
+  }
 
-  // sha - computed: true, optional: false, required: true
+  // sha - computed: true, optional: false, required: false
   public get sha() {
     return this.getStringAttribute('sha');
   }
@@ -88,19 +92,33 @@ export class Branch extends TerraformResource {
   // source_branch - computed: false, optional: true, required: false
   private _sourceBranch?: string;
   public get sourceBranch() {
-    return this._sourceBranch;
+    return this.getStringAttribute('source_branch');
   }
-  public set sourceBranch(value: string | undefined) {
+  public set sourceBranch(value: string ) {
     this._sourceBranch = value;
+  }
+  public resetSourceBranch() {
+    this._sourceBranch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceBranchInput() {
+    return this._sourceBranch
   }
 
   // source_sha - computed: true, optional: true, required: false
   private _sourceSha?: string;
   public get sourceSha() {
-    return this._sourceSha ?? this.getStringAttribute('source_sha');
+    return this.getStringAttribute('source_sha');
   }
-  public set sourceSha(value: string | undefined) {
+  public set sourceSha(value: string) {
     this._sourceSha = value;
+  }
+  public resetSourceSha() {
+    this._sourceSha = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sourceShaInput() {
+    return this._sourceSha
   }
 
   // =========

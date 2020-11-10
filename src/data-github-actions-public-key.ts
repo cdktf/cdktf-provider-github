@@ -38,20 +38,16 @@ export class DataGithubActionsPublicKey extends TerraformDataSource {
   // ==========
 
   // id - computed: true, optional: true, required: false
-  private _id?: string;
   public get id() {
-    return this._id ?? this.getStringAttribute('id');
-  }
-  public set id(value: string | undefined) {
-    this._id = value;
+    return this.getStringAttribute('id');
   }
 
-  // key - computed: true, optional: false, required: true
+  // key - computed: true, optional: false, required: false
   public get key() {
     return this.getStringAttribute('key');
   }
 
-  // key_id - computed: true, optional: false, required: true
+  // key_id - computed: true, optional: false, required: false
   public get keyId() {
     return this.getStringAttribute('key_id');
   }
@@ -59,10 +55,14 @@ export class DataGithubActionsPublicKey extends TerraformDataSource {
   // repository - computed: false, optional: false, required: true
   private _repository: string;
   public get repository() {
-    return this._repository;
+    return this.getStringAttribute('repository');
   }
   public set repository(value: string) {
     this._repository = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository
   }
 
   // =========
