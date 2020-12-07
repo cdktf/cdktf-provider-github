@@ -2,18 +2,16 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubCollaboratorsConfig extends TerraformMetaArguments {
+export interface DataGithubCollaboratorsConfig extends cdktf.TerraformMetaArguments {
   readonly affiliation?: string;
   readonly owner: string;
   readonly repository: string;
 }
-export class DataGithubCollaboratorsCollaborator extends ComplexComputedList {
+export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedList {
 
   // events_url - computed: true, optional: false, required: false
   public get eventsUrl() {
@@ -98,7 +96,7 @@ export class DataGithubCollaboratorsCollaborator extends ComplexComputedList {
 
 // Resource
 
-export class DataGithubCollaborators extends TerraformDataSource {
+export class DataGithubCollaborators extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -182,9 +180,9 @@ export class DataGithubCollaborators extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      affiliation: this._affiliation,
-      owner: this._owner,
-      repository: this._repository,
+      affiliation: cdktf.stringToTerraform(this._affiliation),
+      owner: cdktf.stringToTerraform(this._owner),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

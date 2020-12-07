@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface UserGpgKeyConfig extends TerraformMetaArguments {
+export interface UserGpgKeyConfig extends cdktf.TerraformMetaArguments {
   readonly armoredPublicKey: string;
 }
 
 // Resource
 
-export class UserGpgKey extends TerraformResource {
+export class UserGpgKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -71,7 +70,7 @@ export class UserGpgKey extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      armored_public_key: this._armoredPublicKey,
+      armored_public_key: cdktf.stringToTerraform(this._armoredPublicKey),
     };
   }
 }

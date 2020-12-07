@@ -2,7 +2,7 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformProvider } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
@@ -24,7 +24,7 @@ export interface GithubProviderConfig {
 
 // Resource
 
-export class GithubProvider extends TerraformProvider {
+export class GithubProvider extends cdktf.TerraformProvider {
 
   // ===========
   // INITIALIZER
@@ -170,13 +170,13 @@ export class GithubProvider extends TerraformProvider {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      anonymous: this._anonymous,
-      base_url: this._baseUrl,
-      individual: this._individual,
-      insecure: this._insecure,
-      organization: this._organization,
-      token: this._token,
-      alias: this._alias,
+      anonymous: cdktf.booleanToTerraform(this._anonymous),
+      base_url: cdktf.stringToTerraform(this._baseUrl),
+      individual: cdktf.booleanToTerraform(this._individual),
+      insecure: cdktf.booleanToTerraform(this._insecure),
+      organization: cdktf.stringToTerraform(this._organization),
+      token: cdktf.stringToTerraform(this._token),
+      alias: cdktf.stringToTerraform(this._alias),
     };
   }
 }

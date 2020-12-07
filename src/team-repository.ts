@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TeamRepositoryConfig extends TerraformMetaArguments {
+export interface TeamRepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly permission?: string;
   readonly repository: string;
   readonly teamId: string;
@@ -15,7 +14,7 @@ export interface TeamRepositoryConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class TeamRepository extends TerraformResource {
+export class TeamRepository extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +98,9 @@ export class TeamRepository extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      permission: this._permission,
-      repository: this._repository,
-      team_id: this._teamId,
+      permission: cdktf.stringToTerraform(this._permission),
+      repository: cdktf.stringToTerraform(this._repository),
+      team_id: cdktf.stringToTerraform(this._teamId),
     };
   }
 }

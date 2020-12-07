@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BranchConfig extends TerraformMetaArguments {
+export interface BranchConfig extends cdktf.TerraformMetaArguments {
   readonly branch: string;
   readonly repository: string;
   readonly sourceBranch?: string;
@@ -16,7 +15,7 @@ export interface BranchConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Branch extends TerraformResource {
+export class Branch extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -127,10 +126,10 @@ export class Branch extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch: this._branch,
-      repository: this._repository,
-      source_branch: this._sourceBranch,
-      source_sha: this._sourceSha,
+      branch: cdktf.stringToTerraform(this._branch),
+      repository: cdktf.stringToTerraform(this._repository),
+      source_branch: cdktf.stringToTerraform(this._sourceBranch),
+      source_sha: cdktf.stringToTerraform(this._sourceSha),
     };
   }
 }

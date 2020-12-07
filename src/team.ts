@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TeamConfig extends TerraformMetaArguments {
+export interface TeamConfig extends cdktf.TerraformMetaArguments {
   readonly description?: string;
   readonly ldapDn?: string;
   readonly name: string;
@@ -17,7 +16,7 @@ export interface TeamConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class Team extends TerraformResource {
+export class Team extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -148,11 +147,11 @@ export class Team extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      description: this._description,
-      ldap_dn: this._ldapDn,
-      name: this._name,
-      parent_team_id: this._parentTeamId,
-      privacy: this._privacy,
+      description: cdktf.stringToTerraform(this._description),
+      ldap_dn: cdktf.stringToTerraform(this._ldapDn),
+      name: cdktf.stringToTerraform(this._name),
+      parent_team_id: cdktf.numberToTerraform(this._parentTeamId),
+      privacy: cdktf.stringToTerraform(this._privacy),
     };
   }
 }

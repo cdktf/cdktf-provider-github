@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RepositoryConfig extends TerraformMetaArguments {
+export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   readonly allowMergeCommit?: boolean;
   readonly allowRebaseMerge?: boolean;
   readonly allowSquashMerge?: boolean;
@@ -36,9 +35,18 @@ export interface RepositoryTemplate {
   readonly repository: string;
 }
 
+function repositoryTemplateToTerraform(struct?: RepositoryTemplate): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    owner: cdktf.stringToTerraform(struct!.owner),
+    repository: cdktf.stringToTerraform(struct!.repository),
+  }
+}
+
+
 // Resource
 
-export class Repository extends TerraformResource {
+export class Repository extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -449,26 +457,26 @@ export class Repository extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      allow_merge_commit: this._allowMergeCommit,
-      allow_rebase_merge: this._allowRebaseMerge,
-      allow_squash_merge: this._allowSquashMerge,
-      archived: this._archived,
-      auto_init: this._autoInit,
-      default_branch: this._defaultBranch,
-      delete_branch_on_merge: this._deleteBranchOnMerge,
-      description: this._description,
-      gitignore_template: this._gitignoreTemplate,
-      has_downloads: this._hasDownloads,
-      has_issues: this._hasIssues,
-      has_projects: this._hasProjects,
-      has_wiki: this._hasWiki,
-      homepage_url: this._homepageUrl,
-      is_template: this._isTemplate,
-      license_template: this._licenseTemplate,
-      name: this._name,
-      private: this._private,
-      topics: this._topics,
-      template: this._template,
+      allow_merge_commit: cdktf.booleanToTerraform(this._allowMergeCommit),
+      allow_rebase_merge: cdktf.booleanToTerraform(this._allowRebaseMerge),
+      allow_squash_merge: cdktf.booleanToTerraform(this._allowSquashMerge),
+      archived: cdktf.booleanToTerraform(this._archived),
+      auto_init: cdktf.booleanToTerraform(this._autoInit),
+      default_branch: cdktf.stringToTerraform(this._defaultBranch),
+      delete_branch_on_merge: cdktf.booleanToTerraform(this._deleteBranchOnMerge),
+      description: cdktf.stringToTerraform(this._description),
+      gitignore_template: cdktf.stringToTerraform(this._gitignoreTemplate),
+      has_downloads: cdktf.booleanToTerraform(this._hasDownloads),
+      has_issues: cdktf.booleanToTerraform(this._hasIssues),
+      has_projects: cdktf.booleanToTerraform(this._hasProjects),
+      has_wiki: cdktf.booleanToTerraform(this._hasWiki),
+      homepage_url: cdktf.stringToTerraform(this._homepageUrl),
+      is_template: cdktf.booleanToTerraform(this._isTemplate),
+      license_template: cdktf.stringToTerraform(this._licenseTemplate),
+      name: cdktf.stringToTerraform(this._name),
+      private: cdktf.booleanToTerraform(this._private),
+      topics: cdktf.listMapper(cdktf.stringToTerraform)(this._topics),
+      template: cdktf.listMapper(repositoryTemplateToTerraform)(this._template),
     };
   }
 }

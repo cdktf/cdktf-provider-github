@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ActionsSecretConfig extends TerraformMetaArguments {
+export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
   readonly plaintextValue: string;
   readonly repository: string;
   readonly secretName: string;
@@ -15,7 +14,7 @@ export interface ActionsSecretConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class ActionsSecret extends TerraformResource {
+export class ActionsSecret extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -101,9 +100,9 @@ export class ActionsSecret extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      plaintext_value: this._plaintextValue,
-      repository: this._repository,
-      secret_name: this._secretName,
+      plaintext_value: cdktf.stringToTerraform(this._plaintextValue),
+      repository: cdktf.stringToTerraform(this._repository),
+      secret_name: cdktf.stringToTerraform(this._secretName),
     };
   }
 }

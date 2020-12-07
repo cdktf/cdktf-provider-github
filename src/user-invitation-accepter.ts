@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface UserInvitationAccepterConfig extends TerraformMetaArguments {
+export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArguments {
   readonly invitationId: string;
 }
 
 // Resource
 
-export class UserInvitationAccepter extends TerraformResource {
+export class UserInvitationAccepter extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -61,7 +60,7 @@ export class UserInvitationAccepter extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      invitation_id: this._invitationId,
+      invitation_id: cdktf.stringToTerraform(this._invitationId),
     };
   }
 }

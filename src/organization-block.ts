@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OrganizationBlockConfig extends TerraformMetaArguments {
+export interface OrganizationBlockConfig extends cdktf.TerraformMetaArguments {
   readonly username: string;
 }
 
 // Resource
 
-export class OrganizationBlock extends TerraformResource {
+export class OrganizationBlock extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -66,7 +65,7 @@ export class OrganizationBlock extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      username: this._username,
+      username: cdktf.stringToTerraform(this._username),
     };
   }
 }

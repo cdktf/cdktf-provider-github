@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TeamMembershipConfig extends TerraformMetaArguments {
+export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
   readonly role?: string;
   readonly teamId: string;
   readonly username: string;
@@ -15,7 +14,7 @@ export interface TeamMembershipConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class TeamMembership extends TerraformResource {
+export class TeamMembership extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -99,9 +98,9 @@ export class TeamMembership extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      role: this._role,
-      team_id: this._teamId,
-      username: this._username,
+      role: cdktf.stringToTerraform(this._role),
+      team_id: cdktf.stringToTerraform(this._teamId),
+      username: cdktf.stringToTerraform(this._username),
     };
   }
 }

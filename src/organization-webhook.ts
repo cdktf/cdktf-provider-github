@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OrganizationWebhookConfig extends TerraformMetaArguments {
+export interface OrganizationWebhookConfig extends cdktf.TerraformMetaArguments {
   readonly active?: boolean;
   readonly events: string[];
   readonly name?: string;
@@ -21,9 +20,20 @@ export interface OrganizationWebhookConfiguration {
   readonly url: string;
 }
 
+function organizationWebhookConfigurationToTerraform(struct?: OrganizationWebhookConfiguration): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    content_type: cdktf.stringToTerraform(struct!.contentType),
+    insecure_ssl: cdktf.booleanToTerraform(struct!.insecureSsl),
+    secret: cdktf.stringToTerraform(struct!.secret),
+    url: cdktf.stringToTerraform(struct!.url),
+  }
+}
+
+
 // Resource
 
-export class OrganizationWebhook extends TerraformResource {
+export class OrganizationWebhook extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -132,10 +142,10 @@ export class OrganizationWebhook extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      active: this._active,
-      events: this._events,
-      name: this._name,
-      configuration: this._configuration,
+      active: cdktf.booleanToTerraform(this._active),
+      events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
+      name: cdktf.stringToTerraform(this._name),
+      configuration: cdktf.listMapper(organizationWebhookConfigurationToTerraform)(this._configuration),
     };
   }
 }

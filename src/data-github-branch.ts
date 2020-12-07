@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubBranchConfig extends TerraformMetaArguments {
+export interface DataGithubBranchConfig extends cdktf.TerraformMetaArguments {
   readonly branch: string;
   readonly repository: string;
 }
 
 // Resource
 
-export class DataGithubBranch extends TerraformDataSource {
+export class DataGithubBranch extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -91,8 +90,8 @@ export class DataGithubBranch extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch: this._branch,
-      repository: this._repository,
+      branch: cdktf.stringToTerraform(this._branch),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

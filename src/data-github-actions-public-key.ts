@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubActionsPublicKeyConfig extends TerraformMetaArguments {
+export interface DataGithubActionsPublicKeyConfig extends cdktf.TerraformMetaArguments {
   readonly repository: string;
 }
 
 // Resource
 
-export class DataGithubActionsPublicKey extends TerraformDataSource {
+export class DataGithubActionsPublicKey extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -71,7 +70,7 @@ export class DataGithubActionsPublicKey extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      repository: this._repository,
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

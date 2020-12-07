@@ -2,15 +2,13 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
-import { ComplexComputedList } from "cdktf";
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubOrganizationTeamSyncGroupsConfig extends TerraformMetaArguments {
+export interface DataGithubOrganizationTeamSyncGroupsConfig extends cdktf.TerraformMetaArguments {
 }
-export class DataGithubOrganizationTeamSyncGroupsGroups extends ComplexComputedList {
+export class DataGithubOrganizationTeamSyncGroupsGroups extends cdktf.ComplexComputedList {
 
   // group_description - computed: true, optional: false, required: false
   public get groupDescription() {
@@ -30,7 +28,7 @@ export class DataGithubOrganizationTeamSyncGroupsGroups extends ComplexComputedL
 
 // Resource
 
-export class DataGithubOrganizationTeamSyncGroups extends TerraformDataSource {
+export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER

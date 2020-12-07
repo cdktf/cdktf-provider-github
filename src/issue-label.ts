@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface IssueLabelConfig extends TerraformMetaArguments {
+export interface IssueLabelConfig extends cdktf.TerraformMetaArguments {
   readonly color: string;
   readonly description?: string;
   readonly name: string;
@@ -16,7 +15,7 @@ export interface IssueLabelConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class IssueLabel extends TerraformResource {
+export class IssueLabel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -119,10 +118,10 @@ export class IssueLabel extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      color: this._color,
-      description: this._description,
-      name: this._name,
-      repository: this._repository,
+      color: cdktf.stringToTerraform(this._color),
+      description: cdktf.stringToTerraform(this._description),
+      name: cdktf.stringToTerraform(this._name),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

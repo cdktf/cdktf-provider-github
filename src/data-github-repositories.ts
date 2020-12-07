@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubRepositoriesConfig extends TerraformMetaArguments {
+export interface DataGithubRepositoriesConfig extends cdktf.TerraformMetaArguments {
   readonly query: string;
   readonly sort?: string;
 }
 
 // Resource
 
-export class DataGithubRepositories extends TerraformDataSource {
+export class DataGithubRepositories extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -89,8 +88,8 @@ export class DataGithubRepositories extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      query: this._query,
-      sort: this._sort,
+      query: cdktf.stringToTerraform(this._query),
+      sort: cdktf.stringToTerraform(this._sort),
     };
   }
 }

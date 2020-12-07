@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RepositoryProjectConfig extends TerraformMetaArguments {
+export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
   readonly body?: string;
   readonly name: string;
   readonly repository: string;
@@ -15,7 +14,7 @@ export interface RepositoryProjectConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class RepositoryProject extends TerraformResource {
+export class RepositoryProject extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -104,9 +103,9 @@ export class RepositoryProject extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      body: this._body,
-      name: this._name,
-      repository: this._repository,
+      body: cdktf.stringToTerraform(this._body),
+      name: cdktf.stringToTerraform(this._name),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

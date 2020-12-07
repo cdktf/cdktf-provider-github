@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface BranchProtectionConfig extends TerraformMetaArguments {
+export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   readonly branch: string;
   readonly enforceAdmins?: boolean;
   readonly repository: string;
@@ -27,20 +26,53 @@ export interface BranchProtectionRequiredPullRequestReviews {
   readonly requireCodeOwnerReviews?: boolean;
   readonly requiredApprovingReviewCount?: number;
 }
+
+function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchProtectionRequiredPullRequestReviews): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    dismiss_stale_reviews: cdktf.booleanToTerraform(struct!.dismissStaleReviews),
+    dismissal_teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalTeams),
+    dismissal_users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalUsers),
+    include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
+    require_code_owner_reviews: cdktf.booleanToTerraform(struct!.requireCodeOwnerReviews),
+    required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
+  }
+}
+
 export interface BranchProtectionRequiredStatusChecks {
   readonly contexts?: string[];
   readonly includeAdmins?: boolean;
   readonly strict?: boolean;
 }
+
+function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchProtectionRequiredStatusChecks): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    contexts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contexts),
+    include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
+    strict: cdktf.booleanToTerraform(struct!.strict),
+  }
+}
+
 export interface BranchProtectionRestrictions {
   readonly apps?: string[];
   readonly teams?: string[];
   readonly users?: string[];
 }
 
+function branchProtectionRestrictionsToTerraform(struct?: BranchProtectionRestrictions): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    apps: cdktf.listMapper(cdktf.stringToTerraform)(struct!.apps),
+    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
+    users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.users),
+  }
+}
+
+
 // Resource
 
-export class BranchProtection extends TerraformResource {
+export class BranchProtection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -192,13 +224,13 @@ export class BranchProtection extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch: this._branch,
-      enforce_admins: this._enforceAdmins,
-      repository: this._repository,
-      require_signed_commits: this._requireSignedCommits,
-      required_pull_request_reviews: this._requiredPullRequestReviews,
-      required_status_checks: this._requiredStatusChecks,
-      restrictions: this._restrictions,
+      branch: cdktf.stringToTerraform(this._branch),
+      enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
+      repository: cdktf.stringToTerraform(this._repository),
+      require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),
+      required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform)(this._requiredPullRequestReviews),
+      required_status_checks: cdktf.listMapper(branchProtectionRequiredStatusChecksToTerraform)(this._requiredStatusChecks),
+      restrictions: cdktf.listMapper(branchProtectionRestrictionsToTerraform)(this._restrictions),
     };
   }
 }

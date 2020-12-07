@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface RepositoryFileConfig extends TerraformMetaArguments {
+export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /** The branch name, defaults to "master" */
   readonly branch?: string;
   /** The commit author name, defaults to the authenticated user's name */
@@ -26,7 +25,7 @@ export interface RepositoryFileConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class RepositoryFile extends TerraformResource {
+export class RepositoryFile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -175,13 +174,13 @@ export class RepositoryFile extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch: this._branch,
-      commit_author: this._commitAuthor,
-      commit_email: this._commitEmail,
-      commit_message: this._commitMessage,
-      content: this._content,
-      file: this._file,
-      repository: this._repository,
+      branch: cdktf.stringToTerraform(this._branch),
+      commit_author: cdktf.stringToTerraform(this._commitAuthor),
+      commit_email: cdktf.stringToTerraform(this._commitEmail),
+      commit_message: cdktf.stringToTerraform(this._commitMessage),
+      content: cdktf.stringToTerraform(this._content),
+      file: cdktf.stringToTerraform(this._file),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

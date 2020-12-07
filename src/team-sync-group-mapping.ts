@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface TeamSyncGroupMappingConfig extends TerraformMetaArguments {
+export interface TeamSyncGroupMappingConfig extends cdktf.TerraformMetaArguments {
   readonly teamSlug: string;
   /** group block */
   readonly group?: TeamSyncGroupMappingGroup[];
@@ -18,9 +17,19 @@ export interface TeamSyncGroupMappingGroup {
   readonly groupName: string;
 }
 
+function teamSyncGroupMappingGroupToTerraform(struct?: TeamSyncGroupMappingGroup): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    group_description: cdktf.stringToTerraform(struct!.groupDescription),
+    group_id: cdktf.stringToTerraform(struct!.groupId),
+    group_name: cdktf.stringToTerraform(struct!.groupName),
+  }
+}
+
+
 // Resource
 
-export class TeamSyncGroupMapping extends TerraformResource {
+export class TeamSyncGroupMapping extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -90,8 +99,8 @@ export class TeamSyncGroupMapping extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      team_slug: this._teamSlug,
-      group: this._group,
+      team_slug: cdktf.stringToTerraform(this._teamSlug),
+      group: cdktf.listMapper(teamSyncGroupMappingGroupToTerraform)(this._group),
     };
   }
 }

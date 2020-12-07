@@ -2,12 +2,11 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubReleaseConfig extends TerraformMetaArguments {
+export interface DataGithubReleaseConfig extends cdktf.TerraformMetaArguments {
   readonly owner: string;
   readonly releaseId?: number;
   readonly releaseTag?: string;
@@ -17,7 +16,7 @@ export interface DataGithubReleaseConfig extends TerraformMetaArguments {
 
 // Resource
 
-export class DataGithubRelease extends TerraformDataSource {
+export class DataGithubRelease extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -192,11 +191,11 @@ export class DataGithubRelease extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      owner: this._owner,
-      release_id: this._releaseId,
-      release_tag: this._releaseTag,
-      repository: this._repository,
-      retrieve_by: this._retrieveBy,
+      owner: cdktf.stringToTerraform(this._owner),
+      release_id: cdktf.numberToTerraform(this._releaseId),
+      release_tag: cdktf.stringToTerraform(this._releaseTag),
+      repository: cdktf.stringToTerraform(this._repository),
+      retrieve_by: cdktf.stringToTerraform(this._retrieveBy),
     };
   }
 }

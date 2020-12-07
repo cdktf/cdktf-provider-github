@@ -2,19 +2,18 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformResource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ProjectColumnConfig extends TerraformMetaArguments {
+export interface ProjectColumnConfig extends cdktf.TerraformMetaArguments {
   readonly name: string;
   readonly projectId: string;
 }
 
 // Resource
 
-export class ProjectColumn extends TerraformResource {
+export class ProjectColumn extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
@@ -81,8 +80,8 @@ export class ProjectColumn extends TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: this._name,
-      project_id: this._projectId,
+      name: cdktf.stringToTerraform(this._name),
+      project_id: cdktf.stringToTerraform(this._projectId),
     };
   }
 }

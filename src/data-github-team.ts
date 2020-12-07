@@ -2,18 +2,17 @@
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import { TerraformDataSource } from 'cdktf';
-import { TerraformMetaArguments } from 'cdktf';
+import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubTeamConfig extends TerraformMetaArguments {
+export interface DataGithubTeamConfig extends cdktf.TerraformMetaArguments {
   readonly slug: string;
 }
 
 // Resource
 
-export class DataGithubTeam extends TerraformDataSource {
+export class DataGithubTeam extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
@@ -91,7 +90,7 @@ export class DataGithubTeam extends TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      slug: this._slug,
+      slug: cdktf.stringToTerraform(this._slug),
     };
   }
 }
