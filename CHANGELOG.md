@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.33](https://github.com/terraform-cdk-providers/cdktf-provider-github/compare/v0.1.32...v0.1.33) (2021-03-18)
+
 ### [0.1.32](https://github.com/terraform-cdk-providers/cdktf-provider-github/compare/v0.1.31...v0.1.32) (2021-03-18)
 
 ### [0.1.31](https://github.com/terraform-cdk-providers/cdktf-provider-github/compare/v0.1.30...v0.1.31) (2021-03-17)
