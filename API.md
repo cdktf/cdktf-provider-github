@@ -582,12 +582,12 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubCollaboratorsCollaborator(terraformResource: ITerraformResource, terraformAttribute: string, index: string)
+new DataGithubCollaboratorsCollaborator(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
 ```
 
 * **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
 * **terraformAttribute** (<code>string</code>)  *No description*
-* **index** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
 
 
 
@@ -799,12 +799,12 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubOrganizationTeamSyncGroupsGroups(terraformResource: ITerraformResource, terraformAttribute: string, index: string)
+new DataGithubOrganizationTeamSyncGroupsGroups(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
 ```
 
 * **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
 * **terraformAttribute** (<code>string</code>)  *No description*
-* **index** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
 
 
 
