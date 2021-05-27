@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/github_provider.html
+// https://www.terraform.io/docs/providers/github
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,29 +7,64 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface GithubProviderConfig {
-  /** Authenticate without a token.  When `anonymous`is true, the provider will not be able to access resourcesthat require authentication. */
+  /**
+  * Authenticate without a token.  When `anonymous`is true, the provider will not be able to access resourcesthat require authentication.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#anonymous GithubProvider#anonymous}
+  */
   readonly anonymous?: boolean;
-  /** The GitHub Base API URL */
+  /**
+  * The GitHub Base API URL
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#base_url GithubProvider#base_url}
+  */
   readonly baseUrl?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#individual GithubProvider#individual}
+  */
   readonly individual?: boolean;
-  /** Whether server should be accessed without verifying the TLS certificate. */
+  /**
+  * Whether server should be accessed without verifying the TLS certificate.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#insecure GithubProvider#insecure}
+  */
   readonly insecure?: boolean;
-  /** The GitHub organization name to manage. If `individual` is false, `organization` is required. */
+  /**
+  * The GitHub organization name to manage. If `individual` is false, `organization` is required.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#organization GithubProvider#organization}
+  */
   readonly organization?: string;
-  /** The OAuth token used to connect to GitHub. If `anonymous` is false, `token` is required. */
+  /**
+  * The OAuth token used to connect to GitHub. If `anonymous` is false, `token` is required.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#token GithubProvider#token}
+  */
   readonly token?: string;
-  /** Alias name */
+  /**
+  * Alias name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#alias GithubProvider#alias}
+  */
   readonly alias?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github github}
+*/
 export class GithubProvider extends cdktf.TerraformProvider {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github github} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options GithubProviderConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: GithubProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'github',

@@ -7,13 +7,29 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface TeamSyncGroupMappingConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping.html#team_slug TeamSyncGroupMapping#team_slug}
+  */
   readonly teamSlug: string;
-  /** group block */
+  /**
+  * group block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping.html#group TeamSyncGroupMapping#group}
+  */
   readonly group?: TeamSyncGroupMappingGroup[];
 }
 export interface TeamSyncGroupMappingGroup {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping.html#group_description TeamSyncGroupMapping#group_description}
+  */
   readonly groupDescription: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping.html#group_id TeamSyncGroupMapping#group_id}
+  */
   readonly groupId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping.html#group_name TeamSyncGroupMapping#group_name}
+  */
   readonly groupName: string;
 }
 
@@ -27,14 +43,22 @@ function teamSyncGroupMappingGroupToTerraform(struct?: TeamSyncGroupMappingGroup
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping.html github_team_sync_group_mapping}
+*/
 export class TeamSyncGroupMapping extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping.html github_team_sync_group_mapping} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options TeamSyncGroupMappingConfig
+  */
   public constructor(scope: Construct, id: string, config: TeamSyncGroupMappingConfig) {
     super(scope, id, {
       terraformResourceType: 'github_team_sync_group_mapping',

@@ -7,30 +7,66 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
-  /** The branch name, defaults to "master" */
+  /**
+  * The branch name, defaults to "master"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#branch RepositoryFile#branch}
+  */
   readonly branch?: string;
-  /** The commit author name, defaults to the authenticated user's name */
+  /**
+  * The commit author name, defaults to the authenticated user's name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#commit_author RepositoryFile#commit_author}
+  */
   readonly commitAuthor?: string;
-  /** The commit author email address, defaults to the authenticated user's email address */
+  /**
+  * The commit author email address, defaults to the authenticated user's email address
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#commit_email RepositoryFile#commit_email}
+  */
   readonly commitEmail?: string;
-  /** The commit message when creating or updating the file */
+  /**
+  * The commit message when creating or updating the file
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#commit_message RepositoryFile#commit_message}
+  */
   readonly commitMessage?: string;
-  /** The file's content */
+  /**
+  * The file's content
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#content RepositoryFile#content}
+  */
   readonly content: string;
-  /** The file path to manage */
+  /**
+  * The file path to manage
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#file RepositoryFile#file}
+  */
   readonly file: string;
-  /** The repository name */
+  /**
+  * The repository name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#repository RepositoryFile#repository}
+  */
   readonly repository: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file.html github_repository_file}
+*/
 export class RepositoryFile extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_file.html github_repository_file} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options RepositoryFileConfig
+  */
   public constructor(scope: Construct, id: string, config: RepositoryFileConfig) {
     super(scope, id, {
       terraformResourceType: 'github_repository_file',

@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership.html#role TeamMembership#role}
+  */
   readonly role?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership.html#team_id TeamMembership#team_id}
+  */
   readonly teamId: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership.html#username TeamMembership#username}
+  */
   readonly username: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership.html github_team_membership}
+*/
 export class TeamMembership extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team_membership.html github_team_membership} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options TeamMembershipConfig
+  */
   public constructor(scope: Construct, id: string, config: TeamMembershipConfig) {
     super(scope, id, {
       terraformResourceType: 'github_team_membership',

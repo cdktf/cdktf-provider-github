@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ProjectColumnConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column.html#name ProjectColumn#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column.html#project_id ProjectColumn#project_id}
+  */
   readonly projectId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column.html github_project_column}
+*/
 export class ProjectColumn extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/project_column.html github_project_column} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ProjectColumnConfig
+  */
   public constructor(scope: Construct, id: string, config: ProjectColumnConfig) {
     super(scope, id, {
       terraformResourceType: 'github_project_column',

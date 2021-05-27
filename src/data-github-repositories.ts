@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/data_github_repositories.html
+// https://www.terraform.io/docs/providers/github/d/repositories.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataGithubRepositoriesConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories.html#query DataGithubRepositories#query}
+  */
   readonly query: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories.html#sort DataGithubRepositories#sort}
+  */
   readonly sort?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories.html github_repositories}
+*/
 export class DataGithubRepositories extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repositories.html github_repositories} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGithubRepositoriesConfig
+  */
   public constructor(scope: Construct, id: string, config: DataGithubRepositoriesConfig) {
     super(scope, id, {
       terraformResourceType: 'github_repositories',

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/data_github_branch.html
+// https://www.terraform.io/docs/providers/github/d/branch.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataGithubBranchConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/branch.html#branch DataGithubBranch#branch}
+  */
   readonly branch: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/branch.html#repository DataGithubBranch#repository}
+  */
   readonly repository: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/branch.html github_branch}
+*/
 export class DataGithubBranch extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/branch.html github_branch} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGithubBranchConfig
+  */
   public constructor(scope: Construct, id: string, config: DataGithubBranchConfig) {
     super(scope, id, {
       terraformResourceType: 'github_branch',

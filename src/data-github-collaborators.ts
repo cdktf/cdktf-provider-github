@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/data_github_collaborators.html
+// https://www.terraform.io/docs/providers/github/d/collaborators.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,8 +7,17 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataGithubCollaboratorsConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators.html#affiliation DataGithubCollaborators#affiliation}
+  */
   readonly affiliation?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators.html#owner DataGithubCollaborators#owner}
+  */
   readonly owner: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators.html#repository DataGithubCollaborators#repository}
+  */
   readonly repository: string;
 }
 export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedList {
@@ -94,14 +103,22 @@ export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedLi
   }
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators.html github_collaborators}
+*/
 export class DataGithubCollaborators extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/collaborators.html github_collaborators} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGithubCollaboratorsConfig
+  */
   public constructor(scope: Construct, id: string, config: DataGithubCollaboratorsConfig) {
     super(scope, id, {
       terraformResourceType: 'github_collaborators',

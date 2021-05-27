@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/data_github_membership.html
+// https://www.terraform.io/docs/providers/github/d/membership.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataGithubMembershipConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership.html#username DataGithubMembership#username}
+  */
   readonly username: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/membership.html github_membership}
+*/
 export class DataGithubMembership extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/membership.html github_membership} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGithubMembershipConfig
+  */
   public constructor(scope: Construct, id: string, config: DataGithubMembershipConfig) {
     super(scope, id, {
       terraformResourceType: 'github_membership',

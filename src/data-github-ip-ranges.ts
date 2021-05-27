@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/data_github_ip_ranges.html
+// https://www.terraform.io/docs/providers/github/d/ip_ranges.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -9,14 +9,22 @@ import * as cdktf from 'cdktf';
 export interface DataGithubIpRangesConfig extends cdktf.TerraformMetaArguments {
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges.html github_ip_ranges}
+*/
 export class DataGithubIpRanges extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/ip_ranges.html github_ip_ranges} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGithubIpRangesConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: DataGithubIpRangesConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'github_ip_ranges',

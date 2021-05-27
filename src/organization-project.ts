@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OrganizationProjectConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project.html#body OrganizationProject#body}
+  */
   readonly body?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project.html#name OrganizationProject#name}
+  */
   readonly name: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_project.html github_organization_project}
+*/
 export class OrganizationProject extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_project.html github_organization_project} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OrganizationProjectConfig
+  */
   public constructor(scope: Construct, id: string, config: OrganizationProjectConfig) {
     super(scope, id, {
       terraformResourceType: 'github_organization_project',

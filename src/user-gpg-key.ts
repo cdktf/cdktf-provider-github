@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface UserGpgKeyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key.html#armored_public_key UserGpgKey#armored_public_key}
+  */
   readonly armoredPublicKey: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key.html github_user_gpg_key}
+*/
 export class UserGpgKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key.html github_user_gpg_key} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options UserGpgKeyConfig
+  */
   public constructor(scope: Construct, id: string, config: UserGpgKeyConfig) {
     super(scope, id, {
       terraformResourceType: 'github_user_gpg_key',

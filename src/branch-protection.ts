@@ -7,23 +7,65 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#branch BranchProtection#branch}
+  */
   readonly branch: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#enforce_admins BranchProtection#enforce_admins}
+  */
   readonly enforceAdmins?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#repository BranchProtection#repository}
+  */
   readonly repository: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_signed_commits BranchProtection#require_signed_commits}
+  */
   readonly requireSignedCommits?: boolean;
-  /** required_pull_request_reviews block */
+  /**
+  * required_pull_request_reviews block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_pull_request_reviews BranchProtection#required_pull_request_reviews}
+  */
   readonly requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[];
-  /** required_status_checks block */
+  /**
+  * required_status_checks block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_status_checks BranchProtection#required_status_checks}
+  */
   readonly requiredStatusChecks?: BranchProtectionRequiredStatusChecks[];
-  /** restrictions block */
+  /**
+  * restrictions block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#restrictions BranchProtection#restrictions}
+  */
   readonly restrictions?: BranchProtectionRestrictions[];
 }
 export interface BranchProtectionRequiredPullRequestReviews {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}
+  */
   readonly dismissStaleReviews?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismissal_teams BranchProtection#dismissal_teams}
+  */
   readonly dismissalTeams?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismissal_users BranchProtection#dismissal_users}
+  */
   readonly dismissalUsers?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#include_admins BranchProtection#include_admins}
+  */
   readonly includeAdmins?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
+  */
   readonly requireCodeOwnerReviews?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_approving_review_count BranchProtection#required_approving_review_count}
+  */
   readonly requiredApprovingReviewCount?: number;
 }
 
@@ -40,8 +82,17 @@ function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchPr
 }
 
 export interface BranchProtectionRequiredStatusChecks {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#contexts BranchProtection#contexts}
+  */
   readonly contexts?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#include_admins BranchProtection#include_admins}
+  */
   readonly includeAdmins?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#strict BranchProtection#strict}
+  */
   readonly strict?: boolean;
 }
 
@@ -55,8 +106,17 @@ function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchProtecti
 }
 
 export interface BranchProtectionRestrictions {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#apps BranchProtection#apps}
+  */
   readonly apps?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#teams BranchProtection#teams}
+  */
   readonly teams?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#users BranchProtection#users}
+  */
   readonly users?: string[];
 }
 
@@ -70,14 +130,22 @@ function branchProtectionRestrictionsToTerraform(struct?: BranchProtectionRestri
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html github_branch_protection}
+*/
 export class BranchProtection extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html github_branch_protection} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options BranchProtectionConfig
+  */
   public constructor(scope: Construct, id: string, config: BranchProtectionConfig) {
     super(scope, id, {
       terraformResourceType: 'github_branch_protection',
