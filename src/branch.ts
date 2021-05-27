@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface BranchConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch.html#branch Branch#branch}
+  */
   readonly branch: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch.html#repository Branch#repository}
+  */
   readonly repository: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch.html#source_branch Branch#source_branch}
+  */
   readonly sourceBranch?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch.html#source_sha Branch#source_sha}
+  */
   readonly sourceSha?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/branch.html github_branch}
+*/
 export class Branch extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/branch.html github_branch} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options BranchConfig
+  */
   public constructor(scope: Construct, id: string, config: BranchConfig) {
     super(scope, id, {
       terraformResourceType: 'github_branch',

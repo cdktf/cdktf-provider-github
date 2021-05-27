@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#plaintext_value ActionsSecret#plaintext_value}
+  */
   readonly plaintextValue: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#repository ActionsSecret#repository}
+  */
   readonly repository: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#secret_name ActionsSecret#secret_name}
+  */
   readonly secretName: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret}
+*/
 export class ActionsSecret extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ActionsSecretConfig
+  */
   public constructor(scope: Construct, id: string, config: ActionsSecretConfig) {
     super(scope, id, {
       terraformResourceType: 'github_actions_secret',

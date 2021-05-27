@@ -7,20 +7,40 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface IssueLabelConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label.html#color IssueLabel#color}
+  */
   readonly color: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label.html#description IssueLabel#description}
+  */
   readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label.html#name IssueLabel#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label.html#repository IssueLabel#repository}
+  */
   readonly repository: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label.html github_issue_label}
+*/
 export class IssueLabel extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/issue_label.html github_issue_label} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options IssueLabelConfig
+  */
   public constructor(scope: Construct, id: string, config: IssueLabelConfig) {
     super(scope, id, {
       terraformResourceType: 'github_issue_label',

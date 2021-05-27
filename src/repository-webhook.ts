@@ -7,17 +7,45 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface RepositoryWebhookConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#active RepositoryWebhook#active}
+  */
   readonly active?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#events RepositoryWebhook#events}
+  */
   readonly events: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#name RepositoryWebhook#name}
+  */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#repository RepositoryWebhook#repository}
+  */
   readonly repository: string;
-  /** configuration block */
+  /**
+  * configuration block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#configuration RepositoryWebhook#configuration}
+  */
   readonly configuration?: RepositoryWebhookConfiguration[];
 }
 export interface RepositoryWebhookConfiguration {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#content_type RepositoryWebhook#content_type}
+  */
   readonly contentType?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#insecure_ssl RepositoryWebhook#insecure_ssl}
+  */
   readonly insecureSsl?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#secret RepositoryWebhook#secret}
+  */
   readonly secret?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#url RepositoryWebhook#url}
+  */
   readonly url: string;
 }
 
@@ -32,14 +60,22 @@ function repositoryWebhookConfigurationToTerraform(struct?: RepositoryWebhookCon
 }
 
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html github_repository_webhook}
+*/
 export class RepositoryWebhook extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html github_repository_webhook} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options RepositoryWebhookConfig
+  */
   public constructor(scope: Construct, id: string, config: RepositoryWebhookConfig) {
     super(scope, id, {
       terraformResourceType: 'github_repository_webhook',

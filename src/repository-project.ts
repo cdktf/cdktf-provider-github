@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project.html#body RepositoryProject#body}
+  */
   readonly body?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project.html#name RepositoryProject#name}
+  */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project.html#repository RepositoryProject#repository}
+  */
   readonly repository: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_project.html github_repository_project}
+*/
 export class RepositoryProject extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_project.html github_repository_project} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options RepositoryProjectConfig
+  */
   public constructor(scope: Construct, id: string, config: RepositoryProjectConfig) {
     super(scope, id, {
       terraformResourceType: 'github_repository_project',

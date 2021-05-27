@@ -7,18 +7,32 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface UserSshKeyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key.html#key UserSshKey#key}
+  */
   readonly key: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key.html#title UserSshKey#title}
+  */
   readonly title: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key.html github_user_ssh_key}
+*/
 export class UserSshKey extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key.html github_user_ssh_key} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options UserSshKeyConfig
+  */
   public constructor(scope: Construct, id: string, config: UserSshKeyConfig) {
     super(scope, id, {
       terraformResourceType: 'github_user_ssh_key',

@@ -7,17 +7,28 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface OrganizationBlockConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block.html#username OrganizationBlock#username}
+  */
   readonly username: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block.html github_organization_block}
+*/
 export class OrganizationBlock extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_block.html github_organization_block} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options OrganizationBlockConfig
+  */
   public constructor(scope: Construct, id: string, config: OrganizationBlockConfig) {
     super(scope, id, {
       terraformResourceType: 'github_organization_block',

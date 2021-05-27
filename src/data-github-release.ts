@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/data_github_release.html
+// https://www.terraform.io/docs/providers/github/d/release.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,21 +7,44 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataGithubReleaseConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#owner DataGithubRelease#owner}
+  */
   readonly owner: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#release_id DataGithubRelease#release_id}
+  */
   readonly releaseId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#release_tag DataGithubRelease#release_tag}
+  */
   readonly releaseTag?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#repository DataGithubRelease#repository}
+  */
   readonly repository: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#retrieve_by DataGithubRelease#retrieve_by}
+  */
   readonly retrieveBy: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/release.html github_release}
+*/
 export class DataGithubRelease extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/release.html github_release} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataGithubReleaseConfig
+  */
   public constructor(scope: Construct, id: string, config: DataGithubReleaseConfig) {
     super(scope, id, {
       terraformResourceType: 'github_release',

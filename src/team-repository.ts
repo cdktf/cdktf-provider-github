@@ -7,19 +7,36 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface TeamRepositoryConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository.html#permission TeamRepository#permission}
+  */
   readonly permission?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository.html#repository TeamRepository#repository}
+  */
   readonly repository: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository.html#team_id TeamRepository#team_id}
+  */
   readonly teamId: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository.html github_team_repository}
+*/
 export class TeamRepository extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team_repository.html github_team_repository} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options TeamRepositoryConfig
+  */
   public constructor(scope: Construct, id: string, config: TeamRepositoryConfig) {
     super(scope, id, {
       terraformResourceType: 'github_team_repository',
