@@ -8,35 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface GithubProviderConfig {
   /**
-  * Authenticate without a token.  When `anonymous`is true, the provider will not be able to access resourcesthat require authentication.
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#anonymous GithubProvider#anonymous}
-  */
-  readonly anonymous?: boolean;
-  /**
   * The GitHub Base API URL
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#base_url GithubProvider#base_url}
   */
   readonly baseUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#individual GithubProvider#individual}
-  */
-  readonly individual?: boolean;
-  /**
-  * Whether server should be accessed without verifying the TLS certificate.
+  * Enable `insecure` mode for testing purposes
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#insecure GithubProvider#insecure}
   */
   readonly insecure?: boolean;
   /**
-  * The GitHub organization name to manage. If `individual` is false, `organization` is required.
+  * The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#organization GithubProvider#organization}
   */
   readonly organization?: string;
   /**
-  * The OAuth token used to connect to GitHub. If `anonymous` is false, `token` is required.
+  * The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#owner GithubProvider#owner}
+  */
+  readonly owner?: string;
+  /**
+  * The OAuth token used to connect to GitHub. Anonymous mode is enabled if both `token` and `app_auth` are not set.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#token GithubProvider#token}
   */
@@ -47,7 +43,43 @@ export interface GithubProviderConfig {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#alias GithubProvider#alias}
   */
   readonly alias?: string;
+  /**
+  * app_auth block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#app_auth GithubProvider#app_auth}
+  */
+  readonly appAuth?: GithubProviderAppAuth[];
 }
+export interface GithubProviderAppAuth {
+  /**
+  * The GitHub App ID.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#id GithubProvider#id}
+  */
+  readonly id: string;
+  /**
+  * The GitHub App installation instance ID.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#installation_id GithubProvider#installation_id}
+  */
+  readonly installationId: string;
+  /**
+  * The GitHub App PEM file contents.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#pem_file GithubProvider#pem_file}
+  */
+  readonly pemFile: string;
+}
+
+function githubProviderAppAuthToTerraform(struct?: GithubProviderAppAuth): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    id: cdktf.stringToTerraform(struct!.id),
+    installation_id: cdktf.stringToTerraform(struct!.installationId),
+    pem_file: cdktf.stringToTerraform(struct!.pemFile),
+  }
+}
+
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github github}
@@ -70,38 +102,22 @@ export class GithubProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'github',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersionConstraint: '~> 2.0'
+        providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'github'
     });
-    this._anonymous = config.anonymous;
     this._baseUrl = config.baseUrl;
-    this._individual = config.individual;
     this._insecure = config.insecure;
     this._organization = config.organization;
+    this._owner = config.owner;
     this._token = config.token;
     this._alias = config.alias;
+    this._appAuth = config.appAuth;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // anonymous - computed: false, optional: true, required: false
-  private _anonymous?: boolean;
-  public get anonymous() {
-    return this._anonymous;
-  }
-  public set anonymous(value: boolean  | undefined) {
-    this._anonymous = value;
-  }
-  public resetAnonymous() {
-    this._anonymous = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get anonymousInput() {
-    return this._anonymous
-  }
 
   // base_url - computed: false, optional: true, required: false
   private _baseUrl?: string;
@@ -117,22 +133,6 @@ export class GithubProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get baseUrlInput() {
     return this._baseUrl
-  }
-
-  // individual - computed: false, optional: true, required: false
-  private _individual?: boolean;
-  public get individual() {
-    return this._individual;
-  }
-  public set individual(value: boolean  | undefined) {
-    this._individual = value;
-  }
-  public resetIndividual() {
-    this._individual = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get individualInput() {
-    return this._individual
   }
 
   // insecure - computed: false, optional: true, required: false
@@ -167,6 +167,22 @@ export class GithubProvider extends cdktf.TerraformProvider {
     return this._organization
   }
 
+  // owner - computed: false, optional: true, required: false
+  private _owner?: string;
+  public get owner() {
+    return this._owner;
+  }
+  public set owner(value: string  | undefined) {
+    this._owner = value;
+  }
+  public resetOwner() {
+    this._owner = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ownerInput() {
+    return this._owner
+  }
+
   // token - computed: false, optional: true, required: false
   private _token?: string;
   public get token() {
@@ -199,19 +215,35 @@ export class GithubProvider extends cdktf.TerraformProvider {
     return this._alias
   }
 
+  // app_auth - computed: false, optional: true, required: false
+  private _appAuth?: GithubProviderAppAuth[];
+  public get appAuth() {
+    return this._appAuth;
+  }
+  public set appAuth(value: GithubProviderAppAuth[]  | undefined) {
+    this._appAuth = value;
+  }
+  public resetAppAuth() {
+    this._appAuth = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appAuthInput() {
+    return this._appAuth
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      anonymous: cdktf.booleanToTerraform(this._anonymous),
       base_url: cdktf.stringToTerraform(this._baseUrl),
-      individual: cdktf.booleanToTerraform(this._individual),
       insecure: cdktf.booleanToTerraform(this._insecure),
       organization: cdktf.stringToTerraform(this._organization),
+      owner: cdktf.stringToTerraform(this._owner),
       token: cdktf.stringToTerraform(this._token),
       alias: cdktf.stringToTerraform(this._alias),
+      app_auth: cdktf.listMapper(githubProviderAppAuthToTerraform)(this._appAuth),
     };
   }
 }

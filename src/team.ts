@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#create_default_maintainer Team#create_default_maintainer}
+  */
+  readonly createDefaultMaintainer?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#description Team#description}
   */
   readonly description?: string;
@@ -56,6 +60,7 @@ export class Team extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._createDefaultMaintainer = config.createDefaultMaintainer;
     this._description = config.description;
     this._ldapDn = config.ldapDn;
     this._name = config.name;
@@ -66,6 +71,22 @@ export class Team extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // create_default_maintainer - computed: false, optional: true, required: false
+  private _createDefaultMaintainer?: boolean;
+  public get createDefaultMaintainer() {
+    return this.getBooleanAttribute('create_default_maintainer');
+  }
+  public set createDefaultMaintainer(value: boolean ) {
+    this._createDefaultMaintainer = value;
+  }
+  public resetCreateDefaultMaintainer() {
+    this._createDefaultMaintainer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get createDefaultMaintainerInput() {
+    return this._createDefaultMaintainer
+  }
 
   // description - computed: false, optional: true, required: false
   private _description?: string;
@@ -107,6 +128,11 @@ export class Team extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get ldapDnInput() {
     return this._ldapDn
+  }
+
+  // members_count - computed: true, optional: false, required: false
+  public get membersCount() {
+    return this.getNumberAttribute('members_count');
   }
 
   // name - computed: false, optional: false, required: true
@@ -170,6 +196,7 @@ export class Team extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      create_default_maintainer: cdktf.booleanToTerraform(this._createDefaultMaintainer),
       description: cdktf.stringToTerraform(this._description),
       ldap_dn: cdktf.stringToTerraform(this._ldapDn),
       name: cdktf.stringToTerraform(this._name),

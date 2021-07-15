@@ -20,6 +20,10 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowSquashMerge?: boolean;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#archive_on_destroy Repository#archive_on_destroy}
+  */
+  readonly archiveOnDestroy?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#archived Repository#archived}
   */
   readonly archived?: boolean;
@@ -86,12 +90,66 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly topics?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#visibility Repository#visibility}
+  */
+  readonly visibility?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#vulnerability_alerts Repository#vulnerability_alerts}
+  */
+  readonly vulnerabilityAlerts?: boolean;
+  /**
+  * pages block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#pages Repository#pages}
+  */
+  readonly pages?: RepositoryPages[];
+  /**
   * template block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#template Repository#template}
   */
   readonly template?: RepositoryTemplate[];
 }
+export interface RepositoryPagesSource {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#branch Repository#branch}
+  */
+  readonly branch: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#path Repository#path}
+  */
+  readonly path?: string;
+}
+
+function repositoryPagesSourceToTerraform(struct?: RepositoryPagesSource): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    branch: cdktf.stringToTerraform(struct!.branch),
+    path: cdktf.stringToTerraform(struct!.path),
+  }
+}
+
+export interface RepositoryPages {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#cname Repository#cname}
+  */
+  readonly cname?: string;
+  /**
+  * source block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#source Repository#source}
+  */
+  readonly source: RepositoryPagesSource[];
+}
+
+function repositoryPagesToTerraform(struct?: RepositoryPages): any {
+  if (!cdktf.canInspect(struct)) { return struct; }
+  return {
+    cname: cdktf.stringToTerraform(struct!.cname),
+    source: cdktf.listMapper(repositoryPagesSourceToTerraform)(struct!.source),
+  }
+}
+
 export interface RepositoryTemplate {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#owner Repository#owner}
@@ -142,6 +200,7 @@ export class Repository extends cdktf.TerraformResource {
     this._allowMergeCommit = config.allowMergeCommit;
     this._allowRebaseMerge = config.allowRebaseMerge;
     this._allowSquashMerge = config.allowSquashMerge;
+    this._archiveOnDestroy = config.archiveOnDestroy;
     this._archived = config.archived;
     this._autoInit = config.autoInit;
     this._defaultBranch = config.defaultBranch;
@@ -158,6 +217,9 @@ export class Repository extends cdktf.TerraformResource {
     this._name = config.name;
     this._private = config.private;
     this._topics = config.topics;
+    this._visibility = config.visibility;
+    this._vulnerabilityAlerts = config.vulnerabilityAlerts;
+    this._pages = config.pages;
     this._template = config.template;
   }
 
@@ -211,6 +273,22 @@ export class Repository extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowSquashMergeInput() {
     return this._allowSquashMerge
+  }
+
+  // archive_on_destroy - computed: false, optional: true, required: false
+  private _archiveOnDestroy?: boolean;
+  public get archiveOnDestroy() {
+    return this.getBooleanAttribute('archive_on_destroy');
+  }
+  public set archiveOnDestroy(value: boolean ) {
+    this._archiveOnDestroy = value;
+  }
+  public resetArchiveOnDestroy() {
+    this._archiveOnDestroy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get archiveOnDestroyInput() {
+    return this._archiveOnDestroy
   }
 
   // archived - computed: false, optional: true, required: false
@@ -469,12 +547,12 @@ export class Repository extends cdktf.TerraformResource {
     return this.getStringAttribute('node_id');
   }
 
-  // private - computed: false, optional: true, required: false
+  // private - computed: true, optional: true, required: false
   private _private?: boolean;
   public get private() {
     return this.getBooleanAttribute('private');
   }
-  public set private(value: boolean ) {
+  public set private(value: boolean) {
     this._private = value;
   }
   public resetPrivate() {
@@ -483,6 +561,11 @@ export class Repository extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get privateInput() {
     return this._private
+  }
+
+  // repo_id - computed: true, optional: false, required: false
+  public get repoId() {
+    return this.getNumberAttribute('repo_id');
   }
 
   // ssh_clone_url - computed: true, optional: false, required: false
@@ -511,6 +594,54 @@ export class Repository extends cdktf.TerraformResource {
     return this._topics
   }
 
+  // visibility - computed: true, optional: true, required: false
+  private _visibility?: string;
+  public get visibility() {
+    return this.getStringAttribute('visibility');
+  }
+  public set visibility(value: string) {
+    this._visibility = value;
+  }
+  public resetVisibility() {
+    this._visibility = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get visibilityInput() {
+    return this._visibility
+  }
+
+  // vulnerability_alerts - computed: false, optional: true, required: false
+  private _vulnerabilityAlerts?: boolean;
+  public get vulnerabilityAlerts() {
+    return this.getBooleanAttribute('vulnerability_alerts');
+  }
+  public set vulnerabilityAlerts(value: boolean ) {
+    this._vulnerabilityAlerts = value;
+  }
+  public resetVulnerabilityAlerts() {
+    this._vulnerabilityAlerts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get vulnerabilityAlertsInput() {
+    return this._vulnerabilityAlerts
+  }
+
+  // pages - computed: false, optional: true, required: false
+  private _pages?: RepositoryPages[];
+  public get pages() {
+    return this.interpolationForAttribute('pages') as any;
+  }
+  public set pages(value: RepositoryPages[] ) {
+    this._pages = value;
+  }
+  public resetPages() {
+    this._pages = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pagesInput() {
+    return this._pages
+  }
+
   // template - computed: false, optional: true, required: false
   private _template?: RepositoryTemplate[];
   public get template() {
@@ -536,6 +667,7 @@ export class Repository extends cdktf.TerraformResource {
       allow_merge_commit: cdktf.booleanToTerraform(this._allowMergeCommit),
       allow_rebase_merge: cdktf.booleanToTerraform(this._allowRebaseMerge),
       allow_squash_merge: cdktf.booleanToTerraform(this._allowSquashMerge),
+      archive_on_destroy: cdktf.booleanToTerraform(this._archiveOnDestroy),
       archived: cdktf.booleanToTerraform(this._archived),
       auto_init: cdktf.booleanToTerraform(this._autoInit),
       default_branch: cdktf.stringToTerraform(this._defaultBranch),
@@ -552,6 +684,9 @@ export class Repository extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       private: cdktf.booleanToTerraform(this._private),
       topics: cdktf.listMapper(cdktf.stringToTerraform)(this._topics),
+      visibility: cdktf.stringToTerraform(this._visibility),
+      vulnerability_alerts: cdktf.booleanToTerraform(this._vulnerabilityAlerts),
+      pages: cdktf.listMapper(repositoryPagesToTerraform)(this._pages),
       template: cdktf.listMapper(repositoryTemplateToTerraform)(this._template),
     };
   }

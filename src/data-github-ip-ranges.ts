@@ -42,6 +42,16 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // actions - computed: true, optional: false, required: false
+  public get actions() {
+    return this.getListAttribute('actions');
+  }
+
+  // dependabot - computed: true, optional: false, required: false
+  public get dependabot() {
+    return this.getListAttribute('dependabot');
+  }
+
   // git - computed: true, optional: false, required: false
   public get git() {
     return this.getListAttribute('git');

@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership.html#organization DataGithubMembership#organization}
+  */
+  readonly organization?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership.html#username DataGithubMembership#username}
   */
   readonly username: string;
@@ -40,6 +44,7 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._organization = config.organization;
     this._username = config.username;
   }
 
@@ -55,6 +60,22 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // organization - computed: false, optional: true, required: false
+  private _organization?: string;
+  public get organization() {
+    return this.getStringAttribute('organization');
+  }
+  public set organization(value: string ) {
+    this._organization = value;
+  }
+  public resetOrganization() {
+    this._organization = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get organizationInput() {
+    return this._organization
   }
 
   // role - computed: true, optional: false, required: false
@@ -81,6 +102,7 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      organization: cdktf.stringToTerraform(this._organization),
       username: cdktf.stringToTerraform(this._username),
     };
   }

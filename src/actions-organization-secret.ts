@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_secret.html
+// https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,44 +6,48 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface ActionsOrganizationSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#encrypted_value ActionsSecret#encrypted_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html#encrypted_value ActionsOrganizationSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#plaintext_value ActionsSecret#plaintext_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html#plaintext_value ActionsOrganizationSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#repository ActionsSecret#repository}
-  */
-  readonly repository: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#secret_name ActionsSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html#secret_name ActionsOrganizationSecret#secret_name}
   */
   readonly secretName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html#selected_repository_ids ActionsOrganizationSecret#selected_repository_ids}
+  */
+  readonly selectedRepositoryIds?: number[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html#visibility ActionsOrganizationSecret#visibility}
+  */
+  readonly visibility: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html github_actions_organization_secret}
 */
-export class ActionsSecret extends cdktf.TerraformResource {
+export class ActionsOrganizationSecret extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html github_actions_organization_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ActionsSecretConfig
+  * @param options ActionsOrganizationSecretConfig
   */
-  public constructor(scope: Construct, id: string, config: ActionsSecretConfig) {
+  public constructor(scope: Construct, id: string, config: ActionsOrganizationSecretConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_actions_secret',
+      terraformResourceType: 'github_actions_organization_secret',
       terraformGeneratorMetadata: {
         providerName: 'github'
       },
@@ -54,8 +58,9 @@ export class ActionsSecret extends cdktf.TerraformResource {
     });
     this._encryptedValue = config.encryptedValue;
     this._plaintextValue = config.plaintextValue;
-    this._repository = config.repository;
     this._secretName = config.secretName;
+    this._selectedRepositoryIds = config.selectedRepositoryIds;
+    this._visibility = config.visibility;
   }
 
   // ==========
@@ -104,19 +109,6 @@ export class ActionsSecret extends cdktf.TerraformResource {
     return this._plaintextValue
   }
 
-  // repository - computed: false, optional: false, required: true
-  private _repository: string;
-  public get repository() {
-    return this.getStringAttribute('repository');
-  }
-  public set repository(value: string) {
-    this._repository = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get repositoryInput() {
-    return this._repository
-  }
-
   // secret_name - computed: false, optional: false, required: true
   private _secretName: string;
   public get secretName() {
@@ -130,9 +122,38 @@ export class ActionsSecret extends cdktf.TerraformResource {
     return this._secretName
   }
 
+  // selected_repository_ids - computed: false, optional: true, required: false
+  private _selectedRepositoryIds?: number[];
+  public get selectedRepositoryIds() {
+    return this.interpolationForAttribute('selected_repository_ids') as any;
+  }
+  public set selectedRepositoryIds(value: number[] ) {
+    this._selectedRepositoryIds = value;
+  }
+  public resetSelectedRepositoryIds() {
+    this._selectedRepositoryIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selectedRepositoryIdsInput() {
+    return this._selectedRepositoryIds
+  }
+
   // updated_at - computed: true, optional: false, required: false
   public get updatedAt() {
     return this.getStringAttribute('updated_at');
+  }
+
+  // visibility - computed: false, optional: false, required: true
+  private _visibility: string;
+  public get visibility() {
+    return this.getStringAttribute('visibility');
+  }
+  public set visibility(value: string) {
+    this._visibility = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get visibilityInput() {
+    return this._visibility
   }
 
   // =========
@@ -143,8 +164,9 @@ export class ActionsSecret extends cdktf.TerraformResource {
     return {
       encrypted_value: cdktf.stringToTerraform(this._encryptedValue),
       plaintext_value: cdktf.stringToTerraform(this._plaintextValue),
-      repository: cdktf.stringToTerraform(this._repository),
       secret_name: cdktf.stringToTerraform(this._secretName),
+      selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._selectedRepositoryIds),
+      visibility: cdktf.stringToTerraform(this._visibility),
     };
   }
 }

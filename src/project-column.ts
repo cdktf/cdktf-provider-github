@@ -52,6 +52,11 @@ export class ProjectColumn extends cdktf.TerraformResource {
   // ATTRIBUTES
   // ==========
 
+  // column_id - computed: true, optional: false, required: false
+  public get columnId() {
+    return this.getNumberAttribute('column_id');
+  }
+
   // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
