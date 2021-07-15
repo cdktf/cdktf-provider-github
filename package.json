@@ -15,7 +15,9 @@
     "build": "npx projen build",
     "test:watch": "npx projen test:watch",
     "test:update": "npx projen test:update",
-    "projen:upgrade": "npx projen projen:upgrade",
+    "upgrade-dependencies": "npx projen upgrade-dependencies",
+    "upgrade-projen": "npx projen upgrade-projen",
+    "default": "npx projen default",
     "watch": "npx projen watch",
     "package": "npx projen package",
     "compat": "npx projen compat",
@@ -33,7 +35,7 @@
     "organization": true
   },
   "devDependencies": {
-    "@cdktf/provider-project": "^0.1.80",
+    "@cdktf/provider-project": "^0.1.104",
     "@types/jest": "^26.0.7",
     "@types/node": "^10.17.0",
     "cdktf": "^0.4",
@@ -46,7 +48,8 @@
     "jsii-diff": "^1.9.0",
     "jsii-docgen": "^1.3.2",
     "jsii-pacmak": "^1.9.0",
-    "projen": "^0.17.59",
+    "npm-check-updates": "^11",
+    "projen": "^0.17.95",
     "standard-version": "^9",
     "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
