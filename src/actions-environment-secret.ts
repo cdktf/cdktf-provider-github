@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_secret.html
+// https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,44 +6,48 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface ActionsEnvironmentSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#encrypted_value ActionsSecret#encrypted_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html#encrypted_value ActionsEnvironmentSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#plaintext_value ActionsSecret#plaintext_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html#environment ActionsEnvironmentSecret#environment}
+  */
+  readonly environment: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html#plaintext_value ActionsEnvironmentSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#repository ActionsSecret#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html#repository ActionsEnvironmentSecret#repository}
   */
   readonly repository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#secret_name ActionsSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html#secret_name ActionsEnvironmentSecret#secret_name}
   */
   readonly secretName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html github_actions_environment_secret}
 */
-export class ActionsSecret extends cdktf.TerraformResource {
+export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html github_actions_environment_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ActionsSecretConfig
+  * @param options ActionsEnvironmentSecretConfig
   */
-  public constructor(scope: Construct, id: string, config: ActionsSecretConfig) {
+  public constructor(scope: Construct, id: string, config: ActionsEnvironmentSecretConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_actions_secret',
+      terraformResourceType: 'github_actions_environment_secret',
       terraformGeneratorMetadata: {
         providerName: 'github'
       },
@@ -53,6 +57,7 @@ export class ActionsSecret extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._encryptedValue = config.encryptedValue;
+    this._environment = config.environment;
     this._plaintextValue = config.plaintextValue;
     this._repository = config.repository;
     this._secretName = config.secretName;
@@ -81,6 +86,19 @@ export class ActionsSecret extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get encryptedValueInput() {
     return this._encryptedValue
+  }
+
+  // environment - computed: false, optional: false, required: true
+  private _environment: string;
+  public get environment() {
+    return this.getStringAttribute('environment');
+  }
+  public set environment(value: string) {
+    this._environment = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get environmentInput() {
+    return this._environment
   }
 
   // id - computed: true, optional: true, required: false
@@ -142,6 +160,7 @@ export class ActionsSecret extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       encrypted_value: cdktf.stringToTerraform(this._encryptedValue),
+      environment: cdktf.stringToTerraform(this._environment),
       plaintext_value: cdktf.stringToTerraform(this._plaintextValue),
       repository: cdktf.stringToTerraform(this._repository),
       secret_name: cdktf.stringToTerraform(this._secretName),

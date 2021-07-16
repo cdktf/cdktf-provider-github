@@ -8,17 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#branch BranchProtection#branch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#allows_deletions BranchProtection#allows_deletions}
   */
-  readonly branch: string;
+  readonly allowsDeletions?: boolean;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#allows_force_pushes BranchProtection#allows_force_pushes}
+  */
+  readonly allowsForcePushes?: boolean;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#enforce_admins BranchProtection#enforce_admins}
   */
   readonly enforceAdmins?: boolean;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#repository BranchProtection#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#pattern BranchProtection#pattern}
   */
-  readonly repository: string;
+  readonly pattern: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#push_restrictions BranchProtection#push_restrictions}
+  */
+  readonly pushRestrictions?: string[];
+  /**
+  * Node ID or name of repository
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#repository_id BranchProtection#repository_id}
+  */
+  readonly repositoryId: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_signed_commits BranchProtection#require_signed_commits}
   */
@@ -35,12 +49,6 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_status_checks BranchProtection#required_status_checks}
   */
   readonly requiredStatusChecks?: BranchProtectionRequiredStatusChecks[];
-  /**
-  * restrictions block
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#restrictions BranchProtection#restrictions}
-  */
-  readonly restrictions?: BranchProtectionRestrictions[];
 }
 export interface BranchProtectionRequiredPullRequestReviews {
   /**
@@ -48,17 +56,9 @@ export interface BranchProtectionRequiredPullRequestReviews {
   */
   readonly dismissStaleReviews?: boolean;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismissal_teams BranchProtection#dismissal_teams}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismissal_restrictions BranchProtection#dismissal_restrictions}
   */
-  readonly dismissalTeams?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismissal_users BranchProtection#dismissal_users}
-  */
-  readonly dismissalUsers?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#include_admins BranchProtection#include_admins}
-  */
-  readonly includeAdmins?: boolean;
+  readonly dismissalRestrictions?: string[];
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
   */
@@ -73,9 +73,7 @@ function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchPr
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     dismiss_stale_reviews: cdktf.booleanToTerraform(struct!.dismissStaleReviews),
-    dismissal_teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalTeams),
-    dismissal_users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalUsers),
-    include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
+    dismissal_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalRestrictions),
     require_code_owner_reviews: cdktf.booleanToTerraform(struct!.requireCodeOwnerReviews),
     required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
   }
@@ -87,10 +85,6 @@ export interface BranchProtectionRequiredStatusChecks {
   */
   readonly contexts?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#include_admins BranchProtection#include_admins}
-  */
-  readonly includeAdmins?: boolean;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#strict BranchProtection#strict}
   */
   readonly strict?: boolean;
@@ -100,32 +94,7 @@ function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchProtecti
   if (!cdktf.canInspect(struct)) { return struct; }
   return {
     contexts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contexts),
-    include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
     strict: cdktf.booleanToTerraform(struct!.strict),
-  }
-}
-
-export interface BranchProtectionRestrictions {
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#apps BranchProtection#apps}
-  */
-  readonly apps?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#teams BranchProtection#teams}
-  */
-  readonly teams?: string[];
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#users BranchProtection#users}
-  */
-  readonly users?: string[];
-}
-
-function branchProtectionRestrictionsToTerraform(struct?: BranchProtectionRestrictions): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
-  return {
-    apps: cdktf.listMapper(cdktf.stringToTerraform)(struct!.apps),
-    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
-    users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.users),
   }
 }
 
@@ -157,30 +126,51 @@ export class BranchProtection extends cdktf.TerraformResource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._branch = config.branch;
+    this._allowsDeletions = config.allowsDeletions;
+    this._allowsForcePushes = config.allowsForcePushes;
     this._enforceAdmins = config.enforceAdmins;
-    this._repository = config.repository;
+    this._pattern = config.pattern;
+    this._pushRestrictions = config.pushRestrictions;
+    this._repositoryId = config.repositoryId;
     this._requireSignedCommits = config.requireSignedCommits;
     this._requiredPullRequestReviews = config.requiredPullRequestReviews;
     this._requiredStatusChecks = config.requiredStatusChecks;
-    this._restrictions = config.restrictions;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // branch - computed: false, optional: false, required: true
-  private _branch: string;
-  public get branch() {
-    return this.getStringAttribute('branch');
+  // allows_deletions - computed: false, optional: true, required: false
+  private _allowsDeletions?: boolean;
+  public get allowsDeletions() {
+    return this.getBooleanAttribute('allows_deletions');
   }
-  public set branch(value: string) {
-    this._branch = value;
+  public set allowsDeletions(value: boolean ) {
+    this._allowsDeletions = value;
+  }
+  public resetAllowsDeletions() {
+    this._allowsDeletions = undefined;
   }
   // Temporarily expose input value. Use with caution.
-  public get branchInput() {
-    return this._branch
+  public get allowsDeletionsInput() {
+    return this._allowsDeletions
+  }
+
+  // allows_force_pushes - computed: false, optional: true, required: false
+  private _allowsForcePushes?: boolean;
+  public get allowsForcePushes() {
+    return this.getBooleanAttribute('allows_force_pushes');
+  }
+  public set allowsForcePushes(value: boolean ) {
+    this._allowsForcePushes = value;
+  }
+  public resetAllowsForcePushes() {
+    this._allowsForcePushes = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowsForcePushesInput() {
+    return this._allowsForcePushes
   }
 
   // enforce_admins - computed: false, optional: true, required: false
@@ -199,27 +189,51 @@ export class BranchProtection extends cdktf.TerraformResource {
     return this._enforceAdmins
   }
 
-  // etag - computed: true, optional: false, required: false
-  public get etag() {
-    return this.getStringAttribute('etag');
-  }
-
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
   }
 
-  // repository - computed: false, optional: false, required: true
-  private _repository: string;
-  public get repository() {
-    return this.getStringAttribute('repository');
+  // pattern - computed: false, optional: false, required: true
+  private _pattern: string;
+  public get pattern() {
+    return this.getStringAttribute('pattern');
   }
-  public set repository(value: string) {
-    this._repository = value;
+  public set pattern(value: string) {
+    this._pattern = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get repositoryInput() {
-    return this._repository
+  public get patternInput() {
+    return this._pattern
+  }
+
+  // push_restrictions - computed: false, optional: true, required: false
+  private _pushRestrictions?: string[];
+  public get pushRestrictions() {
+    return this.getListAttribute('push_restrictions');
+  }
+  public set pushRestrictions(value: string[] ) {
+    this._pushRestrictions = value;
+  }
+  public resetPushRestrictions() {
+    this._pushRestrictions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pushRestrictionsInput() {
+    return this._pushRestrictions
+  }
+
+  // repository_id - computed: false, optional: false, required: true
+  private _repositoryId: string;
+  public get repositoryId() {
+    return this.getStringAttribute('repository_id');
+  }
+  public set repositoryId(value: string) {
+    this._repositoryId = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryIdInput() {
+    return this._repositoryId
   }
 
   // require_signed_commits - computed: false, optional: true, required: false
@@ -270,35 +284,21 @@ export class BranchProtection extends cdktf.TerraformResource {
     return this._requiredStatusChecks
   }
 
-  // restrictions - computed: false, optional: true, required: false
-  private _restrictions?: BranchProtectionRestrictions[];
-  public get restrictions() {
-    return this.interpolationForAttribute('restrictions') as any;
-  }
-  public set restrictions(value: BranchProtectionRestrictions[] ) {
-    this._restrictions = value;
-  }
-  public resetRestrictions() {
-    this._restrictions = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get restrictionsInput() {
-    return this._restrictions
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch: cdktf.stringToTerraform(this._branch),
+      allows_deletions: cdktf.booleanToTerraform(this._allowsDeletions),
+      allows_force_pushes: cdktf.booleanToTerraform(this._allowsForcePushes),
       enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
-      repository: cdktf.stringToTerraform(this._repository),
+      pattern: cdktf.stringToTerraform(this._pattern),
+      push_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(this._pushRestrictions),
+      repository_id: cdktf.stringToTerraform(this._repositoryId),
       require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),
       required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform)(this._requiredPullRequestReviews),
       required_status_checks: cdktf.listMapper(branchProtectionRequiredStatusChecksToTerraform)(this._requiredStatusChecks),
-      restrictions: cdktf.listMapper(branchProtectionRestrictionsToTerraform)(this._restrictions),
     };
   }
 }

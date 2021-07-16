@@ -12,6 +12,10 @@ export interface RepositoryCollaboratorConfig extends cdktf.TerraformMetaArgumen
   */
   readonly permission?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator.html#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
+  */
+  readonly permissionDiffSuppression?: boolean;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator.html#repository RepositoryCollaborator#repository}
   */
   readonly repository: string;
@@ -49,6 +53,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._permission = config.permission;
+    this._permissionDiffSuppression = config.permissionDiffSuppression;
     this._repository = config.repository;
     this._username = config.username;
   }
@@ -81,6 +86,22 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get permissionInput() {
     return this._permission
+  }
+
+  // permission_diff_suppression - computed: false, optional: true, required: false
+  private _permissionDiffSuppression?: boolean;
+  public get permissionDiffSuppression() {
+    return this.getBooleanAttribute('permission_diff_suppression');
+  }
+  public set permissionDiffSuppression(value: boolean ) {
+    this._permissionDiffSuppression = value;
+  }
+  public resetPermissionDiffSuppression() {
+    this._permissionDiffSuppression = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionDiffSuppressionInput() {
+    return this._permissionDiffSuppression
   }
 
   // repository - computed: false, optional: false, required: true
@@ -116,6 +137,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       permission: cdktf.stringToTerraform(this._permission),
+      permission_diff_suppression: cdktf.booleanToTerraform(this._permissionDiffSuppression),
       repository: cdktf.stringToTerraform(this._repository),
       username: cdktf.stringToTerraform(this._username),
     };

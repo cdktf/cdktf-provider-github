@@ -16,6 +16,8 @@ export interface TeamRepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly repository: string;
   /**
+  * ID or slug of team
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository.html#team_id TeamRepository#team_id}
   */
   readonly teamId: string;

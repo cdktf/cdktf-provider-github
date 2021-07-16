@@ -8,13 +8,65 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository.html#description DataGithubRepository#description}
+  */
+  readonly description?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository.html#full_name DataGithubRepository#full_name}
   */
   readonly fullName?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository.html#homepage_url DataGithubRepository#homepage_url}
+  */
+  readonly homepageUrl?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository.html#name DataGithubRepository#name}
   */
   readonly name?: string;
+}
+export class DataGithubRepositoryPagesSource extends cdktf.ComplexComputedList {
+
+  // branch - computed: true, optional: false, required: false
+  public get branch() {
+    return this.getStringAttribute('branch');
+  }
+
+  // path - computed: true, optional: false, required: false
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+}
+export class DataGithubRepositoryPages extends cdktf.ComplexComputedList {
+
+  // cname - computed: true, optional: false, required: false
+  public get cname() {
+    return this.getStringAttribute('cname');
+  }
+
+  // custom_404 - computed: true, optional: false, required: false
+  public get custom404() {
+    return this.getBooleanAttribute('custom_404');
+  }
+
+  // html_url - computed: true, optional: false, required: false
+  public get htmlUrl() {
+    return this.getStringAttribute('html_url');
+  }
+
+  // source - computed: true, optional: false, required: false
+  public get source() {
+    return this.interpolationForAttribute('source') as any;
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
+  }
 }
 
 /**
@@ -44,7 +96,9 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._description = config.description;
     this._fullName = config.fullName;
+    this._homepageUrl = config.homepageUrl;
     this._name = config.name;
   }
 
@@ -77,17 +131,28 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this.getStringAttribute('default_branch');
   }
 
-  // description - computed: true, optional: false, required: false
+  // description - computed: false, optional: true, required: false
+  private _description?: string;
   public get description() {
     return this.getStringAttribute('description');
   }
+  public set description(value: string ) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description
+  }
 
-  // full_name - computed: false, optional: true, required: false
+  // full_name - computed: true, optional: true, required: false
   private _fullName?: string;
   public get fullName() {
     return this.getStringAttribute('full_name');
   }
-  public set fullName(value: string ) {
+  public set fullName(value: string) {
     this._fullName = value;
   }
   public resetFullName() {
@@ -123,9 +188,20 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('has_wiki');
   }
 
-  // homepage_url - computed: true, optional: false, required: false
+  // homepage_url - computed: false, optional: true, required: false
+  private _homepageUrl?: string;
   public get homepageUrl() {
     return this.getStringAttribute('homepage_url');
+  }
+  public set homepageUrl(value: string ) {
+    this._homepageUrl = value;
+  }
+  public resetHomepageUrl() {
+    this._homepageUrl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get homepageUrlInput() {
+    return this._homepageUrl
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -143,12 +219,12 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this.getStringAttribute('id');
   }
 
-  // name - computed: false, optional: true, required: false
+  // name - computed: true, optional: true, required: false
   private _name?: string;
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string ) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -164,9 +240,19 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this.getStringAttribute('node_id');
   }
 
+  // pages - computed: true, optional: false, required: false
+  public pages(index: string) {
+    return new DataGithubRepositoryPages(this, 'pages', index);
+  }
+
   // private - computed: true, optional: false, required: false
   public get private() {
     return this.getBooleanAttribute('private');
+  }
+
+  // repo_id - computed: true, optional: false, required: false
+  public get repoId() {
+    return this.getNumberAttribute('repo_id');
   }
 
   // ssh_clone_url - computed: true, optional: false, required: false
@@ -184,13 +270,20 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this.getListAttribute('topics');
   }
 
+  // visibility - computed: true, optional: false, required: false
+  public get visibility() {
+    return this.getStringAttribute('visibility');
+  }
+
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      description: cdktf.stringToTerraform(this._description),
       full_name: cdktf.stringToTerraform(this._fullName),
+      homepage_url: cdktf.stringToTerraform(this._homepageUrl),
       name: cdktf.stringToTerraform(this._name),
     };
   }

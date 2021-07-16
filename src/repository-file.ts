@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The branch name, defaults to "master"
+  * The branch name, defaults to "main"
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#branch RepositoryFile#branch}
   */
@@ -43,6 +43,12 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#file RepositoryFile#file}
   */
   readonly file: string;
+  /**
+  * Enable overwriting existing files, defaults to "false"
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#overwrite_on_create RepositoryFile#overwrite_on_create}
+  */
+  readonly overwriteOnCreate?: boolean;
   /**
   * The repository name
   * 
@@ -84,6 +90,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
     this._commitMessage = config.commitMessage;
     this._content = config.content;
     this._file = config.file;
+    this._overwriteOnCreate = config.overwriteOnCreate;
     this._repository = config.repository;
   }
 
@@ -155,6 +162,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
     return this._commitMessage
   }
 
+  // commit_sha - computed: true, optional: false, required: false
+  public get commitSha() {
+    return this.getStringAttribute('commit_sha');
+  }
+
   // content - computed: false, optional: false, required: true
   private _content: string;
   public get content() {
@@ -184,6 +196,22 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // id - computed: true, optional: true, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // overwrite_on_create - computed: false, optional: true, required: false
+  private _overwriteOnCreate?: boolean;
+  public get overwriteOnCreate() {
+    return this.getBooleanAttribute('overwrite_on_create');
+  }
+  public set overwriteOnCreate(value: boolean ) {
+    this._overwriteOnCreate = value;
+  }
+  public resetOverwriteOnCreate() {
+    this._overwriteOnCreate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get overwriteOnCreateInput() {
+    return this._overwriteOnCreate
   }
 
   // repository - computed: false, optional: false, required: true
@@ -216,6 +244,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
       commit_message: cdktf.stringToTerraform(this._commitMessage),
       content: cdktf.stringToTerraform(this._content),
       file: cdktf.stringToTerraform(this._file),
+      overwrite_on_create: cdktf.booleanToTerraform(this._overwriteOnCreate),
       repository: cdktf.stringToTerraform(this._repository),
     };
   }
