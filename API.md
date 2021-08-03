@@ -4911,6 +4911,7 @@ Name | Type | Description
 **dismissalRestrictions**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismissal_restrictions BranchProtection#dismissal_restrictions}.<br/>__*Optional*__
 **requireCodeOwnerReviews**? | <code>boolean</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_code_owner_reviews BranchProtection#require_code_owner_reviews}.<br/>__*Optional*__
 **requiredApprovingReviewCount**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_approving_review_count BranchProtection#required_approving_review_count}.<br/>__*Optional*__
+**restrictDismissals**? | <code>boolean</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#restrict_dismissals BranchProtection#restrict_dismissals}.<br/>__*Optional*__
 
 
 
