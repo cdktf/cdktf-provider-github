@@ -67,6 +67,10 @@ export interface BranchProtectionRequiredPullRequestReviews {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_approving_review_count BranchProtection#required_approving_review_count}
   */
   readonly requiredApprovingReviewCount?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#restrict_dismissals BranchProtection#restrict_dismissals}
+  */
+  readonly restrictDismissals?: boolean;
 }
 
 function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchProtectionRequiredPullRequestReviews): any {
@@ -76,6 +80,7 @@ function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchPr
     dismissal_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalRestrictions),
     require_code_owner_reviews: cdktf.booleanToTerraform(struct!.requireCodeOwnerReviews),
     required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
+    restrict_dismissals: cdktf.booleanToTerraform(struct!.restrictDismissals),
   }
 }
 
