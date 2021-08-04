@@ -104,7 +104,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
         providerName: 'github',
         providerVersionConstraint: '~> 4.0'
       },
-      terraformProviderSource: 'github'
+      terraformProviderSource: 'integrations/github'
     });
     this._baseUrl = config.baseUrl;
     this._insecure = config.insecure;
