@@ -2,16 +2,12 @@
   "dependencies": [
     {
       "name": "@cdktf/provider-project",
-      "version": "^0.2.4",
-      "type": "build"
-    },
-    {
-      "name": "@types/jest",
+      "version": "^0.2.8",
       "type": "build"
     },
     {
       "name": "@types/node",
-      "version": "^12.0.0",
+      "version": "^12.19.0",
       "type": "build"
     },
     {
@@ -32,15 +28,6 @@
     {
       "name": "dot-prop",
       "version": "^5.2.0",
-      "type": "build"
-    },
-    {
-      "name": "jest",
-      "type": "build"
-    },
-    {
-      "name": "jest-junit",
-      "version": "^12",
       "type": "build"
     },
     {
@@ -65,22 +52,12 @@
       "type": "build"
     },
     {
-      "name": "npm-check-updates",
-      "version": "^11",
-      "type": "build"
-    },
-    {
       "name": "projen",
-      "version": "^0.17.95",
       "type": "build"
     },
     {
       "name": "standard-version",
       "version": "^9",
-      "type": "build"
-    },
-    {
-      "name": "ts-jest",
       "type": "build"
     },
     {
