@@ -22,6 +22,11 @@ export interface DataGithubMembershipConfig extends cdktf.TerraformMetaArguments
 */
 export class DataGithubMembership extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_membership";
+
   // ===========
   // INITIALIZER
   // ===========

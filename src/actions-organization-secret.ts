@@ -34,6 +34,11 @@ export interface ActionsOrganizationSecretConfig extends cdktf.TerraformMetaArgu
 */
 export class ActionsOrganizationSecret extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_actions_organization_secret";
+
   // ===========
   // INITIALIZER
   // ===========

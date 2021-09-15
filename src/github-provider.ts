@@ -18,7 +18,7 @@ export interface GithubProviderConfig {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#insecure GithubProvider#insecure}
   */
-  readonly insecure?: boolean;
+  readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.
   * 
@@ -86,6 +86,11 @@ function githubProviderAppAuthToTerraform(struct?: GithubProviderAppAuth): any {
 */
 export class GithubProvider extends cdktf.TerraformProvider {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -136,11 +141,11 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
 
   // insecure - computed: false, optional: true, required: false
-  private _insecure?: boolean;
+  private _insecure?: boolean | cdktf.IResolvable;
   public get insecure() {
     return this._insecure;
   }
-  public set insecure(value: boolean  | undefined) {
+  public set insecure(value: boolean | cdktf.IResolvable  | undefined) {
     this._insecure = value;
   }
   public resetInsecure() {

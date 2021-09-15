@@ -14,7 +14,7 @@ export interface RepositoryCollaboratorConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator.html#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
   */
-  readonly permissionDiffSuppression?: boolean;
+  readonly permissionDiffSuppression?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator.html#repository RepositoryCollaborator#repository}
   */
@@ -29,6 +29,11 @@ export interface RepositoryCollaboratorConfig extends cdktf.TerraformMetaArgumen
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator.html github_repository_collaborator}
 */
 export class RepositoryCollaborator extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_collaborator";
 
   // ===========
   // INITIALIZER
@@ -89,11 +94,11 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
 
   // permission_diff_suppression - computed: false, optional: true, required: false
-  private _permissionDiffSuppression?: boolean;
+  private _permissionDiffSuppression?: boolean | cdktf.IResolvable;
   public get permissionDiffSuppression() {
     return this.getBooleanAttribute('permission_diff_suppression');
   }
-  public set permissionDiffSuppression(value: boolean ) {
+  public set permissionDiffSuppression(value: boolean | cdktf.IResolvable ) {
     this._permissionDiffSuppression = value;
   }
   public resetPermissionDiffSuppression() {

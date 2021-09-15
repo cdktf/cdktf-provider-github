@@ -26,6 +26,11 @@ export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
 */
 export class TeamMembership extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_team_membership";
+
   // ===========
   // INITIALIZER
   // ===========

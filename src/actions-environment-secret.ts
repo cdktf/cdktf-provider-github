@@ -34,6 +34,11 @@ export interface ActionsEnvironmentSecretConfig extends cdktf.TerraformMetaArgum
 */
 export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_actions_environment_secret";
+
   // ===========
   // INITIALIZER
   // ===========

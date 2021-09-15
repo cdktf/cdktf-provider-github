@@ -26,6 +26,11 @@ export interface DataGithubRepositoryPullRequestConfig extends cdktf.TerraformMe
 */
 export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_pull_request";
+
   // ===========
   // INITIALIZER
   // ===========

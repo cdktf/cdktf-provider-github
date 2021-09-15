@@ -124,6 +124,11 @@ export class DataGithubRepositoryPullRequestsResults extends cdktf.ComplexComput
 */
 export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_pull_requests";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,6 +22,11 @@ export interface UserSshKeyConfig extends cdktf.TerraformMetaArguments {
 */
 export class UserSshKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_user_ssh_key";
+
   // ===========
   // INITIALIZER
   // ===========

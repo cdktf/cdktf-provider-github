@@ -30,6 +30,11 @@ export interface IssueLabelConfig extends cdktf.TerraformMetaArguments {
 */
 export class IssueLabel extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_issue_label";
+
   // ===========
   // INITIALIZER
   // ===========

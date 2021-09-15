@@ -14,6 +14,11 @@ export interface DataGithubIpRangesConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataGithubIpRanges extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_ip_ranges";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -47,9 +52,29 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
     return this.getListAttribute('actions');
   }
 
+  // actions_ipv4 - computed: true, optional: false, required: false
+  public get actionsIpv4() {
+    return this.getListAttribute('actions_ipv4');
+  }
+
+  // actions_ipv6 - computed: true, optional: false, required: false
+  public get actionsIpv6() {
+    return this.getListAttribute('actions_ipv6');
+  }
+
   // dependabot - computed: true, optional: false, required: false
   public get dependabot() {
     return this.getListAttribute('dependabot');
+  }
+
+  // dependabot_ipv4 - computed: true, optional: false, required: false
+  public get dependabotIpv4() {
+    return this.getListAttribute('dependabot_ipv4');
+  }
+
+  // dependabot_ipv6 - computed: true, optional: false, required: false
+  public get dependabotIpv6() {
+    return this.getListAttribute('dependabot_ipv6');
   }
 
   // git - computed: true, optional: false, required: false
@@ -57,9 +82,29 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
     return this.getListAttribute('git');
   }
 
+  // git_ipv4 - computed: true, optional: false, required: false
+  public get gitIpv4() {
+    return this.getListAttribute('git_ipv4');
+  }
+
+  // git_ipv6 - computed: true, optional: false, required: false
+  public get gitIpv6() {
+    return this.getListAttribute('git_ipv6');
+  }
+
   // hooks - computed: true, optional: false, required: false
   public get hooks() {
     return this.getListAttribute('hooks');
+  }
+
+  // hooks_ipv4 - computed: true, optional: false, required: false
+  public get hooksIpv4() {
+    return this.getListAttribute('hooks_ipv4');
+  }
+
+  // hooks_ipv6 - computed: true, optional: false, required: false
+  public get hooksIpv6() {
+    return this.getListAttribute('hooks_ipv6');
   }
 
   // id - computed: true, optional: true, required: false
@@ -72,9 +117,29 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
     return this.getListAttribute('importer');
   }
 
+  // importer_ipv4 - computed: true, optional: false, required: false
+  public get importerIpv4() {
+    return this.getListAttribute('importer_ipv4');
+  }
+
+  // importer_ipv6 - computed: true, optional: false, required: false
+  public get importerIpv6() {
+    return this.getListAttribute('importer_ipv6');
+  }
+
   // pages - computed: true, optional: false, required: false
   public get pages() {
     return this.getListAttribute('pages');
+  }
+
+  // pages_ipv4 - computed: true, optional: false, required: false
+  public get pagesIpv4() {
+    return this.getListAttribute('pages_ipv4');
+  }
+
+  // pages_ipv6 - computed: true, optional: false, required: false
+  public get pagesIpv6() {
+    return this.getListAttribute('pages_ipv6');
   }
 
   // =========

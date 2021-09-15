@@ -14,7 +14,7 @@ export interface RepositoryDeployKeyConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key.html#read_only RepositoryDeployKey#read_only}
   */
-  readonly readOnly?: boolean;
+  readonly readOnly?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key.html#repository RepositoryDeployKey#repository}
   */
@@ -29,6 +29,11 @@ export interface RepositoryDeployKeyConfig extends cdktf.TerraformMetaArguments 
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key.html github_repository_deploy_key}
 */
 export class RepositoryDeployKey extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_deploy_key";
 
   // ===========
   // INITIALIZER
@@ -86,11 +91,11 @@ export class RepositoryDeployKey extends cdktf.TerraformResource {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean;
+  private _readOnly?: boolean | cdktf.IResolvable;
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean ) {
+  public set readOnly(value: boolean | cdktf.IResolvable ) {
     this._readOnly = value;
   }
   public resetReadOnly() {

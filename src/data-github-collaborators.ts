@@ -108,6 +108,11 @@ export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedLi
 */
 export class DataGithubCollaborators extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_collaborators";
+
   // ===========
   // INITIALIZER
   // ===========

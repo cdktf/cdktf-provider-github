@@ -34,6 +34,11 @@ export interface DataGithubReleaseConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataGithubRelease extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_release";
+
   // ===========
   // INITIALIZER
   // ===========

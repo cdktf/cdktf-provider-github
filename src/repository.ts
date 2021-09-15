@@ -10,27 +10,27 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#allow_merge_commit Repository#allow_merge_commit}
   */
-  readonly allowMergeCommit?: boolean;
+  readonly allowMergeCommit?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#allow_rebase_merge Repository#allow_rebase_merge}
   */
-  readonly allowRebaseMerge?: boolean;
+  readonly allowRebaseMerge?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#allow_squash_merge Repository#allow_squash_merge}
   */
-  readonly allowSquashMerge?: boolean;
+  readonly allowSquashMerge?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#archive_on_destroy Repository#archive_on_destroy}
   */
-  readonly archiveOnDestroy?: boolean;
+  readonly archiveOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#archived Repository#archived}
   */
-  readonly archived?: boolean;
+  readonly archived?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#auto_init Repository#auto_init}
   */
-  readonly autoInit?: boolean;
+  readonly autoInit?: boolean | cdktf.IResolvable;
   /**
   * Can only be set after initial repository creation, and only if the target branch exists
   * 
@@ -40,7 +40,7 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#delete_branch_on_merge Repository#delete_branch_on_merge}
   */
-  readonly deleteBranchOnMerge?: boolean;
+  readonly deleteBranchOnMerge?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#description Repository#description}
   */
@@ -52,19 +52,19 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#has_downloads Repository#has_downloads}
   */
-  readonly hasDownloads?: boolean;
+  readonly hasDownloads?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#has_issues Repository#has_issues}
   */
-  readonly hasIssues?: boolean;
+  readonly hasIssues?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#has_projects Repository#has_projects}
   */
-  readonly hasProjects?: boolean;
+  readonly hasProjects?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#has_wiki Repository#has_wiki}
   */
-  readonly hasWiki?: boolean;
+  readonly hasWiki?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#homepage_url Repository#homepage_url}
   */
@@ -72,7 +72,7 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#is_template Repository#is_template}
   */
-  readonly isTemplate?: boolean;
+  readonly isTemplate?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#license_template Repository#license_template}
   */
@@ -84,7 +84,7 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#private Repository#private}
   */
-  readonly private?: boolean;
+  readonly private?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#topics Repository#topics}
   */
@@ -96,7 +96,7 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#vulnerability_alerts Repository#vulnerability_alerts}
   */
-  readonly vulnerabilityAlerts?: boolean;
+  readonly vulnerabilityAlerts?: boolean | cdktf.IResolvable;
   /**
   * pages block
   * 
@@ -175,6 +175,11 @@ function repositoryTemplateToTerraform(struct?: RepositoryTemplate): any {
 */
 export class Repository extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -228,11 +233,11 @@ export class Repository extends cdktf.TerraformResource {
   // ==========
 
   // allow_merge_commit - computed: false, optional: true, required: false
-  private _allowMergeCommit?: boolean;
+  private _allowMergeCommit?: boolean | cdktf.IResolvable;
   public get allowMergeCommit() {
     return this.getBooleanAttribute('allow_merge_commit');
   }
-  public set allowMergeCommit(value: boolean ) {
+  public set allowMergeCommit(value: boolean | cdktf.IResolvable ) {
     this._allowMergeCommit = value;
   }
   public resetAllowMergeCommit() {
@@ -244,11 +249,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // allow_rebase_merge - computed: false, optional: true, required: false
-  private _allowRebaseMerge?: boolean;
+  private _allowRebaseMerge?: boolean | cdktf.IResolvable;
   public get allowRebaseMerge() {
     return this.getBooleanAttribute('allow_rebase_merge');
   }
-  public set allowRebaseMerge(value: boolean ) {
+  public set allowRebaseMerge(value: boolean | cdktf.IResolvable ) {
     this._allowRebaseMerge = value;
   }
   public resetAllowRebaseMerge() {
@@ -260,11 +265,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // allow_squash_merge - computed: false, optional: true, required: false
-  private _allowSquashMerge?: boolean;
+  private _allowSquashMerge?: boolean | cdktf.IResolvable;
   public get allowSquashMerge() {
     return this.getBooleanAttribute('allow_squash_merge');
   }
-  public set allowSquashMerge(value: boolean ) {
+  public set allowSquashMerge(value: boolean | cdktf.IResolvable ) {
     this._allowSquashMerge = value;
   }
   public resetAllowSquashMerge() {
@@ -276,11 +281,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // archive_on_destroy - computed: false, optional: true, required: false
-  private _archiveOnDestroy?: boolean;
+  private _archiveOnDestroy?: boolean | cdktf.IResolvable;
   public get archiveOnDestroy() {
     return this.getBooleanAttribute('archive_on_destroy');
   }
-  public set archiveOnDestroy(value: boolean ) {
+  public set archiveOnDestroy(value: boolean | cdktf.IResolvable ) {
     this._archiveOnDestroy = value;
   }
   public resetArchiveOnDestroy() {
@@ -292,11 +297,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // archived - computed: false, optional: true, required: false
-  private _archived?: boolean;
+  private _archived?: boolean | cdktf.IResolvable;
   public get archived() {
     return this.getBooleanAttribute('archived');
   }
-  public set archived(value: boolean ) {
+  public set archived(value: boolean | cdktf.IResolvable ) {
     this._archived = value;
   }
   public resetArchived() {
@@ -308,11 +313,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // auto_init - computed: false, optional: true, required: false
-  private _autoInit?: boolean;
+  private _autoInit?: boolean | cdktf.IResolvable;
   public get autoInit() {
     return this.getBooleanAttribute('auto_init');
   }
-  public set autoInit(value: boolean ) {
+  public set autoInit(value: boolean | cdktf.IResolvable ) {
     this._autoInit = value;
   }
   public resetAutoInit() {
@@ -340,11 +345,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // delete_branch_on_merge - computed: false, optional: true, required: false
-  private _deleteBranchOnMerge?: boolean;
+  private _deleteBranchOnMerge?: boolean | cdktf.IResolvable;
   public get deleteBranchOnMerge() {
     return this.getBooleanAttribute('delete_branch_on_merge');
   }
-  public set deleteBranchOnMerge(value: boolean ) {
+  public set deleteBranchOnMerge(value: boolean | cdktf.IResolvable ) {
     this._deleteBranchOnMerge = value;
   }
   public resetDeleteBranchOnMerge() {
@@ -403,11 +408,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // has_downloads - computed: false, optional: true, required: false
-  private _hasDownloads?: boolean;
+  private _hasDownloads?: boolean | cdktf.IResolvable;
   public get hasDownloads() {
     return this.getBooleanAttribute('has_downloads');
   }
-  public set hasDownloads(value: boolean ) {
+  public set hasDownloads(value: boolean | cdktf.IResolvable ) {
     this._hasDownloads = value;
   }
   public resetHasDownloads() {
@@ -419,11 +424,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // has_issues - computed: false, optional: true, required: false
-  private _hasIssues?: boolean;
+  private _hasIssues?: boolean | cdktf.IResolvable;
   public get hasIssues() {
     return this.getBooleanAttribute('has_issues');
   }
-  public set hasIssues(value: boolean ) {
+  public set hasIssues(value: boolean | cdktf.IResolvable ) {
     this._hasIssues = value;
   }
   public resetHasIssues() {
@@ -435,11 +440,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // has_projects - computed: false, optional: true, required: false
-  private _hasProjects?: boolean;
+  private _hasProjects?: boolean | cdktf.IResolvable;
   public get hasProjects() {
     return this.getBooleanAttribute('has_projects');
   }
-  public set hasProjects(value: boolean ) {
+  public set hasProjects(value: boolean | cdktf.IResolvable ) {
     this._hasProjects = value;
   }
   public resetHasProjects() {
@@ -451,11 +456,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // has_wiki - computed: false, optional: true, required: false
-  private _hasWiki?: boolean;
+  private _hasWiki?: boolean | cdktf.IResolvable;
   public get hasWiki() {
     return this.getBooleanAttribute('has_wiki');
   }
-  public set hasWiki(value: boolean ) {
+  public set hasWiki(value: boolean | cdktf.IResolvable ) {
     this._hasWiki = value;
   }
   public resetHasWiki() {
@@ -498,11 +503,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // is_template - computed: false, optional: true, required: false
-  private _isTemplate?: boolean;
+  private _isTemplate?: boolean | cdktf.IResolvable;
   public get isTemplate() {
     return this.getBooleanAttribute('is_template');
   }
-  public set isTemplate(value: boolean ) {
+  public set isTemplate(value: boolean | cdktf.IResolvable ) {
     this._isTemplate = value;
   }
   public resetIsTemplate() {
@@ -548,11 +553,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // private - computed: true, optional: true, required: false
-  private _private?: boolean;
+  private _private?: boolean | cdktf.IResolvable;
   public get private() {
     return this.getBooleanAttribute('private');
   }
-  public set private(value: boolean) {
+  public set private(value: boolean | cdktf.IResolvable) {
     this._private = value;
   }
   public resetPrivate() {
@@ -611,11 +616,11 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // vulnerability_alerts - computed: false, optional: true, required: false
-  private _vulnerabilityAlerts?: boolean;
+  private _vulnerabilityAlerts?: boolean | cdktf.IResolvable;
   public get vulnerabilityAlerts() {
     return this.getBooleanAttribute('vulnerability_alerts');
   }
-  public set vulnerabilityAlerts(value: boolean ) {
+  public set vulnerabilityAlerts(value: boolean | cdktf.IResolvable ) {
     this._vulnerabilityAlerts = value;
   }
   public resetVulnerabilityAlerts() {

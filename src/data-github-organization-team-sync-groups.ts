@@ -31,6 +31,11 @@ export class DataGithubOrganizationTeamSyncGroupsGroups extends cdktf.ComplexCom
 */
 export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_organization_team_sync_groups";
+
   // ===========
   // INITIALIZER
   // ===========
