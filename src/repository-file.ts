@@ -48,7 +48,7 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#overwrite_on_create RepositoryFile#overwrite_on_create}
   */
-  readonly overwriteOnCreate?: boolean;
+  readonly overwriteOnCreate?: boolean | cdktf.IResolvable;
   /**
   * The repository name
   * 
@@ -61,6 +61,11 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file.html github_repository_file}
 */
 export class RepositoryFile extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_file";
 
   // ===========
   // INITIALIZER
@@ -199,11 +204,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // overwrite_on_create - computed: false, optional: true, required: false
-  private _overwriteOnCreate?: boolean;
+  private _overwriteOnCreate?: boolean | cdktf.IResolvable;
   public get overwriteOnCreate() {
     return this.getBooleanAttribute('overwrite_on_create');
   }
-  public set overwriteOnCreate(value: boolean ) {
+  public set overwriteOnCreate(value: boolean | cdktf.IResolvable ) {
     this._overwriteOnCreate = value;
   }
   public resetOverwriteOnCreate() {

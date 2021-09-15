@@ -10,15 +10,15 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#allows_deletions BranchProtection#allows_deletions}
   */
-  readonly allowsDeletions?: boolean;
+  readonly allowsDeletions?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#allows_force_pushes BranchProtection#allows_force_pushes}
   */
-  readonly allowsForcePushes?: boolean;
+  readonly allowsForcePushes?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#enforce_admins BranchProtection#enforce_admins}
   */
-  readonly enforceAdmins?: boolean;
+  readonly enforceAdmins?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#pattern BranchProtection#pattern}
   */
@@ -36,7 +36,7 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_signed_commits BranchProtection#require_signed_commits}
   */
-  readonly requireSignedCommits?: boolean;
+  readonly requireSignedCommits?: boolean | cdktf.IResolvable;
   /**
   * required_pull_request_reviews block
   * 
@@ -54,7 +54,7 @@ export interface BranchProtectionRequiredPullRequestReviews {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}
   */
-  readonly dismissStaleReviews?: boolean;
+  readonly dismissStaleReviews?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#dismissal_restrictions BranchProtection#dismissal_restrictions}
   */
@@ -62,7 +62,7 @@ export interface BranchProtectionRequiredPullRequestReviews {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
   */
-  readonly requireCodeOwnerReviews?: boolean;
+  readonly requireCodeOwnerReviews?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_approving_review_count BranchProtection#required_approving_review_count}
   */
@@ -70,7 +70,7 @@ export interface BranchProtectionRequiredPullRequestReviews {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#restrict_dismissals BranchProtection#restrict_dismissals}
   */
-  readonly restrictDismissals?: boolean;
+  readonly restrictDismissals?: boolean | cdktf.IResolvable;
 }
 
 function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchProtectionRequiredPullRequestReviews): any {
@@ -92,7 +92,7 @@ export interface BranchProtectionRequiredStatusChecks {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#strict BranchProtection#strict}
   */
-  readonly strict?: boolean;
+  readonly strict?: boolean | cdktf.IResolvable;
 }
 
 function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchProtectionRequiredStatusChecks): any {
@@ -108,6 +108,11 @@ function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchProtecti
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html github_branch_protection}
 */
 export class BranchProtection extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_branch_protection";
 
   // ===========
   // INITIALIZER
@@ -147,11 +152,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   // ==========
 
   // allows_deletions - computed: false, optional: true, required: false
-  private _allowsDeletions?: boolean;
+  private _allowsDeletions?: boolean | cdktf.IResolvable;
   public get allowsDeletions() {
     return this.getBooleanAttribute('allows_deletions');
   }
-  public set allowsDeletions(value: boolean ) {
+  public set allowsDeletions(value: boolean | cdktf.IResolvable ) {
     this._allowsDeletions = value;
   }
   public resetAllowsDeletions() {
@@ -163,11 +168,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // allows_force_pushes - computed: false, optional: true, required: false
-  private _allowsForcePushes?: boolean;
+  private _allowsForcePushes?: boolean | cdktf.IResolvable;
   public get allowsForcePushes() {
     return this.getBooleanAttribute('allows_force_pushes');
   }
-  public set allowsForcePushes(value: boolean ) {
+  public set allowsForcePushes(value: boolean | cdktf.IResolvable ) {
     this._allowsForcePushes = value;
   }
   public resetAllowsForcePushes() {
@@ -179,11 +184,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // enforce_admins - computed: false, optional: true, required: false
-  private _enforceAdmins?: boolean;
+  private _enforceAdmins?: boolean | cdktf.IResolvable;
   public get enforceAdmins() {
     return this.getBooleanAttribute('enforce_admins');
   }
-  public set enforceAdmins(value: boolean ) {
+  public set enforceAdmins(value: boolean | cdktf.IResolvable ) {
     this._enforceAdmins = value;
   }
   public resetEnforceAdmins() {
@@ -242,11 +247,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // require_signed_commits - computed: false, optional: true, required: false
-  private _requireSignedCommits?: boolean;
+  private _requireSignedCommits?: boolean | cdktf.IResolvable;
   public get requireSignedCommits() {
     return this.getBooleanAttribute('require_signed_commits');
   }
-  public set requireSignedCommits(value: boolean ) {
+  public set requireSignedCommits(value: boolean | cdktf.IResolvable ) {
     this._requireSignedCommits = value;
   }
   public resetRequireSignedCommits() {

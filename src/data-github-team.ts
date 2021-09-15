@@ -18,6 +18,11 @@ export interface DataGithubTeamConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataGithubTeam extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_team";
+
   // ===========
   // INITIALIZER
   // ===========

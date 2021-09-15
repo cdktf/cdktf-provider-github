@@ -74,6 +74,11 @@ export class DataGithubRepositoryPages extends cdktf.ComplexComputedList {
 */
 export class DataGithubRepository extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository";
+
   // ===========
   // INITIALIZER
   // ===========

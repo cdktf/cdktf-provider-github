@@ -36,11 +36,11 @@ export interface RepositoryEnvironmentDeploymentBranchPolicy {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
   */
-  readonly customBranchPolicies: boolean;
+  readonly customBranchPolicies: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#protected_branches RepositoryEnvironment#protected_branches}
   */
-  readonly protectedBranches: boolean;
+  readonly protectedBranches: boolean | cdktf.IResolvable;
 }
 
 function repositoryEnvironmentDeploymentBranchPolicyToTerraform(struct?: RepositoryEnvironmentDeploymentBranchPolicy): any {
@@ -75,6 +75,11 @@ function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnvironmen
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html github_repository_environment}
 */
 export class RepositoryEnvironment extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_environment";
 
   // ===========
   // INITIALIZER

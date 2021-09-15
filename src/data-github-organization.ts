@@ -18,6 +18,11 @@ export interface DataGithubOrganizationConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataGithubOrganization extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_organization";
+
   // ===========
   // INITIALIZER
   // ===========

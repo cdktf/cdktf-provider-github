@@ -22,6 +22,11 @@ export interface DataGithubBranchConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataGithubBranch extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_branch";
+
   // ===========
   // INITIALIZER
   // ===========

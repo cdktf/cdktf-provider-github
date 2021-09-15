@@ -18,6 +18,11 @@ export interface DataGithubUserConfig extends cdktf.TerraformMetaArguments {
 */
 export class DataGithubUser extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_user";
+
   // ===========
   // INITIALIZER
   // ===========

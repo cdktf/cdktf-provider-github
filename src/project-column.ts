@@ -22,6 +22,11 @@ export interface ProjectColumnConfig extends cdktf.TerraformMetaArguments {
 */
 export class ProjectColumn extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_project_column";
+
   // ===========
   // INITIALIZER
   // ===========

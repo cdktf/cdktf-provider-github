@@ -14,7 +14,7 @@ export interface BranchProtectionV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#enforce_admins BranchProtectionV3#enforce_admins}
   */
-  readonly enforceAdmins?: boolean;
+  readonly enforceAdmins?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#repository BranchProtectionV3#repository}
   */
@@ -22,7 +22,7 @@ export interface BranchProtectionV3Config extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#require_signed_commits BranchProtectionV3#require_signed_commits}
   */
-  readonly requireSignedCommits?: boolean;
+  readonly requireSignedCommits?: boolean | cdktf.IResolvable;
   /**
   * required_pull_request_reviews block
   * 
@@ -46,7 +46,7 @@ export interface BranchProtectionV3RequiredPullRequestReviews {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#dismiss_stale_reviews BranchProtectionV3#dismiss_stale_reviews}
   */
-  readonly dismissStaleReviews?: boolean;
+  readonly dismissStaleReviews?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#dismissal_teams BranchProtectionV3#dismissal_teams}
   */
@@ -58,11 +58,11 @@ export interface BranchProtectionV3RequiredPullRequestReviews {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#include_admins BranchProtectionV3#include_admins}
   */
-  readonly includeAdmins?: boolean;
+  readonly includeAdmins?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#require_code_owner_reviews BranchProtectionV3#require_code_owner_reviews}
   */
-  readonly requireCodeOwnerReviews?: boolean;
+  readonly requireCodeOwnerReviews?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#required_approving_review_count BranchProtectionV3#required_approving_review_count}
   */
@@ -89,11 +89,11 @@ export interface BranchProtectionV3RequiredStatusChecks {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#include_admins BranchProtectionV3#include_admins}
   */
-  readonly includeAdmins?: boolean;
+  readonly includeAdmins?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#strict BranchProtectionV3#strict}
   */
-  readonly strict?: boolean;
+  readonly strict?: boolean | cdktf.IResolvable;
 }
 
 function branchProtectionV3RequiredStatusChecksToTerraform(struct?: BranchProtectionV3RequiredStatusChecks): any {
@@ -134,6 +134,11 @@ function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtectionV3Re
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html github_branch_protection_v3}
 */
 export class BranchProtectionV3 extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_branch_protection_v3";
 
   // ===========
   // INITIALIZER
@@ -184,11 +189,11 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // enforce_admins - computed: false, optional: true, required: false
-  private _enforceAdmins?: boolean;
+  private _enforceAdmins?: boolean | cdktf.IResolvable;
   public get enforceAdmins() {
     return this.getBooleanAttribute('enforce_admins');
   }
-  public set enforceAdmins(value: boolean ) {
+  public set enforceAdmins(value: boolean | cdktf.IResolvable ) {
     this._enforceAdmins = value;
   }
   public resetEnforceAdmins() {
@@ -223,11 +228,11 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // require_signed_commits - computed: false, optional: true, required: false
-  private _requireSignedCommits?: boolean;
+  private _requireSignedCommits?: boolean | cdktf.IResolvable;
   public get requireSignedCommits() {
     return this.getBooleanAttribute('require_signed_commits');
   }
-  public set requireSignedCommits(value: boolean ) {
+  public set requireSignedCommits(value: boolean | cdktf.IResolvable ) {
     this._requireSignedCommits = value;
   }
   public resetRequireSignedCommits() {

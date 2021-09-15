@@ -22,6 +22,11 @@ export interface OrganizationProjectConfig extends cdktf.TerraformMetaArguments 
 */
 export class OrganizationProject extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_organization_project";
+
   // ===========
   // INITIALIZER
   // ===========

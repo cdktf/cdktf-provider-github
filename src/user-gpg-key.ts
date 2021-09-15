@@ -18,6 +18,11 @@ export interface UserGpgKeyConfig extends cdktf.TerraformMetaArguments {
 */
 export class UserGpgKey extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_user_gpg_key";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -10,7 +10,7 @@ export interface OrganizationWebhookConfig extends cdktf.TerraformMetaArguments 
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook.html#active OrganizationWebhook#active}
   */
-  readonly active?: boolean;
+  readonly active?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook.html#events OrganizationWebhook#events}
   */
@@ -34,7 +34,7 @@ export interface OrganizationWebhookConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook.html#insecure_ssl OrganizationWebhook#insecure_ssl}
   */
-  readonly insecureSsl?: boolean;
+  readonly insecureSsl?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook.html#secret OrganizationWebhook#secret}
   */
@@ -60,6 +60,11 @@ function organizationWebhookConfigurationToTerraform(struct?: OrganizationWebhoo
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_webhook.html github_organization_webhook}
 */
 export class OrganizationWebhook extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_organization_webhook";
 
   // ===========
   // INITIALIZER
@@ -94,11 +99,11 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean;
+  private _active?: boolean | cdktf.IResolvable;
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean ) {
+  public set active(value: boolean | cdktf.IResolvable ) {
     this._active = value;
   }
   public resetActive() {

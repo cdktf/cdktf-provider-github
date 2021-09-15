@@ -18,6 +18,11 @@ export interface OrganizationBlockConfig extends cdktf.TerraformMetaArguments {
 */
 export class OrganizationBlock extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_organization_block";
+
   // ===========
   // INITIALIZER
   // ===========

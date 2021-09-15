@@ -28,6 +28,11 @@ export interface TeamRepositoryConfig extends cdktf.TerraformMetaArguments {
 */
 export class TeamRepository extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_team_repository";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -22,6 +22,11 @@ export interface ProjectCardConfig extends cdktf.TerraformMetaArguments {
 */
 export class ProjectCard extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_project_card";
+
   // ===========
   // INITIALIZER
   // ===========

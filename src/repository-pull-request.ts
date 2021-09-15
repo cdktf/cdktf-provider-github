@@ -26,7 +26,7 @@ export interface RepositoryPullRequestConfig extends cdktf.TerraformMetaArgument
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}
   */
-  readonly maintainerCanModify?: boolean;
+  readonly maintainerCanModify?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#owner RepositoryPullRequest#owner}
   */
@@ -41,6 +41,11 @@ export interface RepositoryPullRequestConfig extends cdktf.TerraformMetaArgument
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html github_repository_pull_request}
 */
 export class RepositoryPullRequest extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_pull_request";
 
   // ===========
   // INITIALIZER
@@ -158,11 +163,11 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // maintainer_can_modify - computed: false, optional: true, required: false
-  private _maintainerCanModify?: boolean;
+  private _maintainerCanModify?: boolean | cdktf.IResolvable;
   public get maintainerCanModify() {
     return this.getBooleanAttribute('maintainer_can_modify');
   }
-  public set maintainerCanModify(value: boolean ) {
+  public set maintainerCanModify(value: boolean | cdktf.IResolvable ) {
     this._maintainerCanModify = value;
   }
   public resetMaintainerCanModify() {

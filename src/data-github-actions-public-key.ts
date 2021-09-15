@@ -18,6 +18,11 @@ export interface DataGithubActionsPublicKeyConfig extends cdktf.TerraformMetaArg
 */
 export class DataGithubActionsPublicKey extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_actions_public_key";
+
   // ===========
   // INITIALIZER
   // ===========

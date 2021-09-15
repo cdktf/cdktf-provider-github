@@ -10,7 +10,7 @@ export interface DataGithubOrganizationTeamsConfig extends cdktf.TerraformMetaAr
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization_teams.html#root_teams_only DataGithubOrganizationTeams#root_teams_only}
   */
-  readonly rootTeamsOnly?: boolean;
+  readonly rootTeamsOnly?: boolean | cdktf.IResolvable;
 }
 export class DataGithubOrganizationTeamsTeams extends cdktf.ComplexComputedList {
 
@@ -60,6 +60,11 @@ export class DataGithubOrganizationTeamsTeams extends cdktf.ComplexComputedList 
 */
 export class DataGithubOrganizationTeams extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_organization_teams";
+
   // ===========
   // INITIALIZER
   // ===========
@@ -95,11 +100,11 @@ export class DataGithubOrganizationTeams extends cdktf.TerraformDataSource {
   }
 
   // root_teams_only - computed: false, optional: true, required: false
-  private _rootTeamsOnly?: boolean;
+  private _rootTeamsOnly?: boolean | cdktf.IResolvable;
   public get rootTeamsOnly() {
     return this.getBooleanAttribute('root_teams_only');
   }
-  public set rootTeamsOnly(value: boolean ) {
+  public set rootTeamsOnly(value: boolean | cdktf.IResolvable ) {
     this._rootTeamsOnly = value;
   }
   public resetRootTeamsOnly() {

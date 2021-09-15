@@ -30,6 +30,11 @@ export interface BranchConfig extends cdktf.TerraformMetaArguments {
 */
 export class Branch extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_branch";
+
   // ===========
   // INITIALIZER
   // ===========

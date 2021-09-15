@@ -22,6 +22,11 @@ export interface AppInstallationRepositoryConfig extends cdktf.TerraformMetaArgu
 */
 export class AppInstallationRepository extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_app_installation_repository";
+
   // ===========
   // INITIALIZER
   // ===========

@@ -40,6 +40,11 @@ export interface RepositoryMilestoneConfig extends cdktf.TerraformMetaArguments 
 */
 export class RepositoryMilestone extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_milestone";
+
   // ===========
   // INITIALIZER
   // ===========

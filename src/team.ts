@@ -10,7 +10,7 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#create_default_maintainer Team#create_default_maintainer}
   */
-  readonly createDefaultMaintainer?: boolean;
+  readonly createDefaultMaintainer?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#description Team#description}
   */
@@ -37,6 +37,11 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/team.html github_team}
 */
 export class Team extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_team";
 
   // ===========
   // INITIALIZER
@@ -73,11 +78,11 @@ export class Team extends cdktf.TerraformResource {
   // ==========
 
   // create_default_maintainer - computed: false, optional: true, required: false
-  private _createDefaultMaintainer?: boolean;
+  private _createDefaultMaintainer?: boolean | cdktf.IResolvable;
   public get createDefaultMaintainer() {
     return this.getBooleanAttribute('create_default_maintainer');
   }
-  public set createDefaultMaintainer(value: boolean ) {
+  public set createDefaultMaintainer(value: boolean | cdktf.IResolvable ) {
     this._createDefaultMaintainer = value;
   }
   public resetCreateDefaultMaintainer() {

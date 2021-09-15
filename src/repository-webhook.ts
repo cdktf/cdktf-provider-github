@@ -10,7 +10,7 @@ export interface RepositoryWebhookConfig extends cdktf.TerraformMetaArguments {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#active RepositoryWebhook#active}
   */
-  readonly active?: boolean;
+  readonly active?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#events RepositoryWebhook#events}
   */
@@ -38,7 +38,7 @@ export interface RepositoryWebhookConfiguration {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#insecure_ssl RepositoryWebhook#insecure_ssl}
   */
-  readonly insecureSsl?: boolean;
+  readonly insecureSsl?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html#secret RepositoryWebhook#secret}
   */
@@ -64,6 +64,11 @@ function repositoryWebhookConfigurationToTerraform(struct?: RepositoryWebhookCon
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html github_repository_webhook}
 */
 export class RepositoryWebhook extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repository_webhook";
 
   // ===========
   // INITIALIZER
@@ -99,11 +104,11 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean;
+  private _active?: boolean | cdktf.IResolvable;
   public get active() {
     return this.getBooleanAttribute('active');
   }
-  public set active(value: boolean ) {
+  public set active(value: boolean | cdktf.IResolvable ) {
     this._active = value;
   }
   public resetActive() {

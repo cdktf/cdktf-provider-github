@@ -48,6 +48,11 @@ function teamSyncGroupMappingGroupToTerraform(struct?: TeamSyncGroupMappingGroup
 */
 export class TeamSyncGroupMapping extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_team_sync_group_mapping";
+
   // ===========
   // INITIALIZER
   // ===========

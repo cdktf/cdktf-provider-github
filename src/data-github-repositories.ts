@@ -22,6 +22,11 @@ export interface DataGithubRepositoriesConfig extends cdktf.TerraformMetaArgumen
 */
 export class DataGithubRepositories extends cdktf.TerraformDataSource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_repositories";
+
   // ===========
   // INITIALIZER
   // ===========

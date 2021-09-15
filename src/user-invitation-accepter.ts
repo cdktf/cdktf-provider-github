@@ -18,6 +18,11 @@ export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArgumen
 */
 export class UserInvitationAccepter extends cdktf.TerraformResource {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "github_user_invitation_accepter";
+
   // ===========
   // INITIALIZER
   // ===========
