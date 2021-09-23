@@ -38,6 +38,10 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly requireSignedCommits?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_linear_history BranchProtection#required_linear_history}
+  */
+  readonly requiredLinearHistory?: boolean | cdktf.IResolvable;
+  /**
   * required_pull_request_reviews block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_pull_request_reviews BranchProtection#required_pull_request_reviews}
@@ -143,6 +147,7 @@ export class BranchProtection extends cdktf.TerraformResource {
     this._pushRestrictions = config.pushRestrictions;
     this._repositoryId = config.repositoryId;
     this._requireSignedCommits = config.requireSignedCommits;
+    this._requiredLinearHistory = config.requiredLinearHistory;
     this._requiredPullRequestReviews = config.requiredPullRequestReviews;
     this._requiredStatusChecks = config.requiredStatusChecks;
   }
@@ -262,6 +267,22 @@ export class BranchProtection extends cdktf.TerraformResource {
     return this._requireSignedCommits
   }
 
+  // required_linear_history - computed: false, optional: true, required: false
+  private _requiredLinearHistory?: boolean | cdktf.IResolvable;
+  public get requiredLinearHistory() {
+    return this.getBooleanAttribute('required_linear_history');
+  }
+  public set requiredLinearHistory(value: boolean | cdktf.IResolvable ) {
+    this._requiredLinearHistory = value;
+  }
+  public resetRequiredLinearHistory() {
+    this._requiredLinearHistory = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredLinearHistoryInput() {
+    return this._requiredLinearHistory
+  }
+
   // required_pull_request_reviews - computed: false, optional: true, required: false
   private _requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[];
   public get requiredPullRequestReviews() {
@@ -307,6 +328,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       push_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(this._pushRestrictions),
       repository_id: cdktf.stringToTerraform(this._repositoryId),
       require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),
+      required_linear_history: cdktf.booleanToTerraform(this._requiredLinearHistory),
       required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform)(this._requiredPullRequestReviews),
       required_status_checks: cdktf.listMapper(branchProtectionRequiredStatusChecksToTerraform)(this._requiredStatusChecks),
     };
