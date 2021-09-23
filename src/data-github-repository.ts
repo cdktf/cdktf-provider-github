@@ -24,6 +24,18 @@ export interface DataGithubRepositoryConfig extends cdktf.TerraformMetaArguments
   */
   readonly name?: string;
 }
+export class DataGithubRepositoryBranches extends cdktf.ComplexComputedList {
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // protected - computed: true, optional: false, required: false
+  public get protected() {
+    return this.getBooleanAttribute('protected');
+  }
+}
 export class DataGithubRepositoryPagesSource extends cdktf.ComplexComputedList {
 
   // branch - computed: true, optional: false, required: false
@@ -129,6 +141,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // archived - computed: true, optional: false, required: false
   public get archived() {
     return this.getBooleanAttribute('archived');
+  }
+
+  // branches - computed: true, optional: false, required: false
+  public branches(index: string) {
+    return new DataGithubRepositoryBranches(this, 'branches', index);
   }
 
   // default_branch - computed: true, optional: false, required: false
