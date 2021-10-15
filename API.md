@@ -29,6 +29,7 @@ Name|Description
 [DataGithubRepositories](#cdktf-provider-github-datagithubrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories.html github_repositories}.
 [DataGithubRepository](#cdktf-provider-github-datagithubrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository.html github_repository}.
 [DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepositorybranches)|*No description*
+[DataGithubRepositoryFile](#cdktf-provider-github-datagithubrepositoryfile)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file.html github_repository_file}.
 [DataGithubRepositoryMilestone](#cdktf-provider-github-datagithubrepositorymilestone)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone.html github_repository_milestone}.
 [DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepositorypages)|*No description*
 [DataGithubRepositoryPagesSource](#cdktf-provider-github-datagithubrepositorypagessource)|*No description*
@@ -93,6 +94,7 @@ Name|Description
 [DataGithubReleaseConfig](#cdktf-provider-github-datagithubreleaseconfig)|*No description*
 [DataGithubRepositoriesConfig](#cdktf-provider-github-datagithubrepositoriesconfig)|*No description*
 [DataGithubRepositoryConfig](#cdktf-provider-github-datagithubrepositoryconfig)|*No description*
+[DataGithubRepositoryFileConfig](#cdktf-provider-github-datagithubrepositoryfileconfig)|*No description*
 [DataGithubRepositoryMilestoneConfig](#cdktf-provider-github-datagithubrepositorymilestoneconfig)|*No description*
 [DataGithubRepositoryPullRequestConfig](#cdktf-provider-github-datagithubrepositorypullrequestconfig)|*No description*
 [DataGithubRepositoryPullRequestsConfig](#cdktf-provider-github-datagithubrepositorypullrequestsconfig)|*No description*
@@ -2088,6 +2090,84 @@ Name | Type | Description
 
 
 
+## class DataGithubRepositoryFile  <a id="cdktf-provider-github-datagithubrepositoryfile"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file.html github_repository_file}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_file.html github_repository_file} Data Source.
+
+```ts
+new DataGithubRepositoryFile(scope: Construct, id: string, config: DataGithubRepositoryFileConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataGithubRepositoryFileConfig](#cdktf-provider-github-datagithubrepositoryfileconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **file** (<code>string</code>)  The file path to manage. 
+  * **repository** (<code>string</code>)  The repository name. 
+  * **branch** (<code>string</code>)  The branch name, defaults to "main". __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**branch** | <code>string</code> | <span></span>
+**commitAuthor** | <code>string</code> | <span></span>
+**commitEmail** | <code>string</code> | <span></span>
+**commitMessage** | <code>string</code> | <span></span>
+**commitSha** | <code>string</code> | <span></span>
+**content** | <code>string</code> | <span></span>
+**file** | <code>string</code> | <span></span>
+**fileInput** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**repositoryInput** | <code>string</code> | <span></span>
+**sha** | <code>string</code> | <span></span>
+**branchInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetBranch() <a id="cdktf-provider-github-datagithubrepositoryfile-resetbranch"></a>
+
+
+
+```ts
+resetBranch(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositoryfile-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class DataGithubRepositoryMilestone  <a id="cdktf-provider-github-datagithubrepositorymilestone"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone.html github_repository_milestone}.
@@ -2667,6 +2747,7 @@ new GithubProvider(scope: Construct, id: string, config?: GithubProviderConfig)
   * **organization** (<code>string</code>)  The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. __*Optional*__
   * **owner** (<code>string</code>)  The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. __*Optional*__
   * **token** (<code>string</code>)  The OAuth token used to connect to GitHub. __*Optional*__
+  * **writeDelayMs** (<code>number</code>)  Amount of time in milliseconds to sleep in between writes to GitHub API. __*Optional*__
 
 
 
@@ -2689,6 +2770,8 @@ Name | Type | Description
 **ownerInput**? | <code>string</code> | __*Optional*__
 **token**? | <code>string</code> | __*Optional*__
 **tokenInput**? | <code>string</code> | __*Optional*__
+**writeDelayMs**? | <code>number</code> | __*Optional*__
+**writeDelayMsInput**? | <code>number</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
@@ -2772,6 +2855,18 @@ resetOwner(): void
 
 ```ts
 resetToken(): void
+```
+
+
+
+
+
+#### resetWriteDelayMs() <a id="cdktf-provider-github-githubprovider-resetwritedelayms"></a>
+
+
+
+```ts
+resetWriteDelayMs(): void
 ```
 
 
@@ -5494,6 +5589,25 @@ Name | Type | Description
 
 
 
+## struct DataGithubRepositoryFileConfig  <a id="cdktf-provider-github-datagithubrepositoryfileconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**file** | <code>string</code> | The file path to manage.
+**repository** | <code>string</code> | The repository name.
+**branch**? | <code>string</code> | The branch name, defaults to "main".<br/>__*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct DataGithubRepositoryMilestoneConfig  <a id="cdktf-provider-github-datagithubrepositorymilestoneconfig"></a>
 
 
@@ -5620,6 +5734,7 @@ Name | Type | Description
 **organization**? | <code>string</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.<br/>__*Optional*__
 **owner**? | <code>string</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.<br/>__*Optional*__
 **token**? | <code>string</code> | The OAuth token used to connect to GitHub.<br/>__*Optional*__
+**writeDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between writes to GitHub API.<br/>__*Optional*__
 
 
 

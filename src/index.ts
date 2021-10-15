@@ -43,6 +43,7 @@ export * from './data-github-organization-teams';
 export * from './data-github-release';
 export * from './data-github-repositories';
 export * from './data-github-repository';
+export * from './data-github-repository-file';
 export * from './data-github-repository-milestone';
 export * from './data-github-repository-pull-request';
 export * from './data-github-repository-pull-requests';
