@@ -38,6 +38,12 @@ export interface GithubProviderConfig {
   */
   readonly token?: string;
   /**
+  * Amount of time in milliseconds to sleep in between writes to GitHub API. Defaults to 1000ms or 1s if not set.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#write_delay_ms GithubProvider#write_delay_ms}
+  */
+  readonly writeDelayMs?: number;
+  /**
   * Alias name
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#alias GithubProvider#alias}
@@ -116,6 +122,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
     this._organization = config.organization;
     this._owner = config.owner;
     this._token = config.token;
+    this._writeDelayMs = config.writeDelayMs;
     this._alias = config.alias;
     this._appAuth = config.appAuth;
   }
@@ -204,6 +211,22 @@ export class GithubProvider extends cdktf.TerraformProvider {
     return this._token
   }
 
+  // write_delay_ms - computed: false, optional: true, required: false
+  private _writeDelayMs?: number;
+  public get writeDelayMs() {
+    return this._writeDelayMs;
+  }
+  public set writeDelayMs(value: number  | undefined) {
+    this._writeDelayMs = value;
+  }
+  public resetWriteDelayMs() {
+    this._writeDelayMs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get writeDelayMsInput() {
+    return this._writeDelayMs
+  }
+
   // alias - computed: false, optional: true, required: false
   private _alias?: string;
   public get alias() {
@@ -247,6 +270,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
       organization: cdktf.stringToTerraform(this._organization),
       owner: cdktf.stringToTerraform(this._owner),
       token: cdktf.stringToTerraform(this._token),
+      write_delay_ms: cdktf.numberToTerraform(this._writeDelayMs),
       alias: cdktf.stringToTerraform(this._alias),
       app_auth: cdktf.listMapper(githubProviderAppAuthToTerraform)(this._appAuth),
     };
