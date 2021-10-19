@@ -68,7 +68,7 @@ export class UserSshKey extends cdktf.TerraformResource {
   }
 
   // key - computed: false, optional: false, required: true
-  private _key: string;
+  private _key?: string; 
   public get key() {
     return this.getStringAttribute('key');
   }
@@ -81,7 +81,7 @@ export class UserSshKey extends cdktf.TerraformResource {
   }
 
   // title - computed: false, optional: false, required: true
-  private _title: string;
+  private _title?: string; 
   public get title() {
     return this.getStringAttribute('title');
   }

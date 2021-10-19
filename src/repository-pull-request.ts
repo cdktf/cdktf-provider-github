@@ -83,7 +83,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   // ==========
 
   // base_ref - computed: false, optional: false, required: true
-  private _baseRef: string;
+  private _baseRef?: string; 
   public get baseRef() {
     return this.getStringAttribute('base_ref');
   }
@@ -96,7 +96,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // base_repository - computed: false, optional: false, required: true
-  private _baseRepository: string;
+  private _baseRepository?: string; 
   public get baseRepository() {
     return this.getStringAttribute('base_repository');
   }
@@ -114,11 +114,11 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // body - computed: false, optional: true, required: false
-  private _body?: string;
+  private _body?: string | undefined; 
   public get body() {
     return this.getStringAttribute('body');
   }
-  public set body(value: string ) {
+  public set body(value: string | undefined) {
     this._body = value;
   }
   public resetBody() {
@@ -131,11 +131,11 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
 
   // draft - computed: true, optional: false, required: false
   public get draft() {
-    return this.getBooleanAttribute('draft');
+    return this.getBooleanAttribute('draft') as any;
   }
 
   // head_ref - computed: false, optional: false, required: true
-  private _headRef: string;
+  private _headRef?: string; 
   public get headRef() {
     return this.getStringAttribute('head_ref');
   }
@@ -163,11 +163,11 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // maintainer_can_modify - computed: false, optional: true, required: false
-  private _maintainerCanModify?: boolean | cdktf.IResolvable;
+  private _maintainerCanModify?: boolean | cdktf.IResolvable | undefined; 
   public get maintainerCanModify() {
-    return this.getBooleanAttribute('maintainer_can_modify');
+    return this.getBooleanAttribute('maintainer_can_modify') as any;
   }
-  public set maintainerCanModify(value: boolean | cdktf.IResolvable ) {
+  public set maintainerCanModify(value: boolean | cdktf.IResolvable | undefined) {
     this._maintainerCanModify = value;
   }
   public resetMaintainerCanModify() {
@@ -194,11 +194,11 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // owner - computed: false, optional: true, required: false
-  private _owner?: string;
+  private _owner?: string | undefined; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string ) {
+  public set owner(value: string | undefined) {
     this._owner = value;
   }
   public resetOwner() {
@@ -215,7 +215,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // title - computed: false, optional: false, required: true
-  private _title: string;
+  private _title?: string; 
   public get title() {
     return this.getStringAttribute('title');
   }

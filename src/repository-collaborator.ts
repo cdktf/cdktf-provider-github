@@ -78,11 +78,11 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
 
   // permission - computed: false, optional: true, required: false
-  private _permission?: string;
+  private _permission?: string | undefined; 
   public get permission() {
     return this.getStringAttribute('permission');
   }
-  public set permission(value: string ) {
+  public set permission(value: string | undefined) {
     this._permission = value;
   }
   public resetPermission() {
@@ -94,11 +94,11 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
 
   // permission_diff_suppression - computed: false, optional: true, required: false
-  private _permissionDiffSuppression?: boolean | cdktf.IResolvable;
+  private _permissionDiffSuppression?: boolean | cdktf.IResolvable | undefined; 
   public get permissionDiffSuppression() {
-    return this.getBooleanAttribute('permission_diff_suppression');
+    return this.getBooleanAttribute('permission_diff_suppression') as any;
   }
-  public set permissionDiffSuppression(value: boolean | cdktf.IResolvable ) {
+  public set permissionDiffSuppression(value: boolean | cdktf.IResolvable | undefined) {
     this._permissionDiffSuppression = value;
   }
   public resetPermissionDiffSuppression() {
@@ -110,7 +110,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }
@@ -123,7 +123,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
 
   // username - computed: false, optional: false, required: true
-  private _username: string;
+  private _username?: string; 
   public get username() {
     return this.getStringAttribute('username');
   }

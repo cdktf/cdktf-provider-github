@@ -28,19 +28,19 @@ export interface BranchProtectionV3Config extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#required_pull_request_reviews BranchProtectionV3#required_pull_request_reviews}
   */
-  readonly requiredPullRequestReviews?: BranchProtectionV3RequiredPullRequestReviews[];
+  readonly requiredPullRequestReviews?: BranchProtectionV3RequiredPullRequestReviews;
   /**
   * required_status_checks block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#required_status_checks BranchProtectionV3#required_status_checks}
   */
-  readonly requiredStatusChecks?: BranchProtectionV3RequiredStatusChecks[];
+  readonly requiredStatusChecks?: BranchProtectionV3RequiredStatusChecks;
   /**
   * restrictions block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#restrictions BranchProtectionV3#restrictions}
   */
-  readonly restrictions?: BranchProtectionV3Restrictions[];
+  readonly restrictions?: BranchProtectionV3Restrictions;
 }
 export interface BranchProtectionV3RequiredPullRequestReviews {
   /**
@@ -69,8 +69,11 @@ export interface BranchProtectionV3RequiredPullRequestReviews {
   readonly requiredApprovingReviewCount?: number;
 }
 
-function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?: BranchProtectionV3RequiredPullRequestReviews): any {
+function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?: BranchProtectionV3RequiredPullRequestReviewsOutputReference | BranchProtectionV3RequiredPullRequestReviews): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     dismiss_stale_reviews: cdktf.booleanToTerraform(struct!.dismissStaleReviews),
     dismissal_teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalTeams),
@@ -81,6 +84,112 @@ function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?: Branch
   }
 }
 
+export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // dismiss_stale_reviews - computed: false, optional: true, required: false
+  private _dismissStaleReviews?: boolean | cdktf.IResolvable | undefined; 
+  public get dismissStaleReviews() {
+    return this.getBooleanAttribute('dismiss_stale_reviews') as any;
+  }
+  public set dismissStaleReviews(value: boolean | cdktf.IResolvable | undefined) {
+    this._dismissStaleReviews = value;
+  }
+  public resetDismissStaleReviews() {
+    this._dismissStaleReviews = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dismissStaleReviewsInput() {
+    return this._dismissStaleReviews
+  }
+
+  // dismissal_teams - computed: false, optional: true, required: false
+  private _dismissalTeams?: string[] | undefined; 
+  public get dismissalTeams() {
+    return this.getListAttribute('dismissal_teams');
+  }
+  public set dismissalTeams(value: string[] | undefined) {
+    this._dismissalTeams = value;
+  }
+  public resetDismissalTeams() {
+    this._dismissalTeams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dismissalTeamsInput() {
+    return this._dismissalTeams
+  }
+
+  // dismissal_users - computed: false, optional: true, required: false
+  private _dismissalUsers?: string[] | undefined; 
+  public get dismissalUsers() {
+    return this.getListAttribute('dismissal_users');
+  }
+  public set dismissalUsers(value: string[] | undefined) {
+    this._dismissalUsers = value;
+  }
+  public resetDismissalUsers() {
+    this._dismissalUsers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dismissalUsersInput() {
+    return this._dismissalUsers
+  }
+
+  // include_admins - computed: false, optional: true, required: false
+  private _includeAdmins?: boolean | cdktf.IResolvable | undefined; 
+  public get includeAdmins() {
+    return this.getBooleanAttribute('include_admins') as any;
+  }
+  public set includeAdmins(value: boolean | cdktf.IResolvable | undefined) {
+    this._includeAdmins = value;
+  }
+  public resetIncludeAdmins() {
+    this._includeAdmins = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeAdminsInput() {
+    return this._includeAdmins
+  }
+
+  // require_code_owner_reviews - computed: false, optional: true, required: false
+  private _requireCodeOwnerReviews?: boolean | cdktf.IResolvable | undefined; 
+  public get requireCodeOwnerReviews() {
+    return this.getBooleanAttribute('require_code_owner_reviews') as any;
+  }
+  public set requireCodeOwnerReviews(value: boolean | cdktf.IResolvable | undefined) {
+    this._requireCodeOwnerReviews = value;
+  }
+  public resetRequireCodeOwnerReviews() {
+    this._requireCodeOwnerReviews = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireCodeOwnerReviewsInput() {
+    return this._requireCodeOwnerReviews
+  }
+
+  // required_approving_review_count - computed: false, optional: true, required: false
+  private _requiredApprovingReviewCount?: number | undefined; 
+  public get requiredApprovingReviewCount() {
+    return this.getNumberAttribute('required_approving_review_count');
+  }
+  public set requiredApprovingReviewCount(value: number | undefined) {
+    this._requiredApprovingReviewCount = value;
+  }
+  public resetRequiredApprovingReviewCount() {
+    this._requiredApprovingReviewCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredApprovingReviewCountInput() {
+    return this._requiredApprovingReviewCount
+  }
+}
 export interface BranchProtectionV3RequiredStatusChecks {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#contexts BranchProtectionV3#contexts}
@@ -96,8 +205,11 @@ export interface BranchProtectionV3RequiredStatusChecks {
   readonly strict?: boolean | cdktf.IResolvable;
 }
 
-function branchProtectionV3RequiredStatusChecksToTerraform(struct?: BranchProtectionV3RequiredStatusChecks): any {
+function branchProtectionV3RequiredStatusChecksToTerraform(struct?: BranchProtectionV3RequiredStatusChecksOutputReference | BranchProtectionV3RequiredStatusChecks): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     contexts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contexts),
     include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
@@ -105,6 +217,64 @@ function branchProtectionV3RequiredStatusChecksToTerraform(struct?: BranchProtec
   }
 }
 
+export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // contexts - computed: false, optional: true, required: false
+  private _contexts?: string[] | undefined; 
+  public get contexts() {
+    return this.getListAttribute('contexts');
+  }
+  public set contexts(value: string[] | undefined) {
+    this._contexts = value;
+  }
+  public resetContexts() {
+    this._contexts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextsInput() {
+    return this._contexts
+  }
+
+  // include_admins - computed: false, optional: true, required: false
+  private _includeAdmins?: boolean | cdktf.IResolvable | undefined; 
+  public get includeAdmins() {
+    return this.getBooleanAttribute('include_admins') as any;
+  }
+  public set includeAdmins(value: boolean | cdktf.IResolvable | undefined) {
+    this._includeAdmins = value;
+  }
+  public resetIncludeAdmins() {
+    this._includeAdmins = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeAdminsInput() {
+    return this._includeAdmins
+  }
+
+  // strict - computed: false, optional: true, required: false
+  private _strict?: boolean | cdktf.IResolvable | undefined; 
+  public get strict() {
+    return this.getBooleanAttribute('strict') as any;
+  }
+  public set strict(value: boolean | cdktf.IResolvable | undefined) {
+    this._strict = value;
+  }
+  public resetStrict() {
+    this._strict = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strictInput() {
+    return this._strict
+  }
+}
 export interface BranchProtectionV3Restrictions {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#apps BranchProtectionV3#apps}
@@ -120,8 +290,11 @@ export interface BranchProtectionV3Restrictions {
   readonly users?: string[];
 }
 
-function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtectionV3Restrictions): any {
+function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtectionV3RestrictionsOutputReference | BranchProtectionV3Restrictions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     apps: cdktf.listMapper(cdktf.stringToTerraform)(struct!.apps),
     teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
@@ -129,6 +302,64 @@ function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtectionV3Re
   }
 }
 
+export class BranchProtectionV3RestrictionsOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // apps - computed: false, optional: true, required: false
+  private _apps?: string[] | undefined; 
+  public get apps() {
+    return this.getListAttribute('apps');
+  }
+  public set apps(value: string[] | undefined) {
+    this._apps = value;
+  }
+  public resetApps() {
+    this._apps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appsInput() {
+    return this._apps
+  }
+
+  // teams - computed: false, optional: true, required: false
+  private _teams?: string[] | undefined; 
+  public get teams() {
+    return this.getListAttribute('teams');
+  }
+  public set teams(value: string[] | undefined) {
+    this._teams = value;
+  }
+  public resetTeams() {
+    this._teams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamsInput() {
+    return this._teams
+  }
+
+  // users - computed: false, optional: true, required: false
+  private _users?: string[] | undefined; 
+  public get users() {
+    return this.getListAttribute('users');
+  }
+  public set users(value: string[] | undefined) {
+    this._users = value;
+  }
+  public resetUsers() {
+    this._users = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersInput() {
+    return this._users
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html github_branch_protection_v3}
@@ -176,7 +407,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   // ==========
 
   // branch - computed: false, optional: false, required: true
-  private _branch: string;
+  private _branch?: string; 
   public get branch() {
     return this.getStringAttribute('branch');
   }
@@ -189,11 +420,11 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // enforce_admins - computed: false, optional: true, required: false
-  private _enforceAdmins?: boolean | cdktf.IResolvable;
+  private _enforceAdmins?: boolean | cdktf.IResolvable | undefined; 
   public get enforceAdmins() {
-    return this.getBooleanAttribute('enforce_admins');
+    return this.getBooleanAttribute('enforce_admins') as any;
   }
-  public set enforceAdmins(value: boolean | cdktf.IResolvable ) {
+  public set enforceAdmins(value: boolean | cdktf.IResolvable | undefined) {
     this._enforceAdmins = value;
   }
   public resetEnforceAdmins() {
@@ -215,7 +446,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }
@@ -228,11 +459,11 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // require_signed_commits - computed: false, optional: true, required: false
-  private _requireSignedCommits?: boolean | cdktf.IResolvable;
+  private _requireSignedCommits?: boolean | cdktf.IResolvable | undefined; 
   public get requireSignedCommits() {
-    return this.getBooleanAttribute('require_signed_commits');
+    return this.getBooleanAttribute('require_signed_commits') as any;
   }
-  public set requireSignedCommits(value: boolean | cdktf.IResolvable ) {
+  public set requireSignedCommits(value: boolean | cdktf.IResolvable | undefined) {
     this._requireSignedCommits = value;
   }
   public resetRequireSignedCommits() {
@@ -244,11 +475,12 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // required_pull_request_reviews - computed: false, optional: true, required: false
-  private _requiredPullRequestReviews?: BranchProtectionV3RequiredPullRequestReviews[];
+  private _requiredPullRequestReviews?: BranchProtectionV3RequiredPullRequestReviews | undefined; 
+  private __requiredPullRequestReviewsOutput = new BranchProtectionV3RequiredPullRequestReviewsOutputReference(this as any, "required_pull_request_reviews", true);
   public get requiredPullRequestReviews() {
-    return this.interpolationForAttribute('required_pull_request_reviews') as any;
+    return this.__requiredPullRequestReviewsOutput;
   }
-  public set requiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReviews[] ) {
+  public putRequiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReviews | undefined) {
     this._requiredPullRequestReviews = value;
   }
   public resetRequiredPullRequestReviews() {
@@ -260,11 +492,12 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // required_status_checks - computed: false, optional: true, required: false
-  private _requiredStatusChecks?: BranchProtectionV3RequiredStatusChecks[];
+  private _requiredStatusChecks?: BranchProtectionV3RequiredStatusChecks | undefined; 
+  private __requiredStatusChecksOutput = new BranchProtectionV3RequiredStatusChecksOutputReference(this as any, "required_status_checks", true);
   public get requiredStatusChecks() {
-    return this.interpolationForAttribute('required_status_checks') as any;
+    return this.__requiredStatusChecksOutput;
   }
-  public set requiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks[] ) {
+  public putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks | undefined) {
     this._requiredStatusChecks = value;
   }
   public resetRequiredStatusChecks() {
@@ -276,11 +509,12 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // restrictions - computed: false, optional: true, required: false
-  private _restrictions?: BranchProtectionV3Restrictions[];
+  private _restrictions?: BranchProtectionV3Restrictions | undefined; 
+  private __restrictionsOutput = new BranchProtectionV3RestrictionsOutputReference(this as any, "restrictions", true);
   public get restrictions() {
-    return this.interpolationForAttribute('restrictions') as any;
+    return this.__restrictionsOutput;
   }
-  public set restrictions(value: BranchProtectionV3Restrictions[] ) {
+  public putRestrictions(value: BranchProtectionV3Restrictions | undefined) {
     this._restrictions = value;
   }
   public resetRestrictions() {
@@ -301,9 +535,9 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
       enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
       repository: cdktf.stringToTerraform(this._repository),
       require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),
-      required_pull_request_reviews: cdktf.listMapper(branchProtectionV3RequiredPullRequestReviewsToTerraform)(this._requiredPullRequestReviews),
-      required_status_checks: cdktf.listMapper(branchProtectionV3RequiredStatusChecksToTerraform)(this._requiredStatusChecks),
-      restrictions: cdktf.listMapper(branchProtectionV3RestrictionsToTerraform)(this._restrictions),
+      required_pull_request_reviews: branchProtectionV3RequiredPullRequestReviewsToTerraform(this._requiredPullRequestReviews),
+      required_status_checks: branchProtectionV3RequiredStatusChecksToTerraform(this._requiredStatusChecks),
+      restrictions: branchProtectionV3RestrictionsToTerraform(this._restrictions),
     };
   }
 }

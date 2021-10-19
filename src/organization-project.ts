@@ -58,11 +58,11 @@ export class OrganizationProject extends cdktf.TerraformResource {
   // ==========
 
   // body - computed: false, optional: true, required: false
-  private _body?: string;
+  private _body?: string | undefined; 
   public get body() {
     return this.getStringAttribute('body');
   }
-  public set body(value: string ) {
+  public set body(value: string | undefined) {
     this._body = value;
   }
   public resetBody() {
@@ -84,7 +84,7 @@ export class OrganizationProject extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }

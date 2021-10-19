@@ -55,7 +55,7 @@ export class DataGithubRepositoryPullRequestsResults extends cdktf.ComplexComput
 
   // draft - computed: true, optional: false, required: false
   public get draft() {
-    return this.getBooleanAttribute('draft');
+    return this.getBooleanAttribute('draft') as any;
   }
 
   // head_owner - computed: true, optional: false, required: false
@@ -85,7 +85,7 @@ export class DataGithubRepositoryPullRequestsResults extends cdktf.ComplexComput
 
   // maintainer_can_modify - computed: true, optional: false, required: false
   public get maintainerCanModify() {
-    return this.getBooleanAttribute('maintainer_can_modify');
+    return this.getBooleanAttribute('maintainer_can_modify') as any;
   }
 
   // number - computed: true, optional: false, required: false
@@ -165,11 +165,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   // ==========
 
   // base_ref - computed: false, optional: true, required: false
-  private _baseRef?: string;
+  private _baseRef?: string | undefined; 
   public get baseRef() {
     return this.getStringAttribute('base_ref');
   }
-  public set baseRef(value: string ) {
+  public set baseRef(value: string | undefined) {
     this._baseRef = value;
   }
   public resetBaseRef() {
@@ -181,7 +181,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // base_repository - computed: false, optional: false, required: true
-  private _baseRepository: string;
+  private _baseRepository?: string; 
   public get baseRepository() {
     return this.getStringAttribute('base_repository');
   }
@@ -194,11 +194,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // head_ref - computed: false, optional: true, required: false
-  private _headRef?: string;
+  private _headRef?: string | undefined; 
   public get headRef() {
     return this.getStringAttribute('head_ref');
   }
-  public set headRef(value: string ) {
+  public set headRef(value: string | undefined) {
     this._headRef = value;
   }
   public resetHeadRef() {
@@ -215,11 +215,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // owner - computed: false, optional: true, required: false
-  private _owner?: string;
+  private _owner?: string | undefined; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string ) {
+  public set owner(value: string | undefined) {
     this._owner = value;
   }
   public resetOwner() {
@@ -236,11 +236,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // sort_by - computed: false, optional: true, required: false
-  private _sortBy?: string;
+  private _sortBy?: string | undefined; 
   public get sortBy() {
     return this.getStringAttribute('sort_by');
   }
-  public set sortBy(value: string ) {
+  public set sortBy(value: string | undefined) {
     this._sortBy = value;
   }
   public resetSortBy() {
@@ -252,11 +252,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // sort_direction - computed: false, optional: true, required: false
-  private _sortDirection?: string;
+  private _sortDirection?: string | undefined; 
   public get sortDirection() {
     return this.getStringAttribute('sort_direction');
   }
-  public set sortDirection(value: string ) {
+  public set sortDirection(value: string | undefined) {
     this._sortDirection = value;
   }
   public resetSortDirection() {
@@ -268,11 +268,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // state - computed: false, optional: true, required: false
-  private _state?: string;
+  private _state?: string | undefined; 
   public get state() {
     return this.getStringAttribute('state');
   }
-  public set state(value: string ) {
+  public set state(value: string | undefined) {
     this._state = value;
   }
   public resetState() {

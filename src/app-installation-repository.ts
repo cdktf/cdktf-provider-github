@@ -63,7 +63,7 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
   }
 
   // installation_id - computed: false, optional: false, required: true
-  private _installationId: string;
+  private _installationId?: string; 
   public get installationId() {
     return this.getStringAttribute('installation_id');
   }
@@ -81,7 +81,7 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }

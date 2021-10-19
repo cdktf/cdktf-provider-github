@@ -33,7 +33,7 @@ export class DataGithubRepositoryBranches extends cdktf.ComplexComputedList {
 
   // protected - computed: true, optional: false, required: false
   public get protected() {
-    return this.getBooleanAttribute('protected');
+    return this.getBooleanAttribute('protected') as any;
   }
 }
 export class DataGithubRepositoryPagesSource extends cdktf.ComplexComputedList {
@@ -57,7 +57,7 @@ export class DataGithubRepositoryPages extends cdktf.ComplexComputedList {
 
   // custom_404 - computed: true, optional: false, required: false
   public get custom404() {
-    return this.getBooleanAttribute('custom_404');
+    return this.getBooleanAttribute('custom_404') as any;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -67,6 +67,7 @@ export class DataGithubRepositoryPages extends cdktf.ComplexComputedList {
 
   // source - computed: true, optional: false, required: false
   public get source() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('source') as any;
   }
 
@@ -123,24 +124,29 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
+  // allow_auto_merge - computed: true, optional: false, required: false
+  public get allowAutoMerge() {
+    return this.getBooleanAttribute('allow_auto_merge') as any;
+  }
+
   // allow_merge_commit - computed: true, optional: false, required: false
   public get allowMergeCommit() {
-    return this.getBooleanAttribute('allow_merge_commit');
+    return this.getBooleanAttribute('allow_merge_commit') as any;
   }
 
   // allow_rebase_merge - computed: true, optional: false, required: false
   public get allowRebaseMerge() {
-    return this.getBooleanAttribute('allow_rebase_merge');
+    return this.getBooleanAttribute('allow_rebase_merge') as any;
   }
 
   // allow_squash_merge - computed: true, optional: false, required: false
   public get allowSquashMerge() {
-    return this.getBooleanAttribute('allow_squash_merge');
+    return this.getBooleanAttribute('allow_squash_merge') as any;
   }
 
   // archived - computed: true, optional: false, required: false
   public get archived() {
-    return this.getBooleanAttribute('archived');
+    return this.getBooleanAttribute('archived') as any;
   }
 
   // branches - computed: true, optional: false, required: false
@@ -154,11 +160,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -170,11 +176,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
 
   // full_name - computed: true, optional: true, required: false
-  private _fullName?: string;
+  private _fullName?: string | undefined; 
   public get fullName() {
     return this.getStringAttribute('full_name');
   }
-  public set fullName(value: string) {
+  public set fullName(value: string | undefined) {
     this._fullName = value;
   }
   public resetFullName() {
@@ -192,30 +198,30 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
 
   // has_downloads - computed: true, optional: false, required: false
   public get hasDownloads() {
-    return this.getBooleanAttribute('has_downloads');
+    return this.getBooleanAttribute('has_downloads') as any;
   }
 
   // has_issues - computed: true, optional: false, required: false
   public get hasIssues() {
-    return this.getBooleanAttribute('has_issues');
+    return this.getBooleanAttribute('has_issues') as any;
   }
 
   // has_projects - computed: true, optional: false, required: false
   public get hasProjects() {
-    return this.getBooleanAttribute('has_projects');
+    return this.getBooleanAttribute('has_projects') as any;
   }
 
   // has_wiki - computed: true, optional: false, required: false
   public get hasWiki() {
-    return this.getBooleanAttribute('has_wiki');
+    return this.getBooleanAttribute('has_wiki') as any;
   }
 
   // homepage_url - computed: false, optional: true, required: false
-  private _homepageUrl?: string;
+  private _homepageUrl?: string | undefined; 
   public get homepageUrl() {
     return this.getStringAttribute('homepage_url');
   }
-  public set homepageUrl(value: string ) {
+  public set homepageUrl(value: string | undefined) {
     this._homepageUrl = value;
   }
   public resetHomepageUrl() {
@@ -242,11 +248,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string;
+  private _name?: string | undefined; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
   public resetName() {
@@ -269,7 +275,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
 
   // private - computed: true, optional: false, required: false
   public get private() {
-    return this.getBooleanAttribute('private');
+    return this.getBooleanAttribute('private') as any;
   }
 
   // repo_id - computed: true, optional: false, required: false

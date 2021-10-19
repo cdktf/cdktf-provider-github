@@ -80,11 +80,11 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -96,11 +96,11 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
 
   // due_date - computed: false, optional: true, required: false
-  private _dueDate?: string;
+  private _dueDate?: string | undefined; 
   public get dueDate() {
     return this.getStringAttribute('due_date');
   }
-  public set dueDate(value: string ) {
+  public set dueDate(value: string | undefined) {
     this._dueDate = value;
   }
   public resetDueDate() {
@@ -122,7 +122,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
 
   // owner - computed: false, optional: false, required: true
-  private _owner: string;
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
@@ -135,7 +135,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }
@@ -148,11 +148,11 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
 
   // state - computed: false, optional: true, required: false
-  private _state?: string;
+  private _state?: string | undefined; 
   public get state() {
     return this.getStringAttribute('state');
   }
-  public set state(value: string ) {
+  public set state(value: string | undefined) {
     this._state = value;
   }
   public resetState() {
@@ -164,7 +164,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
 
   // title - computed: false, optional: false, required: true
-  private _title: string;
+  private _title?: string; 
   public get title() {
     return this.getStringAttribute('title');
   }

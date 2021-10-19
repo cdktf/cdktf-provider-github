@@ -58,7 +58,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
   }
 
   // invitation_id - computed: false, optional: false, required: true
-  private _invitationId: string;
+  private _invitationId?: string; 
   public get invitationId() {
     return this.getStringAttribute('invitation_id');
   }

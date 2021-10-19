@@ -104,11 +104,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // ==========
 
   // branch - computed: false, optional: true, required: false
-  private _branch?: string;
+  private _branch?: string | undefined; 
   public get branch() {
     return this.getStringAttribute('branch');
   }
-  public set branch(value: string ) {
+  public set branch(value: string | undefined) {
     this._branch = value;
   }
   public resetBranch() {
@@ -120,11 +120,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // commit_author - computed: true, optional: true, required: false
-  private _commitAuthor?: string;
+  private _commitAuthor?: string | undefined; 
   public get commitAuthor() {
     return this.getStringAttribute('commit_author');
   }
-  public set commitAuthor(value: string) {
+  public set commitAuthor(value: string | undefined) {
     this._commitAuthor = value;
   }
   public resetCommitAuthor() {
@@ -136,11 +136,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // commit_email - computed: true, optional: true, required: false
-  private _commitEmail?: string;
+  private _commitEmail?: string | undefined; 
   public get commitEmail() {
     return this.getStringAttribute('commit_email');
   }
-  public set commitEmail(value: string) {
+  public set commitEmail(value: string | undefined) {
     this._commitEmail = value;
   }
   public resetCommitEmail() {
@@ -152,11 +152,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // commit_message - computed: true, optional: true, required: false
-  private _commitMessage?: string;
+  private _commitMessage?: string | undefined; 
   public get commitMessage() {
     return this.getStringAttribute('commit_message');
   }
-  public set commitMessage(value: string) {
+  public set commitMessage(value: string | undefined) {
     this._commitMessage = value;
   }
   public resetCommitMessage() {
@@ -173,7 +173,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // content - computed: false, optional: false, required: true
-  private _content: string;
+  private _content?: string; 
   public get content() {
     return this.getStringAttribute('content');
   }
@@ -186,7 +186,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // file - computed: false, optional: false, required: true
-  private _file: string;
+  private _file?: string; 
   public get file() {
     return this.getStringAttribute('file');
   }
@@ -204,11 +204,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // overwrite_on_create - computed: false, optional: true, required: false
-  private _overwriteOnCreate?: boolean | cdktf.IResolvable;
+  private _overwriteOnCreate?: boolean | cdktf.IResolvable | undefined; 
   public get overwriteOnCreate() {
-    return this.getBooleanAttribute('overwrite_on_create');
+    return this.getBooleanAttribute('overwrite_on_create') as any;
   }
-  public set overwriteOnCreate(value: boolean | cdktf.IResolvable ) {
+  public set overwriteOnCreate(value: boolean | cdktf.IResolvable | undefined) {
     this._overwriteOnCreate = value;
   }
   public resetOverwriteOnCreate() {
@@ -220,7 +220,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }

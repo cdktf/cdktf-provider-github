@@ -58,7 +58,7 @@ export class BranchDefault extends cdktf.TerraformResource {
   // ==========
 
   // branch - computed: false, optional: false, required: true
-  private _branch: string;
+  private _branch?: string; 
   public get branch() {
     return this.getStringAttribute('branch');
   }
@@ -76,7 +76,7 @@ export class BranchDefault extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }

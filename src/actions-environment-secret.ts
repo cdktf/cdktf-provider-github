@@ -78,11 +78,11 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
 
   // encrypted_value - computed: false, optional: true, required: false
-  private _encryptedValue?: string;
+  private _encryptedValue?: string | undefined; 
   public get encryptedValue() {
     return this.getStringAttribute('encrypted_value');
   }
-  public set encryptedValue(value: string ) {
+  public set encryptedValue(value: string | undefined) {
     this._encryptedValue = value;
   }
   public resetEncryptedValue() {
@@ -94,7 +94,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
 
   // environment - computed: false, optional: false, required: true
-  private _environment: string;
+  private _environment?: string; 
   public get environment() {
     return this.getStringAttribute('environment');
   }
@@ -112,11 +112,11 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
 
   // plaintext_value - computed: false, optional: true, required: false
-  private _plaintextValue?: string;
+  private _plaintextValue?: string | undefined; 
   public get plaintextValue() {
     return this.getStringAttribute('plaintext_value');
   }
-  public set plaintextValue(value: string ) {
+  public set plaintextValue(value: string | undefined) {
     this._plaintextValue = value;
   }
   public resetPlaintextValue() {
@@ -128,7 +128,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }
@@ -141,7 +141,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
 
   // secret_name - computed: false, optional: false, required: true
-  private _secretName: string;
+  private _secretName?: string; 
   public get secretName() {
     return this.getStringAttribute('secret_name');
   }

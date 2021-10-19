@@ -78,7 +78,7 @@ export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
   }
 
   // number - computed: false, optional: false, required: true
-  private _number: number;
+  private _number?: number; 
   public get number() {
     return this.getNumberAttribute('number');
   }
@@ -91,7 +91,7 @@ export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
   }
 
   // owner - computed: false, optional: false, required: true
-  private _owner: string;
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
@@ -104,7 +104,7 @@ export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }

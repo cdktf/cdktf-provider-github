@@ -78,7 +78,7 @@ export class RepositoryDeployKey extends cdktf.TerraformResource {
   }
 
   // key - computed: false, optional: false, required: true
-  private _key: string;
+  private _key?: string; 
   public get key() {
     return this.getStringAttribute('key');
   }
@@ -91,11 +91,11 @@ export class RepositoryDeployKey extends cdktf.TerraformResource {
   }
 
   // read_only - computed: false, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable;
+  private _readOnly?: boolean | cdktf.IResolvable | undefined; 
   public get readOnly() {
-    return this.getBooleanAttribute('read_only');
+    return this.getBooleanAttribute('read_only') as any;
   }
-  public set readOnly(value: boolean | cdktf.IResolvable ) {
+  public set readOnly(value: boolean | cdktf.IResolvable | undefined) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -107,7 +107,7 @@ export class RepositoryDeployKey extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }
@@ -120,7 +120,7 @@ export class RepositoryDeployKey extends cdktf.TerraformResource {
   }
 
   // title - computed: false, optional: false, required: true
-  private _title: string;
+  private _title?: string; 
   public get title() {
     return this.getStringAttribute('title');
   }

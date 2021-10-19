@@ -63,7 +63,7 @@ export class OrganizationBlock extends cdktf.TerraformResource {
   }
 
   // username - computed: false, optional: false, required: true
-  private _username: string;
+  private _username?: string; 
   public get username() {
     return this.getStringAttribute('username');
   }

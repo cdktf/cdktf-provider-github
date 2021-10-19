@@ -79,7 +79,7 @@ export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedLi
 
   // site_admin - computed: true, optional: false, required: false
   public get siteAdmin() {
-    return this.getBooleanAttribute('site_admin');
+    return this.getBooleanAttribute('site_admin') as any;
   }
 
   // starred_url - computed: true, optional: false, required: false
@@ -145,11 +145,11 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   // ==========
 
   // affiliation - computed: false, optional: true, required: false
-  private _affiliation?: string;
+  private _affiliation?: string | undefined; 
   public get affiliation() {
     return this.getStringAttribute('affiliation');
   }
-  public set affiliation(value: string ) {
+  public set affiliation(value: string | undefined) {
     this._affiliation = value;
   }
   public resetAffiliation() {
@@ -171,7 +171,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   }
 
   // owner - computed: false, optional: false, required: true
-  private _owner: string;
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
@@ -184,7 +184,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }

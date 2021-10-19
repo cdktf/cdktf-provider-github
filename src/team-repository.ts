@@ -75,11 +75,11 @@ export class TeamRepository extends cdktf.TerraformResource {
   }
 
   // permission - computed: false, optional: true, required: false
-  private _permission?: string;
+  private _permission?: string | undefined; 
   public get permission() {
     return this.getStringAttribute('permission');
   }
-  public set permission(value: string ) {
+  public set permission(value: string | undefined) {
     this._permission = value;
   }
   public resetPermission() {
@@ -91,7 +91,7 @@ export class TeamRepository extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }
@@ -104,7 +104,7 @@ export class TeamRepository extends cdktf.TerraformResource {
   }
 
   // team_id - computed: false, optional: false, required: true
-  private _teamId: string;
+  private _teamId?: string; 
   public get teamId() {
     return this.getStringAttribute('team_id');
   }
