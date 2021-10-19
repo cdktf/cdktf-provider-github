@@ -35,6 +35,9 @@ export interface TeamSyncGroupMappingGroup {
 
 function teamSyncGroupMappingGroupToTerraform(struct?: TeamSyncGroupMappingGroup): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     group_description: cdktf.stringToTerraform(struct!.groupDescription),
     group_id: cdktf.stringToTerraform(struct!.groupId),
@@ -94,7 +97,7 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
   }
 
   // team_slug - computed: false, optional: false, required: true
-  private _teamSlug: string;
+  private _teamSlug?: string; 
   public get teamSlug() {
     return this.getStringAttribute('team_slug');
   }
@@ -107,11 +110,12 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
   }
 
   // group - computed: false, optional: true, required: false
-  private _group?: TeamSyncGroupMappingGroup[];
+  private _group?: TeamSyncGroupMappingGroup[] | undefined; 
   public get group() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('group') as any;
   }
-  public set group(value: TeamSyncGroupMappingGroup[] ) {
+  public set group(value: TeamSyncGroupMappingGroup[] | undefined) {
     this._group = value;
   }
   public resetGroup() {

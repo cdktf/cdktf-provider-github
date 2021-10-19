@@ -78,11 +78,11 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
 
   // encrypted_value - computed: false, optional: true, required: false
-  private _encryptedValue?: string;
+  private _encryptedValue?: string | undefined; 
   public get encryptedValue() {
     return this.getStringAttribute('encrypted_value');
   }
-  public set encryptedValue(value: string ) {
+  public set encryptedValue(value: string | undefined) {
     this._encryptedValue = value;
   }
   public resetEncryptedValue() {
@@ -99,11 +99,11 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
 
   // plaintext_value - computed: false, optional: true, required: false
-  private _plaintextValue?: string;
+  private _plaintextValue?: string | undefined; 
   public get plaintextValue() {
     return this.getStringAttribute('plaintext_value');
   }
-  public set plaintextValue(value: string ) {
+  public set plaintextValue(value: string | undefined) {
     this._plaintextValue = value;
   }
   public resetPlaintextValue() {
@@ -115,7 +115,7 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
 
   // secret_name - computed: false, optional: false, required: true
-  private _secretName: string;
+  private _secretName?: string; 
   public get secretName() {
     return this.getStringAttribute('secret_name');
   }
@@ -128,11 +128,12 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
 
   // selected_repository_ids - computed: false, optional: true, required: false
-  private _selectedRepositoryIds?: number[];
+  private _selectedRepositoryIds?: number[] | undefined; 
   public get selectedRepositoryIds() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('selected_repository_ids') as any;
   }
-  public set selectedRepositoryIds(value: number[] ) {
+  public set selectedRepositoryIds(value: number[] | undefined) {
     this._selectedRepositoryIds = value;
   }
   public resetSelectedRepositoryIds() {
@@ -149,7 +150,7 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
 
   // visibility - computed: false, optional: false, required: true
-  private _visibility: string;
+  private _visibility?: string; 
   public get visibility() {
     return this.getStringAttribute('visibility');
   }

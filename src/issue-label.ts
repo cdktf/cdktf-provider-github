@@ -68,7 +68,7 @@ export class IssueLabel extends cdktf.TerraformResource {
   // ==========
 
   // color - computed: false, optional: false, required: true
-  private _color: string;
+  private _color?: string; 
   public get color() {
     return this.getStringAttribute('color');
   }
@@ -81,11 +81,11 @@ export class IssueLabel extends cdktf.TerraformResource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string;
+  private _description?: string | undefined; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string ) {
+  public set description(value: string | undefined) {
     this._description = value;
   }
   public resetDescription() {
@@ -107,7 +107,7 @@ export class IssueLabel extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -120,7 +120,7 @@ export class IssueLabel extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }

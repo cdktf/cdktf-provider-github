@@ -73,7 +73,7 @@ export class DataGithubRepositories extends cdktf.TerraformDataSource {
   }
 
   // query - computed: false, optional: false, required: true
-  private _query: string;
+  private _query?: string; 
   public get query() {
     return this.getStringAttribute('query');
   }
@@ -86,11 +86,11 @@ export class DataGithubRepositories extends cdktf.TerraformDataSource {
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort?: string;
+  private _sort?: string | undefined; 
   public get sort() {
     return this.getStringAttribute('sort');
   }
-  public set sort(value: string ) {
+  public set sort(value: string | undefined) {
     this._sort = value;
   }
   public resetSort() {

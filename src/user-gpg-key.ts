@@ -53,7 +53,7 @@ export class UserGpgKey extends cdktf.TerraformResource {
   // ==========
 
   // armored_public_key - computed: false, optional: false, required: true
-  private _armoredPublicKey: string;
+  private _armoredPublicKey?: string; 
   public get armoredPublicKey() {
     return this.getStringAttribute('armored_public_key');
   }

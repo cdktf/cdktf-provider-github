@@ -24,7 +24,7 @@ export interface OrganizationWebhookConfig extends cdktf.TerraformMetaArguments 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook.html#configuration OrganizationWebhook#configuration}
   */
-  readonly configuration?: OrganizationWebhookConfiguration[];
+  readonly configuration?: OrganizationWebhookConfiguration;
 }
 export interface OrganizationWebhookConfiguration {
   /**
@@ -45,8 +45,11 @@ export interface OrganizationWebhookConfiguration {
   readonly url: string;
 }
 
-function organizationWebhookConfigurationToTerraform(struct?: OrganizationWebhookConfiguration): any {
+function organizationWebhookConfigurationToTerraform(struct?: OrganizationWebhookConfigurationOutputReference | OrganizationWebhookConfiguration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     content_type: cdktf.stringToTerraform(struct!.contentType),
     insecure_ssl: cdktf.booleanToTerraform(struct!.insecureSsl),
@@ -55,6 +58,77 @@ function organizationWebhookConfigurationToTerraform(struct?: OrganizationWebhoo
   }
 }
 
+export class OrganizationWebhookConfigurationOutputReference extends cdktf.ComplexObject {
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param isSingleItem True if this is a block, false if it's a list
+  */
+  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+    super(terraformResource, terraformAttribute, isSingleItem);
+  }
+
+  // content_type - computed: false, optional: true, required: false
+  private _contentType?: string | undefined; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string | undefined) {
+    this._contentType = value;
+  }
+  public resetContentType() {
+    this._contentType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType
+  }
+
+  // insecure_ssl - computed: false, optional: true, required: false
+  private _insecureSsl?: boolean | cdktf.IResolvable | undefined; 
+  public get insecureSsl() {
+    return this.getBooleanAttribute('insecure_ssl') as any;
+  }
+  public set insecureSsl(value: boolean | cdktf.IResolvable | undefined) {
+    this._insecureSsl = value;
+  }
+  public resetInsecureSsl() {
+    this._insecureSsl = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get insecureSslInput() {
+    return this._insecureSsl
+  }
+
+  // secret - computed: false, optional: true, required: false
+  private _secret?: string | undefined; 
+  public get secret() {
+    return this.getStringAttribute('secret');
+  }
+  public set secret(value: string | undefined) {
+    this._secret = value;
+  }
+  public resetSecret() {
+    this._secret = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretInput() {
+    return this._secret
+  }
+
+  // url - computed: false, optional: false, required: true
+  private _url?: string; 
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+  public set url(value: string) {
+    this._url = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get urlInput() {
+    return this._url
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_webhook.html github_organization_webhook}
@@ -99,11 +173,11 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable;
+  private _active?: boolean | cdktf.IResolvable | undefined; 
   public get active() {
-    return this.getBooleanAttribute('active');
+    return this.getBooleanAttribute('active') as any;
   }
-  public set active(value: boolean | cdktf.IResolvable ) {
+  public set active(value: boolean | cdktf.IResolvable | undefined) {
     this._active = value;
   }
   public resetActive() {
@@ -120,7 +194,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
 
   // events - computed: false, optional: false, required: true
-  private _events: string[];
+  private _events?: string[]; 
   public get events() {
     return this.getListAttribute('events');
   }
@@ -138,11 +212,11 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string;
+  private _name?: string | undefined; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string ) {
+  public set name(value: string | undefined) {
     this._name = value;
   }
   public resetName() {
@@ -159,11 +233,12 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration?: OrganizationWebhookConfiguration[];
+  private _configuration?: OrganizationWebhookConfiguration | undefined; 
+  private __configurationOutput = new OrganizationWebhookConfigurationOutputReference(this as any, "configuration", true);
   public get configuration() {
-    return this.interpolationForAttribute('configuration') as any;
+    return this.__configurationOutput;
   }
-  public set configuration(value: OrganizationWebhookConfiguration[] ) {
+  public putConfiguration(value: OrganizationWebhookConfiguration | undefined) {
     this._configuration = value;
   }
   public resetConfiguration() {
@@ -183,7 +258,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
       active: cdktf.booleanToTerraform(this._active),
       events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
       name: cdktf.stringToTerraform(this._name),
-      configuration: cdktf.listMapper(organizationWebhookConfigurationToTerraform)(this._configuration),
+      configuration: organizationWebhookConfigurationToTerraform(this._configuration),
     };
   }
 }

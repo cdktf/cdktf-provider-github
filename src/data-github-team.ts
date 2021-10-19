@@ -93,7 +93,7 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
   }
 
   // slug - computed: false, optional: false, required: true
-  private _slug: string;
+  private _slug?: string; 
   public get slug() {
     return this.getStringAttribute('slug');
   }

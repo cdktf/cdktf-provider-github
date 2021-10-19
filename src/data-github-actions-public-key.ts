@@ -68,7 +68,7 @@ export class DataGithubActionsPublicKey extends cdktf.TerraformDataSource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }

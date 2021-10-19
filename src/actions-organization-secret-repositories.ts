@@ -63,7 +63,7 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
   }
 
   // secret_name - computed: false, optional: false, required: true
-  private _secretName: string;
+  private _secretName?: string; 
   public get secretName() {
     return this.getStringAttribute('secret_name');
   }
@@ -76,8 +76,9 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
   }
 
   // selected_repository_ids - computed: false, optional: false, required: true
-  private _selectedRepositoryIds: number[];
+  private _selectedRepositoryIds?: number[]; 
   public get selectedRepositoryIds() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('selected_repository_ids') as any;
   }
   public set selectedRepositoryIds(value: number[]) {

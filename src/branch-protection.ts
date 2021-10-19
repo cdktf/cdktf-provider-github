@@ -79,6 +79,9 @@ export interface BranchProtectionRequiredPullRequestReviews {
 
 function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchProtectionRequiredPullRequestReviews): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     dismiss_stale_reviews: cdktf.booleanToTerraform(struct!.dismissStaleReviews),
     dismissal_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalRestrictions),
@@ -101,6 +104,9 @@ export interface BranchProtectionRequiredStatusChecks {
 
 function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchProtectionRequiredStatusChecks): any {
   if (!cdktf.canInspect(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
   return {
     contexts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contexts),
     strict: cdktf.booleanToTerraform(struct!.strict),
@@ -157,11 +163,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   // ==========
 
   // allows_deletions - computed: false, optional: true, required: false
-  private _allowsDeletions?: boolean | cdktf.IResolvable;
+  private _allowsDeletions?: boolean | cdktf.IResolvable | undefined; 
   public get allowsDeletions() {
-    return this.getBooleanAttribute('allows_deletions');
+    return this.getBooleanAttribute('allows_deletions') as any;
   }
-  public set allowsDeletions(value: boolean | cdktf.IResolvable ) {
+  public set allowsDeletions(value: boolean | cdktf.IResolvable | undefined) {
     this._allowsDeletions = value;
   }
   public resetAllowsDeletions() {
@@ -173,11 +179,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // allows_force_pushes - computed: false, optional: true, required: false
-  private _allowsForcePushes?: boolean | cdktf.IResolvable;
+  private _allowsForcePushes?: boolean | cdktf.IResolvable | undefined; 
   public get allowsForcePushes() {
-    return this.getBooleanAttribute('allows_force_pushes');
+    return this.getBooleanAttribute('allows_force_pushes') as any;
   }
-  public set allowsForcePushes(value: boolean | cdktf.IResolvable ) {
+  public set allowsForcePushes(value: boolean | cdktf.IResolvable | undefined) {
     this._allowsForcePushes = value;
   }
   public resetAllowsForcePushes() {
@@ -189,11 +195,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // enforce_admins - computed: false, optional: true, required: false
-  private _enforceAdmins?: boolean | cdktf.IResolvable;
+  private _enforceAdmins?: boolean | cdktf.IResolvable | undefined; 
   public get enforceAdmins() {
-    return this.getBooleanAttribute('enforce_admins');
+    return this.getBooleanAttribute('enforce_admins') as any;
   }
-  public set enforceAdmins(value: boolean | cdktf.IResolvable ) {
+  public set enforceAdmins(value: boolean | cdktf.IResolvable | undefined) {
     this._enforceAdmins = value;
   }
   public resetEnforceAdmins() {
@@ -210,7 +216,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // pattern - computed: false, optional: false, required: true
-  private _pattern: string;
+  private _pattern?: string; 
   public get pattern() {
     return this.getStringAttribute('pattern');
   }
@@ -223,11 +229,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // push_restrictions - computed: false, optional: true, required: false
-  private _pushRestrictions?: string[];
+  private _pushRestrictions?: string[] | undefined; 
   public get pushRestrictions() {
     return this.getListAttribute('push_restrictions');
   }
-  public set pushRestrictions(value: string[] ) {
+  public set pushRestrictions(value: string[] | undefined) {
     this._pushRestrictions = value;
   }
   public resetPushRestrictions() {
@@ -239,7 +245,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // repository_id - computed: false, optional: false, required: true
-  private _repositoryId: string;
+  private _repositoryId?: string; 
   public get repositoryId() {
     return this.getStringAttribute('repository_id');
   }
@@ -252,11 +258,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // require_signed_commits - computed: false, optional: true, required: false
-  private _requireSignedCommits?: boolean | cdktf.IResolvable;
+  private _requireSignedCommits?: boolean | cdktf.IResolvable | undefined; 
   public get requireSignedCommits() {
-    return this.getBooleanAttribute('require_signed_commits');
+    return this.getBooleanAttribute('require_signed_commits') as any;
   }
-  public set requireSignedCommits(value: boolean | cdktf.IResolvable ) {
+  public set requireSignedCommits(value: boolean | cdktf.IResolvable | undefined) {
     this._requireSignedCommits = value;
   }
   public resetRequireSignedCommits() {
@@ -268,11 +274,11 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // required_linear_history - computed: false, optional: true, required: false
-  private _requiredLinearHistory?: boolean | cdktf.IResolvable;
+  private _requiredLinearHistory?: boolean | cdktf.IResolvable | undefined; 
   public get requiredLinearHistory() {
-    return this.getBooleanAttribute('required_linear_history');
+    return this.getBooleanAttribute('required_linear_history') as any;
   }
-  public set requiredLinearHistory(value: boolean | cdktf.IResolvable ) {
+  public set requiredLinearHistory(value: boolean | cdktf.IResolvable | undefined) {
     this._requiredLinearHistory = value;
   }
   public resetRequiredLinearHistory() {
@@ -284,11 +290,12 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // required_pull_request_reviews - computed: false, optional: true, required: false
-  private _requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[];
+  private _requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[] | undefined; 
   public get requiredPullRequestReviews() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('required_pull_request_reviews') as any;
   }
-  public set requiredPullRequestReviews(value: BranchProtectionRequiredPullRequestReviews[] ) {
+  public set requiredPullRequestReviews(value: BranchProtectionRequiredPullRequestReviews[] | undefined) {
     this._requiredPullRequestReviews = value;
   }
   public resetRequiredPullRequestReviews() {
@@ -300,11 +307,12 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // required_status_checks - computed: false, optional: true, required: false
-  private _requiredStatusChecks?: BranchProtectionRequiredStatusChecks[];
+  private _requiredStatusChecks?: BranchProtectionRequiredStatusChecks[] | undefined; 
   public get requiredStatusChecks() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('required_status_checks') as any;
   }
-  public set requiredStatusChecks(value: BranchProtectionRequiredStatusChecks[] ) {
+  public set requiredStatusChecks(value: BranchProtectionRequiredStatusChecks[] | undefined) {
     this._requiredStatusChecks = value;
   }
   public resetRequiredStatusChecks() {

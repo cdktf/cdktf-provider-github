@@ -17,6 +17,7 @@ export * from './organization-webhook';
 export * from './project-card';
 export * from './project-column';
 export * from './repository';
+export * from './repository-autolink-reference';
 export * from './repository-collaborator';
 export * from './repository-deploy-key';
 export * from './repository-environment';
@@ -49,5 +50,6 @@ export * from './data-github-repository-pull-request';
 export * from './data-github-repository-pull-requests';
 export * from './data-github-team';
 export * from './data-github-user';
+export * from './data-github-users';
 export * from './github-provider';
 

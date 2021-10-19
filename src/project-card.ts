@@ -63,7 +63,7 @@ export class ProjectCard extends cdktf.TerraformResource {
   }
 
   // column_id - computed: false, optional: false, required: true
-  private _columnId: string;
+  private _columnId?: string; 
   public get columnId() {
     return this.getStringAttribute('column_id');
   }
@@ -86,7 +86,7 @@ export class ProjectCard extends cdktf.TerraformResource {
   }
 
   // note - computed: false, optional: false, required: true
-  private _note: string;
+  private _note?: string; 
   public get note() {
     return this.getStringAttribute('note');
   }

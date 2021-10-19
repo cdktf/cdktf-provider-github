@@ -68,7 +68,7 @@ export class Branch extends cdktf.TerraformResource {
   // ==========
 
   // branch - computed: false, optional: false, required: true
-  private _branch: string;
+  private _branch?: string; 
   public get branch() {
     return this.getStringAttribute('branch');
   }
@@ -96,7 +96,7 @@ export class Branch extends cdktf.TerraformResource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }
@@ -114,11 +114,11 @@ export class Branch extends cdktf.TerraformResource {
   }
 
   // source_branch - computed: false, optional: true, required: false
-  private _sourceBranch?: string;
+  private _sourceBranch?: string | undefined; 
   public get sourceBranch() {
     return this.getStringAttribute('source_branch');
   }
-  public set sourceBranch(value: string ) {
+  public set sourceBranch(value: string | undefined) {
     this._sourceBranch = value;
   }
   public resetSourceBranch() {
@@ -130,11 +130,11 @@ export class Branch extends cdktf.TerraformResource {
   }
 
   // source_sha - computed: true, optional: true, required: false
-  private _sourceSha?: string;
+  private _sourceSha?: string | undefined; 
   public get sourceSha() {
     return this.getStringAttribute('source_sha');
   }
-  public set sourceSha(value: string) {
+  public set sourceSha(value: string | undefined) {
     this._sourceSha = value;
   }
   public resetSourceSha() {

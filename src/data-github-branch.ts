@@ -58,7 +58,7 @@ export class DataGithubBranch extends cdktf.TerraformDataSource {
   // ==========
 
   // branch - computed: false, optional: false, required: true
-  private _branch: string;
+  private _branch?: string; 
   public get branch() {
     return this.getStringAttribute('branch');
   }
@@ -86,7 +86,7 @@ export class DataGithubBranch extends cdktf.TerraformDataSource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }

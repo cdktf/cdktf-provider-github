@@ -64,12 +64,12 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
 
   // allows_public_repositories - computed: true, optional: false, required: false
   public get allowsPublicRepositories() {
-    return this.getBooleanAttribute('allows_public_repositories');
+    return this.getBooleanAttribute('allows_public_repositories') as any;
   }
 
   // default - computed: true, optional: false, required: false
   public get default() {
-    return this.getBooleanAttribute('default');
+    return this.getBooleanAttribute('default') as any;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -84,11 +84,11 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
 
   // inherited - computed: true, optional: false, required: false
   public get inherited() {
-    return this.getBooleanAttribute('inherited');
+    return this.getBooleanAttribute('inherited') as any;
   }
 
   // name - computed: false, optional: false, required: true
-  private _name: string;
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
@@ -111,11 +111,12 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   }
 
   // selected_repository_ids - computed: false, optional: true, required: false
-  private _selectedRepositoryIds?: number[];
+  private _selectedRepositoryIds?: number[] | undefined; 
   public get selectedRepositoryIds() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('selected_repository_ids') as any;
   }
-  public set selectedRepositoryIds(value: number[] ) {
+  public set selectedRepositoryIds(value: number[] | undefined) {
     this._selectedRepositoryIds = value;
   }
   public resetSelectedRepositoryIds() {
@@ -127,7 +128,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   }
 
   // visibility - computed: false, optional: false, required: true
-  private _visibility: string;
+  private _visibility?: string; 
   public get visibility() {
     return this.getStringAttribute('visibility');
   }

@@ -89,7 +89,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
 
   // draft - computed: true, optional: false, required: false
   public get draft() {
-    return this.getBooleanAttribute('draft');
+    return this.getBooleanAttribute('draft') as any;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -108,7 +108,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
 
   // owner - computed: false, optional: false, required: true
-  private _owner: string;
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
@@ -122,7 +122,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
 
   // prerelease - computed: true, optional: false, required: false
   public get prerelease() {
-    return this.getBooleanAttribute('prerelease');
+    return this.getBooleanAttribute('prerelease') as any;
   }
 
   // published_at - computed: true, optional: false, required: false
@@ -131,11 +131,11 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
 
   // release_id - computed: false, optional: true, required: false
-  private _releaseId?: number;
+  private _releaseId?: number | undefined; 
   public get releaseId() {
     return this.getNumberAttribute('release_id');
   }
-  public set releaseId(value: number ) {
+  public set releaseId(value: number | undefined) {
     this._releaseId = value;
   }
   public resetReleaseId() {
@@ -147,11 +147,11 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
 
   // release_tag - computed: false, optional: true, required: false
-  private _releaseTag?: string;
+  private _releaseTag?: string | undefined; 
   public get releaseTag() {
     return this.getStringAttribute('release_tag');
   }
-  public set releaseTag(value: string ) {
+  public set releaseTag(value: string | undefined) {
     this._releaseTag = value;
   }
   public resetReleaseTag() {
@@ -163,7 +163,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
 
   // repository - computed: false, optional: false, required: true
-  private _repository: string;
+  private _repository?: string; 
   public get repository() {
     return this.getStringAttribute('repository');
   }
@@ -176,7 +176,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
 
   // retrieve_by - computed: false, optional: false, required: true
-  private _retrieveBy: string;
+  private _retrieveBy?: string; 
   public get retrieveBy() {
     return this.getStringAttribute('retrieve_by');
   }

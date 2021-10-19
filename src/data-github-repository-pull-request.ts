@@ -68,7 +68,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   }
 
   // base_repository - computed: false, optional: false, required: true
-  private _baseRepository: string;
+  private _baseRepository?: string; 
   public get baseRepository() {
     return this.getStringAttribute('base_repository');
   }
@@ -92,7 +92,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
 
   // draft - computed: true, optional: false, required: false
   public get draft() {
-    return this.getBooleanAttribute('draft');
+    return this.getBooleanAttribute('draft') as any;
   }
 
   // head_owner - computed: true, optional: false, required: false
@@ -127,11 +127,11 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
 
   // maintainer_can_modify - computed: true, optional: false, required: false
   public get maintainerCanModify() {
-    return this.getBooleanAttribute('maintainer_can_modify');
+    return this.getBooleanAttribute('maintainer_can_modify') as any;
   }
 
   // number - computed: false, optional: false, required: true
-  private _number: number;
+  private _number?: number; 
   public get number() {
     return this.getNumberAttribute('number');
   }
@@ -154,11 +154,11 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   }
 
   // owner - computed: false, optional: true, required: false
-  private _owner?: string;
+  private _owner?: string | undefined; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string ) {
+  public set owner(value: string | undefined) {
     this._owner = value;
   }
   public resetOwner() {
