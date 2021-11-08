@@ -5,6 +5,9 @@
 Name|Description
 ----|-----------
 [ActionsEnvironmentSecret](#cdktf-provider-github-actionsenvironmentsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html github_actions_environment_secret}.
+[ActionsOrganizationPermissions](#cdktf-provider-github-actionsorganizationpermissions)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html github_actions_organization_permissions}.
+[ActionsOrganizationPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference)|*No description*
+[ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference)|*No description*
 [ActionsOrganizationSecret](#cdktf-provider-github-actionsorganizationsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html github_actions_organization_secret}.
 [ActionsOrganizationSecretRepositories](#cdktf-provider-github-actionsorganizationsecretrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories.html github_actions_organization_secret_repositories}.
 [ActionsRunnerGroup](#cdktf-provider-github-actionsrunnergroup)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group.html github_actions_runner_group}.
@@ -81,6 +84,9 @@ Name|Description
 Name|Description
 ----|-----------
 [ActionsEnvironmentSecretConfig](#cdktf-provider-github-actionsenvironmentsecretconfig)|*No description*
+[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)|*No description*
+[ActionsOrganizationPermissionsConfig](#cdktf-provider-github-actionsorganizationpermissionsconfig)|*No description*
+[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)|*No description*
 [ActionsOrganizationSecretConfig](#cdktf-provider-github-actionsorganizationsecretconfig)|*No description*
 [ActionsOrganizationSecretRepositoriesConfig](#cdktf-provider-github-actionsorganizationsecretrepositoriesconfig)|*No description*
 [ActionsRunnerGroupConfig](#cdktf-provider-github-actionsrunnergroupconfig)|*No description*
@@ -239,6 +245,228 @@ protected synthesizeAttributes(): Map<string, any>
 
 __Returns__:
 * <code>Map<string, any></code>
+
+
+
+## class ActionsOrganizationPermissions  <a id="cdktf-provider-github-actionsorganizationpermissions"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html github_actions_organization_permissions}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html github_actions_organization_permissions} Resource.
+
+```ts
+new ActionsOrganizationPermissions(scope: Construct, id: string, config: ActionsOrganizationPermissionsConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[ActionsOrganizationPermissionsConfig](#cdktf-provider-github-actionsorganizationpermissionsconfig)</code>)  *No description*
+  * **count** (<code>number &#124; [IResolvable](#cdktf-iresolvable)</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **enabledRepositories** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}. 
+  * **allowedActions** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#allowed_actions ActionsOrganizationPermissions#allowed_actions}. __*Optional*__
+  * **allowedActionsConfig** (<code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code>)  allowed_actions_config block. __*Optional*__
+  * **enabledRepositoriesConfig** (<code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  enabled_repositories_config block. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**allowedActionsConfig** | <code>[ActionsOrganizationPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference)</code> | <span></span>
+**enabledRepositories** | <code>string</code> | <span></span>
+**enabledRepositoriesConfig** | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference)</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**allowedActions**? | <code>string</code> | __*Optional*__
+**allowedActionsConfigInput**? | <code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code> | __*Optional*__
+**allowedActionsInput**? | <code>string</code> | __*Optional*__
+**enabledRepositoriesConfigInput**? | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | __*Optional*__
+**enabledRepositoriesInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### putAllowedActionsConfig(value?) <a id="cdktf-provider-github-actionsorganizationpermissions-putallowedactionsconfig"></a>
+
+
+
+```ts
+putAllowedActionsConfig(value?: ActionsOrganizationPermissionsAllowedActionsConfig): void
+```
+
+* **value** (<code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code>)  *No description*
+  * **githubOwnedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}. 
+  * **patternsAllowed** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}. __*Optional*__
+  * **verifiedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#verified_allowed ActionsOrganizationPermissions#verified_allowed}. __*Optional*__
+
+
+
+
+#### putEnabledRepositoriesConfig(value?) <a id="cdktf-provider-github-actionsorganizationpermissions-putenabledrepositoriesconfig"></a>
+
+
+
+```ts
+putEnabledRepositoriesConfig(value?: ActionsOrganizationPermissionsEnabledRepositoriesConfig): void
+```
+
+* **value** (<code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  *No description*
+  * **repositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#repository_ids ActionsOrganizationPermissions#repository_ids}. 
+
+
+
+
+#### resetAllowedActions() <a id="cdktf-provider-github-actionsorganizationpermissions-resetallowedactions"></a>
+
+
+
+```ts
+resetAllowedActions(): void
+```
+
+
+
+
+
+#### resetAllowedActionsConfig() <a id="cdktf-provider-github-actionsorganizationpermissions-resetallowedactionsconfig"></a>
+
+
+
+```ts
+resetAllowedActionsConfig(): void
+```
+
+
+
+
+
+#### resetEnabledRepositoriesConfig() <a id="cdktf-provider-github-actionsorganizationpermissions-resetenabledrepositoriesconfig"></a>
+
+
+
+```ts
+resetEnabledRepositoriesConfig(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsorganizationpermissions-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference  <a id="cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**githubOwnedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**githubOwnedAllowedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**patternsAllowed**? | <code>Array<string></code> | __*Optional*__
+**patternsAllowedInput**? | <code>Array<string></code> | __*Optional*__
+**verifiedAllowed**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**verifiedAllowedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+
+### Methods
+
+
+#### resetPatternsAllowed() <a id="cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference-resetpatternsallowed"></a>
+
+
+
+```ts
+resetPatternsAllowed(): void
+```
+
+
+
+
+
+#### resetVerifiedAllowed() <a id="cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference-resetverifiedallowed"></a>
+
+
+
+```ts
+resetVerifiedAllowed(): void
+```
+
+
+
+
+
+
+
+## class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference  <a id="cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference"></a>
+
+
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**repositoryIds** | <code>Array<number></code> | <span></span>
+**repositoryIdsInput**? | <code>Array<number></code> | __*Optional*__
 
 
 
@@ -6033,6 +6261,54 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **plaintextValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html#plaintext_value ActionsEnvironmentSecret#plaintext_value}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct ActionsOrganizationPermissionsAllowedActionsConfig  <a id="cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**githubOwnedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}.
+**patternsAllowed**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}.<br/>__*Optional*__
+**verifiedAllowed**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#verified_allowed ActionsOrganizationPermissions#verified_allowed}.<br/>__*Optional*__
+
+
+
+## struct ActionsOrganizationPermissionsConfig  <a id="cdktf-provider-github-actionsorganizationpermissionsconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**enabledRepositories** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}.
+**allowedActions**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#allowed_actions ActionsOrganizationPermissions#allowed_actions}.<br/>__*Optional*__
+**allowedActionsConfig**? | <code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code> | allowed_actions_config block.<br/>__*Optional*__
+**count**?🔹 | <code>number &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**enabledRepositoriesConfig**? | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | enabled_repositories_config block.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct ActionsOrganizationPermissionsEnabledRepositoriesConfig  <a id="cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**repositoryIds** | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#repository_ids ActionsOrganizationPermissions#repository_ids}.
 
 
 
