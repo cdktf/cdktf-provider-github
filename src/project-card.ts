@@ -72,7 +72,7 @@ export class ProjectCard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get columnIdInput() {
-    return this._columnId
+    return this._columnId;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -95,7 +95,7 @@ export class ProjectCard extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get noteInput() {
-    return this._note
+    return this._note;
   }
 
   // =========

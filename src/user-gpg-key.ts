@@ -62,7 +62,7 @@ export class UserGpgKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get armoredPublicKeyInput() {
-    return this._armoredPublicKey
+    return this._armoredPublicKey;
   }
 
   // etag - computed: true, optional: false, required: false

@@ -87,7 +87,7 @@ export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get numberInput() {
-    return this._number
+    return this._number;
   }
 
   // owner - computed: false, optional: false, required: true
@@ -100,7 +100,7 @@ export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -113,7 +113,7 @@ export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // state - computed: true, optional: false, required: false

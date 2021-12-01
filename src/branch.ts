@@ -77,7 +77,7 @@ export class Branch extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get branchInput() {
-    return this._branch
+    return this._branch;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -105,7 +105,7 @@ export class Branch extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // sha - computed: true, optional: false, required: false
@@ -114,11 +114,11 @@ export class Branch extends cdktf.TerraformResource {
   }
 
   // source_branch - computed: false, optional: true, required: false
-  private _sourceBranch?: string | undefined; 
+  private _sourceBranch?: string; 
   public get sourceBranch() {
     return this.getStringAttribute('source_branch');
   }
-  public set sourceBranch(value: string | undefined) {
+  public set sourceBranch(value: string) {
     this._sourceBranch = value;
   }
   public resetSourceBranch() {
@@ -126,15 +126,15 @@ export class Branch extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sourceBranchInput() {
-    return this._sourceBranch
+    return this._sourceBranch;
   }
 
   // source_sha - computed: true, optional: true, required: false
-  private _sourceSha?: string | undefined; 
+  private _sourceSha?: string; 
   public get sourceSha() {
     return this.getStringAttribute('source_sha');
   }
-  public set sourceSha(value: string | undefined) {
+  public set sourceSha(value: string) {
     this._sourceSha = value;
   }
   public resetSourceSha() {
@@ -142,7 +142,7 @@ export class Branch extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get sourceShaInput() {
-    return this._sourceSha
+    return this._sourceSha;
   }
 
   // =========

@@ -49,7 +49,7 @@ export interface RepositoryWebhookConfiguration {
   readonly url: string;
 }
 
-function repositoryWebhookConfigurationToTerraform(struct?: RepositoryWebhookConfigurationOutputReference | RepositoryWebhookConfiguration): any {
+export function repositoryWebhookConfigurationToTerraform(struct?: RepositoryWebhookConfigurationOutputReference | RepositoryWebhookConfiguration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -72,12 +72,49 @@ export class RepositoryWebhookConfigurationOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): RepositoryWebhookConfiguration | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._contentType) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._insecureSsl) {
+      hasAnyValues = true;
+      internalValueResult.insecureSsl = this._insecureSsl;
+    }
+    if (this._secret) {
+      hasAnyValues = true;
+      internalValueResult.secret = this._secret;
+    }
+    if (this._url) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositoryWebhookConfiguration | undefined) {
+    if (value === undefined) {
+      this._contentType = undefined;
+      this._insecureSsl = undefined;
+      this._secret = undefined;
+      this._url = undefined;
+    }
+    else {
+      this._contentType = value.contentType;
+      this._insecureSsl = value.insecureSsl;
+      this._secret = value.secret;
+      this._url = value.url;
+    }
+  }
+
   // content_type - computed: false, optional: true, required: false
-  private _contentType?: string | undefined; 
+  private _contentType?: string; 
   public get contentType() {
     return this.getStringAttribute('content_type');
   }
-  public set contentType(value: string | undefined) {
+  public set contentType(value: string) {
     this._contentType = value;
   }
   public resetContentType() {
@@ -85,15 +122,15 @@ export class RepositoryWebhookConfigurationOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get contentTypeInput() {
-    return this._contentType
+    return this._contentType;
   }
 
   // insecure_ssl - computed: false, optional: true, required: false
-  private _insecureSsl?: boolean | cdktf.IResolvable | undefined; 
+  private _insecureSsl?: boolean | cdktf.IResolvable; 
   public get insecureSsl() {
     return this.getBooleanAttribute('insecure_ssl') as any;
   }
-  public set insecureSsl(value: boolean | cdktf.IResolvable | undefined) {
+  public set insecureSsl(value: boolean | cdktf.IResolvable) {
     this._insecureSsl = value;
   }
   public resetInsecureSsl() {
@@ -101,15 +138,15 @@ export class RepositoryWebhookConfigurationOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get insecureSslInput() {
-    return this._insecureSsl
+    return this._insecureSsl;
   }
 
   // secret - computed: false, optional: true, required: false
-  private _secret?: string | undefined; 
+  private _secret?: string; 
   public get secret() {
     return this.getStringAttribute('secret');
   }
-  public set secret(value: string | undefined) {
+  public set secret(value: string) {
     this._secret = value;
   }
   public resetSecret() {
@@ -117,7 +154,7 @@ export class RepositoryWebhookConfigurationOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get secretInput() {
-    return this._secret
+    return this._secret;
   }
 
   // url - computed: false, optional: false, required: true
@@ -130,7 +167,7 @@ export class RepositoryWebhookConfigurationOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get urlInput() {
-    return this._url
+    return this._url;
   }
 }
 
@@ -170,7 +207,7 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
     this._events = config.events;
     this._name = config.name;
     this._repository = config.repository;
-    this._configuration = config.configuration;
+    this._configuration.internalValue = config.configuration;
   }
 
   // ==========
@@ -178,11 +215,11 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable | undefined; 
+  private _active?: boolean | cdktf.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active') as any;
   }
-  public set active(value: boolean | cdktf.IResolvable | undefined) {
+  public set active(value: boolean | cdktf.IResolvable) {
     this._active = value;
   }
   public resetActive() {
@@ -190,7 +227,7 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get activeInput() {
-    return this._active
+    return this._active;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -208,7 +245,7 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get eventsInput() {
-    return this._events
+    return this._events;
   }
 
   // id - computed: true, optional: true, required: false
@@ -217,11 +254,11 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -229,7 +266,7 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -242,7 +279,7 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // url - computed: true, optional: false, required: false
@@ -251,20 +288,19 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration?: RepositoryWebhookConfiguration | undefined; 
-  private __configurationOutput = new RepositoryWebhookConfigurationOutputReference(this as any, "configuration", true);
+  private _configuration = new RepositoryWebhookConfigurationOutputReference(this as any, "configuration", true);
   public get configuration() {
-    return this.__configurationOutput;
+    return this._configuration;
   }
-  public putConfiguration(value: RepositoryWebhookConfiguration | undefined) {
-    this._configuration = value;
+  public putConfiguration(value: RepositoryWebhookConfiguration) {
+    this._configuration.internalValue = value;
   }
   public resetConfiguration() {
-    this._configuration = undefined;
+    this._configuration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get configurationInput() {
-    return this._configuration
+    return this._configuration.internalValue;
   }
 
   // =========
@@ -277,7 +313,7 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
       events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
       name: cdktf.stringToTerraform(this._name),
       repository: cdktf.stringToTerraform(this._repository),
-      configuration: repositoryWebhookConfigurationToTerraform(this._configuration),
+      configuration: repositoryWebhookConfigurationToTerraform(this._configuration.internalValue),
     };
   }
 }

@@ -67,7 +67,7 @@ export class DataGithubBranch extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get branchInput() {
-    return this._branch
+    return this._branch;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -95,7 +95,7 @@ export class DataGithubBranch extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // sha - computed: true, optional: false, required: false

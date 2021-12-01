@@ -78,11 +78,11 @@ export class Team extends cdktf.TerraformResource {
   // ==========
 
   // create_default_maintainer - computed: false, optional: true, required: false
-  private _createDefaultMaintainer?: boolean | cdktf.IResolvable | undefined; 
+  private _createDefaultMaintainer?: boolean | cdktf.IResolvable; 
   public get createDefaultMaintainer() {
     return this.getBooleanAttribute('create_default_maintainer') as any;
   }
-  public set createDefaultMaintainer(value: boolean | cdktf.IResolvable | undefined) {
+  public set createDefaultMaintainer(value: boolean | cdktf.IResolvable) {
     this._createDefaultMaintainer = value;
   }
   public resetCreateDefaultMaintainer() {
@@ -90,15 +90,15 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get createDefaultMaintainerInput() {
-    return this._createDefaultMaintainer
+    return this._createDefaultMaintainer;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -106,7 +106,7 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -120,11 +120,11 @@ export class Team extends cdktf.TerraformResource {
   }
 
   // ldap_dn - computed: false, optional: true, required: false
-  private _ldapDn?: string | undefined; 
+  private _ldapDn?: string; 
   public get ldapDn() {
     return this.getStringAttribute('ldap_dn');
   }
-  public set ldapDn(value: string | undefined) {
+  public set ldapDn(value: string) {
     this._ldapDn = value;
   }
   public resetLdapDn() {
@@ -132,7 +132,7 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ldapDnInput() {
-    return this._ldapDn
+    return this._ldapDn;
   }
 
   // members_count - computed: true, optional: false, required: false
@@ -150,7 +150,7 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // node_id - computed: true, optional: false, required: false
@@ -159,11 +159,11 @@ export class Team extends cdktf.TerraformResource {
   }
 
   // parent_team_id - computed: false, optional: true, required: false
-  private _parentTeamId?: number | undefined; 
+  private _parentTeamId?: number; 
   public get parentTeamId() {
     return this.getNumberAttribute('parent_team_id');
   }
-  public set parentTeamId(value: number | undefined) {
+  public set parentTeamId(value: number) {
     this._parentTeamId = value;
   }
   public resetParentTeamId() {
@@ -171,15 +171,15 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get parentTeamIdInput() {
-    return this._parentTeamId
+    return this._parentTeamId;
   }
 
   // privacy - computed: false, optional: true, required: false
-  private _privacy?: string | undefined; 
+  private _privacy?: string; 
   public get privacy() {
     return this.getStringAttribute('privacy');
   }
-  public set privacy(value: string | undefined) {
+  public set privacy(value: string) {
     this._privacy = value;
   }
   public resetPrivacy() {
@@ -187,7 +187,7 @@ export class Team extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get privacyInput() {
-    return this._privacy
+    return this._privacy;
   }
 
   // slug - computed: true, optional: false, required: false

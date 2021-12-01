@@ -97,7 +97,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // runners_url - computed: true, optional: false, required: false
@@ -111,12 +111,12 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   }
 
   // selected_repository_ids - computed: false, optional: true, required: false
-  private _selectedRepositoryIds?: number[] | undefined; 
+  private _selectedRepositoryIds?: number[]; 
   public get selectedRepositoryIds() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('selected_repository_ids') as any;
   }
-  public set selectedRepositoryIds(value: number[] | undefined) {
+  public set selectedRepositoryIds(value: number[]) {
     this._selectedRepositoryIds = value;
   }
   public resetSelectedRepositoryIds() {
@@ -124,7 +124,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get selectedRepositoryIdsInput() {
-    return this._selectedRepositoryIds
+    return this._selectedRepositoryIds;
   }
 
   // visibility - computed: false, optional: false, required: true
@@ -137,7 +137,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get visibilityInput() {
-    return this._visibility
+    return this._visibility;
   }
 
   // =========

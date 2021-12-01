@@ -69,11 +69,11 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
   // ==========
 
   // branch - computed: false, optional: true, required: false
-  private _branch?: string | undefined; 
+  private _branch?: string; 
   public get branch() {
     return this.getStringAttribute('branch');
   }
-  public set branch(value: string | undefined) {
+  public set branch(value: string) {
     this._branch = value;
   }
   public resetBranch() {
@@ -81,7 +81,7 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get branchInput() {
-    return this._branch
+    return this._branch;
   }
 
   // commit_author - computed: true, optional: false, required: false
@@ -119,7 +119,7 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get fileInput() {
-    return this._file
+    return this._file;
   }
 
   // id - computed: true, optional: true, required: false
@@ -137,7 +137,7 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // sha - computed: true, optional: false, required: false

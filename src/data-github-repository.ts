@@ -160,11 +160,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -172,15 +172,15 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // full_name - computed: true, optional: true, required: false
-  private _fullName?: string | undefined; 
+  private _fullName?: string; 
   public get fullName() {
     return this.getStringAttribute('full_name');
   }
-  public set fullName(value: string | undefined) {
+  public set fullName(value: string) {
     this._fullName = value;
   }
   public resetFullName() {
@@ -188,7 +188,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get fullNameInput() {
-    return this._fullName
+    return this._fullName;
   }
 
   // git_clone_url - computed: true, optional: false, required: false
@@ -217,11 +217,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
 
   // homepage_url - computed: false, optional: true, required: false
-  private _homepageUrl?: string | undefined; 
+  private _homepageUrl?: string; 
   public get homepageUrl() {
     return this.getStringAttribute('homepage_url');
   }
-  public set homepageUrl(value: string | undefined) {
+  public set homepageUrl(value: string) {
     this._homepageUrl = value;
   }
   public resetHomepageUrl() {
@@ -229,7 +229,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get homepageUrlInput() {
-    return this._homepageUrl
+    return this._homepageUrl;
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -248,11 +248,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
 
   // name - computed: true, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -260,7 +260,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // node_id - computed: true, optional: false, required: false

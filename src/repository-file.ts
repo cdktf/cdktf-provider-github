@@ -104,11 +104,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // ==========
 
   // branch - computed: false, optional: true, required: false
-  private _branch?: string | undefined; 
+  private _branch?: string; 
   public get branch() {
     return this.getStringAttribute('branch');
   }
-  public set branch(value: string | undefined) {
+  public set branch(value: string) {
     this._branch = value;
   }
   public resetBranch() {
@@ -116,15 +116,15 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get branchInput() {
-    return this._branch
+    return this._branch;
   }
 
   // commit_author - computed: true, optional: true, required: false
-  private _commitAuthor?: string | undefined; 
+  private _commitAuthor?: string; 
   public get commitAuthor() {
     return this.getStringAttribute('commit_author');
   }
-  public set commitAuthor(value: string | undefined) {
+  public set commitAuthor(value: string) {
     this._commitAuthor = value;
   }
   public resetCommitAuthor() {
@@ -132,15 +132,15 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get commitAuthorInput() {
-    return this._commitAuthor
+    return this._commitAuthor;
   }
 
   // commit_email - computed: true, optional: true, required: false
-  private _commitEmail?: string | undefined; 
+  private _commitEmail?: string; 
   public get commitEmail() {
     return this.getStringAttribute('commit_email');
   }
-  public set commitEmail(value: string | undefined) {
+  public set commitEmail(value: string) {
     this._commitEmail = value;
   }
   public resetCommitEmail() {
@@ -148,15 +148,15 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get commitEmailInput() {
-    return this._commitEmail
+    return this._commitEmail;
   }
 
   // commit_message - computed: true, optional: true, required: false
-  private _commitMessage?: string | undefined; 
+  private _commitMessage?: string; 
   public get commitMessage() {
     return this.getStringAttribute('commit_message');
   }
-  public set commitMessage(value: string | undefined) {
+  public set commitMessage(value: string) {
     this._commitMessage = value;
   }
   public resetCommitMessage() {
@@ -164,7 +164,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get commitMessageInput() {
-    return this._commitMessage
+    return this._commitMessage;
   }
 
   // commit_sha - computed: true, optional: false, required: false
@@ -182,7 +182,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get contentInput() {
-    return this._content
+    return this._content;
   }
 
   // file - computed: false, optional: false, required: true
@@ -195,7 +195,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get fileInput() {
-    return this._file
+    return this._file;
   }
 
   // id - computed: true, optional: true, required: false
@@ -204,11 +204,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
 
   // overwrite_on_create - computed: false, optional: true, required: false
-  private _overwriteOnCreate?: boolean | cdktf.IResolvable | undefined; 
+  private _overwriteOnCreate?: boolean | cdktf.IResolvable; 
   public get overwriteOnCreate() {
     return this.getBooleanAttribute('overwrite_on_create') as any;
   }
-  public set overwriteOnCreate(value: boolean | cdktf.IResolvable | undefined) {
+  public set overwriteOnCreate(value: boolean | cdktf.IResolvable) {
     this._overwriteOnCreate = value;
   }
   public resetOverwriteOnCreate() {
@@ -216,7 +216,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get overwriteOnCreateInput() {
-    return this._overwriteOnCreate
+    return this._overwriteOnCreate;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -229,7 +229,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // sha - computed: true, optional: false, required: false

@@ -45,7 +45,7 @@ export interface OrganizationWebhookConfiguration {
   readonly url: string;
 }
 
-function organizationWebhookConfigurationToTerraform(struct?: OrganizationWebhookConfigurationOutputReference | OrganizationWebhookConfiguration): any {
+export function organizationWebhookConfigurationToTerraform(struct?: OrganizationWebhookConfigurationOutputReference | OrganizationWebhookConfiguration): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -68,12 +68,49 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): OrganizationWebhookConfiguration | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._contentType) {
+      hasAnyValues = true;
+      internalValueResult.contentType = this._contentType;
+    }
+    if (this._insecureSsl) {
+      hasAnyValues = true;
+      internalValueResult.insecureSsl = this._insecureSsl;
+    }
+    if (this._secret) {
+      hasAnyValues = true;
+      internalValueResult.secret = this._secret;
+    }
+    if (this._url) {
+      hasAnyValues = true;
+      internalValueResult.url = this._url;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: OrganizationWebhookConfiguration | undefined) {
+    if (value === undefined) {
+      this._contentType = undefined;
+      this._insecureSsl = undefined;
+      this._secret = undefined;
+      this._url = undefined;
+    }
+    else {
+      this._contentType = value.contentType;
+      this._insecureSsl = value.insecureSsl;
+      this._secret = value.secret;
+      this._url = value.url;
+    }
+  }
+
   // content_type - computed: false, optional: true, required: false
-  private _contentType?: string | undefined; 
+  private _contentType?: string; 
   public get contentType() {
     return this.getStringAttribute('content_type');
   }
-  public set contentType(value: string | undefined) {
+  public set contentType(value: string) {
     this._contentType = value;
   }
   public resetContentType() {
@@ -81,15 +118,15 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
   }
   // Temporarily expose input value. Use with caution.
   public get contentTypeInput() {
-    return this._contentType
+    return this._contentType;
   }
 
   // insecure_ssl - computed: false, optional: true, required: false
-  private _insecureSsl?: boolean | cdktf.IResolvable | undefined; 
+  private _insecureSsl?: boolean | cdktf.IResolvable; 
   public get insecureSsl() {
     return this.getBooleanAttribute('insecure_ssl') as any;
   }
-  public set insecureSsl(value: boolean | cdktf.IResolvable | undefined) {
+  public set insecureSsl(value: boolean | cdktf.IResolvable) {
     this._insecureSsl = value;
   }
   public resetInsecureSsl() {
@@ -97,15 +134,15 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
   }
   // Temporarily expose input value. Use with caution.
   public get insecureSslInput() {
-    return this._insecureSsl
+    return this._insecureSsl;
   }
 
   // secret - computed: false, optional: true, required: false
-  private _secret?: string | undefined; 
+  private _secret?: string; 
   public get secret() {
     return this.getStringAttribute('secret');
   }
-  public set secret(value: string | undefined) {
+  public set secret(value: string) {
     this._secret = value;
   }
   public resetSecret() {
@@ -113,7 +150,7 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
   }
   // Temporarily expose input value. Use with caution.
   public get secretInput() {
-    return this._secret
+    return this._secret;
   }
 
   // url - computed: false, optional: false, required: true
@@ -126,7 +163,7 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
   }
   // Temporarily expose input value. Use with caution.
   public get urlInput() {
-    return this._url
+    return this._url;
   }
 }
 
@@ -165,7 +202,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
     this._active = config.active;
     this._events = config.events;
     this._name = config.name;
-    this._configuration = config.configuration;
+    this._configuration.internalValue = config.configuration;
   }
 
   // ==========
@@ -173,11 +210,11 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   // ==========
 
   // active - computed: false, optional: true, required: false
-  private _active?: boolean | cdktf.IResolvable | undefined; 
+  private _active?: boolean | cdktf.IResolvable; 
   public get active() {
     return this.getBooleanAttribute('active') as any;
   }
-  public set active(value: boolean | cdktf.IResolvable | undefined) {
+  public set active(value: boolean | cdktf.IResolvable) {
     this._active = value;
   }
   public resetActive() {
@@ -185,7 +222,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get activeInput() {
-    return this._active
+    return this._active;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -203,7 +240,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get eventsInput() {
-    return this._events
+    return this._events;
   }
 
   // id - computed: true, optional: true, required: false
@@ -212,11 +249,11 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
 
   // name - computed: false, optional: true, required: false
-  private _name?: string | undefined; 
+  private _name?: string; 
   public get name() {
     return this.getStringAttribute('name');
   }
-  public set name(value: string | undefined) {
+  public set name(value: string) {
     this._name = value;
   }
   public resetName() {
@@ -224,7 +261,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // url - computed: true, optional: false, required: false
@@ -233,20 +270,19 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration?: OrganizationWebhookConfiguration | undefined; 
-  private __configurationOutput = new OrganizationWebhookConfigurationOutputReference(this as any, "configuration", true);
+  private _configuration = new OrganizationWebhookConfigurationOutputReference(this as any, "configuration", true);
   public get configuration() {
-    return this.__configurationOutput;
+    return this._configuration;
   }
-  public putConfiguration(value: OrganizationWebhookConfiguration | undefined) {
-    this._configuration = value;
+  public putConfiguration(value: OrganizationWebhookConfiguration) {
+    this._configuration.internalValue = value;
   }
   public resetConfiguration() {
-    this._configuration = undefined;
+    this._configuration.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get configurationInput() {
-    return this._configuration
+    return this._configuration.internalValue;
   }
 
   // =========
@@ -258,7 +294,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
       active: cdktf.booleanToTerraform(this._active),
       events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
       name: cdktf.stringToTerraform(this._name),
-      configuration: organizationWebhookConfigurationToTerraform(this._configuration),
+      configuration: organizationWebhookConfigurationToTerraform(this._configuration.internalValue),
     };
   }
 }

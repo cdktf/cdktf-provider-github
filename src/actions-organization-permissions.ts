@@ -43,7 +43,7 @@ export interface ActionsOrganizationPermissionsAllowedActionsConfig {
   readonly verifiedAllowed?: boolean | cdktf.IResolvable;
 }
 
-function actionsOrganizationPermissionsAllowedActionsConfigToTerraform(struct?: ActionsOrganizationPermissionsAllowedActionsConfigOutputReference | ActionsOrganizationPermissionsAllowedActionsConfig): any {
+export function actionsOrganizationPermissionsAllowedActionsConfigToTerraform(struct?: ActionsOrganizationPermissionsAllowedActionsConfigOutputReference | ActionsOrganizationPermissionsAllowedActionsConfig): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -65,6 +65,37 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ActionsOrganizationPermissionsAllowedActionsConfig | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._githubOwnedAllowed) {
+      hasAnyValues = true;
+      internalValueResult.githubOwnedAllowed = this._githubOwnedAllowed;
+    }
+    if (this._patternsAllowed) {
+      hasAnyValues = true;
+      internalValueResult.patternsAllowed = this._patternsAllowed;
+    }
+    if (this._verifiedAllowed) {
+      hasAnyValues = true;
+      internalValueResult.verifiedAllowed = this._verifiedAllowed;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ActionsOrganizationPermissionsAllowedActionsConfig | undefined) {
+    if (value === undefined) {
+      this._githubOwnedAllowed = undefined;
+      this._patternsAllowed = undefined;
+      this._verifiedAllowed = undefined;
+    }
+    else {
+      this._githubOwnedAllowed = value.githubOwnedAllowed;
+      this._patternsAllowed = value.patternsAllowed;
+      this._verifiedAllowed = value.verifiedAllowed;
+    }
+  }
+
   // github_owned_allowed - computed: false, optional: false, required: true
   private _githubOwnedAllowed?: boolean | cdktf.IResolvable; 
   public get githubOwnedAllowed() {
@@ -75,15 +106,15 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   }
   // Temporarily expose input value. Use with caution.
   public get githubOwnedAllowedInput() {
-    return this._githubOwnedAllowed
+    return this._githubOwnedAllowed;
   }
 
   // patterns_allowed - computed: false, optional: true, required: false
-  private _patternsAllowed?: string[] | undefined; 
+  private _patternsAllowed?: string[]; 
   public get patternsAllowed() {
     return this.getListAttribute('patterns_allowed');
   }
-  public set patternsAllowed(value: string[] | undefined) {
+  public set patternsAllowed(value: string[]) {
     this._patternsAllowed = value;
   }
   public resetPatternsAllowed() {
@@ -91,15 +122,15 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   }
   // Temporarily expose input value. Use with caution.
   public get patternsAllowedInput() {
-    return this._patternsAllowed
+    return this._patternsAllowed;
   }
 
   // verified_allowed - computed: false, optional: true, required: false
-  private _verifiedAllowed?: boolean | cdktf.IResolvable | undefined; 
+  private _verifiedAllowed?: boolean | cdktf.IResolvable; 
   public get verifiedAllowed() {
     return this.getBooleanAttribute('verified_allowed') as any;
   }
-  public set verifiedAllowed(value: boolean | cdktf.IResolvable | undefined) {
+  public set verifiedAllowed(value: boolean | cdktf.IResolvable) {
     this._verifiedAllowed = value;
   }
   public resetVerifiedAllowed() {
@@ -107,7 +138,7 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   }
   // Temporarily expose input value. Use with caution.
   public get verifiedAllowedInput() {
-    return this._verifiedAllowed
+    return this._verifiedAllowed;
   }
 }
 export interface ActionsOrganizationPermissionsEnabledRepositoriesConfig {
@@ -117,7 +148,7 @@ export interface ActionsOrganizationPermissionsEnabledRepositoriesConfig {
   readonly repositoryIds: number[];
 }
 
-function actionsOrganizationPermissionsEnabledRepositoriesConfigToTerraform(struct?: ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference | ActionsOrganizationPermissionsEnabledRepositoriesConfig): any {
+export function actionsOrganizationPermissionsEnabledRepositoriesConfigToTerraform(struct?: ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference | ActionsOrganizationPermissionsEnabledRepositoriesConfig): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -137,6 +168,25 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): ActionsOrganizationPermissionsEnabledRepositoriesConfig | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._repositoryIds) {
+      hasAnyValues = true;
+      internalValueResult.repositoryIds = this._repositoryIds;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: ActionsOrganizationPermissionsEnabledRepositoriesConfig | undefined) {
+    if (value === undefined) {
+      this._repositoryIds = undefined;
+    }
+    else {
+      this._repositoryIds = value.repositoryIds;
+    }
+  }
+
   // repository_ids - computed: false, optional: false, required: true
   private _repositoryIds?: number[]; 
   public get repositoryIds() {
@@ -148,7 +198,7 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryIdsInput() {
-    return this._repositoryIds
+    return this._repositoryIds;
   }
 }
 
@@ -186,8 +236,8 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
     });
     this._allowedActions = config.allowedActions;
     this._enabledRepositories = config.enabledRepositories;
-    this._allowedActionsConfig = config.allowedActionsConfig;
-    this._enabledRepositoriesConfig = config.enabledRepositoriesConfig;
+    this._allowedActionsConfig.internalValue = config.allowedActionsConfig;
+    this._enabledRepositoriesConfig.internalValue = config.enabledRepositoriesConfig;
   }
 
   // ==========
@@ -195,11 +245,11 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   // ==========
 
   // allowed_actions - computed: false, optional: true, required: false
-  private _allowedActions?: string | undefined; 
+  private _allowedActions?: string; 
   public get allowedActions() {
     return this.getStringAttribute('allowed_actions');
   }
-  public set allowedActions(value: string | undefined) {
+  public set allowedActions(value: string) {
     this._allowedActions = value;
   }
   public resetAllowedActions() {
@@ -207,7 +257,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get allowedActionsInput() {
-    return this._allowedActions
+    return this._allowedActions;
   }
 
   // enabled_repositories - computed: false, optional: false, required: true
@@ -220,7 +270,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enabledRepositoriesInput() {
-    return this._enabledRepositories
+    return this._enabledRepositories;
   }
 
   // id - computed: true, optional: true, required: false
@@ -229,37 +279,35 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   }
 
   // allowed_actions_config - computed: false, optional: true, required: false
-  private _allowedActionsConfig?: ActionsOrganizationPermissionsAllowedActionsConfig | undefined; 
-  private __allowedActionsConfigOutput = new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(this as any, "allowed_actions_config", true);
+  private _allowedActionsConfig = new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(this as any, "allowed_actions_config", true);
   public get allowedActionsConfig() {
-    return this.__allowedActionsConfigOutput;
+    return this._allowedActionsConfig;
   }
-  public putAllowedActionsConfig(value: ActionsOrganizationPermissionsAllowedActionsConfig | undefined) {
-    this._allowedActionsConfig = value;
+  public putAllowedActionsConfig(value: ActionsOrganizationPermissionsAllowedActionsConfig) {
+    this._allowedActionsConfig.internalValue = value;
   }
   public resetAllowedActionsConfig() {
-    this._allowedActionsConfig = undefined;
+    this._allowedActionsConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get allowedActionsConfigInput() {
-    return this._allowedActionsConfig
+    return this._allowedActionsConfig.internalValue;
   }
 
   // enabled_repositories_config - computed: false, optional: true, required: false
-  private _enabledRepositoriesConfig?: ActionsOrganizationPermissionsEnabledRepositoriesConfig | undefined; 
-  private __enabledRepositoriesConfigOutput = new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(this as any, "enabled_repositories_config", true);
+  private _enabledRepositoriesConfig = new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(this as any, "enabled_repositories_config", true);
   public get enabledRepositoriesConfig() {
-    return this.__enabledRepositoriesConfigOutput;
+    return this._enabledRepositoriesConfig;
   }
-  public putEnabledRepositoriesConfig(value: ActionsOrganizationPermissionsEnabledRepositoriesConfig | undefined) {
-    this._enabledRepositoriesConfig = value;
+  public putEnabledRepositoriesConfig(value: ActionsOrganizationPermissionsEnabledRepositoriesConfig) {
+    this._enabledRepositoriesConfig.internalValue = value;
   }
   public resetEnabledRepositoriesConfig() {
-    this._enabledRepositoriesConfig = undefined;
+    this._enabledRepositoriesConfig.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get enabledRepositoriesConfigInput() {
-    return this._enabledRepositoriesConfig
+    return this._enabledRepositoriesConfig.internalValue;
   }
 
   // =========
@@ -270,8 +318,8 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
     return {
       allowed_actions: cdktf.stringToTerraform(this._allowedActions),
       enabled_repositories: cdktf.stringToTerraform(this._enabledRepositories),
-      allowed_actions_config: actionsOrganizationPermissionsAllowedActionsConfigToTerraform(this._allowedActionsConfig),
-      enabled_repositories_config: actionsOrganizationPermissionsEnabledRepositoriesConfigToTerraform(this._enabledRepositoriesConfig),
+      allowed_actions_config: actionsOrganizationPermissionsAllowedActionsConfigToTerraform(this._allowedActionsConfig.internalValue),
+      enabled_repositories_config: actionsOrganizationPermissionsEnabledRepositoriesConfigToTerraform(this._enabledRepositoriesConfig.internalValue),
     };
   }
 }

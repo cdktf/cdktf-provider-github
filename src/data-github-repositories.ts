@@ -82,15 +82,15 @@ export class DataGithubRepositories extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get queryInput() {
-    return this._query
+    return this._query;
   }
 
   // sort - computed: false, optional: true, required: false
-  private _sort?: string | undefined; 
+  private _sort?: string; 
   public get sort() {
     return this.getStringAttribute('sort');
   }
-  public set sort(value: string | undefined) {
+  public set sort(value: string) {
     this._sort = value;
   }
   public resetSort() {
@@ -98,7 +98,7 @@ export class DataGithubRepositories extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get sortInput() {
-    return this._sort
+    return this._sort;
   }
 
   // =========

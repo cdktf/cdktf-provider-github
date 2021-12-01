@@ -72,7 +72,7 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
   }
   // Temporarily expose input value. Use with caution.
   public get secretNameInput() {
-    return this._secretName
+    return this._secretName;
   }
 
   // selected_repository_ids - computed: false, optional: false, required: true
@@ -86,7 +86,7 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
   }
   // Temporarily expose input value. Use with caution.
   public get selectedRepositoryIdsInput() {
-    return this._selectedRepositoryIds
+    return this._selectedRepositoryIds;
   }
 
   // =========

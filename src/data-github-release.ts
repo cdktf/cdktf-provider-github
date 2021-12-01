@@ -117,7 +117,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // prerelease - computed: true, optional: false, required: false
@@ -131,11 +131,11 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
 
   // release_id - computed: false, optional: true, required: false
-  private _releaseId?: number | undefined; 
+  private _releaseId?: number; 
   public get releaseId() {
     return this.getNumberAttribute('release_id');
   }
-  public set releaseId(value: number | undefined) {
+  public set releaseId(value: number) {
     this._releaseId = value;
   }
   public resetReleaseId() {
@@ -143,15 +143,15 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get releaseIdInput() {
-    return this._releaseId
+    return this._releaseId;
   }
 
   // release_tag - computed: false, optional: true, required: false
-  private _releaseTag?: string | undefined; 
+  private _releaseTag?: string; 
   public get releaseTag() {
     return this.getStringAttribute('release_tag');
   }
-  public set releaseTag(value: string | undefined) {
+  public set releaseTag(value: string) {
     this._releaseTag = value;
   }
   public resetReleaseTag() {
@@ -159,7 +159,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get releaseTagInput() {
-    return this._releaseTag
+    return this._releaseTag;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -172,7 +172,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // retrieve_by - computed: false, optional: false, required: true
@@ -185,7 +185,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get retrieveByInput() {
-    return this._retrieveBy
+    return this._retrieveBy;
   }
 
   // tarball_url - computed: true, optional: false, required: false

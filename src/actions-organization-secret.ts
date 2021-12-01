@@ -78,11 +78,11 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
 
   // encrypted_value - computed: false, optional: true, required: false
-  private _encryptedValue?: string | undefined; 
+  private _encryptedValue?: string; 
   public get encryptedValue() {
     return this.getStringAttribute('encrypted_value');
   }
-  public set encryptedValue(value: string | undefined) {
+  public set encryptedValue(value: string) {
     this._encryptedValue = value;
   }
   public resetEncryptedValue() {
@@ -90,7 +90,7 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encryptedValueInput() {
-    return this._encryptedValue
+    return this._encryptedValue;
   }
 
   // id - computed: true, optional: true, required: false
@@ -99,11 +99,11 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
 
   // plaintext_value - computed: false, optional: true, required: false
-  private _plaintextValue?: string | undefined; 
+  private _plaintextValue?: string; 
   public get plaintextValue() {
     return this.getStringAttribute('plaintext_value');
   }
-  public set plaintextValue(value: string | undefined) {
+  public set plaintextValue(value: string) {
     this._plaintextValue = value;
   }
   public resetPlaintextValue() {
@@ -111,7 +111,7 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get plaintextValueInput() {
-    return this._plaintextValue
+    return this._plaintextValue;
   }
 
   // secret_name - computed: false, optional: false, required: true
@@ -124,16 +124,16 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get secretNameInput() {
-    return this._secretName
+    return this._secretName;
   }
 
   // selected_repository_ids - computed: false, optional: true, required: false
-  private _selectedRepositoryIds?: number[] | undefined; 
+  private _selectedRepositoryIds?: number[]; 
   public get selectedRepositoryIds() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('selected_repository_ids') as any;
   }
-  public set selectedRepositoryIds(value: number[] | undefined) {
+  public set selectedRepositoryIds(value: number[]) {
     this._selectedRepositoryIds = value;
   }
   public resetSelectedRepositoryIds() {
@@ -141,7 +141,7 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get selectedRepositoryIdsInput() {
-    return this._selectedRepositoryIds
+    return this._selectedRepositoryIds;
   }
 
   // updated_at - computed: true, optional: false, required: false
@@ -159,7 +159,7 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get visibilityInput() {
-    return this._visibility
+    return this._visibility;
   }
 
   // =========

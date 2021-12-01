@@ -77,15 +77,15 @@ export class IssueLabel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get colorInput() {
-    return this._color
+    return this._color;
   }
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -93,7 +93,7 @@ export class IssueLabel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -116,7 +116,7 @@ export class IssueLabel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
-    return this._name
+    return this._name;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -129,7 +129,7 @@ export class IssueLabel extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // url - computed: true, optional: false, required: false

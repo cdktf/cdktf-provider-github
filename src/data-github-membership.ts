@@ -68,11 +68,11 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
   }
 
   // organization - computed: false, optional: true, required: false
-  private _organization?: string | undefined; 
+  private _organization?: string; 
   public get organization() {
     return this.getStringAttribute('organization');
   }
-  public set organization(value: string | undefined) {
+  public set organization(value: string) {
     this._organization = value;
   }
   public resetOrganization() {
@@ -80,7 +80,7 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {
-    return this._organization
+    return this._organization;
   }
 
   // role - computed: true, optional: false, required: false
@@ -98,7 +98,7 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
-    return this._username
+    return this._username;
   }
 
   // =========

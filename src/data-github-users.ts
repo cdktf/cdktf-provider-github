@@ -82,7 +82,7 @@ export class DataGithubUsers extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get usernamesInput() {
-    return this._usernames
+    return this._usernames;
   }
 
   // =========
