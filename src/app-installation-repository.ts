@@ -72,7 +72,7 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get installationIdInput() {
-    return this._installationId
+    return this._installationId;
   }
 
   // repo_id - computed: true, optional: false, required: false
@@ -90,7 +90,7 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // =========

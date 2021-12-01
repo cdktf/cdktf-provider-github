@@ -165,11 +165,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   // ==========
 
   // base_ref - computed: false, optional: true, required: false
-  private _baseRef?: string | undefined; 
+  private _baseRef?: string; 
   public get baseRef() {
     return this.getStringAttribute('base_ref');
   }
-  public set baseRef(value: string | undefined) {
+  public set baseRef(value: string) {
     this._baseRef = value;
   }
   public resetBaseRef() {
@@ -177,7 +177,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get baseRefInput() {
-    return this._baseRef
+    return this._baseRef;
   }
 
   // base_repository - computed: false, optional: false, required: true
@@ -190,15 +190,15 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get baseRepositoryInput() {
-    return this._baseRepository
+    return this._baseRepository;
   }
 
   // head_ref - computed: false, optional: true, required: false
-  private _headRef?: string | undefined; 
+  private _headRef?: string; 
   public get headRef() {
     return this.getStringAttribute('head_ref');
   }
-  public set headRef(value: string | undefined) {
+  public set headRef(value: string) {
     this._headRef = value;
   }
   public resetHeadRef() {
@@ -206,7 +206,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get headRefInput() {
-    return this._headRef
+    return this._headRef;
   }
 
   // id - computed: true, optional: true, required: false
@@ -215,11 +215,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // owner - computed: false, optional: true, required: false
-  private _owner?: string | undefined; 
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string | undefined) {
+  public set owner(value: string) {
     this._owner = value;
   }
   public resetOwner() {
@@ -227,7 +227,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // results - computed: true, optional: false, required: false
@@ -236,11 +236,11 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // sort_by - computed: false, optional: true, required: false
-  private _sortBy?: string | undefined; 
+  private _sortBy?: string; 
   public get sortBy() {
     return this.getStringAttribute('sort_by');
   }
-  public set sortBy(value: string | undefined) {
+  public set sortBy(value: string) {
     this._sortBy = value;
   }
   public resetSortBy() {
@@ -248,15 +248,15 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get sortByInput() {
-    return this._sortBy
+    return this._sortBy;
   }
 
   // sort_direction - computed: false, optional: true, required: false
-  private _sortDirection?: string | undefined; 
+  private _sortDirection?: string; 
   public get sortDirection() {
     return this.getStringAttribute('sort_direction');
   }
-  public set sortDirection(value: string | undefined) {
+  public set sortDirection(value: string) {
     this._sortDirection = value;
   }
   public resetSortDirection() {
@@ -264,15 +264,15 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get sortDirectionInput() {
-    return this._sortDirection
+    return this._sortDirection;
   }
 
   // state - computed: false, optional: true, required: false
-  private _state?: string | undefined; 
+  private _state?: string; 
   public get state() {
     return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string) {
     this._state = value;
   }
   public resetState() {
@@ -280,7 +280,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
   // Temporarily expose input value. Use with caution.
   public get stateInput() {
-    return this._state
+    return this._state;
   }
 
   // =========

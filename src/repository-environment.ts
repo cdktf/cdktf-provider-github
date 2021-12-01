@@ -43,7 +43,7 @@ export interface RepositoryEnvironmentDeploymentBranchPolicy {
   readonly protectedBranches: boolean | cdktf.IResolvable;
 }
 
-function repositoryEnvironmentDeploymentBranchPolicyToTerraform(struct?: RepositoryEnvironmentDeploymentBranchPolicyOutputReference | RepositoryEnvironmentDeploymentBranchPolicy): any {
+export function repositoryEnvironmentDeploymentBranchPolicyToTerraform(struct?: RepositoryEnvironmentDeploymentBranchPolicyOutputReference | RepositoryEnvironmentDeploymentBranchPolicy): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -64,6 +64,31 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): RepositoryEnvironmentDeploymentBranchPolicy | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._customBranchPolicies) {
+      hasAnyValues = true;
+      internalValueResult.customBranchPolicies = this._customBranchPolicies;
+    }
+    if (this._protectedBranches) {
+      hasAnyValues = true;
+      internalValueResult.protectedBranches = this._protectedBranches;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositoryEnvironmentDeploymentBranchPolicy | undefined) {
+    if (value === undefined) {
+      this._customBranchPolicies = undefined;
+      this._protectedBranches = undefined;
+    }
+    else {
+      this._customBranchPolicies = value.customBranchPolicies;
+      this._protectedBranches = value.protectedBranches;
+    }
+  }
+
   // custom_branch_policies - computed: false, optional: false, required: true
   private _customBranchPolicies?: boolean | cdktf.IResolvable; 
   public get customBranchPolicies() {
@@ -74,7 +99,7 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
   }
   // Temporarily expose input value. Use with caution.
   public get customBranchPoliciesInput() {
-    return this._customBranchPolicies
+    return this._customBranchPolicies;
   }
 
   // protected_branches - computed: false, optional: false, required: true
@@ -87,7 +112,7 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
   }
   // Temporarily expose input value. Use with caution.
   public get protectedBranchesInput() {
-    return this._protectedBranches
+    return this._protectedBranches;
   }
 }
 export interface RepositoryEnvironmentReviewers {
@@ -101,7 +126,7 @@ export interface RepositoryEnvironmentReviewers {
   readonly users?: number[];
 }
 
-function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnvironmentReviewers): any {
+export function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnvironmentReviewers): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -148,7 +173,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
     this._environment = config.environment;
     this._repository = config.repository;
     this._waitTimer = config.waitTimer;
-    this._deploymentBranchPolicy = config.deploymentBranchPolicy;
+    this._deploymentBranchPolicy.internalValue = config.deploymentBranchPolicy;
     this._reviewers = config.reviewers;
   }
 
@@ -166,7 +191,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get environmentInput() {
-    return this._environment
+    return this._environment;
   }
 
   // id - computed: true, optional: true, required: false
@@ -184,15 +209,15 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // wait_timer - computed: false, optional: true, required: false
-  private _waitTimer?: number | undefined; 
+  private _waitTimer?: number; 
   public get waitTimer() {
     return this.getNumberAttribute('wait_timer');
   }
-  public set waitTimer(value: number | undefined) {
+  public set waitTimer(value: number) {
     this._waitTimer = value;
   }
   public resetWaitTimer() {
@@ -200,33 +225,32 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get waitTimerInput() {
-    return this._waitTimer
+    return this._waitTimer;
   }
 
   // deployment_branch_policy - computed: false, optional: true, required: false
-  private _deploymentBranchPolicy?: RepositoryEnvironmentDeploymentBranchPolicy | undefined; 
-  private __deploymentBranchPolicyOutput = new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(this as any, "deployment_branch_policy", true);
+  private _deploymentBranchPolicy = new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(this as any, "deployment_branch_policy", true);
   public get deploymentBranchPolicy() {
-    return this.__deploymentBranchPolicyOutput;
+    return this._deploymentBranchPolicy;
   }
-  public putDeploymentBranchPolicy(value: RepositoryEnvironmentDeploymentBranchPolicy | undefined) {
-    this._deploymentBranchPolicy = value;
+  public putDeploymentBranchPolicy(value: RepositoryEnvironmentDeploymentBranchPolicy) {
+    this._deploymentBranchPolicy.internalValue = value;
   }
   public resetDeploymentBranchPolicy() {
-    this._deploymentBranchPolicy = undefined;
+    this._deploymentBranchPolicy.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get deploymentBranchPolicyInput() {
-    return this._deploymentBranchPolicy
+    return this._deploymentBranchPolicy.internalValue;
   }
 
   // reviewers - computed: false, optional: true, required: false
-  private _reviewers?: RepositoryEnvironmentReviewers[] | undefined; 
+  private _reviewers?: RepositoryEnvironmentReviewers[]; 
   public get reviewers() {
     // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('reviewers') as any;
   }
-  public set reviewers(value: RepositoryEnvironmentReviewers[] | undefined) {
+  public set reviewers(value: RepositoryEnvironmentReviewers[]) {
     this._reviewers = value;
   }
   public resetReviewers() {
@@ -234,7 +258,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get reviewersInput() {
-    return this._reviewers
+    return this._reviewers;
   }
 
   // =========
@@ -246,7 +270,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
       environment: cdktf.stringToTerraform(this._environment),
       repository: cdktf.stringToTerraform(this._repository),
       wait_timer: cdktf.numberToTerraform(this._waitTimer),
-      deployment_branch_policy: repositoryEnvironmentDeploymentBranchPolicyToTerraform(this._deploymentBranchPolicy),
+      deployment_branch_policy: repositoryEnvironmentDeploymentBranchPolicyToTerraform(this._deploymentBranchPolicy.internalValue),
       reviewers: cdktf.listMapper(repositoryEnvironmentReviewersToTerraform)(this._reviewers),
     };
   }

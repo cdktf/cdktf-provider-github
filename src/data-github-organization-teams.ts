@@ -100,11 +100,11 @@ export class DataGithubOrganizationTeams extends cdktf.TerraformDataSource {
   }
 
   // root_teams_only - computed: false, optional: true, required: false
-  private _rootTeamsOnly?: boolean | cdktf.IResolvable | undefined; 
+  private _rootTeamsOnly?: boolean | cdktf.IResolvable; 
   public get rootTeamsOnly() {
     return this.getBooleanAttribute('root_teams_only') as any;
   }
-  public set rootTeamsOnly(value: boolean | cdktf.IResolvable | undefined) {
+  public set rootTeamsOnly(value: boolean | cdktf.IResolvable) {
     this._rootTeamsOnly = value;
   }
   public resetRootTeamsOnly() {
@@ -112,7 +112,7 @@ export class DataGithubOrganizationTeams extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get rootTeamsOnlyInput() {
-    return this._rootTeamsOnly
+    return this._rootTeamsOnly;
   }
 
   // teams - computed: true, optional: false, required: false

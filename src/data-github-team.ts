@@ -102,7 +102,7 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get slugInput() {
-    return this._slug
+    return this._slug;
   }
 
   // =========

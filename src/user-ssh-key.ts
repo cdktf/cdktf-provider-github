@@ -77,7 +77,7 @@ export class UserSshKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyInput() {
-    return this._key
+    return this._key;
   }
 
   // title - computed: false, optional: false, required: true
@@ -90,7 +90,7 @@ export class UserSshKey extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get titleInput() {
-    return this._title
+    return this._title;
   }
 
   // url - computed: true, optional: false, required: false

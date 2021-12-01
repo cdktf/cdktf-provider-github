@@ -67,7 +67,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get invitationIdInput() {
-    return this._invitationId
+    return this._invitationId;
   }
 
   // =========

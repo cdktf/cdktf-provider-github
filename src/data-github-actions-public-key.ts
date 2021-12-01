@@ -77,7 +77,7 @@ export class DataGithubActionsPublicKey extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // =========

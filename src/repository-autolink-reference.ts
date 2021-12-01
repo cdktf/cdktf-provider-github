@@ -88,7 +88,7 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get keyPrefixInput() {
-    return this._keyPrefix
+    return this._keyPrefix;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -101,7 +101,7 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // target_url_template - computed: false, optional: false, required: true
@@ -114,7 +114,7 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get targetUrlTemplateInput() {
-    return this._targetUrlTemplate
+    return this._targetUrlTemplate;
   }
 
   // =========

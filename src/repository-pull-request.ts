@@ -92,7 +92,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get baseRefInput() {
-    return this._baseRef
+    return this._baseRef;
   }
 
   // base_repository - computed: false, optional: false, required: true
@@ -105,7 +105,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get baseRepositoryInput() {
-    return this._baseRepository
+    return this._baseRepository;
   }
 
   // base_sha - computed: true, optional: false, required: false
@@ -114,11 +114,11 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // body - computed: false, optional: true, required: false
-  private _body?: string | undefined; 
+  private _body?: string; 
   public get body() {
     return this.getStringAttribute('body');
   }
-  public set body(value: string | undefined) {
+  public set body(value: string) {
     this._body = value;
   }
   public resetBody() {
@@ -126,7 +126,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get bodyInput() {
-    return this._body
+    return this._body;
   }
 
   // draft - computed: true, optional: false, required: false
@@ -144,7 +144,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get headRefInput() {
-    return this._headRef
+    return this._headRef;
   }
 
   // head_sha - computed: true, optional: false, required: false
@@ -163,11 +163,11 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // maintainer_can_modify - computed: false, optional: true, required: false
-  private _maintainerCanModify?: boolean | cdktf.IResolvable | undefined; 
+  private _maintainerCanModify?: boolean | cdktf.IResolvable; 
   public get maintainerCanModify() {
     return this.getBooleanAttribute('maintainer_can_modify') as any;
   }
-  public set maintainerCanModify(value: boolean | cdktf.IResolvable | undefined) {
+  public set maintainerCanModify(value: boolean | cdktf.IResolvable) {
     this._maintainerCanModify = value;
   }
   public resetMaintainerCanModify() {
@@ -175,7 +175,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get maintainerCanModifyInput() {
-    return this._maintainerCanModify
+    return this._maintainerCanModify;
   }
 
   // number - computed: true, optional: false, required: false
@@ -194,11 +194,11 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // owner - computed: false, optional: true, required: false
-  private _owner?: string | undefined; 
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string | undefined) {
+  public set owner(value: string) {
     this._owner = value;
   }
   public resetOwner() {
@@ -206,7 +206,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // state - computed: true, optional: false, required: false
@@ -224,7 +224,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get titleInput() {
-    return this._title
+    return this._title;
   }
 
   // updated_at - computed: true, optional: false, required: false

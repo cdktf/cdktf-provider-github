@@ -78,11 +78,11 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
 
   // permission - computed: false, optional: true, required: false
-  private _permission?: string | undefined; 
+  private _permission?: string; 
   public get permission() {
     return this.getStringAttribute('permission');
   }
-  public set permission(value: string | undefined) {
+  public set permission(value: string) {
     this._permission = value;
   }
   public resetPermission() {
@@ -90,15 +90,15 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get permissionInput() {
-    return this._permission
+    return this._permission;
   }
 
   // permission_diff_suppression - computed: false, optional: true, required: false
-  private _permissionDiffSuppression?: boolean | cdktf.IResolvable | undefined; 
+  private _permissionDiffSuppression?: boolean | cdktf.IResolvable; 
   public get permissionDiffSuppression() {
     return this.getBooleanAttribute('permission_diff_suppression') as any;
   }
-  public set permissionDiffSuppression(value: boolean | cdktf.IResolvable | undefined) {
+  public set permissionDiffSuppression(value: boolean | cdktf.IResolvable) {
     this._permissionDiffSuppression = value;
   }
   public resetPermissionDiffSuppression() {
@@ -106,7 +106,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get permissionDiffSuppressionInput() {
-    return this._permissionDiffSuppression
+    return this._permissionDiffSuppression;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -119,7 +119,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // username - computed: false, optional: false, required: true
@@ -132,7 +132,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get usernameInput() {
-    return this._username
+    return this._username;
   }
 
   // =========

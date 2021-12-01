@@ -80,11 +80,11 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   // ==========
 
   // description - computed: false, optional: true, required: false
-  private _description?: string | undefined; 
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
   }
-  public set description(value: string | undefined) {
+  public set description(value: string) {
     this._description = value;
   }
   public resetDescription() {
@@ -92,15 +92,15 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get descriptionInput() {
-    return this._description
+    return this._description;
   }
 
   // due_date - computed: false, optional: true, required: false
-  private _dueDate?: string | undefined; 
+  private _dueDate?: string; 
   public get dueDate() {
     return this.getStringAttribute('due_date');
   }
-  public set dueDate(value: string | undefined) {
+  public set dueDate(value: string) {
     this._dueDate = value;
   }
   public resetDueDate() {
@@ -108,7 +108,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get dueDateInput() {
-    return this._dueDate
+    return this._dueDate;
   }
 
   // id - computed: true, optional: true, required: false
@@ -131,7 +131,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -144,15 +144,15 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // state - computed: false, optional: true, required: false
-  private _state?: string | undefined; 
+  private _state?: string; 
   public get state() {
     return this.getStringAttribute('state');
   }
-  public set state(value: string | undefined) {
+  public set state(value: string) {
     this._state = value;
   }
   public resetState() {
@@ -160,7 +160,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get stateInput() {
-    return this._state
+    return this._state;
   }
 
   // title - computed: false, optional: false, required: true
@@ -173,7 +173,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get titleInput() {
-    return this._title
+    return this._title;
   }
 
   // =========

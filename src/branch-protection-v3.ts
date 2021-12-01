@@ -69,7 +69,7 @@ export interface BranchProtectionV3RequiredPullRequestReviews {
   readonly requiredApprovingReviewCount?: number;
 }
 
-function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?: BranchProtectionV3RequiredPullRequestReviewsOutputReference | BranchProtectionV3RequiredPullRequestReviews): any {
+export function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?: BranchProtectionV3RequiredPullRequestReviewsOutputReference | BranchProtectionV3RequiredPullRequestReviews): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -94,12 +94,61 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): BranchProtectionV3RequiredPullRequestReviews | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._dismissStaleReviews) {
+      hasAnyValues = true;
+      internalValueResult.dismissStaleReviews = this._dismissStaleReviews;
+    }
+    if (this._dismissalTeams) {
+      hasAnyValues = true;
+      internalValueResult.dismissalTeams = this._dismissalTeams;
+    }
+    if (this._dismissalUsers) {
+      hasAnyValues = true;
+      internalValueResult.dismissalUsers = this._dismissalUsers;
+    }
+    if (this._includeAdmins) {
+      hasAnyValues = true;
+      internalValueResult.includeAdmins = this._includeAdmins;
+    }
+    if (this._requireCodeOwnerReviews) {
+      hasAnyValues = true;
+      internalValueResult.requireCodeOwnerReviews = this._requireCodeOwnerReviews;
+    }
+    if (this._requiredApprovingReviewCount) {
+      hasAnyValues = true;
+      internalValueResult.requiredApprovingReviewCount = this._requiredApprovingReviewCount;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BranchProtectionV3RequiredPullRequestReviews | undefined) {
+    if (value === undefined) {
+      this._dismissStaleReviews = undefined;
+      this._dismissalTeams = undefined;
+      this._dismissalUsers = undefined;
+      this._includeAdmins = undefined;
+      this._requireCodeOwnerReviews = undefined;
+      this._requiredApprovingReviewCount = undefined;
+    }
+    else {
+      this._dismissStaleReviews = value.dismissStaleReviews;
+      this._dismissalTeams = value.dismissalTeams;
+      this._dismissalUsers = value.dismissalUsers;
+      this._includeAdmins = value.includeAdmins;
+      this._requireCodeOwnerReviews = value.requireCodeOwnerReviews;
+      this._requiredApprovingReviewCount = value.requiredApprovingReviewCount;
+    }
+  }
+
   // dismiss_stale_reviews - computed: false, optional: true, required: false
-  private _dismissStaleReviews?: boolean | cdktf.IResolvable | undefined; 
+  private _dismissStaleReviews?: boolean | cdktf.IResolvable; 
   public get dismissStaleReviews() {
     return this.getBooleanAttribute('dismiss_stale_reviews') as any;
   }
-  public set dismissStaleReviews(value: boolean | cdktf.IResolvable | undefined) {
+  public set dismissStaleReviews(value: boolean | cdktf.IResolvable) {
     this._dismissStaleReviews = value;
   }
   public resetDismissStaleReviews() {
@@ -107,15 +156,15 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get dismissStaleReviewsInput() {
-    return this._dismissStaleReviews
+    return this._dismissStaleReviews;
   }
 
   // dismissal_teams - computed: false, optional: true, required: false
-  private _dismissalTeams?: string[] | undefined; 
+  private _dismissalTeams?: string[]; 
   public get dismissalTeams() {
     return this.getListAttribute('dismissal_teams');
   }
-  public set dismissalTeams(value: string[] | undefined) {
+  public set dismissalTeams(value: string[]) {
     this._dismissalTeams = value;
   }
   public resetDismissalTeams() {
@@ -123,15 +172,15 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get dismissalTeamsInput() {
-    return this._dismissalTeams
+    return this._dismissalTeams;
   }
 
   // dismissal_users - computed: false, optional: true, required: false
-  private _dismissalUsers?: string[] | undefined; 
+  private _dismissalUsers?: string[]; 
   public get dismissalUsers() {
     return this.getListAttribute('dismissal_users');
   }
-  public set dismissalUsers(value: string[] | undefined) {
+  public set dismissalUsers(value: string[]) {
     this._dismissalUsers = value;
   }
   public resetDismissalUsers() {
@@ -139,15 +188,15 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get dismissalUsersInput() {
-    return this._dismissalUsers
+    return this._dismissalUsers;
   }
 
   // include_admins - computed: false, optional: true, required: false
-  private _includeAdmins?: boolean | cdktf.IResolvable | undefined; 
+  private _includeAdmins?: boolean | cdktf.IResolvable; 
   public get includeAdmins() {
     return this.getBooleanAttribute('include_admins') as any;
   }
-  public set includeAdmins(value: boolean | cdktf.IResolvable | undefined) {
+  public set includeAdmins(value: boolean | cdktf.IResolvable) {
     this._includeAdmins = value;
   }
   public resetIncludeAdmins() {
@@ -155,15 +204,15 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get includeAdminsInput() {
-    return this._includeAdmins
+    return this._includeAdmins;
   }
 
   // require_code_owner_reviews - computed: false, optional: true, required: false
-  private _requireCodeOwnerReviews?: boolean | cdktf.IResolvable | undefined; 
+  private _requireCodeOwnerReviews?: boolean | cdktf.IResolvable; 
   public get requireCodeOwnerReviews() {
     return this.getBooleanAttribute('require_code_owner_reviews') as any;
   }
-  public set requireCodeOwnerReviews(value: boolean | cdktf.IResolvable | undefined) {
+  public set requireCodeOwnerReviews(value: boolean | cdktf.IResolvable) {
     this._requireCodeOwnerReviews = value;
   }
   public resetRequireCodeOwnerReviews() {
@@ -171,15 +220,15 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get requireCodeOwnerReviewsInput() {
-    return this._requireCodeOwnerReviews
+    return this._requireCodeOwnerReviews;
   }
 
   // required_approving_review_count - computed: false, optional: true, required: false
-  private _requiredApprovingReviewCount?: number | undefined; 
+  private _requiredApprovingReviewCount?: number; 
   public get requiredApprovingReviewCount() {
     return this.getNumberAttribute('required_approving_review_count');
   }
-  public set requiredApprovingReviewCount(value: number | undefined) {
+  public set requiredApprovingReviewCount(value: number) {
     this._requiredApprovingReviewCount = value;
   }
   public resetRequiredApprovingReviewCount() {
@@ -187,7 +236,7 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   }
   // Temporarily expose input value. Use with caution.
   public get requiredApprovingReviewCountInput() {
-    return this._requiredApprovingReviewCount
+    return this._requiredApprovingReviewCount;
   }
 }
 export interface BranchProtectionV3RequiredStatusChecks {
@@ -205,7 +254,7 @@ export interface BranchProtectionV3RequiredStatusChecks {
   readonly strict?: boolean | cdktf.IResolvable;
 }
 
-function branchProtectionV3RequiredStatusChecksToTerraform(struct?: BranchProtectionV3RequiredStatusChecksOutputReference | BranchProtectionV3RequiredStatusChecks): any {
+export function branchProtectionV3RequiredStatusChecksToTerraform(struct?: BranchProtectionV3RequiredStatusChecksOutputReference | BranchProtectionV3RequiredStatusChecks): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -227,12 +276,43 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): BranchProtectionV3RequiredStatusChecks | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._contexts) {
+      hasAnyValues = true;
+      internalValueResult.contexts = this._contexts;
+    }
+    if (this._includeAdmins) {
+      hasAnyValues = true;
+      internalValueResult.includeAdmins = this._includeAdmins;
+    }
+    if (this._strict) {
+      hasAnyValues = true;
+      internalValueResult.strict = this._strict;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BranchProtectionV3RequiredStatusChecks | undefined) {
+    if (value === undefined) {
+      this._contexts = undefined;
+      this._includeAdmins = undefined;
+      this._strict = undefined;
+    }
+    else {
+      this._contexts = value.contexts;
+      this._includeAdmins = value.includeAdmins;
+      this._strict = value.strict;
+    }
+  }
+
   // contexts - computed: false, optional: true, required: false
-  private _contexts?: string[] | undefined; 
+  private _contexts?: string[]; 
   public get contexts() {
     return this.getListAttribute('contexts');
   }
-  public set contexts(value: string[] | undefined) {
+  public set contexts(value: string[]) {
     this._contexts = value;
   }
   public resetContexts() {
@@ -240,15 +320,15 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get contextsInput() {
-    return this._contexts
+    return this._contexts;
   }
 
   // include_admins - computed: false, optional: true, required: false
-  private _includeAdmins?: boolean | cdktf.IResolvable | undefined; 
+  private _includeAdmins?: boolean | cdktf.IResolvable; 
   public get includeAdmins() {
     return this.getBooleanAttribute('include_admins') as any;
   }
-  public set includeAdmins(value: boolean | cdktf.IResolvable | undefined) {
+  public set includeAdmins(value: boolean | cdktf.IResolvable) {
     this._includeAdmins = value;
   }
   public resetIncludeAdmins() {
@@ -256,15 +336,15 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get includeAdminsInput() {
-    return this._includeAdmins
+    return this._includeAdmins;
   }
 
   // strict - computed: false, optional: true, required: false
-  private _strict?: boolean | cdktf.IResolvable | undefined; 
+  private _strict?: boolean | cdktf.IResolvable; 
   public get strict() {
     return this.getBooleanAttribute('strict') as any;
   }
-  public set strict(value: boolean | cdktf.IResolvable | undefined) {
+  public set strict(value: boolean | cdktf.IResolvable) {
     this._strict = value;
   }
   public resetStrict() {
@@ -272,7 +352,7 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
   }
   // Temporarily expose input value. Use with caution.
   public get strictInput() {
-    return this._strict
+    return this._strict;
   }
 }
 export interface BranchProtectionV3Restrictions {
@@ -290,7 +370,7 @@ export interface BranchProtectionV3Restrictions {
   readonly users?: string[];
 }
 
-function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtectionV3RestrictionsOutputReference | BranchProtectionV3Restrictions): any {
+export function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtectionV3RestrictionsOutputReference | BranchProtectionV3Restrictions): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -312,12 +392,43 @@ export class BranchProtectionV3RestrictionsOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
+  public get internalValue(): BranchProtectionV3Restrictions | undefined {
+    let hasAnyValues = false;
+    const internalValueResult: any = {};
+    if (this._apps) {
+      hasAnyValues = true;
+      internalValueResult.apps = this._apps;
+    }
+    if (this._teams) {
+      hasAnyValues = true;
+      internalValueResult.teams = this._teams;
+    }
+    if (this._users) {
+      hasAnyValues = true;
+      internalValueResult.users = this._users;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BranchProtectionV3Restrictions | undefined) {
+    if (value === undefined) {
+      this._apps = undefined;
+      this._teams = undefined;
+      this._users = undefined;
+    }
+    else {
+      this._apps = value.apps;
+      this._teams = value.teams;
+      this._users = value.users;
+    }
+  }
+
   // apps - computed: false, optional: true, required: false
-  private _apps?: string[] | undefined; 
+  private _apps?: string[]; 
   public get apps() {
     return this.getListAttribute('apps');
   }
-  public set apps(value: string[] | undefined) {
+  public set apps(value: string[]) {
     this._apps = value;
   }
   public resetApps() {
@@ -325,15 +436,15 @@ export class BranchProtectionV3RestrictionsOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get appsInput() {
-    return this._apps
+    return this._apps;
   }
 
   // teams - computed: false, optional: true, required: false
-  private _teams?: string[] | undefined; 
+  private _teams?: string[]; 
   public get teams() {
     return this.getListAttribute('teams');
   }
-  public set teams(value: string[] | undefined) {
+  public set teams(value: string[]) {
     this._teams = value;
   }
   public resetTeams() {
@@ -341,15 +452,15 @@ export class BranchProtectionV3RestrictionsOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get teamsInput() {
-    return this._teams
+    return this._teams;
   }
 
   // users - computed: false, optional: true, required: false
-  private _users?: string[] | undefined; 
+  private _users?: string[]; 
   public get users() {
     return this.getListAttribute('users');
   }
-  public set users(value: string[] | undefined) {
+  public set users(value: string[]) {
     this._users = value;
   }
   public resetUsers() {
@@ -357,7 +468,7 @@ export class BranchProtectionV3RestrictionsOutputReference extends cdktf.Complex
   }
   // Temporarily expose input value. Use with caution.
   public get usersInput() {
-    return this._users
+    return this._users;
   }
 }
 
@@ -397,9 +508,9 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
     this._enforceAdmins = config.enforceAdmins;
     this._repository = config.repository;
     this._requireSignedCommits = config.requireSignedCommits;
-    this._requiredPullRequestReviews = config.requiredPullRequestReviews;
-    this._requiredStatusChecks = config.requiredStatusChecks;
-    this._restrictions = config.restrictions;
+    this._requiredPullRequestReviews.internalValue = config.requiredPullRequestReviews;
+    this._requiredStatusChecks.internalValue = config.requiredStatusChecks;
+    this._restrictions.internalValue = config.restrictions;
   }
 
   // ==========
@@ -416,15 +527,15 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get branchInput() {
-    return this._branch
+    return this._branch;
   }
 
   // enforce_admins - computed: false, optional: true, required: false
-  private _enforceAdmins?: boolean | cdktf.IResolvable | undefined; 
+  private _enforceAdmins?: boolean | cdktf.IResolvable; 
   public get enforceAdmins() {
     return this.getBooleanAttribute('enforce_admins') as any;
   }
-  public set enforceAdmins(value: boolean | cdktf.IResolvable | undefined) {
+  public set enforceAdmins(value: boolean | cdktf.IResolvable) {
     this._enforceAdmins = value;
   }
   public resetEnforceAdmins() {
@@ -432,7 +543,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get enforceAdminsInput() {
-    return this._enforceAdmins
+    return this._enforceAdmins;
   }
 
   // etag - computed: true, optional: false, required: false
@@ -455,15 +566,15 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // require_signed_commits - computed: false, optional: true, required: false
-  private _requireSignedCommits?: boolean | cdktf.IResolvable | undefined; 
+  private _requireSignedCommits?: boolean | cdktf.IResolvable; 
   public get requireSignedCommits() {
     return this.getBooleanAttribute('require_signed_commits') as any;
   }
-  public set requireSignedCommits(value: boolean | cdktf.IResolvable | undefined) {
+  public set requireSignedCommits(value: boolean | cdktf.IResolvable) {
     this._requireSignedCommits = value;
   }
   public resetRequireSignedCommits() {
@@ -471,58 +582,55 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get requireSignedCommitsInput() {
-    return this._requireSignedCommits
+    return this._requireSignedCommits;
   }
 
   // required_pull_request_reviews - computed: false, optional: true, required: false
-  private _requiredPullRequestReviews?: BranchProtectionV3RequiredPullRequestReviews | undefined; 
-  private __requiredPullRequestReviewsOutput = new BranchProtectionV3RequiredPullRequestReviewsOutputReference(this as any, "required_pull_request_reviews", true);
+  private _requiredPullRequestReviews = new BranchProtectionV3RequiredPullRequestReviewsOutputReference(this as any, "required_pull_request_reviews", true);
   public get requiredPullRequestReviews() {
-    return this.__requiredPullRequestReviewsOutput;
+    return this._requiredPullRequestReviews;
   }
-  public putRequiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReviews | undefined) {
-    this._requiredPullRequestReviews = value;
+  public putRequiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReviews) {
+    this._requiredPullRequestReviews.internalValue = value;
   }
   public resetRequiredPullRequestReviews() {
-    this._requiredPullRequestReviews = undefined;
+    this._requiredPullRequestReviews.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requiredPullRequestReviewsInput() {
-    return this._requiredPullRequestReviews
+    return this._requiredPullRequestReviews.internalValue;
   }
 
   // required_status_checks - computed: false, optional: true, required: false
-  private _requiredStatusChecks?: BranchProtectionV3RequiredStatusChecks | undefined; 
-  private __requiredStatusChecksOutput = new BranchProtectionV3RequiredStatusChecksOutputReference(this as any, "required_status_checks", true);
+  private _requiredStatusChecks = new BranchProtectionV3RequiredStatusChecksOutputReference(this as any, "required_status_checks", true);
   public get requiredStatusChecks() {
-    return this.__requiredStatusChecksOutput;
+    return this._requiredStatusChecks;
   }
-  public putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks | undefined) {
-    this._requiredStatusChecks = value;
+  public putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks) {
+    this._requiredStatusChecks.internalValue = value;
   }
   public resetRequiredStatusChecks() {
-    this._requiredStatusChecks = undefined;
+    this._requiredStatusChecks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requiredStatusChecksInput() {
-    return this._requiredStatusChecks
+    return this._requiredStatusChecks.internalValue;
   }
 
   // restrictions - computed: false, optional: true, required: false
-  private _restrictions?: BranchProtectionV3Restrictions | undefined; 
-  private __restrictionsOutput = new BranchProtectionV3RestrictionsOutputReference(this as any, "restrictions", true);
+  private _restrictions = new BranchProtectionV3RestrictionsOutputReference(this as any, "restrictions", true);
   public get restrictions() {
-    return this.__restrictionsOutput;
+    return this._restrictions;
   }
-  public putRestrictions(value: BranchProtectionV3Restrictions | undefined) {
-    this._restrictions = value;
+  public putRestrictions(value: BranchProtectionV3Restrictions) {
+    this._restrictions.internalValue = value;
   }
   public resetRestrictions() {
-    this._restrictions = undefined;
+    this._restrictions.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get restrictionsInput() {
-    return this._restrictions
+    return this._restrictions.internalValue;
   }
 
   // =========
@@ -535,9 +643,9 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
       enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
       repository: cdktf.stringToTerraform(this._repository),
       require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),
-      required_pull_request_reviews: branchProtectionV3RequiredPullRequestReviewsToTerraform(this._requiredPullRequestReviews),
-      required_status_checks: branchProtectionV3RequiredStatusChecksToTerraform(this._requiredStatusChecks),
-      restrictions: branchProtectionV3RestrictionsToTerraform(this._restrictions),
+      required_pull_request_reviews: branchProtectionV3RequiredPullRequestReviewsToTerraform(this._requiredPullRequestReviews.internalValue),
+      required_status_checks: branchProtectionV3RequiredStatusChecksToTerraform(this._requiredStatusChecks.internalValue),
+      restrictions: branchProtectionV3RestrictionsToTerraform(this._restrictions.internalValue),
     };
   }
 }

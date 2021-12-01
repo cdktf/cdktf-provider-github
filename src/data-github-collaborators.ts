@@ -145,11 +145,11 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   // ==========
 
   // affiliation - computed: false, optional: true, required: false
-  private _affiliation?: string | undefined; 
+  private _affiliation?: string; 
   public get affiliation() {
     return this.getStringAttribute('affiliation');
   }
-  public set affiliation(value: string | undefined) {
+  public set affiliation(value: string) {
     this._affiliation = value;
   }
   public resetAffiliation() {
@@ -157,7 +157,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get affiliationInput() {
-    return this._affiliation
+    return this._affiliation;
   }
 
   // collaborator - computed: true, optional: false, required: false
@@ -180,7 +180,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -193,7 +193,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // =========

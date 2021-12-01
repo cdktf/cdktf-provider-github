@@ -77,7 +77,7 @@ export interface GithubProviderAppAuth {
   readonly pemFile: string;
 }
 
-function githubProviderAppAuthToTerraform(struct?: GithubProviderAppAuthOutputReference | GithubProviderAppAuth): any {
+export function githubProviderAppAuthToTerraform(struct?: GithubProviderAppAuth): any {
   if (!cdktf.canInspect(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -89,55 +89,6 @@ function githubProviderAppAuthToTerraform(struct?: GithubProviderAppAuthOutputRe
   }
 }
 
-export class GithubProviderAppAuthOutputReference extends cdktf.ComplexObject {
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
-  */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
-  }
-
-  // id - computed: false, optional: false, required: true
-  private _id?: string; 
-  public get id() {
-    return this._id;
-  }
-  public set id(value: string| undefined) {
-    this._id = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id
-  }
-
-  // installation_id - computed: false, optional: false, required: true
-  private _installationId?: string; 
-  public get installationId() {
-    return this._installationId;
-  }
-  public set installationId(value: string| undefined) {
-    this._installationId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get installationIdInput() {
-    return this._installationId
-  }
-
-  // pem_file - computed: false, optional: false, required: true
-  private _pemFile?: string; 
-  public get pemFile() {
-    return this._pemFile;
-  }
-  public set pemFile(value: string| undefined) {
-    this._pemFile = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get pemFileInput() {
-    return this._pemFile
-  }
-}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github github}
@@ -184,11 +135,11 @@ export class GithubProvider extends cdktf.TerraformProvider {
   // ==========
 
   // base_url - computed: false, optional: true, required: false
-  private _baseUrl?: string | undefined; 
+  private _baseUrl?: string; 
   public get baseUrl() {
     return this._baseUrl;
   }
-  public set baseUrl(value: string | undefined| undefined) {
+  public set baseUrl(value: string | undefined) {
     this._baseUrl = value;
   }
   public resetBaseUrl() {
@@ -196,15 +147,15 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get baseUrlInput() {
-    return this._baseUrl
+    return this._baseUrl;
   }
 
   // insecure - computed: false, optional: true, required: false
-  private _insecure?: boolean | cdktf.IResolvable | undefined; 
+  private _insecure?: boolean | cdktf.IResolvable; 
   public get insecure() {
     return this._insecure;
   }
-  public set insecure(value: boolean | cdktf.IResolvable | undefined| undefined) {
+  public set insecure(value: boolean | cdktf.IResolvable | undefined) {
     this._insecure = value;
   }
   public resetInsecure() {
@@ -212,15 +163,15 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get insecureInput() {
-    return this._insecure
+    return this._insecure;
   }
 
   // organization - computed: false, optional: true, required: false
-  private _organization?: string | undefined; 
+  private _organization?: string; 
   public get organization() {
     return this._organization;
   }
-  public set organization(value: string | undefined| undefined) {
+  public set organization(value: string | undefined) {
     this._organization = value;
   }
   public resetOrganization() {
@@ -228,15 +179,15 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get organizationInput() {
-    return this._organization
+    return this._organization;
   }
 
   // owner - computed: false, optional: true, required: false
-  private _owner?: string | undefined; 
+  private _owner?: string; 
   public get owner() {
     return this._owner;
   }
-  public set owner(value: string | undefined| undefined) {
+  public set owner(value: string | undefined) {
     this._owner = value;
   }
   public resetOwner() {
@@ -244,15 +195,15 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // token - computed: false, optional: true, required: false
-  private _token?: string | undefined; 
+  private _token?: string; 
   public get token() {
     return this._token;
   }
-  public set token(value: string | undefined| undefined) {
+  public set token(value: string | undefined) {
     this._token = value;
   }
   public resetToken() {
@@ -260,15 +211,15 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get tokenInput() {
-    return this._token
+    return this._token;
   }
 
   // write_delay_ms - computed: false, optional: true, required: false
-  private _writeDelayMs?: number | undefined; 
+  private _writeDelayMs?: number; 
   public get writeDelayMs() {
     return this._writeDelayMs;
   }
-  public set writeDelayMs(value: number | undefined| undefined) {
+  public set writeDelayMs(value: number | undefined) {
     this._writeDelayMs = value;
   }
   public resetWriteDelayMs() {
@@ -276,15 +227,15 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get writeDelayMsInput() {
-    return this._writeDelayMs
+    return this._writeDelayMs;
   }
 
   // alias - computed: false, optional: true, required: false
-  private _alias?: string | undefined; 
+  private _alias?: string; 
   public get alias() {
     return this._alias;
   }
-  public set alias(value: string | undefined| undefined) {
+  public set alias(value: string | undefined) {
     this._alias = value;
   }
   public resetAlias() {
@@ -292,15 +243,15 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get aliasInput() {
-    return this._alias
+    return this._alias;
   }
 
   // app_auth - computed: false, optional: true, required: false
-  private _appAuth?: GithubProviderAppAuth | undefined; 
+  private _appAuth?: GithubProviderAppAuth; 
   public get appAuth() {
     return this._appAuth;
   }
-  public set appAuth(value: GithubProviderAppAuth | undefined| undefined) {
+  public set appAuth(value: GithubProviderAppAuth | undefined) {
     this._appAuth = value;
   }
   public resetAppAuth() {
@@ -308,7 +259,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
   }
   // Temporarily expose input value. Use with caution.
   public get appAuthInput() {
-    return this._appAuth
+    return this._appAuth;
   }
 
   // =========

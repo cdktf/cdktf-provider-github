@@ -77,7 +77,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get baseRepositoryInput() {
-    return this._baseRepository
+    return this._baseRepository;
   }
 
   // base_sha - computed: true, optional: false, required: false
@@ -140,7 +140,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get numberInput() {
-    return this._number
+    return this._number;
   }
 
   // opened_at - computed: true, optional: false, required: false
@@ -154,11 +154,11 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   }
 
   // owner - computed: false, optional: true, required: false
-  private _owner?: string | undefined; 
+  private _owner?: string; 
   public get owner() {
     return this.getStringAttribute('owner');
   }
-  public set owner(value: string | undefined) {
+  public set owner(value: string) {
     this._owner = value;
   }
   public resetOwner() {
@@ -166,7 +166,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   }
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
-    return this._owner
+    return this._owner;
   }
 
   // state - computed: true, optional: false, required: false

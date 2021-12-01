@@ -78,11 +78,11 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
 
   // encrypted_value - computed: false, optional: true, required: false
-  private _encryptedValue?: string | undefined; 
+  private _encryptedValue?: string; 
   public get encryptedValue() {
     return this.getStringAttribute('encrypted_value');
   }
-  public set encryptedValue(value: string | undefined) {
+  public set encryptedValue(value: string) {
     this._encryptedValue = value;
   }
   public resetEncryptedValue() {
@@ -90,7 +90,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get encryptedValueInput() {
-    return this._encryptedValue
+    return this._encryptedValue;
   }
 
   // environment - computed: false, optional: false, required: true
@@ -103,7 +103,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get environmentInput() {
-    return this._environment
+    return this._environment;
   }
 
   // id - computed: true, optional: true, required: false
@@ -112,11 +112,11 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
 
   // plaintext_value - computed: false, optional: true, required: false
-  private _plaintextValue?: string | undefined; 
+  private _plaintextValue?: string; 
   public get plaintextValue() {
     return this.getStringAttribute('plaintext_value');
   }
-  public set plaintextValue(value: string | undefined) {
+  public set plaintextValue(value: string) {
     this._plaintextValue = value;
   }
   public resetPlaintextValue() {
@@ -124,7 +124,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get plaintextValueInput() {
-    return this._plaintextValue
+    return this._plaintextValue;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -137,7 +137,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // secret_name - computed: false, optional: false, required: true
@@ -150,7 +150,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get secretNameInput() {
-    return this._secretName
+    return this._secretName;
   }
 
   // updated_at - computed: true, optional: false, required: false

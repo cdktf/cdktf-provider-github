@@ -46,7 +46,6 @@ Name|Description
 [DataGithubUser](#cdktf-provider-github-datagithubuser)|Represents a {@link https://www.terraform.io/docs/providers/github/d/user.html github_user}.
 [DataGithubUsers](#cdktf-provider-github-datagithubusers)|Represents a {@link https://www.terraform.io/docs/providers/github/d/users.html github_users}.
 [GithubProvider](#cdktf-provider-github-githubprovider)|Represents a {@link https://www.terraform.io/docs/providers/github github}.
-[GithubProviderAppAuthOutputReference](#cdktf-provider-github-githubproviderappauthoutputreference)|*No description*
 [IssueLabel](#cdktf-provider-github-issuelabel)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label.html github_issue_label}.
 [Membership](#cdktf-provider-github-membership)|Represents a {@link https://www.terraform.io/docs/providers/github/r/membership.html github_membership}.
 [OrganizationBlock](#cdktf-provider-github-organizationblock)|Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block.html github_organization_block}.
@@ -160,7 +159,7 @@ Name|Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret.html github_actions_environment_secret}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -193,15 +192,15 @@ new ActionsEnvironmentSecret(scope: Construct, id: string, config: ActionsEnviro
 Name | Type | Description 
 -----|------|-------------
 **createdAt** | <code>string</code> | <span></span>
+**encryptedValue** | <code>string</code> | <span></span>
 **environment** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**plaintextValue** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **secretName** | <code>string</code> | <span></span>
 **updatedAt** | <code>string</code> | <span></span>
-**encryptedValue**? | <code>string</code> | __*Optional*__
 **encryptedValueInput**? | <code>string</code> | __*Optional*__
 **environmentInput**? | <code>string</code> | __*Optional*__
-**plaintextValue**? | <code>string</code> | __*Optional*__
 **plaintextValueInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 **secretNameInput**? | <code>string</code> | __*Optional*__
@@ -252,7 +251,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html github_actions_organization_permissions}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -283,11 +282,11 @@ new ActionsOrganizationPermissions(scope: Construct, id: string, config: Actions
 
 Name | Type | Description 
 -----|------|-------------
+**allowedActions** | <code>string</code> | <span></span>
 **allowedActionsConfig** | <code>[ActionsOrganizationPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference)</code> | <span></span>
 **enabledRepositories** | <code>string</code> | <span></span>
 **enabledRepositoriesConfig** | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**allowedActions**? | <code>string</code> | __*Optional*__
 **allowedActionsConfigInput**? | <code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code> | __*Optional*__
 **allowedActionsInput**? | <code>string</code> | __*Optional*__
 **enabledRepositoriesConfigInput**? | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | __*Optional*__
@@ -297,12 +296,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putAllowedActionsConfig(value?) <a id="cdktf-provider-github-actionsorganizationpermissions-putallowedactionsconfig"></a>
+#### putAllowedActionsConfig(value) <a id="cdktf-provider-github-actionsorganizationpermissions-putallowedactionsconfig"></a>
 
 
 
 ```ts
-putAllowedActionsConfig(value?: ActionsOrganizationPermissionsAllowedActionsConfig): void
+putAllowedActionsConfig(value: ActionsOrganizationPermissionsAllowedActionsConfig): void
 ```
 
 * **value** (<code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code>)  *No description*
@@ -313,12 +312,12 @@ putAllowedActionsConfig(value?: ActionsOrganizationPermissionsAllowedActionsConf
 
 
 
-#### putEnabledRepositoriesConfig(value?) <a id="cdktf-provider-github-actionsorganizationpermissions-putenabledrepositoriesconfig"></a>
+#### putEnabledRepositoriesConfig(value) <a id="cdktf-provider-github-actionsorganizationpermissions-putenabledrepositoriesconfig"></a>
 
 
 
 ```ts
-putEnabledRepositoriesConfig(value?: ActionsOrganizationPermissionsEnabledRepositoriesConfig): void
+putEnabledRepositoriesConfig(value: ActionsOrganizationPermissionsEnabledRepositoriesConfig): void
 ```
 
 * **value** (<code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  *No description*
@@ -404,10 +403,11 @@ new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(terraformR
 Name | Type | Description 
 -----|------|-------------
 **githubOwnedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**patternsAllowed** | <code>Array<string></code> | <span></span>
+**verifiedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **githubOwnedAllowedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**patternsAllowed**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code> | __*Optional*__
 **patternsAllowedInput**? | <code>Array<string></code> | __*Optional*__
-**verifiedAllowed**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **verifiedAllowedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 ### Methods
@@ -466,6 +466,7 @@ new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(terra
 Name | Type | Description 
 -----|------|-------------
 **repositoryIds** | <code>Array<number></code> | <span></span>
+**internalValue**? | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | __*Optional*__
 **repositoryIdsInput**? | <code>Array<number></code> | __*Optional*__
 
 
@@ -474,7 +475,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret.html github_actions_organization_secret}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -507,16 +508,16 @@ new ActionsOrganizationSecret(scope: Construct, id: string, config: ActionsOrgan
 Name | Type | Description 
 -----|------|-------------
 **createdAt** | <code>string</code> | <span></span>
+**encryptedValue** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**plaintextValue** | <code>string</code> | <span></span>
 **secretName** | <code>string</code> | <span></span>
+**selectedRepositoryIds** | <code>Array<number></code> | <span></span>
 **updatedAt** | <code>string</code> | <span></span>
 **visibility** | <code>string</code> | <span></span>
-**encryptedValue**? | <code>string</code> | __*Optional*__
 **encryptedValueInput**? | <code>string</code> | __*Optional*__
-**plaintextValue**? | <code>string</code> | __*Optional*__
 **plaintextValueInput**? | <code>string</code> | __*Optional*__
 **secretNameInput**? | <code>string</code> | __*Optional*__
-**selectedRepositoryIds**? | <code>Array<number></code> | __*Optional*__
 **selectedRepositoryIdsInput**? | <code>Array<number></code> | __*Optional*__
 **visibilityInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -578,7 +579,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories.html github_actions_organization_secret_repositories}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -635,7 +636,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group.html github_actions_runner_group}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -673,9 +674,9 @@ Name | Type | Description
 **name** | <code>string</code> | <span></span>
 **runnersUrl** | <code>string</code> | <span></span>
 **selectedRepositoriesUrl** | <code>string</code> | <span></span>
+**selectedRepositoryIds** | <code>Array<number></code> | <span></span>
 **visibility** | <code>string</code> | <span></span>
 **nameInput**? | <code>string</code> | __*Optional*__
-**selectedRepositoryIds**? | <code>Array<number></code> | __*Optional*__
 **selectedRepositoryIdsInput**? | <code>Array<number></code> | __*Optional*__
 **visibilityInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -713,7 +714,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -745,13 +746,13 @@ new ActionsSecret(scope: Construct, id: string, config: ActionsSecretConfig)
 Name | Type | Description 
 -----|------|-------------
 **createdAt** | <code>string</code> | <span></span>
+**encryptedValue** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**plaintextValue** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **secretName** | <code>string</code> | <span></span>
 **updatedAt** | <code>string</code> | <span></span>
-**encryptedValue**? | <code>string</code> | __*Optional*__
 **encryptedValueInput**? | <code>string</code> | __*Optional*__
-**plaintextValue**? | <code>string</code> | __*Optional*__
 **plaintextValueInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 **secretNameInput**? | <code>string</code> | __*Optional*__
@@ -802,7 +803,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository.html github_app_installation_repository}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -860,7 +861,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/branch.html github_branch}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -897,11 +898,11 @@ Name | Type | Description
 **ref** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **sha** | <code>string</code> | <span></span>
+**sourceBranch** | <code>string</code> | <span></span>
+**sourceSha** | <code>string</code> | <span></span>
 **branchInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
-**sourceBranch**? | <code>string</code> | __*Optional*__
 **sourceBranchInput**? | <code>string</code> | __*Optional*__
-**sourceSha**? | <code>string</code> | __*Optional*__
 **sourceShaInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -950,7 +951,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default.html github_branch_default}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1007,7 +1008,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html github_branch_protection}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1044,26 +1045,26 @@ new BranchProtection(scope: Construct, id: string, config: BranchProtectionConfi
 
 Name | Type | Description 
 -----|------|-------------
+**allowsDeletions** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**allowsForcePushes** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**enforceAdmins** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **pattern** | <code>string</code> | <span></span>
+**pushRestrictions** | <code>Array<string></code> | <span></span>
 **repositoryId** | <code>string</code> | <span></span>
-**allowsDeletions**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**requireSignedCommits** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**requiredLinearHistory** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**requiredPullRequestReviews** | <code>Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | <span></span>
+**requiredStatusChecks** | <code>Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code> | <span></span>
 **allowsDeletionsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**allowsForcePushes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowsForcePushesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**enforceAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **enforceAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **patternInput**? | <code>string</code> | __*Optional*__
-**pushRestrictions**? | <code>Array<string></code> | __*Optional*__
 **pushRestrictionsInput**? | <code>Array<string></code> | __*Optional*__
 **repositoryIdInput**? | <code>string</code> | __*Optional*__
-**requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requireSignedCommitsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**requiredLinearHistory**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredLinearHistoryInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**requiredPullRequestReviews**? | <code>Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | __*Optional*__
 **requiredPullRequestReviewsInput**? | <code>Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | __*Optional*__
-**requiredStatusChecks**? | <code>Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code> | __*Optional*__
 **requiredStatusChecksInput**? | <code>Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -1184,7 +1185,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html github_branch_protection_v3}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1219,17 +1220,17 @@ new BranchProtectionV3(scope: Construct, id: string, config: BranchProtectionV3C
 Name | Type | Description 
 -----|------|-------------
 **branch** | <code>string</code> | <span></span>
+**enforceAdmins** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
+**requireSignedCommits** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requiredPullRequestReviews** | <code>[BranchProtectionV3RequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference)</code> | <span></span>
 **requiredStatusChecks** | <code>[BranchProtectionV3RequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionv3requiredstatuschecksoutputreference)</code> | <span></span>
 **restrictions** | <code>[BranchProtectionV3RestrictionsOutputReference](#cdktf-provider-github-branchprotectionv3restrictionsoutputreference)</code> | <span></span>
 **branchInput**? | <code>string</code> | __*Optional*__
-**enforceAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **enforceAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
-**requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requireSignedCommitsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredPullRequestReviewsInput**? | <code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code> | __*Optional*__
 **requiredStatusChecksInput**? | <code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code> | __*Optional*__
@@ -1239,12 +1240,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putRequiredPullRequestReviews(value?) <a id="cdktf-provider-github-branchprotectionv3-putrequiredpullrequestreviews"></a>
+#### putRequiredPullRequestReviews(value) <a id="cdktf-provider-github-branchprotectionv3-putrequiredpullrequestreviews"></a>
 
 
 
 ```ts
-putRequiredPullRequestReviews(value?: BranchProtectionV3RequiredPullRequestReviews): void
+putRequiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReviews): void
 ```
 
 * **value** (<code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code>)  *No description*
@@ -1258,12 +1259,12 @@ putRequiredPullRequestReviews(value?: BranchProtectionV3RequiredPullRequestRevie
 
 
 
-#### putRequiredStatusChecks(value?) <a id="cdktf-provider-github-branchprotectionv3-putrequiredstatuschecks"></a>
+#### putRequiredStatusChecks(value) <a id="cdktf-provider-github-branchprotectionv3-putrequiredstatuschecks"></a>
 
 
 
 ```ts
-putRequiredStatusChecks(value?: BranchProtectionV3RequiredStatusChecks): void
+putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks): void
 ```
 
 * **value** (<code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code>)  *No description*
@@ -1274,12 +1275,12 @@ putRequiredStatusChecks(value?: BranchProtectionV3RequiredStatusChecks): void
 
 
 
-#### putRestrictions(value?) <a id="cdktf-provider-github-branchprotectionv3-putrestrictions"></a>
+#### putRestrictions(value) <a id="cdktf-provider-github-branchprotectionv3-putrestrictions"></a>
 
 
 
 ```ts
-putRestrictions(value?: BranchProtectionV3Restrictions): void
+putRestrictions(value: BranchProtectionV3Restrictions): void
 ```
 
 * **value** (<code>[BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)</code>)  *No description*
@@ -1390,17 +1391,18 @@ new BranchProtectionV3RequiredPullRequestReviewsOutputReference(terraformResourc
 
 Name | Type | Description 
 -----|------|-------------
-**dismissStaleReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**dismissStaleReviews** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**dismissalTeams** | <code>Array<string></code> | <span></span>
+**dismissalUsers** | <code>Array<string></code> | <span></span>
+**includeAdmins** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**requireCodeOwnerReviews** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**requiredApprovingReviewCount** | <code>number</code> | <span></span>
 **dismissStaleReviewsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**dismissalTeams**? | <code>Array<string></code> | __*Optional*__
 **dismissalTeamsInput**? | <code>Array<string></code> | __*Optional*__
-**dismissalUsers**? | <code>Array<string></code> | __*Optional*__
 **dismissalUsersInput**? | <code>Array<string></code> | __*Optional*__
-**includeAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **includeAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**requireCodeOwnerReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code> | __*Optional*__
 **requireCodeOwnerReviewsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**requiredApprovingReviewCount**? | <code>number</code> | __*Optional*__
 **requiredApprovingReviewCountInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
@@ -1506,11 +1508,12 @@ new BranchProtectionV3RequiredStatusChecksOutputReference(terraformResource: ITe
 
 Name | Type | Description 
 -----|------|-------------
-**contexts**? | <code>Array<string></code> | __*Optional*__
+**contexts** | <code>Array<string></code> | <span></span>
+**includeAdmins** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**strict** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **contextsInput**? | <code>Array<string></code> | __*Optional*__
-**includeAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **includeAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**strict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code> | __*Optional*__
 **strictInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 ### Methods
@@ -1580,11 +1583,12 @@ new BranchProtectionV3RestrictionsOutputReference(terraformResource: ITerraformR
 
 Name | Type | Description 
 -----|------|-------------
-**apps**? | <code>Array<string></code> | __*Optional*__
+**apps** | <code>Array<string></code> | <span></span>
+**teams** | <code>Array<string></code> | <span></span>
+**users** | <code>Array<string></code> | <span></span>
 **appsInput**? | <code>Array<string></code> | __*Optional*__
-**teams**? | <code>Array<string></code> | __*Optional*__
+**internalValue**? | <code>[BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)</code> | __*Optional*__
 **teamsInput**? | <code>Array<string></code> | __*Optional*__
-**users**? | <code>Array<string></code> | __*Optional*__
 **usersInput**? | <code>Array<string></code> | __*Optional*__
 
 ### Methods
@@ -1632,7 +1636,7 @@ resetUsers(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key.html github_actions_public_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1688,7 +1692,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/branch.html github_branch}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1748,7 +1752,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators.html github_collaborators}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1778,10 +1782,10 @@ new DataGithubCollaborators(scope: Construct, id: string, config: DataGithubColl
 
 Name | Type | Description 
 -----|------|-------------
+**affiliation** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **owner** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
-**affiliation**? | <code>string</code> | __*Optional*__
 **affiliationInput**? | <code>string</code> | __*Optional*__
 **ownerInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
@@ -1878,7 +1882,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges.html github_ip_ranges}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1947,7 +1951,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/membership.html github_membership}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -1978,9 +1982,9 @@ Name | Type | Description
 -----|------|-------------
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**organization** | <code>string</code> | <span></span>
 **role** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
-**organization**? | <code>string</code> | __*Optional*__
 **organizationInput**? | <code>string</code> | __*Optional*__
 **usernameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -2018,7 +2022,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/organization.html github_organization}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2078,7 +2082,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups.html github_organization_team_sync_groups}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2174,7 +2178,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams.html github_organization_teams}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2203,7 +2207,7 @@ new DataGithubOrganizationTeams(scope: Construct, id: string, config?: DataGithu
 Name | Type | Description 
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
-**rootTeamsOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**rootTeamsOnly** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **rootTeamsOnlyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -2290,7 +2294,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/release.html github_release}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2332,6 +2336,8 @@ Name | Type | Description
 **owner** | <code>string</code> | <span></span>
 **prerelease** | <code>any</code> | <span></span>
 **publishedAt** | <code>string</code> | <span></span>
+**releaseId** | <code>number</code> | <span></span>
+**releaseTag** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **retrieveBy** | <code>string</code> | <span></span>
 **tarballUrl** | <code>string</code> | <span></span>
@@ -2340,9 +2346,7 @@ Name | Type | Description
 **url** | <code>string</code> | <span></span>
 **zipballUrl** | <code>string</code> | <span></span>
 **ownerInput**? | <code>string</code> | __*Optional*__
-**releaseId**? | <code>number</code> | __*Optional*__
 **releaseIdInput**? | <code>number</code> | __*Optional*__
-**releaseTag**? | <code>string</code> | __*Optional*__
 **releaseTagInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 **retrieveByInput**? | <code>string</code> | __*Optional*__
@@ -2393,7 +2397,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories.html github_repositories}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2426,8 +2430,8 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **names** | <code>Array<string></code> | <span></span>
 **query** | <code>string</code> | <span></span>
+**sort** | <code>string</code> | <span></span>
 **queryInput**? | <code>string</code> | __*Optional*__
-**sort**? | <code>string</code> | __*Optional*__
 **sortInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -2464,7 +2468,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository.html github_repository}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2501,14 +2505,18 @@ Name | Type | Description
 **allowSquashMerge** | <code>any</code> | <span></span>
 **archived** | <code>any</code> | <span></span>
 **defaultBranch** | <code>string</code> | <span></span>
+**description** | <code>string</code> | <span></span>
+**fullName** | <code>string</code> | <span></span>
 **gitCloneUrl** | <code>string</code> | <span></span>
 **hasDownloads** | <code>any</code> | <span></span>
 **hasIssues** | <code>any</code> | <span></span>
 **hasProjects** | <code>any</code> | <span></span>
 **hasWiki** | <code>any</code> | <span></span>
+**homepageUrl** | <code>string</code> | <span></span>
 **htmlUrl** | <code>string</code> | <span></span>
 **httpCloneUrl** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
 **private** | <code>any</code> | <span></span>
 **repoId** | <code>number</code> | <span></span>
@@ -2516,13 +2524,9 @@ Name | Type | Description
 **svnUrl** | <code>string</code> | <span></span>
 **topics** | <code>Array<string></code> | <span></span>
 **visibility** | <code>string</code> | <span></span>
-**description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**fullName**? | <code>string</code> | __*Optional*__
 **fullNameInput**? | <code>string</code> | __*Optional*__
-**homepageUrl**? | <code>string</code> | __*Optional*__
 **homepageUrlInput**? | <code>string</code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -2652,7 +2656,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file.html github_repository_file}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2682,6 +2686,7 @@ new DataGithubRepositoryFile(scope: Construct, id: string, config: DataGithubRep
 
 Name | Type | Description 
 -----|------|-------------
+**branch** | <code>string</code> | <span></span>
 **commitAuthor** | <code>string</code> | <span></span>
 **commitEmail** | <code>string</code> | <span></span>
 **commitMessage** | <code>string</code> | <span></span>
@@ -2691,7 +2696,6 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **sha** | <code>string</code> | <span></span>
-**branch**? | <code>string</code> | __*Optional*__
 **branchInput**? | <code>string</code> | __*Optional*__
 **fileInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
@@ -2730,7 +2734,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone.html github_repository_milestone}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2860,7 +2864,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request.html github_repository_pull_request}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2905,12 +2909,12 @@ Name | Type | Description
 **number** | <code>number</code> | <span></span>
 **openedAt** | <code>number</code> | <span></span>
 **openedBy** | <code>string</code> | <span></span>
+**owner** | <code>string</code> | <span></span>
 **state** | <code>string</code> | <span></span>
 **title** | <code>string</code> | <span></span>
 **updatedAt** | <code>number</code> | <span></span>
 **baseRepositoryInput**? | <code>string</code> | __*Optional*__
 **numberInput**? | <code>number</code> | __*Optional*__
-**owner**? | <code>string</code> | __*Optional*__
 **ownerInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -2947,7 +2951,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html github_repository_pull_requests}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2981,20 +2985,20 @@ new DataGithubRepositoryPullRequests(scope: Construct, id: string, config: DataG
 
 Name | Type | Description 
 -----|------|-------------
+**baseRef** | <code>string</code> | <span></span>
 **baseRepository** | <code>string</code> | <span></span>
+**headRef** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**baseRef**? | <code>string</code> | __*Optional*__
+**owner** | <code>string</code> | <span></span>
+**sortBy** | <code>string</code> | <span></span>
+**sortDirection** | <code>string</code> | <span></span>
+**state** | <code>string</code> | <span></span>
 **baseRefInput**? | <code>string</code> | __*Optional*__
 **baseRepositoryInput**? | <code>string</code> | __*Optional*__
-**headRef**? | <code>string</code> | __*Optional*__
 **headRefInput**? | <code>string</code> | __*Optional*__
-**owner**? | <code>string</code> | __*Optional*__
 **ownerInput**? | <code>string</code> | __*Optional*__
-**sortBy**? | <code>string</code> | __*Optional*__
 **sortByInput**? | <code>string</code> | __*Optional*__
-**sortDirection**? | <code>string</code> | __*Optional*__
 **sortDirectionInput**? | <code>string</code> | __*Optional*__
-**state**? | <code>string</code> | __*Optional*__
 **stateInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -3149,7 +3153,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/team.html github_team}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3210,7 +3214,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/user.html github_user}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3283,7 +3287,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/users.html github_users}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3502,46 +3506,11 @@ __Returns__:
 
 
 
-## class GithubProviderAppAuthOutputReference  <a id="cdktf-provider-github-githubproviderappauthoutputreference"></a>
-
-
-
-__Extends__: [ComplexObject](#cdktf-complexobject)
-
-### Initializer
-
-
-
-
-```ts
-new GithubProviderAppAuthOutputReference(terraformResource: ITerraformResource, terraformAttribute: string, isSingleItem: boolean)
-```
-
-* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**id**? | <code>string</code> | __*Optional*__
-**idInput**? | <code>string</code> | __*Optional*__
-**installationId**? | <code>string</code> | __*Optional*__
-**installationIdInput**? | <code>string</code> | __*Optional*__
-**pemFile**? | <code>string</code> | __*Optional*__
-**pemFileInput**? | <code>string</code> | __*Optional*__
-
-
-
 ## class IssueLabel  <a id="cdktf-provider-github-issuelabel"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label.html github_issue_label}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3573,13 +3542,13 @@ new IssueLabel(scope: Construct, id: string, config: IssueLabelConfig)
 Name | Type | Description 
 -----|------|-------------
 **color** | <code>string</code> | <span></span>
+**description** | <code>string</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
 **colorInput**? | <code>string</code> | __*Optional*__
-**description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
@@ -3618,7 +3587,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/membership.html github_membership}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3649,8 +3618,8 @@ Name | Type | Description
 -----|------|-------------
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**role** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
-**role**? | <code>string</code> | __*Optional*__
 **roleInput**? | <code>string</code> | __*Optional*__
 **usernameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -3688,7 +3657,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block.html github_organization_block}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3743,7 +3712,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_project.html github_organization_project}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3772,11 +3741,11 @@ new OrganizationProject(scope: Construct, id: string, config: OrganizationProjec
 
 Name | Type | Description 
 -----|------|-------------
+**body** | <code>string</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**body**? | <code>string</code> | __*Optional*__
 **bodyInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -3814,7 +3783,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_webhook.html github_organization_webhook}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -3845,28 +3814,28 @@ new OrganizationWebhook(scope: Construct, id: string, config: OrganizationWebhoo
 
 Name | Type | Description 
 -----|------|-------------
+**active** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **configuration** | <code>[OrganizationWebhookConfigurationOutputReference](#cdktf-provider-github-organizationwebhookconfigurationoutputreference)</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **events** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**active**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **activeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **configurationInput**? | <code>[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)</code> | __*Optional*__
 **eventsInput**? | <code>Array<string></code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putConfiguration(value?) <a id="cdktf-provider-github-organizationwebhook-putconfiguration"></a>
+#### putConfiguration(value) <a id="cdktf-provider-github-organizationwebhook-putconfiguration"></a>
 
 
 
 ```ts
-putConfiguration(value?: OrganizationWebhookConfiguration): void
+putConfiguration(value: OrganizationWebhookConfiguration): void
 ```
 
 * **value** (<code>[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)</code>)  *No description*
@@ -3954,12 +3923,13 @@ new OrganizationWebhookConfigurationOutputReference(terraformResource: ITerrafor
 
 Name | Type | Description 
 -----|------|-------------
+**contentType** | <code>string</code> | <span></span>
+**insecureSsl** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**secret** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**contentType**? | <code>string</code> | __*Optional*__
 **contentTypeInput**? | <code>string</code> | __*Optional*__
-**insecureSsl**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **insecureSslInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**secret**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)</code> | __*Optional*__
 **secretInput**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 
@@ -4008,7 +3978,7 @@ resetSecret(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card.html github_project_card}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4067,7 +4037,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column.html github_project_column}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4126,7 +4096,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository.html github_repository}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4178,77 +4148,77 @@ new Repository(scope: Construct, id: string, config: RepositoryConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**allowAutoMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**allowMergeCommit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**allowRebaseMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**allowSquashMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**archiveOnDestroy** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**archived** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**autoInit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**defaultBranch** | <code>string</code> | <span></span>
+**deleteBranchOnMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**description** | <code>string</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **fullName** | <code>string</code> | <span></span>
 **gitCloneUrl** | <code>string</code> | <span></span>
+**gitignoreTemplate** | <code>string</code> | <span></span>
+**hasDownloads** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**hasIssues** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**hasProjects** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**hasWiki** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**homepageUrl** | <code>string</code> | <span></span>
 **htmlUrl** | <code>string</code> | <span></span>
 **httpCloneUrl** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**isTemplate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**licenseTemplate** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
 **pages** | <code>[RepositoryPagesOutputReference](#cdktf-provider-github-repositorypagesoutputreference)</code> | <span></span>
+**private** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repoId** | <code>number</code> | <span></span>
 **sshCloneUrl** | <code>string</code> | <span></span>
 **svnUrl** | <code>string</code> | <span></span>
 **template** | <code>[RepositoryTemplateOutputReference](#cdktf-provider-github-repositorytemplateoutputreference)</code> | <span></span>
-**allowAutoMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**topics** | <code>Array<string></code> | <span></span>
+**visibility** | <code>string</code> | <span></span>
+**vulnerabilityAlerts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowAutoMergeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**allowMergeCommit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowMergeCommitInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**allowRebaseMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowRebaseMergeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**allowSquashMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowSquashMergeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**archiveOnDestroy**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **archiveOnDestroyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**archived**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **archivedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**autoInit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **autoInitInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**defaultBranch**? | <code>string</code> | __*Optional*__
 **defaultBranchInput**? | <code>string</code> | __*Optional*__
-**deleteBranchOnMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **deleteBranchOnMergeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**gitignoreTemplate**? | <code>string</code> | __*Optional*__
 **gitignoreTemplateInput**? | <code>string</code> | __*Optional*__
-**hasDownloads**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasDownloadsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**hasIssues**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasIssuesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**hasProjects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasProjectsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**hasWiki**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasWikiInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**homepageUrl**? | <code>string</code> | __*Optional*__
 **homepageUrlInput**? | <code>string</code> | __*Optional*__
-**isTemplate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isTemplateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**licenseTemplate**? | <code>string</code> | __*Optional*__
 **licenseTemplateInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **pagesInput**? | <code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code> | __*Optional*__
-**private**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **privateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **templateInput**? | <code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code> | __*Optional*__
-**topics**? | <code>Array<string></code> | __*Optional*__
 **topicsInput**? | <code>Array<string></code> | __*Optional*__
-**visibility**? | <code>string</code> | __*Optional*__
 **visibilityInput**? | <code>string</code> | __*Optional*__
-**vulnerabilityAlerts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **vulnerabilityAlertsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putPages(value?) <a id="cdktf-provider-github-repository-putpages"></a>
+#### putPages(value) <a id="cdktf-provider-github-repository-putpages"></a>
 
 
 
 ```ts
-putPages(value?: RepositoryPages): void
+putPages(value: RepositoryPages): void
 ```
 
 * **value** (<code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code>)  *No description*
@@ -4258,12 +4228,12 @@ putPages(value?: RepositoryPages): void
 
 
 
-#### putTemplate(value?) <a id="cdktf-provider-github-repository-puttemplate"></a>
+#### putTemplate(value) <a id="cdktf-provider-github-repository-puttemplate"></a>
 
 
 
 ```ts
-putTemplate(value?: RepositoryTemplate): void
+putTemplate(value: RepositoryTemplate): void
 ```
 
 * **value** (<code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code>)  *No description*
@@ -4579,7 +4549,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html github_repository_autolink_reference}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4640,7 +4610,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator.html github_repository_collaborator}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4673,10 +4643,10 @@ Name | Type | Description
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
 **invitationId** | <code>string</code> | <span></span>
+**permission** | <code>string</code> | <span></span>
+**permissionDiffSuppression** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
-**permission**? | <code>string</code> | __*Optional*__
-**permissionDiffSuppression**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **permissionDiffSuppressionInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **permissionInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
@@ -4728,7 +4698,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key.html github_repository_deploy_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4762,10 +4732,10 @@ Name | Type | Description
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **key** | <code>string</code> | <span></span>
+**readOnly** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **title** | <code>string</code> | <span></span>
 **keyInput**? | <code>string</code> | __*Optional*__
-**readOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **readOnlyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
@@ -4804,7 +4774,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html github_repository_environment}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4840,24 +4810,24 @@ Name | Type | Description
 **environment** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
+**reviewers** | <code>Array<[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)></code> | <span></span>
+**waitTimer** | <code>number</code> | <span></span>
 **deploymentBranchPolicyInput**? | <code>[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)</code> | __*Optional*__
 **environmentInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
-**reviewers**? | <code>Array<[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)></code> | __*Optional*__
 **reviewersInput**? | <code>Array<[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)></code> | __*Optional*__
-**waitTimer**? | <code>number</code> | __*Optional*__
 **waitTimerInput**? | <code>number</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putDeploymentBranchPolicy(value?) <a id="cdktf-provider-github-repositoryenvironment-putdeploymentbranchpolicy"></a>
+#### putDeploymentBranchPolicy(value) <a id="cdktf-provider-github-repositoryenvironment-putdeploymentbranchpolicy"></a>
 
 
 
 ```ts
-putDeploymentBranchPolicy(value?: RepositoryEnvironmentDeploymentBranchPolicy): void
+putDeploymentBranchPolicy(value: RepositoryEnvironmentDeploymentBranchPolicy): void
 ```
 
 * **value** (<code>[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)</code>)  *No description*
@@ -4946,6 +4916,7 @@ Name | Type | Description
 **customBranchPolicies** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **protectedBranches** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **customBranchPoliciesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**internalValue**? | <code>[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)</code> | __*Optional*__
 **protectedBranchesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 
@@ -4954,7 +4925,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file.html github_repository_file}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -4989,23 +4960,23 @@ new RepositoryFile(scope: Construct, id: string, config: RepositoryFileConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**branch** | <code>string</code> | <span></span>
+**commitAuthor** | <code>string</code> | <span></span>
+**commitEmail** | <code>string</code> | <span></span>
+**commitMessage** | <code>string</code> | <span></span>
 **commitSha** | <code>string</code> | <span></span>
 **content** | <code>string</code> | <span></span>
 **file** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**overwriteOnCreate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **sha** | <code>string</code> | <span></span>
-**branch**? | <code>string</code> | __*Optional*__
 **branchInput**? | <code>string</code> | __*Optional*__
-**commitAuthor**? | <code>string</code> | __*Optional*__
 **commitAuthorInput**? | <code>string</code> | __*Optional*__
-**commitEmail**? | <code>string</code> | __*Optional*__
 **commitEmailInput**? | <code>string</code> | __*Optional*__
-**commitMessage**? | <code>string</code> | __*Optional*__
 **commitMessageInput**? | <code>string</code> | __*Optional*__
 **contentInput**? | <code>string</code> | __*Optional*__
 **fileInput**? | <code>string</code> | __*Optional*__
-**overwriteOnCreate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **overwriteOnCreateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -5091,7 +5062,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html github_repository_milestone}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5124,18 +5095,18 @@ new RepositoryMilestone(scope: Construct, id: string, config: RepositoryMileston
 
 Name | Type | Description 
 -----|------|-------------
+**description** | <code>string</code> | <span></span>
+**dueDate** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **number** | <code>number</code> | <span></span>
 **owner** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
+**state** | <code>string</code> | <span></span>
 **title** | <code>string</code> | <span></span>
-**description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**dueDate**? | <code>string</code> | __*Optional*__
 **dueDateInput**? | <code>string</code> | __*Optional*__
 **ownerInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
-**state**? | <code>string</code> | __*Optional*__
 **stateInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -5219,9 +5190,10 @@ new RepositoryPagesOutputReference(terraformResource: ITerraformResource, terraf
 
 Name | Type | Description 
 -----|------|-------------
+**cname** | <code>string</code> | <span></span>
 **source** | <code>[RepositoryPagesSourceOutputReference](#cdktf-provider-github-repositorypagessourceoutputreference)</code> | <span></span>
-**cname**? | <code>string</code> | __*Optional*__
 **cnameInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code> | __*Optional*__
 **sourceInput**? | <code>[RepositoryPagesSource](#cdktf-provider-github-repositorypagessource)</code> | __*Optional*__
 
 ### Methods
@@ -5283,8 +5255,9 @@ new RepositoryPagesSourceOutputReference(terraformResource: ITerraformResource, 
 Name | Type | Description 
 -----|------|-------------
 **branch** | <code>string</code> | <span></span>
+**path** | <code>string</code> | <span></span>
 **branchInput**? | <code>string</code> | __*Optional*__
-**path**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[RepositoryPagesSource](#cdktf-provider-github-repositorypagessource)</code> | __*Optional*__
 **pathInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
@@ -5308,7 +5281,7 @@ resetPath(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_project.html github_repository_project}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5338,12 +5311,12 @@ new RepositoryProject(scope: Construct, id: string, config: RepositoryProjectCon
 
 Name | Type | Description 
 -----|------|-------------
+**body** | <code>string</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**body**? | <code>string</code> | __*Optional*__
 **bodyInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
@@ -5382,7 +5355,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html github_repository_pull_request}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5419,25 +5392,25 @@ Name | Type | Description
 **baseRef** | <code>string</code> | <span></span>
 **baseRepository** | <code>string</code> | <span></span>
 **baseSha** | <code>string</code> | <span></span>
+**body** | <code>string</code> | <span></span>
 **draft** | <code>any</code> | <span></span>
 **headRef** | <code>string</code> | <span></span>
 **headSha** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **labels** | <code>Array<string></code> | <span></span>
+**maintainerCanModify** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **number** | <code>number</code> | <span></span>
 **openedAt** | <code>number</code> | <span></span>
 **openedBy** | <code>string</code> | <span></span>
+**owner** | <code>string</code> | <span></span>
 **state** | <code>string</code> | <span></span>
 **title** | <code>string</code> | <span></span>
 **updatedAt** | <code>number</code> | <span></span>
 **baseRefInput**? | <code>string</code> | __*Optional*__
 **baseRepositoryInput**? | <code>string</code> | __*Optional*__
-**body**? | <code>string</code> | __*Optional*__
 **bodyInput**? | <code>string</code> | __*Optional*__
 **headRefInput**? | <code>string</code> | __*Optional*__
-**maintainerCanModify**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **maintainerCanModifyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**owner**? | <code>string</code> | __*Optional*__
 **ownerInput**? | <code>string</code> | __*Optional*__
 **titleInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -5523,6 +5496,7 @@ Name | Type | Description
 -----|------|-------------
 **owner** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
+**internalValue**? | <code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code> | __*Optional*__
 **ownerInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 
@@ -5532,7 +5506,7 @@ Name | Type | Description
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_webhook.html github_repository_webhook}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5564,17 +5538,17 @@ new RepositoryWebhook(scope: Construct, id: string, config: RepositoryWebhookCon
 
 Name | Type | Description 
 -----|------|-------------
+**active** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **configuration** | <code>[RepositoryWebhookConfigurationOutputReference](#cdktf-provider-github-repositorywebhookconfigurationoutputreference)</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **events** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**active**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **activeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **configurationInput**? | <code>[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)</code> | __*Optional*__
 **eventsInput**? | <code>Array<string></code> | __*Optional*__
-**name**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -5582,12 +5556,12 @@ Name | Type | Description
 ### Methods
 
 
-#### putConfiguration(value?) <a id="cdktf-provider-github-repositorywebhook-putconfiguration"></a>
+#### putConfiguration(value) <a id="cdktf-provider-github-repositorywebhook-putconfiguration"></a>
 
 
 
 ```ts
-putConfiguration(value?: RepositoryWebhookConfiguration): void
+putConfiguration(value: RepositoryWebhookConfiguration): void
 ```
 
 * **value** (<code>[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)</code>)  *No description*
@@ -5675,12 +5649,13 @@ new RepositoryWebhookConfigurationOutputReference(terraformResource: ITerraformR
 
 Name | Type | Description 
 -----|------|-------------
+**contentType** | <code>string</code> | <span></span>
+**insecureSsl** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**secret** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**contentType**? | <code>string</code> | __*Optional*__
 **contentTypeInput**? | <code>string</code> | __*Optional*__
-**insecureSsl**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **insecureSslInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**secret**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)</code> | __*Optional*__
 **secretInput**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 
@@ -5729,7 +5704,7 @@ resetSecret(): void
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team.html github_team}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5762,22 +5737,22 @@ new Team(scope: Construct, id: string, config: TeamConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**createDefaultMaintainer** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**description** | <code>string</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**ldapDn** | <code>string</code> | <span></span>
 **membersCount** | <code>number</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
+**parentTeamId** | <code>number</code> | <span></span>
+**privacy** | <code>string</code> | <span></span>
 **slug** | <code>string</code> | <span></span>
-**createDefaultMaintainer**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **createDefaultMaintainerInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**description**? | <code>string</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
-**ldapDn**? | <code>string</code> | __*Optional*__
 **ldapDnInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**parentTeamId**? | <code>number</code> | __*Optional*__
 **parentTeamIdInput**? | <code>number</code> | __*Optional*__
-**privacy**? | <code>string</code> | __*Optional*__
 **privacyInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -5862,7 +5837,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership.html github_team_membership}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5894,9 +5869,9 @@ Name | Type | Description
 -----|------|-------------
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**role** | <code>string</code> | <span></span>
 **teamId** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
-**role**? | <code>string</code> | __*Optional*__
 **roleInput**? | <code>string</code> | __*Optional*__
 **teamIdInput**? | <code>string</code> | __*Optional*__
 **usernameInput**? | <code>string</code> | __*Optional*__
@@ -5935,7 +5910,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository.html github_team_repository}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5967,9 +5942,9 @@ Name | Type | Description
 -----|------|-------------
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**permission** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **teamId** | <code>string</code> | <span></span>
-**permission**? | <code>string</code> | __*Optional*__
 **permissionInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 **teamIdInput**? | <code>string</code> | __*Optional*__
@@ -6008,7 +5983,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping.html github_team_sync_group_mapping}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -6038,9 +6013,9 @@ new TeamSyncGroupMapping(scope: Construct, id: string, config: TeamSyncGroupMapp
 Name | Type | Description 
 -----|------|-------------
 **etag** | <code>string</code> | <span></span>
+**group** | <code>Array<[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **teamSlug** | <code>string</code> | <span></span>
-**group**? | <code>Array<[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)></code> | __*Optional*__
 **groupInput**? | <code>Array<[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)></code> | __*Optional*__
 **teamSlugInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -6078,7 +6053,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key.html github_user_gpg_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -6134,7 +6109,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter.html github_user_invitation_accepter}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -6188,7 +6163,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key.html github_user_ssh_key}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer

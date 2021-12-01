@@ -67,7 +67,7 @@ export class BranchDefault extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get branchInput() {
-    return this._branch
+    return this._branch;
   }
 
   // id - computed: true, optional: true, required: false
@@ -85,7 +85,7 @@ export class BranchDefault extends cdktf.TerraformResource {
   }
   // Temporarily expose input value. Use with caution.
   public get repositoryInput() {
-    return this._repository
+    return this._repository;
   }
 
   // =========
