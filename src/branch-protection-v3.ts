@@ -85,6 +85,8 @@ export function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?:
 }
 
 export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -95,7 +97,7 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   }
 
   public get internalValue(): BranchProtectionV3RequiredPullRequestReviews | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._dismissStaleReviews) {
       hasAnyValues = true;
@@ -126,6 +128,7 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
 
   public set internalValue(value: BranchProtectionV3RequiredPullRequestReviews | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._dismissStaleReviews = undefined;
       this._dismissalTeams = undefined;
       this._dismissalUsers = undefined;
@@ -134,6 +137,7 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
       this._requiredApprovingReviewCount = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._dismissStaleReviews = value.dismissStaleReviews;
       this._dismissalTeams = value.dismissalTeams;
       this._dismissalUsers = value.dismissalUsers;
@@ -267,6 +271,8 @@ export function branchProtectionV3RequiredStatusChecksToTerraform(struct?: Branc
 }
 
 export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -277,7 +283,7 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
   }
 
   public get internalValue(): BranchProtectionV3RequiredStatusChecks | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._contexts) {
       hasAnyValues = true;
@@ -296,11 +302,13 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
 
   public set internalValue(value: BranchProtectionV3RequiredStatusChecks | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._contexts = undefined;
       this._includeAdmins = undefined;
       this._strict = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._contexts = value.contexts;
       this._includeAdmins = value.includeAdmins;
       this._strict = value.strict;
@@ -383,6 +391,8 @@ export function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtect
 }
 
 export class BranchProtectionV3RestrictionsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -393,7 +403,7 @@ export class BranchProtectionV3RestrictionsOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): BranchProtectionV3Restrictions | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._apps) {
       hasAnyValues = true;
@@ -412,11 +422,13 @@ export class BranchProtectionV3RestrictionsOutputReference extends cdktf.Complex
 
   public set internalValue(value: BranchProtectionV3Restrictions | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._apps = undefined;
       this._teams = undefined;
       this._users = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._apps = value.apps;
       this._teams = value.teams;
       this._users = value.users;

@@ -56,6 +56,8 @@ export function actionsOrganizationPermissionsAllowedActionsConfigToTerraform(st
 }
 
 export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -66,7 +68,7 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   }
 
   public get internalValue(): ActionsOrganizationPermissionsAllowedActionsConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._githubOwnedAllowed) {
       hasAnyValues = true;
@@ -85,11 +87,13 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
 
   public set internalValue(value: ActionsOrganizationPermissionsAllowedActionsConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._githubOwnedAllowed = undefined;
       this._patternsAllowed = undefined;
       this._verifiedAllowed = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._githubOwnedAllowed = value.githubOwnedAllowed;
       this._patternsAllowed = value.patternsAllowed;
       this._verifiedAllowed = value.verifiedAllowed;
@@ -159,6 +163,8 @@ export function actionsOrganizationPermissionsEnabledRepositoriesConfigToTerrafo
 }
 
 export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -169,7 +175,7 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
   }
 
   public get internalValue(): ActionsOrganizationPermissionsEnabledRepositoriesConfig | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._repositoryIds) {
       hasAnyValues = true;
@@ -180,9 +186,11 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
 
   public set internalValue(value: ActionsOrganizationPermissionsEnabledRepositoriesConfig | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._repositoryIds = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._repositoryIds = value.repositoryIds;
     }
   }

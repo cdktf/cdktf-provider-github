@@ -59,6 +59,8 @@ export function organizationWebhookConfigurationToTerraform(struct?: Organizatio
 }
 
 export class OrganizationWebhookConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -69,7 +71,7 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
   }
 
   public get internalValue(): OrganizationWebhookConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._contentType) {
       hasAnyValues = true;
@@ -92,12 +94,14 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
 
   public set internalValue(value: OrganizationWebhookConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._contentType = undefined;
       this._insecureSsl = undefined;
       this._secret = undefined;
       this._url = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._contentType = value.contentType;
       this._insecureSsl = value.insecureSsl;
       this._secret = value.secret;
