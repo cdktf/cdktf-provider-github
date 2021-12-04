@@ -55,6 +55,8 @@ export function repositoryEnvironmentDeploymentBranchPolicyToTerraform(struct?: 
 }
 
 export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -65,7 +67,7 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
   }
 
   public get internalValue(): RepositoryEnvironmentDeploymentBranchPolicy | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._customBranchPolicies) {
       hasAnyValues = true;
@@ -80,10 +82,12 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
 
   public set internalValue(value: RepositoryEnvironmentDeploymentBranchPolicy | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._customBranchPolicies = undefined;
       this._protectedBranches = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._customBranchPolicies = value.customBranchPolicies;
       this._protectedBranches = value.protectedBranches;
     }

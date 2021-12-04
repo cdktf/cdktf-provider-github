@@ -137,6 +137,8 @@ export function repositoryPagesSourceToTerraform(struct?: RepositoryPagesSourceO
 }
 
 export class RepositoryPagesSourceOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -147,7 +149,7 @@ export class RepositoryPagesSourceOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RepositoryPagesSource | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._branch) {
       hasAnyValues = true;
@@ -162,10 +164,12 @@ export class RepositoryPagesSourceOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RepositoryPagesSource | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._branch = undefined;
       this._path = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._branch = value.branch;
       this._path = value.path;
     }
@@ -225,6 +229,8 @@ export function repositoryPagesToTerraform(struct?: RepositoryPagesOutputReferen
 }
 
 export class RepositoryPagesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -235,13 +241,13 @@ export class RepositoryPagesOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RepositoryPages | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._cname) {
       hasAnyValues = true;
       internalValueResult.cname = this._cname;
     }
-    if (this._source) {
+    if (this._source?.internalValue) {
       hasAnyValues = true;
       internalValueResult.source = this._source?.internalValue;
     }
@@ -250,10 +256,12 @@ export class RepositoryPagesOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RepositoryPages | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._cname = undefined;
       this._source.internalValue = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._cname = value.cname;
       this._source.internalValue = value.source;
     }
@@ -311,6 +319,8 @@ export function repositoryTemplateToTerraform(struct?: RepositoryTemplateOutputR
 }
 
 export class RepositoryTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -321,7 +331,7 @@ export class RepositoryTemplateOutputReference extends cdktf.ComplexObject {
   }
 
   public get internalValue(): RepositoryTemplate | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._owner) {
       hasAnyValues = true;
@@ -336,10 +346,12 @@ export class RepositoryTemplateOutputReference extends cdktf.ComplexObject {
 
   public set internalValue(value: RepositoryTemplate | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._owner = undefined;
       this._repository = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._owner = value.owner;
       this._repository = value.repository;
     }

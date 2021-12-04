@@ -63,6 +63,8 @@ export function repositoryWebhookConfigurationToTerraform(struct?: RepositoryWeb
 }
 
 export class RepositoryWebhookConfigurationOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
@@ -73,7 +75,7 @@ export class RepositoryWebhookConfigurationOutputReference extends cdktf.Complex
   }
 
   public get internalValue(): RepositoryWebhookConfiguration | undefined {
-    let hasAnyValues = false;
+    let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     if (this._contentType) {
       hasAnyValues = true;
@@ -96,12 +98,14 @@ export class RepositoryWebhookConfigurationOutputReference extends cdktf.Complex
 
   public set internalValue(value: RepositoryWebhookConfiguration | undefined) {
     if (value === undefined) {
+      this.isEmptyObject = false;
       this._contentType = undefined;
       this._insecureSsl = undefined;
       this._secret = undefined;
       this._url = undefined;
     }
     else {
+      this.isEmptyObject = Object.keys(value).length === 0;
       this._contentType = value.contentType;
       this._insecureSsl = value.insecureSsl;
       this._secret = value.secret;
