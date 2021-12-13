@@ -56,6 +56,7 @@ Name|Description
 [ProjectColumn](#cdktf-provider-github-projectcolumn)|Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column.html github_project_column}.
 [Repository](#cdktf-provider-github-repository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository.html github_repository}.
 [RepositoryAutolinkReference](#cdktf-provider-github-repositoryautolinkreference)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html github_repository_autolink_reference}.
+[RepositoryBranches](#cdktf-provider-github-repositorybranches)|*No description*
 [RepositoryCollaborator](#cdktf-provider-github-repositorycollaborator)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator.html github_repository_collaborator}.
 [RepositoryDeployKey](#cdktf-provider-github-repositorydeploykey)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key.html github_repository_deploy_key}.
 [RepositoryEnvironment](#cdktf-provider-github-repositoryenvironment)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html github_repository_environment}.
@@ -1033,6 +1034,7 @@ new BranchProtection(scope: Construct, id: string, config: BranchProtectionConfi
   * **allowsForcePushes** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#allows_force_pushes BranchProtection#allows_force_pushes}. __*Optional*__
   * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#enforce_admins BranchProtection#enforce_admins}. __*Optional*__
   * **pushRestrictions** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#push_restrictions BranchProtection#push_restrictions}. __*Optional*__
+  * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_conversation_resolution BranchProtection#require_conversation_resolution}. __*Optional*__
   * **requiredLinearHistory** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_linear_history BranchProtection#required_linear_history}. __*Optional*__
   * **requiredPullRequestReviews** (<code>Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code>)  required_pull_request_reviews block. __*Optional*__
   * **requiredStatusChecks** (<code>Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code>)  required_status_checks block. __*Optional*__
@@ -1052,6 +1054,7 @@ Name | Type | Description
 **pattern** | <code>string</code> | <span></span>
 **pushRestrictions** | <code>Array<string></code> | <span></span>
 **repositoryId** | <code>string</code> | <span></span>
+**requireConversationResolution** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requireSignedCommits** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requiredLinearHistory** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requiredPullRequestReviews** | <code>Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | <span></span>
@@ -1062,6 +1065,7 @@ Name | Type | Description
 **patternInput**? | <code>string</code> | __*Optional*__
 **pushRestrictionsInput**? | <code>Array<string></code> | __*Optional*__
 **repositoryIdInput**? | <code>string</code> | __*Optional*__
+**requireConversationResolutionInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requireSignedCommitsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredLinearHistoryInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredPullRequestReviewsInput**? | <code>Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | __*Optional*__
@@ -1113,6 +1117,18 @@ resetEnforceAdmins(): void
 
 ```ts
 resetPushRestrictions(): void
+```
+
+
+
+
+
+#### resetRequireConversationResolution() <a id="cdktf-provider-github-branchprotection-resetrequireconversationresolution"></a>
+
+
+
+```ts
+resetRequireConversationResolution(): void
 ```
 
 
@@ -1207,6 +1223,7 @@ new BranchProtectionV3(scope: Construct, id: string, config: BranchProtectionV3C
   * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#branch BranchProtectionV3#branch}. 
   * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#repository BranchProtectionV3#repository}. 
   * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#enforce_admins BranchProtectionV3#enforce_admins}. __*Optional*__
+  * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}. __*Optional*__
   * **requiredPullRequestReviews** (<code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code>)  required_pull_request_reviews block. __*Optional*__
   * **requiredStatusChecks** (<code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code>)  required_status_checks block. __*Optional*__
   * **requireSignedCommits** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#require_signed_commits BranchProtectionV3#require_signed_commits}. __*Optional*__
@@ -1224,6 +1241,7 @@ Name | Type | Description
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
+**requireConversationResolution** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requireSignedCommits** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requiredPullRequestReviews** | <code>[BranchProtectionV3RequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference)</code> | <span></span>
 **requiredStatusChecks** | <code>[BranchProtectionV3RequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionv3requiredstatuschecksoutputreference)</code> | <span></span>
@@ -1231,6 +1249,7 @@ Name | Type | Description
 **branchInput**? | <code>string</code> | __*Optional*__
 **enforceAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
+**requireConversationResolutionInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requireSignedCommitsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredPullRequestReviewsInput**? | <code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code> | __*Optional*__
 **requiredStatusChecksInput**? | <code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code> | __*Optional*__
@@ -1297,6 +1316,18 @@ putRestrictions(value: BranchProtectionV3Restrictions): void
 
 ```ts
 resetEnforceAdmins(): void
+```
+
+
+
+
+
+#### resetRequireConversationResolution() <a id="cdktf-provider-github-branchprotectionv3-resetrequireconversationresolution"></a>
+
+
+
+```ts
+resetRequireConversationResolution(): void
 ```
 
 
@@ -4213,6 +4244,19 @@ Name | Type | Description
 ### Methods
 
 
+#### branches(index) <a id="cdktf-provider-github-repository-branches"></a>
+
+
+
+```ts
+branches(index: string): RepositoryBranches
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[RepositoryBranches](#cdktf-provider-github-repositorybranches)</code>
+
 #### putPages(value) <a id="cdktf-provider-github-repository-putpages"></a>
 
 
@@ -4603,6 +4647,37 @@ protected synthesizeAttributes(): Map<string, any>
 
 __Returns__:
 * <code>Map<string, any></code>
+
+
+
+## class RepositoryBranches  <a id="cdktf-provider-github-repositorybranches"></a>
+
+
+
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new RepositoryBranches(terraformResource: ITerraformResource, terraformAttribute: string, complexComputedListIndex: string)
+```
+
+* **terraformResource** (<code>[ITerraformResource](#cdktf-iterraformresource)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | <span></span>
+**protected** | <code>any</code> | <span></span>
 
 
 
@@ -6440,6 +6515,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **pushRestrictions**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#push_restrictions BranchProtection#push_restrictions}.<br/>__*Optional*__
+**requireConversationResolution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_conversation_resolution BranchProtection#require_conversation_resolution}.<br/>__*Optional*__
 **requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_signed_commits BranchProtection#require_signed_commits}.<br/>__*Optional*__
 **requiredLinearHistory**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#required_linear_history BranchProtection#required_linear_history}.<br/>__*Optional*__
 **requiredPullRequestReviews**? | <code>Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | required_pull_request_reviews block.<br/>__*Optional*__
@@ -6494,6 +6570,7 @@ Name | Type | Description
 **enforceAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#enforce_admins BranchProtectionV3#enforce_admins}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**requireConversationResolution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}.<br/>__*Optional*__
 **requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3.html#require_signed_commits BranchProtectionV3#require_signed_commits}.<br/>__*Optional*__
 **requiredPullRequestReviews**? | <code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code> | required_pull_request_reviews block.<br/>__*Optional*__
 **requiredStatusChecks**? | <code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code> | required_status_checks block.<br/>__*Optional*__

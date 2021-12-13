@@ -114,6 +114,18 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly template?: RepositoryTemplate;
 }
+export class RepositoryBranches extends cdktf.ComplexComputedList {
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // protected - computed: true, optional: false, required: false
+  public get protected() {
+    return this.getBooleanAttribute('protected') as any;
+  }
+}
 export interface RepositoryPagesSource {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository.html#branch Repository#branch}
@@ -557,6 +569,11 @@ export class Repository extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoInitInput() {
     return this._autoInit;
+  }
+
+  // branches - computed: true, optional: false, required: false
+  public branches(index: string) {
+    return new RepositoryBranches(this, 'branches', index);
   }
 
   // default_branch - computed: true, optional: true, required: false

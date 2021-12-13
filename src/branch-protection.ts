@@ -34,6 +34,10 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly repositoryId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_conversation_resolution BranchProtection#require_conversation_resolution}
+  */
+  readonly requireConversationResolution?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection.html#require_signed_commits BranchProtection#require_signed_commits}
   */
   readonly requireSignedCommits?: boolean | cdktf.IResolvable;
@@ -152,6 +156,7 @@ export class BranchProtection extends cdktf.TerraformResource {
     this._pattern = config.pattern;
     this._pushRestrictions = config.pushRestrictions;
     this._repositoryId = config.repositoryId;
+    this._requireConversationResolution = config.requireConversationResolution;
     this._requireSignedCommits = config.requireSignedCommits;
     this._requiredLinearHistory = config.requiredLinearHistory;
     this._requiredPullRequestReviews = config.requiredPullRequestReviews;
@@ -257,6 +262,22 @@ export class BranchProtection extends cdktf.TerraformResource {
     return this._repositoryId;
   }
 
+  // require_conversation_resolution - computed: false, optional: true, required: false
+  private _requireConversationResolution?: boolean | cdktf.IResolvable; 
+  public get requireConversationResolution() {
+    return this.getBooleanAttribute('require_conversation_resolution') as any;
+  }
+  public set requireConversationResolution(value: boolean | cdktf.IResolvable) {
+    this._requireConversationResolution = value;
+  }
+  public resetRequireConversationResolution() {
+    this._requireConversationResolution = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireConversationResolutionInput() {
+    return this._requireConversationResolution;
+  }
+
   // require_signed_commits - computed: false, optional: true, required: false
   private _requireSignedCommits?: boolean | cdktf.IResolvable; 
   public get requireSignedCommits() {
@@ -335,6 +356,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       pattern: cdktf.stringToTerraform(this._pattern),
       push_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(this._pushRestrictions),
       repository_id: cdktf.stringToTerraform(this._repositoryId),
+      require_conversation_resolution: cdktf.booleanToTerraform(this._requireConversationResolution),
       require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),
       required_linear_history: cdktf.booleanToTerraform(this._requiredLinearHistory),
       required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform)(this._requiredPullRequestReviews),
