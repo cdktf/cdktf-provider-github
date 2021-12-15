@@ -163,11 +163,11 @@ export class RepositoryPagesSourceOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RepositoryPagesSource | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._branch) {
+    if (this._branch !== undefined) {
       hasAnyValues = true;
       internalValueResult.branch = this._branch;
     }
-    if (this._path) {
+    if (this._path !== undefined) {
       hasAnyValues = true;
       internalValueResult.path = this._path;
     }
@@ -255,11 +255,11 @@ export class RepositoryPagesOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RepositoryPages | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._cname) {
+    if (this._cname !== undefined) {
       hasAnyValues = true;
       internalValueResult.cname = this._cname;
     }
-    if (this._source?.internalValue) {
+    if (this._source?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.source = this._source?.internalValue;
     }
@@ -345,11 +345,11 @@ export class RepositoryTemplateOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RepositoryTemplate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._owner) {
+    if (this._owner !== undefined) {
       hasAnyValues = true;
       internalValueResult.owner = this._owner;
     }
-    if (this._repository) {
+    if (this._repository !== undefined) {
       hasAnyValues = true;
       internalValueResult.repository = this._repository;
     }
