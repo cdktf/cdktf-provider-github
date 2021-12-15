@@ -103,27 +103,27 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   public get internalValue(): BranchProtectionV3RequiredPullRequestReviews | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._dismissStaleReviews) {
+    if (this._dismissStaleReviews !== undefined) {
       hasAnyValues = true;
       internalValueResult.dismissStaleReviews = this._dismissStaleReviews;
     }
-    if (this._dismissalTeams) {
+    if (this._dismissalTeams !== undefined) {
       hasAnyValues = true;
       internalValueResult.dismissalTeams = this._dismissalTeams;
     }
-    if (this._dismissalUsers) {
+    if (this._dismissalUsers !== undefined) {
       hasAnyValues = true;
       internalValueResult.dismissalUsers = this._dismissalUsers;
     }
-    if (this._includeAdmins) {
+    if (this._includeAdmins !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeAdmins = this._includeAdmins;
     }
-    if (this._requireCodeOwnerReviews) {
+    if (this._requireCodeOwnerReviews !== undefined) {
       hasAnyValues = true;
       internalValueResult.requireCodeOwnerReviews = this._requireCodeOwnerReviews;
     }
-    if (this._requiredApprovingReviewCount) {
+    if (this._requiredApprovingReviewCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.requiredApprovingReviewCount = this._requiredApprovingReviewCount;
     }
@@ -289,15 +289,15 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
   public get internalValue(): BranchProtectionV3RequiredStatusChecks | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._contexts) {
+    if (this._contexts !== undefined) {
       hasAnyValues = true;
       internalValueResult.contexts = this._contexts;
     }
-    if (this._includeAdmins) {
+    if (this._includeAdmins !== undefined) {
       hasAnyValues = true;
       internalValueResult.includeAdmins = this._includeAdmins;
     }
-    if (this._strict) {
+    if (this._strict !== undefined) {
       hasAnyValues = true;
       internalValueResult.strict = this._strict;
     }
@@ -409,15 +409,15 @@ export class BranchProtectionV3RestrictionsOutputReference extends cdktf.Complex
   public get internalValue(): BranchProtectionV3Restrictions | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._apps) {
+    if (this._apps !== undefined) {
       hasAnyValues = true;
       internalValueResult.apps = this._apps;
     }
-    if (this._teams) {
+    if (this._teams !== undefined) {
       hasAnyValues = true;
       internalValueResult.teams = this._teams;
     }
-    if (this._users) {
+    if (this._users !== undefined) {
       hasAnyValues = true;
       internalValueResult.users = this._users;
     }

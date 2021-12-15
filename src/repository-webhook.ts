@@ -77,19 +77,19 @@ export class RepositoryWebhookConfigurationOutputReference extends cdktf.Complex
   public get internalValue(): RepositoryWebhookConfiguration | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._contentType) {
+    if (this._contentType !== undefined) {
       hasAnyValues = true;
       internalValueResult.contentType = this._contentType;
     }
-    if (this._insecureSsl) {
+    if (this._insecureSsl !== undefined) {
       hasAnyValues = true;
       internalValueResult.insecureSsl = this._insecureSsl;
     }
-    if (this._secret) {
+    if (this._secret !== undefined) {
       hasAnyValues = true;
       internalValueResult.secret = this._secret;
     }
-    if (this._url) {
+    if (this._url !== undefined) {
       hasAnyValues = true;
       internalValueResult.url = this._url;
     }

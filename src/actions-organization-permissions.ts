@@ -70,15 +70,15 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   public get internalValue(): ActionsOrganizationPermissionsAllowedActionsConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._githubOwnedAllowed) {
+    if (this._githubOwnedAllowed !== undefined) {
       hasAnyValues = true;
       internalValueResult.githubOwnedAllowed = this._githubOwnedAllowed;
     }
-    if (this._patternsAllowed) {
+    if (this._patternsAllowed !== undefined) {
       hasAnyValues = true;
       internalValueResult.patternsAllowed = this._patternsAllowed;
     }
-    if (this._verifiedAllowed) {
+    if (this._verifiedAllowed !== undefined) {
       hasAnyValues = true;
       internalValueResult.verifiedAllowed = this._verifiedAllowed;
     }
@@ -177,7 +177,7 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
   public get internalValue(): ActionsOrganizationPermissionsEnabledRepositoriesConfig | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._repositoryIds) {
+    if (this._repositoryIds !== undefined) {
       hasAnyValues = true;
       internalValueResult.repositoryIds = this._repositoryIds;
     }

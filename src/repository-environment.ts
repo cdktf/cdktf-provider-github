@@ -69,11 +69,11 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
   public get internalValue(): RepositoryEnvironmentDeploymentBranchPolicy | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
-    if (this._customBranchPolicies) {
+    if (this._customBranchPolicies !== undefined) {
       hasAnyValues = true;
       internalValueResult.customBranchPolicies = this._customBranchPolicies;
     }
-    if (this._protectedBranches) {
+    if (this._protectedBranches !== undefined) {
       hasAnyValues = true;
       internalValueResult.protectedBranches = this._protectedBranches;
     }
