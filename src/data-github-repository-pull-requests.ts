@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html
+// https://www.terraform.io/docs/providers/github/d/repository_pull_requests
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,31 +8,31 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryPullRequestsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html#base_ref DataGithubRepositoryPullRequests#base_ref}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#base_ref DataGithubRepositoryPullRequests#base_ref}
   */
   readonly baseRef?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html#base_repository DataGithubRepositoryPullRequests#base_repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#base_repository DataGithubRepositoryPullRequests#base_repository}
   */
   readonly baseRepository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html#head_ref DataGithubRepositoryPullRequests#head_ref}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#head_ref DataGithubRepositoryPullRequests#head_ref}
   */
   readonly headRef?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html#owner DataGithubRepositoryPullRequests#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#owner DataGithubRepositoryPullRequests#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html#sort_by DataGithubRepositoryPullRequests#sort_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#sort_by DataGithubRepositoryPullRequests#sort_by}
   */
   readonly sortBy?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html#sort_direction DataGithubRepositoryPullRequests#sort_direction}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#sort_direction DataGithubRepositoryPullRequests#sort_direction}
   */
   readonly sortDirection?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html#state DataGithubRepositoryPullRequests#state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#state DataGithubRepositoryPullRequests#state}
   */
   readonly state?: string;
 }
@@ -120,7 +120,7 @@ export class DataGithubRepositoryPullRequestsResults extends cdktf.ComplexComput
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html github_repository_pull_requests}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests}
 */
 export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource {
 
@@ -134,7 +134,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests.html github_repository_pull_requests} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

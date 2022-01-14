@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/user_gpg_key.html
+// https://www.terraform.io/docs/providers/github/r/user_gpg_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface UserGpgKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key.html#armored_public_key UserGpgKey#armored_public_key}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}
   */
   readonly armoredPublicKey: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key.html github_user_gpg_key}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key}
 */
 export class UserGpgKey extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class UserGpgKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key.html github_user_gpg_key} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

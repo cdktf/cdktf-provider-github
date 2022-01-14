@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/project_card.html
+// https://www.terraform.io/docs/providers/github/r/project_card
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectCardConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card.html#column_id ProjectCard#column_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}
   */
   readonly columnId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card.html#note ProjectCard#note}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}
   */
   readonly note: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card.html github_project_card}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}
 */
 export class ProjectCard extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class ProjectCard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/project_card.html github_project_card} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/team_repository.html
+// https://www.terraform.io/docs/providers/github/r/team_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,23 +8,23 @@ import * as cdktf from 'cdktf';
 
 export interface TeamRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository.html#permission TeamRepository#permission}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#permission TeamRepository#permission}
   */
   readonly permission?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository.html#repository TeamRepository#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#repository TeamRepository#repository}
   */
   readonly repository: string;
   /**
   * ID or slug of team
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository.html#team_id TeamRepository#team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#team_id TeamRepository#team_id}
   */
   readonly teamId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository.html github_team_repository}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository github_team_repository}
 */
 export class TeamRepository extends cdktf.TerraformResource {
 
@@ -38,7 +38,7 @@ export class TeamRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team_repository.html github_team_repository} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team_repository github_team_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

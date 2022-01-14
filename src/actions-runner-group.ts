@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_runner_group.html
+// https://www.terraform.io/docs/providers/github/r/actions_runner_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsRunnerGroupConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group.html#name ActionsRunnerGroup#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#name ActionsRunnerGroup#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group.html#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
   */
   readonly selectedRepositoryIds?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group.html#visibility ActionsRunnerGroup#visibility}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#visibility ActionsRunnerGroup#visibility}
   */
   readonly visibility: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group.html github_actions_runner_group}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group}
 */
 export class ActionsRunnerGroup extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group.html github_actions_runner_group} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

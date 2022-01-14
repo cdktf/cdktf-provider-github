@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/repository_environment.html
+// https://www.terraform.io/docs/providers/github/r/repository_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,37 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryEnvironmentConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#environment RepositoryEnvironment#environment}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#environment RepositoryEnvironment#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#repository RepositoryEnvironment#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#repository RepositoryEnvironment#repository}
   */
   readonly repository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#wait_timer RepositoryEnvironment#wait_timer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
   */
   readonly waitTimer?: number;
   /**
   * deployment_branch_policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
   */
   readonly deploymentBranchPolicy?: RepositoryEnvironmentDeploymentBranchPolicy;
   /**
   * reviewers block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#reviewers RepositoryEnvironment#reviewers}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#reviewers RepositoryEnvironment#reviewers}
   */
   readonly reviewers?: RepositoryEnvironmentReviewers[];
 }
 export interface RepositoryEnvironmentDeploymentBranchPolicy {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
   */
   readonly customBranchPolicies: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#protected_branches RepositoryEnvironment#protected_branches}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
   */
   readonly protectedBranches: boolean | cdktf.IResolvable;
 }
@@ -121,11 +121,11 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
 }
 export interface RepositoryEnvironmentReviewers {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#teams RepositoryEnvironment#teams}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#teams RepositoryEnvironment#teams}
   */
   readonly teams?: number[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html#users RepositoryEnvironment#users}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#users RepositoryEnvironment#users}
   */
   readonly users?: number[];
 }
@@ -143,7 +143,7 @@ export function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnv
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html github_repository_environment}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment github_repository_environment}
 */
 export class RepositoryEnvironment extends cdktf.TerraformResource {
 
@@ -157,7 +157,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_environment.html github_repository_environment} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_environment github_repository_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

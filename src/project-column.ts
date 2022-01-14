@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/project_column.html
+// https://www.terraform.io/docs/providers/github/r/project_column
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectColumnConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column.html#name ProjectColumn#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#name ProjectColumn#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column.html#project_id ProjectColumn#project_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#project_id ProjectColumn#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column.html github_project_column}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column}
 */
 export class ProjectColumn extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class ProjectColumn extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/project_column.html github_project_column} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

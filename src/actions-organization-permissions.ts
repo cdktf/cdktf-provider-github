@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html
+// https://www.terraform.io/docs/providers/github/r/actions_organization_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,37 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsOrganizationPermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#allowed_actions ActionsOrganizationPermissions#allowed_actions}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}
   */
   readonly allowedActions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
   */
   readonly enabledRepositories: string;
   /**
   * allowed_actions_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
   */
   readonly allowedActionsConfig?: ActionsOrganizationPermissionsAllowedActionsConfig;
   /**
   * enabled_repositories_config block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#enabled_repositories_config ActionsOrganizationPermissions#enabled_repositories_config}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#enabled_repositories_config ActionsOrganizationPermissions#enabled_repositories_config}
   */
   readonly enabledRepositoriesConfig?: ActionsOrganizationPermissionsEnabledRepositoriesConfig;
 }
 export interface ActionsOrganizationPermissionsAllowedActionsConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}
   */
   readonly githubOwnedAllowed: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}
   */
   readonly patternsAllowed?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#verified_allowed ActionsOrganizationPermissions#verified_allowed}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}
   */
   readonly verifiedAllowed?: boolean | cdktf.IResolvable;
 }
@@ -147,7 +147,7 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
 }
 export interface ActionsOrganizationPermissionsEnabledRepositoriesConfig {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html#repository_ids ActionsOrganizationPermissions#repository_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}
   */
   readonly repositoryIds: number[];
 }
@@ -211,7 +211,7 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html github_actions_organization_permissions}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions github_actions_organization_permissions}
 */
 export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
 
@@ -225,7 +225,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions.html github_actions_organization_permissions} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions github_actions_organization_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

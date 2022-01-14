@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/repository_file.html
+// https://www.terraform.io/docs/providers/github/r/repository_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,55 +10,55 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
   * The branch name, defaults to "main"
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#branch RepositoryFile#branch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
   */
   readonly branch?: string;
   /**
   * The commit author name, defaults to the authenticated user's name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#commit_author RepositoryFile#commit_author}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_author RepositoryFile#commit_author}
   */
   readonly commitAuthor?: string;
   /**
   * The commit author email address, defaults to the authenticated user's email address
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#commit_email RepositoryFile#commit_email}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_email RepositoryFile#commit_email}
   */
   readonly commitEmail?: string;
   /**
   * The commit message when creating or updating the file
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#commit_message RepositoryFile#commit_message}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_message RepositoryFile#commit_message}
   */
   readonly commitMessage?: string;
   /**
   * The file's content
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#content RepositoryFile#content}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#content RepositoryFile#content}
   */
   readonly content: string;
   /**
   * The file path to manage
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#file RepositoryFile#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#file RepositoryFile#file}
   */
   readonly file: string;
   /**
   * Enable overwriting existing files, defaults to "false"
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#overwrite_on_create RepositoryFile#overwrite_on_create}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
   */
   readonly overwriteOnCreate?: boolean | cdktf.IResolvable;
   /**
   * The repository name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file.html#repository RepositoryFile#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#repository RepositoryFile#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file.html github_repository_file}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file}
 */
 export class RepositoryFile extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_file.html github_repository_file} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

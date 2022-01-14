@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/app_installation_repository.html
+// https://www.terraform.io/docs/providers/github/r/app_installation_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface AppInstallationRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository.html#installation_id AppInstallationRepository#installation_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#installation_id AppInstallationRepository#installation_id}
   */
   readonly installationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository.html#repository AppInstallationRepository#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#repository AppInstallationRepository#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository.html github_app_installation_repository}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository}
 */
 export class AppInstallationRepository extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository.html github_app_installation_repository} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

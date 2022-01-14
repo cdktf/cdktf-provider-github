@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/team.html
+// https://www.terraform.io/docs/providers/github/d/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubTeamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team.html#slug DataGithubTeam#slug}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#slug DataGithubTeam#slug}
   */
   readonly slug: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/team.html github_team}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/team github_team}
 */
 export class DataGithubTeam extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/team.html github_team} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/team github_team} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

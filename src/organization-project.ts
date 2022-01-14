@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/organization_project.html
+// https://www.terraform.io/docs/providers/github/r/organization_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationProjectConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project.html#body OrganizationProject#body}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#body OrganizationProject#body}
   */
   readonly body?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project.html#name OrganizationProject#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#name OrganizationProject#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_project.html github_organization_project}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_project github_organization_project}
 */
 export class OrganizationProject extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class OrganizationProject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_project.html github_organization_project} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_project github_organization_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html
+// https://www.terraform.io/docs/providers/github/r/repository_autolink_reference
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface RepositoryAutolinkReferenceConfig extends cdktf.TerraformMetaAr
   /**
   * This prefix appended by a number will generate a link any time it is found in an issue, pull request, or commit
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html#key_prefix RepositoryAutolinkReference#key_prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#key_prefix RepositoryAutolinkReference#key_prefix}
   */
   readonly keyPrefix: string;
   /**
   * The repository name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html#repository RepositoryAutolinkReference#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#repository RepositoryAutolinkReference#repository}
   */
   readonly repository: string;
   /**
   * The template of the target URL used for the links; must be a valid URL and contain `<num>` for the reference number
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html#target_url_template RepositoryAutolinkReference#target_url_template}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#target_url_template RepositoryAutolinkReference#target_url_template}
   */
   readonly targetUrlTemplate: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html github_repository_autolink_reference}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference}
 */
 export class RepositoryAutolinkReference extends cdktf.TerraformResource {
 
@@ -42,7 +42,7 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference.html github_repository_autolink_reference} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

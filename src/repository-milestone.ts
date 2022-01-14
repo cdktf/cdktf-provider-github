@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/repository_milestone.html
+// https://www.terraform.io/docs/providers/github/r/repository_milestone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,35 +8,35 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryMilestoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html#description RepositoryMilestone#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#description RepositoryMilestone#description}
   */
   readonly description?: string;
   /**
   * in yyyy-mm-dd format
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html#due_date RepositoryMilestone#due_date}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#due_date RepositoryMilestone#due_date}
   */
   readonly dueDate?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html#owner RepositoryMilestone#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#owner RepositoryMilestone#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html#repository RepositoryMilestone#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#repository RepositoryMilestone#repository}
   */
   readonly repository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html#state RepositoryMilestone#state}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#state RepositoryMilestone#state}
   */
   readonly state?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html#title RepositoryMilestone#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#title RepositoryMilestone#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html github_repository_milestone}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_milestone github_repository_milestone}
 */
 export class RepositoryMilestone extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_milestone.html github_repository_milestone} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_milestone github_repository_milestone} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

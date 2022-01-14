@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories.html
+// https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsOrganizationSecretRepositoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories.html#secret_name ActionsOrganizationSecretRepositories#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#secret_name ActionsOrganizationSecretRepositories#secret_name}
   */
   readonly secretName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories.html#selected_repository_ids ActionsOrganizationSecretRepositories#selected_repository_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#selected_repository_ids ActionsOrganizationSecretRepositories#selected_repository_ids}
   */
   readonly selectedRepositoryIds: number[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories.html github_actions_organization_secret_repositories}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories}
 */
 export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories.html github_actions_organization_secret_repositories} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

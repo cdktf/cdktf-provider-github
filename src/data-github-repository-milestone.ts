@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/repository_milestone.html
+// https://www.terraform.io/docs/providers/github/d/repository_milestone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryMilestoneConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_milestone.html#number DataGithubRepositoryMilestone#number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_milestone#number DataGithubRepositoryMilestone#number}
   */
   readonly number: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_milestone.html#owner DataGithubRepositoryMilestone#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_milestone#owner DataGithubRepositoryMilestone#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_milestone.html#repository DataGithubRepositoryMilestone#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_milestone#repository DataGithubRepositoryMilestone#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone.html github_repository_milestone}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone}
 */
 export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_milestone.html github_repository_milestone} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

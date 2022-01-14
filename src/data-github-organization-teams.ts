@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/organization_teams.html
+// https://www.terraform.io/docs/providers/github/d/organization_teams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubOrganizationTeamsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization_teams.html#root_teams_only DataGithubOrganizationTeams#root_teams_only}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization_teams#root_teams_only DataGithubOrganizationTeams#root_teams_only}
   */
   readonly rootTeamsOnly?: boolean | cdktf.IResolvable;
 }
@@ -56,7 +56,7 @@ export class DataGithubOrganizationTeamsTeams extends cdktf.ComplexComputedList 
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams.html github_organization_teams}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams}
 */
 export class DataGithubOrganizationTeams extends cdktf.TerraformDataSource {
 
@@ -70,7 +70,7 @@ export class DataGithubOrganizationTeams extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_teams.html github_organization_teams} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

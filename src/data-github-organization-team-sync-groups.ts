@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups.html
+// https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -27,7 +27,7 @@ export class DataGithubOrganizationTeamSyncGroupsGroups extends cdktf.ComplexCom
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups.html github_organization_team_sync_groups}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups}
 */
 export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSource {
 
@@ -41,7 +41,7 @@ export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups.html github_organization_team_sync_groups} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/organization.html
+// https://www.terraform.io/docs/providers/github/d/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization.html#name DataGithubOrganization#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization#name DataGithubOrganization#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/organization.html github_organization}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/organization github_organization}
 */
 export class DataGithubOrganization extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/organization.html github_organization} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/organization github_organization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
