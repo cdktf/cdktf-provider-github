@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/team.html
+// https://www.terraform.io/docs/providers/github/r/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,33 +8,33 @@ import * as cdktf from 'cdktf';
 
 export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#create_default_maintainer Team#create_default_maintainer}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#create_default_maintainer Team#create_default_maintainer}
   */
   readonly createDefaultMaintainer?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#description Team#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#description Team#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#ldap_dn Team#ldap_dn}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#ldap_dn Team#ldap_dn}
   */
   readonly ldapDn?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#name Team#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#name Team#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#parent_team_id Team#parent_team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#parent_team_id Team#parent_team_id}
   */
   readonly parentTeamId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team.html#privacy Team#privacy}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#privacy Team#privacy}
   */
   readonly privacy?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/team.html github_team}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/team github_team}
 */
 export class Team extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class Team extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team.html github_team} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team github_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

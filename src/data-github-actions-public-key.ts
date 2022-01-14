@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/actions_public_key.html
+// https://www.terraform.io/docs/providers/github/d/actions_public_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubActionsPublicKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_public_key.html#repository DataGithubActionsPublicKey#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_public_key#repository DataGithubActionsPublicKey#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key.html github_actions_public_key}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key}
 */
 export class DataGithubActionsPublicKey extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataGithubActionsPublicKey extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_public_key.html github_actions_public_key} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

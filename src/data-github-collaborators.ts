@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/collaborators.html
+// https://www.terraform.io/docs/providers/github/d/collaborators
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,15 +8,15 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubCollaboratorsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators.html#affiliation DataGithubCollaborators#affiliation}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators#affiliation DataGithubCollaborators#affiliation}
   */
   readonly affiliation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators.html#owner DataGithubCollaborators#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators#owner DataGithubCollaborators#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators.html#repository DataGithubCollaborators#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/collaborators#repository DataGithubCollaborators#repository}
   */
   readonly repository: string;
 }
@@ -104,7 +104,7 @@ export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedLi
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators.html github_collaborators}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators}
 */
 export class DataGithubCollaborators extends cdktf.TerraformDataSource {
 
@@ -118,7 +118,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/collaborators.html github_collaborators} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

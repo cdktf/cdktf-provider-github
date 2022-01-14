@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/repository_file.html
+// https://www.terraform.io/docs/providers/github/d/repository_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,25 +10,25 @@ export interface DataGithubRepositoryFileConfig extends cdktf.TerraformMetaArgum
   /**
   * The branch name, defaults to "main"
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file.html#branch DataGithubRepositoryFile#branch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#branch DataGithubRepositoryFile#branch}
   */
   readonly branch?: string;
   /**
   * The file path to manage
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file.html#file DataGithubRepositoryFile#file}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#file DataGithubRepositoryFile#file}
   */
   readonly file: string;
   /**
   * The repository name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file.html#repository DataGithubRepositoryFile#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#repository DataGithubRepositoryFile#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file.html github_repository_file}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file github_repository_file}
 */
 export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_file.html github_repository_file} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_file github_repository_file} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

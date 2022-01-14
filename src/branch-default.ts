@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/branch_default.html
+// https://www.terraform.io/docs/providers/github/r/branch_default
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface BranchDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default.html#branch BranchDefault#branch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#branch BranchDefault#branch}
   */
   readonly branch: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default.html#repository BranchDefault#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#repository BranchDefault#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default.html github_branch_default}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default}
 */
 export class BranchDefault extends cdktf.TerraformResource {
 
@@ -32,7 +32,7 @@ export class BranchDefault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_default.html github_branch_default} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

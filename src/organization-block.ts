@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/organization_block.html
+// https://www.terraform.io/docs/providers/github/r/organization_block
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationBlockConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block.html#username OrganizationBlock#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#username OrganizationBlock#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block.html github_organization_block}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block}
 */
 export class OrganizationBlock extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class OrganizationBlock extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_block.html github_organization_block} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

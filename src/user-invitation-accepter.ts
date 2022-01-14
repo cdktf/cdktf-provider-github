@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/user_invitation_accepter.html
+// https://www.terraform.io/docs/providers/github/r/user_invitation_accepter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter.html#invitation_id UserInvitationAccepter#invitation_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
   */
   readonly invitationId: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter.html github_user_invitation_accepter}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter}
 */
 export class UserInvitationAccepter extends cdktf.TerraformResource {
 
@@ -28,7 +28,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter.html github_user_invitation_accepter} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

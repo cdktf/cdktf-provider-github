@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/repository_pull_request.html
+// https://www.terraform.io/docs/providers/github/d/repository_pull_request
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryPullRequestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request.html#base_repository DataGithubRepositoryPullRequest#base_repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request#base_repository DataGithubRepositoryPullRequest#base_repository}
   */
   readonly baseRepository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request.html#number DataGithubRepositoryPullRequest#number}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request#number DataGithubRepositoryPullRequest#number}
   */
   readonly number: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request.html#owner DataGithubRepositoryPullRequest#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request#owner DataGithubRepositoryPullRequest#owner}
   */
   readonly owner?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request.html github_repository_pull_request}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request github_repository_pull_request}
 */
 export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request.html github_repository_pull_request} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request github_repository_pull_request} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

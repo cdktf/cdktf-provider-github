@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/membership.html
+// https://www.terraform.io/docs/providers/github/d/membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,17 +8,17 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership.html#organization DataGithubMembership#organization}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership#organization DataGithubMembership#organization}
   */
   readonly organization?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership.html#username DataGithubMembership#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership#username DataGithubMembership#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/membership.html github_membership}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/membership github_membership}
 */
 export class DataGithubMembership extends cdktf.TerraformDataSource {
 
@@ -32,7 +32,7 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/membership.html github_membership} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/membership github_membership} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

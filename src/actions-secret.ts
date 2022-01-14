@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_secret.html
+// https://www.terraform.io/docs/providers/github/r/actions_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#encrypted_value ActionsSecret#encrypted_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#encrypted_value ActionsSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#plaintext_value ActionsSecret#plaintext_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#plaintext_value ActionsSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#repository ActionsSecret#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#repository ActionsSecret#repository}
   */
   readonly repository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html#secret_name ActionsSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#secret_name ActionsSecret#secret_name}
   */
   readonly secretName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}
 */
 export class ActionsSecret extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class ActionsSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret.html github_actions_secret} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/team_membership.html
+// https://www.terraform.io/docs/providers/github/r/team_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,21 +8,21 @@ import * as cdktf from 'cdktf';
 
 export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership.html#role TeamMembership#role}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#role TeamMembership#role}
   */
   readonly role?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership.html#team_id TeamMembership#team_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#team_id TeamMembership#team_id}
   */
   readonly teamId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership.html#username TeamMembership#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#username TeamMembership#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership.html github_team_membership}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership github_team_membership}
 */
 export class TeamMembership extends cdktf.TerraformResource {
 
@@ -36,7 +36,7 @@ export class TeamMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team_membership.html github_team_membership} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team_membership github_team_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

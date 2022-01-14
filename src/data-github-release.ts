@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/release.html
+// https://www.terraform.io/docs/providers/github/d/release
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,29 +8,29 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubReleaseConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#owner DataGithubRelease#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release#owner DataGithubRelease#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#release_id DataGithubRelease#release_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release#release_id DataGithubRelease#release_id}
   */
   readonly releaseId?: number;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#release_tag DataGithubRelease#release_tag}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release#release_tag DataGithubRelease#release_tag}
   */
   readonly releaseTag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#repository DataGithubRelease#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release#repository DataGithubRelease#repository}
   */
   readonly repository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release.html#retrieve_by DataGithubRelease#retrieve_by}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/release#retrieve_by DataGithubRelease#retrieve_by}
   */
   readonly retrieveBy: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/release.html github_release}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/release github_release}
 */
 export class DataGithubRelease extends cdktf.TerraformDataSource {
 
@@ -44,7 +44,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/release.html github_release} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/release github_release} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/user.html
+// https://www.terraform.io/docs/providers/github/d/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,13 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/user.html#username DataGithubUser#username}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/user#username DataGithubUser#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/user.html github_user}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}
 */
 export class DataGithubUser extends cdktf.TerraformDataSource {
 
@@ -28,7 +28,7 @@ export class DataGithubUser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/user.html github_user} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/user github_user} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

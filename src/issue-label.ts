@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/issue_label.html
+// https://www.terraform.io/docs/providers/github/r/issue_label
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface IssueLabelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label.html#color IssueLabel#color}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#color IssueLabel#color}
   */
   readonly color: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label.html#description IssueLabel#description}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#description IssueLabel#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label.html#name IssueLabel#name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#name IssueLabel#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label.html#repository IssueLabel#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#repository IssueLabel#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label.html github_issue_label}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label}
 */
 export class IssueLabel extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class IssueLabel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/issue_label.html github_issue_label} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/branch.html
+// https://www.terraform.io/docs/providers/github/r/branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,25 +8,25 @@ import * as cdktf from 'cdktf';
 
 export interface BranchConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch.html#branch Branch#branch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#branch Branch#branch}
   */
   readonly branch: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch.html#repository Branch#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#repository Branch#repository}
   */
   readonly repository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch.html#source_branch Branch#source_branch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_branch Branch#source_branch}
   */
   readonly sourceBranch?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch.html#source_sha Branch#source_sha}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_sha Branch#source_sha}
   */
   readonly sourceSha?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/branch.html github_branch}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/branch github_branch}
 */
 export class Branch extends cdktf.TerraformResource {
 
@@ -40,7 +40,7 @@ export class Branch extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/branch.html github_branch} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/branch github_branch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

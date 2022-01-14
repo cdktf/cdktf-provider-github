@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/repository_pull_request.html
+// https://www.terraform.io/docs/providers/github/r/repository_pull_request
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,37 +8,37 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryPullRequestConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#base_ref RepositoryPullRequest#base_ref}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#base_ref RepositoryPullRequest#base_ref}
   */
   readonly baseRef: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#base_repository RepositoryPullRequest#base_repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#base_repository RepositoryPullRequest#base_repository}
   */
   readonly baseRepository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#body RepositoryPullRequest#body}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#body RepositoryPullRequest#body}
   */
   readonly body?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#head_ref RepositoryPullRequest#head_ref}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#head_ref RepositoryPullRequest#head_ref}
   */
   readonly headRef: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}
   */
   readonly maintainerCanModify?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#owner RepositoryPullRequest#owner}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#owner RepositoryPullRequest#owner}
   */
   readonly owner?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html#title RepositoryPullRequest#title}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#title RepositoryPullRequest#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html github_repository_pull_request}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request github_repository_pull_request}
 */
 export class RepositoryPullRequest extends cdktf.TerraformResource {
 
@@ -52,7 +52,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request.html github_repository_pull_request} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request github_repository_pull_request} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
