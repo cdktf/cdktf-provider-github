@@ -46,7 +46,7 @@ export interface OrganizationWebhookConfiguration {
 }
 
 export function organizationWebhookConfigurationToTerraform(struct?: OrganizationWebhookConfigurationOutputReference | OrganizationWebhookConfiguration): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -66,7 +66,7 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -128,7 +128,7 @@ export class OrganizationWebhookConfigurationOutputReference extends cdktf.Compl
   // insecure_ssl - computed: false, optional: true, required: false
   private _insecureSsl?: boolean | cdktf.IResolvable; 
   public get insecureSsl() {
-    return this.getBooleanAttribute('insecure_ssl') as any;
+    return this.getBooleanAttribute('insecure_ssl');
   }
   public set insecureSsl(value: boolean | cdktf.IResolvable) {
     this._insecureSsl = value;
@@ -216,7 +216,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   // active - computed: false, optional: true, required: false
   private _active?: boolean | cdktf.IResolvable; 
   public get active() {
-    return this.getBooleanAttribute('active') as any;
+    return this.getBooleanAttribute('active');
   }
   public set active(value: boolean | cdktf.IResolvable) {
     this._active = value;
@@ -237,7 +237,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   // events - computed: false, optional: false, required: true
   private _events?: string[]; 
   public get events() {
-    return this.getListAttribute('events');
+    return cdktf.Fn.tolist(this.getListAttribute('events'));
   }
   public set events(value: string[]) {
     this._events = value;
@@ -274,7 +274,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
 
   // configuration - computed: false, optional: true, required: false
-  private _configuration = new OrganizationWebhookConfigurationOutputReference(this as any, "configuration", true);
+  private _configuration = new OrganizationWebhookConfigurationOutputReference(this, "configuration", true);
   public get configuration() {
     return this._configuration;
   }

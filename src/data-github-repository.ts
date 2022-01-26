@@ -33,7 +33,7 @@ export class DataGithubRepositoryBranches extends cdktf.ComplexComputedList {
 
   // protected - computed: true, optional: false, required: false
   public get protected() {
-    return this.getBooleanAttribute('protected') as any;
+    return this.getBooleanAttribute('protected');
   }
 }
 export class DataGithubRepositoryPagesSource extends cdktf.ComplexComputedList {
@@ -57,7 +57,7 @@ export class DataGithubRepositoryPages extends cdktf.ComplexComputedList {
 
   // custom_404 - computed: true, optional: false, required: false
   public get custom404() {
-    return this.getBooleanAttribute('custom_404') as any;
+    return this.getBooleanAttribute('custom_404');
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -68,7 +68,7 @@ export class DataGithubRepositoryPages extends cdktf.ComplexComputedList {
   // source - computed: true, optional: false, required: false
   public get source() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('source') as any;
+    return this.interpolationForAttribute('source');
   }
 
   // status - computed: true, optional: false, required: false
@@ -126,32 +126,32 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
 
   // allow_auto_merge - computed: true, optional: false, required: false
   public get allowAutoMerge() {
-    return this.getBooleanAttribute('allow_auto_merge') as any;
+    return this.getBooleanAttribute('allow_auto_merge');
   }
 
   // allow_merge_commit - computed: true, optional: false, required: false
   public get allowMergeCommit() {
-    return this.getBooleanAttribute('allow_merge_commit') as any;
+    return this.getBooleanAttribute('allow_merge_commit');
   }
 
   // allow_rebase_merge - computed: true, optional: false, required: false
   public get allowRebaseMerge() {
-    return this.getBooleanAttribute('allow_rebase_merge') as any;
+    return this.getBooleanAttribute('allow_rebase_merge');
   }
 
   // allow_squash_merge - computed: true, optional: false, required: false
   public get allowSquashMerge() {
-    return this.getBooleanAttribute('allow_squash_merge') as any;
+    return this.getBooleanAttribute('allow_squash_merge');
   }
 
   // archived - computed: true, optional: false, required: false
   public get archived() {
-    return this.getBooleanAttribute('archived') as any;
+    return this.getBooleanAttribute('archived');
   }
 
   // branches - computed: true, optional: false, required: false
   public branches(index: string) {
-    return new DataGithubRepositoryBranches(this, 'branches', index);
+    return new DataGithubRepositoryBranches(this, 'branches', index, false);
   }
 
   // default_branch - computed: true, optional: false, required: false
@@ -198,22 +198,22 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
 
   // has_downloads - computed: true, optional: false, required: false
   public get hasDownloads() {
-    return this.getBooleanAttribute('has_downloads') as any;
+    return this.getBooleanAttribute('has_downloads');
   }
 
   // has_issues - computed: true, optional: false, required: false
   public get hasIssues() {
-    return this.getBooleanAttribute('has_issues') as any;
+    return this.getBooleanAttribute('has_issues');
   }
 
   // has_projects - computed: true, optional: false, required: false
   public get hasProjects() {
-    return this.getBooleanAttribute('has_projects') as any;
+    return this.getBooleanAttribute('has_projects');
   }
 
   // has_wiki - computed: true, optional: false, required: false
   public get hasWiki() {
-    return this.getBooleanAttribute('has_wiki') as any;
+    return this.getBooleanAttribute('has_wiki');
   }
 
   // homepage_url - computed: false, optional: true, required: false
@@ -270,12 +270,12 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
 
   // pages - computed: true, optional: false, required: false
   public pages(index: string) {
-    return new DataGithubRepositoryPages(this, 'pages', index);
+    return new DataGithubRepositoryPages(this, 'pages', index, false);
   }
 
   // private - computed: true, optional: false, required: false
   public get private() {
-    return this.getBooleanAttribute('private') as any;
+    return this.getBooleanAttribute('private');
   }
 
   // repo_id - computed: true, optional: false, required: false

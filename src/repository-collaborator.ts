@@ -96,7 +96,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   // permission_diff_suppression - computed: false, optional: true, required: false
   private _permissionDiffSuppression?: boolean | cdktf.IResolvable; 
   public get permissionDiffSuppression() {
-    return this.getBooleanAttribute('permission_diff_suppression') as any;
+    return this.getBooleanAttribute('permission_diff_suppression');
   }
   public set permissionDiffSuppression(value: boolean | cdktf.IResolvable) {
     this._permissionDiffSuppression = value;

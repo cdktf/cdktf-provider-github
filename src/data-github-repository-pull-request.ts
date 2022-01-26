@@ -92,7 +92,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
 
   // draft - computed: true, optional: false, required: false
   public get draft() {
-    return this.getBooleanAttribute('draft') as any;
+    return this.getBooleanAttribute('draft');
   }
 
   // head_owner - computed: true, optional: false, required: false
@@ -127,7 +127,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
 
   // maintainer_can_modify - computed: true, optional: false, required: false
   public get maintainerCanModify() {
-    return this.getBooleanAttribute('maintainer_can_modify') as any;
+    return this.getBooleanAttribute('maintainer_can_modify');
   }
 
   // number - computed: false, optional: false, required: true

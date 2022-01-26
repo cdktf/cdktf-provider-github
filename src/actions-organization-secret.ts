@@ -130,8 +130,7 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
   // selected_repository_ids - computed: false, optional: true, required: false
   private _selectedRepositoryIds?: number[]; 
   public get selectedRepositoryIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('selected_repository_ids') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('selected_repository_ids')));
   }
   public set selectedRepositoryIds(value: number[]) {
     this._selectedRepositoryIds = value;

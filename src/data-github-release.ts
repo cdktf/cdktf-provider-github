@@ -89,7 +89,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
 
   // draft - computed: true, optional: false, required: false
   public get draft() {
-    return this.getBooleanAttribute('draft') as any;
+    return this.getBooleanAttribute('draft');
   }
 
   // html_url - computed: true, optional: false, required: false
@@ -122,7 +122,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
 
   // prerelease - computed: true, optional: false, required: false
   public get prerelease() {
-    return this.getBooleanAttribute('prerelease') as any;
+    return this.getBooleanAttribute('prerelease');
   }
 
   // published_at - computed: true, optional: false, required: false

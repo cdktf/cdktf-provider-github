@@ -50,13 +50,13 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_pull_request_reviews BranchProtection#required_pull_request_reviews}
   */
-  readonly requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[];
+  readonly requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[] | cdktf.IResolvable;
   /**
   * required_status_checks block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_status_checks BranchProtection#required_status_checks}
   */
-  readonly requiredStatusChecks?: BranchProtectionRequiredStatusChecks[];
+  readonly requiredStatusChecks?: BranchProtectionRequiredStatusChecks[] | cdktf.IResolvable;
 }
 export interface BranchProtectionRequiredPullRequestReviews {
   /**
@@ -81,8 +81,8 @@ export interface BranchProtectionRequiredPullRequestReviews {
   readonly restrictDismissals?: boolean | cdktf.IResolvable;
 }
 
-export function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchProtectionRequiredPullRequestReviews): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: BranchProtectionRequiredPullRequestReviews | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -106,8 +106,8 @@ export interface BranchProtectionRequiredStatusChecks {
   readonly strict?: boolean | cdktf.IResolvable;
 }
 
-export function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchProtectionRequiredStatusChecks): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchProtectionRequiredStatusChecks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -170,7 +170,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   // allows_deletions - computed: false, optional: true, required: false
   private _allowsDeletions?: boolean | cdktf.IResolvable; 
   public get allowsDeletions() {
-    return this.getBooleanAttribute('allows_deletions') as any;
+    return this.getBooleanAttribute('allows_deletions');
   }
   public set allowsDeletions(value: boolean | cdktf.IResolvable) {
     this._allowsDeletions = value;
@@ -186,7 +186,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   // allows_force_pushes - computed: false, optional: true, required: false
   private _allowsForcePushes?: boolean | cdktf.IResolvable; 
   public get allowsForcePushes() {
-    return this.getBooleanAttribute('allows_force_pushes') as any;
+    return this.getBooleanAttribute('allows_force_pushes');
   }
   public set allowsForcePushes(value: boolean | cdktf.IResolvable) {
     this._allowsForcePushes = value;
@@ -202,7 +202,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   // enforce_admins - computed: false, optional: true, required: false
   private _enforceAdmins?: boolean | cdktf.IResolvable; 
   public get enforceAdmins() {
-    return this.getBooleanAttribute('enforce_admins') as any;
+    return this.getBooleanAttribute('enforce_admins');
   }
   public set enforceAdmins(value: boolean | cdktf.IResolvable) {
     this._enforceAdmins = value;
@@ -236,7 +236,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   // push_restrictions - computed: false, optional: true, required: false
   private _pushRestrictions?: string[]; 
   public get pushRestrictions() {
-    return this.getListAttribute('push_restrictions');
+    return cdktf.Fn.tolist(this.getListAttribute('push_restrictions'));
   }
   public set pushRestrictions(value: string[]) {
     this._pushRestrictions = value;
@@ -265,7 +265,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   // require_conversation_resolution - computed: false, optional: true, required: false
   private _requireConversationResolution?: boolean | cdktf.IResolvable; 
   public get requireConversationResolution() {
-    return this.getBooleanAttribute('require_conversation_resolution') as any;
+    return this.getBooleanAttribute('require_conversation_resolution');
   }
   public set requireConversationResolution(value: boolean | cdktf.IResolvable) {
     this._requireConversationResolution = value;
@@ -281,7 +281,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   // require_signed_commits - computed: false, optional: true, required: false
   private _requireSignedCommits?: boolean | cdktf.IResolvable; 
   public get requireSignedCommits() {
-    return this.getBooleanAttribute('require_signed_commits') as any;
+    return this.getBooleanAttribute('require_signed_commits');
   }
   public set requireSignedCommits(value: boolean | cdktf.IResolvable) {
     this._requireSignedCommits = value;
@@ -297,7 +297,7 @@ export class BranchProtection extends cdktf.TerraformResource {
   // required_linear_history - computed: false, optional: true, required: false
   private _requiredLinearHistory?: boolean | cdktf.IResolvable; 
   public get requiredLinearHistory() {
-    return this.getBooleanAttribute('required_linear_history') as any;
+    return this.getBooleanAttribute('required_linear_history');
   }
   public set requiredLinearHistory(value: boolean | cdktf.IResolvable) {
     this._requiredLinearHistory = value;
@@ -311,12 +311,12 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // required_pull_request_reviews - computed: false, optional: true, required: false
-  private _requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[]; 
+  private _requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[] | cdktf.IResolvable; 
   public get requiredPullRequestReviews() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('required_pull_request_reviews') as any;
+    return this.interpolationForAttribute('required_pull_request_reviews');
   }
-  public set requiredPullRequestReviews(value: BranchProtectionRequiredPullRequestReviews[]) {
+  public set requiredPullRequestReviews(value: BranchProtectionRequiredPullRequestReviews[] | cdktf.IResolvable) {
     this._requiredPullRequestReviews = value;
   }
   public resetRequiredPullRequestReviews() {
@@ -328,12 +328,12 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // required_status_checks - computed: false, optional: true, required: false
-  private _requiredStatusChecks?: BranchProtectionRequiredStatusChecks[]; 
+  private _requiredStatusChecks?: BranchProtectionRequiredStatusChecks[] | cdktf.IResolvable; 
   public get requiredStatusChecks() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('required_status_checks') as any;
+    return this.interpolationForAttribute('required_status_checks');
   }
-  public set requiredStatusChecks(value: BranchProtectionRequiredStatusChecks[]) {
+  public set requiredStatusChecks(value: BranchProtectionRequiredStatusChecks[] | cdktf.IResolvable) {
     this._requiredStatusChecks = value;
   }
   public resetRequiredStatusChecks() {

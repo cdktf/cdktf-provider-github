@@ -139,7 +139,7 @@ export class DataGithubUser extends cdktf.TerraformDataSource {
 
   // site_admin - computed: true, optional: false, required: false
   public get siteAdmin() {
-    return this.getBooleanAttribute('site_admin') as any;
+    return this.getBooleanAttribute('site_admin');
   }
 
   // ssh_keys - computed: true, optional: false, required: false

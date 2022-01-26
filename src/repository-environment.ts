@@ -30,7 +30,7 @@ export interface RepositoryEnvironmentConfig extends cdktf.TerraformMetaArgument
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#reviewers RepositoryEnvironment#reviewers}
   */
-  readonly reviewers?: RepositoryEnvironmentReviewers[];
+  readonly reviewers?: RepositoryEnvironmentReviewers[] | cdktf.IResolvable;
 }
 export interface RepositoryEnvironmentDeploymentBranchPolicy {
   /**
@@ -44,7 +44,7 @@ export interface RepositoryEnvironmentDeploymentBranchPolicy {
 }
 
 export function repositoryEnvironmentDeploymentBranchPolicyToTerraform(struct?: RepositoryEnvironmentDeploymentBranchPolicyOutputReference | RepositoryEnvironmentDeploymentBranchPolicy): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -62,7 +62,7 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -96,7 +96,7 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
   // custom_branch_policies - computed: false, optional: false, required: true
   private _customBranchPolicies?: boolean | cdktf.IResolvable; 
   public get customBranchPolicies() {
-    return this.getBooleanAttribute('custom_branch_policies') as any;
+    return this.getBooleanAttribute('custom_branch_policies');
   }
   public set customBranchPolicies(value: boolean | cdktf.IResolvable) {
     this._customBranchPolicies = value;
@@ -109,7 +109,7 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
   // protected_branches - computed: false, optional: false, required: true
   private _protectedBranches?: boolean | cdktf.IResolvable; 
   public get protectedBranches() {
-    return this.getBooleanAttribute('protected_branches') as any;
+    return this.getBooleanAttribute('protected_branches');
   }
   public set protectedBranches(value: boolean | cdktf.IResolvable) {
     this._protectedBranches = value;
@@ -130,8 +130,8 @@ export interface RepositoryEnvironmentReviewers {
   readonly users?: number[];
 }
 
-export function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnvironmentReviewers): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnvironmentReviewers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -233,7 +233,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
 
   // deployment_branch_policy - computed: false, optional: true, required: false
-  private _deploymentBranchPolicy = new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(this as any, "deployment_branch_policy", true);
+  private _deploymentBranchPolicy = new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(this, "deployment_branch_policy", true);
   public get deploymentBranchPolicy() {
     return this._deploymentBranchPolicy;
   }
@@ -249,12 +249,12 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
 
   // reviewers - computed: false, optional: true, required: false
-  private _reviewers?: RepositoryEnvironmentReviewers[]; 
+  private _reviewers?: RepositoryEnvironmentReviewers[] | cdktf.IResolvable; 
   public get reviewers() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('reviewers') as any;
+    return this.interpolationForAttribute('reviewers');
   }
-  public set reviewers(value: RepositoryEnvironmentReviewers[]) {
+  public set reviewers(value: RepositoryEnvironmentReviewers[] | cdktf.IResolvable) {
     this._reviewers = value;
   }
   public resetReviewers() {

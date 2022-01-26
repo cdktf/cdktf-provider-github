@@ -79,7 +79,7 @@ export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedLi
 
   // site_admin - computed: true, optional: false, required: false
   public get siteAdmin() {
-    return this.getBooleanAttribute('site_admin') as any;
+    return this.getBooleanAttribute('site_admin');
   }
 
   // starred_url - computed: true, optional: false, required: false
@@ -162,7 +162,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
 
   // collaborator - computed: true, optional: false, required: false
   public collaborator(index: string) {
-    return new DataGithubCollaboratorsCollaborator(this, 'collaborator', index);
+    return new DataGithubCollaboratorsCollaborator(this, 'collaborator', index, false);
   }
 
   // id - computed: true, optional: true, required: false

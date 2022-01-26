@@ -80,7 +80,7 @@ export class Team extends cdktf.TerraformResource {
   // create_default_maintainer - computed: false, optional: true, required: false
   private _createDefaultMaintainer?: boolean | cdktf.IResolvable; 
   public get createDefaultMaintainer() {
-    return this.getBooleanAttribute('create_default_maintainer') as any;
+    return this.getBooleanAttribute('create_default_maintainer');
   }
   public set createDefaultMaintainer(value: boolean | cdktf.IResolvable) {
     this._createDefaultMaintainer = value;

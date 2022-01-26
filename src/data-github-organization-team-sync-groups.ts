@@ -66,7 +66,7 @@ export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSou
 
   // groups - computed: true, optional: false, required: false
   public groups(index: string) {
-    return new DataGithubOrganizationTeamSyncGroupsGroups(this, 'groups', index);
+    return new DataGithubOrganizationTeamSyncGroupsGroups(this, 'groups', index, false);
   }
 
   // id - computed: true, optional: true, required: false

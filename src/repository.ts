@@ -123,7 +123,7 @@ export class RepositoryBranches extends cdktf.ComplexComputedList {
 
   // protected - computed: true, optional: false, required: false
   public get protected() {
-    return this.getBooleanAttribute('protected') as any;
+    return this.getBooleanAttribute('protected');
   }
 }
 export interface RepositoryPagesSource {
@@ -138,7 +138,7 @@ export interface RepositoryPagesSource {
 }
 
 export function repositoryPagesSourceToTerraform(struct?: RepositoryPagesSourceOutputReference | RepositoryPagesSource): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -156,7 +156,7 @@ export class RepositoryPagesSourceOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -230,7 +230,7 @@ export interface RepositoryPages {
 }
 
 export function repositoryPagesToTerraform(struct?: RepositoryPagesOutputReference | RepositoryPages): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -248,7 +248,7 @@ export class RepositoryPagesOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -295,8 +295,28 @@ export class RepositoryPagesOutputReference extends cdktf.ComplexObject {
     return this._cname;
   }
 
+  // custom_404 - computed: true, optional: false, required: false
+  public get custom404() {
+    return this.getBooleanAttribute('custom_404');
+  }
+
+  // html_url - computed: true, optional: false, required: false
+  public get htmlUrl() {
+    return this.getStringAttribute('html_url');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+
   // source - computed: false, optional: false, required: true
-  private _source = new RepositoryPagesSourceOutputReference(this as any, "source", true);
+  private _source = new RepositoryPagesSourceOutputReference(this, "source", true);
   public get source() {
     return this._source;
   }
@@ -320,7 +340,7 @@ export interface RepositoryTemplate {
 }
 
 export function repositoryTemplateToTerraform(struct?: RepositoryTemplateOutputReference | RepositoryTemplate): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -338,7 +358,7 @@ export class RepositoryTemplateOutputReference extends cdktf.ComplexObject {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -462,7 +482,7 @@ export class Repository extends cdktf.TerraformResource {
   // allow_auto_merge - computed: false, optional: true, required: false
   private _allowAutoMerge?: boolean | cdktf.IResolvable; 
   public get allowAutoMerge() {
-    return this.getBooleanAttribute('allow_auto_merge') as any;
+    return this.getBooleanAttribute('allow_auto_merge');
   }
   public set allowAutoMerge(value: boolean | cdktf.IResolvable) {
     this._allowAutoMerge = value;
@@ -478,7 +498,7 @@ export class Repository extends cdktf.TerraformResource {
   // allow_merge_commit - computed: false, optional: true, required: false
   private _allowMergeCommit?: boolean | cdktf.IResolvable; 
   public get allowMergeCommit() {
-    return this.getBooleanAttribute('allow_merge_commit') as any;
+    return this.getBooleanAttribute('allow_merge_commit');
   }
   public set allowMergeCommit(value: boolean | cdktf.IResolvable) {
     this._allowMergeCommit = value;
@@ -494,7 +514,7 @@ export class Repository extends cdktf.TerraformResource {
   // allow_rebase_merge - computed: false, optional: true, required: false
   private _allowRebaseMerge?: boolean | cdktf.IResolvable; 
   public get allowRebaseMerge() {
-    return this.getBooleanAttribute('allow_rebase_merge') as any;
+    return this.getBooleanAttribute('allow_rebase_merge');
   }
   public set allowRebaseMerge(value: boolean | cdktf.IResolvable) {
     this._allowRebaseMerge = value;
@@ -510,7 +530,7 @@ export class Repository extends cdktf.TerraformResource {
   // allow_squash_merge - computed: false, optional: true, required: false
   private _allowSquashMerge?: boolean | cdktf.IResolvable; 
   public get allowSquashMerge() {
-    return this.getBooleanAttribute('allow_squash_merge') as any;
+    return this.getBooleanAttribute('allow_squash_merge');
   }
   public set allowSquashMerge(value: boolean | cdktf.IResolvable) {
     this._allowSquashMerge = value;
@@ -526,7 +546,7 @@ export class Repository extends cdktf.TerraformResource {
   // archive_on_destroy - computed: false, optional: true, required: false
   private _archiveOnDestroy?: boolean | cdktf.IResolvable; 
   public get archiveOnDestroy() {
-    return this.getBooleanAttribute('archive_on_destroy') as any;
+    return this.getBooleanAttribute('archive_on_destroy');
   }
   public set archiveOnDestroy(value: boolean | cdktf.IResolvable) {
     this._archiveOnDestroy = value;
@@ -542,7 +562,7 @@ export class Repository extends cdktf.TerraformResource {
   // archived - computed: false, optional: true, required: false
   private _archived?: boolean | cdktf.IResolvable; 
   public get archived() {
-    return this.getBooleanAttribute('archived') as any;
+    return this.getBooleanAttribute('archived');
   }
   public set archived(value: boolean | cdktf.IResolvable) {
     this._archived = value;
@@ -558,7 +578,7 @@ export class Repository extends cdktf.TerraformResource {
   // auto_init - computed: false, optional: true, required: false
   private _autoInit?: boolean | cdktf.IResolvable; 
   public get autoInit() {
-    return this.getBooleanAttribute('auto_init') as any;
+    return this.getBooleanAttribute('auto_init');
   }
   public set autoInit(value: boolean | cdktf.IResolvable) {
     this._autoInit = value;
@@ -573,7 +593,7 @@ export class Repository extends cdktf.TerraformResource {
 
   // branches - computed: true, optional: false, required: false
   public branches(index: string) {
-    return new RepositoryBranches(this, 'branches', index);
+    return new RepositoryBranches(this, 'branches', index, false);
   }
 
   // default_branch - computed: true, optional: true, required: false
@@ -595,7 +615,7 @@ export class Repository extends cdktf.TerraformResource {
   // delete_branch_on_merge - computed: false, optional: true, required: false
   private _deleteBranchOnMerge?: boolean | cdktf.IResolvable; 
   public get deleteBranchOnMerge() {
-    return this.getBooleanAttribute('delete_branch_on_merge') as any;
+    return this.getBooleanAttribute('delete_branch_on_merge');
   }
   public set deleteBranchOnMerge(value: boolean | cdktf.IResolvable) {
     this._deleteBranchOnMerge = value;
@@ -658,7 +678,7 @@ export class Repository extends cdktf.TerraformResource {
   // has_downloads - computed: false, optional: true, required: false
   private _hasDownloads?: boolean | cdktf.IResolvable; 
   public get hasDownloads() {
-    return this.getBooleanAttribute('has_downloads') as any;
+    return this.getBooleanAttribute('has_downloads');
   }
   public set hasDownloads(value: boolean | cdktf.IResolvable) {
     this._hasDownloads = value;
@@ -674,7 +694,7 @@ export class Repository extends cdktf.TerraformResource {
   // has_issues - computed: false, optional: true, required: false
   private _hasIssues?: boolean | cdktf.IResolvable; 
   public get hasIssues() {
-    return this.getBooleanAttribute('has_issues') as any;
+    return this.getBooleanAttribute('has_issues');
   }
   public set hasIssues(value: boolean | cdktf.IResolvable) {
     this._hasIssues = value;
@@ -690,7 +710,7 @@ export class Repository extends cdktf.TerraformResource {
   // has_projects - computed: false, optional: true, required: false
   private _hasProjects?: boolean | cdktf.IResolvable; 
   public get hasProjects() {
-    return this.getBooleanAttribute('has_projects') as any;
+    return this.getBooleanAttribute('has_projects');
   }
   public set hasProjects(value: boolean | cdktf.IResolvable) {
     this._hasProjects = value;
@@ -706,7 +726,7 @@ export class Repository extends cdktf.TerraformResource {
   // has_wiki - computed: false, optional: true, required: false
   private _hasWiki?: boolean | cdktf.IResolvable; 
   public get hasWiki() {
-    return this.getBooleanAttribute('has_wiki') as any;
+    return this.getBooleanAttribute('has_wiki');
   }
   public set hasWiki(value: boolean | cdktf.IResolvable) {
     this._hasWiki = value;
@@ -753,7 +773,7 @@ export class Repository extends cdktf.TerraformResource {
   // is_template - computed: false, optional: true, required: false
   private _isTemplate?: boolean | cdktf.IResolvable; 
   public get isTemplate() {
-    return this.getBooleanAttribute('is_template') as any;
+    return this.getBooleanAttribute('is_template');
   }
   public set isTemplate(value: boolean | cdktf.IResolvable) {
     this._isTemplate = value;
@@ -803,7 +823,7 @@ export class Repository extends cdktf.TerraformResource {
   // private - computed: true, optional: true, required: false
   private _private?: boolean | cdktf.IResolvable; 
   public get private() {
-    return this.getBooleanAttribute('private') as any;
+    return this.getBooleanAttribute('private');
   }
   public set private(value: boolean | cdktf.IResolvable) {
     this._private = value;
@@ -834,7 +854,7 @@ export class Repository extends cdktf.TerraformResource {
   // topics - computed: false, optional: true, required: false
   private _topics?: string[]; 
   public get topics() {
-    return this.getListAttribute('topics');
+    return cdktf.Fn.tolist(this.getListAttribute('topics'));
   }
   public set topics(value: string[]) {
     this._topics = value;
@@ -866,7 +886,7 @@ export class Repository extends cdktf.TerraformResource {
   // vulnerability_alerts - computed: false, optional: true, required: false
   private _vulnerabilityAlerts?: boolean | cdktf.IResolvable; 
   public get vulnerabilityAlerts() {
-    return this.getBooleanAttribute('vulnerability_alerts') as any;
+    return this.getBooleanAttribute('vulnerability_alerts');
   }
   public set vulnerabilityAlerts(value: boolean | cdktf.IResolvable) {
     this._vulnerabilityAlerts = value;
@@ -880,7 +900,7 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // pages - computed: false, optional: true, required: false
-  private _pages = new RepositoryPagesOutputReference(this as any, "pages", true);
+  private _pages = new RepositoryPagesOutputReference(this, "pages", true);
   public get pages() {
     return this._pages;
   }
@@ -896,7 +916,7 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // template - computed: false, optional: true, required: false
-  private _template = new RepositoryTemplateOutputReference(this as any, "template", true);
+  private _template = new RepositoryTemplateOutputReference(this, "template", true);
   public get template() {
     return this._template;
   }

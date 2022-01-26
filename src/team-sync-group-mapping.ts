@@ -16,7 +16,7 @@ export interface TeamSyncGroupMappingConfig extends cdktf.TerraformMetaArguments
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group TeamSyncGroupMapping#group}
   */
-  readonly group?: TeamSyncGroupMappingGroup[];
+  readonly group?: TeamSyncGroupMappingGroup[] | cdktf.IResolvable;
 }
 export interface TeamSyncGroupMappingGroup {
   /**
@@ -33,8 +33,8 @@ export interface TeamSyncGroupMappingGroup {
   readonly groupName: string;
 }
 
-export function teamSyncGroupMappingGroupToTerraform(struct?: TeamSyncGroupMappingGroup): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+export function teamSyncGroupMappingGroupToTerraform(struct?: TeamSyncGroupMappingGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -110,12 +110,12 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
   }
 
   // group - computed: false, optional: true, required: false
-  private _group?: TeamSyncGroupMappingGroup[]; 
+  private _group?: TeamSyncGroupMappingGroup[] | cdktf.IResolvable; 
   public get group() {
     // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('group') as any;
+    return cdktf.Token.asAny(cdktf.Fn.tolist(this.interpolationForAttribute('group')));
   }
-  public set group(value: TeamSyncGroupMappingGroup[]) {
+  public set group(value: TeamSyncGroupMappingGroup[] | cdktf.IResolvable) {
     this._group = value;
   }
   public resetGroup() {
