@@ -64,12 +64,12 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
 
   // allows_public_repositories - computed: true, optional: false, required: false
   public get allowsPublicRepositories() {
-    return this.getBooleanAttribute('allows_public_repositories') as any;
+    return this.getBooleanAttribute('allows_public_repositories');
   }
 
   // default - computed: true, optional: false, required: false
   public get default() {
-    return this.getBooleanAttribute('default') as any;
+    return this.getBooleanAttribute('default');
   }
 
   // etag - computed: true, optional: false, required: false
@@ -84,7 +84,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
 
   // inherited - computed: true, optional: false, required: false
   public get inherited() {
-    return this.getBooleanAttribute('inherited') as any;
+    return this.getBooleanAttribute('inherited');
   }
 
   // name - computed: false, optional: false, required: true
@@ -113,8 +113,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   // selected_repository_ids - computed: false, optional: true, required: false
   private _selectedRepositoryIds?: number[]; 
   public get selectedRepositoryIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('selected_repository_ids') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('selected_repository_ids')));
   }
   public set selectedRepositoryIds(value: number[]) {
     this._selectedRepositoryIds = value;

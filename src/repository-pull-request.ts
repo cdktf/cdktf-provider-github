@@ -131,7 +131,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
 
   // draft - computed: true, optional: false, required: false
   public get draft() {
-    return this.getBooleanAttribute('draft') as any;
+    return this.getBooleanAttribute('draft');
   }
 
   // head_ref - computed: false, optional: false, required: true
@@ -165,7 +165,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   // maintainer_can_modify - computed: false, optional: true, required: false
   private _maintainerCanModify?: boolean | cdktf.IResolvable; 
   public get maintainerCanModify() {
-    return this.getBooleanAttribute('maintainer_can_modify') as any;
+    return this.getBooleanAttribute('maintainer_can_modify');
   }
   public set maintainerCanModify(value: boolean | cdktf.IResolvable) {
     this._maintainerCanModify = value;

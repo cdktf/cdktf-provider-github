@@ -206,7 +206,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // overwrite_on_create - computed: false, optional: true, required: false
   private _overwriteOnCreate?: boolean | cdktf.IResolvable; 
   public get overwriteOnCreate() {
-    return this.getBooleanAttribute('overwrite_on_create') as any;
+    return this.getBooleanAttribute('overwrite_on_create');
   }
   public set overwriteOnCreate(value: boolean | cdktf.IResolvable) {
     this._overwriteOnCreate = value;

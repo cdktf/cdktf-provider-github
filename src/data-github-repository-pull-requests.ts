@@ -55,7 +55,7 @@ export class DataGithubRepositoryPullRequestsResults extends cdktf.ComplexComput
 
   // draft - computed: true, optional: false, required: false
   public get draft() {
-    return this.getBooleanAttribute('draft') as any;
+    return this.getBooleanAttribute('draft');
   }
 
   // head_owner - computed: true, optional: false, required: false
@@ -85,7 +85,7 @@ export class DataGithubRepositoryPullRequestsResults extends cdktf.ComplexComput
 
   // maintainer_can_modify - computed: true, optional: false, required: false
   public get maintainerCanModify() {
-    return this.getBooleanAttribute('maintainer_can_modify') as any;
+    return this.getBooleanAttribute('maintainer_can_modify');
   }
 
   // number - computed: true, optional: false, required: false
@@ -232,7 +232,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
 
   // results - computed: true, optional: false, required: false
   public results(index: string) {
-    return new DataGithubRepositoryPullRequestsResults(this, 'results', index);
+    return new DataGithubRepositoryPullRequestsResults(this, 'results', index, false);
   }
 
   // sort_by - computed: false, optional: true, required: false

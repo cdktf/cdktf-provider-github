@@ -44,7 +44,7 @@ export interface ActionsOrganizationPermissionsAllowedActionsConfig {
 }
 
 export function actionsOrganizationPermissionsAllowedActionsConfigToTerraform(struct?: ActionsOrganizationPermissionsAllowedActionsConfigOutputReference | ActionsOrganizationPermissionsAllowedActionsConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -63,7 +63,7 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -103,7 +103,7 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   // github_owned_allowed - computed: false, optional: false, required: true
   private _githubOwnedAllowed?: boolean | cdktf.IResolvable; 
   public get githubOwnedAllowed() {
-    return this.getBooleanAttribute('github_owned_allowed') as any;
+    return this.getBooleanAttribute('github_owned_allowed');
   }
   public set githubOwnedAllowed(value: boolean | cdktf.IResolvable) {
     this._githubOwnedAllowed = value;
@@ -116,7 +116,7 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   // patterns_allowed - computed: false, optional: true, required: false
   private _patternsAllowed?: string[]; 
   public get patternsAllowed() {
-    return this.getListAttribute('patterns_allowed');
+    return cdktf.Fn.tolist(this.getListAttribute('patterns_allowed'));
   }
   public set patternsAllowed(value: string[]) {
     this._patternsAllowed = value;
@@ -132,7 +132,7 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   // verified_allowed - computed: false, optional: true, required: false
   private _verifiedAllowed?: boolean | cdktf.IResolvable; 
   public get verifiedAllowed() {
-    return this.getBooleanAttribute('verified_allowed') as any;
+    return this.getBooleanAttribute('verified_allowed');
   }
   public set verifiedAllowed(value: boolean | cdktf.IResolvable) {
     this._verifiedAllowed = value;
@@ -153,7 +153,7 @@ export interface ActionsOrganizationPermissionsEnabledRepositoriesConfig {
 }
 
 export function actionsOrganizationPermissionsEnabledRepositoriesConfigToTerraform(struct?: ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference | ActionsOrganizationPermissionsEnabledRepositoriesConfig): any {
-  if (!cdktf.canInspect(struct)) { return struct; }
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
@@ -170,7 +170,7 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.ITerraformResource, terraformAttribute: string, isSingleItem: boolean) {
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
     super(terraformResource, terraformAttribute, isSingleItem);
   }
 
@@ -198,8 +198,7 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
   // repository_ids - computed: false, optional: false, required: true
   private _repositoryIds?: number[]; 
   public get repositoryIds() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('repository_ids') as any;
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('repository_ids')));
   }
   public set repositoryIds(value: number[]) {
     this._repositoryIds = value;
@@ -287,7 +286,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   }
 
   // allowed_actions_config - computed: false, optional: true, required: false
-  private _allowedActionsConfig = new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(this as any, "allowed_actions_config", true);
+  private _allowedActionsConfig = new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(this, "allowed_actions_config", true);
   public get allowedActionsConfig() {
     return this._allowedActionsConfig;
   }
@@ -303,7 +302,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   }
 
   // enabled_repositories_config - computed: false, optional: true, required: false
-  private _enabledRepositoriesConfig = new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(this as any, "enabled_repositories_config", true);
+  private _enabledRepositoriesConfig = new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(this, "enabled_repositories_config", true);
   public get enabledRepositoriesConfig() {
     return this._enabledRepositoriesConfig;
   }
