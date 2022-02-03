@@ -28,6 +28,7 @@ export * from './repository-project';
 export * from './repository-pull-request';
 export * from './repository-webhook';
 export * from './team';
+export * from './team-members';
 export * from './team-membership';
 export * from './team-repository';
 export * from './team-sync-group-mapping';
