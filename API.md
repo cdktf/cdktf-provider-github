@@ -71,6 +71,7 @@ Name|Description
 [RepositoryWebhook](#cdktf-provider-github-repositorywebhook)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_webhook github_repository_webhook}.
 [RepositoryWebhookConfigurationOutputReference](#cdktf-provider-github-repositorywebhookconfigurationoutputreference)|*No description*
 [Team](#cdktf-provider-github-team)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team github_team}.
+[TeamMembers](#cdktf-provider-github-teammembers)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_members github_team_members}.
 [TeamMembership](#cdktf-provider-github-teammembership)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership github_team_membership}.
 [TeamRepository](#cdktf-provider-github-teamrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository github_team_repository}.
 [TeamSyncGroupMapping](#cdktf-provider-github-teamsyncgroupmapping)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping github_team_sync_group_mapping}.
@@ -146,6 +147,8 @@ Name|Description
 [RepositoryWebhookConfig](#cdktf-provider-github-repositorywebhookconfig)|*No description*
 [RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)|*No description*
 [TeamConfig](#cdktf-provider-github-teamconfig)|*No description*
+[TeamMembersConfig](#cdktf-provider-github-teammembersconfig)|*No description*
+[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)|*No description*
 [TeamMembershipConfig](#cdktf-provider-github-teammembershipconfig)|*No description*
 [TeamRepositoryConfig](#cdktf-provider-github-teamrepositoryconfig)|*No description*
 [TeamSyncGroupMappingConfig](#cdktf-provider-github-teamsyncgroupmappingconfig)|*No description*
@@ -5939,6 +5942,64 @@ __Returns__:
 
 
 
+## class TeamMembers  <a id="cdktf-provider-github-teammembers"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/team_members github_team_members}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/team_members github_team_members} Resource.
+
+```ts
+new TeamMembers(scope: Construct, id: string, config: TeamMembersConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[TeamMembersConfig](#cdktf-provider-github-teammembersconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **members** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code>)  members block. 
+  * **teamId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#team_id TeamMembers#team_id}. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**etag** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**members** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code> | <span></span>
+**teamId** | <code>string</code> | <span></span>
+**membersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code> | __*Optional*__
+**teamIdInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-teammembers-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class TeamMembership  <a id="cdktf-provider-github-teammembership"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership github_team_membership}.
@@ -7500,6 +7561,38 @@ Name | Type | Description
 **parentTeamId**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#parent_team_id Team#parent_team_id}.<br/>__*Optional*__
 **privacy**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#privacy Team#privacy}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct TeamMembersConfig  <a id="cdktf-provider-github-teammembersconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**members** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code> | members block.
+**teamId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#team_id TeamMembers#team_id}.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct TeamMembersMembers  <a id="cdktf-provider-github-teammembersmembers"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**username** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#username TeamMembers#username}.
+**role**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#role TeamMembers#role}.<br/>__*Optional*__
 
 
 
