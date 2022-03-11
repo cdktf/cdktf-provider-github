@@ -147,6 +147,11 @@ export class DataGithubUser extends cdktf.TerraformDataSource {
     return this.getListAttribute('ssh_keys');
   }
 
+  // suspended_at - computed: true, optional: false, required: false
+  public get suspendedAt() {
+    return this.getStringAttribute('suspended_at');
+  }
+
   // updated_at - computed: true, optional: false, required: false
   public get updatedAt() {
     return this.getStringAttribute('updated_at');
