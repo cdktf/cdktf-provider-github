@@ -3314,6 +3314,7 @@ Name | Type | Description
 **publicRepos** | <code>number</code> | <span></span>
 **siteAdmin** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **sshKeys** | <code>Array<string></code> | <span></span>
+**suspendedAt** | <code>string</code> | <span></span>
 **updatedAt** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
 **usernameInput**? | <code>string</code> | __*Optional*__
@@ -6626,6 +6627,7 @@ Name | Type | Description
 -----|------|-------------
 **dismissStaleReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}.<br/>__*Optional*__
 **dismissalRestrictions**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#dismissal_restrictions BranchProtection#dismissal_restrictions}.<br/>__*Optional*__
+**pullRequestBypassers**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}.<br/>__*Optional*__
 **requireCodeOwnerReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}.<br/>__*Optional*__
 **requiredApprovingReviewCount**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}.<br/>__*Optional*__
 **restrictDismissals**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}.<br/>__*Optional*__

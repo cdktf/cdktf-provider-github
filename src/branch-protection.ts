@@ -68,6 +68,10 @@ export interface BranchProtectionRequiredPullRequestReviews {
   */
   readonly dismissalRestrictions?: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}
+  */
+  readonly pullRequestBypassers?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
   */
   readonly requireCodeOwnerReviews?: boolean | cdktf.IResolvable;
@@ -89,6 +93,7 @@ export function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: B
   return {
     dismiss_stale_reviews: cdktf.booleanToTerraform(struct!.dismissStaleReviews),
     dismissal_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalRestrictions),
+    pull_request_bypassers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.pullRequestBypassers),
     require_code_owner_reviews: cdktf.booleanToTerraform(struct!.requireCodeOwnerReviews),
     required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
     restrict_dismissals: cdktf.booleanToTerraform(struct!.restrictDismissals),
