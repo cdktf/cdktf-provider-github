@@ -12,9 +12,17 @@ export interface ProjectCardConfig extends cdktf.TerraformMetaArguments {
   */
   readonly columnId: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}
+  */
+  readonly contentId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}
+  */
+  readonly contentType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}
   */
-  readonly note: string;
+  readonly note?: string;
 }
 
 /**
@@ -50,6 +58,8 @@ export class ProjectCard extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._columnId = config.columnId;
+    this._contentId = config.contentId;
+    this._contentType = config.contentType;
     this._note = config.note;
   }
 
@@ -75,6 +85,38 @@ export class ProjectCard extends cdktf.TerraformResource {
     return this._columnId;
   }
 
+  // content_id - computed: false, optional: true, required: false
+  private _contentId?: number; 
+  public get contentId() {
+    return this.getNumberAttribute('content_id');
+  }
+  public set contentId(value: number) {
+    this._contentId = value;
+  }
+  public resetContentId() {
+    this._contentId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentIdInput() {
+    return this._contentId;
+  }
+
+  // content_type - computed: false, optional: true, required: false
+  private _contentType?: string; 
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+  public set contentType(value: string) {
+    this._contentType = value;
+  }
+  public resetContentType() {
+    this._contentType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contentTypeInput() {
+    return this._contentType;
+  }
+
   // etag - computed: true, optional: false, required: false
   public get etag() {
     return this.getStringAttribute('etag');
@@ -85,13 +127,16 @@ export class ProjectCard extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // note - computed: false, optional: false, required: true
+  // note - computed: false, optional: true, required: false
   private _note?: string; 
   public get note() {
     return this.getStringAttribute('note');
   }
   public set note(value: string) {
     this._note = value;
+  }
+  public resetNote() {
+    this._note = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get noteInput() {
@@ -105,6 +150,8 @@ export class ProjectCard extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       column_id: cdktf.stringToTerraform(this._columnId),
+      content_id: cdktf.numberToTerraform(this._contentId),
+      content_type: cdktf.stringToTerraform(this._contentType),
       note: cdktf.stringToTerraform(this._note),
     };
   }
