@@ -43,9 +43,12 @@ Name|Description
 [DataGithubRepositoryPullRequests](#cdktf-provider-github-datagithubrepositorypullrequests)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests}.
 [DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequestsresults)|*No description*
 [DataGithubTeam](#cdktf-provider-github-datagithubteam)|Represents a {@link https://www.terraform.io/docs/providers/github/d/team github_team}.
+[DataGithubTree](#cdktf-provider-github-datagithubtree)|Represents a {@link https://www.terraform.io/docs/providers/github/d/tree github_tree}.
+[DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)|*No description*
 [DataGithubUser](#cdktf-provider-github-datagithubuser)|Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}.
 [DataGithubUsers](#cdktf-provider-github-datagithubusers)|Represents a {@link https://www.terraform.io/docs/providers/github/d/users github_users}.
 [GithubProvider](#cdktf-provider-github-githubprovider)|Represents a {@link https://www.terraform.io/docs/providers/github github}.
+[Issue](#cdktf-provider-github-issue)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue github_issue}.
 [IssueLabel](#cdktf-provider-github-issuelabel)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label}.
 [Membership](#cdktf-provider-github-membership)|Represents a {@link https://www.terraform.io/docs/providers/github/r/membership github_membership}.
 [OrganizationBlock](#cdktf-provider-github-organizationblock)|Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block}.
@@ -118,10 +121,12 @@ Name|Description
 [DataGithubRepositoryPullRequestConfig](#cdktf-provider-github-datagithubrepositorypullrequestconfig)|*No description*
 [DataGithubRepositoryPullRequestsConfig](#cdktf-provider-github-datagithubrepositorypullrequestsconfig)|*No description*
 [DataGithubTeamConfig](#cdktf-provider-github-datagithubteamconfig)|*No description*
+[DataGithubTreeConfig](#cdktf-provider-github-datagithubtreeconfig)|*No description*
 [DataGithubUserConfig](#cdktf-provider-github-datagithubuserconfig)|*No description*
 [DataGithubUsersConfig](#cdktf-provider-github-datagithubusersconfig)|*No description*
 [GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)|*No description*
 [GithubProviderConfig](#cdktf-provider-github-githubproviderconfig)|*No description*
+[IssueConfig](#cdktf-provider-github-issueconfig)|*No description*
 [IssueLabelConfig](#cdktf-provider-github-issuelabelconfig)|*No description*
 [MembershipConfig](#cdktf-provider-github-membershipconfig)|*No description*
 [OrganizationBlockConfig](#cdktf-provider-github-organizationblockconfig)|*No description*
@@ -3263,6 +3268,127 @@ __Returns__:
 
 
 
+## class DataGithubTree  <a id="cdktf-provider-github-datagithubtree"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/d/tree github_tree}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/d/tree github_tree} Data Source.
+
+```ts
+new DataGithubTree(scope: Construct, id: string, config: DataGithubTreeConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataGithubTreeConfig](#cdktf-provider-github-datagithubtreeconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/tree#repository DataGithubTree#repository}. 
+  * **treeSha** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/tree#tree_sha DataGithubTree#tree_sha}. 
+  * **recursive** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/tree#recursive DataGithubTree#recursive}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**recursive** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**treeSha** | <code>string</code> | <span></span>
+**recursiveInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+**treeShaInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### entries(index) <a id="cdktf-provider-github-datagithubtree-entries"></a>
+
+
+
+```ts
+entries(index: string): DataGithubTreeEntries
+```
+
+* **index** (<code>string</code>)  *No description*
+
+__Returns__:
+* <code>[DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)</code>
+
+#### resetRecursive() <a id="cdktf-provider-github-datagithubtree-resetrecursive"></a>
+
+
+
+```ts
+resetRecursive(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubtree-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DataGithubTreeEntries  <a id="cdktf-provider-github-datagithubtreeentries"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubTreeEntries(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
+* **terraformAttribute** (<code>string</code>)  *No description*
+* **complexComputedListIndex** (<code>string</code>)  *No description*
+* **wrapsSet** (<code>boolean</code>)  *No description*
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**mode** | <code>string</code> | <span></span>
+**path** | <code>string</code> | <span></span>
+**sha** | <code>string</code> | <span></span>
+**size** | <code>number</code> | <span></span>
+**type** | <code>string</code> | <span></span>
+
+
+
 ## class DataGithubUser  <a id="cdktf-provider-github-datagithubuser"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}.
@@ -3419,6 +3545,7 @@ new GithubProvider(scope: Construct, id: string, config?: GithubProviderConfig)
   * **insecure** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enable `insecure` mode for testing purposes. __*Optional*__
   * **organization** (<code>string</code>)  The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. __*Optional*__
   * **owner** (<code>string</code>)  The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. __*Optional*__
+  * **readDelayMs** (<code>number</code>)  Amount of time in milliseconds to sleep in between non-write requests to GitHub API. __*Optional*__
   * **token** (<code>string</code>)  The OAuth token used to connect to GitHub. __*Optional*__
   * **writeDelayMs** (<code>number</code>)  Amount of time in milliseconds to sleep in between writes to GitHub API. __*Optional*__
 
@@ -3441,6 +3568,8 @@ Name | Type | Description
 **organizationInput**? | <code>string</code> | __*Optional*__
 **owner**? | <code>string</code> | __*Optional*__
 **ownerInput**? | <code>string</code> | __*Optional*__
+**readDelayMs**? | <code>number</code> | __*Optional*__
+**readDelayMsInput**? | <code>number</code> | __*Optional*__
 **token**? | <code>string</code> | __*Optional*__
 **tokenInput**? | <code>string</code> | __*Optional*__
 **writeDelayMs**? | <code>number</code> | __*Optional*__
@@ -3522,6 +3651,18 @@ resetOwner(): void
 
 
 
+#### resetReadDelayMs() <a id="cdktf-provider-github-githubprovider-resetreaddelayms"></a>
+
+
+
+```ts
+resetReadDelayMs(): void
+```
+
+
+
+
+
 #### resetToken() <a id="cdktf-provider-github-githubprovider-resettoken"></a>
 
 
@@ -3547,6 +3688,126 @@ resetWriteDelayMs(): void
 
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-githubprovider-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class Issue  <a id="cdktf-provider-github-issue"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/issue github_issue}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/issue github_issue} Resource.
+
+```ts
+new Issue(scope: Construct, id: string, config: IssueConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[IssueConfig](#cdktf-provider-github-issueconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#repository Issue#repository}. 
+  * **title** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#title Issue#title}. 
+  * **assignees** (<code>Array<string></code>)  List of Logins for Users to assign to this issue. __*Optional*__
+  * **body** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#body Issue#body}. __*Optional*__
+  * **labels** (<code>Array<string></code>)  List of names of labels on the issue. __*Optional*__
+  * **milestoneNumber** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#milestone_number Issue#milestone_number}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**assignees** | <code>Array<string></code> | <span></span>
+**body** | <code>string</code> | <span></span>
+**etag** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**issueId** | <code>number</code> | <span></span>
+**labels** | <code>Array<string></code> | <span></span>
+**milestoneNumber** | <code>number</code> | <span></span>
+**number** | <code>number</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**title** | <code>string</code> | <span></span>
+**assigneesInput**? | <code>Array<string></code> | __*Optional*__
+**bodyInput**? | <code>string</code> | __*Optional*__
+**labelsInput**? | <code>Array<string></code> | __*Optional*__
+**milestoneNumberInput**? | <code>number</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+**titleInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetAssignees() <a id="cdktf-provider-github-issue-resetassignees"></a>
+
+
+
+```ts
+resetAssignees(): void
+```
+
+
+
+
+
+#### resetBody() <a id="cdktf-provider-github-issue-resetbody"></a>
+
+
+
+```ts
+resetBody(): void
+```
+
+
+
+
+
+#### resetLabels() <a id="cdktf-provider-github-issue-resetlabels"></a>
+
+
+
+```ts
+resetLabels(): void
+```
+
+
+
+
+
+#### resetMilestoneNumber() <a id="cdktf-provider-github-issue-resetmilestonenumber"></a>
+
+
+
+```ts
+resetMilestoneNumber(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-issue-synthesizeattributes"></a>
 
 
 
@@ -4053,7 +4314,9 @@ new ProjectCard(scope: Construct, id: string, config: ProjectCardConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **columnId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}. 
-  * **note** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}. 
+  * **contentId** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}. __*Optional*__
+  * **contentType** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}. __*Optional*__
+  * **note** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}. __*Optional*__
 
 
 
@@ -4064,14 +4327,54 @@ Name | Type | Description
 -----|------|-------------
 **cardId** | <code>number</code> | <span></span>
 **columnId** | <code>string</code> | <span></span>
+**contentId** | <code>number</code> | <span></span>
+**contentType** | <code>string</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **note** | <code>string</code> | <span></span>
 **columnIdInput**? | <code>string</code> | __*Optional*__
+**contentIdInput**? | <code>number</code> | __*Optional*__
+**contentTypeInput**? | <code>string</code> | __*Optional*__
 **noteInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
+
+
+#### resetContentId() <a id="cdktf-provider-github-projectcard-resetcontentid"></a>
+
+
+
+```ts
+resetContentId(): void
+```
+
+
+
+
+
+#### resetContentType() <a id="cdktf-provider-github-projectcard-resetcontenttype"></a>
+
+
+
+```ts
+resetContentType(): void
+```
+
+
+
+
+
+#### resetNote() <a id="cdktf-provider-github-projectcard-resetnote"></a>
+
+
+
+```ts
+resetNote(): void
+```
+
+
+
 
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-projectcard-synthesizeattributes"></a>
@@ -7014,6 +7317,25 @@ Name | Type | Description
 
 
 
+## struct DataGithubTreeConfig  <a id="cdktf-provider-github-datagithubtreeconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/tree#repository DataGithubTree#repository}.
+**treeSha** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/tree#tree_sha DataGithubTree#tree_sha}.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**recursive**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/tree#recursive DataGithubTree#recursive}.<br/>__*Optional*__
+
+
+
 ## struct DataGithubUserConfig  <a id="cdktf-provider-github-datagithubuserconfig"></a>
 
 
@@ -7078,8 +7400,31 @@ Name | Type | Description
 **insecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enable `insecure` mode for testing purposes.<br/>__*Optional*__
 **organization**? | <code>string</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.<br/>__*Optional*__
 **owner**? | <code>string</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.<br/>__*Optional*__
+**readDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API.<br/>__*Optional*__
 **token**? | <code>string</code> | The OAuth token used to connect to GitHub.<br/>__*Optional*__
 **writeDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between writes to GitHub API.<br/>__*Optional*__
+
+
+
+## struct IssueConfig  <a id="cdktf-provider-github-issueconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#repository Issue#repository}.
+**title** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#title Issue#title}.
+**assignees**? | <code>Array<string></code> | List of Logins for Users to assign to this issue.<br/>__*Optional*__
+**body**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#body Issue#body}.<br/>__*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**labels**? | <code>Array<string></code> | List of names of labels on the issue.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**milestoneNumber**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#milestone_number Issue#milestone_number}.<br/>__*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
 
 
@@ -7202,10 +7547,12 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **columnId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}.
-**note** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}.
+**contentId**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}.<br/>__*Optional*__
+**contentType**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}.<br/>__*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**note**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
 

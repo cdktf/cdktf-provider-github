@@ -32,6 +32,12 @@ export interface GithubProviderConfig {
   */
   readonly owner?: string;
   /**
+  * Amount of time in milliseconds to sleep in between non-write requests to GitHub API. Defaults to 0ms if not set.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#read_delay_ms GithubProvider#read_delay_ms}
+  */
+  readonly readDelayMs?: number;
+  /**
   * The OAuth token used to connect to GitHub. Anonymous mode is enabled if both `token` and `app_auth` are not set.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github#token GithubProvider#token}
@@ -124,6 +130,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
     this._insecure = config.insecure;
     this._organization = config.organization;
     this._owner = config.owner;
+    this._readDelayMs = config.readDelayMs;
     this._token = config.token;
     this._writeDelayMs = config.writeDelayMs;
     this._alias = config.alias;
@@ -196,6 +203,22 @@ export class GithubProvider extends cdktf.TerraformProvider {
   // Temporarily expose input value. Use with caution.
   public get ownerInput() {
     return this._owner;
+  }
+
+  // read_delay_ms - computed: false, optional: true, required: false
+  private _readDelayMs?: number; 
+  public get readDelayMs() {
+    return this._readDelayMs;
+  }
+  public set readDelayMs(value: number | undefined) {
+    this._readDelayMs = value;
+  }
+  public resetReadDelayMs() {
+    this._readDelayMs = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get readDelayMsInput() {
+    return this._readDelayMs;
   }
 
   // token - computed: false, optional: true, required: false
@@ -272,6 +295,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
       insecure: cdktf.booleanToTerraform(this._insecure),
       organization: cdktf.stringToTerraform(this._organization),
       owner: cdktf.stringToTerraform(this._owner),
+      read_delay_ms: cdktf.numberToTerraform(this._readDelayMs),
       token: cdktf.stringToTerraform(this._token),
       write_delay_ms: cdktf.numberToTerraform(this._writeDelayMs),
       alias: cdktf.stringToTerraform(this._alias),
