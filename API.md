@@ -31,6 +31,7 @@ Name|Description
 [DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups)|*No description*
 [DataGithubOrganizationTeams](#cdktf-provider-github-datagithuborganizationteams)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams}.
 [DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteamsteams)|*No description*
+[DataGithubRef](#cdktf-provider-github-datagithubref)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}.
 [DataGithubRelease](#cdktf-provider-github-datagithubrelease)|Represents a {@link https://www.terraform.io/docs/providers/github/d/release github_release}.
 [DataGithubRepositories](#cdktf-provider-github-datagithubrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories github_repositories}.
 [DataGithubRepository](#cdktf-provider-github-datagithubrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository github_repository}.
@@ -113,6 +114,7 @@ Name|Description
 [DataGithubOrganizationConfig](#cdktf-provider-github-datagithuborganizationconfig)|*No description*
 [DataGithubOrganizationTeamSyncGroupsConfig](#cdktf-provider-github-datagithuborganizationteamsyncgroupsconfig)|*No description*
 [DataGithubOrganizationTeamsConfig](#cdktf-provider-github-datagithuborganizationteamsconfig)|*No description*
+[DataGithubRefConfig](#cdktf-provider-github-datagithubrefconfig)|*No description*
 [DataGithubReleaseConfig](#cdktf-provider-github-datagithubreleaseconfig)|*No description*
 [DataGithubRepositoriesConfig](#cdktf-provider-github-datagithubrepositoriesconfig)|*No description*
 [DataGithubRepositoryConfig](#cdktf-provider-github-datagithubrepositoryconfig)|*No description*
@@ -2102,6 +2104,7 @@ Name | Type | Description
 **members** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
+**orgname** | <code>string</code> | <span></span>
 **plan** | <code>string</code> | <span></span>
 **repositories** | <code>Array<string></code> | <span></span>
 **nameInput**? | <code>string</code> | __*Optional*__
@@ -2337,6 +2340,66 @@ Name | Type | Description
 **privacy** | <code>string</code> | <span></span>
 **repositories** | <code>Array<string></code> | <span></span>
 **slug** | <code>string</code> | <span></span>
+
+
+
+## class DataGithubRef  <a id="cdktf-provider-github-datagithubref"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/d/ref github_ref} Data Source.
+
+```ts
+new DataGithubRef(scope: Construct, id: string, config: DataGithubRefConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataGithubRefConfig](#cdktf-provider-github-datagithubrefconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#branch DataGithubRef#branch}. 
+  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#repository DataGithubRef#repository}. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**branch** | <code>string</code> | <span></span>
+**etag** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**ref** | <code>string</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**sha** | <code>string</code> | <span></span>
+**branchInput**? | <code>string</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubref-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
 
 
 
@@ -4490,6 +4553,7 @@ new Repository(scope: Construct, id: string, config: RepositoryConfig)
   * **hasProjects** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_projects Repository#has_projects}. __*Optional*__
   * **hasWiki** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_wiki Repository#has_wiki}. __*Optional*__
   * **homepageUrl** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#homepage_url Repository#homepage_url}. __*Optional*__
+  * **ignoreVulnerabilityAlertsDuringRead** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}. __*Optional*__
   * **isTemplate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#is_template Repository#is_template}. __*Optional*__
   * **licenseTemplate** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#license_template Repository#license_template}. __*Optional*__
   * **pages** (<code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code>)  pages block. __*Optional*__
@@ -4528,6 +4592,7 @@ Name | Type | Description
 **htmlUrl** | <code>string</code> | <span></span>
 **httpCloneUrl** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**ignoreVulnerabilityAlertsDuringRead** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **isTemplate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **licenseTemplate** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
@@ -4557,6 +4622,7 @@ Name | Type | Description
 **hasProjectsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **hasWikiInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **homepageUrlInput**? | <code>string</code> | __*Optional*__
+**ignoreVulnerabilityAlertsDuringReadInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isTemplateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **licenseTemplateInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
@@ -4800,6 +4866,18 @@ resetHasWiki(): void
 
 ```ts
 resetHomepageUrl(): void
+```
+
+
+
+
+
+#### resetIgnoreVulnerabilityAlertsDuringRead() <a id="cdktf-provider-github-repository-resetignorevulnerabilityalertsduringread"></a>
+
+
+
+```ts
+resetIgnoreVulnerabilityAlertsDuringRead(): void
 ```
 
 
@@ -7161,6 +7239,24 @@ Name | Type | Description
 
 
 
+## struct DataGithubRefConfig  <a id="cdktf-provider-github-datagithubrefconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**branch** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#branch DataGithubRef#branch}.
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#repository DataGithubRef#repository}.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct DataGithubReleaseConfig  <a id="cdktf-provider-github-datagithubreleaseconfig"></a>
 
 
@@ -7642,6 +7738,7 @@ Name | Type | Description
 **hasProjects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_projects Repository#has_projects}.<br/>__*Optional*__
 **hasWiki**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_wiki Repository#has_wiki}.<br/>__*Optional*__
 **homepageUrl**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#homepage_url Repository#homepage_url}.<br/>__*Optional*__
+**ignoreVulnerabilityAlertsDuringRead**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}.<br/>__*Optional*__
 **isTemplate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#is_template Repository#is_template}.<br/>__*Optional*__
 **licenseTemplate**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#license_template Repository#license_template}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__

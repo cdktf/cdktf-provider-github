@@ -44,6 +44,7 @@ export * from './data-github-membership';
 export * from './data-github-organization';
 export * from './data-github-organization-team-sync-groups';
 export * from './data-github-organization-teams';
+export * from './data-github-ref';
 export * from './data-github-release';
 export * from './data-github-repositories';
 export * from './data-github-repository';

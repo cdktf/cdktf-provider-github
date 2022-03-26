@@ -90,6 +90,11 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
     return this.getStringAttribute('node_id');
   }
 
+  // orgname - computed: true, optional: false, required: false
+  public get orgname() {
+    return this.getStringAttribute('orgname');
+  }
+
   // plan - computed: true, optional: false, required: false
   public get plan() {
     return this.getStringAttribute('plan');
