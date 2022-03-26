@@ -74,6 +74,10 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly homepageUrl?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}
+  */
+  readonly ignoreVulnerabilityAlertsDuringRead?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#is_template Repository#is_template}
   */
   readonly isTemplate?: boolean | cdktf.IResolvable;
@@ -464,6 +468,7 @@ export class Repository extends cdktf.TerraformResource {
     this._hasProjects = config.hasProjects;
     this._hasWiki = config.hasWiki;
     this._homepageUrl = config.homepageUrl;
+    this._ignoreVulnerabilityAlertsDuringRead = config.ignoreVulnerabilityAlertsDuringRead;
     this._isTemplate = config.isTemplate;
     this._licenseTemplate = config.licenseTemplate;
     this._name = config.name;
@@ -770,6 +775,22 @@ export class Repository extends cdktf.TerraformResource {
     return this.getStringAttribute('id');
   }
 
+  // ignore_vulnerability_alerts_during_read - computed: false, optional: true, required: false
+  private _ignoreVulnerabilityAlertsDuringRead?: boolean | cdktf.IResolvable; 
+  public get ignoreVulnerabilityAlertsDuringRead() {
+    return this.getBooleanAttribute('ignore_vulnerability_alerts_during_read');
+  }
+  public set ignoreVulnerabilityAlertsDuringRead(value: boolean | cdktf.IResolvable) {
+    this._ignoreVulnerabilityAlertsDuringRead = value;
+  }
+  public resetIgnoreVulnerabilityAlertsDuringRead() {
+    this._ignoreVulnerabilityAlertsDuringRead = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get ignoreVulnerabilityAlertsDuringReadInput() {
+    return this._ignoreVulnerabilityAlertsDuringRead;
+  }
+
   // is_template - computed: false, optional: true, required: false
   private _isTemplate?: boolean | cdktf.IResolvable; 
   public get isTemplate() {
@@ -953,6 +974,7 @@ export class Repository extends cdktf.TerraformResource {
       has_projects: cdktf.booleanToTerraform(this._hasProjects),
       has_wiki: cdktf.booleanToTerraform(this._hasWiki),
       homepage_url: cdktf.stringToTerraform(this._homepageUrl),
+      ignore_vulnerability_alerts_during_read: cdktf.booleanToTerraform(this._ignoreVulnerabilityAlertsDuringRead),
       is_template: cdktf.booleanToTerraform(this._isTemplate),
       license_template: cdktf.stringToTerraform(this._licenseTemplate),
       name: cdktf.stringToTerraform(this._name),
