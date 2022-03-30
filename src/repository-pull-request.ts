@@ -45,7 +45,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_repository_pull_request";
+  public static readonly tfResourceType = "github_repository_pull_request";
 
   // ===========
   // INITIALIZER
@@ -62,7 +62,9 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_repository_pull_request',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

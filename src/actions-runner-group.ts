@@ -29,7 +29,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_actions_runner_group";
+  public static readonly tfResourceType = "github_actions_runner_group";
 
   // ===========
   // INITIALIZER
@@ -46,7 +46,9 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_actions_runner_group',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

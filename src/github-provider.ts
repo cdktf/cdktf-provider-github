@@ -104,7 +104,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github";
+  public static readonly tfResourceType = "github";
 
   // ===========
   // INITIALIZER
@@ -122,6 +122,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'github',
       terraformGeneratorMetadata: {
         providerName: 'github',
+        providerVersion: '4.23.0',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'integrations/github'

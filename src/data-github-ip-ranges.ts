@@ -17,7 +17,7 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_ip_ranges";
+  public static readonly tfResourceType = "github_ip_ranges";
 
   // ===========
   // INITIALIZER
@@ -34,7 +34,9 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'github_ip_ranges',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

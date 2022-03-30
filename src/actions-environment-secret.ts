@@ -37,7 +37,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_actions_environment_secret";
+  public static readonly tfResourceType = "github_actions_environment_secret";
 
   // ===========
   // INITIALIZER
@@ -54,7 +54,9 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_actions_environment_secret',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

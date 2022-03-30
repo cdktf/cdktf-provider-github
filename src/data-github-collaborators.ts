@@ -20,7 +20,45 @@ export interface DataGithubCollaboratorsConfig extends cdktf.TerraformMetaArgume
   */
   readonly repository: string;
 }
-export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedList {
+export interface DataGithubCollaboratorsCollaborator {
+}
+
+export function dataGithubCollaboratorsCollaboratorToTerraform(struct?: DataGithubCollaboratorsCollaborator): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGithubCollaboratorsCollaboratorOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGithubCollaboratorsCollaborator | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGithubCollaboratorsCollaborator | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // events_url - computed: true, optional: false, required: false
   public get eventsUrl() {
@@ -103,6 +141,25 @@ export class DataGithubCollaboratorsCollaborator extends cdktf.ComplexComputedLi
   }
 }
 
+export class DataGithubCollaboratorsCollaboratorList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGithubCollaboratorsCollaboratorOutputReference {
+    return new DataGithubCollaboratorsCollaboratorOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators}
 */
@@ -111,7 +168,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_collaborators";
+  public static readonly tfResourceType = "github_collaborators";
 
   // ===========
   // INITIALIZER
@@ -128,7 +185,9 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'github_collaborators',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -161,8 +220,9 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   }
 
   // collaborator - computed: true, optional: false, required: false
-  public collaborator(index: string) {
-    return new DataGithubCollaboratorsCollaborator(this, 'collaborator', index, false);
+  private _collaborator = new DataGithubCollaboratorsCollaboratorList(this, "collaborator", false);
+  public get collaborator() {
+    return this._collaborator;
   }
 
   // id - computed: true, optional: true, required: false

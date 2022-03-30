@@ -8,7 +8,45 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubOrganizationTeamSyncGroupsConfig extends cdktf.TerraformMetaArguments {
 }
-export class DataGithubOrganizationTeamSyncGroupsGroups extends cdktf.ComplexComputedList {
+export interface DataGithubOrganizationTeamSyncGroupsGroups {
+}
+
+export function dataGithubOrganizationTeamSyncGroupsGroupsToTerraform(struct?: DataGithubOrganizationTeamSyncGroupsGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGithubOrganizationTeamSyncGroupsGroupsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGithubOrganizationTeamSyncGroupsGroups | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGithubOrganizationTeamSyncGroupsGroups | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // group_description - computed: true, optional: false, required: false
   public get groupDescription() {
@@ -26,6 +64,25 @@ export class DataGithubOrganizationTeamSyncGroupsGroups extends cdktf.ComplexCom
   }
 }
 
+export class DataGithubOrganizationTeamSyncGroupsGroupsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGithubOrganizationTeamSyncGroupsGroupsOutputReference {
+    return new DataGithubOrganizationTeamSyncGroupsGroupsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups}
 */
@@ -34,7 +91,7 @@ export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSou
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_organization_team_sync_groups";
+  public static readonly tfResourceType = "github_organization_team_sync_groups";
 
   // ===========
   // INITIALIZER
@@ -51,7 +108,9 @@ export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSou
     super(scope, id, {
       terraformResourceType: 'github_organization_team_sync_groups',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -65,8 +124,9 @@ export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSou
   // ==========
 
   // groups - computed: true, optional: false, required: false
-  public groups(index: string) {
-    return new DataGithubOrganizationTeamSyncGroupsGroups(this, 'groups', index, false);
+  private _groups = new DataGithubOrganizationTeamSyncGroupsGroupsList(this, "groups", false);
+  public get groups() {
+    return this._groups;
   }
 
   // id - computed: true, optional: true, required: false

@@ -36,7 +36,45 @@ export interface DataGithubRepositoryPullRequestsConfig extends cdktf.TerraformM
   */
   readonly state?: string;
 }
-export class DataGithubRepositoryPullRequestsResults extends cdktf.ComplexComputedList {
+export interface DataGithubRepositoryPullRequestsResults {
+}
+
+export function dataGithubRepositoryPullRequestsResultsToTerraform(struct?: DataGithubRepositoryPullRequestsResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGithubRepositoryPullRequestsResultsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGithubRepositoryPullRequestsResults | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGithubRepositoryPullRequestsResults | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
 
   // base_ref - computed: true, optional: false, required: false
   public get baseRef() {
@@ -119,6 +157,25 @@ export class DataGithubRepositoryPullRequestsResults extends cdktf.ComplexComput
   }
 }
 
+export class DataGithubRepositoryPullRequestsResultsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGithubRepositoryPullRequestsResultsOutputReference {
+    return new DataGithubRepositoryPullRequestsResultsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests}
 */
@@ -127,7 +184,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_repository_pull_requests";
+  public static readonly tfResourceType = "github_repository_pull_requests";
 
   // ===========
   // INITIALIZER
@@ -144,7 +201,9 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
     super(scope, id, {
       terraformResourceType: 'github_repository_pull_requests',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -231,8 +290,9 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // results - computed: true, optional: false, required: false
-  public results(index: string) {
-    return new DataGithubRepositoryPullRequestsResults(this, 'results', index, false);
+  private _results = new DataGithubRepositoryPullRequestsResultsList(this, "results", false);
+  public get results() {
+    return this._results;
   }
 
   // sort_by - computed: false, optional: true, required: false

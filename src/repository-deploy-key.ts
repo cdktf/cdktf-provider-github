@@ -33,7 +33,7 @@ export class RepositoryDeployKey extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_repository_deploy_key";
+  public static readonly tfResourceType = "github_repository_deploy_key";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class RepositoryDeployKey extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_repository_deploy_key',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

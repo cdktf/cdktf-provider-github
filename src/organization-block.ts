@@ -21,7 +21,7 @@ export class OrganizationBlock extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_organization_block";
+  public static readonly tfResourceType = "github_organization_block";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class OrganizationBlock extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_organization_block',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
