@@ -31,7 +31,7 @@ export class TeamRepository extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_team_repository";
+  public static readonly tfResourceType = "github_team_repository";
 
   // ===========
   // INITIALIZER
@@ -48,7 +48,9 @@ export class TeamRepository extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_team_repository',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

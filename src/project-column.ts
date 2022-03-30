@@ -25,7 +25,7 @@ export class ProjectColumn extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_project_column";
+  public static readonly tfResourceType = "github_project_column";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class ProjectColumn extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_project_column',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -54,7 +54,7 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_team_sync_group_mapping";
+  public static readonly tfResourceType = "github_team_sync_group_mapping";
 
   // ===========
   // INITIALIZER
@@ -71,7 +71,9 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_team_sync_group_mapping',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

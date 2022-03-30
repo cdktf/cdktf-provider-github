@@ -23,29 +23,37 @@ Name|Description
 [DataGithubActionsPublicKey](#cdktf-provider-github-datagithubactionspublickey)|Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key}.
 [DataGithubBranch](#cdktf-provider-github-datagithubbranch)|Represents a {@link https://www.terraform.io/docs/providers/github/d/branch github_branch}.
 [DataGithubCollaborators](#cdktf-provider-github-datagithubcollaborators)|Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators}.
-[DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaboratorscollaborator)|*No description*
+[DataGithubCollaboratorsCollaboratorList](#cdktf-provider-github-datagithubcollaboratorscollaboratorlist)|*No description*
+[DataGithubCollaboratorsCollaboratorOutputReference](#cdktf-provider-github-datagithubcollaboratorscollaboratoroutputreference)|*No description*
 [DataGithubIpRanges](#cdktf-provider-github-datagithubipranges)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges}.
 [DataGithubMembership](#cdktf-provider-github-datagithubmembership)|Represents a {@link https://www.terraform.io/docs/providers/github/d/membership github_membership}.
 [DataGithubOrganization](#cdktf-provider-github-datagithuborganization)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization github_organization}.
 [DataGithubOrganizationTeamSyncGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroups)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups}.
-[DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups)|*No description*
+[DataGithubOrganizationTeamSyncGroupsGroupsList](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupslist)|*No description*
+[DataGithubOrganizationTeamSyncGroupsGroupsOutputReference](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupsoutputreference)|*No description*
 [DataGithubOrganizationTeams](#cdktf-provider-github-datagithuborganizationteams)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams}.
-[DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteamsteams)|*No description*
+[DataGithubOrganizationTeamsTeamsList](#cdktf-provider-github-datagithuborganizationteamsteamslist)|*No description*
+[DataGithubOrganizationTeamsTeamsOutputReference](#cdktf-provider-github-datagithuborganizationteamsteamsoutputreference)|*No description*
 [DataGithubRef](#cdktf-provider-github-datagithubref)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}.
 [DataGithubRelease](#cdktf-provider-github-datagithubrelease)|Represents a {@link https://www.terraform.io/docs/providers/github/d/release github_release}.
 [DataGithubRepositories](#cdktf-provider-github-datagithubrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories github_repositories}.
 [DataGithubRepository](#cdktf-provider-github-datagithubrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository github_repository}.
-[DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepositorybranches)|*No description*
+[DataGithubRepositoryBranchesList](#cdktf-provider-github-datagithubrepositorybrancheslist)|*No description*
+[DataGithubRepositoryBranchesOutputReference](#cdktf-provider-github-datagithubrepositorybranchesoutputreference)|*No description*
 [DataGithubRepositoryFile](#cdktf-provider-github-datagithubrepositoryfile)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file github_repository_file}.
 [DataGithubRepositoryMilestone](#cdktf-provider-github-datagithubrepositorymilestone)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone}.
-[DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepositorypages)|*No description*
-[DataGithubRepositoryPagesSource](#cdktf-provider-github-datagithubrepositorypagessource)|*No description*
+[DataGithubRepositoryPagesList](#cdktf-provider-github-datagithubrepositorypageslist)|*No description*
+[DataGithubRepositoryPagesOutputReference](#cdktf-provider-github-datagithubrepositorypagesoutputreference)|*No description*
+[DataGithubRepositoryPagesSourceList](#cdktf-provider-github-datagithubrepositorypagessourcelist)|*No description*
+[DataGithubRepositoryPagesSourceOutputReference](#cdktf-provider-github-datagithubrepositorypagessourceoutputreference)|*No description*
 [DataGithubRepositoryPullRequest](#cdktf-provider-github-datagithubrepositorypullrequest)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request github_repository_pull_request}.
 [DataGithubRepositoryPullRequests](#cdktf-provider-github-datagithubrepositorypullrequests)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests}.
-[DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequestsresults)|*No description*
+[DataGithubRepositoryPullRequestsResultsList](#cdktf-provider-github-datagithubrepositorypullrequestsresultslist)|*No description*
+[DataGithubRepositoryPullRequestsResultsOutputReference](#cdktf-provider-github-datagithubrepositorypullrequestsresultsoutputreference)|*No description*
 [DataGithubTeam](#cdktf-provider-github-datagithubteam)|Represents a {@link https://www.terraform.io/docs/providers/github/d/team github_team}.
 [DataGithubTree](#cdktf-provider-github-datagithubtree)|Represents a {@link https://www.terraform.io/docs/providers/github/d/tree github_tree}.
-[DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)|*No description*
+[DataGithubTreeEntriesList](#cdktf-provider-github-datagithubtreeentrieslist)|*No description*
+[DataGithubTreeEntriesOutputReference](#cdktf-provider-github-datagithubtreeentriesoutputreference)|*No description*
 [DataGithubUser](#cdktf-provider-github-datagithubuser)|Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}.
 [DataGithubUsers](#cdktf-provider-github-datagithubusers)|Represents a {@link https://www.terraform.io/docs/providers/github/d/users github_users}.
 [GithubProvider](#cdktf-provider-github-githubprovider)|Represents a {@link https://www.terraform.io/docs/providers/github github}.
@@ -60,7 +68,8 @@ Name|Description
 [ProjectColumn](#cdktf-provider-github-projectcolumn)|Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column}.
 [Repository](#cdktf-provider-github-repository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository github_repository}.
 [RepositoryAutolinkReference](#cdktf-provider-github-repositoryautolinkreference)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference}.
-[RepositoryBranches](#cdktf-provider-github-repositorybranches)|*No description*
+[RepositoryBranchesList](#cdktf-provider-github-repositorybrancheslist)|*No description*
+[RepositoryBranchesOutputReference](#cdktf-provider-github-repositorybranchesoutputreference)|*No description*
 [RepositoryCollaborator](#cdktf-provider-github-repositorycollaborator)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator github_repository_collaborator}.
 [RepositoryDeployKey](#cdktf-provider-github-repositorydeploykey)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key github_repository_deploy_key}.
 [RepositoryEnvironment](#cdktf-provider-github-repositoryenvironment)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment github_repository_environment}.
@@ -108,22 +117,30 @@ Name|Description
 [BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)|*No description*
 [DataGithubActionsPublicKeyConfig](#cdktf-provider-github-datagithubactionspublickeyconfig)|*No description*
 [DataGithubBranchConfig](#cdktf-provider-github-datagithubbranchconfig)|*No description*
+[DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaboratorscollaborator)|*No description*
 [DataGithubCollaboratorsConfig](#cdktf-provider-github-datagithubcollaboratorsconfig)|*No description*
 [DataGithubIpRangesConfig](#cdktf-provider-github-datagithubiprangesconfig)|*No description*
 [DataGithubMembershipConfig](#cdktf-provider-github-datagithubmembershipconfig)|*No description*
 [DataGithubOrganizationConfig](#cdktf-provider-github-datagithuborganizationconfig)|*No description*
 [DataGithubOrganizationTeamSyncGroupsConfig](#cdktf-provider-github-datagithuborganizationteamsyncgroupsconfig)|*No description*
+[DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups)|*No description*
 [DataGithubOrganizationTeamsConfig](#cdktf-provider-github-datagithuborganizationteamsconfig)|*No description*
+[DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteamsteams)|*No description*
 [DataGithubRefConfig](#cdktf-provider-github-datagithubrefconfig)|*No description*
 [DataGithubReleaseConfig](#cdktf-provider-github-datagithubreleaseconfig)|*No description*
 [DataGithubRepositoriesConfig](#cdktf-provider-github-datagithubrepositoriesconfig)|*No description*
+[DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepositorybranches)|*No description*
 [DataGithubRepositoryConfig](#cdktf-provider-github-datagithubrepositoryconfig)|*No description*
 [DataGithubRepositoryFileConfig](#cdktf-provider-github-datagithubrepositoryfileconfig)|*No description*
 [DataGithubRepositoryMilestoneConfig](#cdktf-provider-github-datagithubrepositorymilestoneconfig)|*No description*
+[DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepositorypages)|*No description*
+[DataGithubRepositoryPagesSource](#cdktf-provider-github-datagithubrepositorypagessource)|*No description*
 [DataGithubRepositoryPullRequestConfig](#cdktf-provider-github-datagithubrepositorypullrequestconfig)|*No description*
 [DataGithubRepositoryPullRequestsConfig](#cdktf-provider-github-datagithubrepositorypullrequestsconfig)|*No description*
+[DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequestsresults)|*No description*
 [DataGithubTeamConfig](#cdktf-provider-github-datagithubteamconfig)|*No description*
 [DataGithubTreeConfig](#cdktf-provider-github-datagithubtreeconfig)|*No description*
+[DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)|*No description*
 [DataGithubUserConfig](#cdktf-provider-github-datagithubuserconfig)|*No description*
 [DataGithubUsersConfig](#cdktf-provider-github-datagithubusersconfig)|*No description*
 [GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)|*No description*
@@ -138,6 +155,7 @@ Name|Description
 [ProjectCardConfig](#cdktf-provider-github-projectcardconfig)|*No description*
 [ProjectColumnConfig](#cdktf-provider-github-projectcolumnconfig)|*No description*
 [RepositoryAutolinkReferenceConfig](#cdktf-provider-github-repositoryautolinkreferenceconfig)|*No description*
+[RepositoryBranches](#cdktf-provider-github-repositorybranches)|*No description*
 [RepositoryCollaboratorConfig](#cdktf-provider-github-repositorycollaboratorconfig)|*No description*
 [RepositoryConfig](#cdktf-provider-github-repositoryconfig)|*No description*
 [RepositoryDeployKeyConfig](#cdktf-provider-github-repositorydeploykeyconfig)|*No description*
@@ -400,12 +418,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -464,12 +481,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -1421,12 +1437,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new BranchProtectionV3RequiredPullRequestReviewsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new BranchProtectionV3RequiredPullRequestReviewsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -1539,12 +1554,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new BranchProtectionV3RequiredStatusChecksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new BranchProtectionV3RequiredStatusChecksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -1615,12 +1629,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new BranchProtectionV3RestrictionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new BranchProtectionV3RestrictionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -1829,6 +1842,7 @@ new DataGithubCollaborators(scope: Construct, id: string, config: DataGithubColl
 Name | Type | Description 
 -----|------|-------------
 **affiliation** | <code>string</code> | <span></span>
+**collaborator** | <code>[DataGithubCollaboratorsCollaboratorList](#cdktf-provider-github-datagithubcollaboratorscollaboratorlist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **owner** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
@@ -1839,19 +1853,6 @@ Name | Type | Description
 
 ### Methods
 
-
-#### collaborator(index) <a id="cdktf-provider-github-datagithubcollaborators-collaborator"></a>
-
-
-
-```ts
-collaborator(index: string): DataGithubCollaboratorsCollaborator
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaboratorscollaborator)</code>
 
 #### resetAffiliation() <a id="cdktf-provider-github-datagithubcollaborators-resetaffiliation"></a>
 
@@ -1879,12 +1880,12 @@ __Returns__:
 
 
 
-## class DataGithubCollaboratorsCollaborator  <a id="cdktf-provider-github-datagithubcollaboratorscollaborator"></a>
+## class DataGithubCollaboratorsCollaboratorList  <a id="cdktf-provider-github-datagithubcollaboratorscollaboratorlist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -1892,13 +1893,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubCollaboratorsCollaborator(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataGithubCollaboratorsCollaboratorList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubcollaboratorscollaboratorlist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubCollaboratorsCollaboratorOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubCollaboratorsCollaboratorOutputReference](#cdktf-provider-github-datagithubcollaboratorscollaboratoroutputreference)</code>
+
+
+
+## class DataGithubCollaboratorsCollaboratorOutputReference  <a id="cdktf-provider-github-datagithubcollaboratorscollaboratoroutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubCollaboratorsCollaboratorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -1923,6 +1973,7 @@ Name | Type | Description
 **subscriptionsUrl** | <code>string</code> | <span></span>
 **type** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaboratorscollaborator)</code> | __*Optional*__
 
 
 
@@ -2158,24 +2209,12 @@ new DataGithubOrganizationTeamSyncGroups(scope: Construct, id: string, config?: 
 
 Name | Type | Description 
 -----|------|-------------
+**groups** | <code>[DataGithubOrganizationTeamSyncGroupsGroupsList](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupslist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
-
-#### groups(index) <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-groups"></a>
-
-
-
-```ts
-groups(index: string): DataGithubOrganizationTeamSyncGroupsGroups
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups)</code>
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-synthesizeattributes"></a>
 
@@ -2191,12 +2230,12 @@ __Returns__:
 
 
 
-## class DataGithubOrganizationTeamSyncGroupsGroups  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups"></a>
+## class DataGithubOrganizationTeamSyncGroupsGroupsList  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2204,13 +2243,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubOrganizationTeamSyncGroupsGroups(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataGithubOrganizationTeamSyncGroupsGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupslist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubOrganizationTeamSyncGroupsGroupsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubOrganizationTeamSyncGroupsGroupsOutputReference](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupsoutputreference)</code>
+
+
+
+## class DataGithubOrganizationTeamSyncGroupsGroupsOutputReference  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubOrganizationTeamSyncGroupsGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2222,6 +2310,7 @@ Name | Type | Description
 **groupDescription** | <code>string</code> | <span></span>
 **groupId** | <code>string</code> | <span></span>
 **groupName** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups)</code> | __*Optional*__
 
 
 
@@ -2259,6 +2348,7 @@ Name | Type | Description
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
 **rootTeamsOnly** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**teams** | <code>[DataGithubOrganizationTeamsTeamsList](#cdktf-provider-github-datagithuborganizationteamsteamslist)</code> | <span></span>
 **rootTeamsOnlyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -2277,19 +2367,6 @@ resetRootTeamsOnly(): void
 
 
 
-#### teams(index) <a id="cdktf-provider-github-datagithuborganizationteams-teams"></a>
-
-
-
-```ts
-teams(index: string): DataGithubOrganizationTeamsTeams
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteamsteams)</code>
-
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithuborganizationteams-synthesizeattributes"></a>
 
 
@@ -2304,12 +2381,12 @@ __Returns__:
 
 
 
-## class DataGithubOrganizationTeamsTeams  <a id="cdktf-provider-github-datagithuborganizationteamsteams"></a>
+## class DataGithubOrganizationTeamsTeamsList  <a id="cdktf-provider-github-datagithuborganizationteamsteamslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2317,13 +2394,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubOrganizationTeamsTeams(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataGithubOrganizationTeamsTeamsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithuborganizationteamsteamslist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubOrganizationTeamsTeamsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubOrganizationTeamsTeamsOutputReference](#cdktf-provider-github-datagithuborganizationteamsteamsoutputreference)</code>
+
+
+
+## class DataGithubOrganizationTeamsTeamsOutputReference  <a id="cdktf-provider-github-datagithuborganizationteamsteamsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubOrganizationTeamsTeamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2340,6 +2466,7 @@ Name | Type | Description
 **privacy** | <code>string</code> | <span></span>
 **repositories** | <code>Array<string></code> | <span></span>
 **slug** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteamsteams)</code> | __*Optional*__
 
 
 
@@ -2617,6 +2744,7 @@ Name | Type | Description
 **allowRebaseMerge** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowSquashMerge** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **archived** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**branches** | <code>[DataGithubRepositoryBranchesList](#cdktf-provider-github-datagithubrepositorybrancheslist)</code> | <span></span>
 **defaultBranch** | <code>string</code> | <span></span>
 **description** | <code>string</code> | <span></span>
 **fullName** | <code>string</code> | <span></span>
@@ -2631,6 +2759,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
+**pages** | <code>[DataGithubRepositoryPagesList](#cdktf-provider-github-datagithubrepositorypageslist)</code> | <span></span>
 **private** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repoId** | <code>number</code> | <span></span>
 **sshCloneUrl** | <code>string</code> | <span></span>
@@ -2645,32 +2774,6 @@ Name | Type | Description
 
 ### Methods
 
-
-#### branches(index) <a id="cdktf-provider-github-datagithubrepository-branches"></a>
-
-
-
-```ts
-branches(index: string): DataGithubRepositoryBranches
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepositorybranches)</code>
-
-#### pages(index) <a id="cdktf-provider-github-datagithubrepository-pages"></a>
-
-
-
-```ts
-pages(index: string): DataGithubRepositoryPages
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepositorypages)</code>
 
 #### resetDescription() <a id="cdktf-provider-github-datagithubrepository-resetdescription"></a>
 
@@ -2734,12 +2837,12 @@ __Returns__:
 
 
 
-## class DataGithubRepositoryBranches  <a id="cdktf-provider-github-datagithubrepositorybranches"></a>
+## class DataGithubRepositoryBranchesList  <a id="cdktf-provider-github-datagithubrepositorybrancheslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2747,13 +2850,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubRepositoryBranches(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataGithubRepositoryBranchesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubrepositorybrancheslist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubRepositoryBranchesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubRepositoryBranchesOutputReference](#cdktf-provider-github-datagithubrepositorybranchesoutputreference)</code>
+
+
+
+## class DataGithubRepositoryBranchesOutputReference  <a id="cdktf-provider-github-datagithubrepositorybranchesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubRepositoryBranchesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2764,6 +2916,7 @@ Name | Type | Description
 -----|------|-------------
 **name** | <code>string</code> | <span></span>
 **protected** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepositorybranches)</code> | __*Optional*__
 
 
 
@@ -2909,12 +3062,12 @@ __Returns__:
 
 
 
-## class DataGithubRepositoryPages  <a id="cdktf-provider-github-datagithubrepositorypages"></a>
+## class DataGithubRepositoryPagesList  <a id="cdktf-provider-github-datagithubrepositorypageslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2922,13 +3075,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubRepositoryPages(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataGithubRepositoryPagesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubrepositorypageslist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubRepositoryPagesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubRepositoryPagesOutputReference](#cdktf-provider-github-datagithubrepositorypagesoutputreference)</code>
+
+
+
+## class DataGithubRepositoryPagesOutputReference  <a id="cdktf-provider-github-datagithubrepositorypagesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubRepositoryPagesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2940,18 +3142,19 @@ Name | Type | Description
 **cname** | <code>string</code> | <span></span>
 **custom404** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **htmlUrl** | <code>string</code> | <span></span>
-**source** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**source** | <code>[DataGithubRepositoryPagesSourceList](#cdktf-provider-github-datagithubrepositorypagessourcelist)</code> | <span></span>
 **status** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepositorypages)</code> | __*Optional*__
 
 
 
-## class DataGithubRepositoryPagesSource  <a id="cdktf-provider-github-datagithubrepositorypagessource"></a>
+## class DataGithubRepositoryPagesSourceList  <a id="cdktf-provider-github-datagithubrepositorypagessourcelist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -2959,13 +3162,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubRepositoryPagesSource(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataGithubRepositoryPagesSourceList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubrepositorypagessourcelist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubRepositoryPagesSourceOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubRepositoryPagesSourceOutputReference](#cdktf-provider-github-datagithubrepositorypagessourceoutputreference)</code>
+
+
+
+## class DataGithubRepositoryPagesSourceOutputReference  <a id="cdktf-provider-github-datagithubrepositorypagessourceoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubRepositoryPagesSourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -2976,6 +3228,7 @@ Name | Type | Description
 -----|------|-------------
 **branch** | <code>string</code> | <span></span>
 **path** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataGithubRepositoryPagesSource](#cdktf-provider-github-datagithubrepositorypagessource)</code> | __*Optional*__
 
 
 
@@ -3109,6 +3362,7 @@ Name | Type | Description
 **headRef** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **owner** | <code>string</code> | <span></span>
+**results** | <code>[DataGithubRepositoryPullRequestsResultsList](#cdktf-provider-github-datagithubrepositorypullrequestsresultslist)</code> | <span></span>
 **sortBy** | <code>string</code> | <span></span>
 **sortDirection** | <code>string</code> | <span></span>
 **state** | <code>string</code> | <span></span>
@@ -3196,19 +3450,6 @@ resetState(): void
 
 
 
-#### results(index) <a id="cdktf-provider-github-datagithubrepositorypullrequests-results"></a>
-
-
-
-```ts
-results(index: string): DataGithubRepositoryPullRequestsResults
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequestsresults)</code>
-
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositorypullrequests-synthesizeattributes"></a>
 
 
@@ -3223,12 +3464,12 @@ __Returns__:
 
 
 
-## class DataGithubRepositoryPullRequestsResults  <a id="cdktf-provider-github-datagithubrepositorypullrequestsresults"></a>
+## class DataGithubRepositoryPullRequestsResultsList  <a id="cdktf-provider-github-datagithubrepositorypullrequestsresultslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -3236,13 +3477,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubRepositoryPullRequestsResults(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataGithubRepositoryPullRequestsResultsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubrepositorypullrequestsresultslist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubRepositoryPullRequestsResultsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubRepositoryPullRequestsResultsOutputReference](#cdktf-provider-github-datagithubrepositorypullrequestsresultsoutputreference)</code>
+
+
+
+## class DataGithubRepositoryPullRequestsResultsOutputReference  <a id="cdktf-provider-github-datagithubrepositorypullrequestsresultsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubRepositoryPullRequestsResultsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -3267,6 +3557,7 @@ Name | Type | Description
 **state** | <code>string</code> | <span></span>
 **title** | <code>string</code> | <span></span>
 **updatedAt** | <code>number</code> | <span></span>
+**internalValue**? | <code>[DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequestsresults)</code> | __*Optional*__
 
 
 
@@ -3365,6 +3656,7 @@ new DataGithubTree(scope: Construct, id: string, config: DataGithubTreeConfig)
 
 Name | Type | Description 
 -----|------|-------------
+**entries** | <code>[DataGithubTreeEntriesList](#cdktf-provider-github-datagithubtreeentrieslist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **recursive** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
@@ -3376,19 +3668,6 @@ Name | Type | Description
 
 ### Methods
 
-
-#### entries(index) <a id="cdktf-provider-github-datagithubtree-entries"></a>
-
-
-
-```ts
-entries(index: string): DataGithubTreeEntries
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)</code>
 
 #### resetRecursive() <a id="cdktf-provider-github-datagithubtree-resetrecursive"></a>
 
@@ -3416,12 +3695,12 @@ __Returns__:
 
 
 
-## class DataGithubTreeEntries  <a id="cdktf-provider-github-datagithubtreeentries"></a>
+## class DataGithubTreeEntriesList  <a id="cdktf-provider-github-datagithubtreeentrieslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -3429,13 +3708,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new DataGithubTreeEntries(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new DataGithubTreeEntriesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubtreeentrieslist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubTreeEntriesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubTreeEntriesOutputReference](#cdktf-provider-github-datagithubtreeentriesoutputreference)</code>
+
+
+
+## class DataGithubTreeEntriesOutputReference  <a id="cdktf-provider-github-datagithubtreeentriesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubTreeEntriesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -3449,6 +3777,7 @@ Name | Type | Description
 **sha** | <code>string</code> | <span></span>
 **size** | <code>number</code> | <span></span>
 **type** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)</code> | __*Optional*__
 
 
 
@@ -4288,12 +4617,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new OrganizationWebhookConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new OrganizationWebhookConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -4577,6 +4905,7 @@ Name | Type | Description
 **archiveOnDestroy** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **archived** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **autoInit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**branches** | <code>[RepositoryBranchesList](#cdktf-provider-github-repositorybrancheslist)</code> | <span></span>
 **defaultBranch** | <code>string</code> | <span></span>
 **deleteBranchOnMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **description** | <code>string</code> | <span></span>
@@ -4636,19 +4965,6 @@ Name | Type | Description
 
 ### Methods
 
-
-#### branches(index) <a id="cdktf-provider-github-repository-branches"></a>
-
-
-
-```ts
-branches(index: string): RepositoryBranches
-```
-
-* **index** (<code>string</code>)  *No description*
-
-__Returns__:
-* <code>[RepositoryBranches](#cdktf-provider-github-repositorybranches)</code>
 
 #### putPages(value) <a id="cdktf-provider-github-repository-putpages"></a>
 
@@ -5055,12 +5371,12 @@ __Returns__:
 
 
 
-## class RepositoryBranches  <a id="cdktf-provider-github-repositorybranches"></a>
+## class RepositoryBranchesList  <a id="cdktf-provider-github-repositorybrancheslist"></a>
 
 
 
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
-__Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
 
@@ -5068,13 +5384,62 @@ __Extends__: [ComplexComputedList](#cdktf-complexcomputedlist)
 
 
 ```ts
-new RepositoryBranches(terraformResource: IInterpolatingParent, terraformAttribute: string, complexComputedListIndex: string, wrapsSet?: boolean)
+new RepositoryBranchesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  *No description*
-* **terraformAttribute** (<code>string</code>)  *No description*
-* **complexComputedListIndex** (<code>string</code>)  *No description*
-* **wrapsSet** (<code>boolean</code>)  *No description*
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-repositorybrancheslist-get"></a>
+
+
+
+```ts
+get(index: number): RepositoryBranchesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[RepositoryBranchesOutputReference](#cdktf-provider-github-repositorybranchesoutputreference)</code>
+
+
+
+## class RepositoryBranchesOutputReference  <a id="cdktf-provider-github-repositorybranchesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new RepositoryBranchesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
 
 
 
@@ -5085,6 +5450,7 @@ Name | Type | Description
 -----|------|-------------
 **name** | <code>string</code> | <span></span>
 **protected** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[RepositoryBranches](#cdktf-provider-github-repositorybranches)</code> | __*Optional*__
 
 
 
@@ -5382,12 +5748,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5660,12 +6025,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new RepositoryPagesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RepositoryPagesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5729,12 +6093,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new RepositoryPagesSourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RepositoryPagesSourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -5970,12 +6333,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new RepositoryTemplateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RepositoryTemplateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -6126,12 +6488,11 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new RepositoryWebhookConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean)
+new RepositoryWebhookConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
 * **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **isSingleItem** (<code>boolean</code>)  True if this is a block, false if it's a list.
 
 
 
@@ -7136,6 +7497,12 @@ Name | Type | Description
 
 
 
+## struct DataGithubCollaboratorsCollaborator  <a id="cdktf-provider-github-datagithubcollaboratorscollaborator"></a>
+
+
+
+
+
 ## struct DataGithubCollaboratorsConfig  <a id="cdktf-provider-github-datagithubcollaboratorsconfig"></a>
 
 
@@ -7222,6 +7589,12 @@ Name | Type | Description
 
 
 
+## struct DataGithubOrganizationTeamSyncGroupsGroups  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups"></a>
+
+
+
+
+
 ## struct DataGithubOrganizationTeamsConfig  <a id="cdktf-provider-github-datagithuborganizationteamsconfig"></a>
 
 
@@ -7236,6 +7609,12 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **rootTeamsOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization_teams#root_teams_only DataGithubOrganizationTeams#root_teams_only}.<br/>__*Optional*__
+
+
+
+## struct DataGithubOrganizationTeamsTeams  <a id="cdktf-provider-github-datagithuborganizationteamsteams"></a>
+
+
 
 
 
@@ -7293,6 +7672,12 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **sort**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#sort DataGithubRepositories#sort}.<br/>__*Optional*__
+
+
+
+## struct DataGithubRepositoryBranches  <a id="cdktf-provider-github-datagithubrepositorybranches"></a>
+
+
 
 
 
@@ -7354,6 +7739,18 @@ Name | Type | Description
 
 
 
+## struct DataGithubRepositoryPages  <a id="cdktf-provider-github-datagithubrepositorypages"></a>
+
+
+
+
+
+## struct DataGithubRepositoryPagesSource  <a id="cdktf-provider-github-datagithubrepositorypagessource"></a>
+
+
+
+
+
 ## struct DataGithubRepositoryPullRequestConfig  <a id="cdktf-provider-github-datagithubrepositorypullrequestconfig"></a>
 
 
@@ -7396,6 +7793,12 @@ Name | Type | Description
 
 
 
+## struct DataGithubRepositoryPullRequestsResults  <a id="cdktf-provider-github-datagithubrepositorypullrequestsresults"></a>
+
+
+
+
+
 ## struct DataGithubTeamConfig  <a id="cdktf-provider-github-datagithubteamconfig"></a>
 
 
@@ -7429,6 +7832,12 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **recursive**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/tree#recursive DataGithubTree#recursive}.<br/>__*Optional*__
+
+
+
+## struct DataGithubTreeEntries  <a id="cdktf-provider-github-datagithubtreeentries"></a>
+
+
 
 
 
@@ -7687,6 +8096,12 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct RepositoryBranches  <a id="cdktf-provider-github-repositorybranches"></a>
+
+
 
 
 

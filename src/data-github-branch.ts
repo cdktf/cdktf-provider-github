@@ -25,7 +25,7 @@ export class DataGithubBranch extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_branch";
+  public static readonly tfResourceType = "github_branch";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class DataGithubBranch extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'github_branch',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -60,10 +60,9 @@ export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): RepositoryEnvironmentDeploymentBranchPolicy | undefined {
@@ -150,7 +149,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_repository_environment";
+  public static readonly tfResourceType = "github_repository_environment";
 
   // ===========
   // INITIALIZER
@@ -167,7 +166,9 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_repository_environment',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -233,7 +234,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
 
   // deployment_branch_policy - computed: false, optional: true, required: false
-  private _deploymentBranchPolicy = new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(this, "deployment_branch_policy", true);
+  private _deploymentBranchPolicy = new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(this, "deployment_branch_policy");
   public get deploymentBranchPolicy() {
     return this._deploymentBranchPolicy;
   }

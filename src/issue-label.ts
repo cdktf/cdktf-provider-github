@@ -33,7 +33,7 @@ export class IssueLabel extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_issue_label";
+  public static readonly tfResourceType = "github_issue_label";
 
   // ===========
   // INITIALIZER
@@ -50,7 +50,9 @@ export class IssueLabel extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_issue_label',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

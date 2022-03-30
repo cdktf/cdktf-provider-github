@@ -21,7 +21,7 @@ export class DataGithubUsers extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_users";
+  public static readonly tfResourceType = "github_users";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class DataGithubUsers extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'github_users',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

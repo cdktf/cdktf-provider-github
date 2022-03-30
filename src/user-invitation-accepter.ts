@@ -21,7 +21,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_user_invitation_accepter";
+  public static readonly tfResourceType = "github_user_invitation_accepter";
 
   // ===========
   // INITIALIZER
@@ -38,7 +38,9 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_user_invitation_accepter',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

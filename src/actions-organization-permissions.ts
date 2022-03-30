@@ -61,10 +61,9 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ActionsOrganizationPermissionsAllowedActionsConfig | undefined {
@@ -168,10 +167,9 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param isSingleItem True if this is a block, false if it's a list
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, isSingleItem: boolean) {
-    super(terraformResource, terraformAttribute, isSingleItem);
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
   }
 
   public get internalValue(): ActionsOrganizationPermissionsEnabledRepositoriesConfig | undefined {
@@ -217,7 +215,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_actions_organization_permissions";
+  public static readonly tfResourceType = "github_actions_organization_permissions";
 
   // ===========
   // INITIALIZER
@@ -234,7 +232,9 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_actions_organization_permissions',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -286,7 +286,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   }
 
   // allowed_actions_config - computed: false, optional: true, required: false
-  private _allowedActionsConfig = new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(this, "allowed_actions_config", true);
+  private _allowedActionsConfig = new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(this, "allowed_actions_config");
   public get allowedActionsConfig() {
     return this._allowedActionsConfig;
   }
@@ -302,7 +302,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   }
 
   // enabled_repositories_config - computed: false, optional: true, required: false
-  private _enabledRepositoriesConfig = new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(this, "enabled_repositories_config", true);
+  private _enabledRepositoriesConfig = new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(this, "enabled_repositories_config");
   public get enabledRepositoriesConfig() {
     return this._enabledRepositoriesConfig;
   }

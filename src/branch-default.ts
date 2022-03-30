@@ -25,7 +25,7 @@ export class BranchDefault extends cdktf.TerraformResource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_branch_default";
+  public static readonly tfResourceType = "github_branch_default";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class BranchDefault extends cdktf.TerraformResource {
     super(scope, id, {
       terraformResourceType: 'github_branch_default',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

@@ -25,7 +25,7 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "github_actions_organization_secret_repositories";
+  public static readonly tfResourceType = "github_actions_organization_secret_repositories";
 
   // ===========
   // INITIALIZER
@@ -42,7 +42,9 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
     super(scope, id, {
       terraformResourceType: 'github_actions_organization_secret_repositories',
       terraformGeneratorMetadata: {
-        providerName: 'github'
+        providerName: 'github',
+        providerVersion: '4.23.0',
+        providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
