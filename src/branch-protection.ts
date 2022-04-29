@@ -149,7 +149,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_protection',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.24.0',
+        providerVersion: '4.24.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
