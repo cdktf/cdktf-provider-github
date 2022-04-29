@@ -8,9 +8,9 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRefConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#branch DataGithubRef#branch}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#ref DataGithubRef#ref}
   */
-  readonly branch: string;
+  readonly ref: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#repository DataGithubRef#repository}
   */
@@ -43,7 +43,7 @@ export class DataGithubRef extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_ref',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -51,26 +51,13 @@ export class DataGithubRef extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
-    this._branch = config.branch;
+    this._ref = config.ref;
     this._repository = config.repository;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
-
-  // branch - computed: false, optional: false, required: true
-  private _branch?: string; 
-  public get branch() {
-    return this.getStringAttribute('branch');
-  }
-  public set branch(value: string) {
-    this._branch = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get branchInput() {
-    return this._branch;
-  }
 
   // etag - computed: true, optional: false, required: false
   public get etag() {
@@ -82,9 +69,17 @@ export class DataGithubRef extends cdktf.TerraformDataSource {
     return this.getStringAttribute('id');
   }
 
-  // ref - computed: true, optional: false, required: false
+  // ref - computed: false, optional: false, required: true
+  private _ref?: string; 
   public get ref() {
     return this.getStringAttribute('ref');
+  }
+  public set ref(value: string) {
+    this._ref = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get refInput() {
+    return this._ref;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -111,7 +106,7 @@ export class DataGithubRef extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      branch: cdktf.stringToTerraform(this._branch),
+      ref: cdktf.stringToTerraform(this._ref),
       repository: cdktf.stringToTerraform(this._repository),
     };
   }
