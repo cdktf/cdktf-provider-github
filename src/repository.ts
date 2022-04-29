@@ -12,10 +12,6 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowAutoMerge?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_forking Repository#allow_forking}
-  */
-  readonly allowForking?: boolean | cdktf.IResolvable;
-  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_merge_commit Repository#allow_merge_commit}
   */
   readonly allowMergeCommit?: boolean | cdktf.IResolvable;
@@ -504,7 +500,7 @@ export class Repository extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.24.0',
+        providerVersion: '4.24.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -513,7 +509,6 @@ export class Repository extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._allowAutoMerge = config.allowAutoMerge;
-    this._allowForking = config.allowForking;
     this._allowMergeCommit = config.allowMergeCommit;
     this._allowRebaseMerge = config.allowRebaseMerge;
     this._allowSquashMerge = config.allowSquashMerge;
@@ -559,22 +554,6 @@ export class Repository extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowAutoMergeInput() {
     return this._allowAutoMerge;
-  }
-
-  // allow_forking - computed: false, optional: true, required: false
-  private _allowForking?: boolean | cdktf.IResolvable; 
-  public get allowForking() {
-    return this.getBooleanAttribute('allow_forking');
-  }
-  public set allowForking(value: boolean | cdktf.IResolvable) {
-    this._allowForking = value;
-  }
-  public resetAllowForking() {
-    this._allowForking = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get allowForkingInput() {
-    return this._allowForking;
   }
 
   // allow_merge_commit - computed: false, optional: true, required: false
@@ -1037,7 +1016,6 @@ export class Repository extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       allow_auto_merge: cdktf.booleanToTerraform(this._allowAutoMerge),
-      allow_forking: cdktf.booleanToTerraform(this._allowForking),
       allow_merge_commit: cdktf.booleanToTerraform(this._allowMergeCommit),
       allow_rebase_merge: cdktf.booleanToTerraform(this._allowRebaseMerge),
       allow_squash_merge: cdktf.booleanToTerraform(this._allowSquashMerge),

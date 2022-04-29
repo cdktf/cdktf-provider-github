@@ -233,7 +233,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_organization_permissions',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.24.0',
+        providerVersion: '4.24.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
