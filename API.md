@@ -2493,7 +2493,7 @@ new DataGithubRef(scope: Construct, id: string, config: DataGithubRefConfig)
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
-  * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#branch DataGithubRef#branch}. 
+  * **ref** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#ref DataGithubRef#ref}. 
   * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#repository DataGithubRef#repository}. 
 
 
@@ -2503,13 +2503,12 @@ new DataGithubRef(scope: Construct, id: string, config: DataGithubRefConfig)
 
 Name | Type | Description 
 -----|------|-------------
-**branch** | <code>string</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **ref** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **sha** | <code>string</code> | <span></span>
-**branchInput**? | <code>string</code> | __*Optional*__
+**refInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -2727,6 +2726,7 @@ new DataGithubRepository(scope: Construct, id: string, config?: DataGithubReposi
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **allowForking** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#allow_forking DataGithubRepository#allow_forking}. __*Optional*__
   * **description** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#description DataGithubRepository#description}. __*Optional*__
   * **fullName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#full_name DataGithubRepository#full_name}. __*Optional*__
   * **homepageUrl** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#homepage_url DataGithubRepository#homepage_url}. __*Optional*__
@@ -2740,6 +2740,7 @@ new DataGithubRepository(scope: Construct, id: string, config?: DataGithubReposi
 Name | Type | Description 
 -----|------|-------------
 **allowAutoMerge** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**allowForking** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowMergeCommit** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowRebaseMerge** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowSquashMerge** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
@@ -2766,6 +2767,7 @@ Name | Type | Description
 **svnUrl** | <code>string</code> | <span></span>
 **topics** | <code>Array<string></code> | <span></span>
 **visibility** | <code>string</code> | <span></span>
+**allowForkingInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **descriptionInput**? | <code>string</code> | __*Optional*__
 **fullNameInput**? | <code>string</code> | __*Optional*__
 **homepageUrlInput**? | <code>string</code> | __*Optional*__
@@ -2773,6 +2775,18 @@ Name | Type | Description
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
+
+
+#### resetAllowForking() <a id="cdktf-provider-github-datagithubrepository-resetallowforking"></a>
+
+
+
+```ts
+resetAllowForking(): void
+```
+
+
+
 
 
 #### resetDescription() <a id="cdktf-provider-github-datagithubrepository-resetdescription"></a>
@@ -4866,6 +4880,7 @@ new Repository(scope: Construct, id: string, config: RepositoryConfig)
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#name Repository#name}. 
   * **allowAutoMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_auto_merge Repository#allow_auto_merge}. __*Optional*__
+  * **allowForking** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_forking Repository#allow_forking}. __*Optional*__
   * **allowMergeCommit** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_merge_commit Repository#allow_merge_commit}. __*Optional*__
   * **allowRebaseMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_rebase_merge Repository#allow_rebase_merge}. __*Optional*__
   * **allowSquashMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_squash_merge Repository#allow_squash_merge}. __*Optional*__
@@ -4899,6 +4914,7 @@ new Repository(scope: Construct, id: string, config: RepositoryConfig)
 Name | Type | Description 
 -----|------|-------------
 **allowAutoMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**allowForking** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowMergeCommit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowRebaseMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowSquashMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
@@ -4936,6 +4952,7 @@ Name | Type | Description
 **visibility** | <code>string</code> | <span></span>
 **vulnerabilityAlerts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowAutoMergeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**allowForkingInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowMergeCommitInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowRebaseMergeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowSquashMergeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
@@ -5002,6 +5019,18 @@ putTemplate(value: RepositoryTemplate): void
 
 ```ts
 resetAllowAutoMerge(): void
+```
+
+
+
+
+
+#### resetAllowForking() <a id="cdktf-provider-github-repository-resetallowforking"></a>
+
+
+
+```ts
+resetAllowForking(): void
 ```
 
 
@@ -7627,7 +7656,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**branch** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#branch DataGithubRef#branch}.
+**ref** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#ref DataGithubRef#ref}.
 **repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#repository DataGithubRef#repository}.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -7690,6 +7719,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**allowForking**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#allow_forking DataGithubRepository#allow_forking}.<br/>__*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **description**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#description DataGithubRepository#description}.<br/>__*Optional*__
@@ -8136,6 +8166,7 @@ Name | Type | Description
 -----|------|-------------
 **name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#name Repository#name}.
 **allowAutoMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_auto_merge Repository#allow_auto_merge}.<br/>__*Optional*__
+**allowForking**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_forking Repository#allow_forking}.<br/>__*Optional*__
 **allowMergeCommit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_merge_commit Repository#allow_merge_commit}.<br/>__*Optional*__
 **allowRebaseMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_rebase_merge Repository#allow_rebase_merge}.<br/>__*Optional*__
 **allowSquashMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_squash_merge Repository#allow_squash_merge}.<br/>__*Optional*__

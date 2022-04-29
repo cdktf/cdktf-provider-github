@@ -39,7 +39,7 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_team',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

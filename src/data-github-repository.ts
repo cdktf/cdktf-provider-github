@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#allow_forking DataGithubRepository#allow_forking}
+  */
+  readonly allowForking?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#description DataGithubRepository#description}
   */
   readonly description?: string;
@@ -279,7 +283,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.23.0',
+        providerVersion: '4.24.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -287,6 +291,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       count: config.count,
       lifecycle: config.lifecycle
     });
+    this._allowForking = config.allowForking;
     this._description = config.description;
     this._fullName = config.fullName;
     this._homepageUrl = config.homepageUrl;
@@ -300,6 +305,22 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // allow_auto_merge - computed: true, optional: false, required: false
   public get allowAutoMerge() {
     return this.getBooleanAttribute('allow_auto_merge');
+  }
+
+  // allow_forking - computed: false, optional: true, required: false
+  private _allowForking?: boolean | cdktf.IResolvable; 
+  public get allowForking() {
+    return this.getBooleanAttribute('allow_forking');
+  }
+  public set allowForking(value: boolean | cdktf.IResolvable) {
+    this._allowForking = value;
+  }
+  public resetAllowForking() {
+    this._allowForking = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowForkingInput() {
+    return this._allowForking;
   }
 
   // allow_merge_commit - computed: true, optional: false, required: false
@@ -484,6 +505,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_forking: cdktf.booleanToTerraform(this._allowForking),
       description: cdktf.stringToTerraform(this._description),
       full_name: cdktf.stringToTerraform(this._fullName),
       homepage_url: cdktf.stringToTerraform(this._homepageUrl),
