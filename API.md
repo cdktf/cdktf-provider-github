@@ -56,6 +56,7 @@ Name|Description
 [DataGithubTreeEntriesOutputReference](#cdktf-provider-github-datagithubtreeentriesoutputreference)|*No description*
 [DataGithubUser](#cdktf-provider-github-datagithubuser)|Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}.
 [DataGithubUsers](#cdktf-provider-github-datagithubusers)|Represents a {@link https://www.terraform.io/docs/providers/github/d/users github_users}.
+[EmuGroupMapping](#cdktf-provider-github-emugroupmapping)|Represents a {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping github_emu_group_mapping}.
 [GithubProvider](#cdktf-provider-github-githubprovider)|Represents a {@link https://www.terraform.io/docs/providers/github github}.
 [Issue](#cdktf-provider-github-issue)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue github_issue}.
 [IssueLabel](#cdktf-provider-github-issuelabel)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label}.
@@ -143,6 +144,7 @@ Name|Description
 [DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)|*No description*
 [DataGithubUserConfig](#cdktf-provider-github-datagithubuserconfig)|*No description*
 [DataGithubUsersConfig](#cdktf-provider-github-datagithubusersconfig)|*No description*
+[EmuGroupMappingConfig](#cdktf-provider-github-emugroupmappingconfig)|*No description*
 [GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)|*No description*
 [GithubProviderConfig](#cdktf-provider-github-githubproviderconfig)|*No description*
 [IssueConfig](#cdktf-provider-github-issueconfig)|*No description*
@@ -3898,6 +3900,64 @@ Name | Type | Description
 
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubusers-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class EmuGroupMapping  <a id="cdktf-provider-github-emugroupmapping"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping github_emu_group_mapping}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping github_emu_group_mapping} Resource.
+
+```ts
+new EmuGroupMapping(scope: Construct, id: string, config: EmuGroupMappingConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[EmuGroupMappingConfig](#cdktf-provider-github-emugroupmappingconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **groupId** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#group_id EmuGroupMapping#group_id}. 
+  * **teamSlug** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#team_slug EmuGroupMapping#team_slug}. 
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**etag** | <code>string</code> | <span></span>
+**groupId** | <code>number</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**teamSlug** | <code>string</code> | <span></span>
+**groupIdInput**? | <code>number</code> | __*Optional*__
+**teamSlugInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-emugroupmapping-synthesizeattributes"></a>
 
 
 
@@ -7867,6 +7927,24 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **usernames** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/users#usernames DataGithubUsers#usernames}.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct EmuGroupMappingConfig  <a id="cdktf-provider-github-emugroupmappingconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**groupId** | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#group_id EmuGroupMapping#group_id}.
+**teamSlug** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#team_slug EmuGroupMapping#team_slug}.
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__

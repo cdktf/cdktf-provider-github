@@ -72,7 +72,7 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_sync_group_mapping',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.24.1',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
