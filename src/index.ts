@@ -10,6 +10,7 @@ export * from './branch';
 export * from './branch-default';
 export * from './branch-protection';
 export * from './branch-protection-v3';
+export * from './emu-group-mapping';
 export * from './issue';
 export * from './issue-label';
 export * from './membership';

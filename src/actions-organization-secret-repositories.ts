@@ -43,7 +43,7 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
       terraformResourceType: 'github_actions_organization_secret_repositories',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.24.1',
+        providerVersion: '4.25.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
