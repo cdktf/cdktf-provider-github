@@ -16,6 +16,13 @@ export interface ActionsOrganizationPermissionsConfig extends cdktf.TerraformMet
   */
   readonly enabledRepositories: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#id ActionsOrganizationPermissions#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * allowed_actions_config block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
@@ -243,6 +250,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
     });
     this._allowedActions = config.allowedActions;
     this._enabledRepositories = config.enabledRepositories;
+    this._id = config.id;
     this._allowedActionsConfig.internalValue = config.allowedActionsConfig;
     this._enabledRepositoriesConfig.internalValue = config.enabledRepositoriesConfig;
   }
@@ -281,8 +289,19 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // allowed_actions_config - computed: false, optional: true, required: false
@@ -325,6 +344,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
     return {
       allowed_actions: cdktf.stringToTerraform(this._allowedActions),
       enabled_repositories: cdktf.stringToTerraform(this._enabledRepositories),
+      id: cdktf.stringToTerraform(this._id),
       allowed_actions_config: actionsOrganizationPermissionsAllowedActionsConfigToTerraform(this._allowedActionsConfig.internalValue),
       enabled_repositories_config: actionsOrganizationPermissionsEnabledRepositoriesConfigToTerraform(this._enabledRepositoriesConfig.internalValue),
     };

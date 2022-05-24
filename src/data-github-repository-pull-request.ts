@@ -12,6 +12,13 @@ export interface DataGithubRepositoryPullRequestConfig extends cdktf.TerraformMe
   */
   readonly baseRepository: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request#id DataGithubRepositoryPullRequest#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request#number DataGithubRepositoryPullRequest#number}
   */
   readonly number: number;
@@ -56,6 +63,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
       lifecycle: config.lifecycle
     });
     this._baseRepository = config.baseRepository;
+    this._id = config.id;
     this._number = config.number;
     this._owner = config.owner;
   }
@@ -118,8 +126,19 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // labels - computed: true, optional: false, required: false
@@ -193,6 +212,7 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       base_repository: cdktf.stringToTerraform(this._baseRepository),
+      id: cdktf.stringToTerraform(this._id),
       number: cdktf.numberToTerraform(this._number),
       owner: cdktf.stringToTerraform(this._owner),
     };

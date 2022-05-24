@@ -24,6 +24,13 @@ export interface RepositoryPullRequestConfig extends cdktf.TerraformMetaArgument
   */
   readonly headRef: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#id RepositoryPullRequest#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}
   */
   readonly maintainerCanModify?: boolean | cdktf.IResolvable;
@@ -75,6 +82,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
     this._baseRepository = config.baseRepository;
     this._body = config.body;
     this._headRef = config.headRef;
+    this._id = config.id;
     this._maintainerCanModify = config.maintainerCanModify;
     this._owner = config.owner;
     this._title = config.title;
@@ -155,8 +163,19 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // labels - computed: true, optional: false, required: false
@@ -244,6 +263,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
       base_repository: cdktf.stringToTerraform(this._baseRepository),
       body: cdktf.stringToTerraform(this._body),
       head_ref: cdktf.stringToTerraform(this._headRef),
+      id: cdktf.stringToTerraform(this._id),
       maintainer_can_modify: cdktf.booleanToTerraform(this._maintainerCanModify),
       owner: cdktf.stringToTerraform(this._owner),
       title: cdktf.stringToTerraform(this._title),

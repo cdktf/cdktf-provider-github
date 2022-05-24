@@ -16,6 +16,13 @@ export interface OrganizationWebhookConfig extends cdktf.TerraformMetaArguments 
   */
   readonly events: string[];
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#id OrganizationWebhook#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#name OrganizationWebhook#name}
   */
   readonly name?: string;
@@ -206,6 +213,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
     });
     this._active = config.active;
     this._events = config.events;
+    this._id = config.id;
     this._name = config.name;
     this._configuration.internalValue = config.configuration;
   }
@@ -249,8 +257,19 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: true, required: false
@@ -298,6 +317,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
     return {
       active: cdktf.booleanToTerraform(this._active),
       events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       configuration: organizationWebhookConfigurationToTerraform(this._configuration.internalValue),
     };

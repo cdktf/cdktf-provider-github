@@ -12,6 +12,13 @@ export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
   */
   readonly encryptedValue?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#id ActionsSecret#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#plaintext_value ActionsSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
@@ -60,6 +67,7 @@ export class ActionsSecret extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._encryptedValue = config.encryptedValue;
+    this._id = config.id;
     this._plaintextValue = config.plaintextValue;
     this._repository = config.repository;
     this._secretName = config.secretName;
@@ -91,8 +99,19 @@ export class ActionsSecret extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // plaintext_value - computed: false, optional: true, required: false
@@ -149,6 +168,7 @@ export class ActionsSecret extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       encrypted_value: cdktf.stringToTerraform(this._encryptedValue),
+      id: cdktf.stringToTerraform(this._id),
       plaintext_value: cdktf.stringToTerraform(this._plaintextValue),
       repository: cdktf.stringToTerraform(this._repository),
       secret_name: cdktf.stringToTerraform(this._secretName),

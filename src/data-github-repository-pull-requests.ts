@@ -20,6 +20,13 @@ export interface DataGithubRepositoryPullRequestsConfig extends cdktf.TerraformM
   */
   readonly headRef?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#id DataGithubRepositoryPullRequests#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests#owner DataGithubRepositoryPullRequests#owner}
   */
   readonly owner?: string;
@@ -213,6 +220,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
     this._baseRef = config.baseRef;
     this._baseRepository = config.baseRepository;
     this._headRef = config.headRef;
+    this._id = config.id;
     this._owner = config.owner;
     this._sortBy = config.sortBy;
     this._sortDirection = config.sortDirection;
@@ -269,8 +277,19 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // owner - computed: false, optional: true, required: false
@@ -352,6 +371,7 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
       base_ref: cdktf.stringToTerraform(this._baseRef),
       base_repository: cdktf.stringToTerraform(this._baseRepository),
       head_ref: cdktf.stringToTerraform(this._headRef),
+      id: cdktf.stringToTerraform(this._id),
       owner: cdktf.stringToTerraform(this._owner),
       sort_by: cdktf.stringToTerraform(this._sortBy),
       sort_direction: cdktf.stringToTerraform(this._sortDirection),

@@ -12,6 +12,13 @@ export interface RepositoryEnvironmentConfig extends cdktf.TerraformMetaArgument
   */
   readonly environment: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#id RepositoryEnvironment#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#repository RepositoryEnvironment#repository}
   */
   readonly repository: string;
@@ -140,6 +147,108 @@ export function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnv
   }
 }
 
+export class RepositoryEnvironmentReviewersOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RepositoryEnvironmentReviewers | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._teams !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teams = this._teams;
+    }
+    if (this._users !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.users = this._users;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositoryEnvironmentReviewers | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._teams = undefined;
+      this._users = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._teams = value.teams;
+      this._users = value.users;
+    }
+  }
+
+  // teams - computed: false, optional: true, required: false
+  private _teams?: number[]; 
+  public get teams() {
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('teams')));
+  }
+  public set teams(value: number[]) {
+    this._teams = value;
+  }
+  public resetTeams() {
+    this._teams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamsInput() {
+    return this._teams;
+  }
+
+  // users - computed: false, optional: true, required: false
+  private _users?: number[]; 
+  public get users() {
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('users')));
+  }
+  public set users(value: number[]) {
+    this._users = value;
+  }
+  public resetUsers() {
+    this._users = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersInput() {
+    return this._users;
+  }
+}
+
+export class RepositoryEnvironmentReviewersList extends cdktf.ComplexList {
+  public internalValue? : RepositoryEnvironmentReviewers[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RepositoryEnvironmentReviewersOutputReference {
+    return new RepositoryEnvironmentReviewersOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment github_repository_environment}
@@ -176,10 +285,11 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._environment = config.environment;
+    this._id = config.id;
     this._repository = config.repository;
     this._waitTimer = config.waitTimer;
     this._deploymentBranchPolicy.internalValue = config.deploymentBranchPolicy;
-    this._reviewers = config.reviewers;
+    this._reviewers.internalValue = config.reviewers;
   }
 
   // ==========
@@ -200,8 +310,19 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -250,20 +371,19 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   }
 
   // reviewers - computed: false, optional: true, required: false
-  private _reviewers?: RepositoryEnvironmentReviewers[] | cdktf.IResolvable; 
+  private _reviewers = new RepositoryEnvironmentReviewersList(this, "reviewers", false);
   public get reviewers() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('reviewers');
+    return this._reviewers;
   }
-  public set reviewers(value: RepositoryEnvironmentReviewers[] | cdktf.IResolvable) {
-    this._reviewers = value;
+  public putReviewers(value: RepositoryEnvironmentReviewers[] | cdktf.IResolvable) {
+    this._reviewers.internalValue = value;
   }
   public resetReviewers() {
-    this._reviewers = undefined;
+    this._reviewers.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get reviewersInput() {
-    return this._reviewers;
+    return this._reviewers.internalValue;
   }
 
   // =========
@@ -273,10 +393,11 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       environment: cdktf.stringToTerraform(this._environment),
+      id: cdktf.stringToTerraform(this._id),
       repository: cdktf.stringToTerraform(this._repository),
       wait_timer: cdktf.numberToTerraform(this._waitTimer),
       deployment_branch_policy: repositoryEnvironmentDeploymentBranchPolicyToTerraform(this._deploymentBranchPolicy.internalValue),
-      reviewers: cdktf.listMapper(repositoryEnvironmentReviewersToTerraform)(this._reviewers),
+      reviewers: cdktf.listMapper(repositoryEnvironmentReviewersToTerraform)(this._reviewers.internalValue),
     };
   }
 }
