@@ -12,6 +12,13 @@ export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly body?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#id RepositoryProject#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#name RepositoryProject#name}
   */
   readonly name: string;
@@ -56,6 +63,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._body = config.body;
+    this._id = config.id;
     this._name = config.name;
     this._repository = config.repository;
   }
@@ -86,8 +94,19 @@ export class RepositoryProject extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -128,6 +147,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       body: cdktf.stringToTerraform(this._body),
+      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       repository: cdktf.stringToTerraform(this._repository),
     };

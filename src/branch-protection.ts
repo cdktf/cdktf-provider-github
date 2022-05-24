@@ -20,6 +20,13 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly enforceAdmins?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#id BranchProtection#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pattern BranchProtection#pattern}
   */
   readonly pattern: string;
@@ -100,6 +107,196 @@ export function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: B
   }
 }
 
+export class BranchProtectionRequiredPullRequestReviewsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BranchProtectionRequiredPullRequestReviews | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._dismissStaleReviews !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dismissStaleReviews = this._dismissStaleReviews;
+    }
+    if (this._dismissalRestrictions !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.dismissalRestrictions = this._dismissalRestrictions;
+    }
+    if (this._pullRequestBypassers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pullRequestBypassers = this._pullRequestBypassers;
+    }
+    if (this._requireCodeOwnerReviews !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requireCodeOwnerReviews = this._requireCodeOwnerReviews;
+    }
+    if (this._requiredApprovingReviewCount !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requiredApprovingReviewCount = this._requiredApprovingReviewCount;
+    }
+    if (this._restrictDismissals !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.restrictDismissals = this._restrictDismissals;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BranchProtectionRequiredPullRequestReviews | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._dismissStaleReviews = undefined;
+      this._dismissalRestrictions = undefined;
+      this._pullRequestBypassers = undefined;
+      this._requireCodeOwnerReviews = undefined;
+      this._requiredApprovingReviewCount = undefined;
+      this._restrictDismissals = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._dismissStaleReviews = value.dismissStaleReviews;
+      this._dismissalRestrictions = value.dismissalRestrictions;
+      this._pullRequestBypassers = value.pullRequestBypassers;
+      this._requireCodeOwnerReviews = value.requireCodeOwnerReviews;
+      this._requiredApprovingReviewCount = value.requiredApprovingReviewCount;
+      this._restrictDismissals = value.restrictDismissals;
+    }
+  }
+
+  // dismiss_stale_reviews - computed: false, optional: true, required: false
+  private _dismissStaleReviews?: boolean | cdktf.IResolvable; 
+  public get dismissStaleReviews() {
+    return this.getBooleanAttribute('dismiss_stale_reviews');
+  }
+  public set dismissStaleReviews(value: boolean | cdktf.IResolvable) {
+    this._dismissStaleReviews = value;
+  }
+  public resetDismissStaleReviews() {
+    this._dismissStaleReviews = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dismissStaleReviewsInput() {
+    return this._dismissStaleReviews;
+  }
+
+  // dismissal_restrictions - computed: false, optional: true, required: false
+  private _dismissalRestrictions?: string[]; 
+  public get dismissalRestrictions() {
+    return cdktf.Fn.tolist(this.getListAttribute('dismissal_restrictions'));
+  }
+  public set dismissalRestrictions(value: string[]) {
+    this._dismissalRestrictions = value;
+  }
+  public resetDismissalRestrictions() {
+    this._dismissalRestrictions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dismissalRestrictionsInput() {
+    return this._dismissalRestrictions;
+  }
+
+  // pull_request_bypassers - computed: false, optional: true, required: false
+  private _pullRequestBypassers?: string[]; 
+  public get pullRequestBypassers() {
+    return cdktf.Fn.tolist(this.getListAttribute('pull_request_bypassers'));
+  }
+  public set pullRequestBypassers(value: string[]) {
+    this._pullRequestBypassers = value;
+  }
+  public resetPullRequestBypassers() {
+    this._pullRequestBypassers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pullRequestBypassersInput() {
+    return this._pullRequestBypassers;
+  }
+
+  // require_code_owner_reviews - computed: false, optional: true, required: false
+  private _requireCodeOwnerReviews?: boolean | cdktf.IResolvable; 
+  public get requireCodeOwnerReviews() {
+    return this.getBooleanAttribute('require_code_owner_reviews');
+  }
+  public set requireCodeOwnerReviews(value: boolean | cdktf.IResolvable) {
+    this._requireCodeOwnerReviews = value;
+  }
+  public resetRequireCodeOwnerReviews() {
+    this._requireCodeOwnerReviews = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireCodeOwnerReviewsInput() {
+    return this._requireCodeOwnerReviews;
+  }
+
+  // required_approving_review_count - computed: false, optional: true, required: false
+  private _requiredApprovingReviewCount?: number; 
+  public get requiredApprovingReviewCount() {
+    return this.getNumberAttribute('required_approving_review_count');
+  }
+  public set requiredApprovingReviewCount(value: number) {
+    this._requiredApprovingReviewCount = value;
+  }
+  public resetRequiredApprovingReviewCount() {
+    this._requiredApprovingReviewCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredApprovingReviewCountInput() {
+    return this._requiredApprovingReviewCount;
+  }
+
+  // restrict_dismissals - computed: false, optional: true, required: false
+  private _restrictDismissals?: boolean | cdktf.IResolvable; 
+  public get restrictDismissals() {
+    return this.getBooleanAttribute('restrict_dismissals');
+  }
+  public set restrictDismissals(value: boolean | cdktf.IResolvable) {
+    this._restrictDismissals = value;
+  }
+  public resetRestrictDismissals() {
+    this._restrictDismissals = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictDismissalsInput() {
+    return this._restrictDismissals;
+  }
+}
+
+export class BranchProtectionRequiredPullRequestReviewsList extends cdktf.ComplexList {
+  public internalValue? : BranchProtectionRequiredPullRequestReviews[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BranchProtectionRequiredPullRequestReviewsOutputReference {
+    return new BranchProtectionRequiredPullRequestReviewsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface BranchProtectionRequiredStatusChecks {
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#contexts BranchProtection#contexts}
@@ -122,6 +319,108 @@ export function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchP
   }
 }
 
+export class BranchProtectionRequiredStatusChecksOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): BranchProtectionRequiredStatusChecks | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contexts !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contexts = this._contexts;
+    }
+    if (this._strict !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.strict = this._strict;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BranchProtectionRequiredStatusChecks | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._contexts = undefined;
+      this._strict = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._contexts = value.contexts;
+      this._strict = value.strict;
+    }
+  }
+
+  // contexts - computed: false, optional: true, required: false
+  private _contexts?: string[]; 
+  public get contexts() {
+    return cdktf.Fn.tolist(this.getListAttribute('contexts'));
+  }
+  public set contexts(value: string[]) {
+    this._contexts = value;
+  }
+  public resetContexts() {
+    this._contexts = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get contextsInput() {
+    return this._contexts;
+  }
+
+  // strict - computed: false, optional: true, required: false
+  private _strict?: boolean | cdktf.IResolvable; 
+  public get strict() {
+    return this.getBooleanAttribute('strict');
+  }
+  public set strict(value: boolean | cdktf.IResolvable) {
+    this._strict = value;
+  }
+  public resetStrict() {
+    this._strict = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get strictInput() {
+    return this._strict;
+  }
+}
+
+export class BranchProtectionRequiredStatusChecksList extends cdktf.ComplexList {
+  public internalValue? : BranchProtectionRequiredStatusChecks[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): BranchProtectionRequiredStatusChecksOutputReference {
+    return new BranchProtectionRequiredStatusChecksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection github_branch_protection}
@@ -160,14 +459,15 @@ export class BranchProtection extends cdktf.TerraformResource {
     this._allowsDeletions = config.allowsDeletions;
     this._allowsForcePushes = config.allowsForcePushes;
     this._enforceAdmins = config.enforceAdmins;
+    this._id = config.id;
     this._pattern = config.pattern;
     this._pushRestrictions = config.pushRestrictions;
     this._repositoryId = config.repositoryId;
     this._requireConversationResolution = config.requireConversationResolution;
     this._requireSignedCommits = config.requireSignedCommits;
     this._requiredLinearHistory = config.requiredLinearHistory;
-    this._requiredPullRequestReviews = config.requiredPullRequestReviews;
-    this._requiredStatusChecks = config.requiredStatusChecks;
+    this._requiredPullRequestReviews.internalValue = config.requiredPullRequestReviews;
+    this._requiredStatusChecks.internalValue = config.requiredStatusChecks;
   }
 
   // ==========
@@ -223,8 +523,19 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // pattern - computed: false, optional: false, required: true
@@ -318,37 +629,35 @@ export class BranchProtection extends cdktf.TerraformResource {
   }
 
   // required_pull_request_reviews - computed: false, optional: true, required: false
-  private _requiredPullRequestReviews?: BranchProtectionRequiredPullRequestReviews[] | cdktf.IResolvable; 
+  private _requiredPullRequestReviews = new BranchProtectionRequiredPullRequestReviewsList(this, "required_pull_request_reviews", false);
   public get requiredPullRequestReviews() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('required_pull_request_reviews');
+    return this._requiredPullRequestReviews;
   }
-  public set requiredPullRequestReviews(value: BranchProtectionRequiredPullRequestReviews[] | cdktf.IResolvable) {
-    this._requiredPullRequestReviews = value;
+  public putRequiredPullRequestReviews(value: BranchProtectionRequiredPullRequestReviews[] | cdktf.IResolvable) {
+    this._requiredPullRequestReviews.internalValue = value;
   }
   public resetRequiredPullRequestReviews() {
-    this._requiredPullRequestReviews = undefined;
+    this._requiredPullRequestReviews.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requiredPullRequestReviewsInput() {
-    return this._requiredPullRequestReviews;
+    return this._requiredPullRequestReviews.internalValue;
   }
 
   // required_status_checks - computed: false, optional: true, required: false
-  private _requiredStatusChecks?: BranchProtectionRequiredStatusChecks[] | cdktf.IResolvable; 
+  private _requiredStatusChecks = new BranchProtectionRequiredStatusChecksList(this, "required_status_checks", false);
   public get requiredStatusChecks() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('required_status_checks');
+    return this._requiredStatusChecks;
   }
-  public set requiredStatusChecks(value: BranchProtectionRequiredStatusChecks[] | cdktf.IResolvable) {
-    this._requiredStatusChecks = value;
+  public putRequiredStatusChecks(value: BranchProtectionRequiredStatusChecks[] | cdktf.IResolvable) {
+    this._requiredStatusChecks.internalValue = value;
   }
   public resetRequiredStatusChecks() {
-    this._requiredStatusChecks = undefined;
+    this._requiredStatusChecks.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get requiredStatusChecksInput() {
-    return this._requiredStatusChecks;
+    return this._requiredStatusChecks.internalValue;
   }
 
   // =========
@@ -360,14 +669,15 @@ export class BranchProtection extends cdktf.TerraformResource {
       allows_deletions: cdktf.booleanToTerraform(this._allowsDeletions),
       allows_force_pushes: cdktf.booleanToTerraform(this._allowsForcePushes),
       enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
+      id: cdktf.stringToTerraform(this._id),
       pattern: cdktf.stringToTerraform(this._pattern),
       push_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(this._pushRestrictions),
       repository_id: cdktf.stringToTerraform(this._repositoryId),
       require_conversation_resolution: cdktf.booleanToTerraform(this._requireConversationResolution),
       require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),
       required_linear_history: cdktf.booleanToTerraform(this._requiredLinearHistory),
-      required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform)(this._requiredPullRequestReviews),
-      required_status_checks: cdktf.listMapper(branchProtectionRequiredStatusChecksToTerraform)(this._requiredStatusChecks),
+      required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform)(this._requiredPullRequestReviews.internalValue),
+      required_status_checks: cdktf.listMapper(branchProtectionRequiredStatusChecksToTerraform)(this._requiredStatusChecks.internalValue),
     };
   }
 }

@@ -16,6 +16,13 @@ export interface BranchProtectionV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly enforceAdmins?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#id BranchProtectionV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#repository BranchProtectionV3#repository}
   */
   readonly repository: string;
@@ -521,6 +528,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
     });
     this._branch = config.branch;
     this._enforceAdmins = config.enforceAdmins;
+    this._id = config.id;
     this._repository = config.repository;
     this._requireConversationResolution = config.requireConversationResolution;
     this._requireSignedCommits = config.requireSignedCommits;
@@ -568,8 +576,19 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // repository - computed: false, optional: false, required: true
@@ -673,6 +692,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
     return {
       branch: cdktf.stringToTerraform(this._branch),
       enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
+      id: cdktf.stringToTerraform(this._id),
       repository: cdktf.stringToTerraform(this._repository),
       require_conversation_resolution: cdktf.booleanToTerraform(this._requireConversationResolution),
       require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),

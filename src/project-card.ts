@@ -20,6 +20,13 @@ export interface ProjectCardConfig extends cdktf.TerraformMetaArguments {
   */
   readonly contentType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}
   */
   readonly note?: string;
@@ -62,6 +69,7 @@ export class ProjectCard extends cdktf.TerraformResource {
     this._columnId = config.columnId;
     this._contentId = config.contentId;
     this._contentType = config.contentType;
+    this._id = config.id;
     this._note = config.note;
   }
 
@@ -125,8 +133,19 @@ export class ProjectCard extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // note - computed: false, optional: true, required: false
@@ -154,6 +173,7 @@ export class ProjectCard extends cdktf.TerraformResource {
       column_id: cdktf.stringToTerraform(this._columnId),
       content_id: cdktf.numberToTerraform(this._contentId),
       content_type: cdktf.stringToTerraform(this._contentType),
+      id: cdktf.stringToTerraform(this._id),
       note: cdktf.stringToTerraform(this._note),
     };
   }

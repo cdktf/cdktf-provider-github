@@ -74,6 +74,13 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly homepageUrl?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#id Repository#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}
   */
   readonly ignoreVulnerabilityAlertsDuringRead?: boolean | cdktf.IResolvable;
@@ -524,6 +531,7 @@ export class Repository extends cdktf.TerraformResource {
     this._hasProjects = config.hasProjects;
     this._hasWiki = config.hasWiki;
     this._homepageUrl = config.homepageUrl;
+    this._id = config.id;
     this._ignoreVulnerabilityAlertsDuringRead = config.ignoreVulnerabilityAlertsDuringRead;
     this._isTemplate = config.isTemplate;
     this._licenseTemplate = config.licenseTemplate;
@@ -828,8 +836,19 @@ export class Repository extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // ignore_vulnerability_alerts_during_read - computed: false, optional: true, required: false
@@ -1031,6 +1050,7 @@ export class Repository extends cdktf.TerraformResource {
       has_projects: cdktf.booleanToTerraform(this._hasProjects),
       has_wiki: cdktf.booleanToTerraform(this._hasWiki),
       homepage_url: cdktf.stringToTerraform(this._homepageUrl),
+      id: cdktf.stringToTerraform(this._id),
       ignore_vulnerability_alerts_during_read: cdktf.booleanToTerraform(this._ignoreVulnerabilityAlertsDuringRead),
       is_template: cdktf.booleanToTerraform(this._isTemplate),
       license_template: cdktf.stringToTerraform(this._licenseTemplate),

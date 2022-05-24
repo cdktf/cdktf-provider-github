@@ -18,6 +18,13 @@ export interface RepositoryMilestoneConfig extends cdktf.TerraformMetaArguments 
   */
   readonly dueDate?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#id RepositoryMilestone#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#owner RepositoryMilestone#owner}
   */
   readonly owner: string;
@@ -71,6 +78,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._dueDate = config.dueDate;
+    this._id = config.id;
     this._owner = config.owner;
     this._repository = config.repository;
     this._state = config.state;
@@ -114,8 +122,19 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // number - computed: true, optional: false, required: false
@@ -186,6 +205,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       due_date: cdktf.stringToTerraform(this._dueDate),
+      id: cdktf.stringToTerraform(this._id),
       owner: cdktf.stringToTerraform(this._owner),
       repository: cdktf.stringToTerraform(this._repository),
       state: cdktf.stringToTerraform(this._state),

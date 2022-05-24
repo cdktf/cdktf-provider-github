@@ -18,6 +18,13 @@ export interface IssueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly body?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#id Issue#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
   * List of names of labels on the issue
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#labels Issue#labels}
@@ -73,6 +80,7 @@ export class Issue extends cdktf.TerraformResource {
     });
     this._assignees = config.assignees;
     this._body = config.body;
+    this._id = config.id;
     this._labels = config.labels;
     this._milestoneNumber = config.milestoneNumber;
     this._repository = config.repository;
@@ -121,8 +129,19 @@ export class Issue extends cdktf.TerraformResource {
   }
 
   // id - computed: true, optional: true, required: false
+  private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
   }
 
   // issue_id - computed: true, optional: false, required: false
@@ -201,6 +220,7 @@ export class Issue extends cdktf.TerraformResource {
     return {
       assignees: cdktf.listMapper(cdktf.stringToTerraform)(this._assignees),
       body: cdktf.stringToTerraform(this._body),
+      id: cdktf.stringToTerraform(this._id),
       labels: cdktf.listMapper(cdktf.stringToTerraform)(this._labels),
       milestone_number: cdktf.numberToTerraform(this._milestoneNumber),
       repository: cdktf.stringToTerraform(this._repository),
