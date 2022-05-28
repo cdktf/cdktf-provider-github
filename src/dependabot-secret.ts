@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_secret
+// https://www.terraform.io/docs/providers/github/r/dependabot_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,56 +6,56 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DependabotSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#encrypted_value ActionsSecret#encrypted_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#encrypted_value DependabotSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#id ActionsSecret#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#id DependabotSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#plaintext_value ActionsSecret#plaintext_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#plaintext_value DependabotSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#repository ActionsSecret#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#repository DependabotSecret#repository}
   */
   readonly repository: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#secret_name ActionsSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#secret_name DependabotSecret#secret_name}
   */
   readonly secretName: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret}
 */
-export class ActionsSecret extends cdktf.TerraformResource {
+export class DependabotSecret extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "github_actions_secret";
+  public static readonly tfResourceType = "github_dependabot_secret";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ActionsSecretConfig
+  * @param options DependabotSecretConfig
   */
-  public constructor(scope: Construct, id: string, config: ActionsSecretConfig) {
+  public constructor(scope: Construct, id: string, config: DependabotSecretConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_actions_secret',
+      terraformResourceType: 'github_dependabot_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
         providerVersion: '4.26.0',

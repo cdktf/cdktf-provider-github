@@ -50,7 +50,7 @@ export class UserSshKey extends cdktf.TerraformResource {
       terraformResourceType: 'github_user_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

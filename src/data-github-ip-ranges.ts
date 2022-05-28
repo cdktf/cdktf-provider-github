@@ -42,7 +42,7 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.25.0',
+        providerVersion: '4.26.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

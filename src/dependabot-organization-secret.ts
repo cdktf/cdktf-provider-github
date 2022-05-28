@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_secret
+// https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,56 +6,60 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
+export interface DependabotOrganizationSecretConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#encrypted_value ActionsSecret#encrypted_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#encrypted_value DependabotOrganizationSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#id ActionsSecret#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#id DependabotOrganizationSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#plaintext_value ActionsSecret#plaintext_value}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#plaintext_value DependabotOrganizationSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#repository ActionsSecret#repository}
-  */
-  readonly repository: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#secret_name ActionsSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#secret_name DependabotOrganizationSecret#secret_name}
   */
   readonly secretName: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#selected_repository_ids DependabotOrganizationSecret#selected_repository_ids}
+  */
+  readonly selectedRepositoryIds?: number[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#visibility DependabotOrganizationSecret#visibility}
+  */
+  readonly visibility: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret}
 */
-export class ActionsSecret extends cdktf.TerraformResource {
+export class DependabotOrganizationSecret extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "github_actions_secret";
+  public static readonly tfResourceType = "github_dependabot_organization_secret";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ActionsSecretConfig
+  * @param options DependabotOrganizationSecretConfig
   */
-  public constructor(scope: Construct, id: string, config: ActionsSecretConfig) {
+  public constructor(scope: Construct, id: string, config: DependabotOrganizationSecretConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_actions_secret',
+      terraformResourceType: 'github_dependabot_organization_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
         providerVersion: '4.26.0',
@@ -69,8 +73,9 @@ export class ActionsSecret extends cdktf.TerraformResource {
     this._encryptedValue = config.encryptedValue;
     this._id = config.id;
     this._plaintextValue = config.plaintextValue;
-    this._repository = config.repository;
     this._secretName = config.secretName;
+    this._selectedRepositoryIds = config.selectedRepositoryIds;
+    this._visibility = config.visibility;
   }
 
   // ==========
@@ -130,19 +135,6 @@ export class ActionsSecret extends cdktf.TerraformResource {
     return this._plaintextValue;
   }
 
-  // repository - computed: false, optional: false, required: true
-  private _repository?: string; 
-  public get repository() {
-    return this.getStringAttribute('repository');
-  }
-  public set repository(value: string) {
-    this._repository = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get repositoryInput() {
-    return this._repository;
-  }
-
   // secret_name - computed: false, optional: false, required: true
   private _secretName?: string; 
   public get secretName() {
@@ -156,9 +148,38 @@ export class ActionsSecret extends cdktf.TerraformResource {
     return this._secretName;
   }
 
+  // selected_repository_ids - computed: false, optional: true, required: false
+  private _selectedRepositoryIds?: number[]; 
+  public get selectedRepositoryIds() {
+    return cdktf.Token.asNumberList(cdktf.Fn.tolist(this.getNumberListAttribute('selected_repository_ids')));
+  }
+  public set selectedRepositoryIds(value: number[]) {
+    this._selectedRepositoryIds = value;
+  }
+  public resetSelectedRepositoryIds() {
+    this._selectedRepositoryIds = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selectedRepositoryIdsInput() {
+    return this._selectedRepositoryIds;
+  }
+
   // updated_at - computed: true, optional: false, required: false
   public get updatedAt() {
     return this.getStringAttribute('updated_at');
+  }
+
+  // visibility - computed: false, optional: false, required: true
+  private _visibility?: string; 
+  public get visibility() {
+    return this.getStringAttribute('visibility');
+  }
+  public set visibility(value: string) {
+    this._visibility = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get visibilityInput() {
+    return this._visibility;
   }
 
   // =========
@@ -170,8 +191,9 @@ export class ActionsSecret extends cdktf.TerraformResource {
       encrypted_value: cdktf.stringToTerraform(this._encryptedValue),
       id: cdktf.stringToTerraform(this._id),
       plaintext_value: cdktf.stringToTerraform(this._plaintextValue),
-      repository: cdktf.stringToTerraform(this._repository),
       secret_name: cdktf.stringToTerraform(this._secretName),
+      selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._selectedRepositoryIds),
+      visibility: cdktf.stringToTerraform(this._visibility),
     };
   }
 }
