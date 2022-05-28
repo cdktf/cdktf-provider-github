@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/app_installation_repository
+// https://www.terraform.io/docs/providers/github/d/dependabot_public_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,48 +6,44 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppInstallationRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface DataGithubDependabotPublicKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#id AppInstallationRepository#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key#id DataGithubDependabotPublicKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#installation_id AppInstallationRepository#installation_id}
-  */
-  readonly installationId: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#repository AppInstallationRepository#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key#repository DataGithubDependabotPublicKey#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key}
 */
-export class AppInstallationRepository extends cdktf.TerraformResource {
+export class DataGithubDependabotPublicKey extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "github_app_installation_repository";
+  public static readonly tfResourceType = "github_dependabot_public_key";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options AppInstallationRepositoryConfig
+  * @param options DataGithubDependabotPublicKeyConfig
   */
-  public constructor(scope: Construct, id: string, config: AppInstallationRepositoryConfig) {
+  public constructor(scope: Construct, id: string, config: DataGithubDependabotPublicKeyConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_app_installation_repository',
+      terraformResourceType: 'github_dependabot_public_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
         providerVersion: '4.26.0',
@@ -59,7 +55,6 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
       lifecycle: config.lifecycle
     });
     this._id = config.id;
-    this._installationId = config.installationId;
     this._repository = config.repository;
   }
 
@@ -83,22 +78,14 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // installation_id - computed: false, optional: false, required: true
-  private _installationId?: string; 
-  public get installationId() {
-    return this.getStringAttribute('installation_id');
-  }
-  public set installationId(value: string) {
-    this._installationId = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get installationIdInput() {
-    return this._installationId;
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
   }
 
-  // repo_id - computed: true, optional: false, required: false
-  public get repoId() {
-    return this.getNumberAttribute('repo_id');
+  // key_id - computed: true, optional: false, required: false
+  public get keyId() {
+    return this.getStringAttribute('key_id');
   }
 
   // repository - computed: false, optional: false, required: true
@@ -121,7 +108,6 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      installation_id: cdktf.stringToTerraform(this._installationId),
       repository: cdktf.stringToTerraform(this._repository),
     };
   }

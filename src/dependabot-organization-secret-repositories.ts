@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories
+// https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,48 +6,48 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface ActionsOrganizationSecretRepositoriesConfig extends cdktf.TerraformMetaArguments {
+export interface DependabotOrganizationSecretRepositoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#id ActionsOrganizationSecretRepositories#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#secret_name ActionsOrganizationSecretRepositories#secret_name}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
   */
   readonly secretName: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#selected_repository_ids ActionsOrganizationSecretRepositories#selected_repository_ids}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
   */
   readonly selectedRepositoryIds: number[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}
 */
-export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResource {
+export class DependabotOrganizationSecretRepositories extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "github_actions_organization_secret_repositories";
+  public static readonly tfResourceType = "github_dependabot_organization_secret_repositories";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options ActionsOrganizationSecretRepositoriesConfig
+  * @param options DependabotOrganizationSecretRepositoriesConfig
   */
-  public constructor(scope: Construct, id: string, config: ActionsOrganizationSecretRepositoriesConfig) {
+  public constructor(scope: Construct, id: string, config: DependabotOrganizationSecretRepositoriesConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_actions_organization_secret_repositories',
+      terraformResourceType: 'github_dependabot_organization_secret_repositories',
       terraformGeneratorMetadata: {
         providerName: 'github',
         providerVersion: '4.26.0',

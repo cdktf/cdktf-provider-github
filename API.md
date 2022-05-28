@@ -29,6 +29,7 @@ Name|Description
 [DataGithubCollaborators](#cdktf-provider-github-datagithubcollaborators)|Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators}.
 [DataGithubCollaboratorsCollaboratorList](#cdktf-provider-github-datagithubcollaboratorscollaboratorlist)|*No description*
 [DataGithubCollaboratorsCollaboratorOutputReference](#cdktf-provider-github-datagithubcollaboratorscollaboratoroutputreference)|*No description*
+[DataGithubDependabotPublicKey](#cdktf-provider-github-datagithubdependabotpublickey)|Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key}.
 [DataGithubIpRanges](#cdktf-provider-github-datagithubipranges)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges}.
 [DataGithubMembership](#cdktf-provider-github-datagithubmembership)|Represents a {@link https://www.terraform.io/docs/providers/github/d/membership github_membership}.
 [DataGithubOrganization](#cdktf-provider-github-datagithuborganization)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization github_organization}.
@@ -60,6 +61,9 @@ Name|Description
 [DataGithubTreeEntriesOutputReference](#cdktf-provider-github-datagithubtreeentriesoutputreference)|*No description*
 [DataGithubUser](#cdktf-provider-github-datagithubuser)|Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}.
 [DataGithubUsers](#cdktf-provider-github-datagithubusers)|Represents a {@link https://www.terraform.io/docs/providers/github/d/users github_users}.
+[DependabotOrganizationSecret](#cdktf-provider-github-dependabotorganizationsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret}.
+[DependabotOrganizationSecretRepositories](#cdktf-provider-github-dependabotorganizationsecretrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
+[DependabotSecret](#cdktf-provider-github-dependabotsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret}.
 [EmuGroupMapping](#cdktf-provider-github-emugroupmapping)|Represents a {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping github_emu_group_mapping}.
 [GithubProvider](#cdktf-provider-github-githubprovider)|Represents a {@link https://www.terraform.io/docs/providers/github github}.
 [Issue](#cdktf-provider-github-issue)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue github_issue}.
@@ -130,6 +134,7 @@ Name|Description
 [DataGithubBranchConfig](#cdktf-provider-github-datagithubbranchconfig)|*No description*
 [DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaboratorscollaborator)|*No description*
 [DataGithubCollaboratorsConfig](#cdktf-provider-github-datagithubcollaboratorsconfig)|*No description*
+[DataGithubDependabotPublicKeyConfig](#cdktf-provider-github-datagithubdependabotpublickeyconfig)|*No description*
 [DataGithubIpRangesConfig](#cdktf-provider-github-datagithubiprangesconfig)|*No description*
 [DataGithubMembershipConfig](#cdktf-provider-github-datagithubmembershipconfig)|*No description*
 [DataGithubOrganizationConfig](#cdktf-provider-github-datagithuborganizationconfig)|*No description*
@@ -154,6 +159,9 @@ Name|Description
 [DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)|*No description*
 [DataGithubUserConfig](#cdktf-provider-github-datagithubuserconfig)|*No description*
 [DataGithubUsersConfig](#cdktf-provider-github-datagithubusersconfig)|*No description*
+[DependabotOrganizationSecretConfig](#cdktf-provider-github-dependabotorganizationsecretconfig)|*No description*
+[DependabotOrganizationSecretRepositoriesConfig](#cdktf-provider-github-dependabotorganizationsecretrepositoriesconfig)|*No description*
+[DependabotSecretConfig](#cdktf-provider-github-dependabotsecretconfig)|*No description*
 [EmuGroupMappingConfig](#cdktf-provider-github-emugroupmappingconfig)|*No description*
 [GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)|*No description*
 [GithubProviderConfig](#cdktf-provider-github-githubproviderconfig)|*No description*
@@ -2493,6 +2501,76 @@ Name | Type | Description
 
 
 
+## class DataGithubDependabotPublicKey  <a id="cdktf-provider-github-datagithubdependabotpublickey"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key} Data Source.
+
+```ts
+new DataGithubDependabotPublicKey(scope: Construct, id: string, config: DataGithubDependabotPublicKeyConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataGithubDependabotPublicKeyConfig](#cdktf-provider-github-datagithubdependabotpublickeyconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key#repository DataGithubDependabotPublicKey#repository}. 
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key#id DataGithubDependabotPublicKey#id}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**key** | <code>string</code> | <span></span>
+**keyId** | <code>string</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**idInput**? | <code>string</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-github-datagithubdependabotpublickey-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubdependabotpublickey-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class DataGithubIpRanges  <a id="cdktf-provider-github-datagithubipranges"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges}.
@@ -4652,6 +4730,298 @@ resetId(): void
 
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubusers-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DependabotOrganizationSecret  <a id="cdktf-provider-github-dependabotorganizationsecret"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret} Resource.
+
+```ts
+new DependabotOrganizationSecret(scope: Construct, id: string, config: DependabotOrganizationSecretConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DependabotOrganizationSecretConfig](#cdktf-provider-github-dependabotorganizationsecretconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#secret_name DependabotOrganizationSecret#secret_name}. 
+  * **visibility** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#visibility DependabotOrganizationSecret#visibility}. 
+  * **encryptedValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#encrypted_value DependabotOrganizationSecret#encrypted_value}. __*Optional*__
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#id DependabotOrganizationSecret#id}. __*Optional*__
+  * **plaintextValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#plaintext_value DependabotOrganizationSecret#plaintext_value}. __*Optional*__
+  * **selectedRepositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#selected_repository_ids DependabotOrganizationSecret#selected_repository_ids}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**createdAt** | <code>string</code> | <span></span>
+**encryptedValue** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**plaintextValue** | <code>string</code> | <span></span>
+**secretName** | <code>string</code> | <span></span>
+**selectedRepositoryIds** | <code>Array<number></code> | <span></span>
+**updatedAt** | <code>string</code> | <span></span>
+**visibility** | <code>string</code> | <span></span>
+**encryptedValueInput**? | <code>string</code> | __*Optional*__
+**idInput**? | <code>string</code> | __*Optional*__
+**plaintextValueInput**? | <code>string</code> | __*Optional*__
+**secretNameInput**? | <code>string</code> | __*Optional*__
+**selectedRepositoryIdsInput**? | <code>Array<number></code> | __*Optional*__
+**visibilityInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetEncryptedValue() <a id="cdktf-provider-github-dependabotorganizationsecret-resetencryptedvalue"></a>
+
+
+
+```ts
+resetEncryptedValue(): void
+```
+
+
+
+
+
+#### resetId() <a id="cdktf-provider-github-dependabotorganizationsecret-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### resetPlaintextValue() <a id="cdktf-provider-github-dependabotorganizationsecret-resetplaintextvalue"></a>
+
+
+
+```ts
+resetPlaintextValue(): void
+```
+
+
+
+
+
+#### resetSelectedRepositoryIds() <a id="cdktf-provider-github-dependabotorganizationsecret-resetselectedrepositoryids"></a>
+
+
+
+```ts
+resetSelectedRepositoryIds(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotorganizationsecret-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DependabotOrganizationSecretRepositories  <a id="cdktf-provider-github-dependabotorganizationsecretrepositories"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories} Resource.
+
+```ts
+new DependabotOrganizationSecretRepositories(scope: Construct, id: string, config: DependabotOrganizationSecretRepositoriesConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DependabotOrganizationSecretRepositoriesConfig](#cdktf-provider-github-dependabotorganizationsecretrepositoriesconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}. 
+  * **selectedRepositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}. 
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**secretName** | <code>string</code> | <span></span>
+**selectedRepositoryIds** | <code>Array<number></code> | <span></span>
+**idInput**? | <code>string</code> | __*Optional*__
+**secretNameInput**? | <code>string</code> | __*Optional*__
+**selectedRepositoryIdsInput**? | <code>Array<number></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-github-dependabotorganizationsecretrepositories-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotorganizationsecretrepositories-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DependabotSecret  <a id="cdktf-provider-github-dependabotsecret"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret} Resource.
+
+```ts
+new DependabotSecret(scope: Construct, id: string, config: DependabotSecretConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DependabotSecretConfig](#cdktf-provider-github-dependabotsecretconfig)</code>)  *No description*
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#repository DependabotSecret#repository}. 
+  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#secret_name DependabotSecret#secret_name}. 
+  * **encryptedValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#encrypted_value DependabotSecret#encrypted_value}. __*Optional*__
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#id DependabotSecret#id}. __*Optional*__
+  * **plaintextValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#plaintext_value DependabotSecret#plaintext_value}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**createdAt** | <code>string</code> | <span></span>
+**encryptedValue** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**plaintextValue** | <code>string</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**secretName** | <code>string</code> | <span></span>
+**updatedAt** | <code>string</code> | <span></span>
+**encryptedValueInput**? | <code>string</code> | __*Optional*__
+**idInput**? | <code>string</code> | __*Optional*__
+**plaintextValueInput**? | <code>string</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+**secretNameInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetEncryptedValue() <a id="cdktf-provider-github-dependabotsecret-resetencryptedvalue"></a>
+
+
+
+```ts
+resetEncryptedValue(): void
+```
+
+
+
+
+
+#### resetId() <a id="cdktf-provider-github-dependabotsecret-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### resetPlaintextValue() <a id="cdktf-provider-github-dependabotsecret-resetplaintextvalue"></a>
+
+
+
+```ts
+resetPlaintextValue(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotsecret-synthesizeattributes"></a>
 
 
 
@@ -9066,6 +9436,24 @@ Name | Type | Description
 
 
 
+## struct DataGithubDependabotPublicKeyConfig  <a id="cdktf-provider-github-datagithubdependabotpublickeyconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key#repository DataGithubDependabotPublicKey#repository}.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key#id DataGithubDependabotPublicKey#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
 ## struct DataGithubIpRangesConfig  <a id="cdktf-provider-github-datagithubiprangesconfig"></a>
 
 
@@ -9432,6 +9820,68 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/users#id DataGithubUsers#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct DependabotOrganizationSecretConfig  <a id="cdktf-provider-github-dependabotorganizationsecretconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#secret_name DependabotOrganizationSecret#secret_name}.
+**visibility** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#visibility DependabotOrganizationSecret#visibility}.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**encryptedValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#encrypted_value DependabotOrganizationSecret#encrypted_value}.<br/>__*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#id DependabotOrganizationSecret#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**plaintextValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#plaintext_value DependabotOrganizationSecret#plaintext_value}.<br/>__*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**selectedRepositoryIds**? | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#selected_repository_ids DependabotOrganizationSecret#selected_repository_ids}.<br/>__*Optional*__
+
+
+
+## struct DependabotOrganizationSecretRepositoriesConfig  <a id="cdktf-provider-github-dependabotorganizationsecretrepositoriesconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}.
+**selectedRepositoryIds** | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+
+
+
+## struct DependabotSecretConfig  <a id="cdktf-provider-github-dependabotsecretconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#repository DependabotSecret#repository}.
+**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#secret_name DependabotSecret#secret_name}.
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**encryptedValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#encrypted_value DependabotSecret#encrypted_value}.<br/>__*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#id DependabotSecret#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**plaintextValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#plaintext_value DependabotSecret#plaintext_value}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
 
