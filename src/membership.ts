@@ -50,7 +50,7 @@ export class Membership extends cdktf.TerraformResource {
       terraformResourceType: 'github_membership',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.26.0',
+        providerVersion: '4.26.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

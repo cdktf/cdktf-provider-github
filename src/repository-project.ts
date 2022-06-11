@@ -54,7 +54,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_project',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.26.0',
+        providerVersion: '4.26.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
