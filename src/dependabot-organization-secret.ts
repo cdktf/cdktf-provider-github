@@ -62,7 +62,7 @@ export class DependabotOrganizationSecret extends cdktf.TerraformResource {
       terraformResourceType: 'github_dependabot_organization_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.26.0',
+        providerVersion: '4.26.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

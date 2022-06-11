@@ -46,7 +46,7 @@ export class DataGithubActionsPublicKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_actions_public_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.26.0',
+        providerVersion: '4.26.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
