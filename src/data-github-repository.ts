@@ -30,6 +30,10 @@ export interface DataGithubRepositoryConfig extends cdktf.TerraformMetaArguments
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#name DataGithubRepository#name}
   */
   readonly name?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#only_protected_branches DataGithubRepository#only_protected_branches}
+  */
+  readonly onlyProtectedBranches?: boolean | cdktf.IResolvable;
 }
 export interface DataGithubRepositoryBranches {
 }
@@ -286,7 +290,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.26.1',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -299,6 +303,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     this._homepageUrl = config.homepageUrl;
     this._id = config.id;
     this._name = config.name;
+    this._onlyProtectedBranches = config.onlyProtectedBranches;
   }
 
   // ==========
@@ -461,6 +466,22 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this.getStringAttribute('node_id');
   }
 
+  // only_protected_branches - computed: false, optional: true, required: false
+  private _onlyProtectedBranches?: boolean | cdktf.IResolvable; 
+  public get onlyProtectedBranches() {
+    return this.getBooleanAttribute('only_protected_branches');
+  }
+  public set onlyProtectedBranches(value: boolean | cdktf.IResolvable) {
+    this._onlyProtectedBranches = value;
+  }
+  public resetOnlyProtectedBranches() {
+    this._onlyProtectedBranches = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get onlyProtectedBranchesInput() {
+    return this._onlyProtectedBranches;
+  }
+
   // pages - computed: true, optional: false, required: false
   private _pages = new DataGithubRepositoryPagesList(this, "pages", false);
   public get pages() {
@@ -508,6 +529,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       homepage_url: cdktf.stringToTerraform(this._homepageUrl),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      only_protected_branches: cdktf.booleanToTerraform(this._onlyProtectedBranches),
     };
   }
 }
