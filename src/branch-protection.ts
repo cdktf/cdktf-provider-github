@@ -16,6 +16,10 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowsForcePushes?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#blocks_creations BranchProtection#blocks_creations}
+  */
+  readonly blocksCreations?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#enforce_admins BranchProtection#enforce_admins}
   */
   readonly enforceAdmins?: boolean | cdktf.IResolvable;
@@ -448,7 +452,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_protection',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.26.1',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -458,6 +462,7 @@ export class BranchProtection extends cdktf.TerraformResource {
     });
     this._allowsDeletions = config.allowsDeletions;
     this._allowsForcePushes = config.allowsForcePushes;
+    this._blocksCreations = config.blocksCreations;
     this._enforceAdmins = config.enforceAdmins;
     this._id = config.id;
     this._pattern = config.pattern;
@@ -504,6 +509,22 @@ export class BranchProtection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get allowsForcePushesInput() {
     return this._allowsForcePushes;
+  }
+
+  // blocks_creations - computed: false, optional: true, required: false
+  private _blocksCreations?: boolean | cdktf.IResolvable; 
+  public get blocksCreations() {
+    return this.getBooleanAttribute('blocks_creations');
+  }
+  public set blocksCreations(value: boolean | cdktf.IResolvable) {
+    this._blocksCreations = value;
+  }
+  public resetBlocksCreations() {
+    this._blocksCreations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get blocksCreationsInput() {
+    return this._blocksCreations;
   }
 
   // enforce_admins - computed: false, optional: true, required: false
@@ -668,6 +689,7 @@ export class BranchProtection extends cdktf.TerraformResource {
     return {
       allows_deletions: cdktf.booleanToTerraform(this._allowsDeletions),
       allows_force_pushes: cdktf.booleanToTerraform(this._allowsForcePushes),
+      blocks_creations: cdktf.booleanToTerraform(this._blocksCreations),
       enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
       id: cdktf.stringToTerraform(this._id),
       pattern: cdktf.stringToTerraform(this._pattern),

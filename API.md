@@ -1206,6 +1206,7 @@ new BranchProtection(scope: Construct, id: string, config: BranchProtectionConfi
   * **repositoryId** (<code>string</code>)  Node ID or name of repository. 
   * **allowsDeletions** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_deletions BranchProtection#allows_deletions}. __*Optional*__
   * **allowsForcePushes** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}. __*Optional*__
+  * **blocksCreations** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#blocks_creations BranchProtection#blocks_creations}. __*Optional*__
   * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#enforce_admins BranchProtection#enforce_admins}. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#id BranchProtection#id}. __*Optional*__
   * **pushRestrictions** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#push_restrictions BranchProtection#push_restrictions}. __*Optional*__
@@ -1224,6 +1225,7 @@ Name | Type | Description
 -----|------|-------------
 **allowsDeletions** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowsForcePushes** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**blocksCreations** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **enforceAdmins** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **pattern** | <code>string</code> | <span></span>
@@ -1236,6 +1238,7 @@ Name | Type | Description
 **requiredStatusChecks** | <code>[BranchProtectionRequiredStatusChecksList](#cdktf-provider-github-branchprotectionrequiredstatuscheckslist)</code> | <span></span>
 **allowsDeletionsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowsForcePushesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**blocksCreationsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **enforceAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 **patternInput**? | <code>string</code> | __*Optional*__
@@ -1295,6 +1298,18 @@ resetAllowsDeletions(): void
 
 ```ts
 resetAllowsForcePushes(): void
+```
+
+
+
+
+
+#### resetBlocksCreations() <a id="cdktf-provider-github-branchprotection-resetblockscreations"></a>
+
+
+
+```ts
+resetBlocksCreations(): void
 ```
 
 
@@ -3437,6 +3452,7 @@ new DataGithubRepository(scope: Construct, id: string, config?: DataGithubReposi
   * **homepageUrl** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#homepage_url DataGithubRepository#homepage_url}. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#id DataGithubRepository#id}. __*Optional*__
   * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#name DataGithubRepository#name}. __*Optional*__
+  * **onlyProtectedBranches** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#only_protected_branches DataGithubRepository#only_protected_branches}. __*Optional*__
 
 
 
@@ -3465,6 +3481,7 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
+**onlyProtectedBranches** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **pages** | <code>[DataGithubRepositoryPagesList](#cdktf-provider-github-datagithubrepositorypageslist)</code> | <span></span>
 **private** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repoId** | <code>number</code> | <span></span>
@@ -3477,6 +3494,7 @@ Name | Type | Description
 **homepageUrlInput**? | <code>string</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
+**onlyProtectedBranchesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
@@ -3536,6 +3554,18 @@ resetId(): void
 
 ```ts
 resetName(): void
+```
+
+
+
+
+
+#### resetOnlyProtectedBranches() <a id="cdktf-provider-github-datagithubrepository-resetonlyprotectedbranches"></a>
+
+
+
+```ts
+resetOnlyProtectedBranches(): void
 ```
 
 
@@ -9253,6 +9283,7 @@ Name | Type | Description
 **repositoryId** | <code>string</code> | Node ID or name of repository.
 **allowsDeletions**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_deletions BranchProtection#allows_deletions}.<br/>__*Optional*__
 **allowsForcePushes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}.<br/>__*Optional*__
+**blocksCreations**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#blocks_creations BranchProtection#blocks_creations}.<br/>__*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **enforceAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#enforce_admins BranchProtection#enforce_admins}.<br/>__*Optional*__
@@ -9638,6 +9669,7 @@ Name | Type | Description
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#id DataGithubRepository#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **name**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#name DataGithubRepository#name}.<br/>__*Optional*__
+**onlyProtectedBranches**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#only_protected_branches DataGithubRepository#only_protected_branches}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 
 

@@ -60,7 +60,7 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.26.1',
+        providerVersion: '4.27.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
