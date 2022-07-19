@@ -46,7 +46,7 @@ export class DataGithubUser extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_user',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.27.0',
+        providerVersion: '4.27.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

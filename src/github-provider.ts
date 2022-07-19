@@ -125,7 +125,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'github',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.27.0',
+        providerVersion: '4.27.1',
         providerVersionConstraint: '~> 4.0'
       },
       terraformProviderSource: 'integrations/github'

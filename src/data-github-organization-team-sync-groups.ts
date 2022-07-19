@@ -116,7 +116,7 @@ export class DataGithubOrganizationTeamSyncGroups extends cdktf.TerraformDataSou
       terraformResourceType: 'github_organization_team_sync_groups',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.27.0',
+        providerVersion: '4.27.1',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
