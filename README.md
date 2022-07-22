@@ -35,6 +35,13 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 </dependency>
 ```
 
+
+### Go
+
+The go package is generated into the [`github.com/hashicorp/cdktf-provider-github-go`]https://github.com/hashicorp/cdktf-provider-github-go) package.
+
+`go get github.com/hashicorp/cdktf-provider-github-go/github`
+
 ## Docs
 
 Find auto-generated docs for this provider here: [./API.md](./API.md)
