@@ -200,7 +200,10 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._teamSlug = config.teamSlug;
@@ -269,7 +272,7 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       team_slug: cdktf.stringToTerraform(this._teamSlug),
-      group: cdktf.listMapper(teamSyncGroupMappingGroupToTerraform)(this._group.internalValue),
+      group: cdktf.listMapper(teamSyncGroupMappingGroupToTerraform, true)(this._group.internalValue),
     };
   }
 }

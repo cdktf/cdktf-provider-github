@@ -76,7 +76,10 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._baseRef = config.baseRef;
     this._baseRepository = config.baseRepository;

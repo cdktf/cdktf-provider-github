@@ -52,7 +52,10 @@ export class DataGithubUsers extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._usernames = config.usernames;
@@ -113,7 +116,7 @@ export class DataGithubUsers extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      usernames: cdktf.listMapper(cdktf.stringToTerraform)(this._usernames),
+      usernames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usernames),
     };
   }
 }

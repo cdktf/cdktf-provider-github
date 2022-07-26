@@ -513,7 +513,10 @@ export class Repository extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowAutoMerge = config.allowAutoMerge;
     this._allowMergeCommit = config.allowMergeCommit;
@@ -1056,7 +1059,7 @@ export class Repository extends cdktf.TerraformResource {
       license_template: cdktf.stringToTerraform(this._licenseTemplate),
       name: cdktf.stringToTerraform(this._name),
       private: cdktf.booleanToTerraform(this._private),
-      topics: cdktf.listMapper(cdktf.stringToTerraform)(this._topics),
+      topics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._topics),
       visibility: cdktf.stringToTerraform(this._visibility),
       vulnerability_alerts: cdktf.booleanToTerraform(this._vulnerabilityAlerts),
       pages: repositoryPagesToTerraform(this._pages.internalValue),

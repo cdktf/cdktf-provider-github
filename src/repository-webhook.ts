@@ -213,7 +213,10 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._active = config.active;
     this._events = config.events;
@@ -334,7 +337,7 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       active: cdktf.booleanToTerraform(this._active),
-      events: cdktf.listMapper(cdktf.stringToTerraform)(this._events),
+      events: cdktf.listMapper(cdktf.stringToTerraform, false)(this._events),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       repository: cdktf.stringToTerraform(this._repository),

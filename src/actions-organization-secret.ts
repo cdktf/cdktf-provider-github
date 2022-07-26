@@ -68,7 +68,10 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._encryptedValue = config.encryptedValue;
     this._id = config.id;
@@ -192,7 +195,7 @@ export class ActionsOrganizationSecret extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       plaintext_value: cdktf.stringToTerraform(this._plaintextValue),
       secret_name: cdktf.stringToTerraform(this._secretName),
-      selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._selectedRepositoryIds),
+      selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._selectedRepositoryIds),
       visibility: cdktf.stringToTerraform(this._visibility),
     };
   }
