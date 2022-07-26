@@ -103,8 +103,8 @@ export function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: B
   }
   return {
     dismiss_stale_reviews: cdktf.booleanToTerraform(struct!.dismissStaleReviews),
-    dismissal_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalRestrictions),
-    pull_request_bypassers: cdktf.listMapper(cdktf.stringToTerraform)(struct!.pullRequestBypassers),
+    dismissal_restrictions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dismissalRestrictions),
+    pull_request_bypassers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pullRequestBypassers),
     require_code_owner_reviews: cdktf.booleanToTerraform(struct!.requireCodeOwnerReviews),
     required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
     restrict_dismissals: cdktf.booleanToTerraform(struct!.restrictDismissals),
@@ -318,7 +318,7 @@ export function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchP
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contexts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contexts),
+    contexts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contexts),
     strict: cdktf.booleanToTerraform(struct!.strict),
   }
 }
@@ -458,7 +458,10 @@ export class BranchProtection extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowsDeletions = config.allowsDeletions;
     this._allowsForcePushes = config.allowsForcePushes;
@@ -693,13 +696,13 @@ export class BranchProtection extends cdktf.TerraformResource {
       enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
       id: cdktf.stringToTerraform(this._id),
       pattern: cdktf.stringToTerraform(this._pattern),
-      push_restrictions: cdktf.listMapper(cdktf.stringToTerraform)(this._pushRestrictions),
+      push_restrictions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._pushRestrictions),
       repository_id: cdktf.stringToTerraform(this._repositoryId),
       require_conversation_resolution: cdktf.booleanToTerraform(this._requireConversationResolution),
       require_signed_commits: cdktf.booleanToTerraform(this._requireSignedCommits),
       required_linear_history: cdktf.booleanToTerraform(this._requiredLinearHistory),
-      required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform)(this._requiredPullRequestReviews.internalValue),
-      required_status_checks: cdktf.listMapper(branchProtectionRequiredStatusChecksToTerraform)(this._requiredStatusChecks.internalValue),
+      required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform, true)(this._requiredPullRequestReviews.internalValue),
+      required_status_checks: cdktf.listMapper(branchProtectionRequiredStatusChecksToTerraform, true)(this._requiredStatusChecks.internalValue),
     };
   }
 }

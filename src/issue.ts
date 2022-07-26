@@ -76,7 +76,10 @@ export class Issue extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._assignees = config.assignees;
     this._body = config.body;
@@ -218,10 +221,10 @@ export class Issue extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      assignees: cdktf.listMapper(cdktf.stringToTerraform)(this._assignees),
+      assignees: cdktf.listMapper(cdktf.stringToTerraform, false)(this._assignees),
       body: cdktf.stringToTerraform(this._body),
       id: cdktf.stringToTerraform(this._id),
-      labels: cdktf.listMapper(cdktf.stringToTerraform)(this._labels),
+      labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._labels),
       milestone_number: cdktf.numberToTerraform(this._milestoneNumber),
       repository: cdktf.stringToTerraform(this._repository),
       title: cdktf.stringToTerraform(this._title),

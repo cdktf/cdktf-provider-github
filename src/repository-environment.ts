@@ -142,8 +142,8 @@ export function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnv
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    teams: cdktf.listMapper(cdktf.numberToTerraform)(struct!.teams),
-    users: cdktf.listMapper(cdktf.numberToTerraform)(struct!.users),
+    teams: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.teams),
+    users: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.users),
   }
 }
 
@@ -282,7 +282,10 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._environment = config.environment;
     this._id = config.id;
@@ -397,7 +400,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
       repository: cdktf.stringToTerraform(this._repository),
       wait_timer: cdktf.numberToTerraform(this._waitTimer),
       deployment_branch_policy: repositoryEnvironmentDeploymentBranchPolicyToTerraform(this._deploymentBranchPolicy.internalValue),
-      reviewers: cdktf.listMapper(repositoryEnvironmentReviewersToTerraform)(this._reviewers.internalValue),
+      reviewers: cdktf.listMapper(repositoryEnvironmentReviewersToTerraform, true)(this._reviewers.internalValue),
     };
   }
 }

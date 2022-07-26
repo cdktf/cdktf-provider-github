@@ -87,8 +87,8 @@ export function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?:
   }
   return {
     dismiss_stale_reviews: cdktf.booleanToTerraform(struct!.dismissStaleReviews),
-    dismissal_teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalTeams),
-    dismissal_users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.dismissalUsers),
+    dismissal_teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dismissalTeams),
+    dismissal_users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dismissalUsers),
     include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
     require_code_owner_reviews: cdktf.booleanToTerraform(struct!.requireCodeOwnerReviews),
     required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
@@ -274,7 +274,7 @@ export function branchProtectionV3RequiredStatusChecksToTerraform(struct?: Branc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contexts: cdktf.listMapper(cdktf.stringToTerraform)(struct!.contexts),
+    contexts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contexts),
     include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
     strict: cdktf.booleanToTerraform(struct!.strict),
   }
@@ -393,9 +393,9 @@ export function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtect
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    apps: cdktf.listMapper(cdktf.stringToTerraform)(struct!.apps),
-    teams: cdktf.listMapper(cdktf.stringToTerraform)(struct!.teams),
-    users: cdktf.listMapper(cdktf.stringToTerraform)(struct!.users),
+    apps: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.apps),
+    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
+    users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
   }
 }
 
@@ -524,7 +524,10 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._branch = config.branch;
     this._enforceAdmins = config.enforceAdmins;

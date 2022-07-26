@@ -57,7 +57,7 @@ export function actionsOrganizationPermissionsAllowedActionsConfigToTerraform(st
   }
   return {
     github_owned_allowed: cdktf.booleanToTerraform(struct!.githubOwnedAllowed),
-    patterns_allowed: cdktf.listMapper(cdktf.stringToTerraform)(struct!.patternsAllowed),
+    patterns_allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.patternsAllowed),
     verified_allowed: cdktf.booleanToTerraform(struct!.verifiedAllowed),
   }
 }
@@ -164,7 +164,7 @@ export function actionsOrganizationPermissionsEnabledRepositoriesConfigToTerrafo
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    repository_ids: cdktf.listMapper(cdktf.numberToTerraform)(struct!.repositoryIds),
+    repository_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.repositoryIds),
   }
 }
 
@@ -246,7 +246,10 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._allowedActions = config.allowedActions;
     this._enabledRepositories = config.enabledRepositories;

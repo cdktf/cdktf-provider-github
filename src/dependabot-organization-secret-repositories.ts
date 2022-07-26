@@ -56,7 +56,10 @@ export class DependabotOrganizationSecretRepositories extends cdktf.TerraformRes
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._secretName = config.secretName;
@@ -117,7 +120,7 @@ export class DependabotOrganizationSecretRepositories extends cdktf.TerraformRes
     return {
       id: cdktf.stringToTerraform(this._id),
       secret_name: cdktf.stringToTerraform(this._secretName),
-      selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform)(this._selectedRepositoryIds),
+      selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._selectedRepositoryIds),
     };
   }
 }
