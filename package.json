@@ -110,7 +110,7 @@
   "cdktf": {
     "provider": {
       "name": "registry.terraform.io/integrations/github",
-      "version": "4.27.1"
+      "version": "4.28.0"
     }
   },
   "resolutions": {
