@@ -46,7 +46,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
       terraformResourceType: 'github_user_invitation_accepter',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.27.1',
+        providerVersion: '4.28.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
