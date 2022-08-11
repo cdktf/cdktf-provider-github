@@ -241,9 +241,9 @@
     infer-owner "^1.0.4"
 
 "@npmcli/run-script@^4.1.0":
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-4.2.0.tgz#2c25758f80831ba138afe25225d456e89acedac3"
-  integrity sha512-e/QgLg7j2wSJp1/7JRl0GC8c7PMX+uYlA/1Tb+IDOLdSM4T7K1VQ9mm9IGU3WRtY5vEIObpqCLb3aCNCug18DA==
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/@npmcli/run-script/-/run-script-4.2.1.tgz#c07c5c71bc1c70a5f2a06b0d4da976641609b946"
+  integrity sha512-7dqywvVudPSrRCW5nTHpHgeWnbBtz8cFkOuKrecm6ih+oO9ciydhWt6OF7HlqupRRmB8Q/gECVdB9LMfToJbRg==
   dependencies:
     "@npmcli/node-gyp" "^2.0.0"
     "@npmcli/promise-spawn" "^3.0.0"
@@ -409,9 +409,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "18.6.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.6.5.tgz#06caea822caf9e59d5034b695186ee74154d2802"
-  integrity sha512-Xjt5ZGUa5WusGZJ4WJPbOT8QOqp6nDynVFRKcUt32bOgvXEoc6o085WNkYTMO7ifAj2isEfQQ2cseE+wT6jsRw==
+  version "18.7.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.7.1.tgz#352bee64f93117d867d05f7406642a52685cbca6"
+  integrity sha512-GKX1Qnqxo4S+Z/+Z8KKPLpH282LD7jLHWJcVryOflnsnH+BtSDfieR6ObwBMwpnNws0bUK8GI7z0unQf9bARNQ==
 
 "@types/node@^14":
   version "14.18.23"
@@ -1072,9 +1072,9 @@ constant-case@^3.0.4:
     upper-case "^2.0.2"
 
 constructs@^10.0.0, constructs@^10.0.25:
-  version "10.1.70"
-  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.70.tgz#b2de1590b755306618b11d085dce042c115efe3a"
-  integrity sha512-6qdvuw4D+Oef7GNwbuXFpGcR/qpOPApZjNOHwV1Tp+bkAWF7lQT+2zXqoCtVr51y5TO8Tpc63Va7yT1UCYkS3A==
+  version "10.1.71"
+  resolved "https://registry.yarnpkg.com/constructs/-/constructs-10.1.71.tgz#0f76a157862cc9ab8943ef6bf807e36f634552be"
+  integrity sha512-nvjfjxqAkgOXljN+Qb2QndtmpjjrltwQ4d1+DL9OII38VnwtbGSvkpKao3CucXERj2JV8zTDx6leRSMgz6QIjw==
 
 conventional-changelog-angular@^5.0.12:
   version "5.0.13"
@@ -1865,9 +1865,9 @@ hosted-git-info@^4.0.0, hosted-git-info@^4.0.1:
     lru-cache "^6.0.0"
 
 hosted-git-info@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-5.0.0.tgz#df7a06678b4ebd722139786303db80fdf302ea56"
-  integrity sha512-rRnjWu0Bxj+nIfUOkz0695C0H6tRrN5iYIzYejb0tDEefe2AekHu/U5Kn9pEie5vsJqpNQU02az7TGSH3qpz4Q==
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/hosted-git-info/-/hosted-git-info-5.1.0.tgz#9786123f92ef3627f24abc3f15c20d98ec4a6594"
+  integrity sha512-Ek+QmMEqZF8XrbFdwoDjSbm7rT23pCgEMOJmz6GPk/s4yH//RQfNPArhIxbguNxROq/+5lNBwCDHMhA903Kx1Q==
   dependencies:
     lru-cache "^7.5.1"
 
@@ -2205,9 +2205,9 @@ jsii-rosetta@^1.62.0, jsii-rosetta@^1.63.2:
     yargs "^16.2.0"
 
 jsii-srcmak@^0.1.627:
-  version "0.1.641"
-  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.641.tgz#f51ece7cfc42c7d15ba2a1c1d048899391ae747c"
-  integrity sha512-+MJXLGSqVkFaJ20f9yL2xB3FSjQ94VgeIZZNWnyMx2VSTrXzdFquToYFuMb+SEHlSNdnNlllXpKE1dVvi76A9A==
+  version "0.1.643"
+  resolved "https://registry.yarnpkg.com/jsii-srcmak/-/jsii-srcmak-0.1.643.tgz#e55a6bba308cd868ee91c089014d1dbed06feea5"
+  integrity sha512-IiLe2518WZAjgWWMz1Fn8De0xmXeSWgTup/tkjJecwH0QdUwlqH6d19GcuRVl+wKAcdX3xkRqA7uSF5I7tX3Vg==
   dependencies:
     fs-extra "^9.1.0"
     jsii "^1.63.2"
