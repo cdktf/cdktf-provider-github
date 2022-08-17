@@ -30,6 +30,9 @@ Name|Description
 [DataGithubCollaboratorsCollaboratorList](#cdktf-provider-github-datagithubcollaboratorscollaboratorlist)|*No description*
 [DataGithubCollaboratorsCollaboratorOutputReference](#cdktf-provider-github-datagithubcollaboratorscollaboratoroutputreference)|*No description*
 [DataGithubDependabotPublicKey](#cdktf-provider-github-datagithubdependabotpublickey)|Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key}.
+[DataGithubExternalGroups](#cdktf-provider-github-datagithubexternalgroups)|Represents a {@link https://www.terraform.io/docs/providers/github/d/external_groups github_external_groups}.
+[DataGithubExternalGroupsExternalGroupsList](#cdktf-provider-github-datagithubexternalgroupsexternalgroupslist)|*No description*
+[DataGithubExternalGroupsExternalGroupsOutputReference](#cdktf-provider-github-datagithubexternalgroupsexternalgroupsoutputreference)|*No description*
 [DataGithubIpRanges](#cdktf-provider-github-datagithubipranges)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges}.
 [DataGithubMembership](#cdktf-provider-github-datagithubmembership)|Represents a {@link https://www.terraform.io/docs/providers/github/d/membership github_membership}.
 [DataGithubOrganization](#cdktf-provider-github-datagithuborganization)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization github_organization}.
@@ -135,6 +138,8 @@ Name|Description
 [DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaboratorscollaborator)|*No description*
 [DataGithubCollaboratorsConfig](#cdktf-provider-github-datagithubcollaboratorsconfig)|*No description*
 [DataGithubDependabotPublicKeyConfig](#cdktf-provider-github-datagithubdependabotpublickeyconfig)|*No description*
+[DataGithubExternalGroupsConfig](#cdktf-provider-github-datagithubexternalgroupsconfig)|*No description*
+[DataGithubExternalGroupsExternalGroups](#cdktf-provider-github-datagithubexternalgroupsexternalgroups)|*No description*
 [DataGithubIpRangesConfig](#cdktf-provider-github-datagithubiprangesconfig)|*No description*
 [DataGithubMembershipConfig](#cdktf-provider-github-datagithubmembershipconfig)|*No description*
 [DataGithubOrganizationConfig](#cdktf-provider-github-datagithuborganizationconfig)|*No description*
@@ -2628,6 +2633,159 @@ protected synthesizeAttributes(): Map<string, any>
 
 __Returns__:
 * <code>Map<string, any></code>
+
+
+
+## class DataGithubExternalGroups  <a id="cdktf-provider-github-datagithubexternalgroups"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/d/external_groups github_external_groups}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/d/external_groups github_external_groups} Data Source.
+
+```ts
+new DataGithubExternalGroups(scope: Construct, id: string, config?: DataGithubExternalGroupsConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[DataGithubExternalGroupsConfig](#cdktf-provider-github-datagithubexternalgroupsconfig)</code>)  *No description*
+  * **connection** (<code>[ISSHProvisionerConnection](#cdktf-isshprovisionerconnection) &#124; [IWinrmProvisionerConnection](#cdktf-iwinrmprovisionerconnection)</code>)  *No description* __*Optional*__
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **forEach** (<code>[ITerraformIterator](#cdktf-iterraformiterator)</code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **provisioners** (<code>Array<[IFileProvisioner](#cdktf-ifileprovisioner) &#124; [ILocalExecProvisioner](#cdktf-ilocalexecprovisioner) &#124; [IRemoteExecProvisioner](#cdktf-iremoteexecprovisioner)></code>)  *No description* __*Optional*__
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/external_groups#id DataGithubExternalGroups#id}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**externalGroups** | <code>[DataGithubExternalGroupsExternalGroupsList](#cdktf-provider-github-datagithubexternalgroupsexternalgroupslist)</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**idInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-github-datagithubexternalgroups-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubexternalgroups-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DataGithubExternalGroupsExternalGroupsList  <a id="cdktf-provider-github-datagithubexternalgroupsexternalgroupslist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubExternalGroupsExternalGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubexternalgroupsexternalgroupslist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubExternalGroupsExternalGroupsOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[DataGithubExternalGroupsExternalGroupsOutputReference](#cdktf-provider-github-datagithubexternalgroupsexternalgroupsoutputreference)</code>
+
+
+
+## class DataGithubExternalGroupsExternalGroupsOutputReference  <a id="cdktf-provider-github-datagithubexternalgroupsexternalgroupsoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new DataGithubExternalGroupsExternalGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**groupId** | <code>number</code> | <span></span>
+**groupName** | <code>string</code> | <span></span>
+**updatedAt** | <code>string</code> | <span></span>
+**internalValue**? | <code>[DataGithubExternalGroupsExternalGroups](#cdktf-provider-github-datagithubexternalgroupsexternalgroups)</code> | __*Optional*__
 
 
 
@@ -9713,6 +9871,32 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[IFileProvisioner](#cdktf-ifileprovisioner) &#124; [ILocalExecProvisioner](#cdktf-ilocalexecprovisioner) &#124; [IRemoteExecProvisioner](#cdktf-iremoteexecprovisioner)></code> | __*Optional*__
+
+
+
+## struct DataGithubExternalGroupsConfig  <a id="cdktf-provider-github-datagithubexternalgroupsconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**connection**?🔹 | <code>[ISSHProvisionerConnection](#cdktf-isshprovisionerconnection) &#124; [IWinrmProvisionerConnection](#cdktf-iwinrmprovisionerconnection)</code> | __*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/external_groups#id DataGithubExternalGroups#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[IFileProvisioner](#cdktf-ifileprovisioner) &#124; [ILocalExecProvisioner](#cdktf-ilocalexecprovisioner) &#124; [IRemoteExecProvisioner](#cdktf-iremoteexecprovisioner)></code> | __*Optional*__
+
+
+
+## struct DataGithubExternalGroupsExternalGroups  <a id="cdktf-provider-github-datagithubexternalgroupsexternalgroups"></a>
+
+
 
 
 

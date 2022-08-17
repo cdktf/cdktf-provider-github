@@ -44,6 +44,7 @@ export * from './data-github-actions-public-key';
 export * from './data-github-branch';
 export * from './data-github-collaborators';
 export * from './data-github-dependabot-public-key';
+export * from './data-github-external-groups';
 export * from './data-github-ip-ranges';
 export * from './data-github-membership';
 export * from './data-github-organization';
