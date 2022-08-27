@@ -4636,6 +4636,7 @@ new DataGithubTeam(scope: Construct, id: string, config: DataGithubTeamConfig)
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
   * **slug** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#slug DataGithubTeam#slug}. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#id DataGithubTeam#id}. __*Optional*__
+  * **membershipType** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#membership_type DataGithubTeam#membership_type}. __*Optional*__
 
 
 
@@ -4647,6 +4648,7 @@ Name | Type | Description
 **description** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **members** | <code>Array<string></code> | <span></span>
+**membershipType** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
 **permission** | <code>string</code> | <span></span>
@@ -4654,6 +4656,7 @@ Name | Type | Description
 **repositories** | <code>Array<string></code> | <span></span>
 **slug** | <code>string</code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
+**membershipTypeInput**? | <code>string</code> | __*Optional*__
 **slugInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -4666,6 +4669,18 @@ Name | Type | Description
 
 ```ts
 resetId(): void
+```
+
+
+
+
+
+#### resetMembershipType() <a id="cdktf-provider-github-datagithubteam-resetmembershiptype"></a>
+
+
+
+```ts
+resetMembershipType(): void
 ```
 
 
@@ -10246,6 +10261,7 @@ Name | Type | Description
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#id DataGithubTeam#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**membershipType**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#membership_type DataGithubTeam#membership_type}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 

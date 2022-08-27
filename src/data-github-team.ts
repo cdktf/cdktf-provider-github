@@ -15,6 +15,10 @@ export interface DataGithubTeamConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#membership_type DataGithubTeam#membership_type}
+  */
+  readonly membershipType?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#slug DataGithubTeam#slug}
   */
   readonly slug: string;
@@ -46,7 +50,7 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_team',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -58,6 +62,7 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._membershipType = config.membershipType;
     this._slug = config.slug;
   }
 
@@ -89,6 +94,22 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
   // members - computed: true, optional: false, required: false
   public get members() {
     return this.getListAttribute('members');
+  }
+
+  // membership_type - computed: false, optional: true, required: false
+  private _membershipType?: string; 
+  public get membershipType() {
+    return this.getStringAttribute('membership_type');
+  }
+  public set membershipType(value: string) {
+    this._membershipType = value;
+  }
+  public resetMembershipType() {
+    this._membershipType = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get membershipTypeInput() {
+    return this._membershipType;
   }
 
   // name - computed: true, optional: false, required: false
@@ -136,6 +157,7 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      membership_type: cdktf.stringToTerraform(this._membershipType),
       slug: cdktf.stringToTerraform(this._slug),
     };
   }
