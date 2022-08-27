@@ -173,7 +173,7 @@ export class TeamMembers extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_members',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.29.0',
+        providerVersion: '4.30.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
