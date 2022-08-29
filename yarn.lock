@@ -804,7 +804,7 @@ case@^1.6.3:
   resolved "https://registry.yarnpkg.com/case/-/case-1.6.3.tgz#0a4386e3e9825351ca2e6216c60467ff5f1ea1c9"
   integrity sha512-mzDSXIPaFwVDvZAHqZ9VlbyF4yyXRuX6IvB06WvPYkqJVO24kX1PPhv9bfpKNFZyxYFmmgo03HUiD8iklmJYRQ==
 
-cdktf-cli@^0.12.0:
+cdktf-cli@^0.12.2:
   version "0.12.2"
   resolved "https://registry.yarnpkg.com/cdktf-cli/-/cdktf-cli-0.12.2.tgz#f8c335445c9c5562b602140bd34459bd1c314dfd"
   integrity sha512-HO4+66ENqSzSCNhHe3uEd27YcBCI7n1+EGruTalswuA46jhr0nXuHAcJrxiU3U0NHYROIxn7r7YYkcZ0x0l1Ig==
@@ -829,7 +829,7 @@ cdktf-cli@^0.12.0:
     yargs "^17.5"
     yoga-layout-prebuilt "^1.10.0"
 
-cdktf@0.12.2, cdktf@^0.12.0:
+cdktf@0.12.2, cdktf@^0.12.2:
   version "0.12.2"
   resolved "https://registry.yarnpkg.com/cdktf/-/cdktf-0.12.2.tgz#eb09340e423f0dc85c1935b8ba7c9fb571a984ac"
   integrity sha512-eawyoDZexYsymjXpa0YOBI+blN+eri6QToJifuCkNVUtC5v/grfo2Ev4thvL0zxCKNeS/6XU0CifEz51L6t2QA==
@@ -3145,10 +3145,10 @@ progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.61.32:
-  version "0.61.32"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.61.32.tgz#88cd669cd874997ac9b923a70e7a41e9eec27746"
-  integrity sha512-lIHYG/XLO40ZX8B+JCgI5Fmec9DlfCMhbIJwpajPgYJuu4f0nBPwTCbpXZfH2EFkgC5ucBJ4apVi5NEidrTvWg==
+projen@^0.61.33:
+  version "0.61.33"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.61.33.tgz#c45de83b15497c0d677ce9a265ab5b6a386b387b"
+  integrity sha512-NCUPOG33h9KeC8Kfms8nkoxIj+vO3Gs47jy0ifblcTsazuwut41SS3JIcesLBOlCnmr+rFQVDECuJ6AnOXPNZw==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
