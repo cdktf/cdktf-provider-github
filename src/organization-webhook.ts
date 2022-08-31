@@ -203,7 +203,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_webhook',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,

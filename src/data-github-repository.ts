@@ -290,7 +290,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -448,6 +448,16 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // merge_commit_message - computed: true, optional: false, required: false
+  public get mergeCommitMessage() {
+    return this.getStringAttribute('merge_commit_message');
+  }
+
+  // merge_commit_title - computed: true, optional: false, required: false
+  public get mergeCommitTitle() {
+    return this.getStringAttribute('merge_commit_title');
+  }
+
   // name - computed: true, optional: true, required: false
   private _name?: string; 
   public get name() {
@@ -499,6 +509,16 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // repo_id - computed: true, optional: false, required: false
   public get repoId() {
     return this.getNumberAttribute('repo_id');
+  }
+
+  // squash_merge_commit_message - computed: true, optional: false, required: false
+  public get squashMergeCommitMessage() {
+    return this.getStringAttribute('squash_merge_commit_message');
+  }
+
+  // squash_merge_commit_title - computed: true, optional: false, required: false
+  public get squashMergeCommitTitle() {
+    return this.getStringAttribute('squash_merge_commit_title');
   }
 
   // ssh_clone_url - computed: true, optional: false, required: false

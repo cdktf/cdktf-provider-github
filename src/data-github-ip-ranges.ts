@@ -42,7 +42,7 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -73,6 +73,21 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
   // actions_ipv6 - computed: true, optional: false, required: false
   public get actionsIpv6() {
     return this.getListAttribute('actions_ipv6');
+  }
+
+  // api - computed: true, optional: false, required: false
+  public get api() {
+    return this.getListAttribute('api');
+  }
+
+  // api_ipv4 - computed: true, optional: false, required: false
+  public get apiIpv4() {
+    return this.getListAttribute('api_ipv4');
+  }
+
+  // api_ipv6 - computed: true, optional: false, required: false
+  public get apiIpv6() {
+    return this.getListAttribute('api_ipv6');
   }
 
   // dependabot - computed: true, optional: false, required: false
@@ -164,6 +179,21 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
   // pages_ipv6 - computed: true, optional: false, required: false
   public get pagesIpv6() {
     return this.getListAttribute('pages_ipv6');
+  }
+
+  // web - computed: true, optional: false, required: false
+  public get web() {
+    return this.getListAttribute('web');
+  }
+
+  // web_ipv4 - computed: true, optional: false, required: false
+  public get webIpv4() {
+    return this.getListAttribute('web_ipv4');
+  }
+
+  // web_ipv6 - computed: true, optional: false, required: false
+  public get webIpv6() {
+    return this.getListAttribute('web_ipv6');
   }
 
   // =========
