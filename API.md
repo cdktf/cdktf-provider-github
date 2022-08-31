@@ -2827,6 +2827,9 @@ Name | Type | Description
 **actions** | <code>Array<string></code> | <span></span>
 **actionsIpv4** | <code>Array<string></code> | <span></span>
 **actionsIpv6** | <code>Array<string></code> | <span></span>
+**api** | <code>Array<string></code> | <span></span>
+**apiIpv4** | <code>Array<string></code> | <span></span>
+**apiIpv6** | <code>Array<string></code> | <span></span>
 **dependabot** | <code>Array<string></code> | <span></span>
 **dependabotIpv4** | <code>Array<string></code> | <span></span>
 **dependabotIpv6** | <code>Array<string></code> | <span></span>
@@ -2843,6 +2846,9 @@ Name | Type | Description
 **pages** | <code>Array<string></code> | <span></span>
 **pagesIpv4** | <code>Array<string></code> | <span></span>
 **pagesIpv6** | <code>Array<string></code> | <span></span>
+**web** | <code>Array<string></code> | <span></span>
+**webIpv4** | <code>Array<string></code> | <span></span>
+**webIpv6** | <code>Array<string></code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -3709,12 +3715,16 @@ Name | Type | Description
 **htmlUrl** | <code>string</code> | <span></span>
 **httpCloneUrl** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**mergeCommitMessage** | <code>string</code> | <span></span>
+**mergeCommitTitle** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
 **onlyProtectedBranches** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **pages** | <code>[DataGithubRepositoryPagesList](#cdktf-provider-github-datagithubrepositorypageslist)</code> | <span></span>
 **private** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repoId** | <code>number</code> | <span></span>
+**squashMergeCommitMessage** | <code>string</code> | <span></span>
+**squashMergeCommitTitle** | <code>string</code> | <span></span>
 **sshCloneUrl** | <code>string</code> | <span></span>
 **svnUrl** | <code>string</code> | <span></span>
 **topics** | <code>Array<string></code> | <span></span>
@@ -6530,8 +6540,12 @@ new Repository(scope: Construct, id: string, config: RepositoryConfig)
   * **ignoreVulnerabilityAlertsDuringRead** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}. __*Optional*__
   * **isTemplate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#is_template Repository#is_template}. __*Optional*__
   * **licenseTemplate** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#license_template Repository#license_template}. __*Optional*__
+  * **mergeCommitMessage** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_message Repository#merge_commit_message}. __*Optional*__
+  * **mergeCommitTitle** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_title Repository#merge_commit_title}. __*Optional*__
   * **pages** (<code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code>)  pages block. __*Optional*__
   * **private** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}. __*Optional*__
+  * **squashMergeCommitMessage** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}. __*Optional*__
+  * **squashMergeCommitTitle** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}. __*Optional*__
   * **template** (<code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code>)  template block. __*Optional*__
   * **topics** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#topics Repository#topics}. __*Optional*__
   * **visibility** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#visibility Repository#visibility}. __*Optional*__
@@ -6570,11 +6584,15 @@ Name | Type | Description
 **ignoreVulnerabilityAlertsDuringRead** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **isTemplate** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **licenseTemplate** | <code>string</code> | <span></span>
+**mergeCommitMessage** | <code>string</code> | <span></span>
+**mergeCommitTitle** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
 **pages** | <code>[RepositoryPagesOutputReference](#cdktf-provider-github-repositorypagesoutputreference)</code> | <span></span>
 **private** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repoId** | <code>number</code> | <span></span>
+**squashMergeCommitMessage** | <code>string</code> | <span></span>
+**squashMergeCommitTitle** | <code>string</code> | <span></span>
 **sshCloneUrl** | <code>string</code> | <span></span>
 **svnUrl** | <code>string</code> | <span></span>
 **template** | <code>[RepositoryTemplateOutputReference](#cdktf-provider-github-repositorytemplateoutputreference)</code> | <span></span>
@@ -6601,9 +6619,13 @@ Name | Type | Description
 **ignoreVulnerabilityAlertsDuringReadInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **isTemplateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **licenseTemplateInput**? | <code>string</code> | __*Optional*__
+**mergeCommitMessageInput**? | <code>string</code> | __*Optional*__
+**mergeCommitTitleInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
 **pagesInput**? | <code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code> | __*Optional*__
 **privateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**squashMergeCommitMessageInput**? | <code>string</code> | __*Optional*__
+**squashMergeCommitTitleInput**? | <code>string</code> | __*Optional*__
 **templateInput**? | <code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code> | __*Optional*__
 **topicsInput**? | <code>Array<string></code> | __*Optional*__
 **visibilityInput**? | <code>string</code> | __*Optional*__
@@ -6883,6 +6905,30 @@ resetLicenseTemplate(): void
 
 
 
+#### resetMergeCommitMessage() <a id="cdktf-provider-github-repository-resetmergecommitmessage"></a>
+
+
+
+```ts
+resetMergeCommitMessage(): void
+```
+
+
+
+
+
+#### resetMergeCommitTitle() <a id="cdktf-provider-github-repository-resetmergecommittitle"></a>
+
+
+
+```ts
+resetMergeCommitTitle(): void
+```
+
+
+
+
+
 #### resetPages() <a id="cdktf-provider-github-repository-resetpages"></a>
 
 
@@ -6901,6 +6947,30 @@ resetPages(): void
 
 ```ts
 resetPrivate(): void
+```
+
+
+
+
+
+#### resetSquashMergeCommitMessage() <a id="cdktf-provider-github-repository-resetsquashmergecommitmessage"></a>
+
+
+
+```ts
+resetSquashMergeCommitMessage(): void
+```
+
+
+
+
+
+#### resetSquashMergeCommitTitle() <a id="cdktf-provider-github-repository-resetsquashmergecommittitle"></a>
+
+
+
+```ts
+resetSquashMergeCommitTitle(): void
 ```
 
 
@@ -10756,10 +10826,14 @@ Name | Type | Description
 **isTemplate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#is_template Repository#is_template}.<br/>__*Optional*__
 **licenseTemplate**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#license_template Repository#license_template}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**mergeCommitMessage**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_message Repository#merge_commit_message}.<br/>__*Optional*__
+**mergeCommitTitle**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_title Repository#merge_commit_title}.<br/>__*Optional*__
 **pages**? | <code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code> | pages block.<br/>__*Optional*__
 **private**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+**squashMergeCommitMessage**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}.<br/>__*Optional*__
+**squashMergeCommitTitle**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}.<br/>__*Optional*__
 **template**? | <code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code> | template block.<br/>__*Optional*__
 **topics**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#topics Repository#topics}.<br/>__*Optional*__
 **visibility**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#visibility Repository#visibility}.<br/>__*Optional*__

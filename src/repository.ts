@@ -93,6 +93,14 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly licenseTemplate?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_message Repository#merge_commit_message}
+  */
+  readonly mergeCommitMessage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_title Repository#merge_commit_title}
+  */
+  readonly mergeCommitTitle?: string;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#name Repository#name}
   */
   readonly name: string;
@@ -100,6 +108,14 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}
   */
   readonly private?: boolean | cdktf.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}
+  */
+  readonly squashMergeCommitMessage?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}
+  */
+  readonly squashMergeCommitTitle?: string;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#topics Repository#topics}
   */
@@ -507,7 +523,7 @@ export class Repository extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.30.0',
+        providerVersion: '4.31.0',
         providerVersionConstraint: '~> 4.0'
       },
       provider: config.provider,
@@ -538,8 +554,12 @@ export class Repository extends cdktf.TerraformResource {
     this._ignoreVulnerabilityAlertsDuringRead = config.ignoreVulnerabilityAlertsDuringRead;
     this._isTemplate = config.isTemplate;
     this._licenseTemplate = config.licenseTemplate;
+    this._mergeCommitMessage = config.mergeCommitMessage;
+    this._mergeCommitTitle = config.mergeCommitTitle;
     this._name = config.name;
     this._private = config.private;
+    this._squashMergeCommitMessage = config.squashMergeCommitMessage;
+    this._squashMergeCommitTitle = config.squashMergeCommitTitle;
     this._topics = config.topics;
     this._visibility = config.visibility;
     this._vulnerabilityAlerts = config.vulnerabilityAlerts;
@@ -902,6 +922,38 @@ export class Repository extends cdktf.TerraformResource {
     return this._licenseTemplate;
   }
 
+  // merge_commit_message - computed: false, optional: true, required: false
+  private _mergeCommitMessage?: string; 
+  public get mergeCommitMessage() {
+    return this.getStringAttribute('merge_commit_message');
+  }
+  public set mergeCommitMessage(value: string) {
+    this._mergeCommitMessage = value;
+  }
+  public resetMergeCommitMessage() {
+    this._mergeCommitMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mergeCommitMessageInput() {
+    return this._mergeCommitMessage;
+  }
+
+  // merge_commit_title - computed: false, optional: true, required: false
+  private _mergeCommitTitle?: string; 
+  public get mergeCommitTitle() {
+    return this.getStringAttribute('merge_commit_title');
+  }
+  public set mergeCommitTitle(value: string) {
+    this._mergeCommitTitle = value;
+  }
+  public resetMergeCommitTitle() {
+    this._mergeCommitTitle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get mergeCommitTitleInput() {
+    return this._mergeCommitTitle;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -939,6 +991,38 @@ export class Repository extends cdktf.TerraformResource {
   // repo_id - computed: true, optional: false, required: false
   public get repoId() {
     return this.getNumberAttribute('repo_id');
+  }
+
+  // squash_merge_commit_message - computed: false, optional: true, required: false
+  private _squashMergeCommitMessage?: string; 
+  public get squashMergeCommitMessage() {
+    return this.getStringAttribute('squash_merge_commit_message');
+  }
+  public set squashMergeCommitMessage(value: string) {
+    this._squashMergeCommitMessage = value;
+  }
+  public resetSquashMergeCommitMessage() {
+    this._squashMergeCommitMessage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get squashMergeCommitMessageInput() {
+    return this._squashMergeCommitMessage;
+  }
+
+  // squash_merge_commit_title - computed: false, optional: true, required: false
+  private _squashMergeCommitTitle?: string; 
+  public get squashMergeCommitTitle() {
+    return this.getStringAttribute('squash_merge_commit_title');
+  }
+  public set squashMergeCommitTitle(value: string) {
+    this._squashMergeCommitTitle = value;
+  }
+  public resetSquashMergeCommitTitle() {
+    this._squashMergeCommitTitle = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get squashMergeCommitTitleInput() {
+    return this._squashMergeCommitTitle;
   }
 
   // ssh_clone_url - computed: true, optional: false, required: false
@@ -1057,8 +1141,12 @@ export class Repository extends cdktf.TerraformResource {
       ignore_vulnerability_alerts_during_read: cdktf.booleanToTerraform(this._ignoreVulnerabilityAlertsDuringRead),
       is_template: cdktf.booleanToTerraform(this._isTemplate),
       license_template: cdktf.stringToTerraform(this._licenseTemplate),
+      merge_commit_message: cdktf.stringToTerraform(this._mergeCommitMessage),
+      merge_commit_title: cdktf.stringToTerraform(this._mergeCommitTitle),
       name: cdktf.stringToTerraform(this._name),
       private: cdktf.booleanToTerraform(this._private),
+      squash_merge_commit_message: cdktf.stringToTerraform(this._squashMergeCommitMessage),
+      squash_merge_commit_title: cdktf.stringToTerraform(this._squashMergeCommitTitle),
       topics: cdktf.listMapper(cdktf.stringToTerraform, false)(this._topics),
       visibility: cdktf.stringToTerraform(this._visibility),
       vulnerability_alerts: cdktf.booleanToTerraform(this._vulnerabilityAlerts),
