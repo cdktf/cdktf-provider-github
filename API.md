@@ -4,216 +4,218 @@
 
 Name|Description
 ----|-----------
-[ActionsEnvironmentSecret](#cdktf-provider-github-actionsenvironmentsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret github_actions_environment_secret}.
-[ActionsOrganizationPermissions](#cdktf-provider-github-actionsorganizationpermissions)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions github_actions_organization_permissions}.
-[ActionsOrganizationPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference)|*No description*
-[ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference)|*No description*
-[ActionsOrganizationSecret](#cdktf-provider-github-actionsorganizationsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret github_actions_organization_secret}.
-[ActionsOrganizationSecretRepositories](#cdktf-provider-github-actionsorganizationsecretrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories}.
-[ActionsRunnerGroup](#cdktf-provider-github-actionsrunnergroup)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group}.
-[ActionsSecret](#cdktf-provider-github-actionssecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}.
-[AppInstallationRepository](#cdktf-provider-github-appinstallationrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository}.
-[Branch](#cdktf-provider-github-branch)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch github_branch}.
-[BranchDefault](#cdktf-provider-github-branchdefault)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default}.
-[BranchProtection](#cdktf-provider-github-branchprotection)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection github_branch_protection}.
-[BranchProtectionRequiredPullRequestReviewsList](#cdktf-provider-github-branchprotectionrequiredpullrequestreviewslist)|*No description*
-[BranchProtectionRequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference)|*No description*
-[BranchProtectionRequiredStatusChecksList](#cdktf-provider-github-branchprotectionrequiredstatuscheckslist)|*No description*
-[BranchProtectionRequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionrequiredstatuschecksoutputreference)|*No description*
-[BranchProtectionV3](#cdktf-provider-github-branchprotectionv3)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3}.
-[BranchProtectionV3RequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference)|*No description*
-[BranchProtectionV3RequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionv3requiredstatuschecksoutputreference)|*No description*
-[BranchProtectionV3RestrictionsOutputReference](#cdktf-provider-github-branchprotectionv3restrictionsoutputreference)|*No description*
-[DataGithubActionsPublicKey](#cdktf-provider-github-datagithubactionspublickey)|Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key}.
-[DataGithubBranch](#cdktf-provider-github-datagithubbranch)|Represents a {@link https://www.terraform.io/docs/providers/github/d/branch github_branch}.
-[DataGithubCollaborators](#cdktf-provider-github-datagithubcollaborators)|Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators}.
-[DataGithubCollaboratorsCollaboratorList](#cdktf-provider-github-datagithubcollaboratorscollaboratorlist)|*No description*
-[DataGithubCollaboratorsCollaboratorOutputReference](#cdktf-provider-github-datagithubcollaboratorscollaboratoroutputreference)|*No description*
-[DataGithubDependabotPublicKey](#cdktf-provider-github-datagithubdependabotpublickey)|Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key}.
-[DataGithubExternalGroups](#cdktf-provider-github-datagithubexternalgroups)|Represents a {@link https://www.terraform.io/docs/providers/github/d/external_groups github_external_groups}.
-[DataGithubExternalGroupsExternalGroupsList](#cdktf-provider-github-datagithubexternalgroupsexternalgroupslist)|*No description*
-[DataGithubExternalGroupsExternalGroupsOutputReference](#cdktf-provider-github-datagithubexternalgroupsexternalgroupsoutputreference)|*No description*
-[DataGithubIpRanges](#cdktf-provider-github-datagithubipranges)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges}.
-[DataGithubMembership](#cdktf-provider-github-datagithubmembership)|Represents a {@link https://www.terraform.io/docs/providers/github/d/membership github_membership}.
-[DataGithubOrganization](#cdktf-provider-github-datagithuborganization)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization github_organization}.
-[DataGithubOrganizationTeamSyncGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroups)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups}.
-[DataGithubOrganizationTeamSyncGroupsGroupsList](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupslist)|*No description*
-[DataGithubOrganizationTeamSyncGroupsGroupsOutputReference](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupsoutputreference)|*No description*
-[DataGithubOrganizationTeams](#cdktf-provider-github-datagithuborganizationteams)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams}.
-[DataGithubOrganizationTeamsTeamsList](#cdktf-provider-github-datagithuborganizationteamsteamslist)|*No description*
-[DataGithubOrganizationTeamsTeamsOutputReference](#cdktf-provider-github-datagithuborganizationteamsteamsoutputreference)|*No description*
-[DataGithubRef](#cdktf-provider-github-datagithubref)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}.
-[DataGithubRelease](#cdktf-provider-github-datagithubrelease)|Represents a {@link https://www.terraform.io/docs/providers/github/d/release github_release}.
-[DataGithubRepositories](#cdktf-provider-github-datagithubrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories github_repositories}.
-[DataGithubRepository](#cdktf-provider-github-datagithubrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository github_repository}.
-[DataGithubRepositoryBranchesList](#cdktf-provider-github-datagithubrepositorybrancheslist)|*No description*
-[DataGithubRepositoryBranchesOutputReference](#cdktf-provider-github-datagithubrepositorybranchesoutputreference)|*No description*
-[DataGithubRepositoryFile](#cdktf-provider-github-datagithubrepositoryfile)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file github_repository_file}.
-[DataGithubRepositoryMilestone](#cdktf-provider-github-datagithubrepositorymilestone)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone}.
-[DataGithubRepositoryPagesList](#cdktf-provider-github-datagithubrepositorypageslist)|*No description*
-[DataGithubRepositoryPagesOutputReference](#cdktf-provider-github-datagithubrepositorypagesoutputreference)|*No description*
-[DataGithubRepositoryPagesSourceList](#cdktf-provider-github-datagithubrepositorypagessourcelist)|*No description*
-[DataGithubRepositoryPagesSourceOutputReference](#cdktf-provider-github-datagithubrepositorypagessourceoutputreference)|*No description*
-[DataGithubRepositoryPullRequest](#cdktf-provider-github-datagithubrepositorypullrequest)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request github_repository_pull_request}.
-[DataGithubRepositoryPullRequests](#cdktf-provider-github-datagithubrepositorypullrequests)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests}.
-[DataGithubRepositoryPullRequestsResultsList](#cdktf-provider-github-datagithubrepositorypullrequestsresultslist)|*No description*
-[DataGithubRepositoryPullRequestsResultsOutputReference](#cdktf-provider-github-datagithubrepositorypullrequestsresultsoutputreference)|*No description*
-[DataGithubTeam](#cdktf-provider-github-datagithubteam)|Represents a {@link https://www.terraform.io/docs/providers/github/d/team github_team}.
-[DataGithubTree](#cdktf-provider-github-datagithubtree)|Represents a {@link https://www.terraform.io/docs/providers/github/d/tree github_tree}.
-[DataGithubTreeEntriesList](#cdktf-provider-github-datagithubtreeentrieslist)|*No description*
-[DataGithubTreeEntriesOutputReference](#cdktf-provider-github-datagithubtreeentriesoutputreference)|*No description*
-[DataGithubUser](#cdktf-provider-github-datagithubuser)|Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}.
-[DataGithubUsers](#cdktf-provider-github-datagithubusers)|Represents a {@link https://www.terraform.io/docs/providers/github/d/users github_users}.
-[DependabotOrganizationSecret](#cdktf-provider-github-dependabotorganizationsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret}.
-[DependabotOrganizationSecretRepositories](#cdktf-provider-github-dependabotorganizationsecretrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
-[DependabotSecret](#cdktf-provider-github-dependabotsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret}.
-[EmuGroupMapping](#cdktf-provider-github-emugroupmapping)|Represents a {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping github_emu_group_mapping}.
-[GithubProvider](#cdktf-provider-github-githubprovider)|Represents a {@link https://www.terraform.io/docs/providers/github github}.
-[Issue](#cdktf-provider-github-issue)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue github_issue}.
-[IssueLabel](#cdktf-provider-github-issuelabel)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label}.
-[Membership](#cdktf-provider-github-membership)|Represents a {@link https://www.terraform.io/docs/providers/github/r/membership github_membership}.
-[OrganizationBlock](#cdktf-provider-github-organizationblock)|Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block}.
-[OrganizationProject](#cdktf-provider-github-organizationproject)|Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_project github_organization_project}.
-[OrganizationWebhook](#cdktf-provider-github-organizationwebhook)|Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_webhook github_organization_webhook}.
-[OrganizationWebhookConfigurationOutputReference](#cdktf-provider-github-organizationwebhookconfigurationoutputreference)|*No description*
-[ProjectCard](#cdktf-provider-github-projectcard)|Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}.
-[ProjectColumn](#cdktf-provider-github-projectcolumn)|Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column}.
-[Repository](#cdktf-provider-github-repository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository github_repository}.
-[RepositoryAutolinkReference](#cdktf-provider-github-repositoryautolinkreference)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference}.
-[RepositoryBranchesList](#cdktf-provider-github-repositorybrancheslist)|*No description*
-[RepositoryBranchesOutputReference](#cdktf-provider-github-repositorybranchesoutputreference)|*No description*
-[RepositoryCollaborator](#cdktf-provider-github-repositorycollaborator)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator github_repository_collaborator}.
-[RepositoryDeployKey](#cdktf-provider-github-repositorydeploykey)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key github_repository_deploy_key}.
-[RepositoryEnvironment](#cdktf-provider-github-repositoryenvironment)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment github_repository_environment}.
-[RepositoryEnvironmentDeploymentBranchPolicyOutputReference](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicyoutputreference)|*No description*
-[RepositoryEnvironmentReviewersList](#cdktf-provider-github-repositoryenvironmentreviewerslist)|*No description*
-[RepositoryEnvironmentReviewersOutputReference](#cdktf-provider-github-repositoryenvironmentreviewersoutputreference)|*No description*
-[RepositoryFile](#cdktf-provider-github-repositoryfile)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file}.
-[RepositoryMilestone](#cdktf-provider-github-repositorymilestone)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_milestone github_repository_milestone}.
-[RepositoryPagesOutputReference](#cdktf-provider-github-repositorypagesoutputreference)|*No description*
-[RepositoryPagesSourceOutputReference](#cdktf-provider-github-repositorypagessourceoutputreference)|*No description*
-[RepositoryProject](#cdktf-provider-github-repositoryproject)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project}.
-[RepositoryPullRequest](#cdktf-provider-github-repositorypullrequest)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request github_repository_pull_request}.
-[RepositoryTemplateOutputReference](#cdktf-provider-github-repositorytemplateoutputreference)|*No description*
-[RepositoryWebhook](#cdktf-provider-github-repositorywebhook)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_webhook github_repository_webhook}.
-[RepositoryWebhookConfigurationOutputReference](#cdktf-provider-github-repositorywebhookconfigurationoutputreference)|*No description*
-[Team](#cdktf-provider-github-team)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team github_team}.
-[TeamMembers](#cdktf-provider-github-teammembers)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_members github_team_members}.
-[TeamMembersMembersList](#cdktf-provider-github-teammembersmemberslist)|*No description*
-[TeamMembersMembersOutputReference](#cdktf-provider-github-teammembersmembersoutputreference)|*No description*
-[TeamMembership](#cdktf-provider-github-teammembership)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership github_team_membership}.
-[TeamRepository](#cdktf-provider-github-teamrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository github_team_repository}.
-[TeamSyncGroupMapping](#cdktf-provider-github-teamsyncgroupmapping)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping github_team_sync_group_mapping}.
-[TeamSyncGroupMappingGroupList](#cdktf-provider-github-teamsyncgroupmappinggrouplist)|*No description*
-[TeamSyncGroupMappingGroupOutputReference](#cdktf-provider-github-teamsyncgroupmappinggroupoutputreference)|*No description*
-[UserGpgKey](#cdktf-provider-github-usergpgkey)|Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key}.
-[UserInvitationAccepter](#cdktf-provider-github-userinvitationaccepter)|Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter}.
-[UserSshKey](#cdktf-provider-github-usersshkey)|Represents a {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key github_user_ssh_key}.
+[actionsEnvironmentSecret.ActionsEnvironmentSecret](#cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret github_actions_environment_secret}.
+[actionsOrganizationPermissions.ActionsOrganizationPermissions](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions github_actions_organization_permissions}.
+[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfigoutputreference)|*No description*
+[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference)|*No description*
+[actionsOrganizationSecret.ActionsOrganizationSecret](#cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret github_actions_organization_secret}.
+[actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories](#cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories}.
+[actionsRunnerGroup.ActionsRunnerGroup](#cdktf-provider-github-actionsrunnergroup-actionsrunnergroup)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group}.
+[actionsSecret.ActionsSecret](#cdktf-provider-github-actionssecret-actionssecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}.
+[appInstallationRepository.AppInstallationRepository](#cdktf-provider-github-appinstallationrepository-appinstallationrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository}.
+[branch.Branch](#cdktf-provider-github-branch-branch)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch github_branch}.
+[branchDefault.BranchDefault](#cdktf-provider-github-branchdefault-branchdefault)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default}.
+[branchProtection.BranchProtection](#cdktf-provider-github-branchprotection-branchprotection)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection github_branch_protection}.
+[branchProtection.BranchProtectionRequiredPullRequestReviewsList](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewslist)|*No description*
+[branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference)|*No description*
+[branchProtection.BranchProtectionRequiredStatusChecksList](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuscheckslist)|*No description*
+[branchProtection.BranchProtectionRequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecksoutputreference)|*No description*
+[branchProtectionV3.BranchProtectionV3](#cdktf-provider-github-branchprotectionv3-branchprotectionv3)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3}.
+[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference)|*No description*
+[branchProtectionV3.BranchProtectionV3RequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference)|*No description*
+[branchProtectionV3.BranchProtectionV3RestrictionsOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictionsoutputreference)|*No description*
+[dataGithubActionsPublicKey.DataGithubActionsPublicKey](#cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickey)|Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key}.
+[dataGithubBranch.DataGithubBranch](#cdktf-provider-github-datagithubbranch-datagithubbranch)|Represents a {@link https://www.terraform.io/docs/providers/github/d/branch github_branch}.
+[dataGithubCollaborators.DataGithubCollaborators](#cdktf-provider-github-datagithubcollaborators-datagithubcollaborators)|Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators}.
+[dataGithubCollaborators.DataGithubCollaboratorsCollaboratorList](#cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaboratorlist)|*No description*
+[dataGithubCollaborators.DataGithubCollaboratorsCollaboratorOutputReference](#cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaboratoroutputreference)|*No description*
+[dataGithubDependabotPublicKey.DataGithubDependabotPublicKey](#cdktf-provider-github-datagithubdependabotpublickey-datagithubdependabotpublickey)|Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key}.
+[dataGithubExternalGroups.DataGithubExternalGroups](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroups)|Represents a {@link https://www.terraform.io/docs/providers/github/d/external_groups github_external_groups}.
+[dataGithubExternalGroups.DataGithubExternalGroupsExternalGroupsList](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroupslist)|*No description*
+[dataGithubExternalGroups.DataGithubExternalGroupsExternalGroupsOutputReference](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroupsoutputreference)|*No description*
+[dataGithubIpRanges.DataGithubIpRanges](#cdktf-provider-github-datagithubipranges-datagithubipranges)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges}.
+[dataGithubMembership.DataGithubMembership](#cdktf-provider-github-datagithubmembership-datagithubmembership)|Represents a {@link https://www.terraform.io/docs/providers/github/d/membership github_membership}.
+[dataGithubOrganization.DataGithubOrganization](#cdktf-provider-github-datagithuborganization-datagithuborganization)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization github_organization}.
+[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroups)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups}.
+[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsGroupsList](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroupslist)|*No description*
+[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsGroupsOutputReference](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroupsoutputreference)|*No description*
+[dataGithubOrganizationTeams.DataGithubOrganizationTeams](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteams)|Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams}.
+[dataGithubOrganizationTeams.DataGithubOrganizationTeamsTeamsList](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteamslist)|*No description*
+[dataGithubOrganizationTeams.DataGithubOrganizationTeamsTeamsOutputReference](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteamsoutputreference)|*No description*
+[dataGithubRef.DataGithubRef](#cdktf-provider-github-datagithubref-datagithubref)|Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}.
+[dataGithubRelease.DataGithubRelease](#cdktf-provider-github-datagithubrelease-datagithubrelease)|Represents a {@link https://www.terraform.io/docs/providers/github/d/release github_release}.
+[dataGithubRepositories.DataGithubRepositories](#cdktf-provider-github-datagithubrepositories-datagithubrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories github_repositories}.
+[dataGithubRepository.DataGithubRepository](#cdktf-provider-github-datagithubrepository-datagithubrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository github_repository}.
+[dataGithubRepository.DataGithubRepositoryBranchesList](#cdktf-provider-github-datagithubrepository-datagithubrepositorybrancheslist)|*No description*
+[dataGithubRepository.DataGithubRepositoryBranchesOutputReference](#cdktf-provider-github-datagithubrepository-datagithubrepositorybranchesoutputreference)|*No description*
+[dataGithubRepository.DataGithubRepositoryPagesList](#cdktf-provider-github-datagithubrepository-datagithubrepositorypageslist)|*No description*
+[dataGithubRepository.DataGithubRepositoryPagesOutputReference](#cdktf-provider-github-datagithubrepository-datagithubrepositorypagesoutputreference)|*No description*
+[dataGithubRepository.DataGithubRepositoryPagesSourceList](#cdktf-provider-github-datagithubrepository-datagithubrepositorypagessourcelist)|*No description*
+[dataGithubRepository.DataGithubRepositoryPagesSourceOutputReference](#cdktf-provider-github-datagithubrepository-datagithubrepositorypagessourceoutputreference)|*No description*
+[dataGithubRepositoryFile.DataGithubRepositoryFile](#cdktf-provider-github-datagithubrepositoryfile-datagithubrepositoryfile)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file github_repository_file}.
+[dataGithubRepositoryMilestone.DataGithubRepositoryMilestone](#cdktf-provider-github-datagithubrepositorymilestone-datagithubrepositorymilestone)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone}.
+[dataGithubRepositoryPullRequest.DataGithubRepositoryPullRequest](#cdktf-provider-github-datagithubrepositorypullrequest-datagithubrepositorypullrequest)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request github_repository_pull_request}.
+[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequests](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests)|Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests}.
+[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsResultsList](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresultslist)|*No description*
+[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsResultsOutputReference](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresultsoutputreference)|*No description*
+[dataGithubTeam.DataGithubTeam](#cdktf-provider-github-datagithubteam-datagithubteam)|Represents a {@link https://www.terraform.io/docs/providers/github/d/team github_team}.
+[dataGithubTree.DataGithubTree](#cdktf-provider-github-datagithubtree-datagithubtree)|Represents a {@link https://www.terraform.io/docs/providers/github/d/tree github_tree}.
+[dataGithubTree.DataGithubTreeEntriesList](#cdktf-provider-github-datagithubtree-datagithubtreeentrieslist)|*No description*
+[dataGithubTree.DataGithubTreeEntriesOutputReference](#cdktf-provider-github-datagithubtree-datagithubtreeentriesoutputreference)|*No description*
+[dataGithubUser.DataGithubUser](#cdktf-provider-github-datagithubuser-datagithubuser)|Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}.
+[dataGithubUsers.DataGithubUsers](#cdktf-provider-github-datagithubusers-datagithubusers)|Represents a {@link https://www.terraform.io/docs/providers/github/d/users github_users}.
+[dependabotOrganizationSecret.DependabotOrganizationSecret](#cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret}.
+[dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories](#cdktf-provider-github-dependabotorganizationsecretrepositories-dependabotorganizationsecretrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
+[dependabotSecret.DependabotSecret](#cdktf-provider-github-dependabotsecret-dependabotsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret}.
+[emuGroupMapping.EmuGroupMapping](#cdktf-provider-github-emugroupmapping-emugroupmapping)|Represents a {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping github_emu_group_mapping}.
+[issue.Issue](#cdktf-provider-github-issue-issue)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue github_issue}.
+[issueLabel.IssueLabel](#cdktf-provider-github-issuelabel-issuelabel)|Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label}.
+[membership.Membership](#cdktf-provider-github-membership-membership)|Represents a {@link https://www.terraform.io/docs/providers/github/r/membership github_membership}.
+[organizationBlock.OrganizationBlock](#cdktf-provider-github-organizationblock-organizationblock)|Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block}.
+[organizationProject.OrganizationProject](#cdktf-provider-github-organizationproject-organizationproject)|Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_project github_organization_project}.
+[organizationWebhook.OrganizationWebhook](#cdktf-provider-github-organizationwebhook-organizationwebhook)|Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_webhook github_organization_webhook}.
+[organizationWebhook.OrganizationWebhookConfigurationOutputReference](#cdktf-provider-github-organizationwebhook-organizationwebhookconfigurationoutputreference)|*No description*
+[projectCard.ProjectCard](#cdktf-provider-github-projectcard-projectcard)|Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}.
+[projectColumn.ProjectColumn](#cdktf-provider-github-projectcolumn-projectcolumn)|Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column}.
+[provider.GithubProvider](#cdktf-provider-github-provider-githubprovider)|Represents a {@link https://www.terraform.io/docs/providers/github github}.
+[repository.Repository](#cdktf-provider-github-repository-repository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository github_repository}.
+[repository.RepositoryBranchesList](#cdktf-provider-github-repository-repositorybrancheslist)|*No description*
+[repository.RepositoryBranchesOutputReference](#cdktf-provider-github-repository-repositorybranchesoutputreference)|*No description*
+[repository.RepositoryPagesOutputReference](#cdktf-provider-github-repository-repositorypagesoutputreference)|*No description*
+[repository.RepositoryPagesSourceOutputReference](#cdktf-provider-github-repository-repositorypagessourceoutputreference)|*No description*
+[repository.RepositoryTemplateOutputReference](#cdktf-provider-github-repository-repositorytemplateoutputreference)|*No description*
+[repositoryAutolinkReference.RepositoryAutolinkReference](#cdktf-provider-github-repositoryautolinkreference-repositoryautolinkreference)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference}.
+[repositoryCollaborator.RepositoryCollaborator](#cdktf-provider-github-repositorycollaborator-repositorycollaborator)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator github_repository_collaborator}.
+[repositoryDeployKey.RepositoryDeployKey](#cdktf-provider-github-repositorydeploykey-repositorydeploykey)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key github_repository_deploy_key}.
+[repositoryEnvironment.RepositoryEnvironment](#cdktf-provider-github-repositoryenvironment-repositoryenvironment)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment github_repository_environment}.
+[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicyOutputReference](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicyoutputreference)|*No description*
+[repositoryEnvironment.RepositoryEnvironmentReviewersList](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewerslist)|*No description*
+[repositoryEnvironment.RepositoryEnvironmentReviewersOutputReference](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewersoutputreference)|*No description*
+[repositoryFile.RepositoryFile](#cdktf-provider-github-repositoryfile-repositoryfile)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file}.
+[repositoryMilestone.RepositoryMilestone](#cdktf-provider-github-repositorymilestone-repositorymilestone)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_milestone github_repository_milestone}.
+[repositoryProject.RepositoryProject](#cdktf-provider-github-repositoryproject-repositoryproject)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project}.
+[repositoryPullRequest.RepositoryPullRequest](#cdktf-provider-github-repositorypullrequest-repositorypullrequest)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request github_repository_pull_request}.
+[repositoryWebhook.RepositoryWebhook](#cdktf-provider-github-repositorywebhook-repositorywebhook)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_webhook github_repository_webhook}.
+[repositoryWebhook.RepositoryWebhookConfigurationOutputReference](#cdktf-provider-github-repositorywebhook-repositorywebhookconfigurationoutputreference)|*No description*
+[team.Team](#cdktf-provider-github-team-team)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team github_team}.
+[teamMembers.TeamMembers](#cdktf-provider-github-teammembers-teammembers)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_members github_team_members}.
+[teamMembers.TeamMembersMembersList](#cdktf-provider-github-teammembers-teammembersmemberslist)|*No description*
+[teamMembers.TeamMembersMembersOutputReference](#cdktf-provider-github-teammembers-teammembersmembersoutputreference)|*No description*
+[teamMembership.TeamMembership](#cdktf-provider-github-teammembership-teammembership)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership github_team_membership}.
+[teamRepository.TeamRepository](#cdktf-provider-github-teamrepository-teamrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository github_team_repository}.
+[teamSyncGroupMapping.TeamSyncGroupMapping](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmapping)|Represents a {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping github_team_sync_group_mapping}.
+[teamSyncGroupMapping.TeamSyncGroupMappingGroupList](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggrouplist)|*No description*
+[teamSyncGroupMapping.TeamSyncGroupMappingGroupOutputReference](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroupoutputreference)|*No description*
+[userGpgKey.UserGpgKey](#cdktf-provider-github-usergpgkey-usergpgkey)|Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key}.
+[userInvitationAccepter.UserInvitationAccepter](#cdktf-provider-github-userinvitationaccepter-userinvitationaccepter)|Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter}.
+[userSshKey.UserSshKey](#cdktf-provider-github-usersshkey-usersshkey)|Represents a {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key github_user_ssh_key}.
 
 
 **Structs**
 
 Name|Description
 ----|-----------
-[ActionsEnvironmentSecretConfig](#cdktf-provider-github-actionsenvironmentsecretconfig)|*No description*
-[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)|*No description*
-[ActionsOrganizationPermissionsConfig](#cdktf-provider-github-actionsorganizationpermissionsconfig)|*No description*
-[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)|*No description*
-[ActionsOrganizationSecretConfig](#cdktf-provider-github-actionsorganizationsecretconfig)|*No description*
-[ActionsOrganizationSecretRepositoriesConfig](#cdktf-provider-github-actionsorganizationsecretrepositoriesconfig)|*No description*
-[ActionsRunnerGroupConfig](#cdktf-provider-github-actionsrunnergroupconfig)|*No description*
-[ActionsSecretConfig](#cdktf-provider-github-actionssecretconfig)|*No description*
-[AppInstallationRepositoryConfig](#cdktf-provider-github-appinstallationrepositoryconfig)|*No description*
-[BranchConfig](#cdktf-provider-github-branchconfig)|*No description*
-[BranchDefaultConfig](#cdktf-provider-github-branchdefaultconfig)|*No description*
-[BranchProtectionConfig](#cdktf-provider-github-branchprotectionconfig)|*No description*
-[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)|*No description*
-[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)|*No description*
-[BranchProtectionV3Config](#cdktf-provider-github-branchprotectionv3config)|*No description*
-[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)|*No description*
-[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)|*No description*
-[BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)|*No description*
-[DataGithubActionsPublicKeyConfig](#cdktf-provider-github-datagithubactionspublickeyconfig)|*No description*
-[DataGithubBranchConfig](#cdktf-provider-github-datagithubbranchconfig)|*No description*
-[DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaboratorscollaborator)|*No description*
-[DataGithubCollaboratorsConfig](#cdktf-provider-github-datagithubcollaboratorsconfig)|*No description*
-[DataGithubDependabotPublicKeyConfig](#cdktf-provider-github-datagithubdependabotpublickeyconfig)|*No description*
-[DataGithubExternalGroupsConfig](#cdktf-provider-github-datagithubexternalgroupsconfig)|*No description*
-[DataGithubExternalGroupsExternalGroups](#cdktf-provider-github-datagithubexternalgroupsexternalgroups)|*No description*
-[DataGithubIpRangesConfig](#cdktf-provider-github-datagithubiprangesconfig)|*No description*
-[DataGithubMembershipConfig](#cdktf-provider-github-datagithubmembershipconfig)|*No description*
-[DataGithubOrganizationConfig](#cdktf-provider-github-datagithuborganizationconfig)|*No description*
-[DataGithubOrganizationTeamSyncGroupsConfig](#cdktf-provider-github-datagithuborganizationteamsyncgroupsconfig)|*No description*
-[DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups)|*No description*
-[DataGithubOrganizationTeamsConfig](#cdktf-provider-github-datagithuborganizationteamsconfig)|*No description*
-[DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteamsteams)|*No description*
-[DataGithubRefConfig](#cdktf-provider-github-datagithubrefconfig)|*No description*
-[DataGithubReleaseConfig](#cdktf-provider-github-datagithubreleaseconfig)|*No description*
-[DataGithubRepositoriesConfig](#cdktf-provider-github-datagithubrepositoriesconfig)|*No description*
-[DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepositorybranches)|*No description*
-[DataGithubRepositoryConfig](#cdktf-provider-github-datagithubrepositoryconfig)|*No description*
-[DataGithubRepositoryFileConfig](#cdktf-provider-github-datagithubrepositoryfileconfig)|*No description*
-[DataGithubRepositoryMilestoneConfig](#cdktf-provider-github-datagithubrepositorymilestoneconfig)|*No description*
-[DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepositorypages)|*No description*
-[DataGithubRepositoryPagesSource](#cdktf-provider-github-datagithubrepositorypagessource)|*No description*
-[DataGithubRepositoryPullRequestConfig](#cdktf-provider-github-datagithubrepositorypullrequestconfig)|*No description*
-[DataGithubRepositoryPullRequestsConfig](#cdktf-provider-github-datagithubrepositorypullrequestsconfig)|*No description*
-[DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequestsresults)|*No description*
-[DataGithubTeamConfig](#cdktf-provider-github-datagithubteamconfig)|*No description*
-[DataGithubTreeConfig](#cdktf-provider-github-datagithubtreeconfig)|*No description*
-[DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)|*No description*
-[DataGithubUserConfig](#cdktf-provider-github-datagithubuserconfig)|*No description*
-[DataGithubUsersConfig](#cdktf-provider-github-datagithubusersconfig)|*No description*
-[DependabotOrganizationSecretConfig](#cdktf-provider-github-dependabotorganizationsecretconfig)|*No description*
-[DependabotOrganizationSecretRepositoriesConfig](#cdktf-provider-github-dependabotorganizationsecretrepositoriesconfig)|*No description*
-[DependabotSecretConfig](#cdktf-provider-github-dependabotsecretconfig)|*No description*
-[EmuGroupMappingConfig](#cdktf-provider-github-emugroupmappingconfig)|*No description*
-[GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)|*No description*
-[GithubProviderConfig](#cdktf-provider-github-githubproviderconfig)|*No description*
-[IssueConfig](#cdktf-provider-github-issueconfig)|*No description*
-[IssueLabelConfig](#cdktf-provider-github-issuelabelconfig)|*No description*
-[MembershipConfig](#cdktf-provider-github-membershipconfig)|*No description*
-[OrganizationBlockConfig](#cdktf-provider-github-organizationblockconfig)|*No description*
-[OrganizationProjectConfig](#cdktf-provider-github-organizationprojectconfig)|*No description*
-[OrganizationWebhookConfig](#cdktf-provider-github-organizationwebhookconfig)|*No description*
-[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)|*No description*
-[ProjectCardConfig](#cdktf-provider-github-projectcardconfig)|*No description*
-[ProjectColumnConfig](#cdktf-provider-github-projectcolumnconfig)|*No description*
-[RepositoryAutolinkReferenceConfig](#cdktf-provider-github-repositoryautolinkreferenceconfig)|*No description*
-[RepositoryBranches](#cdktf-provider-github-repositorybranches)|*No description*
-[RepositoryCollaboratorConfig](#cdktf-provider-github-repositorycollaboratorconfig)|*No description*
-[RepositoryConfig](#cdktf-provider-github-repositoryconfig)|*No description*
-[RepositoryDeployKeyConfig](#cdktf-provider-github-repositorydeploykeyconfig)|*No description*
-[RepositoryEnvironmentConfig](#cdktf-provider-github-repositoryenvironmentconfig)|*No description*
-[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)|*No description*
-[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)|*No description*
-[RepositoryFileConfig](#cdktf-provider-github-repositoryfileconfig)|*No description*
-[RepositoryMilestoneConfig](#cdktf-provider-github-repositorymilestoneconfig)|*No description*
-[RepositoryPages](#cdktf-provider-github-repositorypages)|*No description*
-[RepositoryPagesSource](#cdktf-provider-github-repositorypagessource)|*No description*
-[RepositoryProjectConfig](#cdktf-provider-github-repositoryprojectconfig)|*No description*
-[RepositoryPullRequestConfig](#cdktf-provider-github-repositorypullrequestconfig)|*No description*
-[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)|*No description*
-[RepositoryWebhookConfig](#cdktf-provider-github-repositorywebhookconfig)|*No description*
-[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)|*No description*
-[TeamConfig](#cdktf-provider-github-teamconfig)|*No description*
-[TeamMembersConfig](#cdktf-provider-github-teammembersconfig)|*No description*
-[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)|*No description*
-[TeamMembershipConfig](#cdktf-provider-github-teammembershipconfig)|*No description*
-[TeamRepositoryConfig](#cdktf-provider-github-teamrepositoryconfig)|*No description*
-[TeamSyncGroupMappingConfig](#cdktf-provider-github-teamsyncgroupmappingconfig)|*No description*
-[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)|*No description*
-[UserGpgKeyConfig](#cdktf-provider-github-usergpgkeyconfig)|*No description*
-[UserInvitationAccepterConfig](#cdktf-provider-github-userinvitationaccepterconfig)|*No description*
-[UserSshKeyConfig](#cdktf-provider-github-usersshkeyconfig)|*No description*
+[actionsEnvironmentSecret.ActionsEnvironmentSecretConfig](#cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecretconfig)|*No description*
+[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)|*No description*
+[actionsOrganizationPermissions.ActionsOrganizationPermissionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsconfig)|*No description*
+[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)|*No description*
+[actionsOrganizationSecret.ActionsOrganizationSecretConfig](#cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecretconfig)|*No description*
+[actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositoriesConfig](#cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositoriesconfig)|*No description*
+[actionsRunnerGroup.ActionsRunnerGroupConfig](#cdktf-provider-github-actionsrunnergroup-actionsrunnergroupconfig)|*No description*
+[actionsSecret.ActionsSecretConfig](#cdktf-provider-github-actionssecret-actionssecretconfig)|*No description*
+[appInstallationRepository.AppInstallationRepositoryConfig](#cdktf-provider-github-appinstallationrepository-appinstallationrepositoryconfig)|*No description*
+[branch.BranchConfig](#cdktf-provider-github-branch-branchconfig)|*No description*
+[branchDefault.BranchDefaultConfig](#cdktf-provider-github-branchdefault-branchdefaultconfig)|*No description*
+[branchProtection.BranchProtectionConfig](#cdktf-provider-github-branchprotection-branchprotectionconfig)|*No description*
+[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews)|*No description*
+[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks)|*No description*
+[branchProtectionV3.BranchProtectionV3Config](#cdktf-provider-github-branchprotectionv3-branchprotectionv3config)|*No description*
+[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)|*No description*
+[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)|*No description*
+[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)|*No description*
+[dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig](#cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickeyconfig)|*No description*
+[dataGithubBranch.DataGithubBranchConfig](#cdktf-provider-github-datagithubbranch-datagithubbranchconfig)|*No description*
+[dataGithubCollaborators.DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaborator)|*No description*
+[dataGithubCollaborators.DataGithubCollaboratorsConfig](#cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorsconfig)|*No description*
+[dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig](#cdktf-provider-github-datagithubdependabotpublickey-datagithubdependabotpublickeyconfig)|*No description*
+[dataGithubExternalGroups.DataGithubExternalGroupsConfig](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsconfig)|*No description*
+[dataGithubExternalGroups.DataGithubExternalGroupsExternalGroups](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroups)|*No description*
+[dataGithubIpRanges.DataGithubIpRangesConfig](#cdktf-provider-github-datagithubipranges-datagithubiprangesconfig)|*No description*
+[dataGithubMembership.DataGithubMembershipConfig](#cdktf-provider-github-datagithubmembership-datagithubmembershipconfig)|*No description*
+[dataGithubOrganization.DataGithubOrganizationConfig](#cdktf-provider-github-datagithuborganization-datagithuborganizationconfig)|*No description*
+[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsConfig](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsconfig)|*No description*
+[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroups)|*No description*
+[dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsconfig)|*No description*
+[dataGithubOrganizationTeams.DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteams)|*No description*
+[dataGithubRef.DataGithubRefConfig](#cdktf-provider-github-datagithubref-datagithubrefconfig)|*No description*
+[dataGithubRelease.DataGithubReleaseConfig](#cdktf-provider-github-datagithubrelease-datagithubreleaseconfig)|*No description*
+[dataGithubRepositories.DataGithubRepositoriesConfig](#cdktf-provider-github-datagithubrepositories-datagithubrepositoriesconfig)|*No description*
+[dataGithubRepository.DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepository-datagithubrepositorybranches)|*No description*
+[dataGithubRepository.DataGithubRepositoryConfig](#cdktf-provider-github-datagithubrepository-datagithubrepositoryconfig)|*No description*
+[dataGithubRepository.DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepository-datagithubrepositorypages)|*No description*
+[dataGithubRepository.DataGithubRepositoryPagesSource](#cdktf-provider-github-datagithubrepository-datagithubrepositorypagessource)|*No description*
+[dataGithubRepositoryFile.DataGithubRepositoryFileConfig](#cdktf-provider-github-datagithubrepositoryfile-datagithubrepositoryfileconfig)|*No description*
+[dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig](#cdktf-provider-github-datagithubrepositorymilestone-datagithubrepositorymilestoneconfig)|*No description*
+[dataGithubRepositoryPullRequest.DataGithubRepositoryPullRequestConfig](#cdktf-provider-github-datagithubrepositorypullrequest-datagithubrepositorypullrequestconfig)|*No description*
+[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsConfig](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsconfig)|*No description*
+[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresults)|*No description*
+[dataGithubTeam.DataGithubTeamConfig](#cdktf-provider-github-datagithubteam-datagithubteamconfig)|*No description*
+[dataGithubTree.DataGithubTreeConfig](#cdktf-provider-github-datagithubtree-datagithubtreeconfig)|*No description*
+[dataGithubTree.DataGithubTreeEntries](#cdktf-provider-github-datagithubtree-datagithubtreeentries)|*No description*
+[dataGithubUser.DataGithubUserConfig](#cdktf-provider-github-datagithubuser-datagithubuserconfig)|*No description*
+[dataGithubUsers.DataGithubUsersConfig](#cdktf-provider-github-datagithubusers-datagithubusersconfig)|*No description*
+[dependabotOrganizationSecret.DependabotOrganizationSecretConfig](#cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecretconfig)|*No description*
+[dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig](#cdktf-provider-github-dependabotorganizationsecretrepositories-dependabotorganizationsecretrepositoriesconfig)|*No description*
+[dependabotSecret.DependabotSecretConfig](#cdktf-provider-github-dependabotsecret-dependabotsecretconfig)|*No description*
+[emuGroupMapping.EmuGroupMappingConfig](#cdktf-provider-github-emugroupmapping-emugroupmappingconfig)|*No description*
+[issue.IssueConfig](#cdktf-provider-github-issue-issueconfig)|*No description*
+[issueLabel.IssueLabelConfig](#cdktf-provider-github-issuelabel-issuelabelconfig)|*No description*
+[membership.MembershipConfig](#cdktf-provider-github-membership-membershipconfig)|*No description*
+[organizationBlock.OrganizationBlockConfig](#cdktf-provider-github-organizationblock-organizationblockconfig)|*No description*
+[organizationProject.OrganizationProjectConfig](#cdktf-provider-github-organizationproject-organizationprojectconfig)|*No description*
+[organizationWebhook.OrganizationWebhookConfig](#cdktf-provider-github-organizationwebhook-organizationwebhookconfig)|*No description*
+[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)|*No description*
+[projectCard.ProjectCardConfig](#cdktf-provider-github-projectcard-projectcardconfig)|*No description*
+[projectColumn.ProjectColumnConfig](#cdktf-provider-github-projectcolumn-projectcolumnconfig)|*No description*
+[provider.GithubProviderAppAuth](#cdktf-provider-github-provider-githubproviderappauth)|*No description*
+[provider.GithubProviderConfig](#cdktf-provider-github-provider-githubproviderconfig)|*No description*
+[repository.RepositoryBranches](#cdktf-provider-github-repository-repositorybranches)|*No description*
+[repository.RepositoryConfig](#cdktf-provider-github-repository-repositoryconfig)|*No description*
+[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)|*No description*
+[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)|*No description*
+[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)|*No description*
+[repositoryAutolinkReference.RepositoryAutolinkReferenceConfig](#cdktf-provider-github-repositoryautolinkreference-repositoryautolinkreferenceconfig)|*No description*
+[repositoryCollaborator.RepositoryCollaboratorConfig](#cdktf-provider-github-repositorycollaborator-repositorycollaboratorconfig)|*No description*
+[repositoryDeployKey.RepositoryDeployKeyConfig](#cdktf-provider-github-repositorydeploykey-repositorydeploykeyconfig)|*No description*
+[repositoryEnvironment.RepositoryEnvironmentConfig](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentconfig)|*No description*
+[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy)|*No description*
+[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers)|*No description*
+[repositoryFile.RepositoryFileConfig](#cdktf-provider-github-repositoryfile-repositoryfileconfig)|*No description*
+[repositoryMilestone.RepositoryMilestoneConfig](#cdktf-provider-github-repositorymilestone-repositorymilestoneconfig)|*No description*
+[repositoryProject.RepositoryProjectConfig](#cdktf-provider-github-repositoryproject-repositoryprojectconfig)|*No description*
+[repositoryPullRequest.RepositoryPullRequestConfig](#cdktf-provider-github-repositorypullrequest-repositorypullrequestconfig)|*No description*
+[repositoryWebhook.RepositoryWebhookConfig](#cdktf-provider-github-repositorywebhook-repositorywebhookconfig)|*No description*
+[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)|*No description*
+[team.TeamConfig](#cdktf-provider-github-team-teamconfig)|*No description*
+[teamMembers.TeamMembersConfig](#cdktf-provider-github-teammembers-teammembersconfig)|*No description*
+[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers)|*No description*
+[teamMembership.TeamMembershipConfig](#cdktf-provider-github-teammembership-teammembershipconfig)|*No description*
+[teamRepository.TeamRepositoryConfig](#cdktf-provider-github-teamrepository-teamrepositoryconfig)|*No description*
+[teamSyncGroupMapping.TeamSyncGroupMappingConfig](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappingconfig)|*No description*
+[teamSyncGroupMapping.TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup)|*No description*
+[userGpgKey.UserGpgKeyConfig](#cdktf-provider-github-usergpgkey-usergpgkeyconfig)|*No description*
+[userInvitationAccepter.UserInvitationAccepterConfig](#cdktf-provider-github-userinvitationaccepter-userinvitationaccepterconfig)|*No description*
+[userSshKey.UserSshKeyConfig](#cdktf-provider-github-usersshkey-usersshkeyconfig)|*No description*
 
 
 
-## class ActionsEnvironmentSecret  <a id="cdktf-provider-github-actionsenvironmentsecret"></a>
+## class ActionsEnvironmentSecret  <a id="cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecret"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret github_actions_environment_secret}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: actionsEnvironmentSecret
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -222,12 +224,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret github_actions_environment_secret} Resource.
 
 ```ts
-new ActionsEnvironmentSecret(scope: Construct, id: string, config: ActionsEnvironmentSecretConfig)
+new actionsEnvironmentSecret.ActionsEnvironmentSecret(scope: Construct, id: string, config: ActionsEnvironmentSecretConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ActionsEnvironmentSecretConfig](#cdktf-provider-github-actionsenvironmentsecretconfig)</code>)  *No description*
+* **config** (<code>[actionsEnvironmentSecret.ActionsEnvironmentSecretConfig](#cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecretconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -268,7 +270,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetEncryptedValue() <a id="cdktf-provider-github-actionsenvironmentsecret-resetencryptedvalue"></a>
+#### resetEncryptedValue() <a id="cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecret-resetencryptedvalue"></a>
 
 
 
@@ -280,7 +282,7 @@ resetEncryptedValue(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-actionsenvironmentsecret-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecret-resetid"></a>
 
 
 
@@ -292,7 +294,7 @@ resetId(): void
 
 
 
-#### resetPlaintextValue() <a id="cdktf-provider-github-actionsenvironmentsecret-resetplaintextvalue"></a>
+#### resetPlaintextValue() <a id="cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecret-resetplaintextvalue"></a>
 
 
 
@@ -304,7 +306,7 @@ resetPlaintextValue(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsenvironmentsecret-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecret-synthesizeattributes"></a>
 
 
 
@@ -318,11 +320,13 @@ __Returns__:
 
 
 
-## class ActionsOrganizationPermissions  <a id="cdktf-provider-github-actionsorganizationpermissions"></a>
+## class ActionsOrganizationPermissions  <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions github_actions_organization_permissions}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: actionsOrganizationPermissions
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -331,12 +335,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions github_actions_organization_permissions} Resource.
 
 ```ts
-new ActionsOrganizationPermissions(scope: Construct, id: string, config: ActionsOrganizationPermissionsConfig)
+new actionsOrganizationPermissions.ActionsOrganizationPermissions(scope: Construct, id: string, config: ActionsOrganizationPermissionsConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ActionsOrganizationPermissionsConfig](#cdktf-provider-github-actionsorganizationpermissionsconfig)</code>)  *No description*
+* **config** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -346,8 +350,8 @@ new ActionsOrganizationPermissions(scope: Construct, id: string, config: Actions
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
   * **enabledRepositories** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}. 
   * **allowedActions** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}. __*Optional*__
-  * **allowedActionsConfig** (<code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code>)  allowed_actions_config block. __*Optional*__
-  * **enabledRepositoriesConfig** (<code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  enabled_repositories_config block. __*Optional*__
+  * **allowedActionsConfig** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)</code>)  allowed_actions_config block. __*Optional*__
+  * **enabledRepositoriesConfig** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  enabled_repositories_config block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#id ActionsOrganizationPermissions#id}. __*Optional*__
 
 
@@ -358,13 +362,13 @@ new ActionsOrganizationPermissions(scope: Construct, id: string, config: Actions
 Name | Type | Description 
 -----|------|-------------
 **allowedActions** | <code>string</code> | <span></span>
-**allowedActionsConfig** | <code>[ActionsOrganizationPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference)</code> | <span></span>
+**allowedActionsConfig** | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfigoutputreference)</code> | <span></span>
 **enabledRepositories** | <code>string</code> | <span></span>
-**enabledRepositoriesConfig** | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference)</code> | <span></span>
+**enabledRepositoriesConfig** | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**allowedActionsConfigInput**? | <code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code> | __*Optional*__
+**allowedActionsConfigInput**? | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)</code> | __*Optional*__
 **allowedActionsInput**? | <code>string</code> | __*Optional*__
-**enabledRepositoriesConfigInput**? | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | __*Optional*__
+**enabledRepositoriesConfigInput**? | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | __*Optional*__
 **enabledRepositoriesInput**? | <code>string</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -372,7 +376,7 @@ Name | Type | Description
 ### Methods
 
 
-#### putAllowedActionsConfig(value) <a id="cdktf-provider-github-actionsorganizationpermissions-putallowedactionsconfig"></a>
+#### putAllowedActionsConfig(value) <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions-putallowedactionsconfig"></a>
 
 
 
@@ -380,7 +384,7 @@ Name | Type | Description
 putAllowedActionsConfig(value: ActionsOrganizationPermissionsAllowedActionsConfig): void
 ```
 
-* **value** (<code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code>)  *No description*
+* **value** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)</code>)  *No description*
   * **githubOwnedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}. 
   * **patternsAllowed** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}. __*Optional*__
   * **verifiedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}. __*Optional*__
@@ -388,7 +392,7 @@ putAllowedActionsConfig(value: ActionsOrganizationPermissionsAllowedActionsConfi
 
 
 
-#### putEnabledRepositoriesConfig(value) <a id="cdktf-provider-github-actionsorganizationpermissions-putenabledrepositoriesconfig"></a>
+#### putEnabledRepositoriesConfig(value) <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions-putenabledrepositoriesconfig"></a>
 
 
 
@@ -396,13 +400,13 @@ putAllowedActionsConfig(value: ActionsOrganizationPermissionsAllowedActionsConfi
 putEnabledRepositoriesConfig(value: ActionsOrganizationPermissionsEnabledRepositoriesConfig): void
 ```
 
-* **value** (<code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  *No description*
+* **value** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  *No description*
   * **repositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}. 
 
 
 
 
-#### resetAllowedActions() <a id="cdktf-provider-github-actionsorganizationpermissions-resetallowedactions"></a>
+#### resetAllowedActions() <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions-resetallowedactions"></a>
 
 
 
@@ -414,7 +418,7 @@ resetAllowedActions(): void
 
 
 
-#### resetAllowedActionsConfig() <a id="cdktf-provider-github-actionsorganizationpermissions-resetallowedactionsconfig"></a>
+#### resetAllowedActionsConfig() <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions-resetallowedactionsconfig"></a>
 
 
 
@@ -426,7 +430,7 @@ resetAllowedActionsConfig(): void
 
 
 
-#### resetEnabledRepositoriesConfig() <a id="cdktf-provider-github-actionsorganizationpermissions-resetenabledrepositoriesconfig"></a>
+#### resetEnabledRepositoriesConfig() <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions-resetenabledrepositoriesconfig"></a>
 
 
 
@@ -438,7 +442,7 @@ resetEnabledRepositoriesConfig(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-actionsorganizationpermissions-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions-resetid"></a>
 
 
 
@@ -450,7 +454,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsorganizationpermissions-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissions-synthesizeattributes"></a>
 
 
 
@@ -464,11 +468,13 @@ __Returns__:
 
 
 
-## class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference  <a id="cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference"></a>
+## class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference  <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfigoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: actionsOrganizationPermissions
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -477,7 +483,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -494,14 +500,14 @@ Name | Type | Description
 **patternsAllowed** | <code>Array<string></code> | <span></span>
 **verifiedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **githubOwnedAllowedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**internalValue**? | <code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code> | __*Optional*__
+**internalValue**? | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)</code> | __*Optional*__
 **patternsAllowedInput**? | <code>Array<string></code> | __*Optional*__
 **verifiedAllowedInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 ### Methods
 
 
-#### resetPatternsAllowed() <a id="cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference-resetpatternsallowed"></a>
+#### resetPatternsAllowed() <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfigoutputreference-resetpatternsallowed"></a>
 
 
 
@@ -513,7 +519,7 @@ resetPatternsAllowed(): void
 
 
 
-#### resetVerifiedAllowed() <a id="cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfigoutputreference-resetverifiedallowed"></a>
+#### resetVerifiedAllowed() <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfigoutputreference-resetverifiedallowed"></a>
 
 
 
@@ -527,11 +533,13 @@ resetVerifiedAllowed(): void
 
 
 
-## class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference  <a id="cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference"></a>
+## class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference  <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: actionsOrganizationPermissions
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -540,7 +548,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -554,16 +562,18 @@ new ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(terra
 Name | Type | Description 
 -----|------|-------------
 **repositoryIds** | <code>Array<number></code> | <span></span>
-**internalValue**? | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | __*Optional*__
+**internalValue**? | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | __*Optional*__
 **repositoryIdsInput**? | <code>Array<number></code> | __*Optional*__
 
 
 
-## class ActionsOrganizationSecret  <a id="cdktf-provider-github-actionsorganizationsecret"></a>
+## class ActionsOrganizationSecret  <a id="cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecret"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret github_actions_organization_secret}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: actionsOrganizationSecret
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -572,12 +582,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret github_actions_organization_secret} Resource.
 
 ```ts
-new ActionsOrganizationSecret(scope: Construct, id: string, config: ActionsOrganizationSecretConfig)
+new actionsOrganizationSecret.ActionsOrganizationSecret(scope: Construct, id: string, config: ActionsOrganizationSecretConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ActionsOrganizationSecretConfig](#cdktf-provider-github-actionsorganizationsecretconfig)</code>)  *No description*
+* **config** (<code>[actionsOrganizationSecret.ActionsOrganizationSecretConfig](#cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecretconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -618,7 +628,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetEncryptedValue() <a id="cdktf-provider-github-actionsorganizationsecret-resetencryptedvalue"></a>
+#### resetEncryptedValue() <a id="cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecret-resetencryptedvalue"></a>
 
 
 
@@ -630,7 +640,7 @@ resetEncryptedValue(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-actionsorganizationsecret-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecret-resetid"></a>
 
 
 
@@ -642,7 +652,7 @@ resetId(): void
 
 
 
-#### resetPlaintextValue() <a id="cdktf-provider-github-actionsorganizationsecret-resetplaintextvalue"></a>
+#### resetPlaintextValue() <a id="cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecret-resetplaintextvalue"></a>
 
 
 
@@ -654,7 +664,7 @@ resetPlaintextValue(): void
 
 
 
-#### resetSelectedRepositoryIds() <a id="cdktf-provider-github-actionsorganizationsecret-resetselectedrepositoryids"></a>
+#### resetSelectedRepositoryIds() <a id="cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecret-resetselectedrepositoryids"></a>
 
 
 
@@ -666,7 +676,7 @@ resetSelectedRepositoryIds(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsorganizationsecret-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecret-synthesizeattributes"></a>
 
 
 
@@ -680,11 +690,13 @@ __Returns__:
 
 
 
-## class ActionsOrganizationSecretRepositories  <a id="cdktf-provider-github-actionsorganizationsecretrepositories"></a>
+## class ActionsOrganizationSecretRepositories  <a id="cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositories"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: actionsOrganizationSecretRepositories
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -693,12 +705,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource.
 
 ```ts
-new ActionsOrganizationSecretRepositories(scope: Construct, id: string, config: ActionsOrganizationSecretRepositoriesConfig)
+new actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories(scope: Construct, id: string, config: ActionsOrganizationSecretRepositoriesConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ActionsOrganizationSecretRepositoriesConfig](#cdktf-provider-github-actionsorganizationsecretrepositoriesconfig)</code>)  *No description*
+* **config** (<code>[actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositoriesConfig](#cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositoriesconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -728,7 +740,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-actionsorganizationsecretrepositories-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositories-resetid"></a>
 
 
 
@@ -740,7 +752,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsorganizationsecretrepositories-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositories-synthesizeattributes"></a>
 
 
 
@@ -754,11 +766,13 @@ __Returns__:
 
 
 
-## class ActionsRunnerGroup  <a id="cdktf-provider-github-actionsrunnergroup"></a>
+## class ActionsRunnerGroup  <a id="cdktf-provider-github-actionsrunnergroup-actionsrunnergroup"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: actionsRunnerGroup
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -767,12 +781,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group} Resource.
 
 ```ts
-new ActionsRunnerGroup(scope: Construct, id: string, config: ActionsRunnerGroupConfig)
+new actionsRunnerGroup.ActionsRunnerGroup(scope: Construct, id: string, config: ActionsRunnerGroupConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ActionsRunnerGroupConfig](#cdktf-provider-github-actionsrunnergroupconfig)</code>)  *No description*
+* **config** (<code>[actionsRunnerGroup.ActionsRunnerGroupConfig](#cdktf-provider-github-actionsrunnergroup-actionsrunnergroupconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -811,7 +825,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-actionsrunnergroup-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-actionsrunnergroup-actionsrunnergroup-resetid"></a>
 
 
 
@@ -823,7 +837,7 @@ resetId(): void
 
 
 
-#### resetSelectedRepositoryIds() <a id="cdktf-provider-github-actionsrunnergroup-resetselectedrepositoryids"></a>
+#### resetSelectedRepositoryIds() <a id="cdktf-provider-github-actionsrunnergroup-actionsrunnergroup-resetselectedrepositoryids"></a>
 
 
 
@@ -835,7 +849,7 @@ resetSelectedRepositoryIds(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsrunnergroup-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsrunnergroup-actionsrunnergroup-synthesizeattributes"></a>
 
 
 
@@ -849,11 +863,13 @@ __Returns__:
 
 
 
-## class ActionsSecret  <a id="cdktf-provider-github-actionssecret"></a>
+## class ActionsSecret  <a id="cdktf-provider-github-actionssecret-actionssecret"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: actionsSecret
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -862,12 +878,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret} Resource.
 
 ```ts
-new ActionsSecret(scope: Construct, id: string, config: ActionsSecretConfig)
+new actionsSecret.ActionsSecret(scope: Construct, id: string, config: ActionsSecretConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ActionsSecretConfig](#cdktf-provider-github-actionssecretconfig)</code>)  *No description*
+* **config** (<code>[actionsSecret.ActionsSecretConfig](#cdktf-provider-github-actionssecret-actionssecretconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -905,7 +921,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetEncryptedValue() <a id="cdktf-provider-github-actionssecret-resetencryptedvalue"></a>
+#### resetEncryptedValue() <a id="cdktf-provider-github-actionssecret-actionssecret-resetencryptedvalue"></a>
 
 
 
@@ -917,7 +933,7 @@ resetEncryptedValue(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-actionssecret-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-actionssecret-actionssecret-resetid"></a>
 
 
 
@@ -929,7 +945,7 @@ resetId(): void
 
 
 
-#### resetPlaintextValue() <a id="cdktf-provider-github-actionssecret-resetplaintextvalue"></a>
+#### resetPlaintextValue() <a id="cdktf-provider-github-actionssecret-actionssecret-resetplaintextvalue"></a>
 
 
 
@@ -941,7 +957,7 @@ resetPlaintextValue(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionssecret-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionssecret-actionssecret-synthesizeattributes"></a>
 
 
 
@@ -955,11 +971,13 @@ __Returns__:
 
 
 
-## class AppInstallationRepository  <a id="cdktf-provider-github-appinstallationrepository"></a>
+## class AppInstallationRepository  <a id="cdktf-provider-github-appinstallationrepository-appinstallationrepository"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: appInstallationRepository
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -968,12 +986,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository} Resource.
 
 ```ts
-new AppInstallationRepository(scope: Construct, id: string, config: AppInstallationRepositoryConfig)
+new appInstallationRepository.AppInstallationRepository(scope: Construct, id: string, config: AppInstallationRepositoryConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[AppInstallationRepositoryConfig](#cdktf-provider-github-appinstallationrepositoryconfig)</code>)  *No description*
+* **config** (<code>[appInstallationRepository.AppInstallationRepositoryConfig](#cdktf-provider-github-appinstallationrepository-appinstallationrepositoryconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -1004,7 +1022,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-appinstallationrepository-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-appinstallationrepository-appinstallationrepository-resetid"></a>
 
 
 
@@ -1016,7 +1034,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-appinstallationrepository-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-appinstallationrepository-appinstallationrepository-synthesizeattributes"></a>
 
 
 
@@ -1030,11 +1048,13 @@ __Returns__:
 
 
 
-## class Branch  <a id="cdktf-provider-github-branch"></a>
+## class Branch  <a id="cdktf-provider-github-branch-branch"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/branch github_branch}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: branch
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1043,12 +1063,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/branch github_branch} Resource.
 
 ```ts
-new Branch(scope: Construct, id: string, config: BranchConfig)
+new branch.Branch(scope: Construct, id: string, config: BranchConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[BranchConfig](#cdktf-provider-github-branchconfig)</code>)  *No description*
+* **config** (<code>[branch.BranchConfig](#cdktf-provider-github-branch-branchconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -1087,7 +1107,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-branch-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-branch-branch-resetid"></a>
 
 
 
@@ -1099,7 +1119,7 @@ resetId(): void
 
 
 
-#### resetSourceBranch() <a id="cdktf-provider-github-branch-resetsourcebranch"></a>
+#### resetSourceBranch() <a id="cdktf-provider-github-branch-branch-resetsourcebranch"></a>
 
 
 
@@ -1111,7 +1131,7 @@ resetSourceBranch(): void
 
 
 
-#### resetSourceSha() <a id="cdktf-provider-github-branch-resetsourcesha"></a>
+#### resetSourceSha() <a id="cdktf-provider-github-branch-branch-resetsourcesha"></a>
 
 
 
@@ -1123,7 +1143,7 @@ resetSourceSha(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-branch-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-branch-branch-synthesizeattributes"></a>
 
 
 
@@ -1137,11 +1157,13 @@ __Returns__:
 
 
 
-## class BranchDefault  <a id="cdktf-provider-github-branchdefault"></a>
+## class BranchDefault  <a id="cdktf-provider-github-branchdefault-branchdefault"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: branchDefault
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1150,12 +1172,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default} Resource.
 
 ```ts
-new BranchDefault(scope: Construct, id: string, config: BranchDefaultConfig)
+new branchDefault.BranchDefault(scope: Construct, id: string, config: BranchDefaultConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[BranchDefaultConfig](#cdktf-provider-github-branchdefaultconfig)</code>)  *No description*
+* **config** (<code>[branchDefault.BranchDefaultConfig](#cdktf-provider-github-branchdefault-branchdefaultconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -1185,7 +1207,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-branchdefault-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-branchdefault-branchdefault-resetid"></a>
 
 
 
@@ -1197,7 +1219,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-branchdefault-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-branchdefault-branchdefault-synthesizeattributes"></a>
 
 
 
@@ -1211,11 +1233,13 @@ __Returns__:
 
 
 
-## class BranchProtection  <a id="cdktf-provider-github-branchprotection"></a>
+## class BranchProtection  <a id="cdktf-provider-github-branchprotection-branchprotection"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection github_branch_protection}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: branchProtection
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1224,12 +1248,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_protection github_branch_protection} Resource.
 
 ```ts
-new BranchProtection(scope: Construct, id: string, config: BranchProtectionConfig)
+new branchProtection.BranchProtection(scope: Construct, id: string, config: BranchProtectionConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[BranchProtectionConfig](#cdktf-provider-github-branchprotectionconfig)</code>)  *No description*
+* **config** (<code>[branchProtection.BranchProtectionConfig](#cdktf-provider-github-branchprotection-branchprotectionconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -1247,8 +1271,8 @@ new BranchProtection(scope: Construct, id: string, config: BranchProtectionConfi
   * **pushRestrictions** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#push_restrictions BranchProtection#push_restrictions}. __*Optional*__
   * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}. __*Optional*__
   * **requiredLinearHistory** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_linear_history BranchProtection#required_linear_history}. __*Optional*__
-  * **requiredPullRequestReviews** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code>)  required_pull_request_reviews block. __*Optional*__
-  * **requiredStatusChecks** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code>)  required_status_checks block. __*Optional*__
+  * **requiredPullRequestReviews** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews)></code>)  required_pull_request_reviews block. __*Optional*__
+  * **requiredStatusChecks** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks)></code>)  required_status_checks block. __*Optional*__
   * **requireSignedCommits** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_signed_commits BranchProtection#require_signed_commits}. __*Optional*__
 
 
@@ -1269,8 +1293,8 @@ Name | Type | Description
 **requireConversationResolution** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requireSignedCommits** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requiredLinearHistory** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**requiredPullRequestReviews** | <code>[BranchProtectionRequiredPullRequestReviewsList](#cdktf-provider-github-branchprotectionrequiredpullrequestreviewslist)</code> | <span></span>
-**requiredStatusChecks** | <code>[BranchProtectionRequiredStatusChecksList](#cdktf-provider-github-branchprotectionrequiredstatuscheckslist)</code> | <span></span>
+**requiredPullRequestReviews** | <code>[branchProtection.BranchProtectionRequiredPullRequestReviewsList](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewslist)</code> | <span></span>
+**requiredStatusChecks** | <code>[branchProtection.BranchProtectionRequiredStatusChecksList](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuscheckslist)</code> | <span></span>
 **allowsDeletionsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **allowsForcePushesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **blocksCreationsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
@@ -1282,14 +1306,14 @@ Name | Type | Description
 **requireConversationResolutionInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requireSignedCommitsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredLinearHistoryInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**requiredPullRequestReviewsInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | __*Optional*__
-**requiredStatusChecksInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code> | __*Optional*__
+**requiredPullRequestReviewsInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews)></code> | __*Optional*__
+**requiredStatusChecksInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks)></code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putRequiredPullRequestReviews(value) <a id="cdktf-provider-github-branchprotection-putrequiredpullrequestreviews"></a>
+#### putRequiredPullRequestReviews(value) <a id="cdktf-provider-github-branchprotection-branchprotection-putrequiredpullrequestreviews"></a>
 
 
 
@@ -1297,12 +1321,12 @@ Name | Type | Description
 putRequiredPullRequestReviews(value: IResolvable &#124; Array<BranchProtectionRequiredPullRequestReviews>): void
 ```
 
-* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code>)  *No description*
+* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews)></code>)  *No description*
 
 
 
 
-#### putRequiredStatusChecks(value) <a id="cdktf-provider-github-branchprotection-putrequiredstatuschecks"></a>
+#### putRequiredStatusChecks(value) <a id="cdktf-provider-github-branchprotection-branchprotection-putrequiredstatuschecks"></a>
 
 
 
@@ -1310,12 +1334,12 @@ putRequiredPullRequestReviews(value: IResolvable &#124; Array<BranchProtectionRe
 putRequiredStatusChecks(value: IResolvable &#124; Array<BranchProtectionRequiredStatusChecks>): void
 ```
 
-* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code>)  *No description*
+* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks)></code>)  *No description*
 
 
 
 
-#### resetAllowsDeletions() <a id="cdktf-provider-github-branchprotection-resetallowsdeletions"></a>
+#### resetAllowsDeletions() <a id="cdktf-provider-github-branchprotection-branchprotection-resetallowsdeletions"></a>
 
 
 
@@ -1327,7 +1351,7 @@ resetAllowsDeletions(): void
 
 
 
-#### resetAllowsForcePushes() <a id="cdktf-provider-github-branchprotection-resetallowsforcepushes"></a>
+#### resetAllowsForcePushes() <a id="cdktf-provider-github-branchprotection-branchprotection-resetallowsforcepushes"></a>
 
 
 
@@ -1339,7 +1363,7 @@ resetAllowsForcePushes(): void
 
 
 
-#### resetBlocksCreations() <a id="cdktf-provider-github-branchprotection-resetblockscreations"></a>
+#### resetBlocksCreations() <a id="cdktf-provider-github-branchprotection-branchprotection-resetblockscreations"></a>
 
 
 
@@ -1351,7 +1375,7 @@ resetBlocksCreations(): void
 
 
 
-#### resetEnforceAdmins() <a id="cdktf-provider-github-branchprotection-resetenforceadmins"></a>
+#### resetEnforceAdmins() <a id="cdktf-provider-github-branchprotection-branchprotection-resetenforceadmins"></a>
 
 
 
@@ -1363,7 +1387,7 @@ resetEnforceAdmins(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-branchprotection-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-branchprotection-branchprotection-resetid"></a>
 
 
 
@@ -1375,7 +1399,7 @@ resetId(): void
 
 
 
-#### resetPushRestrictions() <a id="cdktf-provider-github-branchprotection-resetpushrestrictions"></a>
+#### resetPushRestrictions() <a id="cdktf-provider-github-branchprotection-branchprotection-resetpushrestrictions"></a>
 
 
 
@@ -1387,7 +1411,7 @@ resetPushRestrictions(): void
 
 
 
-#### resetRequireConversationResolution() <a id="cdktf-provider-github-branchprotection-resetrequireconversationresolution"></a>
+#### resetRequireConversationResolution() <a id="cdktf-provider-github-branchprotection-branchprotection-resetrequireconversationresolution"></a>
 
 
 
@@ -1399,7 +1423,7 @@ resetRequireConversationResolution(): void
 
 
 
-#### resetRequireSignedCommits() <a id="cdktf-provider-github-branchprotection-resetrequiresignedcommits"></a>
+#### resetRequireSignedCommits() <a id="cdktf-provider-github-branchprotection-branchprotection-resetrequiresignedcommits"></a>
 
 
 
@@ -1411,7 +1435,7 @@ resetRequireSignedCommits(): void
 
 
 
-#### resetRequiredLinearHistory() <a id="cdktf-provider-github-branchprotection-resetrequiredlinearhistory"></a>
+#### resetRequiredLinearHistory() <a id="cdktf-provider-github-branchprotection-branchprotection-resetrequiredlinearhistory"></a>
 
 
 
@@ -1423,7 +1447,7 @@ resetRequiredLinearHistory(): void
 
 
 
-#### resetRequiredPullRequestReviews() <a id="cdktf-provider-github-branchprotection-resetrequiredpullrequestreviews"></a>
+#### resetRequiredPullRequestReviews() <a id="cdktf-provider-github-branchprotection-branchprotection-resetrequiredpullrequestreviews"></a>
 
 
 
@@ -1435,7 +1459,7 @@ resetRequiredPullRequestReviews(): void
 
 
 
-#### resetRequiredStatusChecks() <a id="cdktf-provider-github-branchprotection-resetrequiredstatuschecks"></a>
+#### resetRequiredStatusChecks() <a id="cdktf-provider-github-branchprotection-branchprotection-resetrequiredstatuschecks"></a>
 
 
 
@@ -1447,7 +1471,7 @@ resetRequiredStatusChecks(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-branchprotection-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-branchprotection-branchprotection-synthesizeattributes"></a>
 
 
 
@@ -1461,11 +1485,13 @@ __Returns__:
 
 
 
-## class BranchProtectionRequiredPullRequestReviewsList  <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewslist"></a>
+## class BranchProtectionRequiredPullRequestReviewsList  <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: branchProtection
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -1474,7 +1500,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new BranchProtectionRequiredPullRequestReviewsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new branchProtection.BranchProtectionRequiredPullRequestReviewsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -1491,12 +1517,12 @@ Name | Type | Description
 **terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
 **terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
 **wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | __*Optional*__
+**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews)></code> | __*Optional*__
 
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewslist-get"></a>
 
 
 
@@ -1507,15 +1533,17 @@ get(index: number): BranchProtectionRequiredPullRequestReviewsOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[BranchProtectionRequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference)</code>
+* <code>[branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference)</code>
 
 
 
-## class BranchProtectionRequiredPullRequestReviewsOutputReference  <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference"></a>
+## class BranchProtectionRequiredPullRequestReviewsOutputReference  <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: branchProtection
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -1524,7 +1552,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new BranchProtectionRequiredPullRequestReviewsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -1547,7 +1575,7 @@ Name | Type | Description
 **restrictDismissals** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **dismissStaleReviewsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **dismissalRestrictionsInput**? | <code>Array<string></code> | __*Optional*__
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; [BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)</code> | __*Optional*__
+**internalValue**? | <code>[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews) &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **pullRequestBypassersInput**? | <code>Array<string></code> | __*Optional*__
 **requireCodeOwnerReviewsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredApprovingReviewCountInput**? | <code>number</code> | __*Optional*__
@@ -1556,7 +1584,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetDismissStaleReviews() <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference-resetdismissstalereviews"></a>
+#### resetDismissStaleReviews() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference-resetdismissstalereviews"></a>
 
 
 
@@ -1568,7 +1596,7 @@ resetDismissStaleReviews(): void
 
 
 
-#### resetDismissalRestrictions() <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference-resetdismissalrestrictions"></a>
+#### resetDismissalRestrictions() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference-resetdismissalrestrictions"></a>
 
 
 
@@ -1580,7 +1608,7 @@ resetDismissalRestrictions(): void
 
 
 
-#### resetPullRequestBypassers() <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference-resetpullrequestbypassers"></a>
+#### resetPullRequestBypassers() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference-resetpullrequestbypassers"></a>
 
 
 
@@ -1592,7 +1620,7 @@ resetPullRequestBypassers(): void
 
 
 
-#### resetRequireCodeOwnerReviews() <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference-resetrequirecodeownerreviews"></a>
+#### resetRequireCodeOwnerReviews() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference-resetrequirecodeownerreviews"></a>
 
 
 
@@ -1604,7 +1632,7 @@ resetRequireCodeOwnerReviews(): void
 
 
 
-#### resetRequiredApprovingReviewCount() <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference-resetrequiredapprovingreviewcount"></a>
+#### resetRequiredApprovingReviewCount() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference-resetrequiredapprovingreviewcount"></a>
 
 
 
@@ -1616,7 +1644,7 @@ resetRequiredApprovingReviewCount(): void
 
 
 
-#### resetRestrictDismissals() <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviewsoutputreference-resetrestrictdismissals"></a>
+#### resetRestrictDismissals() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference-resetrestrictdismissals"></a>
 
 
 
@@ -1630,11 +1658,13 @@ resetRestrictDismissals(): void
 
 
 
-## class BranchProtectionRequiredStatusChecksList  <a id="cdktf-provider-github-branchprotectionrequiredstatuscheckslist"></a>
+## class BranchProtectionRequiredStatusChecksList  <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredstatuscheckslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: branchProtection
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -1643,7 +1673,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new BranchProtectionRequiredStatusChecksList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new branchProtection.BranchProtectionRequiredStatusChecksList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -1660,12 +1690,12 @@ Name | Type | Description
 **terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
 **terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
 **wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code> | __*Optional*__
+**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks)></code> | __*Optional*__
 
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-branchprotectionrequiredstatuscheckslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredstatuscheckslist-get"></a>
 
 
 
@@ -1676,15 +1706,17 @@ get(index: number): BranchProtectionRequiredStatusChecksOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[BranchProtectionRequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionrequiredstatuschecksoutputreference)</code>
+* <code>[branchProtection.BranchProtectionRequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecksoutputreference)</code>
 
 
 
-## class BranchProtectionRequiredStatusChecksOutputReference  <a id="cdktf-provider-github-branchprotectionrequiredstatuschecksoutputreference"></a>
+## class BranchProtectionRequiredStatusChecksOutputReference  <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecksoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: branchProtection
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -1693,7 +1725,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new BranchProtectionRequiredStatusChecksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new branchProtection.BranchProtectionRequiredStatusChecksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -1711,13 +1743,13 @@ Name | Type | Description
 **contexts** | <code>Array<string></code> | <span></span>
 **strict** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **contextsInput**? | <code>Array<string></code> | __*Optional*__
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; [BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)</code> | __*Optional*__
+**internalValue**? | <code>[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks) &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **strictInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 ### Methods
 
 
-#### resetContexts() <a id="cdktf-provider-github-branchprotectionrequiredstatuschecksoutputreference-resetcontexts"></a>
+#### resetContexts() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecksoutputreference-resetcontexts"></a>
 
 
 
@@ -1729,7 +1761,7 @@ resetContexts(): void
 
 
 
-#### resetStrict() <a id="cdktf-provider-github-branchprotectionrequiredstatuschecksoutputreference-resetstrict"></a>
+#### resetStrict() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecksoutputreference-resetstrict"></a>
 
 
 
@@ -1743,11 +1775,13 @@ resetStrict(): void
 
 
 
-## class BranchProtectionV3  <a id="cdktf-provider-github-branchprotectionv3"></a>
+## class BranchProtectionV3  <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: branchProtectionV3
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -1756,12 +1790,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3 github_branch_protection_v3} Resource.
 
 ```ts
-new BranchProtectionV3(scope: Construct, id: string, config: BranchProtectionV3Config)
+new branchProtectionV3.BranchProtectionV3(scope: Construct, id: string, config: BranchProtectionV3Config)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[BranchProtectionV3Config](#cdktf-provider-github-branchprotectionv3config)</code>)  *No description*
+* **config** (<code>[branchProtectionV3.BranchProtectionV3Config](#cdktf-provider-github-branchprotectionv3-branchprotectionv3config)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -1774,10 +1808,10 @@ new BranchProtectionV3(scope: Construct, id: string, config: BranchProtectionV3C
   * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#enforce_admins BranchProtectionV3#enforce_admins}. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#id BranchProtectionV3#id}. __*Optional*__
   * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}. __*Optional*__
-  * **requiredPullRequestReviews** (<code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code>)  required_pull_request_reviews block. __*Optional*__
-  * **requiredStatusChecks** (<code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code>)  required_status_checks block. __*Optional*__
+  * **requiredPullRequestReviews** (<code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)</code>)  required_pull_request_reviews block. __*Optional*__
+  * **requiredStatusChecks** (<code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code>)  required_status_checks block. __*Optional*__
   * **requireSignedCommits** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_signed_commits BranchProtectionV3#require_signed_commits}. __*Optional*__
-  * **restrictions** (<code>[BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)</code>)  restrictions block. __*Optional*__
+  * **restrictions** (<code>[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)</code>)  restrictions block. __*Optional*__
 
 
 
@@ -1793,24 +1827,24 @@ Name | Type | Description
 **repository** | <code>string</code> | <span></span>
 **requireConversationResolution** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requireSignedCommits** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**requiredPullRequestReviews** | <code>[BranchProtectionV3RequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference)</code> | <span></span>
-**requiredStatusChecks** | <code>[BranchProtectionV3RequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionv3requiredstatuschecksoutputreference)</code> | <span></span>
-**restrictions** | <code>[BranchProtectionV3RestrictionsOutputReference](#cdktf-provider-github-branchprotectionv3restrictionsoutputreference)</code> | <span></span>
+**requiredPullRequestReviews** | <code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference)</code> | <span></span>
+**requiredStatusChecks** | <code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference)</code> | <span></span>
+**restrictions** | <code>[branchProtectionV3.BranchProtectionV3RestrictionsOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictionsoutputreference)</code> | <span></span>
 **branchInput**? | <code>string</code> | __*Optional*__
 **enforceAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 **requireConversationResolutionInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requireSignedCommitsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**requiredPullRequestReviewsInput**? | <code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code> | __*Optional*__
-**requiredStatusChecksInput**? | <code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code> | __*Optional*__
-**restrictionsInput**? | <code>[BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)</code> | __*Optional*__
+**requiredPullRequestReviewsInput**? | <code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)</code> | __*Optional*__
+**requiredStatusChecksInput**? | <code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code> | __*Optional*__
+**restrictionsInput**? | <code>[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putRequiredPullRequestReviews(value) <a id="cdktf-provider-github-branchprotectionv3-putrequiredpullrequestreviews"></a>
+#### putRequiredPullRequestReviews(value) <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-putrequiredpullrequestreviews"></a>
 
 
 
@@ -1818,7 +1852,7 @@ Name | Type | Description
 putRequiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReviews): void
 ```
 
-* **value** (<code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code>)  *No description*
+* **value** (<code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)</code>)  *No description*
   * **dismissalTeams** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismissal_teams BranchProtectionV3#dismissal_teams}. __*Optional*__
   * **dismissalUsers** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismissal_users BranchProtectionV3#dismissal_users}. __*Optional*__
   * **dismissStaleReviews** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismiss_stale_reviews BranchProtectionV3#dismiss_stale_reviews}. __*Optional*__
@@ -1829,7 +1863,7 @@ putRequiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReview
 
 
 
-#### putRequiredStatusChecks(value) <a id="cdktf-provider-github-branchprotectionv3-putrequiredstatuschecks"></a>
+#### putRequiredStatusChecks(value) <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-putrequiredstatuschecks"></a>
 
 
 
@@ -1837,7 +1871,7 @@ putRequiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReview
 putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks): void
 ```
 
-* **value** (<code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code>)  *No description*
+* **value** (<code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code>)  *No description*
   * **contexts** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#contexts BranchProtectionV3#contexts}. __*Optional*__
   * **includeAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#include_admins BranchProtectionV3#include_admins}. __*Optional*__
   * **strict** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#strict BranchProtectionV3#strict}. __*Optional*__
@@ -1845,7 +1879,7 @@ putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks): void
 
 
 
-#### putRestrictions(value) <a id="cdktf-provider-github-branchprotectionv3-putrestrictions"></a>
+#### putRestrictions(value) <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-putrestrictions"></a>
 
 
 
@@ -1853,7 +1887,7 @@ putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks): void
 putRestrictions(value: BranchProtectionV3Restrictions): void
 ```
 
-* **value** (<code>[BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)</code>)  *No description*
+* **value** (<code>[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)</code>)  *No description*
   * **apps** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#apps BranchProtectionV3#apps}. __*Optional*__
   * **teams** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#teams BranchProtectionV3#teams}. __*Optional*__
   * **users** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#users BranchProtectionV3#users}. __*Optional*__
@@ -1861,7 +1895,7 @@ putRestrictions(value: BranchProtectionV3Restrictions): void
 
 
 
-#### resetEnforceAdmins() <a id="cdktf-provider-github-branchprotectionv3-resetenforceadmins"></a>
+#### resetEnforceAdmins() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-resetenforceadmins"></a>
 
 
 
@@ -1873,7 +1907,7 @@ resetEnforceAdmins(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-branchprotectionv3-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-resetid"></a>
 
 
 
@@ -1885,7 +1919,7 @@ resetId(): void
 
 
 
-#### resetRequireConversationResolution() <a id="cdktf-provider-github-branchprotectionv3-resetrequireconversationresolution"></a>
+#### resetRequireConversationResolution() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-resetrequireconversationresolution"></a>
 
 
 
@@ -1897,7 +1931,7 @@ resetRequireConversationResolution(): void
 
 
 
-#### resetRequireSignedCommits() <a id="cdktf-provider-github-branchprotectionv3-resetrequiresignedcommits"></a>
+#### resetRequireSignedCommits() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-resetrequiresignedcommits"></a>
 
 
 
@@ -1909,7 +1943,7 @@ resetRequireSignedCommits(): void
 
 
 
-#### resetRequiredPullRequestReviews() <a id="cdktf-provider-github-branchprotectionv3-resetrequiredpullrequestreviews"></a>
+#### resetRequiredPullRequestReviews() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-resetrequiredpullrequestreviews"></a>
 
 
 
@@ -1921,7 +1955,7 @@ resetRequiredPullRequestReviews(): void
 
 
 
-#### resetRequiredStatusChecks() <a id="cdktf-provider-github-branchprotectionv3-resetrequiredstatuschecks"></a>
+#### resetRequiredStatusChecks() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-resetrequiredstatuschecks"></a>
 
 
 
@@ -1933,7 +1967,7 @@ resetRequiredStatusChecks(): void
 
 
 
-#### resetRestrictions() <a id="cdktf-provider-github-branchprotectionv3-resetrestrictions"></a>
+#### resetRestrictions() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-resetrestrictions"></a>
 
 
 
@@ -1945,7 +1979,7 @@ resetRestrictions(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-branchprotectionv3-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3-synthesizeattributes"></a>
 
 
 
@@ -1959,11 +1993,13 @@ __Returns__:
 
 
 
-## class BranchProtectionV3RequiredPullRequestReviewsOutputReference  <a id="cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference"></a>
+## class BranchProtectionV3RequiredPullRequestReviewsOutputReference  <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: branchProtectionV3
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -1972,7 +2008,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new BranchProtectionV3RequiredPullRequestReviewsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -1995,14 +2031,14 @@ Name | Type | Description
 **dismissalTeamsInput**? | <code>Array<string></code> | __*Optional*__
 **dismissalUsersInput**? | <code>Array<string></code> | __*Optional*__
 **includeAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**internalValue**? | <code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code> | __*Optional*__
+**internalValue**? | <code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)</code> | __*Optional*__
 **requireCodeOwnerReviewsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredApprovingReviewCountInput**? | <code>number</code> | __*Optional*__
 
 ### Methods
 
 
-#### resetDismissStaleReviews() <a id="cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference-resetdismissstalereviews"></a>
+#### resetDismissStaleReviews() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference-resetdismissstalereviews"></a>
 
 
 
@@ -2014,7 +2050,7 @@ resetDismissStaleReviews(): void
 
 
 
-#### resetDismissalTeams() <a id="cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference-resetdismissalteams"></a>
+#### resetDismissalTeams() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference-resetdismissalteams"></a>
 
 
 
@@ -2026,7 +2062,7 @@ resetDismissalTeams(): void
 
 
 
-#### resetDismissalUsers() <a id="cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference-resetdismissalusers"></a>
+#### resetDismissalUsers() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference-resetdismissalusers"></a>
 
 
 
@@ -2038,7 +2074,7 @@ resetDismissalUsers(): void
 
 
 
-#### resetIncludeAdmins() <a id="cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference-resetincludeadmins"></a>
+#### resetIncludeAdmins() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference-resetincludeadmins"></a>
 
 
 
@@ -2050,7 +2086,7 @@ resetIncludeAdmins(): void
 
 
 
-#### resetRequireCodeOwnerReviews() <a id="cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference-resetrequirecodeownerreviews"></a>
+#### resetRequireCodeOwnerReviews() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference-resetrequirecodeownerreviews"></a>
 
 
 
@@ -2062,7 +2098,7 @@ resetRequireCodeOwnerReviews(): void
 
 
 
-#### resetRequiredApprovingReviewCount() <a id="cdktf-provider-github-branchprotectionv3requiredpullrequestreviewsoutputreference-resetrequiredapprovingreviewcount"></a>
+#### resetRequiredApprovingReviewCount() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference-resetrequiredapprovingreviewcount"></a>
 
 
 
@@ -2076,11 +2112,13 @@ resetRequiredApprovingReviewCount(): void
 
 
 
-## class BranchProtectionV3RequiredStatusChecksOutputReference  <a id="cdktf-provider-github-branchprotectionv3requiredstatuschecksoutputreference"></a>
+## class BranchProtectionV3RequiredStatusChecksOutputReference  <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: branchProtectionV3
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -2089,7 +2127,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new BranchProtectionV3RequiredStatusChecksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new branchProtectionV3.BranchProtectionV3RequiredStatusChecksOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -2107,13 +2145,13 @@ Name | Type | Description
 **strict** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **contextsInput**? | <code>Array<string></code> | __*Optional*__
 **includeAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**internalValue**? | <code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code> | __*Optional*__
+**internalValue**? | <code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code> | __*Optional*__
 **strictInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 ### Methods
 
 
-#### resetContexts() <a id="cdktf-provider-github-branchprotectionv3requiredstatuschecksoutputreference-resetcontexts"></a>
+#### resetContexts() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference-resetcontexts"></a>
 
 
 
@@ -2125,7 +2163,7 @@ resetContexts(): void
 
 
 
-#### resetIncludeAdmins() <a id="cdktf-provider-github-branchprotectionv3requiredstatuschecksoutputreference-resetincludeadmins"></a>
+#### resetIncludeAdmins() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference-resetincludeadmins"></a>
 
 
 
@@ -2137,7 +2175,7 @@ resetIncludeAdmins(): void
 
 
 
-#### resetStrict() <a id="cdktf-provider-github-branchprotectionv3requiredstatuschecksoutputreference-resetstrict"></a>
+#### resetStrict() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference-resetstrict"></a>
 
 
 
@@ -2151,11 +2189,13 @@ resetStrict(): void
 
 
 
-## class BranchProtectionV3RestrictionsOutputReference  <a id="cdktf-provider-github-branchprotectionv3restrictionsoutputreference"></a>
+## class BranchProtectionV3RestrictionsOutputReference  <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictionsoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: branchProtectionV3
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -2164,7 +2204,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new BranchProtectionV3RestrictionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new branchProtectionV3.BranchProtectionV3RestrictionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -2181,14 +2221,14 @@ Name | Type | Description
 **teams** | <code>Array<string></code> | <span></span>
 **users** | <code>Array<string></code> | <span></span>
 **appsInput**? | <code>Array<string></code> | __*Optional*__
-**internalValue**? | <code>[BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)</code> | __*Optional*__
+**internalValue**? | <code>[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)</code> | __*Optional*__
 **teamsInput**? | <code>Array<string></code> | __*Optional*__
 **usersInput**? | <code>Array<string></code> | __*Optional*__
 
 ### Methods
 
 
-#### resetApps() <a id="cdktf-provider-github-branchprotectionv3restrictionsoutputreference-resetapps"></a>
+#### resetApps() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictionsoutputreference-resetapps"></a>
 
 
 
@@ -2200,7 +2240,7 @@ resetApps(): void
 
 
 
-#### resetTeams() <a id="cdktf-provider-github-branchprotectionv3restrictionsoutputreference-resetteams"></a>
+#### resetTeams() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictionsoutputreference-resetteams"></a>
 
 
 
@@ -2212,7 +2252,7 @@ resetTeams(): void
 
 
 
-#### resetUsers() <a id="cdktf-provider-github-branchprotectionv3restrictionsoutputreference-resetusers"></a>
+#### resetUsers() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictionsoutputreference-resetusers"></a>
 
 
 
@@ -2226,11 +2266,13 @@ resetUsers(): void
 
 
 
-## class DataGithubActionsPublicKey  <a id="cdktf-provider-github-datagithubactionspublickey"></a>
+## class DataGithubActionsPublicKey  <a id="cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickey"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubActionsPublicKey
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2239,12 +2281,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key} Data Source.
 
 ```ts
-new DataGithubActionsPublicKey(scope: Construct, id: string, config: DataGithubActionsPublicKeyConfig)
+new dataGithubActionsPublicKey.DataGithubActionsPublicKey(scope: Construct, id: string, config: DataGithubActionsPublicKeyConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubActionsPublicKeyConfig](#cdktf-provider-github-datagithubactionspublickeyconfig)</code>)  *No description*
+* **config** (<code>[dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig](#cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickeyconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -2273,7 +2315,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubactionspublickey-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickey-resetid"></a>
 
 
 
@@ -2285,7 +2327,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubactionspublickey-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickey-synthesizeattributes"></a>
 
 
 
@@ -2299,11 +2341,13 @@ __Returns__:
 
 
 
-## class DataGithubBranch  <a id="cdktf-provider-github-datagithubbranch"></a>
+## class DataGithubBranch  <a id="cdktf-provider-github-datagithubbranch-datagithubbranch"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/branch github_branch}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubBranch
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2312,12 +2356,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/branch github_branch} Data Source.
 
 ```ts
-new DataGithubBranch(scope: Construct, id: string, config: DataGithubBranchConfig)
+new dataGithubBranch.DataGithubBranch(scope: Construct, id: string, config: DataGithubBranchConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubBranchConfig](#cdktf-provider-github-datagithubbranchconfig)</code>)  *No description*
+* **config** (<code>[dataGithubBranch.DataGithubBranchConfig](#cdktf-provider-github-datagithubbranch-datagithubbranchconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -2350,7 +2394,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubbranch-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubbranch-datagithubbranch-resetid"></a>
 
 
 
@@ -2362,7 +2406,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubbranch-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubbranch-datagithubbranch-synthesizeattributes"></a>
 
 
 
@@ -2376,11 +2420,13 @@ __Returns__:
 
 
 
-## class DataGithubCollaborators  <a id="cdktf-provider-github-datagithubcollaborators"></a>
+## class DataGithubCollaborators  <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaborators"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubCollaborators
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2389,12 +2435,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/collaborators github_collaborators} Data Source.
 
 ```ts
-new DataGithubCollaborators(scope: Construct, id: string, config: DataGithubCollaboratorsConfig)
+new dataGithubCollaborators.DataGithubCollaborators(scope: Construct, id: string, config: DataGithubCollaboratorsConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubCollaboratorsConfig](#cdktf-provider-github-datagithubcollaboratorsconfig)</code>)  *No description*
+* **config** (<code>[dataGithubCollaborators.DataGithubCollaboratorsConfig](#cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorsconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -2415,7 +2461,7 @@ new DataGithubCollaborators(scope: Construct, id: string, config: DataGithubColl
 Name | Type | Description 
 -----|------|-------------
 **affiliation** | <code>string</code> | <span></span>
-**collaborator** | <code>[DataGithubCollaboratorsCollaboratorList](#cdktf-provider-github-datagithubcollaboratorscollaboratorlist)</code> | <span></span>
+**collaborator** | <code>[dataGithubCollaborators.DataGithubCollaboratorsCollaboratorList](#cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaboratorlist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **owner** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
@@ -2428,7 +2474,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetAffiliation() <a id="cdktf-provider-github-datagithubcollaborators-resetaffiliation"></a>
+#### resetAffiliation() <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaborators-resetaffiliation"></a>
 
 
 
@@ -2440,7 +2486,7 @@ resetAffiliation(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubcollaborators-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaborators-resetid"></a>
 
 
 
@@ -2452,7 +2498,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubcollaborators-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaborators-synthesizeattributes"></a>
 
 
 
@@ -2466,11 +2512,13 @@ __Returns__:
 
 
 
-## class DataGithubCollaboratorsCollaboratorList  <a id="cdktf-provider-github-datagithubcollaboratorscollaboratorlist"></a>
+## class DataGithubCollaboratorsCollaboratorList  <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaboratorlist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubCollaborators
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -2479,7 +2527,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new DataGithubCollaboratorsCollaboratorList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new dataGithubCollaborators.DataGithubCollaboratorsCollaboratorList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -2500,7 +2548,7 @@ Name | Type | Description
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-datagithubcollaboratorscollaboratorlist-get"></a>
+#### get(index) <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaboratorlist-get"></a>
 
 
 
@@ -2511,15 +2559,17 @@ get(index: number): DataGithubCollaboratorsCollaboratorOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[DataGithubCollaboratorsCollaboratorOutputReference](#cdktf-provider-github-datagithubcollaboratorscollaboratoroutputreference)</code>
+* <code>[dataGithubCollaborators.DataGithubCollaboratorsCollaboratorOutputReference](#cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaboratoroutputreference)</code>
 
 
 
-## class DataGithubCollaboratorsCollaboratorOutputReference  <a id="cdktf-provider-github-datagithubcollaboratorscollaboratoroutputreference"></a>
+## class DataGithubCollaboratorsCollaboratorOutputReference  <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaboratoroutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubCollaborators
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -2528,7 +2578,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DataGithubCollaboratorsCollaboratorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new dataGithubCollaborators.DataGithubCollaboratorsCollaboratorOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -2559,15 +2609,17 @@ Name | Type | Description
 **subscriptionsUrl** | <code>string</code> | <span></span>
 **type** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
-**internalValue**? | <code>[DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaboratorscollaborator)</code> | __*Optional*__
+**internalValue**? | <code>[dataGithubCollaborators.DataGithubCollaboratorsCollaborator](#cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaborator)</code> | __*Optional*__
 
 
 
-## class DataGithubDependabotPublicKey  <a id="cdktf-provider-github-datagithubdependabotpublickey"></a>
+## class DataGithubDependabotPublicKey  <a id="cdktf-provider-github-datagithubdependabotpublickey-datagithubdependabotpublickey"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubDependabotPublicKey
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2576,12 +2628,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/dependabot_public_key github_dependabot_public_key} Data Source.
 
 ```ts
-new DataGithubDependabotPublicKey(scope: Construct, id: string, config: DataGithubDependabotPublicKeyConfig)
+new dataGithubDependabotPublicKey.DataGithubDependabotPublicKey(scope: Construct, id: string, config: DataGithubDependabotPublicKeyConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubDependabotPublicKeyConfig](#cdktf-provider-github-datagithubdependabotpublickeyconfig)</code>)  *No description*
+* **config** (<code>[dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig](#cdktf-provider-github-datagithubdependabotpublickey-datagithubdependabotpublickeyconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -2610,7 +2662,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubdependabotpublickey-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubdependabotpublickey-datagithubdependabotpublickey-resetid"></a>
 
 
 
@@ -2622,7 +2674,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubdependabotpublickey-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubdependabotpublickey-datagithubdependabotpublickey-synthesizeattributes"></a>
 
 
 
@@ -2636,11 +2688,13 @@ __Returns__:
 
 
 
-## class DataGithubExternalGroups  <a id="cdktf-provider-github-datagithubexternalgroups"></a>
+## class DataGithubExternalGroups  <a id="cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroups"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/external_groups github_external_groups}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubExternalGroups
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2649,12 +2703,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/external_groups github_external_groups} Data Source.
 
 ```ts
-new DataGithubExternalGroups(scope: Construct, id: string, config?: DataGithubExternalGroupsConfig)
+new dataGithubExternalGroups.DataGithubExternalGroups(scope: Construct, id: string, config?: DataGithubExternalGroupsConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubExternalGroupsConfig](#cdktf-provider-github-datagithubexternalgroupsconfig)</code>)  *No description*
+* **config** (<code>[dataGithubExternalGroups.DataGithubExternalGroupsConfig](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -2671,7 +2725,7 @@ new DataGithubExternalGroups(scope: Construct, id: string, config?: DataGithubEx
 
 Name | Type | Description 
 -----|------|-------------
-**externalGroups** | <code>[DataGithubExternalGroupsExternalGroupsList](#cdktf-provider-github-datagithubexternalgroupsexternalgroupslist)</code> | <span></span>
+**externalGroups** | <code>[dataGithubExternalGroups.DataGithubExternalGroupsExternalGroupsList](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroupslist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -2679,7 +2733,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubexternalgroups-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroups-resetid"></a>
 
 
 
@@ -2691,7 +2745,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubexternalgroups-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroups-synthesizeattributes"></a>
 
 
 
@@ -2705,11 +2759,13 @@ __Returns__:
 
 
 
-## class DataGithubExternalGroupsExternalGroupsList  <a id="cdktf-provider-github-datagithubexternalgroupsexternalgroupslist"></a>
+## class DataGithubExternalGroupsExternalGroupsList  <a id="cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroupslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubExternalGroups
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -2718,7 +2774,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new DataGithubExternalGroupsExternalGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new dataGithubExternalGroups.DataGithubExternalGroupsExternalGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -2739,7 +2795,7 @@ Name | Type | Description
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-datagithubexternalgroupsexternalgroupslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroupslist-get"></a>
 
 
 
@@ -2750,15 +2806,17 @@ get(index: number): DataGithubExternalGroupsExternalGroupsOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[DataGithubExternalGroupsExternalGroupsOutputReference](#cdktf-provider-github-datagithubexternalgroupsexternalgroupsoutputreference)</code>
+* <code>[dataGithubExternalGroups.DataGithubExternalGroupsExternalGroupsOutputReference](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroupsoutputreference)</code>
 
 
 
-## class DataGithubExternalGroupsExternalGroupsOutputReference  <a id="cdktf-provider-github-datagithubexternalgroupsexternalgroupsoutputreference"></a>
+## class DataGithubExternalGroupsExternalGroupsOutputReference  <a id="cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroupsoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubExternalGroups
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -2767,7 +2825,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DataGithubExternalGroupsExternalGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new dataGithubExternalGroups.DataGithubExternalGroupsExternalGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -2785,15 +2843,17 @@ Name | Type | Description
 **groupId** | <code>number</code> | <span></span>
 **groupName** | <code>string</code> | <span></span>
 **updatedAt** | <code>string</code> | <span></span>
-**internalValue**? | <code>[DataGithubExternalGroupsExternalGroups](#cdktf-provider-github-datagithubexternalgroupsexternalgroups)</code> | __*Optional*__
+**internalValue**? | <code>[dataGithubExternalGroups.DataGithubExternalGroupsExternalGroups](#cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroups)</code> | __*Optional*__
 
 
 
-## class DataGithubIpRanges  <a id="cdktf-provider-github-datagithubipranges"></a>
+## class DataGithubIpRanges  <a id="cdktf-provider-github-datagithubipranges-datagithubipranges"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubIpRanges
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2802,12 +2862,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/ip_ranges github_ip_ranges} Data Source.
 
 ```ts
-new DataGithubIpRanges(scope: Construct, id: string, config?: DataGithubIpRangesConfig)
+new dataGithubIpRanges.DataGithubIpRanges(scope: Construct, id: string, config?: DataGithubIpRangesConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubIpRangesConfig](#cdktf-provider-github-datagithubiprangesconfig)</code>)  *No description*
+* **config** (<code>[dataGithubIpRanges.DataGithubIpRangesConfig](#cdktf-provider-github-datagithubipranges-datagithubiprangesconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -2855,7 +2915,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubipranges-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubipranges-datagithubipranges-resetid"></a>
 
 
 
@@ -2867,7 +2927,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubipranges-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubipranges-datagithubipranges-synthesizeattributes"></a>
 
 
 
@@ -2881,11 +2941,13 @@ __Returns__:
 
 
 
-## class DataGithubMembership  <a id="cdktf-provider-github-datagithubmembership"></a>
+## class DataGithubMembership  <a id="cdktf-provider-github-datagithubmembership-datagithubmembership"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/membership github_membership}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubMembership
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2894,12 +2956,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/membership github_membership} Data Source.
 
 ```ts
-new DataGithubMembership(scope: Construct, id: string, config: DataGithubMembershipConfig)
+new dataGithubMembership.DataGithubMembership(scope: Construct, id: string, config: DataGithubMembershipConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubMembershipConfig](#cdktf-provider-github-datagithubmembershipconfig)</code>)  *No description*
+* **config** (<code>[dataGithubMembership.DataGithubMembershipConfig](#cdktf-provider-github-datagithubmembership-datagithubmembershipconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -2931,7 +2993,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubmembership-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubmembership-datagithubmembership-resetid"></a>
 
 
 
@@ -2943,7 +3005,7 @@ resetId(): void
 
 
 
-#### resetOrganization() <a id="cdktf-provider-github-datagithubmembership-resetorganization"></a>
+#### resetOrganization() <a id="cdktf-provider-github-datagithubmembership-datagithubmembership-resetorganization"></a>
 
 
 
@@ -2955,7 +3017,7 @@ resetOrganization(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubmembership-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubmembership-datagithubmembership-synthesizeattributes"></a>
 
 
 
@@ -2969,11 +3031,13 @@ __Returns__:
 
 
 
-## class DataGithubOrganization  <a id="cdktf-provider-github-datagithuborganization"></a>
+## class DataGithubOrganization  <a id="cdktf-provider-github-datagithuborganization-datagithuborganization"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/organization github_organization}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubOrganization
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -2982,12 +3046,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/organization github_organization} Data Source.
 
 ```ts
-new DataGithubOrganization(scope: Construct, id: string, config: DataGithubOrganizationConfig)
+new dataGithubOrganization.DataGithubOrganization(scope: Construct, id: string, config: DataGithubOrganizationConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubOrganizationConfig](#cdktf-provider-github-datagithuborganizationconfig)</code>)  *No description*
+* **config** (<code>[dataGithubOrganization.DataGithubOrganizationConfig](#cdktf-provider-github-datagithuborganization-datagithuborganizationconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -3021,7 +3085,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithuborganization-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithuborganization-datagithuborganization-resetid"></a>
 
 
 
@@ -3033,7 +3097,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithuborganization-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithuborganization-datagithuborganization-synthesizeattributes"></a>
 
 
 
@@ -3047,11 +3111,13 @@ __Returns__:
 
 
 
-## class DataGithubOrganizationTeamSyncGroups  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups"></a>
+## class DataGithubOrganizationTeamSyncGroups  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroups"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubOrganizationTeamSyncGroups
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3060,12 +3126,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_team_sync_groups github_organization_team_sync_groups} Data Source.
 
 ```ts
-new DataGithubOrganizationTeamSyncGroups(scope: Construct, id: string, config?: DataGithubOrganizationTeamSyncGroupsConfig)
+new dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups(scope: Construct, id: string, config?: DataGithubOrganizationTeamSyncGroupsConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubOrganizationTeamSyncGroupsConfig](#cdktf-provider-github-datagithuborganizationteamsyncgroupsconfig)</code>)  *No description*
+* **config** (<code>[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsConfig](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -3082,7 +3148,7 @@ new DataGithubOrganizationTeamSyncGroups(scope: Construct, id: string, config?: 
 
 Name | Type | Description 
 -----|------|-------------
-**groups** | <code>[DataGithubOrganizationTeamSyncGroupsGroupsList](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupslist)</code> | <span></span>
+**groups** | <code>[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsGroupsList](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroupslist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -3090,7 +3156,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroups-resetid"></a>
 
 
 
@@ -3102,7 +3168,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroups-synthesizeattributes"></a>
 
 
 
@@ -3116,11 +3182,13 @@ __Returns__:
 
 
 
-## class DataGithubOrganizationTeamSyncGroupsGroupsList  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupslist"></a>
+## class DataGithubOrganizationTeamSyncGroupsGroupsList  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroupslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubOrganizationTeamSyncGroups
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -3129,7 +3197,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new DataGithubOrganizationTeamSyncGroupsGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsGroupsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -3150,7 +3218,7 @@ Name | Type | Description
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroupslist-get"></a>
 
 
 
@@ -3161,15 +3229,17 @@ get(index: number): DataGithubOrganizationTeamSyncGroupsGroupsOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[DataGithubOrganizationTeamSyncGroupsGroupsOutputReference](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupsoutputreference)</code>
+* <code>[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsGroupsOutputReference](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroupsoutputreference)</code>
 
 
 
-## class DataGithubOrganizationTeamSyncGroupsGroupsOutputReference  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroupsoutputreference"></a>
+## class DataGithubOrganizationTeamSyncGroupsGroupsOutputReference  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroupsoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubOrganizationTeamSyncGroups
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -3178,7 +3248,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DataGithubOrganizationTeamSyncGroupsGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsGroupsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -3196,15 +3266,17 @@ Name | Type | Description
 **groupDescription** | <code>string</code> | <span></span>
 **groupId** | <code>string</code> | <span></span>
 **groupName** | <code>string</code> | <span></span>
-**internalValue**? | <code>[DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups)</code> | __*Optional*__
+**internalValue**? | <code>[dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsGroups](#cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroups)</code> | __*Optional*__
 
 
 
-## class DataGithubOrganizationTeams  <a id="cdktf-provider-github-datagithuborganizationteams"></a>
+## class DataGithubOrganizationTeams  <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteams"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubOrganizationTeams
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3213,12 +3285,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_teams github_organization_teams} Data Source.
 
 ```ts
-new DataGithubOrganizationTeams(scope: Construct, id: string, config?: DataGithubOrganizationTeamsConfig)
+new dataGithubOrganizationTeams.DataGithubOrganizationTeams(scope: Construct, id: string, config?: DataGithubOrganizationTeamsConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubOrganizationTeamsConfig](#cdktf-provider-github-datagithuborganizationteamsconfig)</code>)  *No description*
+* **config** (<code>[dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -3238,7 +3310,7 @@ Name | Type | Description
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
 **rootTeamsOnly** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**teams** | <code>[DataGithubOrganizationTeamsTeamsList](#cdktf-provider-github-datagithuborganizationteamsteamslist)</code> | <span></span>
+**teams** | <code>[dataGithubOrganizationTeams.DataGithubOrganizationTeamsTeamsList](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteamslist)</code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
 **rootTeamsOnlyInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -3246,7 +3318,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithuborganizationteams-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteams-resetid"></a>
 
 
 
@@ -3258,7 +3330,7 @@ resetId(): void
 
 
 
-#### resetRootTeamsOnly() <a id="cdktf-provider-github-datagithuborganizationteams-resetrootteamsonly"></a>
+#### resetRootTeamsOnly() <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteams-resetrootteamsonly"></a>
 
 
 
@@ -3270,7 +3342,7 @@ resetRootTeamsOnly(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithuborganizationteams-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteams-synthesizeattributes"></a>
 
 
 
@@ -3284,11 +3356,13 @@ __Returns__:
 
 
 
-## class DataGithubOrganizationTeamsTeamsList  <a id="cdktf-provider-github-datagithuborganizationteamsteamslist"></a>
+## class DataGithubOrganizationTeamsTeamsList  <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteamslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubOrganizationTeams
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -3297,7 +3371,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new DataGithubOrganizationTeamsTeamsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new dataGithubOrganizationTeams.DataGithubOrganizationTeamsTeamsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -3318,7 +3392,7 @@ Name | Type | Description
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-datagithuborganizationteamsteamslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteamslist-get"></a>
 
 
 
@@ -3329,15 +3403,17 @@ get(index: number): DataGithubOrganizationTeamsTeamsOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[DataGithubOrganizationTeamsTeamsOutputReference](#cdktf-provider-github-datagithuborganizationteamsteamsoutputreference)</code>
+* <code>[dataGithubOrganizationTeams.DataGithubOrganizationTeamsTeamsOutputReference](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteamsoutputreference)</code>
 
 
 
-## class DataGithubOrganizationTeamsTeamsOutputReference  <a id="cdktf-provider-github-datagithuborganizationteamsteamsoutputreference"></a>
+## class DataGithubOrganizationTeamsTeamsOutputReference  <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteamsoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubOrganizationTeams
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -3346,7 +3422,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DataGithubOrganizationTeamsTeamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new dataGithubOrganizationTeams.DataGithubOrganizationTeamsTeamsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -3369,15 +3445,17 @@ Name | Type | Description
 **privacy** | <code>string</code> | <span></span>
 **repositories** | <code>Array<string></code> | <span></span>
 **slug** | <code>string</code> | <span></span>
-**internalValue**? | <code>[DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteamsteams)</code> | __*Optional*__
+**internalValue**? | <code>[dataGithubOrganizationTeams.DataGithubOrganizationTeamsTeams](#cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteams)</code> | __*Optional*__
 
 
 
-## class DataGithubRef  <a id="cdktf-provider-github-datagithubref"></a>
+## class DataGithubRef  <a id="cdktf-provider-github-datagithubref-datagithubref"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubRef
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3386,12 +3464,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/ref github_ref} Data Source.
 
 ```ts
-new DataGithubRef(scope: Construct, id: string, config: DataGithubRefConfig)
+new dataGithubRef.DataGithubRef(scope: Construct, id: string, config: DataGithubRefConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubRefConfig](#cdktf-provider-github-datagithubrefconfig)</code>)  *No description*
+* **config** (<code>[dataGithubRef.DataGithubRefConfig](#cdktf-provider-github-datagithubref-datagithubrefconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -3423,7 +3501,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubref-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubref-datagithubref-resetid"></a>
 
 
 
@@ -3435,7 +3513,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubref-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubref-datagithubref-synthesizeattributes"></a>
 
 
 
@@ -3449,11 +3527,13 @@ __Returns__:
 
 
 
-## class DataGithubRelease  <a id="cdktf-provider-github-datagithubrelease"></a>
+## class DataGithubRelease  <a id="cdktf-provider-github-datagithubrelease-datagithubrelease"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/release github_release}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubRelease
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3462,12 +3542,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/release github_release} Data Source.
 
 ```ts
-new DataGithubRelease(scope: Construct, id: string, config: DataGithubReleaseConfig)
+new dataGithubRelease.DataGithubRelease(scope: Construct, id: string, config: DataGithubReleaseConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubReleaseConfig](#cdktf-provider-github-datagithubreleaseconfig)</code>)  *No description*
+* **config** (<code>[dataGithubRelease.DataGithubReleaseConfig](#cdktf-provider-github-datagithubrelease-datagithubreleaseconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -3519,7 +3599,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubrelease-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubrelease-datagithubrelease-resetid"></a>
 
 
 
@@ -3531,7 +3611,7 @@ resetId(): void
 
 
 
-#### resetReleaseId() <a id="cdktf-provider-github-datagithubrelease-resetreleaseid"></a>
+#### resetReleaseId() <a id="cdktf-provider-github-datagithubrelease-datagithubrelease-resetreleaseid"></a>
 
 
 
@@ -3543,7 +3623,7 @@ resetReleaseId(): void
 
 
 
-#### resetReleaseTag() <a id="cdktf-provider-github-datagithubrelease-resetreleasetag"></a>
+#### resetReleaseTag() <a id="cdktf-provider-github-datagithubrelease-datagithubrelease-resetreleasetag"></a>
 
 
 
@@ -3555,7 +3635,7 @@ resetReleaseTag(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrelease-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrelease-datagithubrelease-synthesizeattributes"></a>
 
 
 
@@ -3569,11 +3649,13 @@ __Returns__:
 
 
 
-## class DataGithubRepositories  <a id="cdktf-provider-github-datagithubrepositories"></a>
+## class DataGithubRepositories  <a id="cdktf-provider-github-datagithubrepositories-datagithubrepositories"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories github_repositories}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubRepositories
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3582,12 +3664,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/repositories github_repositories} Data Source.
 
 ```ts
-new DataGithubRepositories(scope: Construct, id: string, config: DataGithubRepositoriesConfig)
+new dataGithubRepositories.DataGithubRepositories(scope: Construct, id: string, config: DataGithubRepositoriesConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubRepositoriesConfig](#cdktf-provider-github-datagithubrepositoriesconfig)</code>)  *No description*
+* **config** (<code>[dataGithubRepositories.DataGithubRepositoriesConfig](#cdktf-provider-github-datagithubrepositories-datagithubrepositoriesconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -3619,7 +3701,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubrepositories-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubrepositories-datagithubrepositories-resetid"></a>
 
 
 
@@ -3631,7 +3713,7 @@ resetId(): void
 
 
 
-#### resetSort() <a id="cdktf-provider-github-datagithubrepositories-resetsort"></a>
+#### resetSort() <a id="cdktf-provider-github-datagithubrepositories-datagithubrepositories-resetsort"></a>
 
 
 
@@ -3643,7 +3725,7 @@ resetSort(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositories-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositories-datagithubrepositories-synthesizeattributes"></a>
 
 
 
@@ -3657,11 +3739,13 @@ __Returns__:
 
 
 
-## class DataGithubRepository  <a id="cdktf-provider-github-datagithubrepository"></a>
+## class DataGithubRepository  <a id="cdktf-provider-github-datagithubrepository-datagithubrepository"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository github_repository}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubRepository
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3670,12 +3754,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/repository github_repository} Data Source.
 
 ```ts
-new DataGithubRepository(scope: Construct, id: string, config?: DataGithubRepositoryConfig)
+new dataGithubRepository.DataGithubRepository(scope: Construct, id: string, config?: DataGithubRepositoryConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubRepositoryConfig](#cdktf-provider-github-datagithubrepositoryconfig)</code>)  *No description*
+* **config** (<code>[dataGithubRepository.DataGithubRepositoryConfig](#cdktf-provider-github-datagithubrepository-datagithubrepositoryconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -3702,7 +3786,7 @@ Name | Type | Description
 **allowRebaseMerge** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **allowSquashMerge** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **archived** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**branches** | <code>[DataGithubRepositoryBranchesList](#cdktf-provider-github-datagithubrepositorybrancheslist)</code> | <span></span>
+**branches** | <code>[dataGithubRepository.DataGithubRepositoryBranchesList](#cdktf-provider-github-datagithubrepository-datagithubrepositorybrancheslist)</code> | <span></span>
 **defaultBranch** | <code>string</code> | <span></span>
 **description** | <code>string</code> | <span></span>
 **fullName** | <code>string</code> | <span></span>
@@ -3720,7 +3804,7 @@ Name | Type | Description
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
 **onlyProtectedBranches** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**pages** | <code>[DataGithubRepositoryPagesList](#cdktf-provider-github-datagithubrepositorypageslist)</code> | <span></span>
+**pages** | <code>[dataGithubRepository.DataGithubRepositoryPagesList](#cdktf-provider-github-datagithubrepository-datagithubrepositorypageslist)</code> | <span></span>
 **private** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repoId** | <code>number</code> | <span></span>
 **squashMergeCommitMessage** | <code>string</code> | <span></span>
@@ -3740,7 +3824,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetDescription() <a id="cdktf-provider-github-datagithubrepository-resetdescription"></a>
+#### resetDescription() <a id="cdktf-provider-github-datagithubrepository-datagithubrepository-resetdescription"></a>
 
 
 
@@ -3752,7 +3836,7 @@ resetDescription(): void
 
 
 
-#### resetFullName() <a id="cdktf-provider-github-datagithubrepository-resetfullname"></a>
+#### resetFullName() <a id="cdktf-provider-github-datagithubrepository-datagithubrepository-resetfullname"></a>
 
 
 
@@ -3764,7 +3848,7 @@ resetFullName(): void
 
 
 
-#### resetHomepageUrl() <a id="cdktf-provider-github-datagithubrepository-resethomepageurl"></a>
+#### resetHomepageUrl() <a id="cdktf-provider-github-datagithubrepository-datagithubrepository-resethomepageurl"></a>
 
 
 
@@ -3776,7 +3860,7 @@ resetHomepageUrl(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubrepository-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubrepository-datagithubrepository-resetid"></a>
 
 
 
@@ -3788,7 +3872,7 @@ resetId(): void
 
 
 
-#### resetName() <a id="cdktf-provider-github-datagithubrepository-resetname"></a>
+#### resetName() <a id="cdktf-provider-github-datagithubrepository-datagithubrepository-resetname"></a>
 
 
 
@@ -3800,7 +3884,7 @@ resetName(): void
 
 
 
-#### resetOnlyProtectedBranches() <a id="cdktf-provider-github-datagithubrepository-resetonlyprotectedbranches"></a>
+#### resetOnlyProtectedBranches() <a id="cdktf-provider-github-datagithubrepository-datagithubrepository-resetonlyprotectedbranches"></a>
 
 
 
@@ -3812,7 +3896,7 @@ resetOnlyProtectedBranches(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepository-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepository-datagithubrepository-synthesizeattributes"></a>
 
 
 
@@ -3826,11 +3910,13 @@ __Returns__:
 
 
 
-## class DataGithubRepositoryBranchesList  <a id="cdktf-provider-github-datagithubrepositorybrancheslist"></a>
+## class DataGithubRepositoryBranchesList  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorybrancheslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubRepository
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -3839,7 +3925,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new DataGithubRepositoryBranchesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new dataGithubRepository.DataGithubRepositoryBranchesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -3860,7 +3946,7 @@ Name | Type | Description
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-datagithubrepositorybrancheslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorybrancheslist-get"></a>
 
 
 
@@ -3871,15 +3957,17 @@ get(index: number): DataGithubRepositoryBranchesOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[DataGithubRepositoryBranchesOutputReference](#cdktf-provider-github-datagithubrepositorybranchesoutputreference)</code>
+* <code>[dataGithubRepository.DataGithubRepositoryBranchesOutputReference](#cdktf-provider-github-datagithubrepository-datagithubrepositorybranchesoutputreference)</code>
 
 
 
-## class DataGithubRepositoryBranchesOutputReference  <a id="cdktf-provider-github-datagithubrepositorybranchesoutputreference"></a>
+## class DataGithubRepositoryBranchesOutputReference  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorybranchesoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubRepository
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -3888,7 +3976,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DataGithubRepositoryBranchesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new dataGithubRepository.DataGithubRepositoryBranchesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -3905,15 +3993,195 @@ Name | Type | Description
 -----|------|-------------
 **name** | <code>string</code> | <span></span>
 **protected** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**internalValue**? | <code>[DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepositorybranches)</code> | __*Optional*__
+**internalValue**? | <code>[dataGithubRepository.DataGithubRepositoryBranches](#cdktf-provider-github-datagithubrepository-datagithubrepositorybranches)</code> | __*Optional*__
 
 
 
-## class DataGithubRepositoryFile  <a id="cdktf-provider-github-datagithubrepositoryfile"></a>
+## class DataGithubRepositoryPagesList  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorypageslist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubRepository
+
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new dataGithubRepository.DataGithubRepositoryPagesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorypageslist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubRepositoryPagesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[dataGithubRepository.DataGithubRepositoryPagesOutputReference](#cdktf-provider-github-datagithubrepository-datagithubrepositorypagesoutputreference)</code>
+
+
+
+## class DataGithubRepositoryPagesOutputReference  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorypagesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubRepository
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new dataGithubRepository.DataGithubRepositoryPagesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**cname** | <code>string</code> | <span></span>
+**custom404** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**htmlUrl** | <code>string</code> | <span></span>
+**source** | <code>[dataGithubRepository.DataGithubRepositoryPagesSourceList](#cdktf-provider-github-datagithubrepository-datagithubrepositorypagessourcelist)</code> | <span></span>
+**status** | <code>string</code> | <span></span>
+**url** | <code>string</code> | <span></span>
+**internalValue**? | <code>[dataGithubRepository.DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepository-datagithubrepositorypages)</code> | __*Optional*__
+
+
+
+## class DataGithubRepositoryPagesSourceList  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorypagessourcelist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubRepository
+
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new dataGithubRepository.DataGithubRepositoryPagesSourceList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorypagessourcelist-get"></a>
+
+
+
+```ts
+get(index: number): DataGithubRepositoryPagesSourceOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[dataGithubRepository.DataGithubRepositoryPagesSourceOutputReference](#cdktf-provider-github-datagithubrepository-datagithubrepositorypagessourceoutputreference)</code>
+
+
+
+## class DataGithubRepositoryPagesSourceOutputReference  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorypagessourceoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubRepository
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new dataGithubRepository.DataGithubRepositoryPagesSourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**branch** | <code>string</code> | <span></span>
+**path** | <code>string</code> | <span></span>
+**internalValue**? | <code>[dataGithubRepository.DataGithubRepositoryPagesSource](#cdktf-provider-github-datagithubrepository-datagithubrepositorypagessource)</code> | __*Optional*__
+
+
+
+## class DataGithubRepositoryFile  <a id="cdktf-provider-github-datagithubrepositoryfile-datagithubrepositoryfile"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_file github_repository_file}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubRepositoryFile
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -3922,12 +4190,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_file github_repository_file} Data Source.
 
 ```ts
-new DataGithubRepositoryFile(scope: Construct, id: string, config: DataGithubRepositoryFileConfig)
+new dataGithubRepositoryFile.DataGithubRepositoryFile(scope: Construct, id: string, config: DataGithubRepositoryFileConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubRepositoryFileConfig](#cdktf-provider-github-datagithubrepositoryfileconfig)</code>)  *No description*
+* **config** (<code>[dataGithubRepositoryFile.DataGithubRepositoryFileConfig](#cdktf-provider-github-datagithubrepositoryfile-datagithubrepositoryfileconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -3966,7 +4234,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetBranch() <a id="cdktf-provider-github-datagithubrepositoryfile-resetbranch"></a>
+#### resetBranch() <a id="cdktf-provider-github-datagithubrepositoryfile-datagithubrepositoryfile-resetbranch"></a>
 
 
 
@@ -3978,7 +4246,7 @@ resetBranch(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubrepositoryfile-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubrepositoryfile-datagithubrepositoryfile-resetid"></a>
 
 
 
@@ -3990,7 +4258,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositoryfile-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositoryfile-datagithubrepositoryfile-synthesizeattributes"></a>
 
 
 
@@ -4004,11 +4272,13 @@ __Returns__:
 
 
 
-## class DataGithubRepositoryMilestone  <a id="cdktf-provider-github-datagithubrepositorymilestone"></a>
+## class DataGithubRepositoryMilestone  <a id="cdktf-provider-github-datagithubrepositorymilestone-datagithubrepositorymilestone"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubRepositoryMilestone
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -4017,12 +4287,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_milestone github_repository_milestone} Data Source.
 
 ```ts
-new DataGithubRepositoryMilestone(scope: Construct, id: string, config: DataGithubRepositoryMilestoneConfig)
+new dataGithubRepositoryMilestone.DataGithubRepositoryMilestone(scope: Construct, id: string, config: DataGithubRepositoryMilestoneConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubRepositoryMilestoneConfig](#cdktf-provider-github-datagithubrepositorymilestoneconfig)</code>)  *No description*
+* **config** (<code>[dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig](#cdktf-provider-github-datagithubrepositorymilestone-datagithubrepositorymilestoneconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -4059,7 +4329,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubrepositorymilestone-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubrepositorymilestone-datagithubrepositorymilestone-resetid"></a>
 
 
 
@@ -4071,7 +4341,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositorymilestone-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositorymilestone-datagithubrepositorymilestone-synthesizeattributes"></a>
 
 
 
@@ -4085,181 +4355,13 @@ __Returns__:
 
 
 
-## class DataGithubRepositoryPagesList  <a id="cdktf-provider-github-datagithubrepositorypageslist"></a>
-
-
-
-__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
-__Extends__: [ComplexList](#cdktf-complexlist)
-
-### Initializer
-
-
-
-
-```ts
-new DataGithubRepositoryPagesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
-**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
-**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-### Methods
-
-
-#### get(index) <a id="cdktf-provider-github-datagithubrepositorypageslist-get"></a>
-
-
-
-```ts
-get(index: number): DataGithubRepositoryPagesOutputReference
-```
-
-* **index** (<code>number</code>)  the index of the item to return.
-
-__Returns__:
-* <code>[DataGithubRepositoryPagesOutputReference](#cdktf-provider-github-datagithubrepositorypagesoutputreference)</code>
-
-
-
-## class DataGithubRepositoryPagesOutputReference  <a id="cdktf-provider-github-datagithubrepositorypagesoutputreference"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
-__Extends__: [ComplexObject](#cdktf-complexobject)
-
-### Initializer
-
-
-
-
-```ts
-new DataGithubRepositoryPagesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
-* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**cname** | <code>string</code> | <span></span>
-**custom404** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**htmlUrl** | <code>string</code> | <span></span>
-**source** | <code>[DataGithubRepositoryPagesSourceList](#cdktf-provider-github-datagithubrepositorypagessourcelist)</code> | <span></span>
-**status** | <code>string</code> | <span></span>
-**url** | <code>string</code> | <span></span>
-**internalValue**? | <code>[DataGithubRepositoryPages](#cdktf-provider-github-datagithubrepositorypages)</code> | __*Optional*__
-
-
-
-## class DataGithubRepositoryPagesSourceList  <a id="cdktf-provider-github-datagithubrepositorypagessourcelist"></a>
-
-
-
-__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
-__Extends__: [ComplexList](#cdktf-complexlist)
-
-### Initializer
-
-
-
-
-```ts
-new DataGithubRepositoryPagesSourceList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
-**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
-**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-### Methods
-
-
-#### get(index) <a id="cdktf-provider-github-datagithubrepositorypagessourcelist-get"></a>
-
-
-
-```ts
-get(index: number): DataGithubRepositoryPagesSourceOutputReference
-```
-
-* **index** (<code>number</code>)  the index of the item to return.
-
-__Returns__:
-* <code>[DataGithubRepositoryPagesSourceOutputReference](#cdktf-provider-github-datagithubrepositorypagessourceoutputreference)</code>
-
-
-
-## class DataGithubRepositoryPagesSourceOutputReference  <a id="cdktf-provider-github-datagithubrepositorypagessourceoutputreference"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
-__Extends__: [ComplexObject](#cdktf-complexobject)
-
-### Initializer
-
-
-
-
-```ts
-new DataGithubRepositoryPagesSourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
-* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**branch** | <code>string</code> | <span></span>
-**path** | <code>string</code> | <span></span>
-**internalValue**? | <code>[DataGithubRepositoryPagesSource](#cdktf-provider-github-datagithubrepositorypagessource)</code> | __*Optional*__
-
-
-
-## class DataGithubRepositoryPullRequest  <a id="cdktf-provider-github-datagithubrepositorypullrequest"></a>
+## class DataGithubRepositoryPullRequest  <a id="cdktf-provider-github-datagithubrepositorypullrequest-datagithubrepositorypullrequest"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request github_repository_pull_request}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubRepositoryPullRequest
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -4268,12 +4370,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_pull_request github_repository_pull_request} Data Source.
 
 ```ts
-new DataGithubRepositoryPullRequest(scope: Construct, id: string, config: DataGithubRepositoryPullRequestConfig)
+new dataGithubRepositoryPullRequest.DataGithubRepositoryPullRequest(scope: Construct, id: string, config: DataGithubRepositoryPullRequestConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubRepositoryPullRequestConfig](#cdktf-provider-github-datagithubrepositorypullrequestconfig)</code>)  *No description*
+* **config** (<code>[dataGithubRepositoryPullRequest.DataGithubRepositoryPullRequestConfig](#cdktf-provider-github-datagithubrepositorypullrequest-datagithubrepositorypullrequestconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -4321,7 +4423,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubrepositorypullrequest-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubrepositorypullrequest-datagithubrepositorypullrequest-resetid"></a>
 
 
 
@@ -4333,7 +4435,7 @@ resetId(): void
 
 
 
-#### resetOwner() <a id="cdktf-provider-github-datagithubrepositorypullrequest-resetowner"></a>
+#### resetOwner() <a id="cdktf-provider-github-datagithubrepositorypullrequest-datagithubrepositorypullrequest-resetowner"></a>
 
 
 
@@ -4345,7 +4447,7 @@ resetOwner(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositorypullrequest-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositorypullrequest-datagithubrepositorypullrequest-synthesizeattributes"></a>
 
 
 
@@ -4359,11 +4461,13 @@ __Returns__:
 
 
 
-## class DataGithubRepositoryPullRequests  <a id="cdktf-provider-github-datagithubrepositorypullrequests"></a>
+## class DataGithubRepositoryPullRequests  <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubRepositoryPullRequests
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -4372,12 +4476,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/repository_pull_requests github_repository_pull_requests} Data Source.
 
 ```ts
-new DataGithubRepositoryPullRequests(scope: Construct, id: string, config: DataGithubRepositoryPullRequestsConfig)
+new dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequests(scope: Construct, id: string, config: DataGithubRepositoryPullRequestsConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubRepositoryPullRequestsConfig](#cdktf-provider-github-datagithubrepositorypullrequestsconfig)</code>)  *No description*
+* **config** (<code>[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsConfig](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -4406,7 +4510,7 @@ Name | Type | Description
 **headRef** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **owner** | <code>string</code> | <span></span>
-**results** | <code>[DataGithubRepositoryPullRequestsResultsList](#cdktf-provider-github-datagithubrepositorypullrequestsresultslist)</code> | <span></span>
+**results** | <code>[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsResultsList](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresultslist)</code> | <span></span>
 **sortBy** | <code>string</code> | <span></span>
 **sortDirection** | <code>string</code> | <span></span>
 **state** | <code>string</code> | <span></span>
@@ -4423,7 +4527,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetBaseRef() <a id="cdktf-provider-github-datagithubrepositorypullrequests-resetbaseref"></a>
+#### resetBaseRef() <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests-resetbaseref"></a>
 
 
 
@@ -4435,7 +4539,7 @@ resetBaseRef(): void
 
 
 
-#### resetHeadRef() <a id="cdktf-provider-github-datagithubrepositorypullrequests-resetheadref"></a>
+#### resetHeadRef() <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests-resetheadref"></a>
 
 
 
@@ -4447,7 +4551,7 @@ resetHeadRef(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubrepositorypullrequests-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests-resetid"></a>
 
 
 
@@ -4459,7 +4563,7 @@ resetId(): void
 
 
 
-#### resetOwner() <a id="cdktf-provider-github-datagithubrepositorypullrequests-resetowner"></a>
+#### resetOwner() <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests-resetowner"></a>
 
 
 
@@ -4471,7 +4575,7 @@ resetOwner(): void
 
 
 
-#### resetSortBy() <a id="cdktf-provider-github-datagithubrepositorypullrequests-resetsortby"></a>
+#### resetSortBy() <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests-resetsortby"></a>
 
 
 
@@ -4483,7 +4587,7 @@ resetSortBy(): void
 
 
 
-#### resetSortDirection() <a id="cdktf-provider-github-datagithubrepositorypullrequests-resetsortdirection"></a>
+#### resetSortDirection() <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests-resetsortdirection"></a>
 
 
 
@@ -4495,7 +4599,7 @@ resetSortDirection(): void
 
 
 
-#### resetState() <a id="cdktf-provider-github-datagithubrepositorypullrequests-resetstate"></a>
+#### resetState() <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests-resetstate"></a>
 
 
 
@@ -4507,7 +4611,7 @@ resetState(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositorypullrequests-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequests-synthesizeattributes"></a>
 
 
 
@@ -4521,11 +4625,13 @@ __Returns__:
 
 
 
-## class DataGithubRepositoryPullRequestsResultsList  <a id="cdktf-provider-github-datagithubrepositorypullrequestsresultslist"></a>
+## class DataGithubRepositoryPullRequestsResultsList  <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresultslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubRepositoryPullRequests
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -4534,7 +4640,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new DataGithubRepositoryPullRequestsResultsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsResultsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -4555,7 +4661,7 @@ Name | Type | Description
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-datagithubrepositorypullrequestsresultslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresultslist-get"></a>
 
 
 
@@ -4566,15 +4672,17 @@ get(index: number): DataGithubRepositoryPullRequestsResultsOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[DataGithubRepositoryPullRequestsResultsOutputReference](#cdktf-provider-github-datagithubrepositorypullrequestsresultsoutputreference)</code>
+* <code>[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsResultsOutputReference](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresultsoutputreference)</code>
 
 
 
-## class DataGithubRepositoryPullRequestsResultsOutputReference  <a id="cdktf-provider-github-datagithubrepositorypullrequestsresultsoutputreference"></a>
+## class DataGithubRepositoryPullRequestsResultsOutputReference  <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresultsoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubRepositoryPullRequests
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -4583,7 +4691,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DataGithubRepositoryPullRequestsResultsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsResultsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -4614,15 +4722,17 @@ Name | Type | Description
 **state** | <code>string</code> | <span></span>
 **title** | <code>string</code> | <span></span>
 **updatedAt** | <code>number</code> | <span></span>
-**internalValue**? | <code>[DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequestsresults)</code> | __*Optional*__
+**internalValue**? | <code>[dataGithubRepositoryPullRequests.DataGithubRepositoryPullRequestsResults](#cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresults)</code> | __*Optional*__
 
 
 
-## class DataGithubTeam  <a id="cdktf-provider-github-datagithubteam"></a>
+## class DataGithubTeam  <a id="cdktf-provider-github-datagithubteam-datagithubteam"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/team github_team}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubTeam
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -4631,12 +4741,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/team github_team} Data Source.
 
 ```ts
-new DataGithubTeam(scope: Construct, id: string, config: DataGithubTeamConfig)
+new dataGithubTeam.DataGithubTeam(scope: Construct, id: string, config: DataGithubTeamConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubTeamConfig](#cdktf-provider-github-datagithubteamconfig)</code>)  *No description*
+* **config** (<code>[dataGithubTeam.DataGithubTeamConfig](#cdktf-provider-github-datagithubteam-datagithubteamconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -4673,7 +4783,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubteam-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubteam-datagithubteam-resetid"></a>
 
 
 
@@ -4685,7 +4795,7 @@ resetId(): void
 
 
 
-#### resetMembershipType() <a id="cdktf-provider-github-datagithubteam-resetmembershiptype"></a>
+#### resetMembershipType() <a id="cdktf-provider-github-datagithubteam-datagithubteam-resetmembershiptype"></a>
 
 
 
@@ -4697,7 +4807,7 @@ resetMembershipType(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubteam-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubteam-datagithubteam-synthesizeattributes"></a>
 
 
 
@@ -4711,11 +4821,13 @@ __Returns__:
 
 
 
-## class DataGithubTree  <a id="cdktf-provider-github-datagithubtree"></a>
+## class DataGithubTree  <a id="cdktf-provider-github-datagithubtree-datagithubtree"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/tree github_tree}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubTree
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -4724,12 +4836,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/tree github_tree} Data Source.
 
 ```ts
-new DataGithubTree(scope: Construct, id: string, config: DataGithubTreeConfig)
+new dataGithubTree.DataGithubTree(scope: Construct, id: string, config: DataGithubTreeConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubTreeConfig](#cdktf-provider-github-datagithubtreeconfig)</code>)  *No description*
+* **config** (<code>[dataGithubTree.DataGithubTreeConfig](#cdktf-provider-github-datagithubtree-datagithubtreeconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -4749,7 +4861,7 @@ new DataGithubTree(scope: Construct, id: string, config: DataGithubTreeConfig)
 
 Name | Type | Description 
 -----|------|-------------
-**entries** | <code>[DataGithubTreeEntriesList](#cdktf-provider-github-datagithubtreeentrieslist)</code> | <span></span>
+**entries** | <code>[dataGithubTree.DataGithubTreeEntriesList](#cdktf-provider-github-datagithubtree-datagithubtreeentrieslist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **recursive** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
@@ -4763,7 +4875,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubtree-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubtree-datagithubtree-resetid"></a>
 
 
 
@@ -4775,7 +4887,7 @@ resetId(): void
 
 
 
-#### resetRecursive() <a id="cdktf-provider-github-datagithubtree-resetrecursive"></a>
+#### resetRecursive() <a id="cdktf-provider-github-datagithubtree-datagithubtree-resetrecursive"></a>
 
 
 
@@ -4787,7 +4899,7 @@ resetRecursive(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubtree-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubtree-datagithubtree-synthesizeattributes"></a>
 
 
 
@@ -4801,11 +4913,13 @@ __Returns__:
 
 
 
-## class DataGithubTreeEntriesList  <a id="cdktf-provider-github-datagithubtreeentrieslist"></a>
+## class DataGithubTreeEntriesList  <a id="cdktf-provider-github-datagithubtree-datagithubtreeentrieslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: dataGithubTree
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -4814,7 +4928,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new DataGithubTreeEntriesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new dataGithubTree.DataGithubTreeEntriesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -4835,7 +4949,7 @@ Name | Type | Description
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-datagithubtreeentrieslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-datagithubtree-datagithubtreeentrieslist-get"></a>
 
 
 
@@ -4846,15 +4960,17 @@ get(index: number): DataGithubTreeEntriesOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[DataGithubTreeEntriesOutputReference](#cdktf-provider-github-datagithubtreeentriesoutputreference)</code>
+* <code>[dataGithubTree.DataGithubTreeEntriesOutputReference](#cdktf-provider-github-datagithubtree-datagithubtreeentriesoutputreference)</code>
 
 
 
-## class DataGithubTreeEntriesOutputReference  <a id="cdktf-provider-github-datagithubtreeentriesoutputreference"></a>
+## class DataGithubTreeEntriesOutputReference  <a id="cdktf-provider-github-datagithubtree-datagithubtreeentriesoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: dataGithubTree
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -4863,7 +4979,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new DataGithubTreeEntriesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new dataGithubTree.DataGithubTreeEntriesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -4883,15 +4999,17 @@ Name | Type | Description
 **sha** | <code>string</code> | <span></span>
 **size** | <code>number</code> | <span></span>
 **type** | <code>string</code> | <span></span>
-**internalValue**? | <code>[DataGithubTreeEntries](#cdktf-provider-github-datagithubtreeentries)</code> | __*Optional*__
+**internalValue**? | <code>[dataGithubTree.DataGithubTreeEntries](#cdktf-provider-github-datagithubtree-datagithubtreeentries)</code> | __*Optional*__
 
 
 
-## class DataGithubUser  <a id="cdktf-provider-github-datagithubuser"></a>
+## class DataGithubUser  <a id="cdktf-provider-github-datagithubuser-datagithubuser"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/user github_user}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubUser
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -4900,12 +5018,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/user github_user} Data Source.
 
 ```ts
-new DataGithubUser(scope: Construct, id: string, config: DataGithubUserConfig)
+new dataGithubUser.DataGithubUser(scope: Construct, id: string, config: DataGithubUserConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubUserConfig](#cdktf-provider-github-datagithubuserconfig)</code>)  *No description*
+* **config** (<code>[dataGithubUser.DataGithubUserConfig](#cdktf-provider-github-datagithubuser-datagithubuserconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -4952,7 +5070,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubuser-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubuser-datagithubuser-resetid"></a>
 
 
 
@@ -4964,7 +5082,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubuser-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubuser-datagithubuser-synthesizeattributes"></a>
 
 
 
@@ -4978,11 +5096,13 @@ __Returns__:
 
 
 
-## class DataGithubUsers  <a id="cdktf-provider-github-datagithubusers"></a>
+## class DataGithubUsers  <a id="cdktf-provider-github-datagithubusers-datagithubusers"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/users github_users}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubUsers
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -4991,12 +5111,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/github/d/users github_users} Data Source.
 
 ```ts
-new DataGithubUsers(scope: Construct, id: string, config: DataGithubUsersConfig)
+new dataGithubUsers.DataGithubUsers(scope: Construct, id: string, config: DataGithubUsersConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataGithubUsersConfig](#cdktf-provider-github-datagithubusersconfig)</code>)  *No description*
+* **config** (<code>[dataGithubUsers.DataGithubUsersConfig](#cdktf-provider-github-datagithubusers-datagithubusersconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5026,7 +5146,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-datagithubusers-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-datagithubusers-datagithubusers-resetid"></a>
 
 
 
@@ -5038,7 +5158,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubusers-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubusers-datagithubusers-synthesizeattributes"></a>
 
 
 
@@ -5052,11 +5172,13 @@ __Returns__:
 
 
 
-## class DependabotOrganizationSecret  <a id="cdktf-provider-github-dependabotorganizationsecret"></a>
+## class DependabotOrganizationSecret  <a id="cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecret"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dependabotOrganizationSecret
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5065,12 +5187,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret github_dependabot_organization_secret} Resource.
 
 ```ts
-new DependabotOrganizationSecret(scope: Construct, id: string, config: DependabotOrganizationSecretConfig)
+new dependabotOrganizationSecret.DependabotOrganizationSecret(scope: Construct, id: string, config: DependabotOrganizationSecretConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DependabotOrganizationSecretConfig](#cdktf-provider-github-dependabotorganizationsecretconfig)</code>)  *No description*
+* **config** (<code>[dependabotOrganizationSecret.DependabotOrganizationSecretConfig](#cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecretconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5111,7 +5233,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetEncryptedValue() <a id="cdktf-provider-github-dependabotorganizationsecret-resetencryptedvalue"></a>
+#### resetEncryptedValue() <a id="cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecret-resetencryptedvalue"></a>
 
 
 
@@ -5123,7 +5245,7 @@ resetEncryptedValue(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-dependabotorganizationsecret-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecret-resetid"></a>
 
 
 
@@ -5135,7 +5257,7 @@ resetId(): void
 
 
 
-#### resetPlaintextValue() <a id="cdktf-provider-github-dependabotorganizationsecret-resetplaintextvalue"></a>
+#### resetPlaintextValue() <a id="cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecret-resetplaintextvalue"></a>
 
 
 
@@ -5147,7 +5269,7 @@ resetPlaintextValue(): void
 
 
 
-#### resetSelectedRepositoryIds() <a id="cdktf-provider-github-dependabotorganizationsecret-resetselectedrepositoryids"></a>
+#### resetSelectedRepositoryIds() <a id="cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecret-resetselectedrepositoryids"></a>
 
 
 
@@ -5159,7 +5281,7 @@ resetSelectedRepositoryIds(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotorganizationsecret-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecret-synthesizeattributes"></a>
 
 
 
@@ -5173,11 +5295,13 @@ __Returns__:
 
 
 
-## class DependabotOrganizationSecretRepositories  <a id="cdktf-provider-github-dependabotorganizationsecretrepositories"></a>
+## class DependabotOrganizationSecretRepositories  <a id="cdktf-provider-github-dependabotorganizationsecretrepositories-dependabotorganizationsecretrepositories"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dependabotOrganizationSecretRepositories
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5186,12 +5310,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories} Resource.
 
 ```ts
-new DependabotOrganizationSecretRepositories(scope: Construct, id: string, config: DependabotOrganizationSecretRepositoriesConfig)
+new dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories(scope: Construct, id: string, config: DependabotOrganizationSecretRepositoriesConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DependabotOrganizationSecretRepositoriesConfig](#cdktf-provider-github-dependabotorganizationsecretrepositoriesconfig)</code>)  *No description*
+* **config** (<code>[dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig](#cdktf-provider-github-dependabotorganizationsecretrepositories-dependabotorganizationsecretrepositoriesconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5221,7 +5345,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-dependabotorganizationsecretrepositories-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-dependabotorganizationsecretrepositories-dependabotorganizationsecretrepositories-resetid"></a>
 
 
 
@@ -5233,7 +5357,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotorganizationsecretrepositories-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotorganizationsecretrepositories-dependabotorganizationsecretrepositories-synthesizeattributes"></a>
 
 
 
@@ -5247,11 +5371,13 @@ __Returns__:
 
 
 
-## class DependabotSecret  <a id="cdktf-provider-github-dependabotsecret"></a>
+## class DependabotSecret  <a id="cdktf-provider-github-dependabotsecret-dependabotsecret"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dependabotSecret
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5260,12 +5386,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret github_dependabot_secret} Resource.
 
 ```ts
-new DependabotSecret(scope: Construct, id: string, config: DependabotSecretConfig)
+new dependabotSecret.DependabotSecret(scope: Construct, id: string, config: DependabotSecretConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DependabotSecretConfig](#cdktf-provider-github-dependabotsecretconfig)</code>)  *No description*
+* **config** (<code>[dependabotSecret.DependabotSecretConfig](#cdktf-provider-github-dependabotsecret-dependabotsecretconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5303,7 +5429,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetEncryptedValue() <a id="cdktf-provider-github-dependabotsecret-resetencryptedvalue"></a>
+#### resetEncryptedValue() <a id="cdktf-provider-github-dependabotsecret-dependabotsecret-resetencryptedvalue"></a>
 
 
 
@@ -5315,7 +5441,7 @@ resetEncryptedValue(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-dependabotsecret-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-dependabotsecret-dependabotsecret-resetid"></a>
 
 
 
@@ -5327,7 +5453,7 @@ resetId(): void
 
 
 
-#### resetPlaintextValue() <a id="cdktf-provider-github-dependabotsecret-resetplaintextvalue"></a>
+#### resetPlaintextValue() <a id="cdktf-provider-github-dependabotsecret-dependabotsecret-resetplaintextvalue"></a>
 
 
 
@@ -5339,7 +5465,7 @@ resetPlaintextValue(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotsecret-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-dependabotsecret-dependabotsecret-synthesizeattributes"></a>
 
 
 
@@ -5353,11 +5479,13 @@ __Returns__:
 
 
 
-## class EmuGroupMapping  <a id="cdktf-provider-github-emugroupmapping"></a>
+## class EmuGroupMapping  <a id="cdktf-provider-github-emugroupmapping-emugroupmapping"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping github_emu_group_mapping}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: emuGroupMapping
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5366,12 +5494,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping github_emu_group_mapping} Resource.
 
 ```ts
-new EmuGroupMapping(scope: Construct, id: string, config: EmuGroupMappingConfig)
+new emuGroupMapping.EmuGroupMapping(scope: Construct, id: string, config: EmuGroupMappingConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[EmuGroupMappingConfig](#cdktf-provider-github-emugroupmappingconfig)</code>)  *No description*
+* **config** (<code>[emuGroupMapping.EmuGroupMappingConfig](#cdktf-provider-github-emugroupmapping-emugroupmappingconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5402,7 +5530,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-emugroupmapping-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-emugroupmapping-emugroupmapping-resetid"></a>
 
 
 
@@ -5414,7 +5542,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-emugroupmapping-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-emugroupmapping-emugroupmapping-synthesizeattributes"></a>
 
 
 
@@ -5428,192 +5556,13 @@ __Returns__:
 
 
 
-## class GithubProvider  <a id="cdktf-provider-github-githubprovider"></a>
-
-Represents a {@link https://www.terraform.io/docs/providers/github github}.
-
-__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
-__Extends__: [TerraformProvider](#cdktf-terraformprovider)
-
-### Initializer
-
-
-Create a new {@link https://www.terraform.io/docs/providers/github github} Resource.
-
-```ts
-new GithubProvider(scope: Construct, id: string, config?: GithubProviderConfig)
-```
-
-* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
-* **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[GithubProviderConfig](#cdktf-provider-github-githubproviderconfig)</code>)  *No description*
-  * **alias** (<code>string</code>)  Alias name. __*Optional*__
-  * **appAuth** (<code>[GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)</code>)  app_auth block. __*Optional*__
-  * **baseUrl** (<code>string</code>)  The GitHub Base API URL. __*Optional*__
-  * **insecure** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enable `insecure` mode for testing purposes. __*Optional*__
-  * **organization** (<code>string</code>)  The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. __*Optional*__
-  * **owner** (<code>string</code>)  The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. __*Optional*__
-  * **readDelayMs** (<code>number</code>)  Amount of time in milliseconds to sleep in between non-write requests to GitHub API. __*Optional*__
-  * **token** (<code>string</code>)  The OAuth token used to connect to GitHub. __*Optional*__
-  * **writeDelayMs** (<code>number</code>)  Amount of time in milliseconds to sleep in between writes to GitHub API. __*Optional*__
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**alias**? | <code>string</code> | __*Optional*__
-**aliasInput**? | <code>string</code> | __*Optional*__
-**appAuth**? | <code>[GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)</code> | __*Optional*__
-**appAuthInput**? | <code>[GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)</code> | __*Optional*__
-**baseUrl**? | <code>string</code> | __*Optional*__
-**baseUrlInput**? | <code>string</code> | __*Optional*__
-**insecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**insecureInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**organization**? | <code>string</code> | __*Optional*__
-**organizationInput**? | <code>string</code> | __*Optional*__
-**owner**? | <code>string</code> | __*Optional*__
-**ownerInput**? | <code>string</code> | __*Optional*__
-**readDelayMs**? | <code>number</code> | __*Optional*__
-**readDelayMsInput**? | <code>number</code> | __*Optional*__
-**token**? | <code>string</code> | __*Optional*__
-**tokenInput**? | <code>string</code> | __*Optional*__
-**writeDelayMs**? | <code>number</code> | __*Optional*__
-**writeDelayMsInput**? | <code>number</code> | __*Optional*__
-*static* **tfResourceType** | <code>string</code> | <span></span>
-
-### Methods
-
-
-#### resetAlias() <a id="cdktf-provider-github-githubprovider-resetalias"></a>
-
-
-
-```ts
-resetAlias(): void
-```
-
-
-
-
-
-#### resetAppAuth() <a id="cdktf-provider-github-githubprovider-resetappauth"></a>
-
-
-
-```ts
-resetAppAuth(): void
-```
-
-
-
-
-
-#### resetBaseUrl() <a id="cdktf-provider-github-githubprovider-resetbaseurl"></a>
-
-
-
-```ts
-resetBaseUrl(): void
-```
-
-
-
-
-
-#### resetInsecure() <a id="cdktf-provider-github-githubprovider-resetinsecure"></a>
-
-
-
-```ts
-resetInsecure(): void
-```
-
-
-
-
-
-#### resetOrganization() <a id="cdktf-provider-github-githubprovider-resetorganization"></a>
-
-
-
-```ts
-resetOrganization(): void
-```
-
-
-
-
-
-#### resetOwner() <a id="cdktf-provider-github-githubprovider-resetowner"></a>
-
-
-
-```ts
-resetOwner(): void
-```
-
-
-
-
-
-#### resetReadDelayMs() <a id="cdktf-provider-github-githubprovider-resetreaddelayms"></a>
-
-
-
-```ts
-resetReadDelayMs(): void
-```
-
-
-
-
-
-#### resetToken() <a id="cdktf-provider-github-githubprovider-resettoken"></a>
-
-
-
-```ts
-resetToken(): void
-```
-
-
-
-
-
-#### resetWriteDelayMs() <a id="cdktf-provider-github-githubprovider-resetwritedelayms"></a>
-
-
-
-```ts
-resetWriteDelayMs(): void
-```
-
-
-
-
-
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-githubprovider-synthesizeattributes"></a>
-
-
-
-```ts
-protected synthesizeAttributes(): Map<string, any>
-```
-
-
-__Returns__:
-* <code>Map<string, any></code>
-
-
-
-## class Issue  <a id="cdktf-provider-github-issue"></a>
+## class Issue  <a id="cdktf-provider-github-issue-issue"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/issue github_issue}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: issue
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5622,12 +5571,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/issue github_issue} Resource.
 
 ```ts
-new Issue(scope: Construct, id: string, config: IssueConfig)
+new issue.Issue(scope: Construct, id: string, config: IssueConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[IssueConfig](#cdktf-provider-github-issueconfig)</code>)  *No description*
+* **config** (<code>[issue.IssueConfig](#cdktf-provider-github-issue-issueconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5672,7 +5621,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetAssignees() <a id="cdktf-provider-github-issue-resetassignees"></a>
+#### resetAssignees() <a id="cdktf-provider-github-issue-issue-resetassignees"></a>
 
 
 
@@ -5684,7 +5633,7 @@ resetAssignees(): void
 
 
 
-#### resetBody() <a id="cdktf-provider-github-issue-resetbody"></a>
+#### resetBody() <a id="cdktf-provider-github-issue-issue-resetbody"></a>
 
 
 
@@ -5696,7 +5645,7 @@ resetBody(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-issue-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-issue-issue-resetid"></a>
 
 
 
@@ -5708,7 +5657,7 @@ resetId(): void
 
 
 
-#### resetLabels() <a id="cdktf-provider-github-issue-resetlabels"></a>
+#### resetLabels() <a id="cdktf-provider-github-issue-issue-resetlabels"></a>
 
 
 
@@ -5720,7 +5669,7 @@ resetLabels(): void
 
 
 
-#### resetMilestoneNumber() <a id="cdktf-provider-github-issue-resetmilestonenumber"></a>
+#### resetMilestoneNumber() <a id="cdktf-provider-github-issue-issue-resetmilestonenumber"></a>
 
 
 
@@ -5732,7 +5681,7 @@ resetMilestoneNumber(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-issue-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-issue-issue-synthesizeattributes"></a>
 
 
 
@@ -5746,11 +5695,13 @@ __Returns__:
 
 
 
-## class IssueLabel  <a id="cdktf-provider-github-issuelabel"></a>
+## class IssueLabel  <a id="cdktf-provider-github-issuelabel-issuelabel"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: issueLabel
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5759,12 +5710,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label} Resource.
 
 ```ts
-new IssueLabel(scope: Construct, id: string, config: IssueLabelConfig)
+new issueLabel.IssueLabel(scope: Construct, id: string, config: IssueLabelConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[IssueLabelConfig](#cdktf-provider-github-issuelabelconfig)</code>)  *No description*
+* **config** (<code>[issueLabel.IssueLabelConfig](#cdktf-provider-github-issuelabel-issuelabelconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5802,7 +5753,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetDescription() <a id="cdktf-provider-github-issuelabel-resetdescription"></a>
+#### resetDescription() <a id="cdktf-provider-github-issuelabel-issuelabel-resetdescription"></a>
 
 
 
@@ -5814,7 +5765,7 @@ resetDescription(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-issuelabel-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-issuelabel-issuelabel-resetid"></a>
 
 
 
@@ -5826,7 +5777,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-issuelabel-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-issuelabel-issuelabel-synthesizeattributes"></a>
 
 
 
@@ -5840,11 +5791,13 @@ __Returns__:
 
 
 
-## class Membership  <a id="cdktf-provider-github-membership"></a>
+## class Membership  <a id="cdktf-provider-github-membership-membership"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/membership github_membership}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: membership
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5853,12 +5806,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/membership github_membership} Resource.
 
 ```ts
-new Membership(scope: Construct, id: string, config: MembershipConfig)
+new membership.Membership(scope: Construct, id: string, config: MembershipConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[MembershipConfig](#cdktf-provider-github-membershipconfig)</code>)  *No description*
+* **config** (<code>[membership.MembershipConfig](#cdktf-provider-github-membership-membershipconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5889,7 +5842,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-membership-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-membership-membership-resetid"></a>
 
 
 
@@ -5901,7 +5854,7 @@ resetId(): void
 
 
 
-#### resetRole() <a id="cdktf-provider-github-membership-resetrole"></a>
+#### resetRole() <a id="cdktf-provider-github-membership-membership-resetrole"></a>
 
 
 
@@ -5913,7 +5866,7 @@ resetRole(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-membership-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-membership-membership-synthesizeattributes"></a>
 
 
 
@@ -5927,11 +5880,13 @@ __Returns__:
 
 
 
-## class OrganizationBlock  <a id="cdktf-provider-github-organizationblock"></a>
+## class OrganizationBlock  <a id="cdktf-provider-github-organizationblock-organizationblock"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: organizationBlock
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -5940,12 +5895,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block} Resource.
 
 ```ts
-new OrganizationBlock(scope: Construct, id: string, config: OrganizationBlockConfig)
+new organizationBlock.OrganizationBlock(scope: Construct, id: string, config: OrganizationBlockConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[OrganizationBlockConfig](#cdktf-provider-github-organizationblockconfig)</code>)  *No description*
+* **config** (<code>[organizationBlock.OrganizationBlockConfig](#cdktf-provider-github-organizationblock-organizationblockconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -5973,7 +5928,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-organizationblock-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-organizationblock-organizationblock-resetid"></a>
 
 
 
@@ -5985,7 +5940,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-organizationblock-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-organizationblock-organizationblock-synthesizeattributes"></a>
 
 
 
@@ -5999,11 +5954,13 @@ __Returns__:
 
 
 
-## class OrganizationProject  <a id="cdktf-provider-github-organizationproject"></a>
+## class OrganizationProject  <a id="cdktf-provider-github-organizationproject-organizationproject"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_project github_organization_project}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: organizationProject
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -6012,12 +5969,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_project github_organization_project} Resource.
 
 ```ts
-new OrganizationProject(scope: Construct, id: string, config: OrganizationProjectConfig)
+new organizationProject.OrganizationProject(scope: Construct, id: string, config: OrganizationProjectConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[OrganizationProjectConfig](#cdktf-provider-github-organizationprojectconfig)</code>)  *No description*
+* **config** (<code>[organizationProject.OrganizationProjectConfig](#cdktf-provider-github-organizationproject-organizationprojectconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -6049,7 +6006,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetBody() <a id="cdktf-provider-github-organizationproject-resetbody"></a>
+#### resetBody() <a id="cdktf-provider-github-organizationproject-organizationproject-resetbody"></a>
 
 
 
@@ -6061,7 +6018,7 @@ resetBody(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-organizationproject-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-organizationproject-organizationproject-resetid"></a>
 
 
 
@@ -6073,7 +6030,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-organizationproject-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-organizationproject-organizationproject-synthesizeattributes"></a>
 
 
 
@@ -6087,11 +6044,13 @@ __Returns__:
 
 
 
-## class OrganizationWebhook  <a id="cdktf-provider-github-organizationwebhook"></a>
+## class OrganizationWebhook  <a id="cdktf-provider-github-organizationwebhook-organizationwebhook"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_webhook github_organization_webhook}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: organizationWebhook
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -6100,12 +6059,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_webhook github_organization_webhook} Resource.
 
 ```ts
-new OrganizationWebhook(scope: Construct, id: string, config: OrganizationWebhookConfig)
+new organizationWebhook.OrganizationWebhook(scope: Construct, id: string, config: OrganizationWebhookConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[OrganizationWebhookConfig](#cdktf-provider-github-organizationwebhookconfig)</code>)  *No description*
+* **config** (<code>[organizationWebhook.OrganizationWebhookConfig](#cdktf-provider-github-organizationwebhook-organizationwebhookconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -6115,7 +6074,7 @@ new OrganizationWebhook(scope: Construct, id: string, config: OrganizationWebhoo
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
   * **events** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#events OrganizationWebhook#events}. 
   * **active** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#active OrganizationWebhook#active}. __*Optional*__
-  * **configuration** (<code>[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)</code>)  configuration block. __*Optional*__
+  * **configuration** (<code>[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)</code>)  configuration block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#id OrganizationWebhook#id}. __*Optional*__
   * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#name OrganizationWebhook#name}. __*Optional*__
 
@@ -6127,14 +6086,14 @@ new OrganizationWebhook(scope: Construct, id: string, config: OrganizationWebhoo
 Name | Type | Description 
 -----|------|-------------
 **active** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**configuration** | <code>[OrganizationWebhookConfigurationOutputReference](#cdktf-provider-github-organizationwebhookconfigurationoutputreference)</code> | <span></span>
+**configuration** | <code>[organizationWebhook.OrganizationWebhookConfigurationOutputReference](#cdktf-provider-github-organizationwebhook-organizationwebhookconfigurationoutputreference)</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **events** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
 **activeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**configurationInput**? | <code>[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)</code> | __*Optional*__
+**configurationInput**? | <code>[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)</code> | __*Optional*__
 **eventsInput**? | <code>Array<string></code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
@@ -6143,7 +6102,7 @@ Name | Type | Description
 ### Methods
 
 
-#### putConfiguration(value) <a id="cdktf-provider-github-organizationwebhook-putconfiguration"></a>
+#### putConfiguration(value) <a id="cdktf-provider-github-organizationwebhook-organizationwebhook-putconfiguration"></a>
 
 
 
@@ -6151,7 +6110,7 @@ Name | Type | Description
 putConfiguration(value: OrganizationWebhookConfiguration): void
 ```
 
-* **value** (<code>[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)</code>)  *No description*
+* **value** (<code>[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)</code>)  *No description*
   * **url** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#url OrganizationWebhook#url}. 
   * **contentType** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#content_type OrganizationWebhook#content_type}. __*Optional*__
   * **insecureSsl** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}. __*Optional*__
@@ -6160,7 +6119,7 @@ putConfiguration(value: OrganizationWebhookConfiguration): void
 
 
 
-#### resetActive() <a id="cdktf-provider-github-organizationwebhook-resetactive"></a>
+#### resetActive() <a id="cdktf-provider-github-organizationwebhook-organizationwebhook-resetactive"></a>
 
 
 
@@ -6172,7 +6131,7 @@ resetActive(): void
 
 
 
-#### resetConfiguration() <a id="cdktf-provider-github-organizationwebhook-resetconfiguration"></a>
+#### resetConfiguration() <a id="cdktf-provider-github-organizationwebhook-organizationwebhook-resetconfiguration"></a>
 
 
 
@@ -6184,7 +6143,7 @@ resetConfiguration(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-organizationwebhook-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-organizationwebhook-organizationwebhook-resetid"></a>
 
 
 
@@ -6196,7 +6155,7 @@ resetId(): void
 
 
 
-#### resetName() <a id="cdktf-provider-github-organizationwebhook-resetname"></a>
+#### resetName() <a id="cdktf-provider-github-organizationwebhook-organizationwebhook-resetname"></a>
 
 
 
@@ -6208,7 +6167,7 @@ resetName(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-organizationwebhook-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-organizationwebhook-organizationwebhook-synthesizeattributes"></a>
 
 
 
@@ -6222,11 +6181,13 @@ __Returns__:
 
 
 
-## class OrganizationWebhookConfigurationOutputReference  <a id="cdktf-provider-github-organizationwebhookconfigurationoutputreference"></a>
+## class OrganizationWebhookConfigurationOutputReference  <a id="cdktf-provider-github-organizationwebhook-organizationwebhookconfigurationoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: organizationWebhook
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -6235,7 +6196,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new OrganizationWebhookConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new organizationWebhook.OrganizationWebhookConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -6254,14 +6215,14 @@ Name | Type | Description
 **url** | <code>string</code> | <span></span>
 **contentTypeInput**? | <code>string</code> | __*Optional*__
 **insecureSslInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**internalValue**? | <code>[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)</code> | __*Optional*__
+**internalValue**? | <code>[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)</code> | __*Optional*__
 **secretInput**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### resetContentType() <a id="cdktf-provider-github-organizationwebhookconfigurationoutputreference-resetcontenttype"></a>
+#### resetContentType() <a id="cdktf-provider-github-organizationwebhook-organizationwebhookconfigurationoutputreference-resetcontenttype"></a>
 
 
 
@@ -6273,7 +6234,7 @@ resetContentType(): void
 
 
 
-#### resetInsecureSsl() <a id="cdktf-provider-github-organizationwebhookconfigurationoutputreference-resetinsecuressl"></a>
+#### resetInsecureSsl() <a id="cdktf-provider-github-organizationwebhook-organizationwebhookconfigurationoutputreference-resetinsecuressl"></a>
 
 
 
@@ -6285,7 +6246,7 @@ resetInsecureSsl(): void
 
 
 
-#### resetSecret() <a id="cdktf-provider-github-organizationwebhookconfigurationoutputreference-resetsecret"></a>
+#### resetSecret() <a id="cdktf-provider-github-organizationwebhook-organizationwebhookconfigurationoutputreference-resetsecret"></a>
 
 
 
@@ -6299,11 +6260,13 @@ resetSecret(): void
 
 
 
-## class ProjectCard  <a id="cdktf-provider-github-projectcard"></a>
+## class ProjectCard  <a id="cdktf-provider-github-projectcard-projectcard"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: projectCard
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -6312,12 +6275,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card} Resource.
 
 ```ts
-new ProjectCard(scope: Construct, id: string, config: ProjectCardConfig)
+new projectCard.ProjectCard(scope: Construct, id: string, config: ProjectCardConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ProjectCardConfig](#cdktf-provider-github-projectcardconfig)</code>)  *No description*
+* **config** (<code>[projectCard.ProjectCardConfig](#cdktf-provider-github-projectcard-projectcardconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -6355,7 +6318,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetContentId() <a id="cdktf-provider-github-projectcard-resetcontentid"></a>
+#### resetContentId() <a id="cdktf-provider-github-projectcard-projectcard-resetcontentid"></a>
 
 
 
@@ -6367,7 +6330,7 @@ resetContentId(): void
 
 
 
-#### resetContentType() <a id="cdktf-provider-github-projectcard-resetcontenttype"></a>
+#### resetContentType() <a id="cdktf-provider-github-projectcard-projectcard-resetcontenttype"></a>
 
 
 
@@ -6379,7 +6342,7 @@ resetContentType(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-projectcard-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-projectcard-projectcard-resetid"></a>
 
 
 
@@ -6391,7 +6354,7 @@ resetId(): void
 
 
 
-#### resetNote() <a id="cdktf-provider-github-projectcard-resetnote"></a>
+#### resetNote() <a id="cdktf-provider-github-projectcard-projectcard-resetnote"></a>
 
 
 
@@ -6403,7 +6366,7 @@ resetNote(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-projectcard-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-projectcard-projectcard-synthesizeattributes"></a>
 
 
 
@@ -6417,11 +6380,13 @@ __Returns__:
 
 
 
-## class ProjectColumn  <a id="cdktf-provider-github-projectcolumn"></a>
+## class ProjectColumn  <a id="cdktf-provider-github-projectcolumn-projectcolumn"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: projectColumn
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -6430,12 +6395,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column} Resource.
 
 ```ts
-new ProjectColumn(scope: Construct, id: string, config: ProjectColumnConfig)
+new projectColumn.ProjectColumn(scope: Construct, id: string, config: ProjectColumnConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ProjectColumnConfig](#cdktf-provider-github-projectcolumnconfig)</code>)  *No description*
+* **config** (<code>[projectColumn.ProjectColumnConfig](#cdktf-provider-github-projectcolumn-projectcolumnconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -6467,7 +6432,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-projectcolumn-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-projectcolumn-projectcolumn-resetid"></a>
 
 
 
@@ -6479,7 +6444,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-projectcolumn-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-projectcolumn-projectcolumn-synthesizeattributes"></a>
 
 
 
@@ -6493,11 +6458,196 @@ __Returns__:
 
 
 
-## class Repository  <a id="cdktf-provider-github-repository"></a>
+## class GithubProvider  <a id="cdktf-provider-github-provider-githubprovider"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github github}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
+__Submodule__: provider
+
+__Extends__: [TerraformProvider](#cdktf-terraformprovider)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github github} Resource.
+
+```ts
+new provider.GithubProvider(scope: Construct, id: string, config?: GithubProviderConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[provider.GithubProviderConfig](#cdktf-provider-github-provider-githubproviderconfig)</code>)  *No description*
+  * **alias** (<code>string</code>)  Alias name. __*Optional*__
+  * **appAuth** (<code>[provider.GithubProviderAppAuth](#cdktf-provider-github-provider-githubproviderappauth)</code>)  app_auth block. __*Optional*__
+  * **baseUrl** (<code>string</code>)  The GitHub Base API URL. __*Optional*__
+  * **insecure** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Enable `insecure` mode for testing purposes. __*Optional*__
+  * **organization** (<code>string</code>)  The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. __*Optional*__
+  * **owner** (<code>string</code>)  The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. __*Optional*__
+  * **readDelayMs** (<code>number</code>)  Amount of time in milliseconds to sleep in between non-write requests to GitHub API. __*Optional*__
+  * **token** (<code>string</code>)  The OAuth token used to connect to GitHub. __*Optional*__
+  * **writeDelayMs** (<code>number</code>)  Amount of time in milliseconds to sleep in between writes to GitHub API. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**alias**? | <code>string</code> | __*Optional*__
+**aliasInput**? | <code>string</code> | __*Optional*__
+**appAuth**? | <code>[provider.GithubProviderAppAuth](#cdktf-provider-github-provider-githubproviderappauth)</code> | __*Optional*__
+**appAuthInput**? | <code>[provider.GithubProviderAppAuth](#cdktf-provider-github-provider-githubproviderappauth)</code> | __*Optional*__
+**baseUrl**? | <code>string</code> | __*Optional*__
+**baseUrlInput**? | <code>string</code> | __*Optional*__
+**insecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**insecureInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**organization**? | <code>string</code> | __*Optional*__
+**organizationInput**? | <code>string</code> | __*Optional*__
+**owner**? | <code>string</code> | __*Optional*__
+**ownerInput**? | <code>string</code> | __*Optional*__
+**readDelayMs**? | <code>number</code> | __*Optional*__
+**readDelayMsInput**? | <code>number</code> | __*Optional*__
+**token**? | <code>string</code> | __*Optional*__
+**tokenInput**? | <code>string</code> | __*Optional*__
+**writeDelayMs**? | <code>number</code> | __*Optional*__
+**writeDelayMsInput**? | <code>number</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetAlias() <a id="cdktf-provider-github-provider-githubprovider-resetalias"></a>
+
+
+
+```ts
+resetAlias(): void
+```
+
+
+
+
+
+#### resetAppAuth() <a id="cdktf-provider-github-provider-githubprovider-resetappauth"></a>
+
+
+
+```ts
+resetAppAuth(): void
+```
+
+
+
+
+
+#### resetBaseUrl() <a id="cdktf-provider-github-provider-githubprovider-resetbaseurl"></a>
+
+
+
+```ts
+resetBaseUrl(): void
+```
+
+
+
+
+
+#### resetInsecure() <a id="cdktf-provider-github-provider-githubprovider-resetinsecure"></a>
+
+
+
+```ts
+resetInsecure(): void
+```
+
+
+
+
+
+#### resetOrganization() <a id="cdktf-provider-github-provider-githubprovider-resetorganization"></a>
+
+
+
+```ts
+resetOrganization(): void
+```
+
+
+
+
+
+#### resetOwner() <a id="cdktf-provider-github-provider-githubprovider-resetowner"></a>
+
+
+
+```ts
+resetOwner(): void
+```
+
+
+
+
+
+#### resetReadDelayMs() <a id="cdktf-provider-github-provider-githubprovider-resetreaddelayms"></a>
+
+
+
+```ts
+resetReadDelayMs(): void
+```
+
+
+
+
+
+#### resetToken() <a id="cdktf-provider-github-provider-githubprovider-resettoken"></a>
+
+
+
+```ts
+resetToken(): void
+```
+
+
+
+
+
+#### resetWriteDelayMs() <a id="cdktf-provider-github-provider-githubprovider-resetwritedelayms"></a>
+
+
+
+```ts
+resetWriteDelayMs(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-provider-githubprovider-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class Repository  <a id="cdktf-provider-github-repository-repository"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository github_repository}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repository
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -6506,12 +6656,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository github_repository} Resource.
 
 ```ts
-new Repository(scope: Construct, id: string, config: RepositoryConfig)
+new repository.Repository(scope: Construct, id: string, config: RepositoryConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryConfig](#cdktf-provider-github-repositoryconfig)</code>)  *No description*
+* **config** (<code>[repository.RepositoryConfig](#cdktf-provider-github-repository-repositoryconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -6542,11 +6692,11 @@ new Repository(scope: Construct, id: string, config: RepositoryConfig)
   * **licenseTemplate** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#license_template Repository#license_template}. __*Optional*__
   * **mergeCommitMessage** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_message Repository#merge_commit_message}. __*Optional*__
   * **mergeCommitTitle** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_title Repository#merge_commit_title}. __*Optional*__
-  * **pages** (<code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code>)  pages block. __*Optional*__
+  * **pages** (<code>[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)</code>)  pages block. __*Optional*__
   * **private** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}. __*Optional*__
   * **squashMergeCommitMessage** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}. __*Optional*__
   * **squashMergeCommitTitle** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}. __*Optional*__
-  * **template** (<code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code>)  template block. __*Optional*__
+  * **template** (<code>[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)</code>)  template block. __*Optional*__
   * **topics** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#topics Repository#topics}. __*Optional*__
   * **visibility** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#visibility Repository#visibility}. __*Optional*__
   * **vulnerabilityAlerts** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#vulnerability_alerts Repository#vulnerability_alerts}. __*Optional*__
@@ -6565,7 +6715,7 @@ Name | Type | Description
 **archiveOnDestroy** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **archived** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **autoInit** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**branches** | <code>[RepositoryBranchesList](#cdktf-provider-github-repositorybrancheslist)</code> | <span></span>
+**branches** | <code>[repository.RepositoryBranchesList](#cdktf-provider-github-repository-repositorybrancheslist)</code> | <span></span>
 **defaultBranch** | <code>string</code> | <span></span>
 **deleteBranchOnMerge** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **description** | <code>string</code> | <span></span>
@@ -6588,14 +6738,14 @@ Name | Type | Description
 **mergeCommitTitle** | <code>string</code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
-**pages** | <code>[RepositoryPagesOutputReference](#cdktf-provider-github-repositorypagesoutputreference)</code> | <span></span>
+**pages** | <code>[repository.RepositoryPagesOutputReference](#cdktf-provider-github-repository-repositorypagesoutputreference)</code> | <span></span>
 **private** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repoId** | <code>number</code> | <span></span>
 **squashMergeCommitMessage** | <code>string</code> | <span></span>
 **squashMergeCommitTitle** | <code>string</code> | <span></span>
 **sshCloneUrl** | <code>string</code> | <span></span>
 **svnUrl** | <code>string</code> | <span></span>
-**template** | <code>[RepositoryTemplateOutputReference](#cdktf-provider-github-repositorytemplateoutputreference)</code> | <span></span>
+**template** | <code>[repository.RepositoryTemplateOutputReference](#cdktf-provider-github-repository-repositorytemplateoutputreference)</code> | <span></span>
 **topics** | <code>Array<string></code> | <span></span>
 **visibility** | <code>string</code> | <span></span>
 **vulnerabilityAlerts** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
@@ -6622,11 +6772,11 @@ Name | Type | Description
 **mergeCommitMessageInput**? | <code>string</code> | __*Optional*__
 **mergeCommitTitleInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
-**pagesInput**? | <code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code> | __*Optional*__
+**pagesInput**? | <code>[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)</code> | __*Optional*__
 **privateInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **squashMergeCommitMessageInput**? | <code>string</code> | __*Optional*__
 **squashMergeCommitTitleInput**? | <code>string</code> | __*Optional*__
-**templateInput**? | <code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code> | __*Optional*__
+**templateInput**? | <code>[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)</code> | __*Optional*__
 **topicsInput**? | <code>Array<string></code> | __*Optional*__
 **visibilityInput**? | <code>string</code> | __*Optional*__
 **vulnerabilityAlertsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
@@ -6635,7 +6785,7 @@ Name | Type | Description
 ### Methods
 
 
-#### putPages(value) <a id="cdktf-provider-github-repository-putpages"></a>
+#### putPages(value) <a id="cdktf-provider-github-repository-repository-putpages"></a>
 
 
 
@@ -6643,14 +6793,14 @@ Name | Type | Description
 putPages(value: RepositoryPages): void
 ```
 
-* **value** (<code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code>)  *No description*
-  * **source** (<code>[RepositoryPagesSource](#cdktf-provider-github-repositorypagessource)</code>)  source block. 
+* **value** (<code>[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)</code>)  *No description*
+  * **source** (<code>[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)</code>)  source block. 
   * **cname** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#cname Repository#cname}. __*Optional*__
 
 
 
 
-#### putTemplate(value) <a id="cdktf-provider-github-repository-puttemplate"></a>
+#### putTemplate(value) <a id="cdktf-provider-github-repository-repository-puttemplate"></a>
 
 
 
@@ -6658,14 +6808,14 @@ putPages(value: RepositoryPages): void
 putTemplate(value: RepositoryTemplate): void
 ```
 
-* **value** (<code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code>)  *No description*
+* **value** (<code>[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)</code>)  *No description*
   * **owner** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#owner Repository#owner}. 
   * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#repository Repository#repository}. 
 
 
 
 
-#### resetAllowAutoMerge() <a id="cdktf-provider-github-repository-resetallowautomerge"></a>
+#### resetAllowAutoMerge() <a id="cdktf-provider-github-repository-repository-resetallowautomerge"></a>
 
 
 
@@ -6677,7 +6827,7 @@ resetAllowAutoMerge(): void
 
 
 
-#### resetAllowMergeCommit() <a id="cdktf-provider-github-repository-resetallowmergecommit"></a>
+#### resetAllowMergeCommit() <a id="cdktf-provider-github-repository-repository-resetallowmergecommit"></a>
 
 
 
@@ -6689,7 +6839,7 @@ resetAllowMergeCommit(): void
 
 
 
-#### resetAllowRebaseMerge() <a id="cdktf-provider-github-repository-resetallowrebasemerge"></a>
+#### resetAllowRebaseMerge() <a id="cdktf-provider-github-repository-repository-resetallowrebasemerge"></a>
 
 
 
@@ -6701,7 +6851,7 @@ resetAllowRebaseMerge(): void
 
 
 
-#### resetAllowSquashMerge() <a id="cdktf-provider-github-repository-resetallowsquashmerge"></a>
+#### resetAllowSquashMerge() <a id="cdktf-provider-github-repository-repository-resetallowsquashmerge"></a>
 
 
 
@@ -6713,7 +6863,7 @@ resetAllowSquashMerge(): void
 
 
 
-#### resetArchiveOnDestroy() <a id="cdktf-provider-github-repository-resetarchiveondestroy"></a>
+#### resetArchiveOnDestroy() <a id="cdktf-provider-github-repository-repository-resetarchiveondestroy"></a>
 
 
 
@@ -6725,7 +6875,7 @@ resetArchiveOnDestroy(): void
 
 
 
-#### resetArchived() <a id="cdktf-provider-github-repository-resetarchived"></a>
+#### resetArchived() <a id="cdktf-provider-github-repository-repository-resetarchived"></a>
 
 
 
@@ -6737,7 +6887,7 @@ resetArchived(): void
 
 
 
-#### resetAutoInit() <a id="cdktf-provider-github-repository-resetautoinit"></a>
+#### resetAutoInit() <a id="cdktf-provider-github-repository-repository-resetautoinit"></a>
 
 
 
@@ -6749,7 +6899,7 @@ resetAutoInit(): void
 
 
 
-#### resetDefaultBranch() <a id="cdktf-provider-github-repository-resetdefaultbranch"></a>
+#### resetDefaultBranch() <a id="cdktf-provider-github-repository-repository-resetdefaultbranch"></a>
 
 
 
@@ -6761,7 +6911,7 @@ resetDefaultBranch(): void
 
 
 
-#### resetDeleteBranchOnMerge() <a id="cdktf-provider-github-repository-resetdeletebranchonmerge"></a>
+#### resetDeleteBranchOnMerge() <a id="cdktf-provider-github-repository-repository-resetdeletebranchonmerge"></a>
 
 
 
@@ -6773,7 +6923,7 @@ resetDeleteBranchOnMerge(): void
 
 
 
-#### resetDescription() <a id="cdktf-provider-github-repository-resetdescription"></a>
+#### resetDescription() <a id="cdktf-provider-github-repository-repository-resetdescription"></a>
 
 
 
@@ -6785,7 +6935,7 @@ resetDescription(): void
 
 
 
-#### resetGitignoreTemplate() <a id="cdktf-provider-github-repository-resetgitignoretemplate"></a>
+#### resetGitignoreTemplate() <a id="cdktf-provider-github-repository-repository-resetgitignoretemplate"></a>
 
 
 
@@ -6797,7 +6947,7 @@ resetGitignoreTemplate(): void
 
 
 
-#### resetHasDownloads() <a id="cdktf-provider-github-repository-resethasdownloads"></a>
+#### resetHasDownloads() <a id="cdktf-provider-github-repository-repository-resethasdownloads"></a>
 
 
 
@@ -6809,7 +6959,7 @@ resetHasDownloads(): void
 
 
 
-#### resetHasIssues() <a id="cdktf-provider-github-repository-resethasissues"></a>
+#### resetHasIssues() <a id="cdktf-provider-github-repository-repository-resethasissues"></a>
 
 
 
@@ -6821,7 +6971,7 @@ resetHasIssues(): void
 
 
 
-#### resetHasProjects() <a id="cdktf-provider-github-repository-resethasprojects"></a>
+#### resetHasProjects() <a id="cdktf-provider-github-repository-repository-resethasprojects"></a>
 
 
 
@@ -6833,7 +6983,7 @@ resetHasProjects(): void
 
 
 
-#### resetHasWiki() <a id="cdktf-provider-github-repository-resethaswiki"></a>
+#### resetHasWiki() <a id="cdktf-provider-github-repository-repository-resethaswiki"></a>
 
 
 
@@ -6845,7 +6995,7 @@ resetHasWiki(): void
 
 
 
-#### resetHomepageUrl() <a id="cdktf-provider-github-repository-resethomepageurl"></a>
+#### resetHomepageUrl() <a id="cdktf-provider-github-repository-repository-resethomepageurl"></a>
 
 
 
@@ -6857,7 +7007,7 @@ resetHomepageUrl(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-repository-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repository-repository-resetid"></a>
 
 
 
@@ -6869,7 +7019,7 @@ resetId(): void
 
 
 
-#### resetIgnoreVulnerabilityAlertsDuringRead() <a id="cdktf-provider-github-repository-resetignorevulnerabilityalertsduringread"></a>
+#### resetIgnoreVulnerabilityAlertsDuringRead() <a id="cdktf-provider-github-repository-repository-resetignorevulnerabilityalertsduringread"></a>
 
 
 
@@ -6881,7 +7031,7 @@ resetIgnoreVulnerabilityAlertsDuringRead(): void
 
 
 
-#### resetIsTemplate() <a id="cdktf-provider-github-repository-resetistemplate"></a>
+#### resetIsTemplate() <a id="cdktf-provider-github-repository-repository-resetistemplate"></a>
 
 
 
@@ -6893,7 +7043,7 @@ resetIsTemplate(): void
 
 
 
-#### resetLicenseTemplate() <a id="cdktf-provider-github-repository-resetlicensetemplate"></a>
+#### resetLicenseTemplate() <a id="cdktf-provider-github-repository-repository-resetlicensetemplate"></a>
 
 
 
@@ -6905,7 +7055,7 @@ resetLicenseTemplate(): void
 
 
 
-#### resetMergeCommitMessage() <a id="cdktf-provider-github-repository-resetmergecommitmessage"></a>
+#### resetMergeCommitMessage() <a id="cdktf-provider-github-repository-repository-resetmergecommitmessage"></a>
 
 
 
@@ -6917,7 +7067,7 @@ resetMergeCommitMessage(): void
 
 
 
-#### resetMergeCommitTitle() <a id="cdktf-provider-github-repository-resetmergecommittitle"></a>
+#### resetMergeCommitTitle() <a id="cdktf-provider-github-repository-repository-resetmergecommittitle"></a>
 
 
 
@@ -6929,7 +7079,7 @@ resetMergeCommitTitle(): void
 
 
 
-#### resetPages() <a id="cdktf-provider-github-repository-resetpages"></a>
+#### resetPages() <a id="cdktf-provider-github-repository-repository-resetpages"></a>
 
 
 
@@ -6941,7 +7091,7 @@ resetPages(): void
 
 
 
-#### resetPrivate() <a id="cdktf-provider-github-repository-resetprivate"></a>
+#### resetPrivate() <a id="cdktf-provider-github-repository-repository-resetprivate"></a>
 
 
 
@@ -6953,7 +7103,7 @@ resetPrivate(): void
 
 
 
-#### resetSquashMergeCommitMessage() <a id="cdktf-provider-github-repository-resetsquashmergecommitmessage"></a>
+#### resetSquashMergeCommitMessage() <a id="cdktf-provider-github-repository-repository-resetsquashmergecommitmessage"></a>
 
 
 
@@ -6965,7 +7115,7 @@ resetSquashMergeCommitMessage(): void
 
 
 
-#### resetSquashMergeCommitTitle() <a id="cdktf-provider-github-repository-resetsquashmergecommittitle"></a>
+#### resetSquashMergeCommitTitle() <a id="cdktf-provider-github-repository-repository-resetsquashmergecommittitle"></a>
 
 
 
@@ -6977,7 +7127,7 @@ resetSquashMergeCommitTitle(): void
 
 
 
-#### resetTemplate() <a id="cdktf-provider-github-repository-resettemplate"></a>
+#### resetTemplate() <a id="cdktf-provider-github-repository-repository-resettemplate"></a>
 
 
 
@@ -6989,7 +7139,7 @@ resetTemplate(): void
 
 
 
-#### resetTopics() <a id="cdktf-provider-github-repository-resettopics"></a>
+#### resetTopics() <a id="cdktf-provider-github-repository-repository-resettopics"></a>
 
 
 
@@ -7001,7 +7151,7 @@ resetTopics(): void
 
 
 
-#### resetVisibility() <a id="cdktf-provider-github-repository-resetvisibility"></a>
+#### resetVisibility() <a id="cdktf-provider-github-repository-repository-resetvisibility"></a>
 
 
 
@@ -7013,7 +7163,7 @@ resetVisibility(): void
 
 
 
-#### resetVulnerabilityAlerts() <a id="cdktf-provider-github-repository-resetvulnerabilityalerts"></a>
+#### resetVulnerabilityAlerts() <a id="cdktf-provider-github-repository-repository-resetvulnerabilityalerts"></a>
 
 
 
@@ -7025,7 +7175,7 @@ resetVulnerabilityAlerts(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repository-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repository-repository-synthesizeattributes"></a>
 
 
 
@@ -7039,11 +7189,257 @@ __Returns__:
 
 
 
-## class RepositoryAutolinkReference  <a id="cdktf-provider-github-repositoryautolinkreference"></a>
+## class RepositoryBranchesList  <a id="cdktf-provider-github-repository-repositorybrancheslist"></a>
+
+
+
+__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: repository
+
+__Extends__: [ComplexList](#cdktf-complexlist)
+
+### Initializer
+
+
+
+
+```ts
+new repository.RepositoryBranchesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
+**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
+**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+### Methods
+
+
+#### get(index) <a id="cdktf-provider-github-repository-repositorybrancheslist-get"></a>
+
+
+
+```ts
+get(index: number): RepositoryBranchesOutputReference
+```
+
+* **index** (<code>number</code>)  the index of the item to return.
+
+__Returns__:
+* <code>[repository.RepositoryBranchesOutputReference](#cdktf-provider-github-repository-repositorybranchesoutputreference)</code>
+
+
+
+## class RepositoryBranchesOutputReference  <a id="cdktf-provider-github-repository-repositorybranchesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: repository
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new repository.RepositoryBranchesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
+* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**name** | <code>string</code> | <span></span>
+**protected** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**internalValue**? | <code>[repository.RepositoryBranches](#cdktf-provider-github-repository-repositorybranches)</code> | __*Optional*__
+
+
+
+## class RepositoryPagesOutputReference  <a id="cdktf-provider-github-repository-repositorypagesoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: repository
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new repository.RepositoryPagesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**cname** | <code>string</code> | <span></span>
+**custom404** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**htmlUrl** | <code>string</code> | <span></span>
+**source** | <code>[repository.RepositoryPagesSourceOutputReference](#cdktf-provider-github-repository-repositorypagessourceoutputreference)</code> | <span></span>
+**status** | <code>string</code> | <span></span>
+**url** | <code>string</code> | <span></span>
+**cnameInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)</code> | __*Optional*__
+**sourceInput**? | <code>[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)</code> | __*Optional*__
+
+### Methods
+
+
+#### putSource(value) <a id="cdktf-provider-github-repository-repositorypagesoutputreference-putsource"></a>
+
+
+
+```ts
+putSource(value: RepositoryPagesSource): void
+```
+
+* **value** (<code>[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)</code>)  *No description*
+  * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#branch Repository#branch}. 
+  * **path** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#path Repository#path}. __*Optional*__
+
+
+
+
+#### resetCname() <a id="cdktf-provider-github-repository-repositorypagesoutputreference-resetcname"></a>
+
+
+
+```ts
+resetCname(): void
+```
+
+
+
+
+
+
+
+## class RepositoryPagesSourceOutputReference  <a id="cdktf-provider-github-repository-repositorypagessourceoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: repository
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new repository.RepositoryPagesSourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**branch** | <code>string</code> | <span></span>
+**path** | <code>string</code> | <span></span>
+**branchInput**? | <code>string</code> | __*Optional*__
+**internalValue**? | <code>[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)</code> | __*Optional*__
+**pathInput**? | <code>string</code> | __*Optional*__
+
+### Methods
+
+
+#### resetPath() <a id="cdktf-provider-github-repository-repositorypagessourceoutputreference-resetpath"></a>
+
+
+
+```ts
+resetPath(): void
+```
+
+
+
+
+
+
+
+## class RepositoryTemplateOutputReference  <a id="cdktf-provider-github-repository-repositorytemplateoutputreference"></a>
+
+
+
+__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: repository
+
+__Extends__: [ComplexObject](#cdktf-complexobject)
+
+### Initializer
+
+
+
+
+```ts
+new repository.RepositoryTemplateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
+* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**owner** | <code>string</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**internalValue**? | <code>[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)</code> | __*Optional*__
+**ownerInput**? | <code>string</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+
+
+
+## class RepositoryAutolinkReference  <a id="cdktf-provider-github-repositoryautolinkreference-repositoryautolinkreference"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryAutolinkReference
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -7052,12 +7448,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference} Resource.
 
 ```ts
-new RepositoryAutolinkReference(scope: Construct, id: string, config: RepositoryAutolinkReferenceConfig)
+new repositoryAutolinkReference.RepositoryAutolinkReference(scope: Construct, id: string, config: RepositoryAutolinkReferenceConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryAutolinkReferenceConfig](#cdktf-provider-github-repositoryautolinkreferenceconfig)</code>)  *No description*
+* **config** (<code>[repositoryAutolinkReference.RepositoryAutolinkReferenceConfig](#cdktf-provider-github-repositoryautolinkreference-repositoryautolinkreferenceconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -7091,7 +7487,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-repositoryautolinkreference-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositoryautolinkreference-repositoryautolinkreference-resetid"></a>
 
 
 
@@ -7103,7 +7499,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositoryautolinkreference-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositoryautolinkreference-repositoryautolinkreference-synthesizeattributes"></a>
 
 
 
@@ -7117,94 +7513,13 @@ __Returns__:
 
 
 
-## class RepositoryBranchesList  <a id="cdktf-provider-github-repositorybrancheslist"></a>
-
-
-
-__Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
-__Extends__: [ComplexList](#cdktf-complexlist)
-
-### Initializer
-
-
-
-
-```ts
-new RepositoryBranchesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **wrapsSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
-**terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
-**wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-### Methods
-
-
-#### get(index) <a id="cdktf-provider-github-repositorybrancheslist-get"></a>
-
-
-
-```ts
-get(index: number): RepositoryBranchesOutputReference
-```
-
-* **index** (<code>number</code>)  the index of the item to return.
-
-__Returns__:
-* <code>[RepositoryBranchesOutputReference](#cdktf-provider-github-repositorybranchesoutputreference)</code>
-
-
-
-## class RepositoryBranchesOutputReference  <a id="cdktf-provider-github-repositorybranchesoutputreference"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
-__Extends__: [ComplexObject](#cdktf-complexobject)
-
-### Initializer
-
-
-
-
-```ts
-new RepositoryBranchesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-* **complexObjectIndex** (<code>number</code>)  the index of this item in the list.
-* **complexObjectIsFromSet** (<code>boolean</code>)  whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**name** | <code>string</code> | <span></span>
-**protected** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**internalValue**? | <code>[RepositoryBranches](#cdktf-provider-github-repositorybranches)</code> | __*Optional*__
-
-
-
-## class RepositoryCollaborator  <a id="cdktf-provider-github-repositorycollaborator"></a>
+## class RepositoryCollaborator  <a id="cdktf-provider-github-repositorycollaborator-repositorycollaborator"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator github_repository_collaborator}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryCollaborator
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -7213,12 +7528,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator github_repository_collaborator} Resource.
 
 ```ts
-new RepositoryCollaborator(scope: Construct, id: string, config: RepositoryCollaboratorConfig)
+new repositoryCollaborator.RepositoryCollaborator(scope: Construct, id: string, config: RepositoryCollaboratorConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryCollaboratorConfig](#cdktf-provider-github-repositorycollaboratorconfig)</code>)  *No description*
+* **config** (<code>[repositoryCollaborator.RepositoryCollaboratorConfig](#cdktf-provider-github-repositorycollaborator-repositorycollaboratorconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -7255,7 +7570,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-repositorycollaborator-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositorycollaborator-repositorycollaborator-resetid"></a>
 
 
 
@@ -7267,7 +7582,7 @@ resetId(): void
 
 
 
-#### resetPermission() <a id="cdktf-provider-github-repositorycollaborator-resetpermission"></a>
+#### resetPermission() <a id="cdktf-provider-github-repositorycollaborator-repositorycollaborator-resetpermission"></a>
 
 
 
@@ -7279,7 +7594,7 @@ resetPermission(): void
 
 
 
-#### resetPermissionDiffSuppression() <a id="cdktf-provider-github-repositorycollaborator-resetpermissiondiffsuppression"></a>
+#### resetPermissionDiffSuppression() <a id="cdktf-provider-github-repositorycollaborator-repositorycollaborator-resetpermissiondiffsuppression"></a>
 
 
 
@@ -7291,7 +7606,7 @@ resetPermissionDiffSuppression(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorycollaborator-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorycollaborator-repositorycollaborator-synthesizeattributes"></a>
 
 
 
@@ -7305,11 +7620,13 @@ __Returns__:
 
 
 
-## class RepositoryDeployKey  <a id="cdktf-provider-github-repositorydeploykey"></a>
+## class RepositoryDeployKey  <a id="cdktf-provider-github-repositorydeploykey-repositorydeploykey"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key github_repository_deploy_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryDeployKey
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -7318,12 +7635,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key github_repository_deploy_key} Resource.
 
 ```ts
-new RepositoryDeployKey(scope: Construct, id: string, config: RepositoryDeployKeyConfig)
+new repositoryDeployKey.RepositoryDeployKey(scope: Construct, id: string, config: RepositoryDeployKeyConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryDeployKeyConfig](#cdktf-provider-github-repositorydeploykeyconfig)</code>)  *No description*
+* **config** (<code>[repositoryDeployKey.RepositoryDeployKeyConfig](#cdktf-provider-github-repositorydeploykey-repositorydeploykeyconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -7360,7 +7677,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-repositorydeploykey-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositorydeploykey-repositorydeploykey-resetid"></a>
 
 
 
@@ -7372,7 +7689,7 @@ resetId(): void
 
 
 
-#### resetReadOnly() <a id="cdktf-provider-github-repositorydeploykey-resetreadonly"></a>
+#### resetReadOnly() <a id="cdktf-provider-github-repositorydeploykey-repositorydeploykey-resetreadonly"></a>
 
 
 
@@ -7384,7 +7701,7 @@ resetReadOnly(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorydeploykey-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorydeploykey-repositorydeploykey-synthesizeattributes"></a>
 
 
 
@@ -7398,11 +7715,13 @@ __Returns__:
 
 
 
-## class RepositoryEnvironment  <a id="cdktf-provider-github-repositoryenvironment"></a>
+## class RepositoryEnvironment  <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironment"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_environment github_repository_environment}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryEnvironment
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -7411,12 +7730,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_environment github_repository_environment} Resource.
 
 ```ts
-new RepositoryEnvironment(scope: Construct, id: string, config: RepositoryEnvironmentConfig)
+new repositoryEnvironment.RepositoryEnvironment(scope: Construct, id: string, config: RepositoryEnvironmentConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryEnvironmentConfig](#cdktf-provider-github-repositoryenvironmentconfig)</code>)  *No description*
+* **config** (<code>[repositoryEnvironment.RepositoryEnvironmentConfig](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -7426,9 +7745,9 @@ new RepositoryEnvironment(scope: Construct, id: string, config: RepositoryEnviro
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
   * **environment** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#environment RepositoryEnvironment#environment}. 
   * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#repository RepositoryEnvironment#repository}. 
-  * **deploymentBranchPolicy** (<code>[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)</code>)  deployment_branch_policy block. __*Optional*__
+  * **deploymentBranchPolicy** (<code>[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy)</code>)  deployment_branch_policy block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#id RepositoryEnvironment#id}. __*Optional*__
-  * **reviewers** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)></code>)  reviewers block. __*Optional*__
+  * **reviewers** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers)></code>)  reviewers block. __*Optional*__
   * **waitTimer** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#wait_timer RepositoryEnvironment#wait_timer}. __*Optional*__
 
 
@@ -7438,24 +7757,24 @@ new RepositoryEnvironment(scope: Construct, id: string, config: RepositoryEnviro
 
 Name | Type | Description 
 -----|------|-------------
-**deploymentBranchPolicy** | <code>[RepositoryEnvironmentDeploymentBranchPolicyOutputReference](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicyoutputreference)</code> | <span></span>
+**deploymentBranchPolicy** | <code>[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicyOutputReference](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicyoutputreference)</code> | <span></span>
 **environment** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
-**reviewers** | <code>[RepositoryEnvironmentReviewersList](#cdktf-provider-github-repositoryenvironmentreviewerslist)</code> | <span></span>
+**reviewers** | <code>[repositoryEnvironment.RepositoryEnvironmentReviewersList](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewerslist)</code> | <span></span>
 **waitTimer** | <code>number</code> | <span></span>
-**deploymentBranchPolicyInput**? | <code>[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)</code> | __*Optional*__
+**deploymentBranchPolicyInput**? | <code>[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy)</code> | __*Optional*__
 **environmentInput**? | <code>string</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
-**reviewersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)></code> | __*Optional*__
+**reviewersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers)></code> | __*Optional*__
 **waitTimerInput**? | <code>number</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putDeploymentBranchPolicy(value) <a id="cdktf-provider-github-repositoryenvironment-putdeploymentbranchpolicy"></a>
+#### putDeploymentBranchPolicy(value) <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironment-putdeploymentbranchpolicy"></a>
 
 
 
@@ -7463,14 +7782,14 @@ Name | Type | Description
 putDeploymentBranchPolicy(value: RepositoryEnvironmentDeploymentBranchPolicy): void
 ```
 
-* **value** (<code>[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)</code>)  *No description*
+* **value** (<code>[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy)</code>)  *No description*
   * **customBranchPolicies** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}. 
   * **protectedBranches** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#protected_branches RepositoryEnvironment#protected_branches}. 
 
 
 
 
-#### putReviewers(value) <a id="cdktf-provider-github-repositoryenvironment-putreviewers"></a>
+#### putReviewers(value) <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironment-putreviewers"></a>
 
 
 
@@ -7478,12 +7797,12 @@ putDeploymentBranchPolicy(value: RepositoryEnvironmentDeploymentBranchPolicy): v
 putReviewers(value: IResolvable &#124; Array<RepositoryEnvironmentReviewers>): void
 ```
 
-* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)></code>)  *No description*
+* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers)></code>)  *No description*
 
 
 
 
-#### resetDeploymentBranchPolicy() <a id="cdktf-provider-github-repositoryenvironment-resetdeploymentbranchpolicy"></a>
+#### resetDeploymentBranchPolicy() <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironment-resetdeploymentbranchpolicy"></a>
 
 
 
@@ -7495,7 +7814,7 @@ resetDeploymentBranchPolicy(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-repositoryenvironment-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironment-resetid"></a>
 
 
 
@@ -7507,7 +7826,7 @@ resetId(): void
 
 
 
-#### resetReviewers() <a id="cdktf-provider-github-repositoryenvironment-resetreviewers"></a>
+#### resetReviewers() <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironment-resetreviewers"></a>
 
 
 
@@ -7519,7 +7838,7 @@ resetReviewers(): void
 
 
 
-#### resetWaitTimer() <a id="cdktf-provider-github-repositoryenvironment-resetwaittimer"></a>
+#### resetWaitTimer() <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironment-resetwaittimer"></a>
 
 
 
@@ -7531,7 +7850,7 @@ resetWaitTimer(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositoryenvironment-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironment-synthesizeattributes"></a>
 
 
 
@@ -7545,11 +7864,13 @@ __Returns__:
 
 
 
-## class RepositoryEnvironmentDeploymentBranchPolicyOutputReference  <a id="cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicyoutputreference"></a>
+## class RepositoryEnvironmentDeploymentBranchPolicyOutputReference  <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicyoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: repositoryEnvironment
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -7558,7 +7879,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new RepositoryEnvironmentDeploymentBranchPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicyOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -7574,16 +7895,18 @@ Name | Type | Description
 **customBranchPolicies** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **protectedBranches** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **customBranchPoliciesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**internalValue**? | <code>[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)</code> | __*Optional*__
+**internalValue**? | <code>[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy)</code> | __*Optional*__
 **protectedBranchesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 
 
-## class RepositoryEnvironmentReviewersList  <a id="cdktf-provider-github-repositoryenvironmentreviewerslist"></a>
+## class RepositoryEnvironmentReviewersList  <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewerslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: repositoryEnvironment
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -7592,7 +7915,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new RepositoryEnvironmentReviewersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new repositoryEnvironment.RepositoryEnvironmentReviewersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -7609,12 +7932,12 @@ Name | Type | Description
 **terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
 **terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
 **wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)></code> | __*Optional*__
+**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers)></code> | __*Optional*__
 
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-repositoryenvironmentreviewerslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewerslist-get"></a>
 
 
 
@@ -7625,15 +7948,17 @@ get(index: number): RepositoryEnvironmentReviewersOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[RepositoryEnvironmentReviewersOutputReference](#cdktf-provider-github-repositoryenvironmentreviewersoutputreference)</code>
+* <code>[repositoryEnvironment.RepositoryEnvironmentReviewersOutputReference](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewersoutputreference)</code>
 
 
 
-## class RepositoryEnvironmentReviewersOutputReference  <a id="cdktf-provider-github-repositoryenvironmentreviewersoutputreference"></a>
+## class RepositoryEnvironmentReviewersOutputReference  <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewersoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: repositoryEnvironment
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -7642,7 +7967,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new RepositoryEnvironmentReviewersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new repositoryEnvironment.RepositoryEnvironmentReviewersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -7659,14 +7984,14 @@ Name | Type | Description
 -----|------|-------------
 **teams** | <code>Array<number></code> | <span></span>
 **users** | <code>Array<number></code> | <span></span>
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; [RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)</code> | __*Optional*__
+**internalValue**? | <code>[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers) &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **teamsInput**? | <code>Array<number></code> | __*Optional*__
 **usersInput**? | <code>Array<number></code> | __*Optional*__
 
 ### Methods
 
 
-#### resetTeams() <a id="cdktf-provider-github-repositoryenvironmentreviewersoutputreference-resetteams"></a>
+#### resetTeams() <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewersoutputreference-resetteams"></a>
 
 
 
@@ -7678,7 +8003,7 @@ resetTeams(): void
 
 
 
-#### resetUsers() <a id="cdktf-provider-github-repositoryenvironmentreviewersoutputreference-resetusers"></a>
+#### resetUsers() <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewersoutputreference-resetusers"></a>
 
 
 
@@ -7692,11 +8017,13 @@ resetUsers(): void
 
 
 
-## class RepositoryFile  <a id="cdktf-provider-github-repositoryfile"></a>
+## class RepositoryFile  <a id="cdktf-provider-github-repositoryfile-repositoryfile"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryFile
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -7705,12 +8032,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file} Resource.
 
 ```ts
-new RepositoryFile(scope: Construct, id: string, config: RepositoryFileConfig)
+new repositoryFile.RepositoryFile(scope: Construct, id: string, config: RepositoryFileConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryFileConfig](#cdktf-provider-github-repositoryfileconfig)</code>)  *No description*
+* **config** (<code>[repositoryFile.RepositoryFileConfig](#cdktf-provider-github-repositoryfile-repositoryfileconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -7760,7 +8087,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetBranch() <a id="cdktf-provider-github-repositoryfile-resetbranch"></a>
+#### resetBranch() <a id="cdktf-provider-github-repositoryfile-repositoryfile-resetbranch"></a>
 
 
 
@@ -7772,7 +8099,7 @@ resetBranch(): void
 
 
 
-#### resetCommitAuthor() <a id="cdktf-provider-github-repositoryfile-resetcommitauthor"></a>
+#### resetCommitAuthor() <a id="cdktf-provider-github-repositoryfile-repositoryfile-resetcommitauthor"></a>
 
 
 
@@ -7784,7 +8111,7 @@ resetCommitAuthor(): void
 
 
 
-#### resetCommitEmail() <a id="cdktf-provider-github-repositoryfile-resetcommitemail"></a>
+#### resetCommitEmail() <a id="cdktf-provider-github-repositoryfile-repositoryfile-resetcommitemail"></a>
 
 
 
@@ -7796,7 +8123,7 @@ resetCommitEmail(): void
 
 
 
-#### resetCommitMessage() <a id="cdktf-provider-github-repositoryfile-resetcommitmessage"></a>
+#### resetCommitMessage() <a id="cdktf-provider-github-repositoryfile-repositoryfile-resetcommitmessage"></a>
 
 
 
@@ -7808,7 +8135,7 @@ resetCommitMessage(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-repositoryfile-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositoryfile-repositoryfile-resetid"></a>
 
 
 
@@ -7820,7 +8147,7 @@ resetId(): void
 
 
 
-#### resetOverwriteOnCreate() <a id="cdktf-provider-github-repositoryfile-resetoverwriteoncreate"></a>
+#### resetOverwriteOnCreate() <a id="cdktf-provider-github-repositoryfile-repositoryfile-resetoverwriteoncreate"></a>
 
 
 
@@ -7832,7 +8159,7 @@ resetOverwriteOnCreate(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositoryfile-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositoryfile-repositoryfile-synthesizeattributes"></a>
 
 
 
@@ -7846,11 +8173,13 @@ __Returns__:
 
 
 
-## class RepositoryMilestone  <a id="cdktf-provider-github-repositorymilestone"></a>
+## class RepositoryMilestone  <a id="cdktf-provider-github-repositorymilestone-repositorymilestone"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_milestone github_repository_milestone}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryMilestone
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -7859,12 +8188,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_milestone github_repository_milestone} Resource.
 
 ```ts
-new RepositoryMilestone(scope: Construct, id: string, config: RepositoryMilestoneConfig)
+new repositoryMilestone.RepositoryMilestone(scope: Construct, id: string, config: RepositoryMilestoneConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryMilestoneConfig](#cdktf-provider-github-repositorymilestoneconfig)</code>)  *No description*
+* **config** (<code>[repositoryMilestone.RepositoryMilestoneConfig](#cdktf-provider-github-repositorymilestone-repositorymilestoneconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -7907,7 +8236,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetDescription() <a id="cdktf-provider-github-repositorymilestone-resetdescription"></a>
+#### resetDescription() <a id="cdktf-provider-github-repositorymilestone-repositorymilestone-resetdescription"></a>
 
 
 
@@ -7919,7 +8248,7 @@ resetDescription(): void
 
 
 
-#### resetDueDate() <a id="cdktf-provider-github-repositorymilestone-resetduedate"></a>
+#### resetDueDate() <a id="cdktf-provider-github-repositorymilestone-repositorymilestone-resetduedate"></a>
 
 
 
@@ -7931,7 +8260,7 @@ resetDueDate(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-repositorymilestone-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositorymilestone-repositorymilestone-resetid"></a>
 
 
 
@@ -7943,7 +8272,7 @@ resetId(): void
 
 
 
-#### resetState() <a id="cdktf-provider-github-repositorymilestone-resetstate"></a>
+#### resetState() <a id="cdktf-provider-github-repositorymilestone-repositorymilestone-resetstate"></a>
 
 
 
@@ -7955,7 +8284,7 @@ resetState(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorymilestone-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorymilestone-repositorymilestone-synthesizeattributes"></a>
 
 
 
@@ -7969,128 +8298,13 @@ __Returns__:
 
 
 
-## class RepositoryPagesOutputReference  <a id="cdktf-provider-github-repositorypagesoutputreference"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
-__Extends__: [ComplexObject](#cdktf-complexobject)
-
-### Initializer
-
-
-
-
-```ts
-new RepositoryPagesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**cname** | <code>string</code> | <span></span>
-**custom404** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**htmlUrl** | <code>string</code> | <span></span>
-**source** | <code>[RepositoryPagesSourceOutputReference](#cdktf-provider-github-repositorypagessourceoutputreference)</code> | <span></span>
-**status** | <code>string</code> | <span></span>
-**url** | <code>string</code> | <span></span>
-**cnameInput**? | <code>string</code> | __*Optional*__
-**internalValue**? | <code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code> | __*Optional*__
-**sourceInput**? | <code>[RepositoryPagesSource](#cdktf-provider-github-repositorypagessource)</code> | __*Optional*__
-
-### Methods
-
-
-#### putSource(value) <a id="cdktf-provider-github-repositorypagesoutputreference-putsource"></a>
-
-
-
-```ts
-putSource(value: RepositoryPagesSource): void
-```
-
-* **value** (<code>[RepositoryPagesSource](#cdktf-provider-github-repositorypagessource)</code>)  *No description*
-  * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#branch Repository#branch}. 
-  * **path** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#path Repository#path}. __*Optional*__
-
-
-
-
-#### resetCname() <a id="cdktf-provider-github-repositorypagesoutputreference-resetcname"></a>
-
-
-
-```ts
-resetCname(): void
-```
-
-
-
-
-
-
-
-## class RepositoryPagesSourceOutputReference  <a id="cdktf-provider-github-repositorypagessourceoutputreference"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
-__Extends__: [ComplexObject](#cdktf-complexobject)
-
-### Initializer
-
-
-
-
-```ts
-new RepositoryPagesSourceOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**branch** | <code>string</code> | <span></span>
-**path** | <code>string</code> | <span></span>
-**branchInput**? | <code>string</code> | __*Optional*__
-**internalValue**? | <code>[RepositoryPagesSource](#cdktf-provider-github-repositorypagessource)</code> | __*Optional*__
-**pathInput**? | <code>string</code> | __*Optional*__
-
-### Methods
-
-
-#### resetPath() <a id="cdktf-provider-github-repositorypagessourceoutputreference-resetpath"></a>
-
-
-
-```ts
-resetPath(): void
-```
-
-
-
-
-
-
-
-## class RepositoryProject  <a id="cdktf-provider-github-repositoryproject"></a>
+## class RepositoryProject  <a id="cdktf-provider-github-repositoryproject-repositoryproject"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryProject
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -8099,12 +8313,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project} Resource.
 
 ```ts
-new RepositoryProject(scope: Construct, id: string, config: RepositoryProjectConfig)
+new repositoryProject.RepositoryProject(scope: Construct, id: string, config: RepositoryProjectConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryProjectConfig](#cdktf-provider-github-repositoryprojectconfig)</code>)  *No description*
+* **config** (<code>[repositoryProject.RepositoryProjectConfig](#cdktf-provider-github-repositoryproject-repositoryprojectconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -8139,7 +8353,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetBody() <a id="cdktf-provider-github-repositoryproject-resetbody"></a>
+#### resetBody() <a id="cdktf-provider-github-repositoryproject-repositoryproject-resetbody"></a>
 
 
 
@@ -8151,7 +8365,7 @@ resetBody(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-repositoryproject-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositoryproject-repositoryproject-resetid"></a>
 
 
 
@@ -8163,7 +8377,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositoryproject-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositoryproject-repositoryproject-synthesizeattributes"></a>
 
 
 
@@ -8177,11 +8391,13 @@ __Returns__:
 
 
 
-## class RepositoryPullRequest  <a id="cdktf-provider-github-repositorypullrequest"></a>
+## class RepositoryPullRequest  <a id="cdktf-provider-github-repositorypullrequest-repositorypullrequest"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request github_repository_pull_request}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryPullRequest
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -8190,12 +8406,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request github_repository_pull_request} Resource.
 
 ```ts
-new RepositoryPullRequest(scope: Construct, id: string, config: RepositoryPullRequestConfig)
+new repositoryPullRequest.RepositoryPullRequest(scope: Construct, id: string, config: RepositoryPullRequestConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryPullRequestConfig](#cdktf-provider-github-repositorypullrequestconfig)</code>)  *No description*
+* **config** (<code>[repositoryPullRequest.RepositoryPullRequestConfig](#cdktf-provider-github-repositorypullrequest-repositorypullrequestconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -8249,7 +8465,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetBody() <a id="cdktf-provider-github-repositorypullrequest-resetbody"></a>
+#### resetBody() <a id="cdktf-provider-github-repositorypullrequest-repositorypullrequest-resetbody"></a>
 
 
 
@@ -8261,7 +8477,7 @@ resetBody(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-repositorypullrequest-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositorypullrequest-repositorypullrequest-resetid"></a>
 
 
 
@@ -8273,7 +8489,7 @@ resetId(): void
 
 
 
-#### resetMaintainerCanModify() <a id="cdktf-provider-github-repositorypullrequest-resetmaintainercanmodify"></a>
+#### resetMaintainerCanModify() <a id="cdktf-provider-github-repositorypullrequest-repositorypullrequest-resetmaintainercanmodify"></a>
 
 
 
@@ -8285,7 +8501,7 @@ resetMaintainerCanModify(): void
 
 
 
-#### resetOwner() <a id="cdktf-provider-github-repositorypullrequest-resetowner"></a>
+#### resetOwner() <a id="cdktf-provider-github-repositorypullrequest-repositorypullrequest-resetowner"></a>
 
 
 
@@ -8297,7 +8513,7 @@ resetOwner(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorypullrequest-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorypullrequest-repositorypullrequest-synthesizeattributes"></a>
 
 
 
@@ -8311,45 +8527,13 @@ __Returns__:
 
 
 
-## class RepositoryTemplateOutputReference  <a id="cdktf-provider-github-repositorytemplateoutputreference"></a>
-
-
-
-__Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
-__Extends__: [ComplexObject](#cdktf-complexobject)
-
-### Initializer
-
-
-
-
-```ts
-new RepositoryTemplateOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
-```
-
-* **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
-* **terraformAttribute** (<code>string</code>)  The attribute on the parent resource this class is referencing.
-
-
-
-### Properties
-
-
-Name | Type | Description 
------|------|-------------
-**owner** | <code>string</code> | <span></span>
-**repository** | <code>string</code> | <span></span>
-**internalValue**? | <code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code> | __*Optional*__
-**ownerInput**? | <code>string</code> | __*Optional*__
-**repositoryInput**? | <code>string</code> | __*Optional*__
-
-
-
-## class RepositoryWebhook  <a id="cdktf-provider-github-repositorywebhook"></a>
+## class RepositoryWebhook  <a id="cdktf-provider-github-repositorywebhook-repositorywebhook"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_webhook github_repository_webhook}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: repositoryWebhook
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -8358,12 +8542,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/repository_webhook github_repository_webhook} Resource.
 
 ```ts
-new RepositoryWebhook(scope: Construct, id: string, config: RepositoryWebhookConfig)
+new repositoryWebhook.RepositoryWebhook(scope: Construct, id: string, config: RepositoryWebhookConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[RepositoryWebhookConfig](#cdktf-provider-github-repositorywebhookconfig)</code>)  *No description*
+* **config** (<code>[repositoryWebhook.RepositoryWebhookConfig](#cdktf-provider-github-repositorywebhook-repositorywebhookconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -8374,7 +8558,7 @@ new RepositoryWebhook(scope: Construct, id: string, config: RepositoryWebhookCon
   * **events** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#events RepositoryWebhook#events}. 
   * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#repository RepositoryWebhook#repository}. 
   * **active** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#active RepositoryWebhook#active}. __*Optional*__
-  * **configuration** (<code>[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)</code>)  configuration block. __*Optional*__
+  * **configuration** (<code>[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)</code>)  configuration block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#id RepositoryWebhook#id}. __*Optional*__
   * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#name RepositoryWebhook#name}. __*Optional*__
 
@@ -8386,7 +8570,7 @@ new RepositoryWebhook(scope: Construct, id: string, config: RepositoryWebhookCon
 Name | Type | Description 
 -----|------|-------------
 **active** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
-**configuration** | <code>[RepositoryWebhookConfigurationOutputReference](#cdktf-provider-github-repositorywebhookconfigurationoutputreference)</code> | <span></span>
+**configuration** | <code>[repositoryWebhook.RepositoryWebhookConfigurationOutputReference](#cdktf-provider-github-repositorywebhook-repositorywebhookconfigurationoutputreference)</code> | <span></span>
 **etag** | <code>string</code> | <span></span>
 **events** | <code>Array<string></code> | <span></span>
 **id** | <code>string</code> | <span></span>
@@ -8394,7 +8578,7 @@ Name | Type | Description
 **repository** | <code>string</code> | <span></span>
 **url** | <code>string</code> | <span></span>
 **activeInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**configurationInput**? | <code>[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)</code> | __*Optional*__
+**configurationInput**? | <code>[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)</code> | __*Optional*__
 **eventsInput**? | <code>Array<string></code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
@@ -8404,7 +8588,7 @@ Name | Type | Description
 ### Methods
 
 
-#### putConfiguration(value) <a id="cdktf-provider-github-repositorywebhook-putconfiguration"></a>
+#### putConfiguration(value) <a id="cdktf-provider-github-repositorywebhook-repositorywebhook-putconfiguration"></a>
 
 
 
@@ -8412,7 +8596,7 @@ Name | Type | Description
 putConfiguration(value: RepositoryWebhookConfiguration): void
 ```
 
-* **value** (<code>[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)</code>)  *No description*
+* **value** (<code>[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)</code>)  *No description*
   * **url** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#url RepositoryWebhook#url}. 
   * **contentType** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#content_type RepositoryWebhook#content_type}. __*Optional*__
   * **insecureSsl** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}. __*Optional*__
@@ -8421,7 +8605,7 @@ putConfiguration(value: RepositoryWebhookConfiguration): void
 
 
 
-#### resetActive() <a id="cdktf-provider-github-repositorywebhook-resetactive"></a>
+#### resetActive() <a id="cdktf-provider-github-repositorywebhook-repositorywebhook-resetactive"></a>
 
 
 
@@ -8433,7 +8617,7 @@ resetActive(): void
 
 
 
-#### resetConfiguration() <a id="cdktf-provider-github-repositorywebhook-resetconfiguration"></a>
+#### resetConfiguration() <a id="cdktf-provider-github-repositorywebhook-repositorywebhook-resetconfiguration"></a>
 
 
 
@@ -8445,7 +8629,7 @@ resetConfiguration(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-repositorywebhook-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-repositorywebhook-repositorywebhook-resetid"></a>
 
 
 
@@ -8457,7 +8641,7 @@ resetId(): void
 
 
 
-#### resetName() <a id="cdktf-provider-github-repositorywebhook-resetname"></a>
+#### resetName() <a id="cdktf-provider-github-repositorywebhook-repositorywebhook-resetname"></a>
 
 
 
@@ -8469,7 +8653,7 @@ resetName(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorywebhook-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-repositorywebhook-repositorywebhook-synthesizeattributes"></a>
 
 
 
@@ -8483,11 +8667,13 @@ __Returns__:
 
 
 
-## class RepositoryWebhookConfigurationOutputReference  <a id="cdktf-provider-github-repositorywebhookconfigurationoutputreference"></a>
+## class RepositoryWebhookConfigurationOutputReference  <a id="cdktf-provider-github-repositorywebhook-repositorywebhookconfigurationoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: repositoryWebhook
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -8496,7 +8682,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new RepositoryWebhookConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+new repositoryWebhook.RepositoryWebhookConfigurationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -8515,14 +8701,14 @@ Name | Type | Description
 **url** | <code>string</code> | <span></span>
 **contentTypeInput**? | <code>string</code> | __*Optional*__
 **insecureSslInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
-**internalValue**? | <code>[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)</code> | __*Optional*__
+**internalValue**? | <code>[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)</code> | __*Optional*__
 **secretInput**? | <code>string</code> | __*Optional*__
 **urlInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### resetContentType() <a id="cdktf-provider-github-repositorywebhookconfigurationoutputreference-resetcontenttype"></a>
+#### resetContentType() <a id="cdktf-provider-github-repositorywebhook-repositorywebhookconfigurationoutputreference-resetcontenttype"></a>
 
 
 
@@ -8534,7 +8720,7 @@ resetContentType(): void
 
 
 
-#### resetInsecureSsl() <a id="cdktf-provider-github-repositorywebhookconfigurationoutputreference-resetinsecuressl"></a>
+#### resetInsecureSsl() <a id="cdktf-provider-github-repositorywebhook-repositorywebhookconfigurationoutputreference-resetinsecuressl"></a>
 
 
 
@@ -8546,7 +8732,7 @@ resetInsecureSsl(): void
 
 
 
-#### resetSecret() <a id="cdktf-provider-github-repositorywebhookconfigurationoutputreference-resetsecret"></a>
+#### resetSecret() <a id="cdktf-provider-github-repositorywebhook-repositorywebhookconfigurationoutputreference-resetsecret"></a>
 
 
 
@@ -8560,11 +8746,13 @@ resetSecret(): void
 
 
 
-## class Team  <a id="cdktf-provider-github-team"></a>
+## class Team  <a id="cdktf-provider-github-team-team"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team github_team}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: team
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -8573,12 +8761,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/team github_team} Resource.
 
 ```ts
-new Team(scope: Construct, id: string, config: TeamConfig)
+new team.Team(scope: Construct, id: string, config: TeamConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[TeamConfig](#cdktf-provider-github-teamconfig)</code>)  *No description*
+* **config** (<code>[team.TeamConfig](#cdktf-provider-github-team-teamconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -8624,7 +8812,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetCreateDefaultMaintainer() <a id="cdktf-provider-github-team-resetcreatedefaultmaintainer"></a>
+#### resetCreateDefaultMaintainer() <a id="cdktf-provider-github-team-team-resetcreatedefaultmaintainer"></a>
 
 
 
@@ -8636,7 +8824,7 @@ resetCreateDefaultMaintainer(): void
 
 
 
-#### resetDescription() <a id="cdktf-provider-github-team-resetdescription"></a>
+#### resetDescription() <a id="cdktf-provider-github-team-team-resetdescription"></a>
 
 
 
@@ -8648,7 +8836,7 @@ resetDescription(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-team-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-team-team-resetid"></a>
 
 
 
@@ -8660,7 +8848,7 @@ resetId(): void
 
 
 
-#### resetLdapDn() <a id="cdktf-provider-github-team-resetldapdn"></a>
+#### resetLdapDn() <a id="cdktf-provider-github-team-team-resetldapdn"></a>
 
 
 
@@ -8672,7 +8860,7 @@ resetLdapDn(): void
 
 
 
-#### resetParentTeamId() <a id="cdktf-provider-github-team-resetparentteamid"></a>
+#### resetParentTeamId() <a id="cdktf-provider-github-team-team-resetparentteamid"></a>
 
 
 
@@ -8684,7 +8872,7 @@ resetParentTeamId(): void
 
 
 
-#### resetPrivacy() <a id="cdktf-provider-github-team-resetprivacy"></a>
+#### resetPrivacy() <a id="cdktf-provider-github-team-team-resetprivacy"></a>
 
 
 
@@ -8696,7 +8884,7 @@ resetPrivacy(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-team-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-team-team-synthesizeattributes"></a>
 
 
 
@@ -8710,11 +8898,13 @@ __Returns__:
 
 
 
-## class TeamMembers  <a id="cdktf-provider-github-teammembers"></a>
+## class TeamMembers  <a id="cdktf-provider-github-teammembers-teammembers"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team_members github_team_members}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: teamMembers
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -8723,12 +8913,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/team_members github_team_members} Resource.
 
 ```ts
-new TeamMembers(scope: Construct, id: string, config: TeamMembersConfig)
+new teamMembers.TeamMembers(scope: Construct, id: string, config: TeamMembersConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[TeamMembersConfig](#cdktf-provider-github-teammembersconfig)</code>)  *No description*
+* **config** (<code>[teamMembers.TeamMembersConfig](#cdktf-provider-github-teammembers-teammembersconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -8736,7 +8926,7 @@ new TeamMembers(scope: Construct, id: string, config: TeamMembersConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **members** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code>)  members block. 
+  * **members** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers)></code>)  members block. 
   * **teamId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#team_id TeamMembers#team_id}. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#id TeamMembers#id}. __*Optional*__
 
@@ -8749,17 +8939,17 @@ Name | Type | Description
 -----|------|-------------
 **etag** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
-**members** | <code>[TeamMembersMembersList](#cdktf-provider-github-teammembersmemberslist)</code> | <span></span>
+**members** | <code>[teamMembers.TeamMembersMembersList](#cdktf-provider-github-teammembers-teammembersmemberslist)</code> | <span></span>
 **teamId** | <code>string</code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
-**membersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code> | __*Optional*__
+**membersInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers)></code> | __*Optional*__
 **teamIdInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
 
-#### putMembers(value) <a id="cdktf-provider-github-teammembers-putmembers"></a>
+#### putMembers(value) <a id="cdktf-provider-github-teammembers-teammembers-putmembers"></a>
 
 
 
@@ -8767,12 +8957,12 @@ Name | Type | Description
 putMembers(value: IResolvable &#124; Array<TeamMembersMembers>): void
 ```
 
-* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code>)  *No description*
+* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers)></code>)  *No description*
 
 
 
 
-#### resetId() <a id="cdktf-provider-github-teammembers-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-teammembers-teammembers-resetid"></a>
 
 
 
@@ -8784,7 +8974,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-teammembers-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-teammembers-teammembers-synthesizeattributes"></a>
 
 
 
@@ -8798,11 +8988,13 @@ __Returns__:
 
 
 
-## class TeamMembersMembersList  <a id="cdktf-provider-github-teammembersmemberslist"></a>
+## class TeamMembersMembersList  <a id="cdktf-provider-github-teammembers-teammembersmemberslist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: teamMembers
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -8811,7 +9003,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new TeamMembersMembersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new teamMembers.TeamMembersMembersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -8828,12 +9020,12 @@ Name | Type | Description
 **terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
 **terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
 **wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code> | __*Optional*__
+**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers)></code> | __*Optional*__
 
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-teammembersmemberslist-get"></a>
+#### get(index) <a id="cdktf-provider-github-teammembers-teammembersmemberslist-get"></a>
 
 
 
@@ -8844,15 +9036,17 @@ get(index: number): TeamMembersMembersOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[TeamMembersMembersOutputReference](#cdktf-provider-github-teammembersmembersoutputreference)</code>
+* <code>[teamMembers.TeamMembersMembersOutputReference](#cdktf-provider-github-teammembers-teammembersmembersoutputreference)</code>
 
 
 
-## class TeamMembersMembersOutputReference  <a id="cdktf-provider-github-teammembersmembersoutputreference"></a>
+## class TeamMembersMembersOutputReference  <a id="cdktf-provider-github-teammembers-teammembersmembersoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: teamMembers
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -8861,7 +9055,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new TeamMembersMembersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new teamMembers.TeamMembersMembersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -8878,14 +9072,14 @@ Name | Type | Description
 -----|------|-------------
 **role** | <code>string</code> | <span></span>
 **username** | <code>string</code> | <span></span>
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; [TeamMembersMembers](#cdktf-provider-github-teammembersmembers)</code> | __*Optional*__
+**internalValue**? | <code>[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers) &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **roleInput**? | <code>string</code> | __*Optional*__
 **usernameInput**? | <code>string</code> | __*Optional*__
 
 ### Methods
 
 
-#### resetRole() <a id="cdktf-provider-github-teammembersmembersoutputreference-resetrole"></a>
+#### resetRole() <a id="cdktf-provider-github-teammembers-teammembersmembersoutputreference-resetrole"></a>
 
 
 
@@ -8899,11 +9093,13 @@ resetRole(): void
 
 
 
-## class TeamMembership  <a id="cdktf-provider-github-teammembership"></a>
+## class TeamMembership  <a id="cdktf-provider-github-teammembership-teammembership"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team_membership github_team_membership}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: teamMembership
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -8912,12 +9108,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/team_membership github_team_membership} Resource.
 
 ```ts
-new TeamMembership(scope: Construct, id: string, config: TeamMembershipConfig)
+new teamMembership.TeamMembership(scope: Construct, id: string, config: TeamMembershipConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[TeamMembershipConfig](#cdktf-provider-github-teammembershipconfig)</code>)  *No description*
+* **config** (<code>[teamMembership.TeamMembershipConfig](#cdktf-provider-github-teammembership-teammembershipconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -8951,7 +9147,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-teammembership-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-teammembership-teammembership-resetid"></a>
 
 
 
@@ -8963,7 +9159,7 @@ resetId(): void
 
 
 
-#### resetRole() <a id="cdktf-provider-github-teammembership-resetrole"></a>
+#### resetRole() <a id="cdktf-provider-github-teammembership-teammembership-resetrole"></a>
 
 
 
@@ -8975,7 +9171,7 @@ resetRole(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-teammembership-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-teammembership-teammembership-synthesizeattributes"></a>
 
 
 
@@ -8989,11 +9185,13 @@ __Returns__:
 
 
 
-## class TeamRepository  <a id="cdktf-provider-github-teamrepository"></a>
+## class TeamRepository  <a id="cdktf-provider-github-teamrepository-teamrepository"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository github_team_repository}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: teamRepository
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -9002,12 +9200,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/team_repository github_team_repository} Resource.
 
 ```ts
-new TeamRepository(scope: Construct, id: string, config: TeamRepositoryConfig)
+new teamRepository.TeamRepository(scope: Construct, id: string, config: TeamRepositoryConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[TeamRepositoryConfig](#cdktf-provider-github-teamrepositoryconfig)</code>)  *No description*
+* **config** (<code>[teamRepository.TeamRepositoryConfig](#cdktf-provider-github-teamrepository-teamrepositoryconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -9041,7 +9239,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-teamrepository-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-teamrepository-teamrepository-resetid"></a>
 
 
 
@@ -9053,7 +9251,7 @@ resetId(): void
 
 
 
-#### resetPermission() <a id="cdktf-provider-github-teamrepository-resetpermission"></a>
+#### resetPermission() <a id="cdktf-provider-github-teamrepository-teamrepository-resetpermission"></a>
 
 
 
@@ -9065,7 +9263,7 @@ resetPermission(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-teamrepository-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-teamrepository-teamrepository-synthesizeattributes"></a>
 
 
 
@@ -9079,11 +9277,13 @@ __Returns__:
 
 
 
-## class TeamSyncGroupMapping  <a id="cdktf-provider-github-teamsyncgroupmapping"></a>
+## class TeamSyncGroupMapping  <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmapping"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping github_team_sync_group_mapping}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: teamSyncGroupMapping
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -9092,12 +9292,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping github_team_sync_group_mapping} Resource.
 
 ```ts
-new TeamSyncGroupMapping(scope: Construct, id: string, config: TeamSyncGroupMappingConfig)
+new teamSyncGroupMapping.TeamSyncGroupMapping(scope: Construct, id: string, config: TeamSyncGroupMappingConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[TeamSyncGroupMappingConfig](#cdktf-provider-github-teamsyncgroupmappingconfig)</code>)  *No description*
+* **config** (<code>[teamSyncGroupMapping.TeamSyncGroupMappingConfig](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappingconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -9106,7 +9306,7 @@ new TeamSyncGroupMapping(scope: Construct, id: string, config: TeamSyncGroupMapp
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
   * **teamSlug** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}. 
-  * **group** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)></code>)  group block. __*Optional*__
+  * **group** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamSyncGroupMapping.TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup)></code>)  group block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#id TeamSyncGroupMapping#id}. __*Optional*__
 
 
@@ -9117,10 +9317,10 @@ new TeamSyncGroupMapping(scope: Construct, id: string, config: TeamSyncGroupMapp
 Name | Type | Description 
 -----|------|-------------
 **etag** | <code>string</code> | <span></span>
-**group** | <code>[TeamSyncGroupMappingGroupList](#cdktf-provider-github-teamsyncgroupmappinggrouplist)</code> | <span></span>
+**group** | <code>[teamSyncGroupMapping.TeamSyncGroupMappingGroupList](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggrouplist)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **teamSlug** | <code>string</code> | <span></span>
-**groupInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)></code> | __*Optional*__
+**groupInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamSyncGroupMapping.TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup)></code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 **teamSlugInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
@@ -9128,7 +9328,7 @@ Name | Type | Description
 ### Methods
 
 
-#### putGroup(value) <a id="cdktf-provider-github-teamsyncgroupmapping-putgroup"></a>
+#### putGroup(value) <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmapping-putgroup"></a>
 
 
 
@@ -9136,12 +9336,12 @@ Name | Type | Description
 putGroup(value: IResolvable &#124; Array<TeamSyncGroupMappingGroup>): void
 ```
 
-* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)></code>)  *No description*
+* **value** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamSyncGroupMapping.TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup)></code>)  *No description*
 
 
 
 
-#### resetGroup() <a id="cdktf-provider-github-teamsyncgroupmapping-resetgroup"></a>
+#### resetGroup() <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmapping-resetgroup"></a>
 
 
 
@@ -9153,7 +9353,7 @@ resetGroup(): void
 
 
 
-#### resetId() <a id="cdktf-provider-github-teamsyncgroupmapping-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmapping-resetid"></a>
 
 
 
@@ -9165,7 +9365,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-teamsyncgroupmapping-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmapping-synthesizeattributes"></a>
 
 
 
@@ -9179,11 +9379,13 @@ __Returns__:
 
 
 
-## class TeamSyncGroupMappingGroupList  <a id="cdktf-provider-github-teamsyncgroupmappinggrouplist"></a>
+## class TeamSyncGroupMappingGroupList  <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggrouplist"></a>
 
 
 
 __Implements__: [ITerraformAddressable](#cdktf-iterraformaddressable), [IResolvable](#cdktf-iresolvable)
+__Submodule__: teamSyncGroupMapping
+
 __Extends__: [ComplexList](#cdktf-complexlist)
 
 ### Initializer
@@ -9192,7 +9394,7 @@ __Extends__: [ComplexList](#cdktf-complexlist)
 
 
 ```ts
-new TeamSyncGroupMappingGroupList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+new teamSyncGroupMapping.TeamSyncGroupMappingGroupList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -9209,12 +9411,12 @@ Name | Type | Description
 **terraformAttribute** | <code>string</code> | The attribute on the parent resource this class is referencing.
 **terraformResource** | <code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code> | The parent resource.
 **wrapsSet** | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)></code> | __*Optional*__
+**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamSyncGroupMapping.TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup)></code> | __*Optional*__
 
 ### Methods
 
 
-#### get(index) <a id="cdktf-provider-github-teamsyncgroupmappinggrouplist-get"></a>
+#### get(index) <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggrouplist-get"></a>
 
 
 
@@ -9225,15 +9427,17 @@ get(index: number): TeamSyncGroupMappingGroupOutputReference
 * **index** (<code>number</code>)  the index of the item to return.
 
 __Returns__:
-* <code>[TeamSyncGroupMappingGroupOutputReference](#cdktf-provider-github-teamsyncgroupmappinggroupoutputreference)</code>
+* <code>[teamSyncGroupMapping.TeamSyncGroupMappingGroupOutputReference](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroupoutputreference)</code>
 
 
 
-## class TeamSyncGroupMappingGroupOutputReference  <a id="cdktf-provider-github-teamsyncgroupmappinggroupoutputreference"></a>
+## class TeamSyncGroupMappingGroupOutputReference  <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroupoutputreference"></a>
 
 
 
 __Implements__: [IInterpolatingParent](#cdktf-iinterpolatingparent), [IResolvable](#cdktf-iresolvable), [ITerraformAddressable](#cdktf-iterraformaddressable)
+__Submodule__: teamSyncGroupMapping
+
 __Extends__: [ComplexObject](#cdktf-complexobject)
 
 ### Initializer
@@ -9242,7 +9446,7 @@ __Extends__: [ComplexObject](#cdktf-complexobject)
 
 
 ```ts
-new TeamSyncGroupMappingGroupOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+new teamSyncGroupMapping.TeamSyncGroupMappingGroupOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 * **terraformResource** (<code>[IInterpolatingParent](#cdktf-iinterpolatingparent)</code>)  The parent resource.
@@ -9263,15 +9467,17 @@ Name | Type | Description
 **groupDescriptionInput**? | <code>string</code> | __*Optional*__
 **groupIdInput**? | <code>string</code> | __*Optional*__
 **groupNameInput**? | <code>string</code> | __*Optional*__
-**internalValue**? | <code>[IResolvable](#cdktf-iresolvable) &#124; [TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)</code> | __*Optional*__
+**internalValue**? | <code>[teamSyncGroupMapping.TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup) &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 
 
-## class UserGpgKey  <a id="cdktf-provider-github-usergpgkey"></a>
+## class UserGpgKey  <a id="cdktf-provider-github-usergpgkey-usergpgkey"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: userGpgKey
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -9280,12 +9486,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key} Resource.
 
 ```ts
-new UserGpgKey(scope: Construct, id: string, config: UserGpgKeyConfig)
+new userGpgKey.UserGpgKey(scope: Construct, id: string, config: UserGpgKeyConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[UserGpgKeyConfig](#cdktf-provider-github-usergpgkeyconfig)</code>)  *No description*
+* **config** (<code>[userGpgKey.UserGpgKeyConfig](#cdktf-provider-github-usergpgkey-usergpgkeyconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -9314,7 +9520,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-usergpgkey-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-usergpgkey-usergpgkey-resetid"></a>
 
 
 
@@ -9326,7 +9532,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-usergpgkey-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-usergpgkey-usergpgkey-synthesizeattributes"></a>
 
 
 
@@ -9340,11 +9546,13 @@ __Returns__:
 
 
 
-## class UserInvitationAccepter  <a id="cdktf-provider-github-userinvitationaccepter"></a>
+## class UserInvitationAccepter  <a id="cdktf-provider-github-userinvitationaccepter-userinvitationaccepter"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: userInvitationAccepter
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -9353,12 +9561,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter} Resource.
 
 ```ts
-new UserInvitationAccepter(scope: Construct, id: string, config: UserInvitationAccepterConfig)
+new userInvitationAccepter.UserInvitationAccepter(scope: Construct, id: string, config: UserInvitationAccepterConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[UserInvitationAccepterConfig](#cdktf-provider-github-userinvitationaccepterconfig)</code>)  *No description*
+* **config** (<code>[userInvitationAccepter.UserInvitationAccepterConfig](#cdktf-provider-github-userinvitationaccepter-userinvitationaccepterconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -9385,7 +9593,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-userinvitationaccepter-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-userinvitationaccepter-userinvitationaccepter-resetid"></a>
 
 
 
@@ -9397,7 +9605,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-userinvitationaccepter-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-userinvitationaccepter-userinvitationaccepter-synthesizeattributes"></a>
 
 
 
@@ -9411,11 +9619,13 @@ __Returns__:
 
 
 
-## class UserSshKey  <a id="cdktf-provider-github-usersshkey"></a>
+## class UserSshKey  <a id="cdktf-provider-github-usersshkey-usersshkey"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key github_user_ssh_key}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: userSshKey
+
 __Extends__: [TerraformResource](#cdktf-terraformresource)
 
 ### Initializer
@@ -9424,12 +9634,12 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key github_user_ssh_key} Resource.
 
 ```ts
-new UserSshKey(scope: Construct, id: string, config: UserSshKeyConfig)
+new userSshKey.UserSshKey(scope: Construct, id: string, config: UserSshKeyConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[UserSshKeyConfig](#cdktf-provider-github-usersshkeyconfig)</code>)  *No description*
+* **config** (<code>[userSshKey.UserSshKeyConfig](#cdktf-provider-github-usersshkey-usersshkeyconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -9461,7 +9671,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-github-usersshkey-resetid"></a>
+#### resetId() <a id="cdktf-provider-github-usersshkey-usersshkey-resetid"></a>
 
 
 
@@ -9473,7 +9683,7 @@ resetId(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-github-usersshkey-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-usersshkey-usersshkey-synthesizeattributes"></a>
 
 
 
@@ -9487,7 +9697,7 @@ __Returns__:
 
 
 
-## struct ActionsEnvironmentSecretConfig  <a id="cdktf-provider-github-actionsenvironmentsecretconfig"></a>
+## struct ActionsEnvironmentSecretConfig  <a id="cdktf-provider-github-actionsenvironmentsecret-actionsenvironmentsecretconfig"></a>
 
 
 
@@ -9512,7 +9722,7 @@ Name | Type | Description
 
 
 
-## struct ActionsOrganizationPermissionsAllowedActionsConfig  <a id="cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig"></a>
+## struct ActionsOrganizationPermissionsAllowedActionsConfig  <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig"></a>
 
 
 
@@ -9527,7 +9737,7 @@ Name | Type | Description
 
 
 
-## struct ActionsOrganizationPermissionsConfig  <a id="cdktf-provider-github-actionsorganizationpermissionsconfig"></a>
+## struct ActionsOrganizationPermissionsConfig  <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsconfig"></a>
 
 
 
@@ -9538,11 +9748,11 @@ Name | Type | Description
 -----|------|-------------
 **enabledRepositories** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}.
 **allowedActions**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}.<br/>__*Optional*__
-**allowedActionsConfig**? | <code>[ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissionsallowedactionsconfig)</code> | allowed_actions_config block.<br/>__*Optional*__
+**allowedActionsConfig**? | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)</code> | allowed_actions_config block.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**enabledRepositoriesConfig**? | <code>[ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | enabled_repositories_config block.<br/>__*Optional*__
+**enabledRepositoriesConfig**? | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)</code> | enabled_repositories_config block.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#id ActionsOrganizationPermissions#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
@@ -9551,7 +9761,7 @@ Name | Type | Description
 
 
 
-## struct ActionsOrganizationPermissionsEnabledRepositoriesConfig  <a id="cdktf-provider-github-actionsorganizationpermissionsenabledrepositoriesconfig"></a>
+## struct ActionsOrganizationPermissionsEnabledRepositoriesConfig  <a id="cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig"></a>
 
 
 
@@ -9564,7 +9774,7 @@ Name | Type | Description
 
 
 
-## struct ActionsOrganizationSecretConfig  <a id="cdktf-provider-github-actionsorganizationsecretconfig"></a>
+## struct ActionsOrganizationSecretConfig  <a id="cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecretconfig"></a>
 
 
 
@@ -9589,7 +9799,7 @@ Name | Type | Description
 
 
 
-## struct ActionsOrganizationSecretRepositoriesConfig  <a id="cdktf-provider-github-actionsorganizationsecretrepositoriesconfig"></a>
+## struct ActionsOrganizationSecretRepositoriesConfig  <a id="cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositoriesconfig"></a>
 
 
 
@@ -9611,7 +9821,7 @@ Name | Type | Description
 
 
 
-## struct ActionsRunnerGroupConfig  <a id="cdktf-provider-github-actionsrunnergroupconfig"></a>
+## struct ActionsRunnerGroupConfig  <a id="cdktf-provider-github-actionsrunnergroup-actionsrunnergroupconfig"></a>
 
 
 
@@ -9634,7 +9844,7 @@ Name | Type | Description
 
 
 
-## struct ActionsSecretConfig  <a id="cdktf-provider-github-actionssecretconfig"></a>
+## struct ActionsSecretConfig  <a id="cdktf-provider-github-actionssecret-actionssecretconfig"></a>
 
 
 
@@ -9658,7 +9868,7 @@ Name | Type | Description
 
 
 
-## struct AppInstallationRepositoryConfig  <a id="cdktf-provider-github-appinstallationrepositoryconfig"></a>
+## struct AppInstallationRepositoryConfig  <a id="cdktf-provider-github-appinstallationrepository-appinstallationrepositoryconfig"></a>
 
 
 
@@ -9680,7 +9890,7 @@ Name | Type | Description
 
 
 
-## struct BranchConfig  <a id="cdktf-provider-github-branchconfig"></a>
+## struct BranchConfig  <a id="cdktf-provider-github-branch-branchconfig"></a>
 
 
 
@@ -9704,7 +9914,7 @@ Name | Type | Description
 
 
 
-## struct BranchDefaultConfig  <a id="cdktf-provider-github-branchdefaultconfig"></a>
+## struct BranchDefaultConfig  <a id="cdktf-provider-github-branchdefault-branchdefaultconfig"></a>
 
 
 
@@ -9726,7 +9936,7 @@ Name | Type | Description
 
 
 
-## struct BranchProtectionConfig  <a id="cdktf-provider-github-branchprotectionconfig"></a>
+## struct BranchProtectionConfig  <a id="cdktf-provider-github-branchprotection-branchprotectionconfig"></a>
 
 
 
@@ -9753,12 +9963,12 @@ Name | Type | Description
 **requireConversationResolution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}.<br/>__*Optional*__
 **requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_signed_commits BranchProtection#require_signed_commits}.<br/>__*Optional*__
 **requiredLinearHistory**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_linear_history BranchProtection#required_linear_history}.<br/>__*Optional*__
-**requiredPullRequestReviews**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotectionrequiredpullrequestreviews)></code> | required_pull_request_reviews block.<br/>__*Optional*__
-**requiredStatusChecks**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotectionrequiredstatuschecks)></code> | required_status_checks block.<br/>__*Optional*__
+**requiredPullRequestReviews**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews)></code> | required_pull_request_reviews block.<br/>__*Optional*__
+**requiredStatusChecks**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks)></code> | required_status_checks block.<br/>__*Optional*__
 
 
 
-## struct BranchProtectionRequiredPullRequestReviews  <a id="cdktf-provider-github-branchprotectionrequiredpullrequestreviews"></a>
+## struct BranchProtectionRequiredPullRequestReviews  <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews"></a>
 
 
 
@@ -9776,7 +9986,7 @@ Name | Type | Description
 
 
 
-## struct BranchProtectionRequiredStatusChecks  <a id="cdktf-provider-github-branchprotectionrequiredstatuschecks"></a>
+## struct BranchProtectionRequiredStatusChecks  <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks"></a>
 
 
 
@@ -9790,7 +10000,7 @@ Name | Type | Description
 
 
 
-## struct BranchProtectionV3Config  <a id="cdktf-provider-github-branchprotectionv3config"></a>
+## struct BranchProtectionV3Config  <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3config"></a>
 
 
 
@@ -9812,13 +10022,13 @@ Name | Type | Description
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 **requireConversationResolution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}.<br/>__*Optional*__
 **requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_signed_commits BranchProtectionV3#require_signed_commits}.<br/>__*Optional*__
-**requiredPullRequestReviews**? | <code>[BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3requiredpullrequestreviews)</code> | required_pull_request_reviews block.<br/>__*Optional*__
-**requiredStatusChecks**? | <code>[BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3requiredstatuschecks)</code> | required_status_checks block.<br/>__*Optional*__
-**restrictions**? | <code>[BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3restrictions)</code> | restrictions block.<br/>__*Optional*__
+**requiredPullRequestReviews**? | <code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)</code> | required_pull_request_reviews block.<br/>__*Optional*__
+**requiredStatusChecks**? | <code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code> | required_status_checks block.<br/>__*Optional*__
+**restrictions**? | <code>[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)</code> | restrictions block.<br/>__*Optional*__
 
 
 
-## struct BranchProtectionV3RequiredPullRequestReviews  <a id="cdktf-provider-github-branchprotectionv3requiredpullrequestreviews"></a>
+## struct BranchProtectionV3RequiredPullRequestReviews  <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews"></a>
 
 
 
@@ -9836,7 +10046,7 @@ Name | Type | Description
 
 
 
-## struct BranchProtectionV3RequiredStatusChecks  <a id="cdktf-provider-github-branchprotectionv3requiredstatuschecks"></a>
+## struct BranchProtectionV3RequiredStatusChecks  <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks"></a>
 
 
 
@@ -9851,7 +10061,7 @@ Name | Type | Description
 
 
 
-## struct BranchProtectionV3Restrictions  <a id="cdktf-provider-github-branchprotectionv3restrictions"></a>
+## struct BranchProtectionV3Restrictions  <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions"></a>
 
 
 
@@ -9866,7 +10076,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubActionsPublicKeyConfig  <a id="cdktf-provider-github-datagithubactionspublickeyconfig"></a>
+## struct DataGithubActionsPublicKeyConfig  <a id="cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickeyconfig"></a>
 
 
 
@@ -9887,7 +10097,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubBranchConfig  <a id="cdktf-provider-github-datagithubbranchconfig"></a>
+## struct DataGithubBranchConfig  <a id="cdktf-provider-github-datagithubbranch-datagithubbranchconfig"></a>
 
 
 
@@ -9909,13 +10119,13 @@ Name | Type | Description
 
 
 
-## struct DataGithubCollaboratorsCollaborator  <a id="cdktf-provider-github-datagithubcollaboratorscollaborator"></a>
+## struct DataGithubCollaboratorsCollaborator  <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorscollaborator"></a>
 
 
 
 
 
-## struct DataGithubCollaboratorsConfig  <a id="cdktf-provider-github-datagithubcollaboratorsconfig"></a>
+## struct DataGithubCollaboratorsConfig  <a id="cdktf-provider-github-datagithubcollaborators-datagithubcollaboratorsconfig"></a>
 
 
 
@@ -9938,7 +10148,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubDependabotPublicKeyConfig  <a id="cdktf-provider-github-datagithubdependabotpublickeyconfig"></a>
+## struct DataGithubDependabotPublicKeyConfig  <a id="cdktf-provider-github-datagithubdependabotpublickey-datagithubdependabotpublickeyconfig"></a>
 
 
 
@@ -9959,7 +10169,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubExternalGroupsConfig  <a id="cdktf-provider-github-datagithubexternalgroupsconfig"></a>
+## struct DataGithubExternalGroupsConfig  <a id="cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsconfig"></a>
 
 
 
@@ -9979,13 +10189,13 @@ Name | Type | Description
 
 
 
-## struct DataGithubExternalGroupsExternalGroups  <a id="cdktf-provider-github-datagithubexternalgroupsexternalgroups"></a>
+## struct DataGithubExternalGroupsExternalGroups  <a id="cdktf-provider-github-datagithubexternalgroups-datagithubexternalgroupsexternalgroups"></a>
 
 
 
 
 
-## struct DataGithubIpRangesConfig  <a id="cdktf-provider-github-datagithubiprangesconfig"></a>
+## struct DataGithubIpRangesConfig  <a id="cdktf-provider-github-datagithubipranges-datagithubiprangesconfig"></a>
 
 
 
@@ -10005,7 +10215,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubMembershipConfig  <a id="cdktf-provider-github-datagithubmembershipconfig"></a>
+## struct DataGithubMembershipConfig  <a id="cdktf-provider-github-datagithubmembership-datagithubmembershipconfig"></a>
 
 
 
@@ -10027,7 +10237,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubOrganizationConfig  <a id="cdktf-provider-github-datagithuborganizationconfig"></a>
+## struct DataGithubOrganizationConfig  <a id="cdktf-provider-github-datagithuborganization-datagithuborganizationconfig"></a>
 
 
 
@@ -10048,7 +10258,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubOrganizationTeamSyncGroupsConfig  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsconfig"></a>
+## struct DataGithubOrganizationTeamSyncGroupsConfig  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsconfig"></a>
 
 
 
@@ -10068,13 +10278,13 @@ Name | Type | Description
 
 
 
-## struct DataGithubOrganizationTeamSyncGroupsGroups  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroupsgroups"></a>
+## struct DataGithubOrganizationTeamSyncGroupsGroups  <a id="cdktf-provider-github-datagithuborganizationteamsyncgroups-datagithuborganizationteamsyncgroupsgroups"></a>
 
 
 
 
 
-## struct DataGithubOrganizationTeamsConfig  <a id="cdktf-provider-github-datagithuborganizationteamsconfig"></a>
+## struct DataGithubOrganizationTeamsConfig  <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsconfig"></a>
 
 
 
@@ -10095,13 +10305,13 @@ Name | Type | Description
 
 
 
-## struct DataGithubOrganizationTeamsTeams  <a id="cdktf-provider-github-datagithuborganizationteamsteams"></a>
+## struct DataGithubOrganizationTeamsTeams  <a id="cdktf-provider-github-datagithuborganizationteams-datagithuborganizationteamsteams"></a>
 
 
 
 
 
-## struct DataGithubRefConfig  <a id="cdktf-provider-github-datagithubrefconfig"></a>
+## struct DataGithubRefConfig  <a id="cdktf-provider-github-datagithubref-datagithubrefconfig"></a>
 
 
 
@@ -10123,7 +10333,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubReleaseConfig  <a id="cdktf-provider-github-datagithubreleaseconfig"></a>
+## struct DataGithubReleaseConfig  <a id="cdktf-provider-github-datagithubrelease-datagithubreleaseconfig"></a>
 
 
 
@@ -10148,7 +10358,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubRepositoriesConfig  <a id="cdktf-provider-github-datagithubrepositoriesconfig"></a>
+## struct DataGithubRepositoriesConfig  <a id="cdktf-provider-github-datagithubrepositories-datagithubrepositoriesconfig"></a>
 
 
 
@@ -10170,13 +10380,13 @@ Name | Type | Description
 
 
 
-## struct DataGithubRepositoryBranches  <a id="cdktf-provider-github-datagithubrepositorybranches"></a>
+## struct DataGithubRepositoryBranches  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorybranches"></a>
 
 
 
 
 
-## struct DataGithubRepositoryConfig  <a id="cdktf-provider-github-datagithubrepositoryconfig"></a>
+## struct DataGithubRepositoryConfig  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositoryconfig"></a>
 
 
 
@@ -10201,7 +10411,19 @@ Name | Type | Description
 
 
 
-## struct DataGithubRepositoryFileConfig  <a id="cdktf-provider-github-datagithubrepositoryfileconfig"></a>
+## struct DataGithubRepositoryPages  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorypages"></a>
+
+
+
+
+
+## struct DataGithubRepositoryPagesSource  <a id="cdktf-provider-github-datagithubrepository-datagithubrepositorypagessource"></a>
+
+
+
+
+
+## struct DataGithubRepositoryFileConfig  <a id="cdktf-provider-github-datagithubrepositoryfile-datagithubrepositoryfileconfig"></a>
 
 
 
@@ -10224,7 +10446,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubRepositoryMilestoneConfig  <a id="cdktf-provider-github-datagithubrepositorymilestoneconfig"></a>
+## struct DataGithubRepositoryMilestoneConfig  <a id="cdktf-provider-github-datagithubrepositorymilestone-datagithubrepositorymilestoneconfig"></a>
 
 
 
@@ -10247,19 +10469,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubRepositoryPages  <a id="cdktf-provider-github-datagithubrepositorypages"></a>
-
-
-
-
-
-## struct DataGithubRepositoryPagesSource  <a id="cdktf-provider-github-datagithubrepositorypagessource"></a>
-
-
-
-
-
-## struct DataGithubRepositoryPullRequestConfig  <a id="cdktf-provider-github-datagithubrepositorypullrequestconfig"></a>
+## struct DataGithubRepositoryPullRequestConfig  <a id="cdktf-provider-github-datagithubrepositorypullrequest-datagithubrepositorypullrequestconfig"></a>
 
 
 
@@ -10282,7 +10492,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubRepositoryPullRequestsConfig  <a id="cdktf-provider-github-datagithubrepositorypullrequestsconfig"></a>
+## struct DataGithubRepositoryPullRequestsConfig  <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsconfig"></a>
 
 
 
@@ -10309,13 +10519,13 @@ Name | Type | Description
 
 
 
-## struct DataGithubRepositoryPullRequestsResults  <a id="cdktf-provider-github-datagithubrepositorypullrequestsresults"></a>
+## struct DataGithubRepositoryPullRequestsResults  <a id="cdktf-provider-github-datagithubrepositorypullrequests-datagithubrepositorypullrequestsresults"></a>
 
 
 
 
 
-## struct DataGithubTeamConfig  <a id="cdktf-provider-github-datagithubteamconfig"></a>
+## struct DataGithubTeamConfig  <a id="cdktf-provider-github-datagithubteam-datagithubteamconfig"></a>
 
 
 
@@ -10337,7 +10547,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubTreeConfig  <a id="cdktf-provider-github-datagithubtreeconfig"></a>
+## struct DataGithubTreeConfig  <a id="cdktf-provider-github-datagithubtree-datagithubtreeconfig"></a>
 
 
 
@@ -10360,13 +10570,13 @@ Name | Type | Description
 
 
 
-## struct DataGithubTreeEntries  <a id="cdktf-provider-github-datagithubtreeentries"></a>
+## struct DataGithubTreeEntries  <a id="cdktf-provider-github-datagithubtree-datagithubtreeentries"></a>
 
 
 
 
 
-## struct DataGithubUserConfig  <a id="cdktf-provider-github-datagithubuserconfig"></a>
+## struct DataGithubUserConfig  <a id="cdktf-provider-github-datagithubuser-datagithubuserconfig"></a>
 
 
 
@@ -10387,7 +10597,7 @@ Name | Type | Description
 
 
 
-## struct DataGithubUsersConfig  <a id="cdktf-provider-github-datagithubusersconfig"></a>
+## struct DataGithubUsersConfig  <a id="cdktf-provider-github-datagithubusers-datagithubusersconfig"></a>
 
 
 
@@ -10408,7 +10618,7 @@ Name | Type | Description
 
 
 
-## struct DependabotOrganizationSecretConfig  <a id="cdktf-provider-github-dependabotorganizationsecretconfig"></a>
+## struct DependabotOrganizationSecretConfig  <a id="cdktf-provider-github-dependabotorganizationsecret-dependabotorganizationsecretconfig"></a>
 
 
 
@@ -10433,7 +10643,7 @@ Name | Type | Description
 
 
 
-## struct DependabotOrganizationSecretRepositoriesConfig  <a id="cdktf-provider-github-dependabotorganizationsecretrepositoriesconfig"></a>
+## struct DependabotOrganizationSecretRepositoriesConfig  <a id="cdktf-provider-github-dependabotorganizationsecretrepositories-dependabotorganizationsecretrepositoriesconfig"></a>
 
 
 
@@ -10455,7 +10665,7 @@ Name | Type | Description
 
 
 
-## struct DependabotSecretConfig  <a id="cdktf-provider-github-dependabotsecretconfig"></a>
+## struct DependabotSecretConfig  <a id="cdktf-provider-github-dependabotsecret-dependabotsecretconfig"></a>
 
 
 
@@ -10479,7 +10689,7 @@ Name | Type | Description
 
 
 
-## struct EmuGroupMappingConfig  <a id="cdktf-provider-github-emugroupmappingconfig"></a>
+## struct EmuGroupMappingConfig  <a id="cdktf-provider-github-emugroupmapping-emugroupmappingconfig"></a>
 
 
 
@@ -10501,43 +10711,7 @@ Name | Type | Description
 
 
 
-## struct GithubProviderAppAuth  <a id="cdktf-provider-github-githubproviderappauth"></a>
-
-
-
-
-
-
-Name | Type | Description 
------|------|-------------
-**id** | <code>string</code> | The GitHub App ID.
-**installationId** | <code>string</code> | The GitHub App installation instance ID.
-**pemFile** | <code>string</code> | The GitHub App PEM file contents.
-
-
-
-## struct GithubProviderConfig  <a id="cdktf-provider-github-githubproviderconfig"></a>
-
-
-
-
-
-
-Name | Type | Description 
------|------|-------------
-**alias**? | <code>string</code> | Alias name.<br/>__*Optional*__
-**appAuth**? | <code>[GithubProviderAppAuth](#cdktf-provider-github-githubproviderappauth)</code> | app_auth block.<br/>__*Optional*__
-**baseUrl**? | <code>string</code> | The GitHub Base API URL.<br/>__*Optional*__
-**insecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enable `insecure` mode for testing purposes.<br/>__*Optional*__
-**organization**? | <code>string</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.<br/>__*Optional*__
-**owner**? | <code>string</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.<br/>__*Optional*__
-**readDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API.<br/>__*Optional*__
-**token**? | <code>string</code> | The OAuth token used to connect to GitHub.<br/>__*Optional*__
-**writeDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between writes to GitHub API.<br/>__*Optional*__
-
-
-
-## struct IssueConfig  <a id="cdktf-provider-github-issueconfig"></a>
+## struct IssueConfig  <a id="cdktf-provider-github-issue-issueconfig"></a>
 
 
 
@@ -10563,7 +10737,7 @@ Name | Type | Description
 
 
 
-## struct IssueLabelConfig  <a id="cdktf-provider-github-issuelabelconfig"></a>
+## struct IssueLabelConfig  <a id="cdktf-provider-github-issuelabel-issuelabelconfig"></a>
 
 
 
@@ -10587,7 +10761,7 @@ Name | Type | Description
 
 
 
-## struct MembershipConfig  <a id="cdktf-provider-github-membershipconfig"></a>
+## struct MembershipConfig  <a id="cdktf-provider-github-membership-membershipconfig"></a>
 
 
 
@@ -10609,7 +10783,7 @@ Name | Type | Description
 
 
 
-## struct OrganizationBlockConfig  <a id="cdktf-provider-github-organizationblockconfig"></a>
+## struct OrganizationBlockConfig  <a id="cdktf-provider-github-organizationblock-organizationblockconfig"></a>
 
 
 
@@ -10630,7 +10804,7 @@ Name | Type | Description
 
 
 
-## struct OrganizationProjectConfig  <a id="cdktf-provider-github-organizationprojectconfig"></a>
+## struct OrganizationProjectConfig  <a id="cdktf-provider-github-organizationproject-organizationprojectconfig"></a>
 
 
 
@@ -10652,7 +10826,7 @@ Name | Type | Description
 
 
 
-## struct OrganizationWebhookConfig  <a id="cdktf-provider-github-organizationwebhookconfig"></a>
+## struct OrganizationWebhookConfig  <a id="cdktf-provider-github-organizationwebhook-organizationwebhookconfig"></a>
 
 
 
@@ -10663,7 +10837,7 @@ Name | Type | Description
 -----|------|-------------
 **events** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#events OrganizationWebhook#events}.
 **active**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#active OrganizationWebhook#active}.<br/>__*Optional*__
-**configuration**? | <code>[OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhookconfiguration)</code> | configuration block.<br/>__*Optional*__
+**configuration**? | <code>[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)</code> | configuration block.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -10676,7 +10850,7 @@ Name | Type | Description
 
 
 
-## struct OrganizationWebhookConfiguration  <a id="cdktf-provider-github-organizationwebhookconfiguration"></a>
+## struct OrganizationWebhookConfiguration  <a id="cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration"></a>
 
 
 
@@ -10692,7 +10866,7 @@ Name | Type | Description
 
 
 
-## struct ProjectCardConfig  <a id="cdktf-provider-github-projectcardconfig"></a>
+## struct ProjectCardConfig  <a id="cdktf-provider-github-projectcard-projectcardconfig"></a>
 
 
 
@@ -10716,7 +10890,7 @@ Name | Type | Description
 
 
 
-## struct ProjectColumnConfig  <a id="cdktf-provider-github-projectcolumnconfig"></a>
+## struct ProjectColumnConfig  <a id="cdktf-provider-github-projectcolumn-projectcolumnconfig"></a>
 
 
 
@@ -10738,7 +10912,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryAutolinkReferenceConfig  <a id="cdktf-provider-github-repositoryautolinkreferenceconfig"></a>
+## struct GithubProviderAppAuth  <a id="cdktf-provider-github-provider-githubproviderappauth"></a>
 
 
 
@@ -10747,27 +10921,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**keyPrefix** | <code>string</code> | This prefix appended by a number will generate a link any time it is found in an issue, pull request, or commit.
-**repository** | <code>string</code> | The repository name.
-**targetUrlTemplate** | <code>string</code> | The template of the target URL used for the links;
-**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
-**count**?🔹 | <code>number</code> | __*Optional*__
-**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
-**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#id RepositoryAutolinkReference#id}.<br/>__*Optional*__
-**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+**id** | <code>string</code> | The GitHub App ID.
+**installationId** | <code>string</code> | The GitHub App installation instance ID.
+**pemFile** | <code>string</code> | The GitHub App PEM file contents.
 
 
 
-## struct RepositoryBranches  <a id="cdktf-provider-github-repositorybranches"></a>
-
-
-
-
-
-## struct RepositoryCollaboratorConfig  <a id="cdktf-provider-github-repositorycollaboratorconfig"></a>
+## struct GithubProviderConfig  <a id="cdktf-provider-github-provider-githubproviderconfig"></a>
 
 
 
@@ -10776,22 +10936,25 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#repository RepositoryCollaborator#repository}.
-**username** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#username RepositoryCollaborator#username}.
-**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
-**count**?🔹 | <code>number</code> | __*Optional*__
-**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
-**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#id RepositoryCollaborator#id}.<br/>__*Optional*__
-**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**permission**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission RepositoryCollaborator#permission}.<br/>__*Optional*__
-**permissionDiffSuppression**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}.<br/>__*Optional*__
-**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+**alias**? | <code>string</code> | Alias name.<br/>__*Optional*__
+**appAuth**? | <code>[provider.GithubProviderAppAuth](#cdktf-provider-github-provider-githubproviderappauth)</code> | app_auth block.<br/>__*Optional*__
+**baseUrl**? | <code>string</code> | The GitHub Base API URL.<br/>__*Optional*__
+**insecure**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Enable `insecure` mode for testing purposes.<br/>__*Optional*__
+**organization**? | <code>string</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.<br/>__*Optional*__
+**owner**? | <code>string</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.<br/>__*Optional*__
+**readDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API.<br/>__*Optional*__
+**token**? | <code>string</code> | The OAuth token used to connect to GitHub.<br/>__*Optional*__
+**writeDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between writes to GitHub API.<br/>__*Optional*__
 
 
 
-## struct RepositoryConfig  <a id="cdktf-provider-github-repositoryconfig"></a>
+## struct RepositoryBranches  <a id="cdktf-provider-github-repository-repositorybranches"></a>
+
+
+
+
+
+## struct RepositoryConfig  <a id="cdktf-provider-github-repository-repositoryconfig"></a>
 
 
 
@@ -10828,20 +10991,109 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **mergeCommitMessage**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_message Repository#merge_commit_message}.<br/>__*Optional*__
 **mergeCommitTitle**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_title Repository#merge_commit_title}.<br/>__*Optional*__
-**pages**? | <code>[RepositoryPages](#cdktf-provider-github-repositorypages)</code> | pages block.<br/>__*Optional*__
+**pages**? | <code>[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)</code> | pages block.<br/>__*Optional*__
 **private**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 **squashMergeCommitMessage**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}.<br/>__*Optional*__
 **squashMergeCommitTitle**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}.<br/>__*Optional*__
-**template**? | <code>[RepositoryTemplate](#cdktf-provider-github-repositorytemplate)</code> | template block.<br/>__*Optional*__
+**template**? | <code>[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)</code> | template block.<br/>__*Optional*__
 **topics**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#topics Repository#topics}.<br/>__*Optional*__
 **visibility**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#visibility Repository#visibility}.<br/>__*Optional*__
 **vulnerabilityAlerts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#vulnerability_alerts Repository#vulnerability_alerts}.<br/>__*Optional*__
 
 
 
-## struct RepositoryDeployKeyConfig  <a id="cdktf-provider-github-repositorydeploykeyconfig"></a>
+## struct RepositoryPages  <a id="cdktf-provider-github-repository-repositorypages"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**source** | <code>[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)</code> | source block.
+**cname**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#cname Repository#cname}.<br/>__*Optional*__
+
+
+
+## struct RepositoryPagesSource  <a id="cdktf-provider-github-repository-repositorypagessource"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**branch** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#branch Repository#branch}.
+**path**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#path Repository#path}.<br/>__*Optional*__
+
+
+
+## struct RepositoryTemplate  <a id="cdktf-provider-github-repository-repositorytemplate"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**owner** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#owner Repository#owner}.
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#repository Repository#repository}.
+
+
+
+## struct RepositoryAutolinkReferenceConfig  <a id="cdktf-provider-github-repositoryautolinkreference-repositoryautolinkreferenceconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**keyPrefix** | <code>string</code> | This prefix appended by a number will generate a link any time it is found in an issue, pull request, or commit.
+**repository** | <code>string</code> | The repository name.
+**targetUrlTemplate** | <code>string</code> | The template of the target URL used for the links;
+**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#id RepositoryAutolinkReference#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+
+
+
+## struct RepositoryCollaboratorConfig  <a id="cdktf-provider-github-repositorycollaborator-repositorycollaboratorconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#repository RepositoryCollaborator#repository}.
+**username** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#username RepositoryCollaborator#username}.
+**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#id RepositoryCollaborator#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**permission**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission RepositoryCollaborator#permission}.<br/>__*Optional*__
+**permissionDiffSuppression**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}.<br/>__*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+
+
+
+## struct RepositoryDeployKeyConfig  <a id="cdktf-provider-github-repositorydeploykey-repositorydeploykeyconfig"></a>
 
 
 
@@ -10865,7 +11117,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryEnvironmentConfig  <a id="cdktf-provider-github-repositoryenvironmentconfig"></a>
+## struct RepositoryEnvironmentConfig  <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentconfig"></a>
 
 
 
@@ -10879,18 +11131,18 @@ Name | Type | Description
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**deploymentBranchPolicy**? | <code>[RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy)</code> | deployment_branch_policy block.<br/>__*Optional*__
+**deploymentBranchPolicy**? | <code>[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy)</code> | deployment_branch_policy block.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#id RepositoryEnvironment#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**reviewers**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironmentreviewers)></code> | reviewers block.<br/>__*Optional*__
+**reviewers**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers)></code> | reviewers block.<br/>__*Optional*__
 **waitTimer**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#wait_timer RepositoryEnvironment#wait_timer}.<br/>__*Optional*__
 
 
 
-## struct RepositoryEnvironmentDeploymentBranchPolicy  <a id="cdktf-provider-github-repositoryenvironmentdeploymentbranchpolicy"></a>
+## struct RepositoryEnvironmentDeploymentBranchPolicy  <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy"></a>
 
 
 
@@ -10904,7 +11156,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryEnvironmentReviewers  <a id="cdktf-provider-github-repositoryenvironmentreviewers"></a>
+## struct RepositoryEnvironmentReviewers  <a id="cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers"></a>
 
 
 
@@ -10918,7 +11170,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryFileConfig  <a id="cdktf-provider-github-repositoryfileconfig"></a>
+## struct RepositoryFileConfig  <a id="cdktf-provider-github-repositoryfile-repositoryfileconfig"></a>
 
 
 
@@ -10946,7 +11198,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryMilestoneConfig  <a id="cdktf-provider-github-repositorymilestoneconfig"></a>
+## struct RepositoryMilestoneConfig  <a id="cdktf-provider-github-repositorymilestone-repositorymilestoneconfig"></a>
 
 
 
@@ -10972,35 +11224,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryPages  <a id="cdktf-provider-github-repositorypages"></a>
-
-
-
-
-
-
-Name | Type | Description 
------|------|-------------
-**source** | <code>[RepositoryPagesSource](#cdktf-provider-github-repositorypagessource)</code> | source block.
-**cname**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#cname Repository#cname}.<br/>__*Optional*__
-
-
-
-## struct RepositoryPagesSource  <a id="cdktf-provider-github-repositorypagessource"></a>
-
-
-
-
-
-
-Name | Type | Description 
------|------|-------------
-**branch** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#branch Repository#branch}.
-**path**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#path Repository#path}.<br/>__*Optional*__
-
-
-
-## struct RepositoryProjectConfig  <a id="cdktf-provider-github-repositoryprojectconfig"></a>
+## struct RepositoryProjectConfig  <a id="cdktf-provider-github-repositoryproject-repositoryprojectconfig"></a>
 
 
 
@@ -11023,7 +11247,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryPullRequestConfig  <a id="cdktf-provider-github-repositorypullrequestconfig"></a>
+## struct RepositoryPullRequestConfig  <a id="cdktf-provider-github-repositorypullrequest-repositorypullrequestconfig"></a>
 
 
 
@@ -11050,21 +11274,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryTemplate  <a id="cdktf-provider-github-repositorytemplate"></a>
-
-
-
-
-
-
-Name | Type | Description 
------|------|-------------
-**owner** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#owner Repository#owner}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#repository Repository#repository}.
-
-
-
-## struct RepositoryWebhookConfig  <a id="cdktf-provider-github-repositorywebhookconfig"></a>
+## struct RepositoryWebhookConfig  <a id="cdktf-provider-github-repositorywebhook-repositorywebhookconfig"></a>
 
 
 
@@ -11076,7 +11286,7 @@ Name | Type | Description
 **events** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#events RepositoryWebhook#events}.
 **repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#repository RepositoryWebhook#repository}.
 **active**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#active RepositoryWebhook#active}.<br/>__*Optional*__
-**configuration**? | <code>[RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhookconfiguration)</code> | configuration block.<br/>__*Optional*__
+**configuration**? | <code>[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)</code> | configuration block.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -11089,7 +11299,7 @@ Name | Type | Description
 
 
 
-## struct RepositoryWebhookConfiguration  <a id="cdktf-provider-github-repositorywebhookconfiguration"></a>
+## struct RepositoryWebhookConfiguration  <a id="cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration"></a>
 
 
 
@@ -11105,7 +11315,7 @@ Name | Type | Description
 
 
 
-## struct TeamConfig  <a id="cdktf-provider-github-teamconfig"></a>
+## struct TeamConfig  <a id="cdktf-provider-github-team-teamconfig"></a>
 
 
 
@@ -11131,7 +11341,7 @@ Name | Type | Description
 
 
 
-## struct TeamMembersConfig  <a id="cdktf-provider-github-teammembersconfig"></a>
+## struct TeamMembersConfig  <a id="cdktf-provider-github-teammembers-teammembersconfig"></a>
 
 
 
@@ -11140,7 +11350,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**members** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamMembersMembers](#cdktf-provider-github-teammembersmembers)></code> | members block.
+**members** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers)></code> | members block.
 **teamId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#team_id TeamMembers#team_id}.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
@@ -11153,7 +11363,7 @@ Name | Type | Description
 
 
 
-## struct TeamMembersMembers  <a id="cdktf-provider-github-teammembersmembers"></a>
+## struct TeamMembersMembers  <a id="cdktf-provider-github-teammembers-teammembersmembers"></a>
 
 
 
@@ -11167,7 +11377,7 @@ Name | Type | Description
 
 
 
-## struct TeamMembershipConfig  <a id="cdktf-provider-github-teammembershipconfig"></a>
+## struct TeamMembershipConfig  <a id="cdktf-provider-github-teammembership-teammembershipconfig"></a>
 
 
 
@@ -11190,7 +11400,7 @@ Name | Type | Description
 
 
 
-## struct TeamRepositoryConfig  <a id="cdktf-provider-github-teamrepositoryconfig"></a>
+## struct TeamRepositoryConfig  <a id="cdktf-provider-github-teamrepository-teamrepositoryconfig"></a>
 
 
 
@@ -11213,7 +11423,7 @@ Name | Type | Description
 
 
 
-## struct TeamSyncGroupMappingConfig  <a id="cdktf-provider-github-teamsyncgroupmappingconfig"></a>
+## struct TeamSyncGroupMappingConfig  <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappingconfig"></a>
 
 
 
@@ -11227,7 +11437,7 @@ Name | Type | Description
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
-**group**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmappinggroup)></code> | group block.<br/>__*Optional*__
+**group**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamSyncGroupMapping.TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup)></code> | group block.<br/>__*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#id TeamSyncGroupMapping#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
@@ -11235,7 +11445,7 @@ Name | Type | Description
 
 
 
-## struct TeamSyncGroupMappingGroup  <a id="cdktf-provider-github-teamsyncgroupmappinggroup"></a>
+## struct TeamSyncGroupMappingGroup  <a id="cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup"></a>
 
 
 
@@ -11250,7 +11460,7 @@ Name | Type | Description
 
 
 
-## struct UserGpgKeyConfig  <a id="cdktf-provider-github-usergpgkeyconfig"></a>
+## struct UserGpgKeyConfig  <a id="cdktf-provider-github-usergpgkey-usergpgkeyconfig"></a>
 
 
 
@@ -11271,7 +11481,7 @@ Name | Type | Description
 
 
 
-## struct UserInvitationAccepterConfig  <a id="cdktf-provider-github-userinvitationaccepterconfig"></a>
+## struct UserInvitationAccepterConfig  <a id="cdktf-provider-github-userinvitationaccepter-userinvitationaccepterconfig"></a>
 
 
 
@@ -11292,7 +11502,7 @@ Name | Type | Description
 
 
 
-## struct UserSshKeyConfig  <a id="cdktf-provider-github-usersshkeyconfig"></a>
+## struct UserSshKeyConfig  <a id="cdktf-provider-github-usersshkey-usersshkeyconfig"></a>
 
 
 
