@@ -14,19 +14,19 @@ export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   */
   readonly branch?: string;
   /**
-  * The commit author name, defaults to the authenticated user's name
+  * The commit author name, defaults to the authenticated user's name. GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App. 
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_author RepositoryFile#commit_author}
   */
   readonly commitAuthor?: string;
   /**
-  * The commit author email address, defaults to the authenticated user's email address
+  * The commit author email address, defaults to the authenticated user's email address. GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_email RepositoryFile#commit_email}
   */
   readonly commitEmail?: string;
   /**
-  * The commit message when creating or updating the file
+  * The commit message when creating, updating or deleting the file
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_message RepositoryFile#commit_message}
   */
@@ -90,8 +90,8 @@ export class RepositoryFile extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.31.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.10.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -132,7 +132,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
     return this._branch;
   }
 
-  // commit_author - computed: true, optional: true, required: false
+  // commit_author - computed: false, optional: true, required: false
   private _commitAuthor?: string; 
   public get commitAuthor() {
     return this.getStringAttribute('commit_author');
@@ -148,7 +148,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
     return this._commitAuthor;
   }
 
-  // commit_email - computed: true, optional: true, required: false
+  // commit_email - computed: false, optional: true, required: false
   private _commitEmail?: string; 
   public get commitEmail() {
     return this.getStringAttribute('commit_email');

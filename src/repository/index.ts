@@ -24,6 +24,10 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly allowSquashMerge?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_update_branch Repository#allow_update_branch}
+  */
+  readonly allowUpdateBranch?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#archive_on_destroy Repository#archive_on_destroy}
   */
   readonly archiveOnDestroy?: boolean | cdktf.IResolvable;
@@ -135,80 +139,17 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly pages?: RepositoryPages;
   /**
+  * security_and_analysis block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#security_and_analysis Repository#security_and_analysis}
+  */
+  readonly securityAndAnalysis?: RepositorySecurityAndAnalysis;
+  /**
   * template block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#template Repository#template}
   */
   readonly template?: RepositoryTemplate;
-}
-export interface RepositoryBranches {
-}
-
-export function repositoryBranchesToTerraform(struct?: RepositoryBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-export class RepositoryBranchesOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): RepositoryBranches | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: RepositoryBranches | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // protected - computed: true, optional: false, required: false
-  public get protected() {
-    return this.getBooleanAttribute('protected');
-  }
-}
-
-export class RepositoryBranchesList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): RepositoryBranchesOutputReference {
-    return new RepositoryBranchesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
 }
 export interface RepositoryPagesSource {
   /**
@@ -410,7 +351,313 @@ export class RepositoryPagesOutputReference extends cdktf.ComplexObject {
     return this._source.internalValue;
   }
 }
+export interface RepositorySecurityAndAnalysisAdvancedSecurity {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}
+  */
+  readonly status: string;
+}
+
+export function repositorySecurityAndAnalysisAdvancedSecurityToTerraform(struct?: RepositorySecurityAndAnalysisAdvancedSecurityOutputReference | RepositorySecurityAndAnalysisAdvancedSecurity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    status: cdktf.stringToTerraform(struct!.status),
+  }
+}
+
+export class RepositorySecurityAndAnalysisAdvancedSecurityOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RepositorySecurityAndAnalysisAdvancedSecurity | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositorySecurityAndAnalysisAdvancedSecurity | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._status = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._status = value.status;
+    }
+  }
+
+  // status - computed: false, optional: false, required: true
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+}
+export interface RepositorySecurityAndAnalysisSecretScanning {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}
+  */
+  readonly status: string;
+}
+
+export function repositorySecurityAndAnalysisSecretScanningToTerraform(struct?: RepositorySecurityAndAnalysisSecretScanningOutputReference | RepositorySecurityAndAnalysisSecretScanning): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    status: cdktf.stringToTerraform(struct!.status),
+  }
+}
+
+export class RepositorySecurityAndAnalysisSecretScanningOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RepositorySecurityAndAnalysisSecretScanning | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositorySecurityAndAnalysisSecretScanning | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._status = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._status = value.status;
+    }
+  }
+
+  // status - computed: false, optional: false, required: true
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+}
+export interface RepositorySecurityAndAnalysisSecretScanningPushProtection {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}
+  */
+  readonly status: string;
+}
+
+export function repositorySecurityAndAnalysisSecretScanningPushProtectionToTerraform(struct?: RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference | RepositorySecurityAndAnalysisSecretScanningPushProtection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    status: cdktf.stringToTerraform(struct!.status),
+  }
+}
+
+export class RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RepositorySecurityAndAnalysisSecretScanningPushProtection | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._status !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.status = this._status;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositorySecurityAndAnalysisSecretScanningPushProtection | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._status = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._status = value.status;
+    }
+  }
+
+  // status - computed: false, optional: false, required: true
+  private _status?: string; 
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+  public set status(value: string) {
+    this._status = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get statusInput() {
+    return this._status;
+  }
+}
+export interface RepositorySecurityAndAnalysis {
+  /**
+  * advanced_security block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#advanced_security Repository#advanced_security}
+  */
+  readonly advancedSecurity: RepositorySecurityAndAnalysisAdvancedSecurity;
+  /**
+  * secret_scanning block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#secret_scanning Repository#secret_scanning}
+  */
+  readonly secretScanning: RepositorySecurityAndAnalysisSecretScanning;
+  /**
+  * secret_scanning_push_protection block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#secret_scanning_push_protection Repository#secret_scanning_push_protection}
+  */
+  readonly secretScanningPushProtection: RepositorySecurityAndAnalysisSecretScanningPushProtection;
+}
+
+export function repositorySecurityAndAnalysisToTerraform(struct?: RepositorySecurityAndAnalysisOutputReference | RepositorySecurityAndAnalysis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    advanced_security: repositorySecurityAndAnalysisAdvancedSecurityToTerraform(struct!.advancedSecurity),
+    secret_scanning: repositorySecurityAndAnalysisSecretScanningToTerraform(struct!.secretScanning),
+    secret_scanning_push_protection: repositorySecurityAndAnalysisSecretScanningPushProtectionToTerraform(struct!.secretScanningPushProtection),
+  }
+}
+
+export class RepositorySecurityAndAnalysisOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RepositorySecurityAndAnalysis | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._advancedSecurity?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.advancedSecurity = this._advancedSecurity?.internalValue;
+    }
+    if (this._secretScanning?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretScanning = this._secretScanning?.internalValue;
+    }
+    if (this._secretScanningPushProtection?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.secretScanningPushProtection = this._secretScanningPushProtection?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositorySecurityAndAnalysis | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._advancedSecurity.internalValue = undefined;
+      this._secretScanning.internalValue = undefined;
+      this._secretScanningPushProtection.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._advancedSecurity.internalValue = value.advancedSecurity;
+      this._secretScanning.internalValue = value.secretScanning;
+      this._secretScanningPushProtection.internalValue = value.secretScanningPushProtection;
+    }
+  }
+
+  // advanced_security - computed: false, optional: false, required: true
+  private _advancedSecurity = new RepositorySecurityAndAnalysisAdvancedSecurityOutputReference(this, "advanced_security");
+  public get advancedSecurity() {
+    return this._advancedSecurity;
+  }
+  public putAdvancedSecurity(value: RepositorySecurityAndAnalysisAdvancedSecurity) {
+    this._advancedSecurity.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get advancedSecurityInput() {
+    return this._advancedSecurity.internalValue;
+  }
+
+  // secret_scanning - computed: false, optional: false, required: true
+  private _secretScanning = new RepositorySecurityAndAnalysisSecretScanningOutputReference(this, "secret_scanning");
+  public get secretScanning() {
+    return this._secretScanning;
+  }
+  public putSecretScanning(value: RepositorySecurityAndAnalysisSecretScanning) {
+    this._secretScanning.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretScanningInput() {
+    return this._secretScanning.internalValue;
+  }
+
+  // secret_scanning_push_protection - computed: false, optional: false, required: true
+  private _secretScanningPushProtection = new RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference(this, "secret_scanning_push_protection");
+  public get secretScanningPushProtection() {
+    return this._secretScanningPushProtection;
+  }
+  public putSecretScanningPushProtection(value: RepositorySecurityAndAnalysisSecretScanningPushProtection) {
+    this._secretScanningPushProtection.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get secretScanningPushProtectionInput() {
+    return this._secretScanningPushProtection.internalValue;
+  }
+}
 export interface RepositoryTemplate {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#include_all_branches Repository#include_all_branches}
+  */
+  readonly includeAllBranches?: boolean | cdktf.IResolvable;
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#owner Repository#owner}
   */
@@ -427,6 +674,7 @@ export function repositoryTemplateToTerraform(struct?: RepositoryTemplateOutputR
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    include_all_branches: cdktf.booleanToTerraform(struct!.includeAllBranches),
     owner: cdktf.stringToTerraform(struct!.owner),
     repository: cdktf.stringToTerraform(struct!.repository),
   }
@@ -446,6 +694,10 @@ export class RepositoryTemplateOutputReference extends cdktf.ComplexObject {
   public get internalValue(): RepositoryTemplate | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._includeAllBranches !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.includeAllBranches = this._includeAllBranches;
+    }
     if (this._owner !== undefined) {
       hasAnyValues = true;
       internalValueResult.owner = this._owner;
@@ -460,14 +712,32 @@ export class RepositoryTemplateOutputReference extends cdktf.ComplexObject {
   public set internalValue(value: RepositoryTemplate | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._includeAllBranches = undefined;
       this._owner = undefined;
       this._repository = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._includeAllBranches = value.includeAllBranches;
       this._owner = value.owner;
       this._repository = value.repository;
     }
+  }
+
+  // include_all_branches - computed: false, optional: true, required: false
+  private _includeAllBranches?: boolean | cdktf.IResolvable; 
+  public get includeAllBranches() {
+    return this.getBooleanAttribute('include_all_branches');
+  }
+  public set includeAllBranches(value: boolean | cdktf.IResolvable) {
+    this._includeAllBranches = value;
+  }
+  public resetIncludeAllBranches() {
+    this._includeAllBranches = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get includeAllBranchesInput() {
+    return this._includeAllBranches;
   }
 
   // owner - computed: false, optional: false, required: true
@@ -523,8 +793,8 @@ export class Repository extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.31.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.10.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -538,6 +808,7 @@ export class Repository extends cdktf.TerraformResource {
     this._allowMergeCommit = config.allowMergeCommit;
     this._allowRebaseMerge = config.allowRebaseMerge;
     this._allowSquashMerge = config.allowSquashMerge;
+    this._allowUpdateBranch = config.allowUpdateBranch;
     this._archiveOnDestroy = config.archiveOnDestroy;
     this._archived = config.archived;
     this._autoInit = config.autoInit;
@@ -564,6 +835,7 @@ export class Repository extends cdktf.TerraformResource {
     this._visibility = config.visibility;
     this._vulnerabilityAlerts = config.vulnerabilityAlerts;
     this._pages.internalValue = config.pages;
+    this._securityAndAnalysis.internalValue = config.securityAndAnalysis;
     this._template.internalValue = config.template;
   }
 
@@ -635,6 +907,22 @@ export class Repository extends cdktf.TerraformResource {
     return this._allowSquashMerge;
   }
 
+  // allow_update_branch - computed: false, optional: true, required: false
+  private _allowUpdateBranch?: boolean | cdktf.IResolvable; 
+  public get allowUpdateBranch() {
+    return this.getBooleanAttribute('allow_update_branch');
+  }
+  public set allowUpdateBranch(value: boolean | cdktf.IResolvable) {
+    this._allowUpdateBranch = value;
+  }
+  public resetAllowUpdateBranch() {
+    this._allowUpdateBranch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowUpdateBranchInput() {
+    return this._allowUpdateBranch;
+  }
+
   // archive_on_destroy - computed: false, optional: true, required: false
   private _archiveOnDestroy?: boolean | cdktf.IResolvable; 
   public get archiveOnDestroy() {
@@ -681,12 +969,6 @@ export class Repository extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get autoInitInput() {
     return this._autoInit;
-  }
-
-  // branches - computed: true, optional: false, required: false
-  private _branches = new RepositoryBranchesList(this, "branches", false);
-  public get branches() {
-    return this._branches;
   }
 
   // default_branch - computed: true, optional: true, required: false
@@ -1099,6 +1381,22 @@ export class Repository extends cdktf.TerraformResource {
     return this._pages.internalValue;
   }
 
+  // security_and_analysis - computed: false, optional: true, required: false
+  private _securityAndAnalysis = new RepositorySecurityAndAnalysisOutputReference(this, "security_and_analysis");
+  public get securityAndAnalysis() {
+    return this._securityAndAnalysis;
+  }
+  public putSecurityAndAnalysis(value: RepositorySecurityAndAnalysis) {
+    this._securityAndAnalysis.internalValue = value;
+  }
+  public resetSecurityAndAnalysis() {
+    this._securityAndAnalysis.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityAndAnalysisInput() {
+    return this._securityAndAnalysis.internalValue;
+  }
+
   // template - computed: false, optional: true, required: false
   private _template = new RepositoryTemplateOutputReference(this, "template");
   public get template() {
@@ -1125,6 +1423,7 @@ export class Repository extends cdktf.TerraformResource {
       allow_merge_commit: cdktf.booleanToTerraform(this._allowMergeCommit),
       allow_rebase_merge: cdktf.booleanToTerraform(this._allowRebaseMerge),
       allow_squash_merge: cdktf.booleanToTerraform(this._allowSquashMerge),
+      allow_update_branch: cdktf.booleanToTerraform(this._allowUpdateBranch),
       archive_on_destroy: cdktf.booleanToTerraform(this._archiveOnDestroy),
       archived: cdktf.booleanToTerraform(this._archived),
       auto_init: cdktf.booleanToTerraform(this._autoInit),
@@ -1151,6 +1450,7 @@ export class Repository extends cdktf.TerraformResource {
       visibility: cdktf.stringToTerraform(this._visibility),
       vulnerability_alerts: cdktf.booleanToTerraform(this._vulnerabilityAlerts),
       pages: repositoryPagesToTerraform(this._pages.internalValue),
+      security_and_analysis: repositorySecurityAndAnalysisToTerraform(this._securityAndAnalysis.internalValue),
       template: repositoryTemplateToTerraform(this._template.internalValue),
     };
   }

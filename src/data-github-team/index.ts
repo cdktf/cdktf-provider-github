@@ -19,9 +19,17 @@ export interface DataGithubTeamConfig extends cdktf.TerraformMetaArguments {
   */
   readonly membershipType?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#results_per_page DataGithubTeam#results_per_page}
+  */
+  readonly resultsPerPage?: number;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#slug DataGithubTeam#slug}
   */
   readonly slug: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/team#summary_only DataGithubTeam#summary_only}
+  */
+  readonly summaryOnly?: boolean | cdktf.IResolvable;
 }
 
 /**
@@ -50,8 +58,8 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_team',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.31.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.10.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -63,7 +71,9 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
     });
     this._id = config.id;
     this._membershipType = config.membershipType;
+    this._resultsPerPage = config.resultsPerPage;
     this._slug = config.slug;
+    this._summaryOnly = config.summaryOnly;
   }
 
   // ==========
@@ -137,6 +147,22 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
     return this.getListAttribute('repositories');
   }
 
+  // results_per_page - computed: false, optional: true, required: false
+  private _resultsPerPage?: number; 
+  public get resultsPerPage() {
+    return this.getNumberAttribute('results_per_page');
+  }
+  public set resultsPerPage(value: number) {
+    this._resultsPerPage = value;
+  }
+  public resetResultsPerPage() {
+    this._resultsPerPage = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get resultsPerPageInput() {
+    return this._resultsPerPage;
+  }
+
   // slug - computed: false, optional: false, required: true
   private _slug?: string; 
   public get slug() {
@@ -150,6 +176,22 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
     return this._slug;
   }
 
+  // summary_only - computed: false, optional: true, required: false
+  private _summaryOnly?: boolean | cdktf.IResolvable; 
+  public get summaryOnly() {
+    return this.getBooleanAttribute('summary_only');
+  }
+  public set summaryOnly(value: boolean | cdktf.IResolvable) {
+    this._summaryOnly = value;
+  }
+  public resetSummaryOnly() {
+    this._summaryOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get summaryOnlyInput() {
+    return this._summaryOnly;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -158,7 +200,9 @@ export class DataGithubTeam extends cdktf.TerraformDataSource {
     return {
       id: cdktf.stringToTerraform(this._id),
       membership_type: cdktf.stringToTerraform(this._membershipType),
+      results_per_page: cdktf.numberToTerraform(this._resultsPerPage),
       slug: cdktf.stringToTerraform(this._slug),
+      summary_only: cdktf.booleanToTerraform(this._summaryOnly),
     };
   }
 }

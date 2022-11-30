@@ -58,8 +58,8 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_collaborator',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.31.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.10.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

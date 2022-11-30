@@ -50,8 +50,8 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_membership',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.31.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.10.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -110,6 +110,11 @@ export class DataGithubMembership extends cdktf.TerraformDataSource {
   // role - computed: true, optional: false, required: false
   public get role() {
     return this.getStringAttribute('role');
+  }
+
+  // state - computed: true, optional: false, required: false
+  public get state() {
+    return this.getStringAttribute('state');
   }
 
   // username - computed: false, optional: false, required: true
