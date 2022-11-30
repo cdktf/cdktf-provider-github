@@ -30,79 +30,6 @@ export interface DataGithubRepositoryConfig extends cdktf.TerraformMetaArguments
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#name DataGithubRepository#name}
   */
   readonly name?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#only_protected_branches DataGithubRepository#only_protected_branches}
-  */
-  readonly onlyProtectedBranches?: boolean | cdktf.IResolvable;
-}
-export interface DataGithubRepositoryBranches {
-}
-
-export function dataGithubRepositoryBranchesToTerraform(struct?: DataGithubRepositoryBranches): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-export class DataGithubRepositoryBranchesOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataGithubRepositoryBranches | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataGithubRepositoryBranches | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
-
-  // protected - computed: true, optional: false, required: false
-  public get protected() {
-    return this.getBooleanAttribute('protected');
-  }
-}
-
-export class DataGithubRepositoryBranchesList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataGithubRepositoryBranchesOutputReference {
-    return new DataGithubRepositoryBranchesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
 }
 export interface DataGithubRepositoryPagesSource {
 }
@@ -263,6 +190,75 @@ export class DataGithubRepositoryPagesList extends cdktf.ComplexList {
     return new DataGithubRepositoryPagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGithubRepositoryTemplate {
+}
+
+export function dataGithubRepositoryTemplateToTerraform(struct?: DataGithubRepositoryTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGithubRepositoryTemplateOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGithubRepositoryTemplate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGithubRepositoryTemplate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // owner - computed: true, optional: false, required: false
+  public get owner() {
+    return this.getStringAttribute('owner');
+  }
+
+  // repository - computed: true, optional: false, required: false
+  public get repository() {
+    return this.getStringAttribute('repository');
+  }
+}
+
+export class DataGithubRepositoryTemplateList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGithubRepositoryTemplateOutputReference {
+    return new DataGithubRepositoryTemplateOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/d/repository github_repository}
@@ -290,8 +286,8 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.31.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.10.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -306,7 +302,6 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     this._homepageUrl = config.homepageUrl;
     this._id = config.id;
     this._name = config.name;
-    this._onlyProtectedBranches = config.onlyProtectedBranches;
   }
 
   // ==========
@@ -336,12 +331,6 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // archived - computed: true, optional: false, required: false
   public get archived() {
     return this.getBooleanAttribute('archived');
-  }
-
-  // branches - computed: true, optional: false, required: false
-  private _branches = new DataGithubRepositoryBranchesList(this, "branches", false);
-  public get branches() {
-    return this._branches;
   }
 
   // default_branch - computed: true, optional: false, required: false
@@ -448,6 +437,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // is_template - computed: true, optional: false, required: false
+  public get isTemplate() {
+    return this.getBooleanAttribute('is_template');
+  }
+
   // merge_commit_message - computed: true, optional: false, required: false
   public get mergeCommitMessage() {
     return this.getStringAttribute('merge_commit_message');
@@ -477,22 +471,6 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // node_id - computed: true, optional: false, required: false
   public get nodeId() {
     return this.getStringAttribute('node_id');
-  }
-
-  // only_protected_branches - computed: false, optional: true, required: false
-  private _onlyProtectedBranches?: boolean | cdktf.IResolvable; 
-  public get onlyProtectedBranches() {
-    return this.getBooleanAttribute('only_protected_branches');
-  }
-  public set onlyProtectedBranches(value: boolean | cdktf.IResolvable) {
-    this._onlyProtectedBranches = value;
-  }
-  public resetOnlyProtectedBranches() {
-    this._onlyProtectedBranches = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get onlyProtectedBranchesInput() {
-    return this._onlyProtectedBranches;
   }
 
   // pages - computed: true, optional: false, required: false
@@ -531,6 +509,12 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
     return this.getStringAttribute('svn_url');
   }
 
+  // template - computed: true, optional: false, required: false
+  private _template = new DataGithubRepositoryTemplateList(this, "template", false);
+  public get template() {
+    return this._template;
+  }
+
   // topics - computed: true, optional: false, required: false
   public get topics() {
     return this.getListAttribute('topics');
@@ -552,7 +536,6 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       homepage_url: cdktf.stringToTerraform(this._homepageUrl),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
-      only_protected_branches: cdktf.booleanToTerraform(this._onlyProtectedBranches),
     };
   }
 }

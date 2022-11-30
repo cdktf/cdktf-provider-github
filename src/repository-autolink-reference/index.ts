@@ -15,6 +15,12 @@ export interface RepositoryAutolinkReferenceConfig extends cdktf.TerraformMetaAr
   */
   readonly id?: string;
   /**
+  * Whether this autolink reference matches alphanumeric characters. If false, this autolink reference only matches numeric characters.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#is_alphanumeric RepositoryAutolinkReference#is_alphanumeric}
+  */
+  readonly isAlphanumeric?: boolean | cdktf.IResolvable;
+  /**
   * This prefix appended by a number will generate a link any time it is found in an issue, pull request, or commit
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#key_prefix RepositoryAutolinkReference#key_prefix}
@@ -60,8 +66,8 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_autolink_reference',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.31.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.10.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -72,6 +78,7 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._isAlphanumeric = config.isAlphanumeric;
     this._keyPrefix = config.keyPrefix;
     this._repository = config.repository;
     this._targetUrlTemplate = config.targetUrlTemplate;
@@ -100,6 +107,22 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // is_alphanumeric - computed: false, optional: true, required: false
+  private _isAlphanumeric?: boolean | cdktf.IResolvable; 
+  public get isAlphanumeric() {
+    return this.getBooleanAttribute('is_alphanumeric');
+  }
+  public set isAlphanumeric(value: boolean | cdktf.IResolvable) {
+    this._isAlphanumeric = value;
+  }
+  public resetIsAlphanumeric() {
+    this._isAlphanumeric = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get isAlphanumericInput() {
+    return this._isAlphanumeric;
   }
 
   // key_prefix - computed: false, optional: false, required: true
@@ -148,6 +171,7 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      is_alphanumeric: cdktf.booleanToTerraform(this._isAlphanumeric),
       key_prefix: cdktf.stringToTerraform(this._keyPrefix),
       repository: cdktf.stringToTerraform(this._repository),
       target_url_template: cdktf.stringToTerraform(this._targetUrlTemplate),

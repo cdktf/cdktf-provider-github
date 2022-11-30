@@ -35,6 +35,115 @@ export interface DataGithubReleaseConfig extends cdktf.TerraformMetaArguments {
   */
   readonly retrieveBy: string;
 }
+export interface DataGithubReleaseAssets {
+}
+
+export function dataGithubReleaseAssetsToTerraform(struct?: DataGithubReleaseAssets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataGithubReleaseAssetsOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGithubReleaseAssets | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGithubReleaseAssets | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // browser_download_url - computed: true, optional: false, required: false
+  public get browserDownloadUrl() {
+    return this.getStringAttribute('browser_download_url');
+  }
+
+  // content_type - computed: true, optional: false, required: false
+  public get contentType() {
+    return this.getStringAttribute('content_type');
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getNumberAttribute('id');
+  }
+
+  // label - computed: true, optional: false, required: false
+  public get label() {
+    return this.getStringAttribute('label');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // node_id - computed: true, optional: false, required: false
+  public get nodeId() {
+    return this.getStringAttribute('node_id');
+  }
+
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
+  }
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+}
+
+export class DataGithubReleaseAssetsList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGithubReleaseAssetsOutputReference {
+    return new DataGithubReleaseAssetsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/github/d/release github_release}
@@ -62,8 +171,8 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_release',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '4.31.0',
-        providerVersionConstraint: '~> 4.0'
+        providerVersion: '5.10.0',
+        providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -88,6 +197,17 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
   // asserts_url - computed: true, optional: false, required: false
   public get assertsUrl() {
     return this.getStringAttribute('asserts_url');
+  }
+
+  // assets - computed: true, optional: false, required: false
+  private _assets = new DataGithubReleaseAssetsList(this, "assets", false);
+  public get assets() {
+    return this._assets;
+  }
+
+  // assets_url - computed: true, optional: false, required: false
+  public get assetsUrl() {
+    return this.getStringAttribute('assets_url');
   }
 
   // body - computed: true, optional: false, required: false
