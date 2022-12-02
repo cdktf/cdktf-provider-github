@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/organization_block
+// https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,44 +6,40 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface OrganizationBlockConfig extends cdktf.TerraformMetaArguments {
+export interface DataGithubActionsOrganizationRegistrationTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#id OrganizationBlock#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token#id DataGithubActionsOrganizationRegistrationToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#username OrganizationBlock#username}
-  */
-  readonly username: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token github_actions_organization_registration_token}
 */
-export class OrganizationBlock extends cdktf.TerraformResource {
+export class DataGithubActionsOrganizationRegistrationToken extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "github_organization_block";
+  public static readonly tfResourceType = "github_actions_organization_registration_token";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token github_actions_organization_registration_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options OrganizationBlockConfig
+  * @param options DataGithubActionsOrganizationRegistrationTokenConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: OrganizationBlockConfig) {
+  public constructor(scope: Construct, id: string, config: DataGithubActionsOrganizationRegistrationTokenConfig = {}) {
     super(scope, id, {
-      terraformResourceType: 'github_organization_block',
+      terraformResourceType: 'github_actions_organization_registration_token',
       terraformGeneratorMetadata: {
         providerName: 'github',
         providerVersion: '5.11.0',
@@ -58,16 +54,15 @@ export class OrganizationBlock extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._id = config.id;
-    this._username = config.username;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // etag - computed: true, optional: false, required: false
-  public get etag() {
-    return this.getStringAttribute('etag');
+  // expires_at - computed: true, optional: false, required: false
+  public get expiresAt() {
+    return this.getNumberAttribute('expires_at');
   }
 
   // id - computed: true, optional: true, required: false
@@ -86,17 +81,9 @@ export class OrganizationBlock extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // username - computed: false, optional: false, required: true
-  private _username?: string; 
-  public get username() {
-    return this.getStringAttribute('username');
-  }
-  public set username(value: string) {
-    this._username = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get usernameInput() {
-    return this._username;
+  // token - computed: true, optional: false, required: false
+  public get token() {
+    return this.getStringAttribute('token');
   }
 
   // =========
@@ -106,7 +93,6 @@ export class OrganizationBlock extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      username: cdktf.stringToTerraform(this._username),
     };
   }
 }

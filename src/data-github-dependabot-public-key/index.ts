@@ -46,7 +46,7 @@ export class DataGithubDependabotPublicKey extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_dependabot_public_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.10.0',
+        providerVersion: '5.11.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

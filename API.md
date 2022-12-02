@@ -26,10 +26,12 @@ Name|Description
 [branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviewsoutputreference)|*No description*
 [branchProtectionV3.BranchProtectionV3RequiredStatusChecksOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference)|*No description*
 [branchProtectionV3.BranchProtectionV3RestrictionsOutputReference](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictionsoutputreference)|*No description*
+[dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationToken](#cdktf-provider-github-datagithubactionsorganizationregistrationtoken-datagithubactionsorganizationregistrationtoken)|Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token github_actions_organization_registration_token}.
 [dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecrets](#cdktf-provider-github-datagithubactionsorganizationsecrets-datagithubactionsorganizationsecrets)|Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_organization_secrets github_actions_organization_secrets}.
 [dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsSecretsList](#cdktf-provider-github-datagithubactionsorganizationsecrets-datagithubactionsorganizationsecretssecretslist)|*No description*
 [dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsSecretsOutputReference](#cdktf-provider-github-datagithubactionsorganizationsecrets-datagithubactionsorganizationsecretssecretsoutputreference)|*No description*
 [dataGithubActionsPublicKey.DataGithubActionsPublicKey](#cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickey)|Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_public_key github_actions_public_key}.
+[dataGithubActionsRegistrationToken.DataGithubActionsRegistrationToken](#cdktf-provider-github-datagithubactionsregistrationtoken-datagithubactionsregistrationtoken)|Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token github_actions_registration_token}.
 [dataGithubActionsSecrets.DataGithubActionsSecrets](#cdktf-provider-github-datagithubactionssecrets-datagithubactionssecrets)|Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_secrets github_actions_secrets}.
 [dataGithubActionsSecrets.DataGithubActionsSecretsSecretsList](#cdktf-provider-github-datagithubactionssecrets-datagithubactionssecretssecretslist)|*No description*
 [dataGithubActionsSecrets.DataGithubActionsSecretsSecretsOutputReference](#cdktf-provider-github-datagithubactionssecrets-datagithubactionssecretssecretsoutputreference)|*No description*
@@ -177,9 +179,11 @@ Name|Description
 [branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)|*No description*
 [branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)|*No description*
 [branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)|*No description*
+[dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationTokenConfig](#cdktf-provider-github-datagithubactionsorganizationregistrationtoken-datagithubactionsorganizationregistrationtokenconfig)|*No description*
 [dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsConfig](#cdktf-provider-github-datagithubactionsorganizationsecrets-datagithubactionsorganizationsecretsconfig)|*No description*
 [dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsSecrets](#cdktf-provider-github-datagithubactionsorganizationsecrets-datagithubactionsorganizationsecretssecrets)|*No description*
 [dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig](#cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickeyconfig)|*No description*
+[dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig](#cdktf-provider-github-datagithubactionsregistrationtoken-datagithubactionsregistrationtokenconfig)|*No description*
 [dataGithubActionsSecrets.DataGithubActionsSecretsConfig](#cdktf-provider-github-datagithubactionssecrets-datagithubactionssecretsconfig)|*No description*
 [dataGithubActionsSecrets.DataGithubActionsSecretsSecrets](#cdktf-provider-github-datagithubactionssecrets-datagithubactionssecretssecrets)|*No description*
 [dataGithubApp.DataGithubAppConfig](#cdktf-provider-github-datagithubapp-datagithubappconfig)|*No description*
@@ -2539,6 +2543,78 @@ resetUsers(): void
 
 
 
+## class DataGithubActionsOrganizationRegistrationToken  <a id="cdktf-provider-github-datagithubactionsorganizationregistrationtoken-datagithubactionsorganizationregistrationtoken"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token github_actions_organization_registration_token}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubActionsOrganizationRegistrationToken
+
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token github_actions_organization_registration_token} Data Source.
+
+```ts
+new dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationToken(scope: Construct, id: string, config?: DataGithubActionsOrganizationRegistrationTokenConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationTokenConfig](#cdktf-provider-github-datagithubactionsorganizationregistrationtoken-datagithubactionsorganizationregistrationtokenconfig)</code>)  *No description*
+  * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **forEach** (<code>[ITerraformIterator](#cdktf-iterraformiterator)</code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token#id DataGithubActionsOrganizationRegistrationToken#id}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**expiresAt** | <code>number</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**token** | <code>string</code> | <span></span>
+**idInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-github-datagithubactionsorganizationregistrationtoken-datagithubactionsorganizationregistrationtoken-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubactionsorganizationregistrationtoken-datagithubactionsorganizationregistrationtoken-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class DataGithubActionsOrganizationSecrets  <a id="cdktf-provider-github-datagithubactionsorganizationsecrets-datagithubactionsorganizationsecrets"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_organization_secrets github_actions_organization_secrets}.
@@ -2761,6 +2837,81 @@ resetId(): void
 
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubactionspublickey-datagithubactionspublickey-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class DataGithubActionsRegistrationToken  <a id="cdktf-provider-github-datagithubactionsregistrationtoken-datagithubactionsregistrationtoken"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token github_actions_registration_token}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataGithubActionsRegistrationToken
+
+__Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token github_actions_registration_token} Data Source.
+
+```ts
+new dataGithubActionsRegistrationToken.DataGithubActionsRegistrationToken(scope: Construct, id: string, config: DataGithubActionsRegistrationTokenConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig](#cdktf-provider-github-datagithubactionsregistrationtoken-datagithubactionsregistrationtokenconfig)</code>)  *No description*
+  * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **forEach** (<code>[ITerraformIterator](#cdktf-iterraformiterator)</code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
+  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token#repository DataGithubActionsRegistrationToken#repository}. 
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token#id DataGithubActionsRegistrationToken#id}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**expiresAt** | <code>number</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**token** | <code>string</code> | <span></span>
+**idInput**? | <code>string</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-github-datagithubactionsregistrationtoken-datagithubactionsregistrationtoken-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-datagithubactionsregistrationtoken-datagithubactionsregistrationtoken-synthesizeattributes"></a>
 
 
 
@@ -13324,6 +13475,26 @@ Name | Type | Description
 
 
 
+## struct DataGithubActionsOrganizationRegistrationTokenConfig  <a id="cdktf-provider-github-datagithubactionsorganizationregistrationtoken-datagithubactionsorganizationregistrationtokenconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token#id DataGithubActionsOrganizationRegistrationToken#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+
+
+
 ## struct DataGithubActionsOrganizationSecretsConfig  <a id="cdktf-provider-github-datagithubactionsorganizationsecrets-datagithubactionsorganizationsecretsconfig"></a>
 
 
@@ -13365,6 +13536,27 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_public_key#id DataGithubActionsPublicKey#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+
+
+
+## struct DataGithubActionsRegistrationTokenConfig  <a id="cdktf-provider-github-datagithubactionsregistrationtoken-datagithubactionsregistrationtokenconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token#repository DataGithubActionsRegistrationToken#repository}.
+**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_registration_token#id DataGithubActionsRegistrationToken#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
