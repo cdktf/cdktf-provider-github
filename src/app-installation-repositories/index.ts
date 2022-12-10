@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/app_installation_repository
+// https://www.terraform.io/docs/providers/github/r/app_installation_repositories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,48 +6,48 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface AppInstallationRepositoryConfig extends cdktf.TerraformMetaArguments {
+export interface AppInstallationRepositoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#id AppInstallationRepository#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#id AppInstallationRepositories#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#installation_id AppInstallationRepository#installation_id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}
   */
   readonly installationId: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#repository AppInstallationRepository#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}
   */
-  readonly repository: string;
+  readonly selectedRepositories: string[];
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories}
 */
-export class AppInstallationRepository extends cdktf.TerraformResource {
+export class AppInstallationRepositories extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "github_app_installation_repository";
+  public static readonly tfResourceType = "github_app_installation_repositories";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository} Resource
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options AppInstallationRepositoryConfig
+  * @param options AppInstallationRepositoriesConfig
   */
-  public constructor(scope: Construct, id: string, config: AppInstallationRepositoryConfig) {
+  public constructor(scope: Construct, id: string, config: AppInstallationRepositoriesConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_app_installation_repository',
+      terraformResourceType: 'github_app_installation_repositories',
       terraformGeneratorMetadata: {
         providerName: 'github',
         providerVersion: '5.12.0',
@@ -63,7 +63,7 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._installationId = config.installationId;
-    this._repository = config.repository;
+    this._selectedRepositories = config.selectedRepositories;
   }
 
   // ==========
@@ -99,22 +99,17 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
     return this._installationId;
   }
 
-  // repo_id - computed: true, optional: false, required: false
-  public get repoId() {
-    return this.getNumberAttribute('repo_id');
+  // selected_repositories - computed: false, optional: false, required: true
+  private _selectedRepositories?: string[]; 
+  public get selectedRepositories() {
+    return cdktf.Fn.tolist(this.getListAttribute('selected_repositories'));
   }
-
-  // repository - computed: false, optional: false, required: true
-  private _repository?: string; 
-  public get repository() {
-    return this.getStringAttribute('repository');
-  }
-  public set repository(value: string) {
-    this._repository = value;
+  public set selectedRepositories(value: string[]) {
+    this._selectedRepositories = value;
   }
   // Temporarily expose input value. Use with caution.
-  public get repositoryInput() {
-    return this._repository;
+  public get selectedRepositoriesInput() {
+    return this._selectedRepositories;
   }
 
   // =========
@@ -125,7 +120,7 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       installation_id: cdktf.stringToTerraform(this._installationId),
-      repository: cdktf.stringToTerraform(this._repository),
+      selected_repositories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._selectedRepositories),
     };
   }
 }

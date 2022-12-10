@@ -6,6 +6,7 @@ export * as actionsOrganizationSecretRepositories from './actions-organization-s
 export * as actionsRepositoryPermissions from './actions-repository-permissions';
 export * as actionsRunnerGroup from './actions-runner-group';
 export * as actionsSecret from './actions-secret';
+export * as appInstallationRepositories from './app-installation-repositories';
 export * as appInstallationRepository from './app-installation-repository';
 export * as branch from './branch';
 export * as branchDefault from './branch-default';
@@ -25,6 +26,7 @@ export * as organizationSettings from './organization-settings';
 export * as organizationWebhook from './organization-webhook';
 export * as projectCard from './project-card';
 export * as projectColumn from './project-column';
+export * as release from './release';
 export * as repository from './repository';
 export * as repositoryAutolinkReference from './repository-autolink-reference';
 export * as repositoryCollaborator from './repository-collaborator';

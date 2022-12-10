@@ -31,6 +31,10 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#lock_branch BranchProtection#lock_branch}
+  */
+  readonly lockBranch?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pattern BranchProtection#pattern}
   */
   readonly pattern: string;
@@ -87,6 +91,10 @@ export interface BranchProtectionRequiredPullRequestReviews {
   */
   readonly requireCodeOwnerReviews?: boolean | cdktf.IResolvable;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}
+  */
+  readonly requireLastPushApproval?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}
   */
   readonly requiredApprovingReviewCount?: number;
@@ -106,6 +114,7 @@ export function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: B
     dismissal_restrictions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dismissalRestrictions),
     pull_request_bypassers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pullRequestBypassers),
     require_code_owner_reviews: cdktf.booleanToTerraform(struct!.requireCodeOwnerReviews),
+    require_last_push_approval: cdktf.booleanToTerraform(struct!.requireLastPushApproval),
     required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
     restrict_dismissals: cdktf.booleanToTerraform(struct!.restrictDismissals),
   }
@@ -147,6 +156,10 @@ export class BranchProtectionRequiredPullRequestReviewsOutputReference extends c
       hasAnyValues = true;
       internalValueResult.requireCodeOwnerReviews = this._requireCodeOwnerReviews;
     }
+    if (this._requireLastPushApproval !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requireLastPushApproval = this._requireLastPushApproval;
+    }
     if (this._requiredApprovingReviewCount !== undefined) {
       hasAnyValues = true;
       internalValueResult.requiredApprovingReviewCount = this._requiredApprovingReviewCount;
@@ -166,6 +179,7 @@ export class BranchProtectionRequiredPullRequestReviewsOutputReference extends c
       this._dismissalRestrictions = undefined;
       this._pullRequestBypassers = undefined;
       this._requireCodeOwnerReviews = undefined;
+      this._requireLastPushApproval = undefined;
       this._requiredApprovingReviewCount = undefined;
       this._restrictDismissals = undefined;
     }
@@ -180,6 +194,7 @@ export class BranchProtectionRequiredPullRequestReviewsOutputReference extends c
       this._dismissalRestrictions = value.dismissalRestrictions;
       this._pullRequestBypassers = value.pullRequestBypassers;
       this._requireCodeOwnerReviews = value.requireCodeOwnerReviews;
+      this._requireLastPushApproval = value.requireLastPushApproval;
       this._requiredApprovingReviewCount = value.requiredApprovingReviewCount;
       this._restrictDismissals = value.restrictDismissals;
     }
@@ -247,6 +262,22 @@ export class BranchProtectionRequiredPullRequestReviewsOutputReference extends c
   // Temporarily expose input value. Use with caution.
   public get requireCodeOwnerReviewsInput() {
     return this._requireCodeOwnerReviews;
+  }
+
+  // require_last_push_approval - computed: false, optional: true, required: false
+  private _requireLastPushApproval?: boolean | cdktf.IResolvable; 
+  public get requireLastPushApproval() {
+    return this.getBooleanAttribute('require_last_push_approval');
+  }
+  public set requireLastPushApproval(value: boolean | cdktf.IResolvable) {
+    this._requireLastPushApproval = value;
+  }
+  public resetRequireLastPushApproval() {
+    this._requireLastPushApproval = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requireLastPushApprovalInput() {
+    return this._requireLastPushApproval;
   }
 
   // required_approving_review_count - computed: false, optional: true, required: false
@@ -452,7 +483,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_protection',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -468,6 +499,7 @@ export class BranchProtection extends cdktf.TerraformResource {
     this._blocksCreations = config.blocksCreations;
     this._enforceAdmins = config.enforceAdmins;
     this._id = config.id;
+    this._lockBranch = config.lockBranch;
     this._pattern = config.pattern;
     this._pushRestrictions = config.pushRestrictions;
     this._repositoryId = config.repositoryId;
@@ -560,6 +592,22 @@ export class BranchProtection extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // lock_branch - computed: false, optional: true, required: false
+  private _lockBranch?: boolean | cdktf.IResolvable; 
+  public get lockBranch() {
+    return this.getBooleanAttribute('lock_branch');
+  }
+  public set lockBranch(value: boolean | cdktf.IResolvable) {
+    this._lockBranch = value;
+  }
+  public resetLockBranch() {
+    this._lockBranch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get lockBranchInput() {
+    return this._lockBranch;
   }
 
   // pattern - computed: false, optional: false, required: true
@@ -695,6 +743,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       blocks_creations: cdktf.booleanToTerraform(this._blocksCreations),
       enforce_admins: cdktf.booleanToTerraform(this._enforceAdmins),
       id: cdktf.stringToTerraform(this._id),
+      lock_branch: cdktf.booleanToTerraform(this._lockBranch),
       pattern: cdktf.stringToTerraform(this._pattern),
       push_restrictions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._pushRestrictions),
       repository_id: cdktf.stringToTerraform(this._repositoryId),
