@@ -14,6 +14,7 @@ Name|Description
 [actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissionsallowedactionsconfigoutputreference)|*No description*
 [actionsRunnerGroup.ActionsRunnerGroup](#cdktf-provider-github-actionsrunnergroup-actionsrunnergroup)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group}.
 [actionsSecret.ActionsSecret](#cdktf-provider-github-actionssecret-actionssecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}.
+[appInstallationRepositories.AppInstallationRepositories](#cdktf-provider-github-appinstallationrepositories-appinstallationrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories}.
 [appInstallationRepository.AppInstallationRepository](#cdktf-provider-github-appinstallationrepository-appinstallationrepository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository}.
 [branch.Branch](#cdktf-provider-github-branch-branch)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch github_branch}.
 [branchDefault.BranchDefault](#cdktf-provider-github-branchdefault-branchdefault)|Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default}.
@@ -117,6 +118,7 @@ Name|Description
 [projectCard.ProjectCard](#cdktf-provider-github-projectcard-projectcard)|Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}.
 [projectColumn.ProjectColumn](#cdktf-provider-github-projectcolumn-projectcolumn)|Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column}.
 [provider.GithubProvider](#cdktf-provider-github-provider-githubprovider)|Represents a {@link https://www.terraform.io/docs/providers/github github}.
+[release.Release](#cdktf-provider-github-release-release)|Represents a {@link https://www.terraform.io/docs/providers/github/r/release github_release}.
 [repository.Repository](#cdktf-provider-github-repository-repository)|Represents a {@link https://www.terraform.io/docs/providers/github/r/repository github_repository}.
 [repository.RepositoryPagesOutputReference](#cdktf-provider-github-repository-repositorypagesoutputreference)|*No description*
 [repository.RepositoryPagesSourceOutputReference](#cdktf-provider-github-repository-repositorypagessourceoutputreference)|*No description*
@@ -169,6 +171,7 @@ Name|Description
 [actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissionsconfig)|*No description*
 [actionsRunnerGroup.ActionsRunnerGroupConfig](#cdktf-provider-github-actionsrunnergroup-actionsrunnergroupconfig)|*No description*
 [actionsSecret.ActionsSecretConfig](#cdktf-provider-github-actionssecret-actionssecretconfig)|*No description*
+[appInstallationRepositories.AppInstallationRepositoriesConfig](#cdktf-provider-github-appinstallationrepositories-appinstallationrepositoriesconfig)|*No description*
 [appInstallationRepository.AppInstallationRepositoryConfig](#cdktf-provider-github-appinstallationrepository-appinstallationrepositoryconfig)|*No description*
 [branch.BranchConfig](#cdktf-provider-github-branch-branchconfig)|*No description*
 [branchDefault.BranchDefaultConfig](#cdktf-provider-github-branchdefault-branchdefaultconfig)|*No description*
@@ -251,6 +254,7 @@ Name|Description
 [projectColumn.ProjectColumnConfig](#cdktf-provider-github-projectcolumn-projectcolumnconfig)|*No description*
 [provider.GithubProviderAppAuth](#cdktf-provider-github-provider-githubproviderappauth)|*No description*
 [provider.GithubProviderConfig](#cdktf-provider-github-provider-githubproviderconfig)|*No description*
+[release.ReleaseConfig](#cdktf-provider-github-release-releaseconfig)|*No description*
 [repository.RepositoryConfig](#cdktf-provider-github-repository-repositoryconfig)|*No description*
 [repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)|*No description*
 [repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)|*No description*
@@ -1248,6 +1252,82 @@ __Returns__:
 
 
 
+## class AppInstallationRepositories  <a id="cdktf-provider-github-appinstallationrepositories-appinstallationrepositories"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: appInstallationRepositories
+
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories} Resource.
+
+```ts
+new appInstallationRepositories.AppInstallationRepositories(scope: Construct, id: string, config: AppInstallationRepositoriesConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[appInstallationRepositories.AppInstallationRepositoriesConfig](#cdktf-provider-github-appinstallationrepositories-appinstallationrepositoriesconfig)</code>)  *No description*
+  * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **forEach** (<code>[ITerraformIterator](#cdktf-iterraformiterator)</code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
+  * **installationId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}. 
+  * **selectedRepositories** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}. 
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#id AppInstallationRepositories#id}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**id** | <code>string</code> | <span></span>
+**installationId** | <code>string</code> | <span></span>
+**selectedRepositories** | <code>Array<string></code> | <span></span>
+**idInput**? | <code>string</code> | __*Optional*__
+**installationIdInput**? | <code>string</code> | __*Optional*__
+**selectedRepositoriesInput**? | <code>Array<string></code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-github-appinstallationrepositories-appinstallationrepositories-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-appinstallationrepositories-appinstallationrepositories-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class AppInstallationRepository  <a id="cdktf-provider-github-appinstallationrepository-appinstallationrepository"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository github_app_installation_repository}.
@@ -1545,6 +1625,7 @@ new branchProtection.BranchProtection(scope: Construct, id: string, config: Bran
   * **blocksCreations** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#blocks_creations BranchProtection#blocks_creations}. __*Optional*__
   * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#enforce_admins BranchProtection#enforce_admins}. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#id BranchProtection#id}. __*Optional*__
+  * **lockBranch** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#lock_branch BranchProtection#lock_branch}. __*Optional*__
   * **pushRestrictions** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#push_restrictions BranchProtection#push_restrictions}. __*Optional*__
   * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}. __*Optional*__
   * **requiredLinearHistory** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_linear_history BranchProtection#required_linear_history}. __*Optional*__
@@ -1564,6 +1645,7 @@ Name | Type | Description
 **blocksCreations** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **enforceAdmins** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**lockBranch** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **pattern** | <code>string</code> | <span></span>
 **pushRestrictions** | <code>Array<string></code> | <span></span>
 **repositoryId** | <code>string</code> | <span></span>
@@ -1577,6 +1659,7 @@ Name | Type | Description
 **blocksCreationsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **enforceAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
+**lockBranchInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **patternInput**? | <code>string</code> | __*Optional*__
 **pushRestrictionsInput**? | <code>Array<string></code> | __*Optional*__
 **repositoryIdInput**? | <code>string</code> | __*Optional*__
@@ -1670,6 +1753,18 @@ resetEnforceAdmins(): void
 
 ```ts
 resetId(): void
+```
+
+
+
+
+
+#### resetLockBranch() <a id="cdktf-provider-github-branchprotection-branchprotection-resetlockbranch"></a>
+
+
+
+```ts
+resetLockBranch(): void
 ```
 
 
@@ -1848,6 +1943,7 @@ Name | Type | Description
 **dismissalRestrictions** | <code>Array<string></code> | <span></span>
 **pullRequestBypassers** | <code>Array<string></code> | <span></span>
 **requireCodeOwnerReviews** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**requireLastPushApproval** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **requiredApprovingReviewCount** | <code>number</code> | <span></span>
 **restrictDismissals** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **dismissStaleReviewsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
@@ -1855,6 +1951,7 @@ Name | Type | Description
 **internalValue**? | <code>[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews) &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **pullRequestBypassersInput**? | <code>Array<string></code> | __*Optional*__
 **requireCodeOwnerReviewsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**requireLastPushApprovalInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **requiredApprovingReviewCountInput**? | <code>number</code> | __*Optional*__
 **restrictDismissalsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
@@ -1903,6 +2000,18 @@ resetPullRequestBypassers(): void
 
 ```ts
 resetRequireCodeOwnerReviews(): void
+```
+
+
+
+
+
+#### resetRequireLastPushApproval() <a id="cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviewsoutputreference-resetrequirelastpushapproval"></a>
+
+
+
+```ts
+resetRequireLastPushApproval(): void
 ```
 
 
@@ -9565,6 +9674,188 @@ __Returns__:
 
 
 
+## class Release  <a id="cdktf-provider-github-release-release"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/release github_release}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: release
+
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/release github_release} Resource.
+
+```ts
+new release.Release(scope: Construct, id: string, config: ReleaseConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[release.ReleaseConfig](#cdktf-provider-github-release-releaseconfig)</code>)  *No description*
+  * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **forEach** (<code>[ITerraformIterator](#cdktf-iterraformiterator)</code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
+  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#repository Release#repository}. 
+  * **tagName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#tag_name Release#tag_name}. 
+  * **body** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#body Release#body}. __*Optional*__
+  * **discussionCategoryName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#discussion_category_name Release#discussion_category_name}. __*Optional*__
+  * **draft** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#draft Release#draft}. __*Optional*__
+  * **generateReleaseNotes** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#generate_release_notes Release#generate_release_notes}. __*Optional*__
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#id Release#id}. __*Optional*__
+  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#name Release#name}. __*Optional*__
+  * **prerelease** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#prerelease Release#prerelease}. __*Optional*__
+  * **targetCommitish** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#target_commitish Release#target_commitish}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**body** | <code>string</code> | <span></span>
+**discussionCategoryName** | <code>string</code> | <span></span>
+**draft** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**etag** | <code>string</code> | <span></span>
+**generateReleaseNotes** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**name** | <code>string</code> | <span></span>
+**prerelease** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**tagName** | <code>string</code> | <span></span>
+**targetCommitish** | <code>string</code> | <span></span>
+**bodyInput**? | <code>string</code> | __*Optional*__
+**discussionCategoryNameInput**? | <code>string</code> | __*Optional*__
+**draftInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**generateReleaseNotesInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**idInput**? | <code>string</code> | __*Optional*__
+**nameInput**? | <code>string</code> | __*Optional*__
+**prereleaseInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+**tagNameInput**? | <code>string</code> | __*Optional*__
+**targetCommitishInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetBody() <a id="cdktf-provider-github-release-release-resetbody"></a>
+
+
+
+```ts
+resetBody(): void
+```
+
+
+
+
+
+#### resetDiscussionCategoryName() <a id="cdktf-provider-github-release-release-resetdiscussioncategoryname"></a>
+
+
+
+```ts
+resetDiscussionCategoryName(): void
+```
+
+
+
+
+
+#### resetDraft() <a id="cdktf-provider-github-release-release-resetdraft"></a>
+
+
+
+```ts
+resetDraft(): void
+```
+
+
+
+
+
+#### resetGenerateReleaseNotes() <a id="cdktf-provider-github-release-release-resetgeneratereleasenotes"></a>
+
+
+
+```ts
+resetGenerateReleaseNotes(): void
+```
+
+
+
+
+
+#### resetId() <a id="cdktf-provider-github-release-release-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### resetName() <a id="cdktf-provider-github-release-release-resetname"></a>
+
+
+
+```ts
+resetName(): void
+```
+
+
+
+
+
+#### resetPrerelease() <a id="cdktf-provider-github-release-release-resetprerelease"></a>
+
+
+
+```ts
+resetPrerelease(): void
+```
+
+
+
+
+
+#### resetTargetCommitish() <a id="cdktf-provider-github-release-release-resettargetcommitish"></a>
+
+
+
+```ts
+resetTargetCommitish(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-release-release-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
 ## class Repository  <a id="cdktf-provider-github-repository-repository"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/github/r/repository github_repository}.
@@ -13267,6 +13558,28 @@ Name | Type | Description
 
 
 
+## struct AppInstallationRepositoriesConfig  <a id="cdktf-provider-github-appinstallationrepositories-appinstallationrepositoriesconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**installationId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}.
+**selectedRepositories** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}.
+**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#id AppInstallationRepositories#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+
+
+
 ## struct AppInstallationRepositoryConfig  <a id="cdktf-provider-github-appinstallationrepository-appinstallationrepositoryconfig"></a>
 
 
@@ -13356,6 +13669,7 @@ Name | Type | Description
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#id BranchProtection#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**lockBranch**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#lock_branch BranchProtection#lock_branch}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 **pushRestrictions**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#push_restrictions BranchProtection#push_restrictions}.<br/>__*Optional*__
@@ -13380,6 +13694,7 @@ Name | Type | Description
 **dismissalRestrictions**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#dismissal_restrictions BranchProtection#dismissal_restrictions}.<br/>__*Optional*__
 **pullRequestBypassers**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}.<br/>__*Optional*__
 **requireCodeOwnerReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}.<br/>__*Optional*__
+**requireLastPushApproval**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}.<br/>__*Optional*__
 **requiredApprovingReviewCount**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}.<br/>__*Optional*__
 **restrictDismissals**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}.<br/>__*Optional*__
 
@@ -14755,6 +15070,35 @@ Name | Type | Description
 **readDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API.<br/>__*Optional*__
 **token**? | <code>string</code> | The OAuth token used to connect to GitHub.<br/>__*Optional*__
 **writeDelayMs**? | <code>number</code> | Amount of time in milliseconds to sleep in between writes to GitHub API.<br/>__*Optional*__
+
+
+
+## struct ReleaseConfig  <a id="cdktf-provider-github-release-releaseconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#repository Release#repository}.
+**tagName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#tag_name Release#tag_name}.
+**body**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#body Release#body}.<br/>__*Optional*__
+**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**discussionCategoryName**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#discussion_category_name Release#discussion_category_name}.<br/>__*Optional*__
+**draft**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#draft Release#draft}.<br/>__*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
+**generateReleaseNotes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#generate_release_notes Release#generate_release_notes}.<br/>__*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#id Release#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**name**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#name Release#name}.<br/>__*Optional*__
+**prerelease**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#prerelease Release#prerelease}.<br/>__*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+**targetCommitish**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#target_commitish Release#target_commitish}.<br/>__*Optional*__
 
 
 

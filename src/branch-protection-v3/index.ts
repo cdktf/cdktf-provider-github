@@ -518,7 +518,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_protection_v3',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.11.0',
+        providerVersion: '5.12.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
