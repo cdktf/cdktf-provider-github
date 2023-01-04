@@ -193,7 +193,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_collaborators',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

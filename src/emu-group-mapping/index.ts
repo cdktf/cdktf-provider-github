@@ -50,7 +50,7 @@ export class EmuGroupMapping extends cdktf.TerraformResource {
       terraformResourceType: 'github_emu_group_mapping',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
