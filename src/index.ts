@@ -3,6 +3,7 @@ export * as actionsEnvironmentSecret from './actions-environment-secret';
 export * as actionsOrganizationPermissions from './actions-organization-permissions';
 export * as actionsOrganizationSecret from './actions-organization-secret';
 export * as actionsOrganizationSecretRepositories from './actions-organization-secret-repositories';
+export * as actionsRepositoryAccessLevel from './actions-repository-access-level';
 export * as actionsRepositoryPermissions from './actions-repository-permissions';
 export * as actionsRunnerGroup from './actions-runner-group';
 export * as actionsSecret from './actions-secret';

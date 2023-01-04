@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/ref
+// https://www.terraform.io/docs/providers/github/r/actions_repository_access_level
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,48 +6,48 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubRefConfig extends cdktf.TerraformMetaArguments {
+export interface ActionsRepositoryAccessLevelConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#id DataGithubRef#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
+  */
+  readonly accessLevel: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#ref DataGithubRef#ref}
-  */
-  readonly ref: string;
-  /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#repository DataGithubRef#repository}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}
+* Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level github_actions_repository_access_level}
 */
-export class DataGithubRef extends cdktf.TerraformDataSource {
+export class ActionsRepositoryAccessLevel extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "github_ref";
+  public static readonly tfResourceType = "github_actions_repository_access_level";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/ref github_ref} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level github_actions_repository_access_level} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataGithubRefConfig
+  * @param options ActionsRepositoryAccessLevelConfig
   */
-  public constructor(scope: Construct, id: string, config: DataGithubRefConfig) {
+  public constructor(scope: Construct, id: string, config: ActionsRepositoryAccessLevelConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_ref',
+      terraformResourceType: 'github_actions_repository_access_level',
       terraformGeneratorMetadata: {
         providerName: 'github',
         providerVersion: '5.13.0',
@@ -61,8 +61,8 @@ export class DataGithubRef extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._accessLevel = config.accessLevel;
     this._id = config.id;
-    this._ref = config.ref;
     this._repository = config.repository;
   }
 
@@ -70,9 +70,17 @@ export class DataGithubRef extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // etag - computed: true, optional: false, required: false
-  public get etag() {
-    return this.getStringAttribute('etag');
+  // access_level - computed: false, optional: false, required: true
+  private _accessLevel?: string; 
+  public get accessLevel() {
+    return this.getStringAttribute('access_level');
+  }
+  public set accessLevel(value: string) {
+    this._accessLevel = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get accessLevelInput() {
+    return this._accessLevel;
   }
 
   // id - computed: true, optional: true, required: false
@@ -91,19 +99,6 @@ export class DataGithubRef extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // ref - computed: false, optional: false, required: true
-  private _ref?: string; 
-  public get ref() {
-    return this.getStringAttribute('ref');
-  }
-  public set ref(value: string) {
-    this._ref = value;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get refInput() {
-    return this._ref;
-  }
-
   // repository - computed: false, optional: false, required: true
   private _repository?: string; 
   public get repository() {
@@ -117,19 +112,14 @@ export class DataGithubRef extends cdktf.TerraformDataSource {
     return this._repository;
   }
 
-  // sha - computed: true, optional: false, required: false
-  public get sha() {
-    return this.getStringAttribute('sha');
-  }
-
   // =========
   // SYNTHESIS
   // =========
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      access_level: cdktf.stringToTerraform(this._accessLevel),
       id: cdktf.stringToTerraform(this._id),
-      ref: cdktf.stringToTerraform(this._ref),
       repository: cdktf.stringToTerraform(this._repository),
     };
   }

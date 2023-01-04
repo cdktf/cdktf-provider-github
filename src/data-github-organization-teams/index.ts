@@ -92,6 +92,12 @@ export class DataGithubOrganizationTeamsTeamsOutputReference extends cdktf.Compl
     return this.getStringAttribute('node_id');
   }
 
+  // parent - computed: true, optional: false, required: false
+  private _parent = new cdktf.StringMap(this, "parent");
+  public get parent() {
+    return this._parent;
+  }
+
   // privacy - computed: true, optional: false, required: false
   public get privacy() {
     return this.getStringAttribute('privacy');
@@ -153,7 +159,7 @@ export class DataGithubOrganizationTeams extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_organization_teams',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.12.0',
+        providerVersion: '5.13.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

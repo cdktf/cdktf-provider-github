@@ -10,6 +10,7 @@ Name|Description
 [actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfigoutputreference)|*No description*
 [actionsOrganizationSecret.ActionsOrganizationSecret](#cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecret)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret github_actions_organization_secret}.
 [actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories](#cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositories)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories github_actions_organization_secret_repositories}.
+[actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel](#cdktf-provider-github-actionsrepositoryaccesslevel-actionsrepositoryaccesslevel)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level github_actions_repository_access_level}.
 [actionsRepositoryPermissions.ActionsRepositoryPermissions](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissions)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions github_actions_repository_permissions}.
 [actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfigOutputReference](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissionsallowedactionsconfigoutputreference)|*No description*
 [actionsRunnerGroup.ActionsRunnerGroup](#cdktf-provider-github-actionsrunnergroup-actionsrunnergroup)|Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group github_actions_runner_group}.
@@ -167,6 +168,7 @@ Name|Description
 [actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)|*No description*
 [actionsOrganizationSecret.ActionsOrganizationSecretConfig](#cdktf-provider-github-actionsorganizationsecret-actionsorganizationsecretconfig)|*No description*
 [actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositoriesConfig](#cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositoriesconfig)|*No description*
+[actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig](#cdktf-provider-github-actionsrepositoryaccesslevel-actionsrepositoryaccesslevelconfig)|*No description*
 [actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissionsallowedactionsconfig)|*No description*
 [actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissionsconfig)|*No description*
 [actionsRunnerGroup.ActionsRunnerGroupConfig](#cdktf-provider-github-actionsrunnergroup-actionsrunnergroupconfig)|*No description*
@@ -835,6 +837,82 @@ resetId(): void
 
 
 #### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsorganizationsecretrepositories-actionsorganizationsecretrepositories-synthesizeattributes"></a>
+
+
+
+```ts
+protected synthesizeAttributes(): Map<string, any>
+```
+
+
+__Returns__:
+* <code>Map<string, any></code>
+
+
+
+## class ActionsRepositoryAccessLevel  <a id="cdktf-provider-github-actionsrepositoryaccesslevel-actionsrepositoryaccesslevel"></a>
+
+Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level github_actions_repository_access_level}.
+
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: actionsRepositoryAccessLevel
+
+__Extends__: [TerraformResource](#cdktf-terraformresource)
+
+### Initializer
+
+
+Create a new {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level github_actions_repository_access_level} Resource.
+
+```ts
+new actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel(scope: Construct, id: string, config: ActionsRepositoryAccessLevelConfig)
+```
+
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
+* **config** (<code>[actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig](#cdktf-provider-github-actionsrepositoryaccesslevel-actionsrepositoryaccesslevelconfig)</code>)  *No description*
+  * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
+  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
+  * **forEach** (<code>[ITerraformIterator](#cdktf-iterraformiterator)</code>)  *No description* __*Optional*__
+  * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
+  * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
+  * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
+  * **accessLevel** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}. 
+  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}. 
+  * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}. __*Optional*__
+
+
+
+### Properties
+
+
+Name | Type | Description 
+-----|------|-------------
+**accessLevel** | <code>string</code> | <span></span>
+**id** | <code>string</code> | <span></span>
+**repository** | <code>string</code> | <span></span>
+**accessLevelInput**? | <code>string</code> | __*Optional*__
+**idInput**? | <code>string</code> | __*Optional*__
+**repositoryInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
+
+### Methods
+
+
+#### resetId() <a id="cdktf-provider-github-actionsrepositoryaccesslevel-actionsrepositoryaccesslevel-resetid"></a>
+
+
+
+```ts
+resetId(): void
+```
+
+
+
+
+
+#### protected synthesizeAttributes() <a id="cdktf-provider-github-actionsrepositoryaccesslevel-actionsrepositoryaccesslevel-synthesizeattributes"></a>
 
 
 
@@ -4942,6 +5020,7 @@ Name | Type | Description
 **members** | <code>Array<string></code> | <span></span>
 **name** | <code>string</code> | <span></span>
 **nodeId** | <code>string</code> | <span></span>
+**parent** | <code>[StringMap](#cdktf-stringmap)</code> | <span></span>
 **privacy** | <code>string</code> | <span></span>
 **repositories** | <code>Array<string></code> | <span></span>
 **slug** | <code>string</code> | <span></span>
@@ -13466,6 +13545,28 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#id ActionsOrganizationSecretRepositories#id}.<br/>__*Optional*__
+**lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
+**provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
+**provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+
+
+
+## struct ActionsRepositoryAccessLevelConfig  <a id="cdktf-provider-github-actionsrepositoryaccesslevel-actionsrepositoryaccesslevelconfig"></a>
+
+
+
+
+
+
+Name | Type | Description 
+-----|------|-------------
+**accessLevel** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}.
+**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}.
+**connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
+**count**?🔹 | <code>number</code> | __*Optional*__
+**dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
+**forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
+**id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
