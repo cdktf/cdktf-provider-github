@@ -286,7 +286,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -373,6 +373,11 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // git_clone_url - computed: true, optional: false, required: false
   public get gitCloneUrl() {
     return this.getStringAttribute('git_clone_url');
+  }
+
+  // has_discussions - computed: true, optional: false, required: false
+  public get hasDiscussions() {
+    return this.getBooleanAttribute('has_discussions');
   }
 
   // has_downloads - computed: true, optional: false, required: false
