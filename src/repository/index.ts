@@ -58,6 +58,10 @@ export interface RepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly gitignoreTemplate?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_discussions Repository#has_discussions}
+  */
+  readonly hasDiscussions?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_downloads Repository#has_downloads}
   */
   readonly hasDownloads?: boolean | cdktf.IResolvable;
@@ -793,7 +797,7 @@ export class Repository extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.13.0',
+        providerVersion: '5.14.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -816,6 +820,7 @@ export class Repository extends cdktf.TerraformResource {
     this._deleteBranchOnMerge = config.deleteBranchOnMerge;
     this._description = config.description;
     this._gitignoreTemplate = config.gitignoreTemplate;
+    this._hasDiscussions = config.hasDiscussions;
     this._hasDownloads = config.hasDownloads;
     this._hasIssues = config.hasIssues;
     this._hasProjects = config.hasProjects;
@@ -1048,6 +1053,22 @@ export class Repository extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get gitignoreTemplateInput() {
     return this._gitignoreTemplate;
+  }
+
+  // has_discussions - computed: false, optional: true, required: false
+  private _hasDiscussions?: boolean | cdktf.IResolvable; 
+  public get hasDiscussions() {
+    return this.getBooleanAttribute('has_discussions');
+  }
+  public set hasDiscussions(value: boolean | cdktf.IResolvable) {
+    this._hasDiscussions = value;
+  }
+  public resetHasDiscussions() {
+    this._hasDiscussions = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hasDiscussionsInput() {
+    return this._hasDiscussions;
   }
 
   // has_downloads - computed: false, optional: true, required: false
@@ -1431,6 +1452,7 @@ export class Repository extends cdktf.TerraformResource {
       delete_branch_on_merge: cdktf.booleanToTerraform(this._deleteBranchOnMerge),
       description: cdktf.stringToTerraform(this._description),
       gitignore_template: cdktf.stringToTerraform(this._gitignoreTemplate),
+      has_discussions: cdktf.booleanToTerraform(this._hasDiscussions),
       has_downloads: cdktf.booleanToTerraform(this._hasDownloads),
       has_issues: cdktf.booleanToTerraform(this._hasIssues),
       has_projects: cdktf.booleanToTerraform(this._hasProjects),
