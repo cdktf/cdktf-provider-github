@@ -54,7 +54,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_runner_group',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -124,6 +124,11 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
     return this._name;
   }
 
+  // restricted_to_workflows - computed: true, optional: false, required: false
+  public get restrictedToWorkflows() {
+    return this.getBooleanAttribute('restricted_to_workflows');
+  }
+
   // runners_url - computed: true, optional: false, required: false
   public get runnersUrl() {
     return this.getStringAttribute('runners_url');
@@ -148,6 +153,11 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get selectedRepositoryIdsInput() {
     return this._selectedRepositoryIds;
+  }
+
+  // selected_workflows - computed: true, optional: false, required: false
+  public get selectedWorkflows() {
+    return this.getListAttribute('selected_workflows');
   }
 
   // visibility - computed: false, optional: false, required: true

@@ -1347,9 +1347,11 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **inherited** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **name** | <code>string</code> | <span></span>
+**restrictedToWorkflows** | <code>[IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **runnersUrl** | <code>string</code> | <span></span>
 **selectedRepositoriesUrl** | <code>string</code> | <span></span>
 **selectedRepositoryIds** | <code>Array<number></code> | <span></span>
+**selectedWorkflows** | <code>Array<string></code> | <span></span>
 **visibility** | <code>string</code> | <span></span>
 **idInput**? | <code>string</code> | __*Optional*__
 **nameInput**? | <code>string</code> | __*Optional*__
@@ -10608,9 +10610,9 @@ putSecurityAndAnalysis(value: RepositorySecurityAndAnalysis): void
 ```
 
 * **value** (<code>[repository.RepositorySecurityAndAnalysis](#cdktf-provider-github-repository-repositorysecurityandanalysis)</code>)  *No description*
-  * **advancedSecurity** (<code>[repository.RepositorySecurityAndAnalysisAdvancedSecurity](#cdktf-provider-github-repository-repositorysecurityandanalysisadvancedsecurity)</code>)  advanced_security block. 
-  * **secretScanning** (<code>[repository.RepositorySecurityAndAnalysisSecretScanning](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanning)</code>)  secret_scanning block. 
-  * **secretScanningPushProtection** (<code>[repository.RepositorySecurityAndAnalysisSecretScanningPushProtection](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanningpushprotection)</code>)  secret_scanning_push_protection block. 
+  * **advancedSecurity** (<code>[repository.RepositorySecurityAndAnalysisAdvancedSecurity](#cdktf-provider-github-repository-repositorysecurityandanalysisadvancedsecurity)</code>)  advanced_security block. __*Optional*__
+  * **secretScanning** (<code>[repository.RepositorySecurityAndAnalysisSecretScanning](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanning)</code>)  secret_scanning block. __*Optional*__
+  * **secretScanningPushProtection** (<code>[repository.RepositorySecurityAndAnalysisSecretScanningPushProtection](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanningpushprotection)</code>)  secret_scanning_push_protection block. __*Optional*__
 
 
 
@@ -11273,6 +11275,42 @@ putSecretScanningPushProtection(value: RepositorySecurityAndAnalysisSecretScanni
 
 * **value** (<code>[repository.RepositorySecurityAndAnalysisSecretScanningPushProtection](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanningpushprotection)</code>)  *No description*
   * **status** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}. 
+
+
+
+
+#### resetAdvancedSecurity() <a id="cdktf-provider-github-repository-repositorysecurityandanalysisoutputreference-resetadvancedsecurity"></a>
+
+
+
+```ts
+resetAdvancedSecurity(): void
+```
+
+
+
+
+
+#### resetSecretScanning() <a id="cdktf-provider-github-repository-repositorysecurityandanalysisoutputreference-resetsecretscanning"></a>
+
+
+
+```ts
+resetSecretScanning(): void
+```
+
+
+
+
+
+#### resetSecretScanningPushProtection() <a id="cdktf-provider-github-repository-repositorysecurityandanalysisoutputreference-resetsecretscanningpushprotection"></a>
+
+
+
+```ts
+resetSecretScanningPushProtection(): void
+```
+
 
 
 
@@ -15936,9 +15974,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**advancedSecurity** | <code>[repository.RepositorySecurityAndAnalysisAdvancedSecurity](#cdktf-provider-github-repository-repositorysecurityandanalysisadvancedsecurity)</code> | advanced_security block.
-**secretScanning** | <code>[repository.RepositorySecurityAndAnalysisSecretScanning](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanning)</code> | secret_scanning block.
-**secretScanningPushProtection** | <code>[repository.RepositorySecurityAndAnalysisSecretScanningPushProtection](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanningpushprotection)</code> | secret_scanning_push_protection block.
+**advancedSecurity**? | <code>[repository.RepositorySecurityAndAnalysisAdvancedSecurity](#cdktf-provider-github-repository-repositorysecurityandanalysisadvancedsecurity)</code> | advanced_security block.<br/>__*Optional*__
+**secretScanning**? | <code>[repository.RepositorySecurityAndAnalysisSecretScanning](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanning)</code> | secret_scanning block.<br/>__*Optional*__
+**secretScanningPushProtection**? | <code>[repository.RepositorySecurityAndAnalysisSecretScanningPushProtection](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanningpushprotection)</code> | secret_scanning_push_protection block.<br/>__*Optional*__
 
 
 

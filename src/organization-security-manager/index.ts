@@ -46,7 +46,7 @@ export class OrganizationSecurityManager extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_security_manager',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
