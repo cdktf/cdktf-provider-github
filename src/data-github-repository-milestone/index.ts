@@ -54,7 +54,7 @@ export class DataGithubRepositoryMilestone extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository_milestone',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
