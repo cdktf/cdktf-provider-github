@@ -50,7 +50,7 @@ export class DataGithubBranch extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_branch',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
