@@ -547,19 +547,19 @@ export interface RepositorySecurityAndAnalysis {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#advanced_security Repository#advanced_security}
   */
-  readonly advancedSecurity: RepositorySecurityAndAnalysisAdvancedSecurity;
+  readonly advancedSecurity?: RepositorySecurityAndAnalysisAdvancedSecurity;
   /**
   * secret_scanning block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#secret_scanning Repository#secret_scanning}
   */
-  readonly secretScanning: RepositorySecurityAndAnalysisSecretScanning;
+  readonly secretScanning?: RepositorySecurityAndAnalysisSecretScanning;
   /**
   * secret_scanning_push_protection block
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#secret_scanning_push_protection Repository#secret_scanning_push_protection}
   */
-  readonly secretScanningPushProtection: RepositorySecurityAndAnalysisSecretScanningPushProtection;
+  readonly secretScanningPushProtection?: RepositorySecurityAndAnalysisSecretScanningPushProtection;
 }
 
 export function repositorySecurityAndAnalysisToTerraform(struct?: RepositorySecurityAndAnalysisOutputReference | RepositorySecurityAndAnalysis): any {
@@ -618,7 +618,7 @@ export class RepositorySecurityAndAnalysisOutputReference extends cdktf.ComplexO
     }
   }
 
-  // advanced_security - computed: false, optional: false, required: true
+  // advanced_security - computed: false, optional: true, required: false
   private _advancedSecurity = new RepositorySecurityAndAnalysisAdvancedSecurityOutputReference(this, "advanced_security");
   public get advancedSecurity() {
     return this._advancedSecurity;
@@ -626,12 +626,15 @@ export class RepositorySecurityAndAnalysisOutputReference extends cdktf.ComplexO
   public putAdvancedSecurity(value: RepositorySecurityAndAnalysisAdvancedSecurity) {
     this._advancedSecurity.internalValue = value;
   }
+  public resetAdvancedSecurity() {
+    this._advancedSecurity.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get advancedSecurityInput() {
     return this._advancedSecurity.internalValue;
   }
 
-  // secret_scanning - computed: false, optional: false, required: true
+  // secret_scanning - computed: false, optional: true, required: false
   private _secretScanning = new RepositorySecurityAndAnalysisSecretScanningOutputReference(this, "secret_scanning");
   public get secretScanning() {
     return this._secretScanning;
@@ -639,18 +642,24 @@ export class RepositorySecurityAndAnalysisOutputReference extends cdktf.ComplexO
   public putSecretScanning(value: RepositorySecurityAndAnalysisSecretScanning) {
     this._secretScanning.internalValue = value;
   }
+  public resetSecretScanning() {
+    this._secretScanning.internalValue = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get secretScanningInput() {
     return this._secretScanning.internalValue;
   }
 
-  // secret_scanning_push_protection - computed: false, optional: false, required: true
+  // secret_scanning_push_protection - computed: false, optional: true, required: false
   private _secretScanningPushProtection = new RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference(this, "secret_scanning_push_protection");
   public get secretScanningPushProtection() {
     return this._secretScanningPushProtection;
   }
   public putSecretScanningPushProtection(value: RepositorySecurityAndAnalysisSecretScanningPushProtection) {
     this._secretScanningPushProtection.internalValue = value;
+  }
+  public resetSecretScanningPushProtection() {
+    this._secretScanningPushProtection.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get secretScanningPushProtectionInput() {
@@ -797,7 +806,7 @@ export class Repository extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.14.0',
+        providerVersion: '5.15.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
