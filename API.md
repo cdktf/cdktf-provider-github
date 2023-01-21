@@ -2514,6 +2514,7 @@ putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks): void
 ```
 
 * **value** (<code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code>)  *No description*
+  * **checks** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#checks BranchProtectionV3#checks}. __*Optional*__
   * **contexts** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#contexts BranchProtectionV3#contexts}. __*Optional*__
   * **includeAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#include_admins BranchProtectionV3#include_admins}. __*Optional*__
   * **strict** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#strict BranchProtectionV3#strict}. __*Optional*__
@@ -2782,15 +2783,29 @@ new branchProtectionV3.BranchProtectionV3RequiredStatusChecksOutputReference(ter
 
 Name | Type | Description 
 -----|------|-------------
+**checks** | <code>Array<string></code> | <span></span>
 **contexts** | <code>Array<string></code> | <span></span>
 **includeAdmins** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **strict** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
+**checksInput**? | <code>Array<string></code> | __*Optional*__
 **contextsInput**? | <code>Array<string></code> | __*Optional*__
 **includeAdminsInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **internalValue**? | <code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code> | __*Optional*__
 **strictInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 
 ### Methods
+
+
+#### resetChecks() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference-resetchecks"></a>
+
+
+
+```ts
+resetChecks(): void
+```
+
+
+
 
 
 #### resetContexts() <a id="cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecksoutputreference-resetcontexts"></a>
@@ -14464,6 +14479,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
+**checks**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#checks BranchProtectionV3#checks}.<br/>__*Optional*__
 **contexts**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#contexts BranchProtectionV3#contexts}.<br/>__*Optional*__
 **includeAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#include_admins BranchProtectionV3#include_admins}.<br/>__*Optional*__
 **strict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#strict BranchProtectionV3#strict}.<br/>__*Optional*__

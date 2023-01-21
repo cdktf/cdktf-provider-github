@@ -255,6 +255,10 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
 }
 export interface BranchProtectionV3RequiredStatusChecks {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#checks BranchProtectionV3#checks}
+  */
+  readonly checks?: string[];
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#contexts BranchProtectionV3#contexts}
   */
   readonly contexts?: string[];
@@ -274,6 +278,7 @@ export function branchProtectionV3RequiredStatusChecksToTerraform(struct?: Branc
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    checks: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.checks),
     contexts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contexts),
     include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
     strict: cdktf.booleanToTerraform(struct!.strict),
@@ -294,6 +299,10 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
   public get internalValue(): BranchProtectionV3RequiredStatusChecks | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._checks !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.checks = this._checks;
+    }
     if (this._contexts !== undefined) {
       hasAnyValues = true;
       internalValueResult.contexts = this._contexts;
@@ -312,16 +321,34 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
   public set internalValue(value: BranchProtectionV3RequiredStatusChecks | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this._checks = undefined;
       this._contexts = undefined;
       this._includeAdmins = undefined;
       this._strict = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this._checks = value.checks;
       this._contexts = value.contexts;
       this._includeAdmins = value.includeAdmins;
       this._strict = value.strict;
     }
+  }
+
+  // checks - computed: false, optional: true, required: false
+  private _checks?: string[]; 
+  public get checks() {
+    return cdktf.Fn.tolist(this.getListAttribute('checks'));
+  }
+  public set checks(value: string[]) {
+    this._checks = value;
+  }
+  public resetChecks() {
+    this._checks = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get checksInput() {
+    return this._checks;
   }
 
   // contexts - computed: false, optional: true, required: false
@@ -518,7 +545,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_protection_v3',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

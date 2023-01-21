@@ -50,7 +50,7 @@ export class ProjectColumn extends cdktf.TerraformResource {
       terraformResourceType: 'github_project_column',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.15.0',
+        providerVersion: '5.16.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
