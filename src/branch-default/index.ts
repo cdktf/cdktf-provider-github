@@ -19,6 +19,10 @@ export interface BranchDefaultConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#rename BranchDefault#rename}
+  */
+  readonly rename?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#repository BranchDefault#repository}
   */
   readonly repository: string;
@@ -50,7 +54,7 @@ export class BranchDefault extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_default',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.16.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -63,6 +67,7 @@ export class BranchDefault extends cdktf.TerraformResource {
     });
     this._branch = config.branch;
     this._id = config.id;
+    this._rename = config.rename;
     this._repository = config.repository;
   }
 
@@ -99,6 +104,22 @@ export class BranchDefault extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // rename - computed: false, optional: true, required: false
+  private _rename?: boolean | cdktf.IResolvable; 
+  public get rename() {
+    return this.getBooleanAttribute('rename');
+  }
+  public set rename(value: boolean | cdktf.IResolvable) {
+    this._rename = value;
+  }
+  public resetRename() {
+    this._rename = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get renameInput() {
+    return this._rename;
+  }
+
   // repository - computed: false, optional: false, required: true
   private _repository?: string; 
   public get repository() {
@@ -120,6 +141,7 @@ export class BranchDefault extends cdktf.TerraformResource {
     return {
       branch: cdktf.stringToTerraform(this._branch),
       id: cdktf.stringToTerraform(this._id),
+      rename: cdktf.booleanToTerraform(this._rename),
       repository: cdktf.stringToTerraform(this._repository),
     };
   }

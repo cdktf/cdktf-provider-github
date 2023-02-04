@@ -8,6 +8,10 @@ import * as cdktf from 'cdktf';
 
 export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
+  */
+  readonly allowEmptyId?: boolean | cdktf.IResolvable;
+  /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#id UserInvitationAccepter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -17,7 +21,7 @@ export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArgumen
   /**
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
   */
-  readonly invitationId: string;
+  readonly invitationId?: string;
 }
 
 /**
@@ -39,14 +43,14 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options UserInvitationAccepterConfig
+  * @param options UserInvitationAccepterConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: UserInvitationAccepterConfig) {
+  public constructor(scope: Construct, id: string, config: UserInvitationAccepterConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'github_user_invitation_accepter',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.16.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -57,6 +61,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._allowEmptyId = config.allowEmptyId;
     this._id = config.id;
     this._invitationId = config.invitationId;
   }
@@ -64,6 +69,22 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // allow_empty_id - computed: false, optional: true, required: false
+  private _allowEmptyId?: boolean | cdktf.IResolvable; 
+  public get allowEmptyId() {
+    return this.getBooleanAttribute('allow_empty_id');
+  }
+  public set allowEmptyId(value: boolean | cdktf.IResolvable) {
+    this._allowEmptyId = value;
+  }
+  public resetAllowEmptyId() {
+    this._allowEmptyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowEmptyIdInput() {
+    return this._allowEmptyId;
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 
@@ -81,13 +102,16 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
     return this._id;
   }
 
-  // invitation_id - computed: false, optional: false, required: true
+  // invitation_id - computed: false, optional: true, required: false
   private _invitationId?: string; 
   public get invitationId() {
     return this.getStringAttribute('invitation_id');
   }
   public set invitationId(value: string) {
     this._invitationId = value;
+  }
+  public resetInvitationId() {
+    this._invitationId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get invitationIdInput() {
@@ -100,6 +124,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      allow_empty_id: cdktf.booleanToTerraform(this._allowEmptyId),
       id: cdktf.stringToTerraform(this._id),
       invitation_id: cdktf.stringToTerraform(this._invitationId),
     };

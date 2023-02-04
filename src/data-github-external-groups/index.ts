@@ -116,7 +116,7 @@ export class DataGithubExternalGroups extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_external_groups',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.16.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
