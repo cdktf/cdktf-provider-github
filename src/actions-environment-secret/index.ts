@@ -62,7 +62,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_environment_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.16.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
