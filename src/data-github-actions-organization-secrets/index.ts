@@ -121,7 +121,7 @@ export class DataGithubActionsOrganizationSecrets extends cdktf.TerraformDataSou
       terraformResourceType: 'github_actions_organization_secrets',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.16.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

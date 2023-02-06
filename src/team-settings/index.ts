@@ -179,7 +179,7 @@ export class TeamSettings extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_settings',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.16.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

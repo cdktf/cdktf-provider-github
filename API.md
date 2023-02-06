@@ -1801,6 +1801,7 @@ new branchDefault.BranchDefault(scope: Construct, id: string, config: BranchDefa
   * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#branch BranchDefault#branch}. 
   * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#repository BranchDefault#repository}. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#id BranchDefault#id}. __*Optional*__
+  * **rename** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#rename BranchDefault#rename}. __*Optional*__
 
 
 
@@ -1811,9 +1812,11 @@ Name | Type | Description
 -----|------|-------------
 **branch** | <code>string</code> | <span></span>
 **id** | <code>string</code> | <span></span>
+**rename** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **repository** | <code>string</code> | <span></span>
 **branchInput**? | <code>string</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
+**renameInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **repositoryInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -1826,6 +1829,18 @@ Name | Type | Description
 
 ```ts
 resetId(): void
+```
+
+
+
+
+
+#### resetRename() <a id="cdktf-provider-github-branchdefault-branchdefault-resetrename"></a>
+
+
+
+```ts
+resetRename(): void
 ```
 
 
@@ -13856,7 +13871,7 @@ __Extends__: [TerraformResource](#cdktf-terraformresource)
 Create a new {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter} Resource.
 
 ```ts
-new userInvitationAccepter.UserInvitationAccepter(scope: Construct, id: string, config: UserInvitationAccepterConfig)
+new userInvitationAccepter.UserInvitationAccepter(scope: Construct, id: string, config?: UserInvitationAccepterConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
@@ -13869,8 +13884,9 @@ new userInvitationAccepter.UserInvitationAccepter(scope: Construct, id: string, 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **invitationId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}. 
+  * **allowEmptyId** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#id UserInvitationAccepter#id}. __*Optional*__
+  * **invitationId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}. __*Optional*__
 
 
 
@@ -13879,13 +13895,27 @@ new userInvitationAccepter.UserInvitationAccepter(scope: Construct, id: string, 
 
 Name | Type | Description 
 -----|------|-------------
+**allowEmptyId** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | <span></span>
 **id** | <code>string</code> | <span></span>
 **invitationId** | <code>string</code> | <span></span>
+**allowEmptyIdInput**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **idInput**? | <code>string</code> | __*Optional*__
 **invitationIdInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
+
+
+#### resetAllowEmptyId() <a id="cdktf-provider-github-userinvitationaccepter-userinvitationaccepter-resetallowemptyid"></a>
+
+
+
+```ts
+resetAllowEmptyId(): void
+```
+
+
+
 
 
 #### resetId() <a id="cdktf-provider-github-userinvitationaccepter-userinvitationaccepter-resetid"></a>
@@ -13894,6 +13924,18 @@ Name | Type | Description
 
 ```ts
 resetId(): void
+```
+
+
+
+
+
+#### resetInvitationId() <a id="cdktf-provider-github-userinvitationaccepter-userinvitationaccepter-resetinvitationid"></a>
+
+
+
+```ts
+resetInvitationId(): void
 ```
 
 
@@ -14355,6 +14397,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
+**rename**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#rename BranchDefault#rename}.<br/>__*Optional*__
 
 
 
@@ -16554,12 +16597,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**invitationId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}.
+**allowEmptyId**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#id UserInvitationAccepter#id}.<br/>__*Optional*__
+**invitationId**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
