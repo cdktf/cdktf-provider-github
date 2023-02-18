@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Encrypted value of the secret using the GitHub public key in Base64 format.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#encrypted_value ActionsSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
@@ -19,14 +21,20 @@ export interface ActionsSecretConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Plaintext value of the secret to be encrypted.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#plaintext_value ActionsSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
+  * Name of the repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#repository ActionsSecret#repository}
   */
   readonly repository: string;
   /**
+  * Name of the secret.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#secret_name ActionsSecret#secret_name}
   */
   readonly secretName: string;
@@ -58,7 +66,7 @@ export class ActionsSecret extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

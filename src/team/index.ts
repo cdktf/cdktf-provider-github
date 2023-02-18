@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Adds a default maintainer to the team. Adds the creating user to the team when 'true'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#create_default_maintainer Team#create_default_maintainer}
   */
   readonly createDefaultMaintainer?: boolean | cdktf.IResolvable;
   /**
+  * A description of the team.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#description Team#description}
   */
   readonly description?: string;
@@ -23,18 +27,26 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#ldap_dn Team#ldap_dn}
   */
   readonly ldapDn?: string;
   /**
+  * The name of the team.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#name Team#name}
   */
   readonly name: string;
   /**
+  * The ID of the parent team, if this is a nested team.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#parent_team_id Team#parent_team_id}
   */
   readonly parentTeamId?: number;
   /**
+  * The level of privacy for the team. Must be one of 'secret' or 'closed'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#privacy Team#privacy}
   */
   readonly privacy?: string;
@@ -66,7 +78,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'github_team',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

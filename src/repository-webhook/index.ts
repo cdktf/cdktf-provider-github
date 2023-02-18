@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryWebhookConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Indicate if the webhook should receive events. Defaults to 'true'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#active RepositoryWebhook#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
+  * A list of events which should trigger the webhook
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#events RepositoryWebhook#events}
   */
   readonly events: string[];
@@ -27,6 +31,8 @@ export interface RepositoryWebhookConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name?: string;
   /**
+  * The repository of the webhook.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#repository RepositoryWebhook#repository}
   */
   readonly repository: string;
@@ -39,18 +45,26 @@ export interface RepositoryWebhookConfig extends cdktf.TerraformMetaArguments {
 }
 export interface RepositoryWebhookConfiguration {
   /**
+  * The content type for the payload. Valid values are either 'form' or 'json'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#content_type RepositoryWebhook#content_type}
   */
   readonly contentType?: string;
   /**
+  * Insecure SSL boolean toggle. Defaults to 'false'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}
   */
   readonly insecureSsl?: boolean | cdktf.IResolvable;
   /**
+  * The shared secret for the webhook
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#secret RepositoryWebhook#secret}
   */
   readonly secret?: string;
   /**
+  * The URL of the webhook.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#url RepositoryWebhook#url}
   */
   readonly url: string;
@@ -207,7 +221,7 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_webhook',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

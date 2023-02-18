@@ -15,6 +15,8 @@ export interface OrganizationSecurityManagerConfig extends cdktf.TerraformMetaAr
   */
   readonly id?: string;
   /**
+  * The slug of the team to manage.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}
   */
   readonly teamSlug: string;
@@ -46,7 +48,7 @@ export class OrganizationSecurityManager extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_security_manager',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

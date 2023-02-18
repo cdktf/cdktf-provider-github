@@ -15,10 +15,14 @@ export interface ProjectColumnConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The name of the column.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#name ProjectColumn#name}
   */
   readonly name: string;
   /**
+  * The ID of an existing project that the column will be created in.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#project_id ProjectColumn#project_id}
   */
   readonly projectId: string;
@@ -50,7 +54,7 @@ export class ProjectColumn extends cdktf.TerraformResource {
       terraformResourceType: 'github_project_column',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

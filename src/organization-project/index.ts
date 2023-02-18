@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationProjectConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The body of the project.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#body OrganizationProject#body}
   */
   readonly body?: string;
@@ -19,6 +21,8 @@ export interface OrganizationProjectConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * The name of the project.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#name OrganizationProject#name}
   */
   readonly name: string;
@@ -50,7 +54,7 @@ export class OrganizationProject extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_project',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

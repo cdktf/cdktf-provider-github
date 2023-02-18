@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface EmuGroupMappingConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Integer corresponding to the external group ID to be linked.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#group_id EmuGroupMapping#group_id}
   */
   readonly groupId: number;
@@ -19,6 +21,8 @@ export interface EmuGroupMappingConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Slug of the GitHub team.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#team_slug EmuGroupMapping#team_slug}
   */
   readonly teamSlug: string;
@@ -50,7 +54,7 @@ export class EmuGroupMapping extends cdktf.TerraformResource {
       terraformResourceType: 'github_emu_group_mapping',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

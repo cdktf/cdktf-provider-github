@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface UserGpgKeyConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Your public GPG key, generated in ASCII-armored format.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}
   */
   readonly armoredPublicKey: string;
@@ -46,7 +48,7 @@ export class UserGpgKey extends cdktf.TerraformResource {
       terraformResourceType: 'github_user_gpg_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

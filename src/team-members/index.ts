@@ -15,6 +15,8 @@ export interface TeamMembersConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The GitHub team id.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#team_id TeamMembers#team_id}
   */
   readonly teamId: string;
@@ -27,10 +29,14 @@ export interface TeamMembersConfig extends cdktf.TerraformMetaArguments {
 }
 export interface TeamMembersMembers {
   /**
+  * The role of the user within the team. Must be one of 'member' or 'maintainer'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#role TeamMembers#role}
   */
   readonly role?: string;
   /**
+  * The user to add to the team.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#username TeamMembers#username}
   */
   readonly username: string;
@@ -173,7 +179,7 @@ export class TeamMembers extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_members',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

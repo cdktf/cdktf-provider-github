@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface IssueLabelConfig extends cdktf.TerraformMetaArguments {
   /**
+  * A 6 character hex code, without the leading '#', identifying the color of the label.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#color IssueLabel#color}
   */
   readonly color: string;
   /**
+  * A short description of the label.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#description IssueLabel#description}
   */
   readonly description?: string;
@@ -23,10 +27,14 @@ export interface IssueLabelConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The name of the label.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#name IssueLabel#name}
   */
   readonly name: string;
   /**
+  * The GitHub repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#repository IssueLabel#repository}
   */
   readonly repository: string;
@@ -58,7 +66,7 @@ export class IssueLabel extends cdktf.TerraformResource {
       terraformResourceType: 'github_issue_label',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

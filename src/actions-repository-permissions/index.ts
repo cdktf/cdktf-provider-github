@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsRepositoryPermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The permissions policy that controls the actions that are allowed to run. Can be one of: 'all', 'local_only', or 'selected'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#allowed_actions ActionsRepositoryPermissions#allowed_actions}
   */
   readonly allowedActions?: string;
   /**
+  * Should GitHub actions be enabled on this repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#enabled ActionsRepositoryPermissions#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
@@ -23,6 +27,8 @@ export interface ActionsRepositoryPermissionsConfig extends cdktf.TerraformMetaA
   */
   readonly id?: string;
   /**
+  * The GitHub repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#repository ActionsRepositoryPermissions#repository}
   */
   readonly repository: string;
@@ -35,14 +41,20 @@ export interface ActionsRepositoryPermissionsConfig extends cdktf.TerraformMetaA
 }
 export interface ActionsRepositoryPermissionsAllowedActionsConfig {
   /**
+  * Whether GitHub-owned actions are allowed in the repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#github_owned_allowed ActionsRepositoryPermissions#github_owned_allowed}
   */
   readonly githubOwnedAllowed: boolean | cdktf.IResolvable;
   /**
+  * Specifies a list of string-matching patterns to allow specific action(s). Wildcards, tags, and SHAs are allowed. For example, 'monalisa/octocat@', 'monalisa/octocat@v2', 'monalisa/'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#patterns_allowed ActionsRepositoryPermissions#patterns_allowed}
   */
   readonly patternsAllowed?: string[];
   /**
+  * Whether actions in GitHub Marketplace from verified creators are allowed. Set to 'true' to allow all GitHub Marketplace actions by verified creators.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#verified_allowed ActionsRepositoryPermissions#verified_allowed}
   */
   readonly verifiedAllowed?: boolean | cdktf.IResolvable;
@@ -176,7 +188,7 @@ export class ActionsRepositoryPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_repository_permissions',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

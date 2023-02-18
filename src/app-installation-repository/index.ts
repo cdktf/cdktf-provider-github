@@ -15,10 +15,14 @@ export interface AppInstallationRepositoryConfig extends cdktf.TerraformMetaArgu
   */
   readonly id?: string;
   /**
+  * The GitHub app installation id.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#installation_id AppInstallationRepository#installation_id}
   */
   readonly installationId: string;
   /**
+  * The repository to install the app on.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#repository AppInstallationRepository#repository}
   */
   readonly repository: string;
@@ -50,7 +54,7 @@ export class AppInstallationRepository extends cdktf.TerraformResource {
       terraformResourceType: 'github_app_installation_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

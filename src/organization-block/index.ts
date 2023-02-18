@@ -15,6 +15,8 @@ export interface OrganizationBlockConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The name of the user to block.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#username OrganizationBlock#username}
   */
   readonly username: string;
@@ -46,7 +48,7 @@ export class OrganizationBlock extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_block',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

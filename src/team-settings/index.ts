@@ -15,7 +15,7 @@ export interface TeamSettingsConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * ID or slug of team
+  * The GitHub team id or the GitHub team slug.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#team_id TeamSettings#team_id}
   */
@@ -29,19 +29,19 @@ export interface TeamSettingsConfig extends cdktf.TerraformMetaArguments {
 }
 export interface TeamSettingsReviewRequestDelegation {
   /**
-  * Algorithm to use when determining team members to be assigned to a pull request. Allowed values are ROUND_ROBIN and LOAD_BALANCE
+  * The algorithm to use when assigning pull requests to team members. Supported values are 'ROUND_ROBIN' and 'LOAD_BALANCE'.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#algorithm TeamSettings#algorithm}
   */
   readonly algorithm?: string;
   /**
-  * The number of reviewers to be assigned to a pull request from this team
+  * The number of team members to assign to a pull request.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#member_count TeamSettings#member_count}
   */
   readonly memberCount?: number;
   /**
-  * Notify the entire team when a pull request is assigned to a member of the team
+  * whether to notify the entire team when at least one member is also assigned to the pull request.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#notify TeamSettings#notify}
   */
@@ -179,7 +179,7 @@ export class TeamSettings extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_settings',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

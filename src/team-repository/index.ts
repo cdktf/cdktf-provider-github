@@ -15,10 +15,14 @@ export interface TeamRepositoryConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The permissions of team members regarding the repository. Must be one of 'pull', 'triage', 'push', 'maintain', 'admin' or the name of an existing custom repository role within the organisation.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#permission TeamRepository#permission}
   */
   readonly permission?: string;
   /**
+  * The repository to add to the team.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#repository TeamRepository#repository}
   */
   readonly repository: string;
@@ -56,7 +60,7 @@ export class TeamRepository extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

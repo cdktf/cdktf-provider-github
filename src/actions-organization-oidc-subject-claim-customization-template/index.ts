@@ -15,6 +15,8 @@ export interface ActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig 
   */
   readonly id?: string;
   /**
+  * A list of OpenID Connect claims.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_oidc_subject_claim_customization_template#include_claim_keys ActionsOrganizationOidcSubjectClaimCustomizationTemplate#include_claim_keys}
   */
   readonly includeClaimKeys: string[];
@@ -46,7 +48,7 @@ export class ActionsOrganizationOidcSubjectClaimCustomizationTemplate extends cd
       terraformResourceType: 'github_actions_organization_oidc_subject_claim_customization_template',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

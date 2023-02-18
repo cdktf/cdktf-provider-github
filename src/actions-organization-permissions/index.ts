@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsOrganizationPermissionsConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The permissions policy that controls the actions that are allowed to run. Can be one of: 'all', 'local_only', or 'selected'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}
   */
   readonly allowedActions?: string;
   /**
+  * The policy that controls the repositories in the organization that are allowed to run GitHub Actions. Can be one of: 'all', 'none', or 'selected'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
   */
   readonly enabledRepositories: string;
@@ -37,14 +41,20 @@ export interface ActionsOrganizationPermissionsConfig extends cdktf.TerraformMet
 }
 export interface ActionsOrganizationPermissionsAllowedActionsConfig {
   /**
+  * Whether GitHub-owned actions are allowed in the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}
   */
   readonly githubOwnedAllowed: boolean | cdktf.IResolvable;
   /**
+  * Specifies a list of string-matching patterns to allow specific action(s). Wildcards, tags, and SHAs are allowed. For example, 'monalisa/octocat@', 'monalisa/octocat@v2', 'monalisa/'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}
   */
   readonly patternsAllowed?: string[];
   /**
+  * Whether actions in GitHub Marketplace from verified creators are allowed. Set to 'true' to allow all GitHub Marketplace actions by verified creators.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}
   */
   readonly verifiedAllowed?: boolean | cdktf.IResolvable;
@@ -153,6 +163,8 @@ export class ActionsOrganizationPermissionsAllowedActionsConfigOutputReference e
 }
 export interface ActionsOrganizationPermissionsEnabledRepositoriesConfig {
   /**
+  * List of repository IDs to enable for GitHub Actions.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}
   */
   readonly repositoryIds: number[];
@@ -240,7 +252,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_organization_permissions',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

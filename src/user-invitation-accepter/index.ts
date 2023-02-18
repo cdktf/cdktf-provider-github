@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Allow the ID to be unset. This will result in the resource being skipped when the ID is not set instead of returning an error.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
   */
   readonly allowEmptyId?: boolean | cdktf.IResolvable;
@@ -19,6 +21,8 @@ export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArgumen
   */
   readonly id?: string;
   /**
+  * ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
   */
   readonly invitationId?: string;
@@ -50,7 +54,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
       terraformResourceType: 'github_user_invitation_accepter',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

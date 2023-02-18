@@ -8,50 +8,74 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
+  *  Whether or not advanced security is enabled for new repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#advanced_security_enabled_for_new_repositories OrganizationSettings#advanced_security_enabled_for_new_repositories}
   */
   readonly advancedSecurityEnabledForNewRepositories?: boolean | cdktf.IResolvable;
   /**
+  * The billing email address for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#billing_email OrganizationSettings#billing_email}
   */
   readonly billingEmail: string;
   /**
+  * The blog URL for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#blog OrganizationSettings#blog}
   */
   readonly blog?: string;
   /**
+  * The company name for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#company OrganizationSettings#company}
   */
   readonly company?: string;
   /**
+  * The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#default_repository_permission OrganizationSettings#default_repository_permission}
   */
   readonly defaultRepositoryPermission?: string;
   /**
+  * Whether or not dependabot alerts are enabled for new repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependabot_alerts_enabled_for_new_repositories OrganizationSettings#dependabot_alerts_enabled_for_new_repositories}
   */
   readonly dependabotAlertsEnabledForNewRepositories?: boolean | cdktf.IResolvable;
   /**
+  *  Whether or not dependabot security updates are enabled for new repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependabot_security_updates_enabled_for_new_repositories OrganizationSettings#dependabot_security_updates_enabled_for_new_repositories}
   */
   readonly dependabotSecurityUpdatesEnabledForNewRepositories?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not dependency graph is enabled for new repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependency_graph_enabled_for_new_repositories OrganizationSettings#dependency_graph_enabled_for_new_repositories}
   */
   readonly dependencyGraphEnabledForNewRepositories?: boolean | cdktf.IResolvable;
   /**
+  * The description for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#description OrganizationSettings#description}
   */
   readonly description?: string;
   /**
+  * The email address for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#email OrganizationSettings#email}
   */
   readonly email?: string;
   /**
+  * Whether or not organization projects are enabled for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#has_organization_projects OrganizationSettings#has_organization_projects}
   */
   readonly hasOrganizationProjects?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not repository projects are enabled for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#has_repository_projects OrganizationSettings#has_repository_projects}
   */
   readonly hasRepositoryProjects?: boolean | cdktf.IResolvable;
@@ -63,60 +87,86 @@ export interface OrganizationSettingsConfig extends cdktf.TerraformMetaArguments
   */
   readonly id?: string;
   /**
+  * The location for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#location OrganizationSettings#location}
   */
   readonly location?: string;
   /**
-  * Setting to true allows organization members to create internal repositories. Only available to Enterprise Organizations.
+  * Whether or not organization members can create new internal repositories. For Enterprise Organizations only.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_internal_repositories OrganizationSettings#members_can_create_internal_repositories}
   */
   readonly membersCanCreateInternalRepositories?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not organization members can create new pages.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_pages OrganizationSettings#members_can_create_pages}
   */
   readonly membersCanCreatePages?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not organization members can create new private pages.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_private_pages OrganizationSettings#members_can_create_private_pages}
   */
   readonly membersCanCreatePrivatePages?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not organization members can create new private repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_private_repositories OrganizationSettings#members_can_create_private_repositories}
   */
   readonly membersCanCreatePrivateRepositories?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not organization members can create new public pages.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_public_pages OrganizationSettings#members_can_create_public_pages}
   */
   readonly membersCanCreatePublicPages?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not organization members can create new public repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_public_repositories OrganizationSettings#members_can_create_public_repositories}
   */
   readonly membersCanCreatePublicRepositories?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not organization members can create new repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_repositories OrganizationSettings#members_can_create_repositories}
   */
   readonly membersCanCreateRepositories?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not organization members can fork private repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_fork_private_repositories OrganizationSettings#members_can_fork_private_repositories}
   */
   readonly membersCanForkPrivateRepositories?: boolean | cdktf.IResolvable;
   /**
+  * The name for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#name OrganizationSettings#name}
   */
   readonly name?: string;
   /**
+  * Whether or not secret scanning is enabled for new repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#secret_scanning_enabled_for_new_repositories OrganizationSettings#secret_scanning_enabled_for_new_repositories}
   */
   readonly secretScanningEnabledForNewRepositories?: boolean | cdktf.IResolvable;
   /**
+  * Whether or not secret scanning push protection is enabled for new repositories.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#secret_scanning_push_protection_enabled_for_new_repositories OrganizationSettings#secret_scanning_push_protection_enabled_for_new_repositories}
   */
   readonly secretScanningPushProtectionEnabledForNewRepositories?: boolean | cdktf.IResolvable;
   /**
+  * The Twitter username for the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#twitter_username OrganizationSettings#twitter_username}
   */
   readonly twitterUsername?: string;
   /**
+  * Whether or not commit signatures are required for commits to the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#web_commit_signoff_required OrganizationSettings#web_commit_signoff_required}
   */
   readonly webCommitSignoffRequired?: boolean | cdktf.IResolvable;
@@ -148,7 +198,7 @@ export class OrganizationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_settings',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
