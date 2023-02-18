@@ -8,18 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryPullRequestConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Name of the branch serving as the base of the Pull Request.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#base_ref RepositoryPullRequest#base_ref}
   */
   readonly baseRef: string;
   /**
+  * Name of the base repository to retrieve the Pull Requests from.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#base_repository RepositoryPullRequest#base_repository}
   */
   readonly baseRepository: string;
   /**
+  * Body of the Pull Request.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#body RepositoryPullRequest#body}
   */
   readonly body?: string;
   /**
+  * Name of the branch serving as the head of the Pull Request.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#head_ref RepositoryPullRequest#head_ref}
   */
   readonly headRef: string;
@@ -31,14 +39,20 @@ export interface RepositoryPullRequestConfig extends cdktf.TerraformMetaArgument
   */
   readonly id?: string;
   /**
+  * Controls whether the base repository maintainers can modify the Pull Request. Default: 'false'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}
   */
   readonly maintainerCanModify?: boolean | cdktf.IResolvable;
   /**
+  * Owner of the repository. If not provided, the provider's default owner is used.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#owner RepositoryPullRequest#owner}
   */
   readonly owner?: string;
   /**
+  * The title of the Pull Request.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#title RepositoryPullRequest#title}
   */
   readonly title: string;
@@ -70,7 +84,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_pull_request',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

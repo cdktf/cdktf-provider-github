@@ -8,18 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface EnterpriseOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
+  * List of organization owner usernames.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
   */
   readonly adminLogins: string[];
   /**
+  * The billing email address.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
   */
   readonly billingEmail: string;
   /**
+  * The description of the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#description EnterpriseOrganization#description}
   */
   readonly description?: string;
   /**
+  * The ID of the enterprise.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
   */
   readonly enterpriseId: string;
@@ -31,6 +39,8 @@ export interface EnterpriseOrganizationConfig extends cdktf.TerraformMetaArgumen
   */
   readonly id?: string;
   /**
+  * The name of the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#name EnterpriseOrganization#name}
   */
   readonly name: string;
@@ -62,7 +72,7 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'github_enterprise_organization',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

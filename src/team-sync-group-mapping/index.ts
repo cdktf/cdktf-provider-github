@@ -15,6 +15,8 @@ export interface TeamSyncGroupMappingConfig extends cdktf.TerraformMetaArguments
   */
   readonly id?: string;
   /**
+  * Slug of the team.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}
   */
   readonly teamSlug: string;
@@ -27,14 +29,20 @@ export interface TeamSyncGroupMappingConfig extends cdktf.TerraformMetaArguments
 }
 export interface TeamSyncGroupMappingGroup {
   /**
+  * The description of the IdP group.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_description TeamSyncGroupMapping#group_description}
   */
   readonly groupDescription: string;
   /**
+  * The ID of the IdP group.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_id TeamSyncGroupMapping#group_id}
   */
   readonly groupId: string;
   /**
+  * The name of the IdP group.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_name TeamSyncGroupMapping#group_name}
   */
   readonly groupName: string;
@@ -194,7 +202,7 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_sync_group_mapping',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

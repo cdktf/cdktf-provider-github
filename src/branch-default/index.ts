@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface BranchDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The branch (e.g. 'main').
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#branch BranchDefault#branch}
   */
   readonly branch: string;
@@ -19,10 +21,14 @@ export interface BranchDefaultConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#rename BranchDefault#rename}
   */
   readonly rename?: boolean | cdktf.IResolvable;
   /**
+  * The GitHub repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#repository BranchDefault#repository}
   */
   readonly repository: string;
@@ -54,7 +60,7 @@ export class BranchDefault extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_default',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

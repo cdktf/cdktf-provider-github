@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DependabotSecretConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Encrypted value of the secret using the GitHub public key in Base64 format.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#encrypted_value DependabotSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
@@ -19,14 +21,20 @@ export interface DependabotSecretConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Plaintext value of the secret to be encrypted.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#plaintext_value DependabotSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
+  * Name of the repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#repository DependabotSecret#repository}
   */
   readonly repository: string;
   /**
+  * Name of the secret.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#secret_name DependabotSecret#secret_name}
   */
   readonly secretName: string;
@@ -58,7 +66,7 @@ export class DependabotSecret extends cdktf.TerraformResource {
       terraformResourceType: 'github_dependabot_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

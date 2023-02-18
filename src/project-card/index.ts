@@ -8,14 +8,20 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectCardConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The ID of the project column.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}
   */
   readonly columnId: string;
   /**
+  * 'github_issue.issue_id'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}
   */
   readonly contentId?: number;
   /**
+  * Must be either 'Issue' or 'PullRequest'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}
   */
   readonly contentType?: string;
@@ -27,6 +33,8 @@ export interface ProjectCardConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The note contents of the card. Markdown supported.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}
   */
   readonly note?: string;
@@ -58,7 +66,7 @@ export class ProjectCard extends cdktf.TerraformResource {
       terraformResourceType: 'github_project_card',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

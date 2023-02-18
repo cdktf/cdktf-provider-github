@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsRepositoryAccessLevelConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Where the actions or reusable workflows of the repository may be used. Possible values are 'none', 'user', 'organization', or 'enterprise'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
   */
   readonly accessLevel: string;
@@ -19,6 +21,8 @@ export interface ActionsRepositoryAccessLevelConfig extends cdktf.TerraformMetaA
   */
   readonly id?: string;
   /**
+  * The GitHub repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
   */
   readonly repository: string;
@@ -50,7 +54,7 @@ export class ActionsRepositoryAccessLevel extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_repository_access_level',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -15,18 +15,26 @@ export interface RepositoryCollaboratorConfig extends cdktf.TerraformMetaArgumen
   */
   readonly id?: string;
   /**
+  * The permission of the outside collaborator for the repository. Must be one of 'pull', 'push', 'maintain', 'triage' or 'admin' or the name of an existing custom repository role within the organization for organization-owned repositories. Must be 'push' for personal repositories. Defaults to 'push'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission RepositoryCollaborator#permission}
   */
   readonly permission?: string;
   /**
+  * Suppress plan diffs for triage and maintain. Defaults to 'false'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
   */
   readonly permissionDiffSuppression?: boolean | cdktf.IResolvable;
   /**
+  * The GitHub repository
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#repository RepositoryCollaborator#repository}
   */
   readonly repository: string;
   /**
+  * The user to add to the repository as a collaborator.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#username RepositoryCollaborator#username}
   */
   readonly username: string;
@@ -58,7 +66,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_collaborator',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -15,10 +15,14 @@ export interface DependabotOrganizationSecretRepositoriesConfig extends cdktf.Te
   */
   readonly id?: string;
   /**
+  * Name of the existing secret.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
   */
   readonly secretName: string;
   /**
+  * An array of repository ids that can access the organization secret.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
   */
   readonly selectedRepositoryIds: number[];
@@ -50,7 +54,7 @@ export class DependabotOrganizationSecretRepositories extends cdktf.TerraformRes
       terraformResourceType: 'github_dependabot_organization_secret_repositories',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -8,12 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface IssueConfig extends cdktf.TerraformMetaArguments {
   /**
-  * List of Logins for Users to assign to this issue
+  * List of Logins to assign to the issue.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#assignees Issue#assignees}
   */
   readonly assignees?: string[];
   /**
+  * Body of the issue.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#body Issue#body}
   */
   readonly body?: string;
@@ -25,20 +27,26 @@ export interface IssueConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
-  * List of names of labels on the issue
+  * List of labels to attach to the issue.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#labels Issue#labels}
   */
   readonly labels?: string[];
   /**
+  * Milestone number to assign to the issue.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#milestone_number Issue#milestone_number}
   */
   readonly milestoneNumber?: number;
   /**
+  * The GitHub repository name.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#repository Issue#repository}
   */
   readonly repository: string;
   /**
+  * Title of the issue.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#title Issue#title}
   */
   readonly title: string;
@@ -70,7 +78,7 @@ export class Issue extends cdktf.TerraformResource {
       terraformResourceType: 'github_issue',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

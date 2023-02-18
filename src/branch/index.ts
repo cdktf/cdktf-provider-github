@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface BranchConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The repository branch to create.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#branch Branch#branch}
   */
   readonly branch: string;
@@ -19,14 +21,20 @@ export interface BranchConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The GitHub repository name.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#repository Branch#repository}
   */
   readonly repository: string;
   /**
+  * The branch name to start from. Defaults to 'main'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_branch Branch#source_branch}
   */
   readonly sourceBranch?: string;
   /**
+  * The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_sha Branch#source_sha}
   */
   readonly sourceSha?: string;
@@ -58,7 +66,7 @@ export class Branch extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

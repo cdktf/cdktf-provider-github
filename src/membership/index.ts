@@ -15,10 +15,14 @@ export interface MembershipConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The role of the user within the organization. Must be one of 'member' or 'admin'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#role Membership#role}
   */
   readonly role?: string;
   /**
+  * The user to add to the organization.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#username Membership#username}
   */
   readonly username: string;
@@ -50,7 +54,7 @@ export class Membership extends cdktf.TerraformResource {
       terraformResourceType: 'github_membership',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

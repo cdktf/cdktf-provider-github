@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationWebhookConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Indicate if the webhook should receive events.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#active OrganizationWebhook#active}
   */
   readonly active?: boolean | cdktf.IResolvable;
   /**
+  * A list of events which should trigger the webhook.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#events OrganizationWebhook#events}
   */
   readonly events: string[];
@@ -35,18 +39,26 @@ export interface OrganizationWebhookConfig extends cdktf.TerraformMetaArguments 
 }
 export interface OrganizationWebhookConfiguration {
   /**
+  * The content type for the payload. Valid values are either 'form' or 'json'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#content_type OrganizationWebhook#content_type}
   */
   readonly contentType?: string;
   /**
+  * Insecure SSL boolean toggle. Defaults to 'false'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}
   */
   readonly insecureSsl?: boolean | cdktf.IResolvable;
   /**
+  * The shared secret for the webhook
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#secret OrganizationWebhook#secret}
   */
   readonly secret?: string;
   /**
+  * The URL of the webhook.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#url OrganizationWebhook#url}
   */
   readonly url: string;
@@ -203,7 +215,7 @@ export class OrganizationWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_webhook',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

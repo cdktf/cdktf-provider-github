@@ -333,12 +333,12 @@ new actionsEnvironmentSecret.ActionsEnvironmentSecret(scope: Construct, id: stri
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **environment** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#environment ActionsEnvironmentSecret#environment}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#repository ActionsEnvironmentSecret#repository}. 
-  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#secret_name ActionsEnvironmentSecret#secret_name}. 
-  * **encryptedValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#encrypted_value ActionsEnvironmentSecret#encrypted_value}. __*Optional*__
+  * **environment** (<code>string</code>)  Name of the environment. 
+  * **repository** (<code>string</code>)  Name of the repository. 
+  * **secretName** (<code>string</code>)  Name of the secret. 
+  * **encryptedValue** (<code>string</code>)  Encrypted value of the secret using the GitHub public key in Base64 format. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#id ActionsEnvironmentSecret#id}. __*Optional*__
-  * **plaintextValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#plaintext_value ActionsEnvironmentSecret#plaintext_value}. __*Optional*__
+  * **plaintextValue** (<code>string</code>)  Plaintext value of the secret to be encrypted. __*Optional*__
 
 
 
@@ -444,7 +444,7 @@ new actionsOrganizationOidcSubjectClaimCustomizationTemplate.ActionsOrganization
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **includeClaimKeys** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_oidc_subject_claim_customization_template#include_claim_keys ActionsOrganizationOidcSubjectClaimCustomizationTemplate#include_claim_keys}. 
+  * **includeClaimKeys** (<code>Array<string></code>)  A list of OpenID Connect claims. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_oidc_subject_claim_customization_template#id ActionsOrganizationOidcSubjectClaimCustomizationTemplate#id}. __*Optional*__
 
 
@@ -517,8 +517,8 @@ new actionsOrganizationPermissions.ActionsOrganizationPermissions(scope: Constru
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **enabledRepositories** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}. 
-  * **allowedActions** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}. __*Optional*__
+  * **enabledRepositories** (<code>string</code>)  The policy that controls the repositories in the organization that are allowed to run GitHub Actions. 
+  * **allowedActions** (<code>string</code>)  The permissions policy that controls the actions that are allowed to run. __*Optional*__
   * **allowedActionsConfig** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)</code>)  allowed_actions_config block. __*Optional*__
   * **enabledRepositoriesConfig** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  enabled_repositories_config block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#id ActionsOrganizationPermissions#id}. __*Optional*__
@@ -554,9 +554,9 @@ putAllowedActionsConfig(value: ActionsOrganizationPermissionsAllowedActionsConfi
 ```
 
 * **value** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)</code>)  *No description*
-  * **githubOwnedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}. 
-  * **patternsAllowed** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}. __*Optional*__
-  * **verifiedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}. __*Optional*__
+  * **githubOwnedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether GitHub-owned actions are allowed in the organization. 
+  * **patternsAllowed** (<code>Array<string></code>)  Specifies a list of string-matching patterns to allow specific action(s). __*Optional*__
+  * **verifiedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether actions in GitHub Marketplace from verified creators are allowed. __*Optional*__
 
 
 
@@ -570,7 +570,7 @@ putEnabledRepositoriesConfig(value: ActionsOrganizationPermissionsEnabledReposit
 ```
 
 * **value** (<code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsenabledrepositoriesconfig)</code>)  *No description*
-  * **repositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}. 
+  * **repositoryIds** (<code>Array<number></code>)  List of repository IDs to enable for GitHub Actions. 
 
 
 
@@ -764,12 +764,12 @@ new actionsOrganizationSecret.ActionsOrganizationSecret(scope: Construct, id: st
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#secret_name ActionsOrganizationSecret#secret_name}. 
-  * **visibility** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#visibility ActionsOrganizationSecret#visibility}. 
-  * **encryptedValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#encrypted_value ActionsOrganizationSecret#encrypted_value}. __*Optional*__
+  * **secretName** (<code>string</code>)  Name of the secret. 
+  * **visibility** (<code>string</code>)  Configures the access that repositories have to the organization secret. 
+  * **encryptedValue** (<code>string</code>)  Encrypted value of the secret using the GitHub public key in Base64 format. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#id ActionsOrganizationSecret#id}. __*Optional*__
-  * **plaintextValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#plaintext_value ActionsOrganizationSecret#plaintext_value}. __*Optional*__
-  * **selectedRepositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#selected_repository_ids ActionsOrganizationSecret#selected_repository_ids}. __*Optional*__
+  * **plaintextValue** (<code>string</code>)  Plaintext value of the secret to be encrypted. __*Optional*__
+  * **selectedRepositoryIds** (<code>Array<number></code>)  An array of repository ids that can access the organization secret. __*Optional*__
 
 
 
@@ -887,8 +887,8 @@ new actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories(
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#secret_name ActionsOrganizationSecretRepositories#secret_name}. 
-  * **selectedRepositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#selected_repository_ids ActionsOrganizationSecretRepositories#selected_repository_ids}. 
+  * **secretName** (<code>string</code>)  Name of the existing secret. 
+  * **selectedRepositoryIds** (<code>Array<number></code>)  An array of repository ids that can access the organization secret. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#id ActionsOrganizationSecretRepositories#id}. __*Optional*__
 
 
@@ -963,8 +963,8 @@ new actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel(scope: Construct, 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **accessLevel** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}. 
+  * **accessLevel** (<code>string</code>)  Where the actions or reusable workflows of the repository may be used. 
+  * **repository** (<code>string</code>)  The GitHub repository. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}. __*Optional*__
 
 
@@ -1039,10 +1039,10 @@ new actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidc
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#repository ActionsRepositoryOidcSubjectClaimCustomizationTemplate#repository}. 
-  * **useDefault** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#use_default ActionsRepositoryOidcSubjectClaimCustomizationTemplate#use_default}. 
+  * **repository** (<code>string</code>)  The name of the repository. 
+  * **useDefault** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether to use the default template or not. If 'true', 'include_claim_keys' must not be set. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#id ActionsRepositoryOidcSubjectClaimCustomizationTemplate#id}. __*Optional*__
-  * **includeClaimKeys** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#include_claim_keys ActionsRepositoryOidcSubjectClaimCustomizationTemplate#include_claim_keys}. __*Optional*__
+  * **includeClaimKeys** (<code>Array<string></code>)  A list of OpenID Connect claims. __*Optional*__
 
 
 
@@ -1130,10 +1130,10 @@ new actionsRepositoryPermissions.ActionsRepositoryPermissions(scope: Construct, 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#repository ActionsRepositoryPermissions#repository}. 
-  * **allowedActions** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#allowed_actions ActionsRepositoryPermissions#allowed_actions}. __*Optional*__
+  * **repository** (<code>string</code>)  The GitHub repository. 
+  * **allowedActions** (<code>string</code>)  The permissions policy that controls the actions that are allowed to run. __*Optional*__
   * **allowedActionsConfig** (<code>[actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissionsallowedactionsconfig)</code>)  allowed_actions_config block. __*Optional*__
-  * **enabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#enabled ActionsRepositoryPermissions#enabled}. __*Optional*__
+  * **enabled** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Should GitHub actions be enabled on this repository. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#id ActionsRepositoryPermissions#id}. __*Optional*__
 
 
@@ -1167,9 +1167,9 @@ putAllowedActionsConfig(value: ActionsRepositoryPermissionsAllowedActionsConfig)
 ```
 
 * **value** (<code>[actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissionsallowedactionsconfig)</code>)  *No description*
-  * **githubOwnedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#github_owned_allowed ActionsRepositoryPermissions#github_owned_allowed}. 
-  * **patternsAllowed** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#patterns_allowed ActionsRepositoryPermissions#patterns_allowed}. __*Optional*__
-  * **verifiedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#verified_allowed ActionsRepositoryPermissions#verified_allowed}. __*Optional*__
+  * **githubOwnedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether GitHub-owned actions are allowed in the repository. 
+  * **patternsAllowed** (<code>Array<string></code>)  Specifies a list of string-matching patterns to allow specific action(s). __*Optional*__
+  * **verifiedAllowed** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether actions in GitHub Marketplace from verified creators are allowed. __*Optional*__
 
 
 
@@ -1329,10 +1329,10 @@ new actionsRunnerGroup.ActionsRunnerGroup(scope: Construct, id: string, config: 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#name ActionsRunnerGroup#name}. 
-  * **visibility** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#visibility ActionsRunnerGroup#visibility}. 
+  * **name** (<code>string</code>)  Name of the runner group. 
+  * **visibility** (<code>string</code>)  The visibility of the runner group. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#id ActionsRunnerGroup#id}. __*Optional*__
-  * **selectedRepositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}. __*Optional*__
+  * **selectedRepositoryIds** (<code>Array<number></code>)  List of repository IDs that can access the runner group. __*Optional*__
 
 
 
@@ -1428,11 +1428,11 @@ new actionsSecret.ActionsSecret(scope: Construct, id: string, config: ActionsSec
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#repository ActionsSecret#repository}. 
-  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#secret_name ActionsSecret#secret_name}. 
-  * **encryptedValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#encrypted_value ActionsSecret#encrypted_value}. __*Optional*__
+  * **repository** (<code>string</code>)  Name of the repository. 
+  * **secretName** (<code>string</code>)  Name of the secret. 
+  * **encryptedValue** (<code>string</code>)  Encrypted value of the secret using the GitHub public key in Base64 format. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#id ActionsSecret#id}. __*Optional*__
-  * **plaintextValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#plaintext_value ActionsSecret#plaintext_value}. __*Optional*__
+  * **plaintextValue** (<code>string</code>)  Plaintext value of the secret to be encrypted. __*Optional*__
 
 
 
@@ -1536,8 +1536,8 @@ new appInstallationRepositories.AppInstallationRepositories(scope: Construct, id
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **installationId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}. 
-  * **selectedRepositories** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}. 
+  * **installationId** (<code>string</code>)  The GitHub app installation id. 
+  * **selectedRepositories** (<code>Array<string></code>)  A list of repository names to install the app on. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#id AppInstallationRepositories#id}. __*Optional*__
 
 
@@ -1612,8 +1612,8 @@ new appInstallationRepository.AppInstallationRepository(scope: Construct, id: st
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **installationId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#installation_id AppInstallationRepository#installation_id}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#repository AppInstallationRepository#repository}. 
+  * **installationId** (<code>string</code>)  The GitHub app installation id. 
+  * **repository** (<code>string</code>)  The repository to install the app on. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#id AppInstallationRepository#id}. __*Optional*__
 
 
@@ -1689,11 +1689,11 @@ new branch.Branch(scope: Construct, id: string, config: BranchConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#branch Branch#branch}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#repository Branch#repository}. 
+  * **branch** (<code>string</code>)  The repository branch to create. 
+  * **repository** (<code>string</code>)  The GitHub repository name. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#id Branch#id}. __*Optional*__
-  * **sourceBranch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_branch Branch#source_branch}. __*Optional*__
-  * **sourceSha** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_sha Branch#source_sha}. __*Optional*__
+  * **sourceBranch** (<code>string</code>)  The branch name to start from. Defaults to 'main'. __*Optional*__
+  * **sourceSha** (<code>string</code>)  The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored. __*Optional*__
 
 
 
@@ -1798,10 +1798,10 @@ new branchDefault.BranchDefault(scope: Construct, id: string, config: BranchDefa
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#branch BranchDefault#branch}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#repository BranchDefault#repository}. 
+  * **branch** (<code>string</code>)  The branch (e.g. 'main'). 
+  * **repository** (<code>string</code>)  The GitHub repository. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#id BranchDefault#id}. __*Optional*__
-  * **rename** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#rename BranchDefault#rename}. __*Optional*__
+  * **rename** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'. __*Optional*__
 
 
 
@@ -1889,20 +1889,20 @@ new branchProtection.BranchProtection(scope: Construct, id: string, config: Bran
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **pattern** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pattern BranchProtection#pattern}. 
-  * **repositoryId** (<code>string</code>)  Node ID or name of repository. 
-  * **allowsDeletions** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_deletions BranchProtection#allows_deletions}. __*Optional*__
-  * **allowsForcePushes** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}. __*Optional*__
-  * **blocksCreations** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#blocks_creations BranchProtection#blocks_creations}. __*Optional*__
-  * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#enforce_admins BranchProtection#enforce_admins}. __*Optional*__
+  * **pattern** (<code>string</code>)  Identifies the protection rule pattern. 
+  * **repositoryId** (<code>string</code>)  The name or node ID of the repository associated with this branch protection rule. 
+  * **allowsDeletions** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' to allow the branch to be deleted. __*Optional*__
+  * **allowsForcePushes** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' to allow force pushes on the branch. __*Optional*__
+  * **blocksCreations** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' to block creating the branch. __*Optional*__
+  * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' enforces status checks for repository administrators. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#id BranchProtection#id}. __*Optional*__
-  * **lockBranch** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#lock_branch BranchProtection#lock_branch}. __*Optional*__
-  * **pushRestrictions** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#push_restrictions BranchProtection#push_restrictions}. __*Optional*__
-  * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}. __*Optional*__
-  * **requiredLinearHistory** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_linear_history BranchProtection#required_linear_history}. __*Optional*__
+  * **lockBranch** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' will make the branch read-only and preventing any pushes to it. __*Optional*__
+  * **pushRestrictions** (<code>Array<string></code>)  The list of actor Names/IDs that may push to the branch. __*Optional*__
+  * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. __*Optional*__
+  * **requiredLinearHistory** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch. __*Optional*__
   * **requiredPullRequestReviews** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews)></code>)  required_pull_request_reviews block. __*Optional*__
   * **requiredStatusChecks** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks)></code>)  required_status_checks block. __*Optional*__
-  * **requireSignedCommits** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_signed_commits BranchProtection#require_signed_commits}. __*Optional*__
+  * **requireSignedCommits** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' requires all commits to be signed with GPG. __*Optional*__
 
 
 
@@ -2460,14 +2460,14 @@ new branchProtectionV3.BranchProtectionV3(scope: Construct, id: string, config: 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#branch BranchProtectionV3#branch}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#repository BranchProtectionV3#repository}. 
-  * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#enforce_admins BranchProtectionV3#enforce_admins}. __*Optional*__
+  * **branch** (<code>string</code>)  The Git branch to protect. 
+  * **repository** (<code>string</code>)  The GitHub repository name. 
+  * **enforceAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' enforces status checks for repository administrators. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#id BranchProtectionV3#id}. __*Optional*__
-  * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}. __*Optional*__
+  * **requireConversationResolution** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. __*Optional*__
   * **requiredPullRequestReviews** (<code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)</code>)  required_pull_request_reviews block. __*Optional*__
   * **requiredStatusChecks** (<code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code>)  required_status_checks block. __*Optional*__
-  * **requireSignedCommits** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_signed_commits BranchProtectionV3#require_signed_commits}. __*Optional*__
+  * **requireSignedCommits** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting this to 'true' requires all commits to be signed with GPG. __*Optional*__
   * **restrictions** (<code>[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)</code>)  restrictions block. __*Optional*__
 
 
@@ -2510,12 +2510,12 @@ putRequiredPullRequestReviews(value: BranchProtectionV3RequiredPullRequestReview
 ```
 
 * **value** (<code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)</code>)  *No description*
-  * **dismissalTeams** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismissal_teams BranchProtectionV3#dismissal_teams}. __*Optional*__
-  * **dismissalUsers** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismissal_users BranchProtectionV3#dismissal_users}. __*Optional*__
-  * **dismissStaleReviews** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismiss_stale_reviews BranchProtectionV3#dismiss_stale_reviews}. __*Optional*__
+  * **dismissalTeams** (<code>Array<string></code>)  The list of team slugs with dismissal access. __*Optional*__
+  * **dismissalUsers** (<code>Array<string></code>)  The list of user logins with dismissal access. __*Optional*__
+  * **dismissStaleReviews** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Dismiss approved reviews automatically when a new commit is pushed. __*Optional*__
   * **includeAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#include_admins BranchProtectionV3#include_admins}. __*Optional*__
-  * **requireCodeOwnerReviews** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_code_owner_reviews BranchProtectionV3#require_code_owner_reviews}. __*Optional*__
-  * **requiredApprovingReviewCount** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#required_approving_review_count BranchProtectionV3#required_approving_review_count}. __*Optional*__
+  * **requireCodeOwnerReviews** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Require an approved review in pull requests including files with a designated code owner. __*Optional*__
+  * **requiredApprovingReviewCount** (<code>number</code>)  Require 'x' number of approvals to satisfy branch protection requirements. __*Optional*__
 
 
 
@@ -2529,10 +2529,10 @@ putRequiredStatusChecks(value: BranchProtectionV3RequiredStatusChecks): void
 ```
 
 * **value** (<code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code>)  *No description*
-  * **checks** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#checks BranchProtectionV3#checks}. __*Optional*__
+  * **checks** (<code>Array<string></code>)  The list of status checks to require in order to merge into this branch. __*Optional*__
   * **contexts** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#contexts BranchProtectionV3#contexts}. __*Optional*__
   * **includeAdmins** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#include_admins BranchProtectionV3#include_admins}. __*Optional*__
-  * **strict** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#strict BranchProtectionV3#strict}. __*Optional*__
+  * **strict** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Require branches to be up to date before merging. __*Optional*__
 
 
 
@@ -2546,9 +2546,9 @@ putRestrictions(value: BranchProtectionV3Restrictions): void
 ```
 
 * **value** (<code>[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)</code>)  *No description*
-  * **apps** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#apps BranchProtectionV3#apps}. __*Optional*__
-  * **teams** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#teams BranchProtectionV3#teams}. __*Optional*__
-  * **users** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#users BranchProtectionV3#users}. __*Optional*__
+  * **apps** (<code>Array<string></code>)  The list of app slugs with push access. __*Optional*__
+  * **teams** (<code>Array<string></code>)  The list of team slugs with push access. __*Optional*__
+  * **users** (<code>Array<string></code>)  The list of user logins with push access. __*Optional*__
 
 
 
@@ -8223,12 +8223,12 @@ new dependabotOrganizationSecret.DependabotOrganizationSecret(scope: Construct, 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#secret_name DependabotOrganizationSecret#secret_name}. 
-  * **visibility** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#visibility DependabotOrganizationSecret#visibility}. 
-  * **encryptedValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#encrypted_value DependabotOrganizationSecret#encrypted_value}. __*Optional*__
+  * **secretName** (<code>string</code>)  Name of the secret. 
+  * **visibility** (<code>string</code>)  Configures the access that repositories have to the organization secret. 
+  * **encryptedValue** (<code>string</code>)  Encrypted value of the secret using the GitHub public key in Base64 format. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#id DependabotOrganizationSecret#id}. __*Optional*__
-  * **plaintextValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#plaintext_value DependabotOrganizationSecret#plaintext_value}. __*Optional*__
-  * **selectedRepositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#selected_repository_ids DependabotOrganizationSecret#selected_repository_ids}. __*Optional*__
+  * **plaintextValue** (<code>string</code>)  Plaintext value of the secret to be encrypted. __*Optional*__
+  * **selectedRepositoryIds** (<code>Array<number></code>)  An array of repository ids that can access the organization secret. __*Optional*__
 
 
 
@@ -8346,8 +8346,8 @@ new dependabotOrganizationSecretRepositories.DependabotOrganizationSecretReposit
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}. 
-  * **selectedRepositoryIds** (<code>Array<number></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}. 
+  * **secretName** (<code>string</code>)  Name of the existing secret. 
+  * **selectedRepositoryIds** (<code>Array<number></code>)  An array of repository ids that can access the organization secret. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. __*Optional*__
 
 
@@ -8422,11 +8422,11 @@ new dependabotSecret.DependabotSecret(scope: Construct, id: string, config: Depe
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#repository DependabotSecret#repository}. 
-  * **secretName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#secret_name DependabotSecret#secret_name}. 
-  * **encryptedValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#encrypted_value DependabotSecret#encrypted_value}. __*Optional*__
+  * **repository** (<code>string</code>)  Name of the repository. 
+  * **secretName** (<code>string</code>)  Name of the secret. 
+  * **encryptedValue** (<code>string</code>)  Encrypted value of the secret using the GitHub public key in Base64 format. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#id DependabotSecret#id}. __*Optional*__
-  * **plaintextValue** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#plaintext_value DependabotSecret#plaintext_value}. __*Optional*__
+  * **plaintextValue** (<code>string</code>)  Plaintext value of the secret to be encrypted. __*Optional*__
 
 
 
@@ -8530,8 +8530,8 @@ new emuGroupMapping.EmuGroupMapping(scope: Construct, id: string, config: EmuGro
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **groupId** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#group_id EmuGroupMapping#group_id}. 
-  * **teamSlug** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#team_slug EmuGroupMapping#team_slug}. 
+  * **groupId** (<code>number</code>)  Integer corresponding to the external group ID to be linked. 
+  * **teamSlug** (<code>string</code>)  Slug of the GitHub team. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#id EmuGroupMapping#id}. __*Optional*__
 
 
@@ -8607,11 +8607,11 @@ new enterpriseOrganization.EnterpriseOrganization(scope: Construct, id: string, 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **adminLogins** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}. 
-  * **billingEmail** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#billing_email EnterpriseOrganization#billing_email}. 
-  * **enterpriseId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}. 
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#name EnterpriseOrganization#name}. 
-  * **description** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#description EnterpriseOrganization#description}. __*Optional*__
+  * **adminLogins** (<code>Array<string></code>)  List of organization owner usernames. 
+  * **billingEmail** (<code>string</code>)  The billing email address. 
+  * **enterpriseId** (<code>string</code>)  The ID of the enterprise. 
+  * **name** (<code>string</code>)  The name of the organization. 
+  * **description** (<code>string</code>)  The description of the organization. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#id EnterpriseOrganization#id}. __*Optional*__
 
 
@@ -8704,13 +8704,13 @@ new issue.Issue(scope: Construct, id: string, config: IssueConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#repository Issue#repository}. 
-  * **title** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#title Issue#title}. 
-  * **assignees** (<code>Array<string></code>)  List of Logins for Users to assign to this issue. __*Optional*__
-  * **body** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#body Issue#body}. __*Optional*__
+  * **repository** (<code>string</code>)  The GitHub repository name. 
+  * **title** (<code>string</code>)  Title of the issue. 
+  * **assignees** (<code>Array<string></code>)  List of Logins to assign to the issue. __*Optional*__
+  * **body** (<code>string</code>)  Body of the issue. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#id Issue#id}. __*Optional*__
-  * **labels** (<code>Array<string></code>)  List of names of labels on the issue. __*Optional*__
-  * **milestoneNumber** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#milestone_number Issue#milestone_number}. __*Optional*__
+  * **labels** (<code>Array<string></code>)  List of labels to attach to the issue. __*Optional*__
+  * **milestoneNumber** (<code>number</code>)  Milestone number to assign to the issue. __*Optional*__
 
 
 
@@ -8843,10 +8843,10 @@ new issueLabel.IssueLabel(scope: Construct, id: string, config: IssueLabelConfig
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **color** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#color IssueLabel#color}. 
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#name IssueLabel#name}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#repository IssueLabel#repository}. 
-  * **description** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#description IssueLabel#description}. __*Optional*__
+  * **color** (<code>string</code>)  A 6 character hex code, without the leading '#', identifying the color of the label. 
+  * **name** (<code>string</code>)  The name of the label. 
+  * **repository** (<code>string</code>)  The GitHub repository. 
+  * **description** (<code>string</code>)  A short description of the label. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#id IssueLabel#id}. __*Optional*__
 
 
@@ -8939,9 +8939,9 @@ new membership.Membership(scope: Construct, id: string, config: MembershipConfig
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **username** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#username Membership#username}. 
+  * **username** (<code>string</code>)  The user to add to the organization. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#id Membership#id}. __*Optional*__
-  * **role** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#role Membership#role}. __*Optional*__
+  * **role** (<code>string</code>)  The role of the user within the organization. Must be one of 'member' or 'admin'. __*Optional*__
 
 
 
@@ -9028,7 +9028,7 @@ new organizationBlock.OrganizationBlock(scope: Construct, id: string, config: Or
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **username** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#username OrganizationBlock#username}. 
+  * **username** (<code>string</code>)  The name of the user to block. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#id OrganizationBlock#id}. __*Optional*__
 
 
@@ -9102,8 +9102,8 @@ new organizationProject.OrganizationProject(scope: Construct, id: string, config
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#name OrganizationProject#name}. 
-  * **body** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#body OrganizationProject#body}. __*Optional*__
+  * **name** (<code>string</code>)  The name of the project. 
+  * **body** (<code>string</code>)  The body of the project. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#id OrganizationProject#id}. __*Optional*__
 
 
@@ -9192,7 +9192,7 @@ new organizationSecurityManager.OrganizationSecurityManager(scope: Construct, id
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **teamSlug** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}. 
+  * **teamSlug** (<code>string</code>)  The slug of the team to manage. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_security_manager#id OrganizationSecurityManager#id}. __*Optional*__
 
 
@@ -9265,33 +9265,33 @@ new organizationSettings.OrganizationSettings(scope: Construct, id: string, conf
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **billingEmail** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#billing_email OrganizationSettings#billing_email}. 
-  * **advancedSecurityEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#advanced_security_enabled_for_new_repositories OrganizationSettings#advanced_security_enabled_for_new_repositories}. __*Optional*__
-  * **blog** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#blog OrganizationSettings#blog}. __*Optional*__
-  * **company** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#company OrganizationSettings#company}. __*Optional*__
-  * **defaultRepositoryPermission** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#default_repository_permission OrganizationSettings#default_repository_permission}. __*Optional*__
-  * **dependabotAlertsEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependabot_alerts_enabled_for_new_repositories OrganizationSettings#dependabot_alerts_enabled_for_new_repositories}. __*Optional*__
-  * **dependabotSecurityUpdatesEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependabot_security_updates_enabled_for_new_repositories OrganizationSettings#dependabot_security_updates_enabled_for_new_repositories}. __*Optional*__
-  * **dependencyGraphEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependency_graph_enabled_for_new_repositories OrganizationSettings#dependency_graph_enabled_for_new_repositories}. __*Optional*__
-  * **description** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#description OrganizationSettings#description}. __*Optional*__
-  * **email** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#email OrganizationSettings#email}. __*Optional*__
-  * **hasOrganizationProjects** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#has_organization_projects OrganizationSettings#has_organization_projects}. __*Optional*__
-  * **hasRepositoryProjects** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#has_repository_projects OrganizationSettings#has_repository_projects}. __*Optional*__
+  * **billingEmail** (<code>string</code>)  The billing email address for the organization. 
+  * **advancedSecurityEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not advanced security is enabled for new repositories. __*Optional*__
+  * **blog** (<code>string</code>)  The blog URL for the organization. __*Optional*__
+  * **company** (<code>string</code>)  The company name for the organization. __*Optional*__
+  * **defaultRepositoryPermission** (<code>string</code>)  The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'. __*Optional*__
+  * **dependabotAlertsEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not dependabot alerts are enabled for new repositories. __*Optional*__
+  * **dependabotSecurityUpdatesEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not dependabot security updates are enabled for new repositories. __*Optional*__
+  * **dependencyGraphEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not dependency graph is enabled for new repositories. __*Optional*__
+  * **description** (<code>string</code>)  The description for the organization. __*Optional*__
+  * **email** (<code>string</code>)  The email address for the organization. __*Optional*__
+  * **hasOrganizationProjects** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization projects are enabled for the organization. __*Optional*__
+  * **hasRepositoryProjects** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not repository projects are enabled for the organization. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#id OrganizationSettings#id}. __*Optional*__
-  * **location** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#location OrganizationSettings#location}. __*Optional*__
-  * **membersCanCreateInternalRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Setting to true allows organization members to create internal repositories. Only available to Enterprise Organizations. __*Optional*__
-  * **membersCanCreatePages** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_pages OrganizationSettings#members_can_create_pages}. __*Optional*__
-  * **membersCanCreatePrivatePages** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_private_pages OrganizationSettings#members_can_create_private_pages}. __*Optional*__
-  * **membersCanCreatePrivateRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_private_repositories OrganizationSettings#members_can_create_private_repositories}. __*Optional*__
-  * **membersCanCreatePublicPages** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_public_pages OrganizationSettings#members_can_create_public_pages}. __*Optional*__
-  * **membersCanCreatePublicRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_public_repositories OrganizationSettings#members_can_create_public_repositories}. __*Optional*__
-  * **membersCanCreateRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_repositories OrganizationSettings#members_can_create_repositories}. __*Optional*__
-  * **membersCanForkPrivateRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_fork_private_repositories OrganizationSettings#members_can_fork_private_repositories}. __*Optional*__
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#name OrganizationSettings#name}. __*Optional*__
-  * **secretScanningEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#secret_scanning_enabled_for_new_repositories OrganizationSettings#secret_scanning_enabled_for_new_repositories}. __*Optional*__
-  * **secretScanningPushProtectionEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#secret_scanning_push_protection_enabled_for_new_repositories OrganizationSettings#secret_scanning_push_protection_enabled_for_new_repositories}. __*Optional*__
-  * **twitterUsername** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#twitter_username OrganizationSettings#twitter_username}. __*Optional*__
-  * **webCommitSignoffRequired** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#web_commit_signoff_required OrganizationSettings#web_commit_signoff_required}. __*Optional*__
+  * **location** (<code>string</code>)  The location for the organization. __*Optional*__
+  * **membersCanCreateInternalRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization members can create new internal repositories. For Enterprise Organizations only. __*Optional*__
+  * **membersCanCreatePages** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization members can create new pages. __*Optional*__
+  * **membersCanCreatePrivatePages** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization members can create new private pages. __*Optional*__
+  * **membersCanCreatePrivateRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization members can create new private repositories. __*Optional*__
+  * **membersCanCreatePublicPages** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization members can create new public pages. __*Optional*__
+  * **membersCanCreatePublicRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization members can create new public repositories. __*Optional*__
+  * **membersCanCreateRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization members can create new repositories. __*Optional*__
+  * **membersCanForkPrivateRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not organization members can fork private repositories. __*Optional*__
+  * **name** (<code>string</code>)  The name for the organization. __*Optional*__
+  * **secretScanningEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not secret scanning is enabled for new repositories. __*Optional*__
+  * **secretScanningPushProtectionEnabledForNewRepositories** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not secret scanning push protection is enabled for new repositories. __*Optional*__
+  * **twitterUsername** (<code>string</code>)  The Twitter username for the organization. __*Optional*__
+  * **webCommitSignoffRequired** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether or not commit signatures are required for commits to the organization. __*Optional*__
 
 
 
@@ -9713,8 +9713,8 @@ new organizationWebhook.OrganizationWebhook(scope: Construct, id: string, config
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **events** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#events OrganizationWebhook#events}. 
-  * **active** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#active OrganizationWebhook#active}. __*Optional*__
+  * **events** (<code>Array<string></code>)  A list of events which should trigger the webhook. 
+  * **active** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Indicate if the webhook should receive events. __*Optional*__
   * **configuration** (<code>[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)</code>)  configuration block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#id OrganizationWebhook#id}. __*Optional*__
   * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#name OrganizationWebhook#name}. __*Optional*__
@@ -9752,10 +9752,10 @@ putConfiguration(value: OrganizationWebhookConfiguration): void
 ```
 
 * **value** (<code>[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)</code>)  *No description*
-  * **url** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#url OrganizationWebhook#url}. 
-  * **contentType** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#content_type OrganizationWebhook#content_type}. __*Optional*__
-  * **insecureSsl** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}. __*Optional*__
-  * **secret** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#secret OrganizationWebhook#secret}. __*Optional*__
+  * **url** (<code>string</code>)  The URL of the webhook. 
+  * **contentType** (<code>string</code>)  The content type for the payload. Valid values are either 'form' or 'json'. __*Optional*__
+  * **insecureSsl** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Insecure SSL boolean toggle. Defaults to 'false'. __*Optional*__
+  * **secret** (<code>string</code>)  The shared secret for the webhook. __*Optional*__
 
 
 
@@ -9929,11 +9929,11 @@ new projectCard.ProjectCard(scope: Construct, id: string, config: ProjectCardCon
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **columnId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}. 
-  * **contentId** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}. __*Optional*__
-  * **contentType** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}. __*Optional*__
+  * **columnId** (<code>string</code>)  The ID of the project column. 
+  * **contentId** (<code>number</code>)  'github_issue.issue_id'. __*Optional*__
+  * **contentType** (<code>string</code>)  Must be either 'Issue' or 'PullRequest'. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}. __*Optional*__
-  * **note** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}. __*Optional*__
+  * **note** (<code>string</code>)  The note contents of the card. Markdown supported. __*Optional*__
 
 
 
@@ -10049,8 +10049,8 @@ new projectColumn.ProjectColumn(scope: Construct, id: string, config: ProjectCol
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#name ProjectColumn#name}. 
-  * **projectId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#project_id ProjectColumn#project_id}. 
+  * **name** (<code>string</code>)  The name of the column. 
+  * **projectId** (<code>string</code>)  The ID of an existing project that the column will be created in. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#id ProjectColumn#id}. __*Optional*__
 
 
@@ -10310,16 +10310,16 @@ new release.Release(scope: Construct, id: string, config: ReleaseConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#repository Release#repository}. 
-  * **tagName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#tag_name Release#tag_name}. 
-  * **body** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#body Release#body}. __*Optional*__
-  * **discussionCategoryName** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#discussion_category_name Release#discussion_category_name}. __*Optional*__
-  * **draft** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#draft Release#draft}. __*Optional*__
-  * **generateReleaseNotes** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#generate_release_notes Release#generate_release_notes}. __*Optional*__
+  * **repository** (<code>string</code>)  The name of the repository. 
+  * **tagName** (<code>string</code>)  The name of the tag. 
+  * **body** (<code>string</code>)  Text describing the contents of the tag. __*Optional*__
+  * **discussionCategoryName** (<code>string</code>)  If specified, a discussion of the specified category is created and linked to the release. __*Optional*__
+  * **draft** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'false' to create a published release. __*Optional*__
+  * **generateReleaseNotes** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to automatically generate the name and body for this release. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#id Release#id}. __*Optional*__
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#name Release#name}. __*Optional*__
-  * **prerelease** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#prerelease Release#prerelease}. __*Optional*__
-  * **targetCommitish** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#target_commitish Release#target_commitish}. __*Optional*__
+  * **name** (<code>string</code>)  The name of the release. __*Optional*__
+  * **prerelease** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'false' to identify the release as a full release. __*Optional*__
+  * **targetCommitish** (<code>string</code>)  The branch name or commit SHA the tag is created from. __*Optional*__
 
 
 
@@ -10492,40 +10492,40 @@ new repository.Repository(scope: Construct, id: string, config: RepositoryConfig
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#name Repository#name}. 
-  * **allowAutoMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_auto_merge Repository#allow_auto_merge}. __*Optional*__
-  * **allowMergeCommit** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_merge_commit Repository#allow_merge_commit}. __*Optional*__
-  * **allowRebaseMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_rebase_merge Repository#allow_rebase_merge}. __*Optional*__
-  * **allowSquashMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_squash_merge Repository#allow_squash_merge}. __*Optional*__
-  * **allowUpdateBranch** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_update_branch Repository#allow_update_branch}. __*Optional*__
-  * **archived** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#archived Repository#archived}. __*Optional*__
-  * **archiveOnDestroy** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#archive_on_destroy Repository#archive_on_destroy}. __*Optional*__
-  * **autoInit** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#auto_init Repository#auto_init}. __*Optional*__
+  * **name** (<code>string</code>)  The name of the repository. 
+  * **allowAutoMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to allow auto-merging pull requests on the repository. __*Optional*__
+  * **allowMergeCommit** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'false' to disable merge commits on the repository. __*Optional*__
+  * **allowRebaseMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'false' to disable rebase merges on the repository. __*Optional*__
+  * **allowSquashMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'false' to disable squash merges on the repository. __*Optional*__
+  * **allowUpdateBranch** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to always suggest updating pull request branches. __*Optional*__
+  * **archived** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving. __*Optional*__
+  * **archiveOnDestroy** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to archive the repository instead of deleting on destroy. __*Optional*__
+  * **autoInit** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to produce an initial commit in the repository. __*Optional*__
   * **defaultBranch** (<code>string</code>)  Can only be set after initial repository creation, and only if the target branch exists. __*Optional*__
-  * **deleteBranchOnMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#delete_branch_on_merge Repository#delete_branch_on_merge}. __*Optional*__
-  * **description** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#description Repository#description}. __*Optional*__
-  * **gitignoreTemplate** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#gitignore_template Repository#gitignore_template}. __*Optional*__
-  * **hasDiscussions** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_discussions Repository#has_discussions}. __*Optional*__
-  * **hasDownloads** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_downloads Repository#has_downloads}. __*Optional*__
-  * **hasIssues** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_issues Repository#has_issues}. __*Optional*__
-  * **hasProjects** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_projects Repository#has_projects}. __*Optional*__
-  * **hasWiki** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_wiki Repository#has_wiki}. __*Optional*__
-  * **homepageUrl** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#homepage_url Repository#homepage_url}. __*Optional*__
+  * **deleteBranchOnMerge** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Automatically delete head branch after a pull request is merged. Defaults to 'false'. __*Optional*__
+  * **description** (<code>string</code>)  A description of the repository. __*Optional*__
+  * **gitignoreTemplate** (<code>string</code>)  Use the name of the template without the extension. For example, 'Haskell'. __*Optional*__
+  * **hasDiscussions** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'. __*Optional*__
+  * **hasDownloads** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to enable the (deprecated) downloads features on the repository. __*Optional*__
+  * **hasIssues** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to enable the GitHub Issues features on the repository. __*Optional*__
+  * **hasProjects** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to enable the GitHub Projects features on the repository. __*Optional*__
+  * **hasWiki** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to enable the GitHub Wiki features on the repository. __*Optional*__
+  * **homepageUrl** (<code>string</code>)  URL of a page describing the project. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#id Repository#id}. __*Optional*__
-  * **ignoreVulnerabilityAlertsDuringRead** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}. __*Optional*__
-  * **isTemplate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#is_template Repository#is_template}. __*Optional*__
-  * **licenseTemplate** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#license_template Repository#license_template}. __*Optional*__
-  * **mergeCommitMessage** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_message Repository#merge_commit_message}. __*Optional*__
-  * **mergeCommitTitle** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_title Repository#merge_commit_title}. __*Optional*__
+  * **ignoreVulnerabilityAlertsDuringRead** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read. __*Optional*__
+  * **isTemplate** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to tell GitHub that this is a template repository. __*Optional*__
+  * **licenseTemplate** (<code>string</code>)  Use the name of the template without the extension. For example, 'mit' or 'mpl-2.0'. __*Optional*__
+  * **mergeCommitMessage** (<code>string</code>)  Can be 'PR_BODY', 'PR_TITLE', or 'BLANK' for a default merge commit message. __*Optional*__
+  * **mergeCommitTitle** (<code>string</code>)  Can be 'PR_TITLE' or 'MERGE_MESSAGE' for a default merge commit title. __*Optional*__
   * **pages** (<code>[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)</code>)  pages block. __*Optional*__
   * **private** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}. __*Optional*__
   * **securityAndAnalysis** (<code>[repository.RepositorySecurityAndAnalysis](#cdktf-provider-github-repository-repositorysecurityandanalysis)</code>)  security_and_analysis block. __*Optional*__
-  * **squashMergeCommitMessage** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}. __*Optional*__
-  * **squashMergeCommitTitle** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}. __*Optional*__
+  * **squashMergeCommitMessage** (<code>string</code>)  Can be 'PR_BODY', 'COMMIT_MESSAGES', or 'BLANK' for a default squash merge commit message. __*Optional*__
+  * **squashMergeCommitTitle** (<code>string</code>)  Can be 'PR_TITLE' or 'COMMIT_OR_PR_TITLE' for a default squash merge commit title. __*Optional*__
   * **template** (<code>[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)</code>)  template block. __*Optional*__
-  * **topics** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#topics Repository#topics}. __*Optional*__
-  * **visibility** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#visibility Repository#visibility}. __*Optional*__
-  * **vulnerabilityAlerts** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#vulnerability_alerts Repository#vulnerability_alerts}. __*Optional*__
+  * **topics** (<code>Array<string></code>)  The list of topics of the repository. __*Optional*__
+  * **visibility** (<code>string</code>)  Can be 'public' or 'private'. __*Optional*__
+  * **vulnerabilityAlerts** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Set to 'true' to enable security alerts for vulnerable dependencies. __*Optional*__
 
 
 
@@ -10626,7 +10626,7 @@ putPages(value: RepositoryPages): void
 
 * **value** (<code>[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)</code>)  *No description*
   * **source** (<code>[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)</code>)  source block. 
-  * **cname** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#cname Repository#cname}. __*Optional*__
+  * **cname** (<code>string</code>)  The custom domain for the repository. This can only be set after the repository has been created. __*Optional*__
 
 
 
@@ -10656,9 +10656,9 @@ putTemplate(value: RepositoryTemplate): void
 ```
 
 * **value** (<code>[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)</code>)  *No description*
-  * **owner** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#owner Repository#owner}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#repository Repository#repository}. 
-  * **includeAllBranches** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#include_all_branches Repository#include_all_branches}. __*Optional*__
+  * **owner** (<code>string</code>)  The GitHub organization or user the template repository is owned by. 
+  * **repository** (<code>string</code>)  The name of the template repository. 
+  * **includeAllBranches** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template). __*Optional*__
 
 
 
@@ -11123,8 +11123,8 @@ putSource(value: RepositoryPagesSource): void
 ```
 
 * **value** (<code>[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)</code>)  *No description*
-  * **branch** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#branch Repository#branch}. 
-  * **path** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#path Repository#path}. __*Optional*__
+  * **branch** (<code>string</code>)  The repository branch used to publish the site's source files. (i.e. 'main' or 'gh-pages'). 
+  * **path** (<code>string</code>)  The repository directory from which the site publishes (Default: '/'). __*Optional*__
 
 
 
@@ -11276,7 +11276,7 @@ putAdvancedSecurity(value: RepositorySecurityAndAnalysisAdvancedSecurity): void
 ```
 
 * **value** (<code>[repository.RepositorySecurityAndAnalysisAdvancedSecurity](#cdktf-provider-github-repository-repositorysecurityandanalysisadvancedsecurity)</code>)  *No description*
-  * **status** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}. 
+  * **status** (<code>string</code>)  Set to 'enabled' to enable advanced security features on the repository. Can be 'enabled' or 'disabled'. 
 
 
 
@@ -11290,7 +11290,7 @@ putSecretScanning(value: RepositorySecurityAndAnalysisSecretScanning): void
 ```
 
 * **value** (<code>[repository.RepositorySecurityAndAnalysisSecretScanning](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanning)</code>)  *No description*
-  * **status** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}. 
+  * **status** (<code>string</code>)  Set to 'enabled' to enable secret scanning on the repository. 
 
 
 
@@ -11304,7 +11304,7 @@ putSecretScanningPushProtection(value: RepositorySecurityAndAnalysisSecretScanni
 ```
 
 * **value** (<code>[repository.RepositorySecurityAndAnalysisSecretScanningPushProtection](#cdktf-provider-github-repository-repositorysecurityandanalysissecretscanningpushprotection)</code>)  *No description*
-  * **status** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}. 
+  * **status** (<code>string</code>)  Set to 'enabled' to enable secret scanning push protection on the repository. 
 
 
 
@@ -11591,11 +11591,11 @@ new repositoryCollaborator.RepositoryCollaborator(scope: Construct, id: string, 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#repository RepositoryCollaborator#repository}. 
-  * **username** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#username RepositoryCollaborator#username}. 
+  * **repository** (<code>string</code>)  The GitHub repository. 
+  * **username** (<code>string</code>)  The user to add to the repository as a collaborator. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#id RepositoryCollaborator#id}. __*Optional*__
-  * **permission** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission RepositoryCollaborator#permission}. __*Optional*__
-  * **permissionDiffSuppression** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}. __*Optional*__
+  * **permission** (<code>string</code>)  The permission of the outside collaborator for the repository. __*Optional*__
+  * **permissionDiffSuppression** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Suppress plan diffs for triage and maintain. Defaults to 'false'. __*Optional*__
 
 
 
@@ -11698,11 +11698,11 @@ new repositoryDeployKey.RepositoryDeployKey(scope: Construct, id: string, config
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **key** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#key RepositoryDeployKey#key}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#repository RepositoryDeployKey#repository}. 
-  * **title** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#title RepositoryDeployKey#title}. 
+  * **key** (<code>string</code>)  A SSH key. 
+  * **repository** (<code>string</code>)  Name of the GitHub repository. 
+  * **title** (<code>string</code>)  A title. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#id RepositoryDeployKey#id}. __*Optional*__
-  * **readOnly** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#read_only RepositoryDeployKey#read_only}. __*Optional*__
+  * **readOnly** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  A boolean qualifying the key to be either read only or read/write. __*Optional*__
 
 
 
@@ -11793,12 +11793,12 @@ new repositoryEnvironment.RepositoryEnvironment(scope: Construct, id: string, co
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **environment** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#environment RepositoryEnvironment#environment}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#repository RepositoryEnvironment#repository}. 
+  * **environment** (<code>string</code>)  The name of the environment. 
+  * **repository** (<code>string</code>)  The repository of the environment. 
   * **deploymentBranchPolicy** (<code>[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy)</code>)  deployment_branch_policy block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#id RepositoryEnvironment#id}. __*Optional*__
   * **reviewers** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers)></code>)  reviewers block. __*Optional*__
-  * **waitTimer** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#wait_timer RepositoryEnvironment#wait_timer}. __*Optional*__
+  * **waitTimer** (<code>number</code>)  Amount of time to delay a job after the job is initially triggered. __*Optional*__
 
 
 
@@ -11833,8 +11833,8 @@ putDeploymentBranchPolicy(value: RepositoryEnvironmentDeploymentBranchPolicy): v
 ```
 
 * **value** (<code>[repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentdeploymentbranchpolicy)</code>)  *No description*
-  * **customBranchPolicies** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}. 
-  * **protectedBranches** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#protected_branches RepositoryEnvironment#protected_branches}. 
+  * **customBranchPolicies** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether only branches that match the specified name patterns can deploy to this environment. 
+  * **protectedBranches** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Whether only branches with branch protection rules can deploy to this environment. 
 
 
 
@@ -12251,13 +12251,13 @@ new repositoryMilestone.RepositoryMilestone(scope: Construct, id: string, config
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **owner** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#owner RepositoryMilestone#owner}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#repository RepositoryMilestone#repository}. 
-  * **title** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#title RepositoryMilestone#title}. 
-  * **description** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#description RepositoryMilestone#description}. __*Optional*__
-  * **dueDate** (<code>string</code>)  in yyyy-mm-dd format. __*Optional*__
+  * **owner** (<code>string</code>)  The owner of the GitHub Repository. 
+  * **repository** (<code>string</code>)  The name of the GitHub Repository. 
+  * **title** (<code>string</code>)  The title of the milestone. 
+  * **description** (<code>string</code>)  A description of the milestone. __*Optional*__
+  * **dueDate** (<code>string</code>)  The milestone due date. In 'yyyy-mm-dd' format. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#id RepositoryMilestone#id}. __*Optional*__
-  * **state** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#state RepositoryMilestone#state}. __*Optional*__
+  * **state** (<code>string</code>)  The state of the milestone. Either 'open' or 'closed'. Default: 'open'. __*Optional*__
 
 
 
@@ -12376,9 +12376,9 @@ new repositoryProject.RepositoryProject(scope: Construct, id: string, config: Re
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#name RepositoryProject#name}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#repository RepositoryProject#repository}. 
-  * **body** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#body RepositoryProject#body}. __*Optional*__
+  * **name** (<code>string</code>)  The name of the project. 
+  * **repository** (<code>string</code>)  The repository of the project. 
+  * **body** (<code>string</code>)  The body of the project. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#id RepositoryProject#id}. __*Optional*__
 
 
@@ -12469,14 +12469,14 @@ new repositoryPullRequest.RepositoryPullRequest(scope: Construct, id: string, co
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **baseRef** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#base_ref RepositoryPullRequest#base_ref}. 
-  * **baseRepository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#base_repository RepositoryPullRequest#base_repository}. 
-  * **headRef** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#head_ref RepositoryPullRequest#head_ref}. 
-  * **title** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#title RepositoryPullRequest#title}. 
-  * **body** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#body RepositoryPullRequest#body}. __*Optional*__
+  * **baseRef** (<code>string</code>)  Name of the branch serving as the base of the Pull Request. 
+  * **baseRepository** (<code>string</code>)  Name of the base repository to retrieve the Pull Requests from. 
+  * **headRef** (<code>string</code>)  Name of the branch serving as the head of the Pull Request. 
+  * **title** (<code>string</code>)  The title of the Pull Request. 
+  * **body** (<code>string</code>)  Body of the Pull Request. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#id RepositoryPullRequest#id}. __*Optional*__
-  * **maintainerCanModify** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}. __*Optional*__
-  * **owner** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#owner RepositoryPullRequest#owner}. __*Optional*__
+  * **maintainerCanModify** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Controls whether the base repository maintainers can modify the Pull Request. Default: 'false'. __*Optional*__
+  * **owner** (<code>string</code>)  Owner of the repository. If not provided, the provider's default owner is used. __*Optional*__
 
 
 
@@ -12605,8 +12605,8 @@ new repositoryTagProtection.RepositoryTagProtection(scope: Construct, id: string
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **pattern** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_tag_protection#pattern RepositoryTagProtection#pattern}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_tag_protection#repository RepositoryTagProtection#repository}. 
+  * **pattern** (<code>string</code>)  The pattern of the tag to protect. 
+  * **repository** (<code>string</code>)  Name of the repository to add the tag protection to. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_tag_protection#id RepositoryTagProtection#id}. __*Optional*__
 
 
@@ -12682,9 +12682,9 @@ new repositoryWebhook.RepositoryWebhook(scope: Construct, id: string, config: Re
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **events** (<code>Array<string></code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#events RepositoryWebhook#events}. 
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#repository RepositoryWebhook#repository}. 
-  * **active** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#active RepositoryWebhook#active}. __*Optional*__
+  * **events** (<code>Array<string></code>)  A list of events which should trigger the webhook. 
+  * **repository** (<code>string</code>)  The repository of the webhook. 
+  * **active** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Indicate if the webhook should receive events. Defaults to 'true'. __*Optional*__
   * **configuration** (<code>[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)</code>)  configuration block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#id RepositoryWebhook#id}. __*Optional*__
   * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#name RepositoryWebhook#name}. __*Optional*__
@@ -12724,10 +12724,10 @@ putConfiguration(value: RepositoryWebhookConfiguration): void
 ```
 
 * **value** (<code>[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)</code>)  *No description*
-  * **url** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#url RepositoryWebhook#url}. 
-  * **contentType** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#content_type RepositoryWebhook#content_type}. __*Optional*__
-  * **insecureSsl** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}. __*Optional*__
-  * **secret** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#secret RepositoryWebhook#secret}. __*Optional*__
+  * **url** (<code>string</code>)  The URL of the webhook. 
+  * **contentType** (<code>string</code>)  The content type for the payload. Valid values are either 'form' or 'json'. __*Optional*__
+  * **insecureSsl** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Insecure SSL boolean toggle. Defaults to 'false'. __*Optional*__
+  * **secret** (<code>string</code>)  The shared secret for the webhook. __*Optional*__
 
 
 
@@ -12901,13 +12901,13 @@ new team.Team(scope: Construct, id: string, config: TeamConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **name** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#name Team#name}. 
-  * **createDefaultMaintainer** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#create_default_maintainer Team#create_default_maintainer}. __*Optional*__
-  * **description** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#description Team#description}. __*Optional*__
+  * **name** (<code>string</code>)  The name of the team. 
+  * **createDefaultMaintainer** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Adds a default maintainer to the team. Adds the creating user to the team when 'true'. __*Optional*__
+  * **description** (<code>string</code>)  A description of the team. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#id Team#id}. __*Optional*__
-  * **ldapDn** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#ldap_dn Team#ldap_dn}. __*Optional*__
-  * **parentTeamId** (<code>number</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#parent_team_id Team#parent_team_id}. __*Optional*__
-  * **privacy** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#privacy Team#privacy}. __*Optional*__
+  * **ldapDn** (<code>string</code>)  The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server. __*Optional*__
+  * **parentTeamId** (<code>number</code>)  The ID of the parent team, if this is a nested team. __*Optional*__
+  * **privacy** (<code>string</code>)  The level of privacy for the team. Must be one of 'secret' or 'closed'. __*Optional*__
 
 
 
@@ -13054,7 +13054,7 @@ new teamMembers.TeamMembers(scope: Construct, id: string, config: TeamMembersCon
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
   * **members** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers)></code>)  members block. 
-  * **teamId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#team_id TeamMembers#team_id}. 
+  * **teamId** (<code>string</code>)  The GitHub team id. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#id TeamMembers#id}. __*Optional*__
 
 
@@ -13248,10 +13248,10 @@ new teamMembership.TeamMembership(scope: Construct, id: string, config: TeamMemb
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **teamId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#team_id TeamMembership#team_id}. 
-  * **username** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#username TeamMembership#username}. 
+  * **teamId** (<code>string</code>)  The GitHub team id or the GitHub team slug. 
+  * **username** (<code>string</code>)  The user to add to the team. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#id TeamMembership#id}. __*Optional*__
-  * **role** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#role TeamMembership#role}. __*Optional*__
+  * **role** (<code>string</code>)  The role of the user within the team. Must be one of 'member' or 'maintainer'. __*Optional*__
 
 
 
@@ -13340,10 +13340,10 @@ new teamRepository.TeamRepository(scope: Construct, id: string, config: TeamRepo
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **repository** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#repository TeamRepository#repository}. 
+  * **repository** (<code>string</code>)  The repository to add to the team. 
   * **teamId** (<code>string</code>)  ID or slug of team. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#id TeamRepository#id}. __*Optional*__
-  * **permission** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#permission TeamRepository#permission}. __*Optional*__
+  * **permission** (<code>string</code>)  The permissions of team members regarding the repository. __*Optional*__
 
 
 
@@ -13432,7 +13432,7 @@ new teamSettings.TeamSettings(scope: Construct, id: string, config: TeamSettings
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **teamId** (<code>string</code>)  ID or slug of team. 
+  * **teamId** (<code>string</code>)  The GitHub team id or the GitHub team slug. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#id TeamSettings#id}. __*Optional*__
   * **reviewRequestDelegation** (<code>[teamSettings.TeamSettingsReviewRequestDelegation](#cdktf-provider-github-teamsettings-teamsettingsreviewrequestdelegation)</code>)  review_request_delegation block. __*Optional*__
 
@@ -13465,9 +13465,9 @@ putReviewRequestDelegation(value: TeamSettingsReviewRequestDelegation): void
 ```
 
 * **value** (<code>[teamSettings.TeamSettingsReviewRequestDelegation](#cdktf-provider-github-teamsettings-teamsettingsreviewrequestdelegation)</code>)  *No description*
-  * **algorithm** (<code>string</code>)  Algorithm to use when determining team members to be assigned to a pull request. __*Optional*__
-  * **memberCount** (<code>number</code>)  The number of reviewers to be assigned to a pull request from this team. __*Optional*__
-  * **notify** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Notify the entire team when a pull request is assigned to a member of the team. __*Optional*__
+  * **algorithm** (<code>string</code>)  The algorithm to use when assigning pull requests to team members. Supported values are 'ROUND_ROBIN' and 'LOAD_BALANCE'. __*Optional*__
+  * **memberCount** (<code>number</code>)  The number of team members to assign to a pull request. __*Optional*__
+  * **notify** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  whether to notify the entire team when at least one member is also assigned to the pull request. __*Optional*__
 
 
 
@@ -13615,7 +13615,7 @@ new teamSyncGroupMapping.TeamSyncGroupMapping(scope: Construct, id: string, conf
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **teamSlug** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}. 
+  * **teamSlug** (<code>string</code>)  Slug of the team. 
   * **group** (<code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamSyncGroupMapping.TeamSyncGroupMappingGroup](#cdktf-provider-github-teamsyncgroupmapping-teamsyncgroupmappinggroup)></code>)  group block. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#id TeamSyncGroupMapping#id}. __*Optional*__
 
@@ -13809,7 +13809,7 @@ new userGpgKey.UserGpgKey(scope: Construct, id: string, config: UserGpgKeyConfig
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **armoredPublicKey** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}. 
+  * **armoredPublicKey** (<code>string</code>)  Your public GPG key, generated in ASCII-armored format. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#id UserGpgKey#id}. __*Optional*__
 
 
@@ -13884,9 +13884,9 @@ new userInvitationAccepter.UserInvitationAccepter(scope: Construct, id: string, 
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **allowEmptyId** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}. __*Optional*__
+  * **allowEmptyId** (<code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code>)  Allow the ID to be unset. __*Optional*__
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#id UserInvitationAccepter#id}. __*Optional*__
-  * **invitationId** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}. __*Optional*__
+  * **invitationId** (<code>string</code>)  ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'. __*Optional*__
 
 
 
@@ -13984,8 +13984,8 @@ new userSshKey.UserSshKey(scope: Construct, id: string, config: UserSshKeyConfig
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **provisioners** (<code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code>)  *No description* __*Optional*__
-  * **key** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#key UserSshKey#key}. 
-  * **title** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#title UserSshKey#title}. 
+  * **key** (<code>string</code>)  The public SSH key to add to your GitHub account. 
+  * **title** (<code>string</code>)  A descriptive name for the new key. 
   * **id** (<code>string</code>)  Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#id UserSshKey#id}. __*Optional*__
 
 
@@ -14043,17 +14043,17 @@ __Returns__:
 
 Name | Type | Description 
 -----|------|-------------
-**environment** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#environment ActionsEnvironmentSecret#environment}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#repository ActionsEnvironmentSecret#repository}.
-**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#secret_name ActionsEnvironmentSecret#secret_name}.
+**environment** | <code>string</code> | Name of the environment.
+**repository** | <code>string</code> | Name of the repository.
+**secretName** | <code>string</code> | Name of the secret.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**encryptedValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#encrypted_value ActionsEnvironmentSecret#encrypted_value}.<br/>__*Optional*__
+**encryptedValue**? | <code>string</code> | Encrypted value of the secret using the GitHub public key in Base64 format.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#id ActionsEnvironmentSecret#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**plaintextValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_environment_secret#plaintext_value ActionsEnvironmentSecret#plaintext_value}.<br/>__*Optional*__
+**plaintextValue**? | <code>string</code> | Plaintext value of the secret to be encrypted.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -14068,7 +14068,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**includeClaimKeys** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_oidc_subject_claim_customization_template#include_claim_keys ActionsOrganizationOidcSubjectClaimCustomizationTemplate#include_claim_keys}.
+**includeClaimKeys** | <code>Array<string></code> | A list of OpenID Connect claims.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -14089,9 +14089,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**githubOwnedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}.
-**patternsAllowed**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}.<br/>__*Optional*__
-**verifiedAllowed**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}.<br/>__*Optional*__
+**githubOwnedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether GitHub-owned actions are allowed in the organization.
+**patternsAllowed**? | <code>Array<string></code> | Specifies a list of string-matching patterns to allow specific action(s).<br/>__*Optional*__
+**verifiedAllowed**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether actions in GitHub Marketplace from verified creators are allowed.<br/>__*Optional*__
 
 
 
@@ -14104,8 +14104,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**enabledRepositories** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}.
-**allowedActions**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}.<br/>__*Optional*__
+**enabledRepositories** | <code>string</code> | The policy that controls the repositories in the organization that are allowed to run GitHub Actions.
+**allowedActions**? | <code>string</code> | The permissions policy that controls the actions that are allowed to run.<br/>__*Optional*__
 **allowedActionsConfig**? | <code>[actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsorganizationpermissions-actionsorganizationpermissionsallowedactionsconfig)</code> | allowed_actions_config block.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
@@ -14128,7 +14128,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repositoryIds** | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}.
+**repositoryIds** | <code>Array<number></code> | List of repository IDs to enable for GitHub Actions.
 
 
 
@@ -14141,19 +14141,19 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#secret_name ActionsOrganizationSecret#secret_name}.
-**visibility** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#visibility ActionsOrganizationSecret#visibility}.
+**secretName** | <code>string</code> | Name of the secret.
+**visibility** | <code>string</code> | Configures the access that repositories have to the organization secret.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**encryptedValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#encrypted_value ActionsOrganizationSecret#encrypted_value}.<br/>__*Optional*__
+**encryptedValue**? | <code>string</code> | Encrypted value of the secret using the GitHub public key in Base64 format.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#id ActionsOrganizationSecret#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**plaintextValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#plaintext_value ActionsOrganizationSecret#plaintext_value}.<br/>__*Optional*__
+**plaintextValue**? | <code>string</code> | Plaintext value of the secret to be encrypted.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**selectedRepositoryIds**? | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret#selected_repository_ids ActionsOrganizationSecret#selected_repository_ids}.<br/>__*Optional*__
+**selectedRepositoryIds**? | <code>Array<number></code> | An array of repository ids that can access the organization secret.<br/>__*Optional*__
 
 
 
@@ -14166,8 +14166,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#secret_name ActionsOrganizationSecretRepositories#secret_name}.
-**selectedRepositoryIds** | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_secret_repositories#selected_repository_ids ActionsOrganizationSecretRepositories#selected_repository_ids}.
+**secretName** | <code>string</code> | Name of the existing secret.
+**selectedRepositoryIds** | <code>Array<number></code> | An array of repository ids that can access the organization secret.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -14188,8 +14188,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**accessLevel** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}.
+**accessLevel** | <code>string</code> | Where the actions or reusable workflows of the repository may be used.
+**repository** | <code>string</code> | The GitHub repository.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -14210,14 +14210,14 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#repository ActionsRepositoryOidcSubjectClaimCustomizationTemplate#repository}.
-**useDefault** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#use_default ActionsRepositoryOidcSubjectClaimCustomizationTemplate#use_default}.
+**repository** | <code>string</code> | The name of the repository.
+**useDefault** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether to use the default template or not. If 'true', 'include_claim_keys' must not be set.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#id ActionsRepositoryOidcSubjectClaimCustomizationTemplate#id}.<br/>__*Optional*__
-**includeClaimKeys**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#include_claim_keys ActionsRepositoryOidcSubjectClaimCustomizationTemplate#include_claim_keys}.<br/>__*Optional*__
+**includeClaimKeys**? | <code>Array<string></code> | A list of OpenID Connect claims.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
@@ -14233,9 +14233,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**githubOwnedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#github_owned_allowed ActionsRepositoryPermissions#github_owned_allowed}.
-**patternsAllowed**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#patterns_allowed ActionsRepositoryPermissions#patterns_allowed}.<br/>__*Optional*__
-**verifiedAllowed**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#verified_allowed ActionsRepositoryPermissions#verified_allowed}.<br/>__*Optional*__
+**githubOwnedAllowed** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether GitHub-owned actions are allowed in the repository.
+**patternsAllowed**? | <code>Array<string></code> | Specifies a list of string-matching patterns to allow specific action(s).<br/>__*Optional*__
+**verifiedAllowed**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether actions in GitHub Marketplace from verified creators are allowed.<br/>__*Optional*__
 
 
 
@@ -14248,13 +14248,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#repository ActionsRepositoryPermissions#repository}.
-**allowedActions**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#allowed_actions ActionsRepositoryPermissions#allowed_actions}.<br/>__*Optional*__
+**repository** | <code>string</code> | The GitHub repository.
+**allowedActions**? | <code>string</code> | The permissions policy that controls the actions that are allowed to run.<br/>__*Optional*__
 **allowedActionsConfig**? | <code>[actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig](#cdktf-provider-github-actionsrepositorypermissions-actionsrepositorypermissionsallowedactionsconfig)</code> | allowed_actions_config block.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#enabled ActionsRepositoryPermissions#enabled}.<br/>__*Optional*__
+**enabled**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Should GitHub actions be enabled on this repository.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#id ActionsRepositoryPermissions#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
@@ -14272,8 +14272,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#name ActionsRunnerGroup#name}.
-**visibility** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#visibility ActionsRunnerGroup#visibility}.
+**name** | <code>string</code> | Name of the runner group.
+**visibility** | <code>string</code> | The visibility of the runner group.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -14282,7 +14282,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**selectedRepositoryIds**? | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}.<br/>__*Optional*__
+**selectedRepositoryIds**? | <code>Array<number></code> | List of repository IDs that can access the runner group.<br/>__*Optional*__
 
 
 
@@ -14295,16 +14295,16 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#repository ActionsSecret#repository}.
-**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#secret_name ActionsSecret#secret_name}.
+**repository** | <code>string</code> | Name of the repository.
+**secretName** | <code>string</code> | Name of the secret.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**encryptedValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#encrypted_value ActionsSecret#encrypted_value}.<br/>__*Optional*__
+**encryptedValue**? | <code>string</code> | Encrypted value of the secret using the GitHub public key in Base64 format.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#id ActionsSecret#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**plaintextValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#plaintext_value ActionsSecret#plaintext_value}.<br/>__*Optional*__
+**plaintextValue**? | <code>string</code> | Plaintext value of the secret to be encrypted.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -14319,8 +14319,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**installationId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}.
-**selectedRepositories** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}.
+**installationId** | <code>string</code> | The GitHub app installation id.
+**selectedRepositories** | <code>Array<string></code> | A list of repository names to install the app on.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -14341,8 +14341,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**installationId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#installation_id AppInstallationRepository#installation_id}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repository#repository AppInstallationRepository#repository}.
+**installationId** | <code>string</code> | The GitHub app installation id.
+**repository** | <code>string</code> | The repository to install the app on.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -14363,8 +14363,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**branch** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#branch Branch#branch}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#repository Branch#repository}.
+**branch** | <code>string</code> | The repository branch to create.
+**repository** | <code>string</code> | The GitHub repository name.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -14373,8 +14373,8 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**sourceBranch**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_branch Branch#source_branch}.<br/>__*Optional*__
-**sourceSha**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_sha Branch#source_sha}.<br/>__*Optional*__
+**sourceBranch**? | <code>string</code> | The branch name to start from. Defaults to 'main'.<br/>__*Optional*__
+**sourceSha**? | <code>string</code> | The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored.<br/>__*Optional*__
 
 
 
@@ -14387,8 +14387,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**branch** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#branch BranchDefault#branch}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#repository BranchDefault#repository}.
+**branch** | <code>string</code> | The branch (e.g. 'main').
+**repository** | <code>string</code> | The GitHub repository.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -14397,7 +14397,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**rename**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#rename BranchDefault#rename}.<br/>__*Optional*__
+**rename**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'.<br/>__*Optional*__
 
 
 
@@ -14410,25 +14410,25 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**pattern** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pattern BranchProtection#pattern}.
-**repositoryId** | <code>string</code> | Node ID or name of repository.
-**allowsDeletions**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_deletions BranchProtection#allows_deletions}.<br/>__*Optional*__
-**allowsForcePushes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}.<br/>__*Optional*__
-**blocksCreations**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#blocks_creations BranchProtection#blocks_creations}.<br/>__*Optional*__
+**pattern** | <code>string</code> | Identifies the protection rule pattern.
+**repositoryId** | <code>string</code> | The name or node ID of the repository associated with this branch protection rule.
+**allowsDeletions**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' to allow the branch to be deleted.<br/>__*Optional*__
+**allowsForcePushes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' to allow force pushes on the branch.<br/>__*Optional*__
+**blocksCreations**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' to block creating the branch.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**enforceAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#enforce_admins BranchProtection#enforce_admins}.<br/>__*Optional*__
+**enforceAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' enforces status checks for repository administrators.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#id BranchProtection#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**lockBranch**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#lock_branch BranchProtection#lock_branch}.<br/>__*Optional*__
+**lockBranch**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' will make the branch read-only and preventing any pushes to it.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**pushRestrictions**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#push_restrictions BranchProtection#push_restrictions}.<br/>__*Optional*__
-**requireConversationResolution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}.<br/>__*Optional*__
-**requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_signed_commits BranchProtection#require_signed_commits}.<br/>__*Optional*__
-**requiredLinearHistory**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_linear_history BranchProtection#required_linear_history}.<br/>__*Optional*__
+**pushRestrictions**? | <code>Array<string></code> | The list of actor Names/IDs that may push to the branch.<br/>__*Optional*__
+**requireConversationResolution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.<br/>__*Optional*__
+**requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' requires all commits to be signed with GPG.<br/>__*Optional*__
+**requiredLinearHistory**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch.<br/>__*Optional*__
 **requiredPullRequestReviews**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredPullRequestReviews](#cdktf-provider-github-branchprotection-branchprotectionrequiredpullrequestreviews)></code> | required_pull_request_reviews block.<br/>__*Optional*__
 **requiredStatusChecks**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[branchProtection.BranchProtectionRequiredStatusChecks](#cdktf-provider-github-branchprotection-branchprotectionrequiredstatuschecks)></code> | required_status_checks block.<br/>__*Optional*__
 
@@ -14443,13 +14443,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dismissStaleReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}.<br/>__*Optional*__
-**dismissalRestrictions**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#dismissal_restrictions BranchProtection#dismissal_restrictions}.<br/>__*Optional*__
-**pullRequestBypassers**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}.<br/>__*Optional*__
-**requireCodeOwnerReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}.<br/>__*Optional*__
-**requireLastPushApproval**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}.<br/>__*Optional*__
-**requiredApprovingReviewCount**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}.<br/>__*Optional*__
-**restrictDismissals**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}.<br/>__*Optional*__
+**dismissStaleReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Dismiss approved reviews automatically when a new commit is pushed.<br/>__*Optional*__
+**dismissalRestrictions**? | <code>Array<string></code> | The list of actor Names/IDs with dismissal access.<br/>__*Optional*__
+**pullRequestBypassers**? | <code>Array<string></code> | The list of actor Names/IDs that are allowed to bypass pull request requirements.<br/>__*Optional*__
+**requireCodeOwnerReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Require an approved review in pull requests including files with a designated code owner.<br/>__*Optional*__
+**requireLastPushApproval**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Require that The most recent push must be approved by someone other than the last pusher.<br/>__*Optional*__
+**requiredApprovingReviewCount**? | <code>number</code> | Require 'x' number of approvals to satisfy branch protection requirements.<br/>__*Optional*__
+**restrictDismissals**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Restrict pull request review dismissals.<br/>__*Optional*__
 
 
 
@@ -14462,8 +14462,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**contexts**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#contexts BranchProtection#contexts}.<br/>__*Optional*__
-**strict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#strict BranchProtection#strict}.<br/>__*Optional*__
+**contexts**? | <code>Array<string></code> | The list of status checks to require in order to merge into this branch.<br/>__*Optional*__
+**strict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Require branches to be up to date before merging.<br/>__*Optional*__
 
 
 
@@ -14476,19 +14476,19 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**branch** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#branch BranchProtectionV3#branch}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#repository BranchProtectionV3#repository}.
+**branch** | <code>string</code> | The Git branch to protect.
+**repository** | <code>string</code> | The GitHub repository name.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**enforceAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#enforce_admins BranchProtectionV3#enforce_admins}.<br/>__*Optional*__
+**enforceAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' enforces status checks for repository administrators.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#id BranchProtectionV3#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**requireConversationResolution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}.<br/>__*Optional*__
-**requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_signed_commits BranchProtectionV3#require_signed_commits}.<br/>__*Optional*__
+**requireConversationResolution**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.<br/>__*Optional*__
+**requireSignedCommits**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting this to 'true' requires all commits to be signed with GPG.<br/>__*Optional*__
 **requiredPullRequestReviews**? | <code>[branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredpullrequestreviews)</code> | required_pull_request_reviews block.<br/>__*Optional*__
 **requiredStatusChecks**? | <code>[branchProtectionV3.BranchProtectionV3RequiredStatusChecks](#cdktf-provider-github-branchprotectionv3-branchprotectionv3requiredstatuschecks)</code> | required_status_checks block.<br/>__*Optional*__
 **restrictions**? | <code>[branchProtectionV3.BranchProtectionV3Restrictions](#cdktf-provider-github-branchprotectionv3-branchprotectionv3restrictions)</code> | restrictions block.<br/>__*Optional*__
@@ -14504,12 +14504,12 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**dismissStaleReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismiss_stale_reviews BranchProtectionV3#dismiss_stale_reviews}.<br/>__*Optional*__
-**dismissalTeams**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismissal_teams BranchProtectionV3#dismissal_teams}.<br/>__*Optional*__
-**dismissalUsers**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismissal_users BranchProtectionV3#dismissal_users}.<br/>__*Optional*__
+**dismissStaleReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Dismiss approved reviews automatically when a new commit is pushed.<br/>__*Optional*__
+**dismissalTeams**? | <code>Array<string></code> | The list of team slugs with dismissal access.<br/>__*Optional*__
+**dismissalUsers**? | <code>Array<string></code> | The list of user logins with dismissal access.<br/>__*Optional*__
 **includeAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#include_admins BranchProtectionV3#include_admins}.<br/>__*Optional*__
-**requireCodeOwnerReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_code_owner_reviews BranchProtectionV3#require_code_owner_reviews}.<br/>__*Optional*__
-**requiredApprovingReviewCount**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#required_approving_review_count BranchProtectionV3#required_approving_review_count}.<br/>__*Optional*__
+**requireCodeOwnerReviews**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Require an approved review in pull requests including files with a designated code owner.<br/>__*Optional*__
+**requiredApprovingReviewCount**? | <code>number</code> | Require 'x' number of approvals to satisfy branch protection requirements.<br/>__*Optional*__
 
 
 
@@ -14522,10 +14522,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**checks**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#checks BranchProtectionV3#checks}.<br/>__*Optional*__
+**checks**? | <code>Array<string></code> | The list of status checks to require in order to merge into this branch.<br/>__*Optional*__
 **contexts**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#contexts BranchProtectionV3#contexts}.<br/>__*Optional*__
 **includeAdmins**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#include_admins BranchProtectionV3#include_admins}.<br/>__*Optional*__
-**strict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#strict BranchProtectionV3#strict}.<br/>__*Optional*__
+**strict**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Require branches to be up to date before merging.<br/>__*Optional*__
 
 
 
@@ -14538,9 +14538,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**apps**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#apps BranchProtectionV3#apps}.<br/>__*Optional*__
-**teams**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#teams BranchProtectionV3#teams}.<br/>__*Optional*__
-**users**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#users BranchProtectionV3#users}.<br/>__*Optional*__
+**apps**? | <code>Array<string></code> | The list of app slugs with push access.<br/>__*Optional*__
+**teams**? | <code>Array<string></code> | The list of team slugs with push access.<br/>__*Optional*__
+**users**? | <code>Array<string></code> | The list of user logins with push access.<br/>__*Optional*__
 
 
 
@@ -15501,19 +15501,19 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#secret_name DependabotOrganizationSecret#secret_name}.
-**visibility** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#visibility DependabotOrganizationSecret#visibility}.
+**secretName** | <code>string</code> | Name of the secret.
+**visibility** | <code>string</code> | Configures the access that repositories have to the organization secret.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**encryptedValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#encrypted_value DependabotOrganizationSecret#encrypted_value}.<br/>__*Optional*__
+**encryptedValue**? | <code>string</code> | Encrypted value of the secret using the GitHub public key in Base64 format.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#id DependabotOrganizationSecret#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**plaintextValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#plaintext_value DependabotOrganizationSecret#plaintext_value}.<br/>__*Optional*__
+**plaintextValue**? | <code>string</code> | Plaintext value of the secret to be encrypted.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**selectedRepositoryIds**? | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#selected_repository_ids DependabotOrganizationSecret#selected_repository_ids}.<br/>__*Optional*__
+**selectedRepositoryIds**? | <code>Array<number></code> | An array of repository ids that can access the organization secret.<br/>__*Optional*__
 
 
 
@@ -15526,8 +15526,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}.
-**selectedRepositoryIds** | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}.
+**secretName** | <code>string</code> | Name of the existing secret.
+**selectedRepositoryIds** | <code>Array<number></code> | An array of repository ids that can access the organization secret.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -15548,16 +15548,16 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#repository DependabotSecret#repository}.
-**secretName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#secret_name DependabotSecret#secret_name}.
+**repository** | <code>string</code> | Name of the repository.
+**secretName** | <code>string</code> | Name of the secret.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**encryptedValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#encrypted_value DependabotSecret#encrypted_value}.<br/>__*Optional*__
+**encryptedValue**? | <code>string</code> | Encrypted value of the secret using the GitHub public key in Base64 format.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#id DependabotSecret#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**plaintextValue**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_secret#plaintext_value DependabotSecret#plaintext_value}.<br/>__*Optional*__
+**plaintextValue**? | <code>string</code> | Plaintext value of the secret to be encrypted.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -15572,8 +15572,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**groupId** | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#group_id EmuGroupMapping#group_id}.
-**teamSlug** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/emu_group_mapping#team_slug EmuGroupMapping#team_slug}.
+**groupId** | <code>number</code> | Integer corresponding to the external group ID to be linked.
+**teamSlug** | <code>string</code> | Slug of the GitHub team.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -15594,14 +15594,14 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**adminLogins** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}.
-**billingEmail** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#billing_email EnterpriseOrganization#billing_email}.
-**enterpriseId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}.
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#name EnterpriseOrganization#name}.
+**adminLogins** | <code>Array<string></code> | List of organization owner usernames.
+**billingEmail** | <code>string</code> | The billing email address.
+**enterpriseId** | <code>string</code> | The ID of the enterprise.
+**name** | <code>string</code> | The name of the organization.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**description**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#description EnterpriseOrganization#description}.<br/>__*Optional*__
+**description**? | <code>string</code> | The description of the organization.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/enterprise_organization#id EnterpriseOrganization#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
@@ -15619,18 +15619,18 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#repository Issue#repository}.
-**title** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#title Issue#title}.
-**assignees**? | <code>Array<string></code> | List of Logins for Users to assign to this issue.<br/>__*Optional*__
-**body**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#body Issue#body}.<br/>__*Optional*__
+**repository** | <code>string</code> | The GitHub repository name.
+**title** | <code>string</code> | Title of the issue.
+**assignees**? | <code>Array<string></code> | List of Logins to assign to the issue.<br/>__*Optional*__
+**body**? | <code>string</code> | Body of the issue.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#id Issue#id}.<br/>__*Optional*__
-**labels**? | <code>Array<string></code> | List of names of labels on the issue.<br/>__*Optional*__
+**labels**? | <code>Array<string></code> | List of labels to attach to the issue.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**milestoneNumber**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#milestone_number Issue#milestone_number}.<br/>__*Optional*__
+**milestoneNumber**? | <code>number</code> | Milestone number to assign to the issue.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -15645,13 +15645,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**color** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#color IssueLabel#color}.
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#name IssueLabel#name}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#repository IssueLabel#repository}.
+**color** | <code>string</code> | A 6 character hex code, without the leading '#', identifying the color of the label.
+**name** | <code>string</code> | The name of the label.
+**repository** | <code>string</code> | The GitHub repository.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**description**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#description IssueLabel#description}.<br/>__*Optional*__
+**description**? | <code>string</code> | A short description of the label.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#id IssueLabel#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
@@ -15669,7 +15669,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**username** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#username Membership#username}.
+**username** | <code>string</code> | The user to add to the organization.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -15678,7 +15678,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**role**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#role Membership#role}.<br/>__*Optional*__
+**role**? | <code>string</code> | The role of the user within the organization. Must be one of 'member' or 'admin'.<br/>__*Optional*__
 
 
 
@@ -15691,7 +15691,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**username** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#username OrganizationBlock#username}.
+**username** | <code>string</code> | The name of the user to block.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -15712,8 +15712,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#name OrganizationProject#name}.
-**body**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#body OrganizationProject#body}.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the project.
+**body**? | <code>string</code> | The body of the project.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -15734,7 +15734,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**teamSlug** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}.
+**teamSlug** | <code>string</code> | The slug of the team to manage.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -15755,40 +15755,40 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**billingEmail** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#billing_email OrganizationSettings#billing_email}.
-**advancedSecurityEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#advanced_security_enabled_for_new_repositories OrganizationSettings#advanced_security_enabled_for_new_repositories}.<br/>__*Optional*__
-**blog**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#blog OrganizationSettings#blog}.<br/>__*Optional*__
-**company**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#company OrganizationSettings#company}.<br/>__*Optional*__
+**billingEmail** | <code>string</code> | The billing email address for the organization.
+**advancedSecurityEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not advanced security is enabled for new repositories.<br/>__*Optional*__
+**blog**? | <code>string</code> | The blog URL for the organization.<br/>__*Optional*__
+**company**? | <code>string</code> | The company name for the organization.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
-**defaultRepositoryPermission**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#default_repository_permission OrganizationSettings#default_repository_permission}.<br/>__*Optional*__
-**dependabotAlertsEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependabot_alerts_enabled_for_new_repositories OrganizationSettings#dependabot_alerts_enabled_for_new_repositories}.<br/>__*Optional*__
-**dependabotSecurityUpdatesEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependabot_security_updates_enabled_for_new_repositories OrganizationSettings#dependabot_security_updates_enabled_for_new_repositories}.<br/>__*Optional*__
-**dependencyGraphEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#dependency_graph_enabled_for_new_repositories OrganizationSettings#dependency_graph_enabled_for_new_repositories}.<br/>__*Optional*__
+**defaultRepositoryPermission**? | <code>string</code> | The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'.<br/>__*Optional*__
+**dependabotAlertsEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not dependabot alerts are enabled for new repositories.<br/>__*Optional*__
+**dependabotSecurityUpdatesEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not dependabot security updates are enabled for new repositories.<br/>__*Optional*__
+**dependencyGraphEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not dependency graph is enabled for new repositories.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**description**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#description OrganizationSettings#description}.<br/>__*Optional*__
-**email**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#email OrganizationSettings#email}.<br/>__*Optional*__
+**description**? | <code>string</code> | The description for the organization.<br/>__*Optional*__
+**email**? | <code>string</code> | The email address for the organization.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
-**hasOrganizationProjects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#has_organization_projects OrganizationSettings#has_organization_projects}.<br/>__*Optional*__
-**hasRepositoryProjects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#has_repository_projects OrganizationSettings#has_repository_projects}.<br/>__*Optional*__
+**hasOrganizationProjects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization projects are enabled for the organization.<br/>__*Optional*__
+**hasRepositoryProjects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not repository projects are enabled for the organization.<br/>__*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#id OrganizationSettings#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**location**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#location OrganizationSettings#location}.<br/>__*Optional*__
-**membersCanCreateInternalRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Setting to true allows organization members to create internal repositories. Only available to Enterprise Organizations.<br/>__*Optional*__
-**membersCanCreatePages**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_pages OrganizationSettings#members_can_create_pages}.<br/>__*Optional*__
-**membersCanCreatePrivatePages**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_private_pages OrganizationSettings#members_can_create_private_pages}.<br/>__*Optional*__
-**membersCanCreatePrivateRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_private_repositories OrganizationSettings#members_can_create_private_repositories}.<br/>__*Optional*__
-**membersCanCreatePublicPages**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_public_pages OrganizationSettings#members_can_create_public_pages}.<br/>__*Optional*__
-**membersCanCreatePublicRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_public_repositories OrganizationSettings#members_can_create_public_repositories}.<br/>__*Optional*__
-**membersCanCreateRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_create_repositories OrganizationSettings#members_can_create_repositories}.<br/>__*Optional*__
-**membersCanForkPrivateRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#members_can_fork_private_repositories OrganizationSettings#members_can_fork_private_repositories}.<br/>__*Optional*__
-**name**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#name OrganizationSettings#name}.<br/>__*Optional*__
+**location**? | <code>string</code> | The location for the organization.<br/>__*Optional*__
+**membersCanCreateInternalRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only.<br/>__*Optional*__
+**membersCanCreatePages**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization members can create new pages.<br/>__*Optional*__
+**membersCanCreatePrivatePages**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization members can create new private pages.<br/>__*Optional*__
+**membersCanCreatePrivateRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization members can create new private repositories.<br/>__*Optional*__
+**membersCanCreatePublicPages**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization members can create new public pages.<br/>__*Optional*__
+**membersCanCreatePublicRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization members can create new public repositories.<br/>__*Optional*__
+**membersCanCreateRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization members can create new repositories.<br/>__*Optional*__
+**membersCanForkPrivateRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not organization members can fork private repositories.<br/>__*Optional*__
+**name**? | <code>string</code> | The name for the organization.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**secretScanningEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#secret_scanning_enabled_for_new_repositories OrganizationSettings#secret_scanning_enabled_for_new_repositories}.<br/>__*Optional*__
-**secretScanningPushProtectionEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#secret_scanning_push_protection_enabled_for_new_repositories OrganizationSettings#secret_scanning_push_protection_enabled_for_new_repositories}.<br/>__*Optional*__
-**twitterUsername**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#twitter_username OrganizationSettings#twitter_username}.<br/>__*Optional*__
-**webCommitSignoffRequired**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_settings#web_commit_signoff_required OrganizationSettings#web_commit_signoff_required}.<br/>__*Optional*__
+**secretScanningEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not secret scanning is enabled for new repositories.<br/>__*Optional*__
+**secretScanningPushProtectionEnabledForNewRepositories**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not secret scanning push protection is enabled for new repositories.<br/>__*Optional*__
+**twitterUsername**? | <code>string</code> | The Twitter username for the organization.<br/>__*Optional*__
+**webCommitSignoffRequired**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether or not commit signatures are required for commits to the organization.<br/>__*Optional*__
 
 
 
@@ -15801,8 +15801,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**events** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#events OrganizationWebhook#events}.
-**active**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#active OrganizationWebhook#active}.<br/>__*Optional*__
+**events** | <code>Array<string></code> | A list of events which should trigger the webhook.
+**active**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Indicate if the webhook should receive events.<br/>__*Optional*__
 **configuration**? | <code>[organizationWebhook.OrganizationWebhookConfiguration](#cdktf-provider-github-organizationwebhook-organizationwebhookconfiguration)</code> | configuration block.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
@@ -15825,10 +15825,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**url** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#url OrganizationWebhook#url}.
-**contentType**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#content_type OrganizationWebhook#content_type}.<br/>__*Optional*__
-**insecureSsl**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}.<br/>__*Optional*__
-**secret**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#secret OrganizationWebhook#secret}.<br/>__*Optional*__
+**url** | <code>string</code> | The URL of the webhook.
+**contentType**? | <code>string</code> | The content type for the payload. Valid values are either 'form' or 'json'.<br/>__*Optional*__
+**insecureSsl**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Insecure SSL boolean toggle. Defaults to 'false'.<br/>__*Optional*__
+**secret**? | <code>string</code> | The shared secret for the webhook.<br/>__*Optional*__
 
 
 
@@ -15841,16 +15841,16 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**columnId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}.
+**columnId** | <code>string</code> | The ID of the project column.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
-**contentId**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}.<br/>__*Optional*__
-**contentType**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}.<br/>__*Optional*__
+**contentId**? | <code>number</code> | 'github_issue.issue_id'.<br/>__*Optional*__
+**contentType**? | <code>string</code> | Must be either 'Issue' or 'PullRequest'.<br/>__*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**note**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}.<br/>__*Optional*__
+**note**? | <code>string</code> | The note contents of the card. Markdown supported.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -15865,8 +15865,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#name ProjectColumn#name}.
-**projectId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#project_id ProjectColumn#project_id}.
+**name** | <code>string</code> | The name of the column.
+**projectId** | <code>string</code> | The ID of an existing project that the column will be created in.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -15923,23 +15923,23 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#repository Release#repository}.
-**tagName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#tag_name Release#tag_name}.
-**body**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#body Release#body}.<br/>__*Optional*__
+**repository** | <code>string</code> | The name of the repository.
+**tagName** | <code>string</code> | The name of the tag.
+**body**? | <code>string</code> | Text describing the contents of the tag.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**discussionCategoryName**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#discussion_category_name Release#discussion_category_name}.<br/>__*Optional*__
-**draft**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#draft Release#draft}.<br/>__*Optional*__
+**discussionCategoryName**? | <code>string</code> | If specified, a discussion of the specified category is created and linked to the release.<br/>__*Optional*__
+**draft**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'false' to create a published release.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
-**generateReleaseNotes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#generate_release_notes Release#generate_release_notes}.<br/>__*Optional*__
+**generateReleaseNotes**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to automatically generate the name and body for this release.<br/>__*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#id Release#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**name**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#name Release#name}.<br/>__*Optional*__
-**prerelease**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#prerelease Release#prerelease}.<br/>__*Optional*__
+**name**? | <code>string</code> | The name of the release.<br/>__*Optional*__
+**prerelease**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'false' to identify the release as a full release.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**targetCommitish**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#target_commitish Release#target_commitish}.<br/>__*Optional*__
+**targetCommitish**? | <code>string</code> | The branch name or commit SHA the tag is created from.<br/>__*Optional*__
 
 
 
@@ -15952,47 +15952,47 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#name Repository#name}.
-**allowAutoMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_auto_merge Repository#allow_auto_merge}.<br/>__*Optional*__
-**allowMergeCommit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_merge_commit Repository#allow_merge_commit}.<br/>__*Optional*__
-**allowRebaseMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_rebase_merge Repository#allow_rebase_merge}.<br/>__*Optional*__
-**allowSquashMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_squash_merge Repository#allow_squash_merge}.<br/>__*Optional*__
-**allowUpdateBranch**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#allow_update_branch Repository#allow_update_branch}.<br/>__*Optional*__
-**archiveOnDestroy**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#archive_on_destroy Repository#archive_on_destroy}.<br/>__*Optional*__
-**archived**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#archived Repository#archived}.<br/>__*Optional*__
-**autoInit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#auto_init Repository#auto_init}.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the repository.
+**allowAutoMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to allow auto-merging pull requests on the repository.<br/>__*Optional*__
+**allowMergeCommit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'false' to disable merge commits on the repository.<br/>__*Optional*__
+**allowRebaseMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'false' to disable rebase merges on the repository.<br/>__*Optional*__
+**allowSquashMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'false' to disable squash merges on the repository.<br/>__*Optional*__
+**allowUpdateBranch**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to always suggest updating pull request branches.<br/>__*Optional*__
+**archiveOnDestroy**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to archive the repository instead of deleting on destroy.<br/>__*Optional*__
+**archived**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving.<br/>__*Optional*__
+**autoInit**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to produce an initial commit in the repository.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **defaultBranch**? | <code>string</code> | Can only be set after initial repository creation, and only if the target branch exists.<br/>__*Optional*__
-**deleteBranchOnMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#delete_branch_on_merge Repository#delete_branch_on_merge}.<br/>__*Optional*__
+**deleteBranchOnMerge**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Automatically delete head branch after a pull request is merged. Defaults to 'false'.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**description**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#description Repository#description}.<br/>__*Optional*__
+**description**? | <code>string</code> | A description of the repository.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
-**gitignoreTemplate**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#gitignore_template Repository#gitignore_template}.<br/>__*Optional*__
-**hasDiscussions**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_discussions Repository#has_discussions}.<br/>__*Optional*__
-**hasDownloads**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_downloads Repository#has_downloads}.<br/>__*Optional*__
-**hasIssues**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_issues Repository#has_issues}.<br/>__*Optional*__
-**hasProjects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_projects Repository#has_projects}.<br/>__*Optional*__
-**hasWiki**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#has_wiki Repository#has_wiki}.<br/>__*Optional*__
-**homepageUrl**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#homepage_url Repository#homepage_url}.<br/>__*Optional*__
+**gitignoreTemplate**? | <code>string</code> | Use the name of the template without the extension. For example, 'Haskell'.<br/>__*Optional*__
+**hasDiscussions**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'.<br/>__*Optional*__
+**hasDownloads**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to enable the (deprecated) downloads features on the repository.<br/>__*Optional*__
+**hasIssues**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to enable the GitHub Issues features on the repository.<br/>__*Optional*__
+**hasProjects**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to enable the GitHub Projects features on the repository.<br/>__*Optional*__
+**hasWiki**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to enable the GitHub Wiki features on the repository.<br/>__*Optional*__
+**homepageUrl**? | <code>string</code> | URL of a page describing the project.<br/>__*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#id Repository#id}.<br/>__*Optional*__
-**ignoreVulnerabilityAlertsDuringRead**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}.<br/>__*Optional*__
-**isTemplate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#is_template Repository#is_template}.<br/>__*Optional*__
-**licenseTemplate**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#license_template Repository#license_template}.<br/>__*Optional*__
+**ignoreVulnerabilityAlertsDuringRead**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.<br/>__*Optional*__
+**isTemplate**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to tell GitHub that this is a template repository.<br/>__*Optional*__
+**licenseTemplate**? | <code>string</code> | Use the name of the template without the extension. For example, 'mit' or 'mpl-2.0'.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**mergeCommitMessage**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_message Repository#merge_commit_message}.<br/>__*Optional*__
-**mergeCommitTitle**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#merge_commit_title Repository#merge_commit_title}.<br/>__*Optional*__
+**mergeCommitMessage**? | <code>string</code> | Can be 'PR_BODY', 'PR_TITLE', or 'BLANK' for a default merge commit message.<br/>__*Optional*__
+**mergeCommitTitle**? | <code>string</code> | Can be 'PR_TITLE' or 'MERGE_MESSAGE' for a default merge commit title.<br/>__*Optional*__
 **pages**? | <code>[repository.RepositoryPages](#cdktf-provider-github-repository-repositorypages)</code> | pages block.<br/>__*Optional*__
 **private**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#private Repository#private}.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 **securityAndAnalysis**? | <code>[repository.RepositorySecurityAndAnalysis](#cdktf-provider-github-repository-repositorysecurityandanalysis)</code> | security_and_analysis block.<br/>__*Optional*__
-**squashMergeCommitMessage**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_message Repository#squash_merge_commit_message}.<br/>__*Optional*__
-**squashMergeCommitTitle**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#squash_merge_commit_title Repository#squash_merge_commit_title}.<br/>__*Optional*__
+**squashMergeCommitMessage**? | <code>string</code> | Can be 'PR_BODY', 'COMMIT_MESSAGES', or 'BLANK' for a default squash merge commit message.<br/>__*Optional*__
+**squashMergeCommitTitle**? | <code>string</code> | Can be 'PR_TITLE' or 'COMMIT_OR_PR_TITLE' for a default squash merge commit title.<br/>__*Optional*__
 **template**? | <code>[repository.RepositoryTemplate](#cdktf-provider-github-repository-repositorytemplate)</code> | template block.<br/>__*Optional*__
-**topics**? | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#topics Repository#topics}.<br/>__*Optional*__
-**visibility**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#visibility Repository#visibility}.<br/>__*Optional*__
-**vulnerabilityAlerts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#vulnerability_alerts Repository#vulnerability_alerts}.<br/>__*Optional*__
+**topics**? | <code>Array<string></code> | The list of topics of the repository.<br/>__*Optional*__
+**visibility**? | <code>string</code> | Can be 'public' or 'private'.<br/>__*Optional*__
+**vulnerabilityAlerts**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Set to 'true' to enable security alerts for vulnerable dependencies.<br/>__*Optional*__
 
 
 
@@ -16006,7 +16006,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **source** | <code>[repository.RepositoryPagesSource](#cdktf-provider-github-repository-repositorypagessource)</code> | source block.
-**cname**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#cname Repository#cname}.<br/>__*Optional*__
+**cname**? | <code>string</code> | The custom domain for the repository. This can only be set after the repository has been created.<br/>__*Optional*__
 
 
 
@@ -16019,8 +16019,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**branch** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#branch Repository#branch}.
-**path**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#path Repository#path}.<br/>__*Optional*__
+**branch** | <code>string</code> | The repository branch used to publish the site's source files. (i.e. 'main' or 'gh-pages').
+**path**? | <code>string</code> | The repository directory from which the site publishes (Default: '/').<br/>__*Optional*__
 
 
 
@@ -16048,7 +16048,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**status** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}.
+**status** | <code>string</code> | Set to 'enabled' to enable advanced security features on the repository. Can be 'enabled' or 'disabled'.
 
 
 
@@ -16061,7 +16061,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**status** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}.
+**status** | <code>string</code> | Set to 'enabled' to enable secret scanning on the repository.
 
 
 
@@ -16074,7 +16074,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**status** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#status Repository#status}.
+**status** | <code>string</code> | Set to 'enabled' to enable secret scanning push protection on the repository.
 
 
 
@@ -16087,9 +16087,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**owner** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#owner Repository#owner}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#repository Repository#repository}.
-**includeAllBranches**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository#include_all_branches Repository#include_all_branches}.<br/>__*Optional*__
+**owner** | <code>string</code> | The GitHub organization or user the template repository is owned by.
+**repository** | <code>string</code> | The name of the template repository.
+**includeAllBranches**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template).<br/>__*Optional*__
 
 
 
@@ -16126,16 +16126,16 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#repository RepositoryCollaborator#repository}.
-**username** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#username RepositoryCollaborator#username}.
+**repository** | <code>string</code> | The GitHub repository.
+**username** | <code>string</code> | The user to add to the repository as a collaborator.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#id RepositoryCollaborator#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**permission**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission RepositoryCollaborator#permission}.<br/>__*Optional*__
-**permissionDiffSuppression**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}.<br/>__*Optional*__
+**permission**? | <code>string</code> | The permission of the outside collaborator for the repository.<br/>__*Optional*__
+**permissionDiffSuppression**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Suppress plan diffs for triage and maintain. Defaults to 'false'.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -16150,9 +16150,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**key** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#key RepositoryDeployKey#key}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#repository RepositoryDeployKey#repository}.
-**title** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#title RepositoryDeployKey#title}.
+**key** | <code>string</code> | A SSH key.
+**repository** | <code>string</code> | Name of the GitHub repository.
+**title** | <code>string</code> | A title.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16161,7 +16161,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**readOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#read_only RepositoryDeployKey#read_only}.<br/>__*Optional*__
+**readOnly**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | A boolean qualifying the key to be either read only or read/write.<br/>__*Optional*__
 
 
 
@@ -16174,8 +16174,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**environment** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#environment RepositoryEnvironment#environment}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#repository RepositoryEnvironment#repository}.
+**environment** | <code>string</code> | The name of the environment.
+**repository** | <code>string</code> | The repository of the environment.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16186,7 +16186,7 @@ Name | Type | Description
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 **reviewers**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[repositoryEnvironment.RepositoryEnvironmentReviewers](#cdktf-provider-github-repositoryenvironment-repositoryenvironmentreviewers)></code> | reviewers block.<br/>__*Optional*__
-**waitTimer**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#wait_timer RepositoryEnvironment#wait_timer}.<br/>__*Optional*__
+**waitTimer**? | <code>number</code> | Amount of time to delay a job after the job is initially triggered.<br/>__*Optional*__
 
 
 
@@ -16199,8 +16199,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**customBranchPolicies** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}.
-**protectedBranches** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#protected_branches RepositoryEnvironment#protected_branches}.
+**customBranchPolicies** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether only branches that match the specified name patterns can deploy to this environment.
+**protectedBranches** | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Whether only branches with branch protection rules can deploy to this environment.
 
 
 
@@ -16213,8 +16213,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**teams**? | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#teams RepositoryEnvironment#teams}.<br/>__*Optional*__
-**users**? | <code>Array<number></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_environment#users RepositoryEnvironment#users}.<br/>__*Optional*__
+**teams**? | <code>Array<number></code> | Up to 6 IDs for teams who may review jobs that reference the environment.<br/>__*Optional*__
+**users**? | <code>Array<number></code> | Up to 6 IDs for users who may review jobs that reference the environment.<br/>__*Optional*__
 
 
 
@@ -16255,20 +16255,20 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**owner** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#owner RepositoryMilestone#owner}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#repository RepositoryMilestone#repository}.
-**title** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#title RepositoryMilestone#title}.
+**owner** | <code>string</code> | The owner of the GitHub Repository.
+**repository** | <code>string</code> | The name of the GitHub Repository.
+**title** | <code>string</code> | The title of the milestone.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**description**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#description RepositoryMilestone#description}.<br/>__*Optional*__
-**dueDate**? | <code>string</code> | in yyyy-mm-dd format.<br/>__*Optional*__
+**description**? | <code>string</code> | A description of the milestone.<br/>__*Optional*__
+**dueDate**? | <code>string</code> | The milestone due date. In 'yyyy-mm-dd' format.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#id RepositoryMilestone#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**state**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#state RepositoryMilestone#state}.<br/>__*Optional*__
+**state**? | <code>string</code> | The state of the milestone. Either 'open' or 'closed'. Default: 'open'.<br/>__*Optional*__
 
 
 
@@ -16281,9 +16281,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#name RepositoryProject#name}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#repository RepositoryProject#repository}.
-**body**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#body RepositoryProject#body}.<br/>__*Optional*__
+**name** | <code>string</code> | The name of the project.
+**repository** | <code>string</code> | The repository of the project.
+**body**? | <code>string</code> | The body of the project.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16304,19 +16304,19 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**baseRef** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#base_ref RepositoryPullRequest#base_ref}.
-**baseRepository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#base_repository RepositoryPullRequest#base_repository}.
-**headRef** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#head_ref RepositoryPullRequest#head_ref}.
-**title** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#title RepositoryPullRequest#title}.
-**body**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#body RepositoryPullRequest#body}.<br/>__*Optional*__
+**baseRef** | <code>string</code> | Name of the branch serving as the base of the Pull Request.
+**baseRepository** | <code>string</code> | Name of the base repository to retrieve the Pull Requests from.
+**headRef** | <code>string</code> | Name of the branch serving as the head of the Pull Request.
+**title** | <code>string</code> | The title of the Pull Request.
+**body**? | <code>string</code> | Body of the Pull Request.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#id RepositoryPullRequest#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**maintainerCanModify**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}.<br/>__*Optional*__
-**owner**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_pull_request#owner RepositoryPullRequest#owner}.<br/>__*Optional*__
+**maintainerCanModify**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Controls whether the base repository maintainers can modify the Pull Request. Default: 'false'.<br/>__*Optional*__
+**owner**? | <code>string</code> | Owner of the repository. If not provided, the provider's default owner is used.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -16331,8 +16331,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**pattern** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_tag_protection#pattern RepositoryTagProtection#pattern}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_tag_protection#repository RepositoryTagProtection#repository}.
+**pattern** | <code>string</code> | The pattern of the tag to protect.
+**repository** | <code>string</code> | Name of the repository to add the tag protection to.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16353,9 +16353,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**events** | <code>Array<string></code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#events RepositoryWebhook#events}.
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#repository RepositoryWebhook#repository}.
-**active**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#active RepositoryWebhook#active}.<br/>__*Optional*__
+**events** | <code>Array<string></code> | A list of events which should trigger the webhook.
+**repository** | <code>string</code> | The repository of the webhook.
+**active**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Indicate if the webhook should receive events. Defaults to 'true'.<br/>__*Optional*__
 **configuration**? | <code>[repositoryWebhook.RepositoryWebhookConfiguration](#cdktf-provider-github-repositorywebhook-repositorywebhookconfiguration)</code> | configuration block.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
@@ -16378,10 +16378,10 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**url** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#url RepositoryWebhook#url}.
-**contentType**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#content_type RepositoryWebhook#content_type}.<br/>__*Optional*__
-**insecureSsl**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}.<br/>__*Optional*__
-**secret**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_webhook#secret RepositoryWebhook#secret}.<br/>__*Optional*__
+**url** | <code>string</code> | The URL of the webhook.
+**contentType**? | <code>string</code> | The content type for the payload. Valid values are either 'form' or 'json'.<br/>__*Optional*__
+**insecureSsl**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Insecure SSL boolean toggle. Defaults to 'false'.<br/>__*Optional*__
+**secret**? | <code>string</code> | The shared secret for the webhook.<br/>__*Optional*__
 
 
 
@@ -16394,18 +16394,18 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**name** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#name Team#name}.
+**name** | <code>string</code> | The name of the team.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
-**createDefaultMaintainer**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#create_default_maintainer Team#create_default_maintainer}.<br/>__*Optional*__
+**createDefaultMaintainer**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Adds a default maintainer to the team. Adds the creating user to the team when 'true'.<br/>__*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
-**description**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#description Team#description}.<br/>__*Optional*__
+**description**? | <code>string</code> | A description of the team.<br/>__*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#id Team#id}.<br/>__*Optional*__
-**ldapDn**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#ldap_dn Team#ldap_dn}.<br/>__*Optional*__
+**ldapDn**? | <code>string</code> | The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**parentTeamId**? | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#parent_team_id Team#parent_team_id}.<br/>__*Optional*__
-**privacy**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team#privacy Team#privacy}.<br/>__*Optional*__
+**parentTeamId**? | <code>number</code> | The ID of the parent team, if this is a nested team.<br/>__*Optional*__
+**privacy**? | <code>string</code> | The level of privacy for the team. Must be one of 'secret' or 'closed'.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -16421,7 +16421,7 @@ Name | Type | Description
 Name | Type | Description 
 -----|------|-------------
 **members** | <code>[IResolvable](#cdktf-iresolvable) &#124; Array<[teamMembers.TeamMembersMembers](#cdktf-provider-github-teammembers-teammembersmembers)></code> | members block.
-**teamId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#team_id TeamMembers#team_id}.
+**teamId** | <code>string</code> | The GitHub team id.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16442,8 +16442,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**username** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#username TeamMembers#username}.
-**role**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#role TeamMembers#role}.<br/>__*Optional*__
+**username** | <code>string</code> | The user to add to the team.
+**role**? | <code>string</code> | The role of the user within the team. Must be one of 'member' or 'maintainer'.<br/>__*Optional*__
 
 
 
@@ -16456,8 +16456,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**teamId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#team_id TeamMembership#team_id}.
-**username** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#username TeamMembership#username}.
+**teamId** | <code>string</code> | The GitHub team id or the GitHub team slug.
+**username** | <code>string</code> | The user to add to the team.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16466,7 +16466,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
-**role**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_membership#role TeamMembership#role}.<br/>__*Optional*__
+**role**? | <code>string</code> | The role of the user within the team. Must be one of 'member' or 'maintainer'.<br/>__*Optional*__
 
 
 
@@ -16479,7 +16479,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**repository** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#repository TeamRepository#repository}.
+**repository** | <code>string</code> | The repository to add to the team.
 **teamId** | <code>string</code> | ID or slug of team.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
@@ -16487,7 +16487,7 @@ Name | Type | Description
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#id TeamRepository#id}.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
-**permission**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#permission TeamRepository#permission}.<br/>__*Optional*__
+**permission**? | <code>string</code> | The permissions of team members regarding the repository.<br/>__*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
 
@@ -16502,7 +16502,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**teamId** | <code>string</code> | ID or slug of team.
+**teamId** | <code>string</code> | The GitHub team id or the GitHub team slug.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16524,9 +16524,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**algorithm**? | <code>string</code> | Algorithm to use when determining team members to be assigned to a pull request.<br/>__*Optional*__
-**memberCount**? | <code>number</code> | The number of reviewers to be assigned to a pull request from this team.<br/>__*Optional*__
-**notify**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Notify the entire team when a pull request is assigned to a member of the team.<br/>__*Optional*__
+**algorithm**? | <code>string</code> | The algorithm to use when assigning pull requests to team members. Supported values are 'ROUND_ROBIN' and 'LOAD_BALANCE'.<br/>__*Optional*__
+**memberCount**? | <code>number</code> | The number of team members to assign to a pull request.<br/>__*Optional*__
+**notify**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | whether to notify the entire team when at least one member is also assigned to the pull request.<br/>__*Optional*__
 
 
 
@@ -16539,7 +16539,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**teamSlug** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}.
+**teamSlug** | <code>string</code> | Slug of the team.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16561,9 +16561,9 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**groupDescription** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_description TeamSyncGroupMapping#group_description}.
-**groupId** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_id TeamSyncGroupMapping#group_id}.
-**groupName** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_name TeamSyncGroupMapping#group_name}.
+**groupDescription** | <code>string</code> | The description of the IdP group.
+**groupId** | <code>string</code> | The ID of the IdP group.
+**groupName** | <code>string</code> | The name of the IdP group.
 
 
 
@@ -16576,7 +16576,7 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**armoredPublicKey** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}.
+**armoredPublicKey** | <code>string</code> | Your public GPG key, generated in ASCII-armored format.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
@@ -16597,13 +16597,13 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**allowEmptyId**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}.<br/>__*Optional*__
+**allowEmptyId**? | <code>boolean &#124; [IResolvable](#cdktf-iresolvable)</code> | Allow the ID to be unset.<br/>__*Optional*__
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **forEach**?🔹 | <code>[ITerraformIterator](#cdktf-iterraformiterator)</code> | __*Optional*__
 **id**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#id UserInvitationAccepter#id}.<br/>__*Optional*__
-**invitationId**? | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}.<br/>__*Optional*__
+**invitationId**? | <code>string</code> | ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'.<br/>__*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **provisioners**?🔹 | <code>Array<[FileProvisioner](#cdktf-fileprovisioner) &#124; [LocalExecProvisioner](#cdktf-localexecprovisioner) &#124; [RemoteExecProvisioner](#cdktf-remoteexecprovisioner)></code> | __*Optional*__
@@ -16619,8 +16619,8 @@ Name | Type | Description
 
 Name | Type | Description 
 -----|------|-------------
-**key** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#key UserSshKey#key}.
-**title** | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#title UserSshKey#title}.
+**key** | <code>string</code> | The public SSH key to add to your GitHub account.
+**title** | <code>string</code> | A descriptive name for the new key.
 **connection**?🔹 | <code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code> | __*Optional*__
 **count**?🔹 | <code>number</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__

@@ -15,18 +15,26 @@ export interface RepositoryDeployKeyConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * A SSH key.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#key RepositoryDeployKey#key}
   */
   readonly key: string;
   /**
+  * A boolean qualifying the key to be either read only or read/write.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#read_only RepositoryDeployKey#read_only}
   */
   readonly readOnly?: boolean | cdktf.IResolvable;
   /**
+  * Name of the GitHub repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#repository RepositoryDeployKey#repository}
   */
   readonly repository: string;
   /**
+  * A title.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_deploy_key#title RepositoryDeployKey#title}
   */
   readonly title: string;
@@ -58,7 +66,7 @@ export class RepositoryDeployKey extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_deploy_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

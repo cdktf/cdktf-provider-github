@@ -8,10 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface BranchProtectionV3Config extends cdktf.TerraformMetaArguments {
   /**
+  * The Git branch to protect.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#branch BranchProtectionV3#branch}
   */
   readonly branch: string;
   /**
+  * Setting this to 'true' enforces status checks for repository administrators.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#enforce_admins BranchProtectionV3#enforce_admins}
   */
   readonly enforceAdmins?: boolean | cdktf.IResolvable;
@@ -23,14 +27,20 @@ export interface BranchProtectionV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The GitHub repository name.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#repository BranchProtectionV3#repository}
   */
   readonly repository: string;
   /**
+  * Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}
   */
   readonly requireConversationResolution?: boolean | cdktf.IResolvable;
   /**
+  * Setting this to 'true' requires all commits to be signed with GPG.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_signed_commits BranchProtectionV3#require_signed_commits}
   */
   readonly requireSignedCommits?: boolean | cdktf.IResolvable;
@@ -55,14 +65,20 @@ export interface BranchProtectionV3Config extends cdktf.TerraformMetaArguments {
 }
 export interface BranchProtectionV3RequiredPullRequestReviews {
   /**
+  * Dismiss approved reviews automatically when a new commit is pushed.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismiss_stale_reviews BranchProtectionV3#dismiss_stale_reviews}
   */
   readonly dismissStaleReviews?: boolean | cdktf.IResolvable;
   /**
+  * The list of team slugs with dismissal access. Always use slug of the team, not its name. Each team already has to have access to the repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismissal_teams BranchProtectionV3#dismissal_teams}
   */
   readonly dismissalTeams?: string[];
   /**
+  * The list of user logins with dismissal access.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#dismissal_users BranchProtectionV3#dismissal_users}
   */
   readonly dismissalUsers?: string[];
@@ -71,10 +87,14 @@ export interface BranchProtectionV3RequiredPullRequestReviews {
   */
   readonly includeAdmins?: boolean | cdktf.IResolvable;
   /**
+  * Require an approved review in pull requests including files with a designated code owner.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#require_code_owner_reviews BranchProtectionV3#require_code_owner_reviews}
   */
   readonly requireCodeOwnerReviews?: boolean | cdktf.IResolvable;
   /**
+  * Require 'x' number of approvals to satisfy branch protection requirements. If this is specified it must be a number between 0-6.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#required_approving_review_count BranchProtectionV3#required_approving_review_count}
   */
   readonly requiredApprovingReviewCount?: number;
@@ -255,6 +275,8 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
 }
 export interface BranchProtectionV3RequiredStatusChecks {
   /**
+  * The list of status checks to require in order to merge into this branch. No status checks are required by default. Checks should be strings containing the 'context' and 'app_id' like so 'context:app_id'
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#checks BranchProtectionV3#checks}
   */
   readonly checks?: string[];
@@ -267,6 +289,8 @@ export interface BranchProtectionV3RequiredStatusChecks {
   */
   readonly includeAdmins?: boolean | cdktf.IResolvable;
   /**
+  * Require branches to be up to date before merging.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#strict BranchProtectionV3#strict}
   */
   readonly strict?: boolean | cdktf.IResolvable;
@@ -401,14 +425,20 @@ export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf
 }
 export interface BranchProtectionV3Restrictions {
   /**
+  * The list of app slugs with push access.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#apps BranchProtectionV3#apps}
   */
   readonly apps?: string[];
   /**
+  * The list of team slugs with push access. Always use slug of the team, not its name. Each team already has to have access to the repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#teams BranchProtectionV3#teams}
   */
   readonly teams?: string[];
   /**
+  * The list of user logins with push access.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#users BranchProtectionV3#users}
   */
   readonly users?: string[];
@@ -545,7 +575,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_protection_v3',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

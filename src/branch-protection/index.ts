@@ -8,18 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Setting this to 'true' to allow the branch to be deleted.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_deletions BranchProtection#allows_deletions}
   */
   readonly allowsDeletions?: boolean | cdktf.IResolvable;
   /**
+  * Setting this to 'true' to allow force pushes on the branch.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}
   */
   readonly allowsForcePushes?: boolean | cdktf.IResolvable;
   /**
+  * Setting this to 'true' to block creating the branch.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#blocks_creations BranchProtection#blocks_creations}
   */
   readonly blocksCreations?: boolean | cdktf.IResolvable;
   /**
+  * Setting this to 'true' enforces status checks for repository administrators.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#enforce_admins BranchProtection#enforce_admins}
   */
   readonly enforceAdmins?: boolean | cdktf.IResolvable;
@@ -31,32 +39,44 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Setting this to 'true' will make the branch read-only and preventing any pushes to it.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#lock_branch BranchProtection#lock_branch}
   */
   readonly lockBranch?: boolean | cdktf.IResolvable;
   /**
+  * Identifies the protection rule pattern.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pattern BranchProtection#pattern}
   */
   readonly pattern: string;
   /**
+  * The list of actor Names/IDs that may push to the branch. Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#push_restrictions BranchProtection#push_restrictions}
   */
   readonly pushRestrictions?: string[];
   /**
-  * Node ID or name of repository
+  * The name or node ID of the repository associated with this branch protection rule.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#repository_id BranchProtection#repository_id}
   */
   readonly repositoryId: string;
   /**
+  * Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}
   */
   readonly requireConversationResolution?: boolean | cdktf.IResolvable;
   /**
+  * Setting this to 'true' requires all commits to be signed with GPG.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_signed_commits BranchProtection#require_signed_commits}
   */
   readonly requireSignedCommits?: boolean | cdktf.IResolvable;
   /**
+  * Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_linear_history BranchProtection#required_linear_history}
   */
   readonly requiredLinearHistory?: boolean | cdktf.IResolvable;
@@ -75,30 +95,44 @@ export interface BranchProtectionConfig extends cdktf.TerraformMetaArguments {
 }
 export interface BranchProtectionRequiredPullRequestReviews {
   /**
+  * Dismiss approved reviews automatically when a new commit is pushed.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}
   */
   readonly dismissStaleReviews?: boolean | cdktf.IResolvable;
   /**
+  * The list of actor Names/IDs with dismissal access. If not empty, 'restrict_dismissals' is ignored. Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#dismissal_restrictions BranchProtection#dismissal_restrictions}
   */
   readonly dismissalRestrictions?: string[];
   /**
+  * The list of actor Names/IDs that are allowed to bypass pull request requirements. Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}
   */
   readonly pullRequestBypassers?: string[];
   /**
+  * Require an approved review in pull requests including files with a designated code owner.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
   */
   readonly requireCodeOwnerReviews?: boolean | cdktf.IResolvable;
   /**
+  * Require that The most recent push must be approved by someone other than the last pusher.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}
   */
   readonly requireLastPushApproval?: boolean | cdktf.IResolvable;
   /**
+  * Require 'x' number of approvals to satisfy branch protection requirements. If this is specified it must be a number between 0-6.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}
   */
   readonly requiredApprovingReviewCount?: number;
   /**
+  * Restrict pull request review dismissals.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}
   */
   readonly restrictDismissals?: boolean | cdktf.IResolvable;
@@ -334,10 +368,14 @@ export class BranchProtectionRequiredPullRequestReviewsList extends cdktf.Comple
 }
 export interface BranchProtectionRequiredStatusChecks {
   /**
+  * The list of status checks to require in order to merge into this branch. No status checks are required by default.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#contexts BranchProtection#contexts}
   */
   readonly contexts?: string[];
   /**
+  * Require branches to be up to date before merging.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection#strict BranchProtection#strict}
   */
   readonly strict?: boolean | cdktf.IResolvable;
@@ -483,7 +521,7 @@ export class BranchProtection extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_protection',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

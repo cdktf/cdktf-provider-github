@@ -8,11 +8,13 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryMilestoneConfig extends cdktf.TerraformMetaArguments {
   /**
+  * A description of the milestone.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#description RepositoryMilestone#description}
   */
   readonly description?: string;
   /**
-  * in yyyy-mm-dd format
+  * The milestone due date. In 'yyyy-mm-dd' format.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#due_date RepositoryMilestone#due_date}
   */
@@ -25,18 +27,26 @@ export interface RepositoryMilestoneConfig extends cdktf.TerraformMetaArguments 
   */
   readonly id?: string;
   /**
+  * The owner of the GitHub Repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#owner RepositoryMilestone#owner}
   */
   readonly owner: string;
   /**
+  * The name of the GitHub Repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#repository RepositoryMilestone#repository}
   */
   readonly repository: string;
   /**
+  * The state of the milestone. Either 'open' or 'closed'. Default: 'open'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#state RepositoryMilestone#state}
   */
   readonly state?: string;
   /**
+  * The title of the milestone.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#title RepositoryMilestone#title}
   */
   readonly title: string;
@@ -68,7 +78,7 @@ export class RepositoryMilestone extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_milestone',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -15,14 +15,20 @@ export interface ActionsRunnerGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Name of the runner group.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#name ActionsRunnerGroup#name}
   */
   readonly name: string;
   /**
+  * List of repository IDs that can access the runner group.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
   */
   readonly selectedRepositoryIds?: number[];
   /**
+  * The visibility of the runner group.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#visibility ActionsRunnerGroup#visibility}
   */
   readonly visibility: string;
@@ -54,7 +60,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_runner_group',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -15,14 +15,20 @@ export interface ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig ex
   */
   readonly id?: string;
   /**
+  * A list of OpenID Connect claims.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#include_claim_keys ActionsRepositoryOidcSubjectClaimCustomizationTemplate#include_claim_keys}
   */
   readonly includeClaimKeys?: string[];
   /**
+  * The name of the repository.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#repository ActionsRepositoryOidcSubjectClaimCustomizationTemplate#repository}
   */
   readonly repository: string;
   /**
+  * Whether to use the default template or not. If 'true', 'include_claim_keys' must not be set.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template#use_default ActionsRepositoryOidcSubjectClaimCustomizationTemplate#use_default}
   */
   readonly useDefault: boolean | cdktf.IResolvable;
@@ -54,7 +60,7 @@ export class ActionsRepositoryOidcSubjectClaimCustomizationTemplate extends cdkt
       terraformResourceType: 'github_actions_repository_oidc_subject_claim_customization_template',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

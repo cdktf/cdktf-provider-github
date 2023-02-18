@@ -15,10 +15,14 @@ export interface RepositoryTagProtectionConfig extends cdktf.TerraformMetaArgume
   */
   readonly id?: string;
   /**
+  * The pattern of the tag to protect.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_tag_protection#pattern RepositoryTagProtection#pattern}
   */
   readonly pattern: string;
   /**
+  * Name of the repository to add the tag protection to.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_tag_protection#repository RepositoryTagProtection#repository}
   */
   readonly repository: string;
@@ -50,7 +54,7 @@ export class RepositoryTagProtection extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_tag_protection',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

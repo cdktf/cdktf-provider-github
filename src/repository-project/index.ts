@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
   /**
+  * The body of the project.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#body RepositoryProject#body}
   */
   readonly body?: string;
@@ -19,10 +21,14 @@ export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The name of the project.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#name RepositoryProject#name}
   */
   readonly name: string;
   /**
+  * The repository of the project.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#repository RepositoryProject#repository}
   */
   readonly repository: string;
@@ -54,7 +60,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_project',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

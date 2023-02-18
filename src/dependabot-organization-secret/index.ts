@@ -8,6 +8,8 @@ import * as cdktf from 'cdktf';
 
 export interface DependabotOrganizationSecretConfig extends cdktf.TerraformMetaArguments {
   /**
+  * Encrypted value of the secret using the GitHub public key in Base64 format.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#encrypted_value DependabotOrganizationSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
@@ -19,18 +21,26 @@ export interface DependabotOrganizationSecretConfig extends cdktf.TerraformMetaA
   */
   readonly id?: string;
   /**
+  * Plaintext value of the secret to be encrypted.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#plaintext_value DependabotOrganizationSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
+  * Name of the secret.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#secret_name DependabotOrganizationSecret#secret_name}
   */
   readonly secretName: string;
   /**
+  * An array of repository ids that can access the organization secret.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#selected_repository_ids DependabotOrganizationSecret#selected_repository_ids}
   */
   readonly selectedRepositoryIds?: number[];
   /**
+  * Configures the access that repositories have to the organization secret. Must be one of 'all', 'private' or 'selected'. 'selected_repository_ids' is required if set to 'selected'.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret#visibility DependabotOrganizationSecret#visibility}
   */
   readonly visibility: string;
@@ -62,7 +72,7 @@ export class DependabotOrganizationSecret extends cdktf.TerraformResource {
       terraformResourceType: 'github_dependabot_organization_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

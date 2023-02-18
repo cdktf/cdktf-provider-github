@@ -15,10 +15,14 @@ export interface UserSshKeyConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * The public SSH key to add to your GitHub account.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#key UserSshKey#key}
   */
   readonly key: string;
   /**
+  * A descriptive name for the new key.
+  * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#title UserSshKey#title}
   */
   readonly title: string;
@@ -50,7 +54,7 @@ export class UserSshKey extends cdktf.TerraformResource {
       terraformResourceType: 'github_user_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
