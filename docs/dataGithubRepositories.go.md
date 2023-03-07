@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/repositorie
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 datagithubrepositories.NewDataGithubRepositories(scope Construct, id *string, config DataGithubRepositoriesConfig) DataGithubRepositories
 ```
@@ -294,7 +294,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datagithubrepositories.DataGithubRepositories_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 &datagithubrepositories.DataGithubRepositoriesConfig {
 	Connection: interface{},

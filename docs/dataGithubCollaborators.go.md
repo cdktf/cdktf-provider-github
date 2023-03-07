@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/collaborato
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCollaborators.DataGithubCollaborators.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborators"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcollaborators"
 
 datagithubcollaborators.NewDataGithubCollaborators(scope Construct, id *string, config DataGithubCollaboratorsConfig) DataGithubCollaborators
 ```
@@ -280,7 +280,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubCollaborators.DataGithubCollaborators.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborators"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcollaborators"
 
 datagithubcollaborators.DataGithubCollaborators_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubCollaborators.DataGithubCollaborators.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborators"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcollaborators"
 
 datagithubcollaborators.DataGithubCollaborators_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datagithubcollaborators.DataGithubCollaborators_IsTerraformElement(x interface{}
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubCollaborators.DataGithubCollaborators.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborators"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcollaborators"
 
 datagithubcollaborators.DataGithubCollaborators_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -602,7 +602,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubCollaborators.DataGithubCollaboratorsCollaborator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborators"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcollaborators"
 
 &datagithubcollaborators.DataGithubCollaboratorsCollaborator {
 
@@ -615,7 +615,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborat
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubCollaborators.DataGithubCollaboratorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborators"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcollaborators"
 
 &datagithubcollaborators.DataGithubCollaboratorsConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCollaborators.DataGithubCollaboratorsCollaboratorList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborators"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcollaborators"
 
 datagithubcollaborators.NewDataGithubCollaboratorsCollaboratorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubCollaboratorsCollaboratorList
 ```
@@ -910,7 +910,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCollaborators.DataGithubCollaboratorsCollaboratorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubcollaborators"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcollaborators"
 
 datagithubcollaborators.NewDataGithubCollaboratorsCollaboratorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubCollaboratorsCollaboratorOutputReference
 ```
