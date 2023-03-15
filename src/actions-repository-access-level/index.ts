@@ -54,7 +54,7 @@ export class ActionsRepositoryAccessLevel extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_repository_access_level',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.18.0',
+        providerVersion: '5.18.3',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
