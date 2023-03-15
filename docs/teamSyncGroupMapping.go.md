@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/r/team_sync_g
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsyncgroupmapping"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsyncgroupmapping"
 
 teamsyncgroupmapping.NewTeamSyncGroupMapping(scope Construct, id *string, config TeamSyncGroupMappingConfig) TeamSyncGroupMapping
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsyncgroupmapping"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsyncgroupmapping"
 
 teamsyncgroupmapping.TeamSyncGroupMapping_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsyncgroupmapping"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsyncgroupmapping"
 
 teamsyncgroupmapping.TeamSyncGroupMapping_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ teamsyncgroupmapping.TeamSyncGroupMapping_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsyncgroupmapping"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsyncgroupmapping"
 
 teamsyncgroupmapping.TeamSyncGroupMapping_IsTerraformResource(x interface{}) *bool
 ```
@@ -615,7 +615,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsyncgroupmapping"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsyncgroupmapping"
 
 &teamsyncgroupmapping.TeamSyncGroupMappingConfig {
 	Connection: interface{},
@@ -766,7 +766,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsyncgroupmapping"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsyncgroupmapping"
 
 &teamsyncgroupmapping.TeamSyncGroupMappingGroup {
 	GroupDescription: *string,
@@ -834,7 +834,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsyncgroupmapping"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsyncgroupmapping"
 
 teamsyncgroupmapping.NewTeamSyncGroupMappingGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamSyncGroupMappingGroupList
 ```
@@ -977,7 +977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsyncgroupmapping"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsyncgroupmapping"
 
 teamsyncgroupmapping.NewTeamSyncGroupMappingGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamSyncGroupMappingGroupOutputReference
 ```

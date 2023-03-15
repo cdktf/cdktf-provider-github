@@ -84,7 +84,7 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_pull_request',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.18.0',
+        providerVersion: '5.18.3',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
