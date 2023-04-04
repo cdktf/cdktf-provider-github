@@ -46,7 +46,7 @@ export class DataGithubUsers extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_users',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.18.3',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -64,6 +64,11 @@ export class DataGithubUsers extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // emails - computed: true, optional: false, required: false
+  public get emails() {
+    return this.getListAttribute('emails');
+  }
 
   // id - computed: true, optional: true, required: false
   private _id?: string; 

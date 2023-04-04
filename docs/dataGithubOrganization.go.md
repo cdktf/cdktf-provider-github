@@ -353,6 +353,7 @@ datagithuborganization.DataGithubOrganization_IsTerraformDataSource(x interface{
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.orgname">Orgname</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.plan">Plan</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.repositories">Repositories</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.users">Users</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMapList</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.id">Id</a></code> | <code>*string</code> | *No description.* |
@@ -549,6 +550,16 @@ func Repositories() *[]*string
 ```
 
 - *Type:* *[]*string
+
+---
+
+##### `Users`<sup>Required</sup> <a name="Users" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.users"></a>
+
+```go
+func Users() StringMapList
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMapList
 
 ---
 

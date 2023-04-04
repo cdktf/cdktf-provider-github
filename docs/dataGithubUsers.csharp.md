@@ -346,6 +346,7 @@ DataGithubUsers.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails">Emails</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.logins">Logins</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.nodeIds">NodeIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.unknownLogins">UnknownLogins</a></code> | <code>string[]</code> | *No description.* |
@@ -475,6 +476,16 @@ public TerraformProvider Provider { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Emails`<sup>Required</sup> <a name="Emails" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails"></a>
+
+```csharp
+public string[] Emails { get; }
+```
+
+- *Type:* string[]
 
 ---
 

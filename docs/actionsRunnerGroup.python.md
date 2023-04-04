@@ -24,7 +24,9 @@ actionsRunnerGroup.ActionsRunnerGroup(
   name: str,
   visibility: str,
   id: str = None,
-  selected_repository_ids: typing.List[typing.Union[int, float]] = None
+  restricted_to_workflows: typing.Union[bool, IResolvable] = None,
+  selected_repository_ids: typing.List[typing.Union[int, float]] = None,
+  selected_workflows: typing.List[str] = None
 )
 ```
 
@@ -42,7 +44,9 @@ actionsRunnerGroup.ActionsRunnerGroup(
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the runner group. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.visibility">visibility</a></code> | <code>str</code> | The visibility of the runner group. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#id ActionsRunnerGroup#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.restrictedToWorkflows">restricted_to_workflows</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.selectedRepositoryIds">selected_repository_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | List of repository IDs that can access the runner group. |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.selectedWorkflows">selected_workflows</a></code> | <code>typing.List[str]</code> | List of workflows the runner group should be allowed to run. |
 
 ---
 
@@ -137,6 +141,18 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `restricted_to_workflows`<sup>Optional</sup> <a name="restricted_to_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.restrictedToWorkflows"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array.
+
+Defaults to 'false'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
+
+---
+
 ##### `selected_repository_ids`<sup>Optional</sup> <a name="selected_repository_ids" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.selectedRepositoryIds"></a>
 
 - *Type:* typing.List[typing.Union[int, float]]
@@ -144,6 +160,18 @@ If you experience problems setting this value it might not be settable. Please t
 List of repository IDs that can access the runner group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
+
+---
+
+##### `selected_workflows`<sup>Optional</sup> <a name="selected_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.selectedWorkflows"></a>
+
+- *Type:* typing.List[str]
+
+List of workflows the runner group should be allowed to run.
+
+This setting will be ignored unless restricted_to_workflows is set to 'true'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
 
 ---
 
@@ -168,7 +196,9 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetRestrictedToWorkflows">reset_restricted_to_workflows</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetSelectedRepositoryIds">reset_selected_repository_ids</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetSelectedWorkflows">reset_selected_workflows</a></code> | *No description.* |
 
 ---
 
@@ -387,10 +417,22 @@ def interpolation_for_attribute(
 def reset_id() -> None
 ```
 
+##### `reset_restricted_to_workflows` <a name="reset_restricted_to_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetRestrictedToWorkflows"></a>
+
+```python
+def reset_restricted_to_workflows() -> None
+```
+
 ##### `reset_selected_repository_ids` <a name="reset_selected_repository_ids" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetSelectedRepositoryIds"></a>
 
 ```python
 def reset_selected_repository_ids() -> None
+```
+
+##### `reset_selected_workflows` <a name="reset_selected_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetSelectedWorkflows"></a>
+
+```python
+def reset_selected_workflows() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -491,17 +533,19 @@ actionsRunnerGroup.ActionsRunnerGroup.is_terraform_resource(
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.default">default</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.inherited">inherited</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflows">restricted_to_workflows</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.runnersUrl">runners_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoriesUrl">selected_repositories_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflows">selected_workflows</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflowsInput">restricted_to_workflows_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoryIdsInput">selected_repository_ids_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflowsInput">selected_workflows_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.visibilityInput">visibility_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflows">restricted_to_workflows</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoryIds">selected_repository_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflows">selected_workflows</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.visibility">visibility</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -688,16 +732,6 @@ inherited: IResolvable
 
 ---
 
-##### `restricted_to_workflows`<sup>Required</sup> <a name="restricted_to_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflows"></a>
-
-```python
-restricted_to_workflows: IResolvable
-```
-
-- *Type:* cdktf.IResolvable
-
----
-
 ##### `runners_url`<sup>Required</sup> <a name="runners_url" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.runnersUrl"></a>
 
 ```python
@@ -715,16 +749,6 @@ selected_repositories_url: str
 ```
 
 - *Type:* str
-
----
-
-##### `selected_workflows`<sup>Required</sup> <a name="selected_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflows"></a>
-
-```python
-selected_workflows: typing.List[str]
-```
-
-- *Type:* typing.List[str]
 
 ---
 
@@ -748,6 +772,16 @@ name_input: str
 
 ---
 
+##### `restricted_to_workflows_input`<sup>Optional</sup> <a name="restricted_to_workflows_input" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflowsInput"></a>
+
+```python
+restricted_to_workflows_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `selected_repository_ids_input`<sup>Optional</sup> <a name="selected_repository_ids_input" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoryIdsInput"></a>
 
 ```python
@@ -755,6 +789,16 @@ selected_repository_ids_input: typing.List[typing.Union[int, float]]
 ```
 
 - *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `selected_workflows_input`<sup>Optional</sup> <a name="selected_workflows_input" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflowsInput"></a>
+
+```python
+selected_workflows_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -788,6 +832,16 @@ name: str
 
 ---
 
+##### `restricted_to_workflows`<sup>Required</sup> <a name="restricted_to_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflows"></a>
+
+```python
+restricted_to_workflows: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `selected_repository_ids`<sup>Required</sup> <a name="selected_repository_ids" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoryIds"></a>
 
 ```python
@@ -795,6 +849,16 @@ selected_repository_ids: typing.List[typing.Union[int, float]]
 ```
 
 - *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `selected_workflows`<sup>Required</sup> <a name="selected_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflows"></a>
+
+```python
+selected_workflows: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -846,7 +910,9 @@ actionsRunnerGroup.ActionsRunnerGroupConfig(
   name: str,
   visibility: str,
   id: str = None,
-  selected_repository_ids: typing.List[typing.Union[int, float]] = None
+  restricted_to_workflows: typing.Union[bool, IResolvable] = None,
+  selected_repository_ids: typing.List[typing.Union[int, float]] = None,
+  selected_workflows: typing.List[str] = None
 )
 ```
 
@@ -864,7 +930,9 @@ actionsRunnerGroup.ActionsRunnerGroupConfig(
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.name">name</a></code> | <code>str</code> | Name of the runner group. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.visibility">visibility</a></code> | <code>str</code> | The visibility of the runner group. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#id ActionsRunnerGroup#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.restrictedToWorkflows">restricted_to_workflows</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.selectedRepositoryIds">selected_repository_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | List of repository IDs that can access the runner group. |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.selectedWorkflows">selected_workflows</a></code> | <code>typing.List[str]</code> | List of workflows the runner group should be allowed to run. |
 
 ---
 
@@ -981,6 +1049,22 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `restricted_to_workflows`<sup>Optional</sup> <a name="restricted_to_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.restrictedToWorkflows"></a>
+
+```python
+restricted_to_workflows: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array.
+
+Defaults to 'false'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
+
+---
+
 ##### `selected_repository_ids`<sup>Optional</sup> <a name="selected_repository_ids" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.selectedRepositoryIds"></a>
 
 ```python
@@ -992,6 +1076,22 @@ selected_repository_ids: typing.List[typing.Union[int, float]]
 List of repository IDs that can access the runner group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
+
+---
+
+##### `selected_workflows`<sup>Optional</sup> <a name="selected_workflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.selectedWorkflows"></a>
+
+```python
+selected_workflows: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+List of workflows the runner group should be allowed to run.
+
+This setting will be ignored unless restricted_to_workflows is set to 'true'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
 
 ---
 

@@ -159,7 +159,7 @@ export class DataGithubOrganizationTeams extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_organization_teams',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.18.3',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

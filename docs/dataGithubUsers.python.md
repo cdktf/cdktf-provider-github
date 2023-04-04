@@ -452,6 +452,7 @@ dataGithubUsers.DataGithubUsers.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails">emails</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.logins">logins</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.nodeIds">node_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.unknownLogins">unknown_logins</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -581,6 +582,16 @@ provider: TerraformProvider
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `emails`<sup>Required</sup> <a name="emails" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails"></a>
+
+```python
+emails: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 

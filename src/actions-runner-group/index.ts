@@ -21,11 +21,23 @@ export interface ActionsRunnerGroupConfig extends cdktf.TerraformMetaArguments {
   */
   readonly name: string;
   /**
+  * If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array. Defaults to 'false'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
+  */
+  readonly restrictedToWorkflows?: boolean | cdktf.IResolvable;
+  /**
   * List of repository IDs that can access the runner group.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
   */
   readonly selectedRepositoryIds?: number[];
+  /**
+  * List of workflows the runner group should be allowed to run. This setting will be ignored unless restricted_to_workflows is set to 'true'.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
+  */
+  readonly selectedWorkflows?: string[];
   /**
   * The visibility of the runner group.
   * 
@@ -60,7 +72,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_runner_group',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.18.3',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -73,7 +85,9 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
     });
     this._id = config.id;
     this._name = config.name;
+    this._restrictedToWorkflows = config.restrictedToWorkflows;
     this._selectedRepositoryIds = config.selectedRepositoryIds;
+    this._selectedWorkflows = config.selectedWorkflows;
     this._visibility = config.visibility;
   }
 
@@ -130,9 +144,20 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
     return this._name;
   }
 
-  // restricted_to_workflows - computed: true, optional: false, required: false
+  // restricted_to_workflows - computed: false, optional: true, required: false
+  private _restrictedToWorkflows?: boolean | cdktf.IResolvable; 
   public get restrictedToWorkflows() {
     return this.getBooleanAttribute('restricted_to_workflows');
+  }
+  public set restrictedToWorkflows(value: boolean | cdktf.IResolvable) {
+    this._restrictedToWorkflows = value;
+  }
+  public resetRestrictedToWorkflows() {
+    this._restrictedToWorkflows = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get restrictedToWorkflowsInput() {
+    return this._restrictedToWorkflows;
   }
 
   // runners_url - computed: true, optional: false, required: false
@@ -161,9 +186,20 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
     return this._selectedRepositoryIds;
   }
 
-  // selected_workflows - computed: true, optional: false, required: false
+  // selected_workflows - computed: false, optional: true, required: false
+  private _selectedWorkflows?: string[]; 
   public get selectedWorkflows() {
     return this.getListAttribute('selected_workflows');
+  }
+  public set selectedWorkflows(value: string[]) {
+    this._selectedWorkflows = value;
+  }
+  public resetSelectedWorkflows() {
+    this._selectedWorkflows = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get selectedWorkflowsInput() {
+    return this._selectedWorkflows;
   }
 
   // visibility - computed: false, optional: false, required: true
@@ -187,7 +223,9 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
     return {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      restricted_to_workflows: cdktf.booleanToTerraform(this._restrictedToWorkflows),
       selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._selectedRepositoryIds),
+      selected_workflows: cdktf.listMapper(cdktf.stringToTerraform, false)(this._selectedWorkflows),
       visibility: cdktf.stringToTerraform(this._visibility),
     };
   }

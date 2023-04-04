@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The branch name, defaults to "main"
+  * The branch name, defaults to the repository's default branch
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#branch DataGithubRepositoryFile#branch}
   */
@@ -60,7 +60,7 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.18.3',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -149,6 +149,11 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
+  }
+
+  // ref - computed: true, optional: false, required: false
+  public get ref() {
+    return this.getStringAttribute('ref');
   }
 
   // repository - computed: false, optional: false, required: true
