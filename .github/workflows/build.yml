@@ -57,8 +57,6 @@ jobs:
         with:
           name: build-artifact
           path: dist
-    container:
-      image: hashicorp/jsii-terraform
   self-mutation:
     needs: build
     runs-on: ubuntu-latest

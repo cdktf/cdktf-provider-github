@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 repositorydeploykey.NewRepositoryDeployKey(scope Construct, id *string, config RepositoryDeployKeyConfig) RepositoryDeployKey
 ```
@@ -280,7 +280,7 @@ func ResetReadOnly()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 repositorydeploykey.RepositoryDeployKey_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 repositorydeploykey.RepositoryDeployKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ repositorydeploykey.RepositoryDeployKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 repositorydeploykey.RepositoryDeployKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 &repositorydeploykey.RepositoryDeployKeyConfig {
 	Connection: interface{},

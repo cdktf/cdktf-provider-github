@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.NewRepositoryMilestone(scope Construct, id *string, config RepositoryMilestoneConfig) RepositoryMilestone
 ```
@@ -294,7 +294,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ repositorymilestone.RepositoryMilestone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsTerraformResource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 &repositorymilestone.RepositoryMilestoneConfig {
 	Connection: interface{},
