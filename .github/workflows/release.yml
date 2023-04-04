@@ -47,8 +47,6 @@ jobs:
         with:
           name: build-artifact
           path: dist
-    container:
-      image: hashicorp/jsii-terraform
   release_github:
     name: Publish to GitHub Releases
     needs: release
