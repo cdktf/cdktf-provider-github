@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/r/team_member
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembers(scope Construct, id *string, config TeamMembersConfig) TeamMembers
 ```
@@ -286,7 +286,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.teamMembers.TeamMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.teamMembers.TeamMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -332,7 +332,7 @@ teammembers.TeamMembers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.teamMembers.TeamMembers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsTerraformResource(x interface{}) *bool
 ```
@@ -608,7 +608,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamMembers.TeamMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 &teammembers.TeamMembersConfig {
 	Connection: interface{},
@@ -759,7 +759,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamMembers.TeamMembersMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 &teammembers.TeamMembersMembers {
 	Username: *string,
@@ -811,7 +811,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembersMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembersMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamMembersMembersList
 ```
@@ -954,7 +954,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembersMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamMembersMembersOutputReference
 ```

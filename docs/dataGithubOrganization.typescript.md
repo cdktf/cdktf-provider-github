@@ -353,6 +353,7 @@ dataGithubOrganization.DataGithubOrganization.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.orgname">orgname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.plan">plan</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.repositories">repositories</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.users">users</a></code> | <code>cdktf.StringMapList</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -549,6 +550,16 @@ public readonly repositories: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.users"></a>
+
+```typescript
+public readonly users: StringMapList;
+```
+
+- *Type:* cdktf.StringMapList
 
 ---
 

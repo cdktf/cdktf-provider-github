@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/user github
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubUser.DataGithubUser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubuser"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubuser"
 
 datagithubuser.NewDataGithubUser(scope Construct, id *string, config DataGithubUserConfig) DataGithubUser
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubUser.DataGithubUser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubuser"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubuser"
 
 datagithubuser.DataGithubUser_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubUser.DataGithubUser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubuser"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubuser"
 
 datagithubuser.DataGithubUser_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagithubuser.DataGithubUser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubUser.DataGithubUser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubuser"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubuser"
 
 datagithubuser.DataGithubUser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubUser.DataGithubUserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubuser"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubuser"
 
 &datagithubuser.DataGithubUserConfig {
 	Connection: interface{},

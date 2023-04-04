@@ -25,7 +25,10 @@ ActionsRunnerGroup.Builder.create(Construct scope, java.lang.String id)
     .name(java.lang.String)
     .visibility(java.lang.String)
 //  .id(java.lang.String)
+//  .restrictedToWorkflows(java.lang.Boolean)
+//  .restrictedToWorkflows(IResolvable)
 //  .selectedRepositoryIds(java.util.List<java.lang.Number>)
+//  .selectedWorkflows(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -43,7 +46,9 @@ ActionsRunnerGroup.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Name of the runner group. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.visibility">visibility</a></code> | <code>java.lang.String</code> | The visibility of the runner group. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#id ActionsRunnerGroup#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.restrictedToWorkflows">restrictedToWorkflows</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.selectedRepositoryIds">selectedRepositoryIds</a></code> | <code>java.util.List<java.lang.Number></code> | List of repository IDs that can access the runner group. |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.selectedWorkflows">selectedWorkflows</a></code> | <code>java.util.List<java.lang.String></code> | List of workflows the runner group should be allowed to run. |
 
 ---
 
@@ -138,6 +143,18 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `restrictedToWorkflows`<sup>Optional</sup> <a name="restrictedToWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.restrictedToWorkflows"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array.
+
+Defaults to 'false'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
+
+---
+
 ##### `selectedRepositoryIds`<sup>Optional</sup> <a name="selectedRepositoryIds" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.selectedRepositoryIds"></a>
 
 - *Type:* java.util.List<java.lang.Number>
@@ -145,6 +162,18 @@ If you experience problems setting this value it might not be settable. Please t
 List of repository IDs that can access the runner group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
+
+---
+
+##### `selectedWorkflows`<sup>Optional</sup> <a name="selectedWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer.parameter.selectedWorkflows"></a>
+
+- *Type:* java.util.List<java.lang.String>
+
+List of workflows the runner group should be allowed to run.
+
+This setting will be ignored unless restricted_to_workflows is set to 'true'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
 
 ---
 
@@ -169,7 +198,9 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetRestrictedToWorkflows">resetRestrictedToWorkflows</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetSelectedRepositoryIds">resetSelectedRepositoryIds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetSelectedWorkflows">resetSelectedWorkflows</a></code> | *No description.* |
 
 ---
 
@@ -363,10 +394,22 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 public void resetId()
 ```
 
+##### `resetRestrictedToWorkflows` <a name="resetRestrictedToWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetRestrictedToWorkflows"></a>
+
+```java
+public void resetRestrictedToWorkflows()
+```
+
 ##### `resetSelectedRepositoryIds` <a name="resetSelectedRepositoryIds" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetSelectedRepositoryIds"></a>
 
 ```java
 public void resetSelectedRepositoryIds()
+```
+
+##### `resetSelectedWorkflows` <a name="resetSelectedWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.resetSelectedWorkflows"></a>
+
+```java
+public void resetSelectedWorkflows()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -461,17 +504,19 @@ ActionsRunnerGroup.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.default">default</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.inherited">inherited</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflows">restrictedToWorkflows</a></code> | <code>com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.runnersUrl">runnersUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoriesUrl">selectedRepositoriesUrl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflows">selectedWorkflows</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflowsInput">restrictedToWorkflowsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoryIdsInput">selectedRepositoryIdsInput</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflowsInput">selectedWorkflowsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.visibilityInput">visibilityInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflows">restrictedToWorkflows</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoryIds">selectedRepositoryIds</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflows">selectedWorkflows</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.visibility">visibility</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -658,16 +703,6 @@ public IResolvable getInherited();
 
 ---
 
-##### `restrictedToWorkflows`<sup>Required</sup> <a name="restrictedToWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflows"></a>
-
-```java
-public IResolvable getRestrictedToWorkflows();
-```
-
-- *Type:* com.hashicorp.cdktf.IResolvable
-
----
-
 ##### `runnersUrl`<sup>Required</sup> <a name="runnersUrl" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.runnersUrl"></a>
 
 ```java
@@ -685,16 +720,6 @@ public java.lang.String getSelectedRepositoriesUrl();
 ```
 
 - *Type:* java.lang.String
-
----
-
-##### `selectedWorkflows`<sup>Required</sup> <a name="selectedWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflows"></a>
-
-```java
-public java.util.List<java.lang.String> getSelectedWorkflows();
-```
-
-- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -718,6 +743,16 @@ public java.lang.String getNameInput();
 
 ---
 
+##### `restrictedToWorkflowsInput`<sup>Optional</sup> <a name="restrictedToWorkflowsInput" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflowsInput"></a>
+
+```java
+public java.lang.Object getRestrictedToWorkflowsInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `selectedRepositoryIdsInput`<sup>Optional</sup> <a name="selectedRepositoryIdsInput" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoryIdsInput"></a>
 
 ```java
@@ -725,6 +760,16 @@ public java.util.List<java.lang.Number> getSelectedRepositoryIdsInput();
 ```
 
 - *Type:* java.util.List<java.lang.Number>
+
+---
+
+##### `selectedWorkflowsInput`<sup>Optional</sup> <a name="selectedWorkflowsInput" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflowsInput"></a>
+
+```java
+public java.util.List<java.lang.String> getSelectedWorkflowsInput();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -758,6 +803,16 @@ public java.lang.String getName();
 
 ---
 
+##### `restrictedToWorkflows`<sup>Required</sup> <a name="restrictedToWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.restrictedToWorkflows"></a>
+
+```java
+public java.lang.Object getRestrictedToWorkflows();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `selectedRepositoryIds`<sup>Required</sup> <a name="selectedRepositoryIds" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedRepositoryIds"></a>
 
 ```java
@@ -765,6 +820,16 @@ public java.util.List<java.lang.Number> getSelectedRepositoryIds();
 ```
 
 - *Type:* java.util.List<java.lang.Number>
+
+---
+
+##### `selectedWorkflows`<sup>Required</sup> <a name="selectedWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.property.selectedWorkflows"></a>
+
+```java
+public java.util.List<java.lang.String> getSelectedWorkflows();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 
@@ -819,7 +884,10 @@ ActionsRunnerGroupConfig.builder()
     .name(java.lang.String)
     .visibility(java.lang.String)
 //  .id(java.lang.String)
+//  .restrictedToWorkflows(java.lang.Boolean)
+//  .restrictedToWorkflows(IResolvable)
 //  .selectedRepositoryIds(java.util.List<java.lang.Number>)
+//  .selectedWorkflows(java.util.List<java.lang.String>)
     .build();
 ```
 
@@ -837,7 +905,9 @@ ActionsRunnerGroupConfig.builder()
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.name">name</a></code> | <code>java.lang.String</code> | Name of the runner group. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.visibility">visibility</a></code> | <code>java.lang.String</code> | The visibility of the runner group. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#id ActionsRunnerGroup#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.restrictedToWorkflows">restrictedToWorkflows</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array. |
 | <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.selectedRepositoryIds">selectedRepositoryIds</a></code> | <code>java.util.List<java.lang.Number></code> | List of repository IDs that can access the runner group. |
+| <code><a href="#@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.selectedWorkflows">selectedWorkflows</a></code> | <code>java.util.List<java.lang.String></code> | List of workflows the runner group should be allowed to run. |
 
 ---
 
@@ -954,6 +1024,22 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
+##### `restrictedToWorkflows`<sup>Optional</sup> <a name="restrictedToWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.restrictedToWorkflows"></a>
+
+```java
+public java.lang.Object getRestrictedToWorkflows();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array.
+
+Defaults to 'false'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
+
+---
+
 ##### `selectedRepositoryIds`<sup>Optional</sup> <a name="selectedRepositoryIds" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.selectedRepositoryIds"></a>
 
 ```java
@@ -965,6 +1051,22 @@ public java.util.List<java.lang.Number> getSelectedRepositoryIds();
 List of repository IDs that can access the runner group.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
+
+---
+
+##### `selectedWorkflows`<sup>Optional</sup> <a name="selectedWorkflows" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.property.selectedWorkflows"></a>
+
+```java
+public java.util.List<java.lang.String> getSelectedWorkflows();
+```
+
+- *Type:* java.util.List<java.lang.String>
+
+List of workflows the runner group should be allowed to run.
+
+This setting will be ignored unless restricted_to_workflows is set to 'true'.
+
+Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
 
 ---
 

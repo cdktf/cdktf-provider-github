@@ -422,6 +422,7 @@ DataGithubUsers.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails">emails</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.logins">logins</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.nodeIds">nodeIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.unknownLogins">unknownLogins</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
@@ -551,6 +552,16 @@ public TerraformProvider getProvider();
 ```
 
 - *Type:* com.hashicorp.cdktf.TerraformProvider
+
+---
+
+##### `emails`<sup>Required</sup> <a name="emails" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails"></a>
+
+```java
+public java.util.List<java.lang.String> getEmails();
+```
+
+- *Type:* java.util.List<java.lang.String>
 
 ---
 

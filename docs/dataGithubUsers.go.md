@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/users githu
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
 
 datagithubusers.NewDataGithubUsers(scope Construct, id *string, config DataGithubUsersConfig) DataGithubUsers
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
 
 datagithubusers.DataGithubUsers_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
 
 datagithubusers.DataGithubUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagithubusers.DataGithubUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
 
 datagithubusers.DataGithubUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -346,6 +346,7 @@ datagithubusers.DataGithubUsers_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails">Emails</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.logins">Logins</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.nodeIds">NodeIds</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.unknownLogins">UnknownLogins</a></code> | <code>*[]*string</code> | *No description.* |
@@ -478,6 +479,16 @@ func Provider() TerraformProvider
 
 ---
 
+##### `Emails`<sup>Required</sup> <a name="Emails" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails"></a>
+
+```go
+func Emails() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
 ##### `Logins`<sup>Required</sup> <a name="Logins" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.logins"></a>
 
 ```go
@@ -573,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
 
 &datagithubusers.DataGithubUsersConfig {
 	Connection: interface{},

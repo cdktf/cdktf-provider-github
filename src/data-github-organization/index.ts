@@ -46,7 +46,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_organization',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.18.3',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -127,6 +127,12 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
   // repositories - computed: true, optional: false, required: false
   public get repositories() {
     return this.getListAttribute('repositories');
+  }
+
+  // users - computed: true, optional: false, required: false
+  private _users = new cdktf.StringMapList(this, "users", false);
+  public get users() {
+    return this._users;
   }
 
   // =========

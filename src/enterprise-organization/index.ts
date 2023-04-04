@@ -72,7 +72,7 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'github_enterprise_organization',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.18.3',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

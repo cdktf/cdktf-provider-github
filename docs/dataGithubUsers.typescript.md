@@ -346,6 +346,7 @@ dataGithubUsers.DataGithubUsers.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails">emails</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.logins">logins</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.nodeIds">nodeIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.unknownLogins">unknownLogins</a></code> | <code>string[]</code> | *No description.* |
@@ -475,6 +476,16 @@ public readonly provider: TerraformProvider;
 ```
 
 - *Type:* cdktf.TerraformProvider
+
+---
+
+##### `emails`<sup>Required</sup> <a name="emails" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.property.emails"></a>
+
+```typescript
+public readonly emails: string[];
+```
+
+- *Type:* string[]
 
 ---
 

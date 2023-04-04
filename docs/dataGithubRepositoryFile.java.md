@@ -42,7 +42,7 @@ DataGithubRepositoryFile.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.file">file</a></code> | <code>java.lang.String</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.branch">branch</a></code> | <code>java.lang.String</code> | The branch name, defaults to "main". |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.branch">branch</a></code> | <code>java.lang.String</code> | The branch name, defaults to the repository's default branch. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#id DataGithubRepositoryFile#id}. |
 
 ---
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* java.lang.String
 
-The branch name, defaults to "main".
+The branch name, defaults to the repository's default branch.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#branch DataGithubRepositoryFile#branch}
 
@@ -460,6 +460,7 @@ DataGithubRepositoryFile.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.commitMessage">commitMessage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.commitSha">commitSha</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.content">content</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.ref">ref</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.sha">sha</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.fileInput">fileInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -644,6 +645,16 @@ public java.lang.String getContent();
 
 ---
 
+##### `ref`<sup>Required</sup> <a name="ref" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.ref"></a>
+
+```java
+public java.lang.String getRef();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `sha`<sup>Required</sup> <a name="sha" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.property.sha"></a>
 
 ```java
@@ -792,7 +803,7 @@ DataGithubRepositoryFileConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.file">file</a></code> | <code>java.lang.String</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.branch">branch</a></code> | <code>java.lang.String</code> | The branch name, defaults to "main". |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.branch">branch</a></code> | <code>java.lang.String</code> | The branch name, defaults to the repository's default branch. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#id DataGithubRepositoryFile#id}. |
 
 ---
@@ -903,7 +914,7 @@ public java.lang.String getBranch();
 
 - *Type:* java.lang.String
 
-The branch name, defaults to "main".
+The branch name, defaults to the repository's default branch.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository_file#branch DataGithubRepositoryFile#branch}
 
