@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/r/team_settin
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSettings.TeamSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.NewTeamSettings(scope Construct, id *string, config TeamSettingsConfig) TeamSettings
 ```
@@ -293,7 +293,7 @@ func ResetReviewRequestDelegation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.teamSettings.TeamSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.TeamSettings_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.teamSettings.TeamSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.TeamSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ teamsettings.TeamSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.teamSettings.TeamSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.TeamSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamSettings.TeamSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 &teamsettings.TeamSettingsConfig {
 	Connection: interface{},
@@ -638,7 +638,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsettings"
 	Provisioners: *[]interface{},
 	TeamId: *string,
 	Id: *string,
-	ReviewRequestDelegation: github.com/cdktf/cdktf-provider-github-go/github/v6.teamSettings.TeamSettingsReviewRequestDelegation,
+	ReviewRequestDelegation: github.com/cdktf/cdktf-provider-github-go/github.teamSettings.TeamSettingsReviewRequestDelegation,
 }
 ```
 
@@ -777,7 +777,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamSettings.TeamSettingsReviewRequestDelegation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 &teamsettings.TeamSettingsReviewRequestDelegation {
 	Algorithm: *string,
@@ -845,7 +845,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSettings.TeamSettingsReviewRequestDelegationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.NewTeamSettingsReviewRequestDelegationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamSettingsReviewRequestDelegationOutputReference
 ```
