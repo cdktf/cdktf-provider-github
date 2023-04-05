@@ -63,6 +63,125 @@ export interface BranchProtectionV3Config extends cdktf.TerraformMetaArguments {
   */
   readonly restrictions?: BranchProtectionV3Restrictions;
 }
+export interface BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances {
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#apps BranchProtectionV3#apps}
+  */
+  readonly apps?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#teams BranchProtectionV3#teams}
+  */
+  readonly teams?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#users BranchProtectionV3#users}
+  */
+  readonly users?: string[];
+}
+
+export function branchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesToTerraform(struct?: BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference | BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    apps: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.apps),
+    teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
+    users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
+  }
+}
+
+export class BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._apps !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.apps = this._apps;
+    }
+    if (this._teams !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.teams = this._teams;
+    }
+    if (this._users !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.users = this._users;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._apps = undefined;
+      this._teams = undefined;
+      this._users = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._apps = value.apps;
+      this._teams = value.teams;
+      this._users = value.users;
+    }
+  }
+
+  // apps - computed: false, optional: true, required: false
+  private _apps?: string[]; 
+  public get apps() {
+    return cdktf.Fn.tolist(this.getListAttribute('apps'));
+  }
+  public set apps(value: string[]) {
+    this._apps = value;
+  }
+  public resetApps() {
+    this._apps = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get appsInput() {
+    return this._apps;
+  }
+
+  // teams - computed: false, optional: true, required: false
+  private _teams?: string[]; 
+  public get teams() {
+    return cdktf.Fn.tolist(this.getListAttribute('teams'));
+  }
+  public set teams(value: string[]) {
+    this._teams = value;
+  }
+  public resetTeams() {
+    this._teams = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get teamsInput() {
+    return this._teams;
+  }
+
+  // users - computed: false, optional: true, required: false
+  private _users?: string[]; 
+  public get users() {
+    return cdktf.Fn.tolist(this.getListAttribute('users'));
+  }
+  public set users(value: string[]) {
+    this._users = value;
+  }
+  public resetUsers() {
+    this._users = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get usersInput() {
+    return this._users;
+  }
+}
 export interface BranchProtectionV3RequiredPullRequestReviews {
   /**
   * Dismiss approved reviews automatically when a new commit is pushed.
@@ -98,6 +217,12 @@ export interface BranchProtectionV3RequiredPullRequestReviews {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#required_approving_review_count BranchProtectionV3#required_approving_review_count}
   */
   readonly requiredApprovingReviewCount?: number;
+  /**
+  * bypass_pull_request_allowances block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_protection_v3#bypass_pull_request_allowances BranchProtectionV3#bypass_pull_request_allowances}
+  */
+  readonly bypassPullRequestAllowances?: BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances;
 }
 
 export function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?: BranchProtectionV3RequiredPullRequestReviewsOutputReference | BranchProtectionV3RequiredPullRequestReviews): any {
@@ -112,6 +237,7 @@ export function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?:
     include_admins: cdktf.booleanToTerraform(struct!.includeAdmins),
     require_code_owner_reviews: cdktf.booleanToTerraform(struct!.requireCodeOwnerReviews),
     required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
+    bypass_pull_request_allowances: branchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesToTerraform(struct!.bypassPullRequestAllowances),
   }
 }
 
@@ -153,6 +279,10 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
       hasAnyValues = true;
       internalValueResult.requiredApprovingReviewCount = this._requiredApprovingReviewCount;
     }
+    if (this._bypassPullRequestAllowances?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.bypassPullRequestAllowances = this._bypassPullRequestAllowances?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -165,6 +295,7 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
       this._includeAdmins = undefined;
       this._requireCodeOwnerReviews = undefined;
       this._requiredApprovingReviewCount = undefined;
+      this._bypassPullRequestAllowances.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -174,6 +305,7 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
       this._includeAdmins = value.includeAdmins;
       this._requireCodeOwnerReviews = value.requireCodeOwnerReviews;
       this._requiredApprovingReviewCount = value.requiredApprovingReviewCount;
+      this._bypassPullRequestAllowances.internalValue = value.bypassPullRequestAllowances;
     }
   }
 
@@ -271,6 +403,22 @@ export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends
   // Temporarily expose input value. Use with caution.
   public get requiredApprovingReviewCountInput() {
     return this._requiredApprovingReviewCount;
+  }
+
+  // bypass_pull_request_allowances - computed: false, optional: true, required: false
+  private _bypassPullRequestAllowances = new BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference(this, "bypass_pull_request_allowances");
+  public get bypassPullRequestAllowances() {
+    return this._bypassPullRequestAllowances;
+  }
+  public putBypassPullRequestAllowances(value: BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances) {
+    this._bypassPullRequestAllowances.internalValue = value;
+  }
+  public resetBypassPullRequestAllowances() {
+    this._bypassPullRequestAllowances.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bypassPullRequestAllowancesInput() {
+    return this._bypassPullRequestAllowances.internalValue;
   }
 }
 export interface BranchProtectionV3RequiredStatusChecks {
@@ -575,7 +723,7 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_protection_v3',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

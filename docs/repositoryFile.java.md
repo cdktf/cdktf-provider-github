@@ -49,7 +49,7 @@ RepositoryFile.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.content">content</a></code> | <code>java.lang.String</code> | The file's content. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.file">file</a></code> | <code>java.lang.String</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.branch">branch</a></code> | <code>java.lang.String</code> | The branch name, defaults to "main". |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.branch">branch</a></code> | <code>java.lang.String</code> | The branch name, defaults to the repository's default branch. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitAuthor">commitAuthor</a></code> | <code>java.lang.String</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitEmail">commitEmail</a></code> | <code>java.lang.String</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitMessage">commitMessage</a></code> | <code>java.lang.String</code> | The commit message when creating, updating or deleting the file. |
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* java.lang.String
 
-The branch name, defaults to "main".
+The branch name, defaults to the repository's default branch.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
 
@@ -551,6 +551,7 @@ RepositoryFile.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitSha">commitSha</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.ref">ref</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.sha">sha</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitAuthorInput">commitAuthorInput</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -719,6 +720,16 @@ public java.lang.Object getProvisioners();
 
 ```java
 public java.lang.String getCommitSha();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `ref`<sup>Required</sup> <a name="ref" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.ref"></a>
+
+```java
+public java.lang.String getRef();
 ```
 
 - *Type:* java.lang.String
@@ -980,7 +991,7 @@ RepositoryFileConfig.builder()
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.content">content</a></code> | <code>java.lang.String</code> | The file's content. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.file">file</a></code> | <code>java.lang.String</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | The repository name. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.branch">branch</a></code> | <code>java.lang.String</code> | The branch name, defaults to "main". |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.branch">branch</a></code> | <code>java.lang.String</code> | The branch name, defaults to the repository's default branch. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitAuthor">commitAuthor</a></code> | <code>java.lang.String</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitEmail">commitEmail</a></code> | <code>java.lang.String</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitMessage">commitMessage</a></code> | <code>java.lang.String</code> | The commit message when creating, updating or deleting the file. |
@@ -1109,7 +1120,7 @@ public java.lang.String getBranch();
 
 - *Type:* java.lang.String
 
-The branch name, defaults to "main".
+The branch name, defaults to the repository's default branch.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
 

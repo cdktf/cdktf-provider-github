@@ -47,7 +47,7 @@ repositoryFile.RepositoryFile(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.content">content</a></code> | <code>str</code> | The file's content. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.file">file</a></code> | <code>str</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.repository">repository</a></code> | <code>str</code> | The repository name. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.branch">branch</a></code> | <code>str</code> | The branch name, defaults to "main". |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.branch">branch</a></code> | <code>str</code> | The branch name, defaults to the repository's default branch. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitAuthor">commit_author</a></code> | <code>str</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitEmail">commit_email</a></code> | <code>str</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitMessage">commit_message</a></code> | <code>str</code> | The commit message when creating, updating or deleting the file. |
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* str
 
-The branch name, defaults to "main".
+The branch name, defaults to the repository's default branch.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
 
@@ -580,6 +580,7 @@ repositoryFile.RepositoryFile.is_terraform_resource(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitSha">commit_sha</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.ref">ref</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.sha">sha</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.branchInput">branch_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitAuthorInput">commit_author_input</a></code> | <code>str</code> | *No description.* |
@@ -748,6 +749,16 @@ provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, Re
 
 ```python
 commit_sha: str
+```
+
+- *Type:* str
+
+---
+
+##### `ref`<sup>Required</sup> <a name="ref" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.ref"></a>
+
+```python
+ref: str
 ```
 
 - *Type:* str
@@ -1005,7 +1016,7 @@ repositoryFile.RepositoryFileConfig(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.content">content</a></code> | <code>str</code> | The file's content. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.file">file</a></code> | <code>str</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.repository">repository</a></code> | <code>str</code> | The repository name. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.branch">branch</a></code> | <code>str</code> | The branch name, defaults to "main". |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.branch">branch</a></code> | <code>str</code> | The branch name, defaults to the repository's default branch. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitAuthor">commit_author</a></code> | <code>str</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitEmail">commit_email</a></code> | <code>str</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitMessage">commit_message</a></code> | <code>str</code> | The commit message when creating, updating or deleting the file. |
@@ -1134,7 +1145,7 @@ branch: str
 
 - *Type:* str
 
-The branch name, defaults to "main".
+The branch name, defaults to the repository's default branch.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
 

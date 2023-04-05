@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryFileConfig extends cdktf.TerraformMetaArguments {
   /**
-  * The branch name, defaults to "main"
+  * The branch name, defaults to the repository's default branch
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
   */
@@ -90,7 +90,7 @@ export class RepositoryFile extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.19.0',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -241,6 +241,11 @@ export class RepositoryFile extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get overwriteOnCreateInput() {
     return this._overwriteOnCreate;
+  }
+
+  // ref - computed: true, optional: false, required: false
+  public get ref() {
+    return this.getStringAttribute('ref');
   }
 
   // repository - computed: false, optional: false, required: true
