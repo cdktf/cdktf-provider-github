@@ -78,7 +78,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'github_team',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.20.0',
+        providerVersion: '5.21.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
