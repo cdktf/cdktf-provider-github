@@ -171,7 +171,7 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_release',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.20.0',
+        providerVersion: '5.21.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

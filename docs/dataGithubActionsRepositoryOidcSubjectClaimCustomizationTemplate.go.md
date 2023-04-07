@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_rep
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate.NewDataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate(scope Construct, id *string, config DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig) DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate.DataGithubActio
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -562,7 +562,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 &datagithubactionsrepositoryoidcsubjectclaimcustomizationtemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig {
 	Connection: interface{},

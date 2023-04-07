@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/external_gr
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgroups"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubexternalgroups"
 
 datagithubexternalgroups.NewDataGithubExternalGroups(scope Construct, id *string, config DataGithubExternalGroupsConfig) DataGithubExternalGroups
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroups.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgroups"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubexternalgroups"
 
 datagithubexternalgroups.DataGithubExternalGroups_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroups.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgroups"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubexternalgroups"
 
 datagithubexternalgroups.DataGithubExternalGroups_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagithubexternalgroups.DataGithubExternalGroups_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroups.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgroups"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubexternalgroups"
 
 datagithubexternalgroups.DataGithubExternalGroups_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgroups"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubexternalgroups"
 
 &datagithubexternalgroups.DataGithubExternalGroupsConfig {
 	Connection: interface{},
@@ -648,7 +648,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsExternalGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgroups"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubexternalgroups"
 
 &datagithubexternalgroups.DataGithubExternalGroupsExternalGroups {
 
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgr
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsExternalGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgroups"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubexternalgroups"
 
 datagithubexternalgroups.NewDataGithubExternalGroupsExternalGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubExternalGroupsExternalGroupsList
 ```
@@ -795,7 +795,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsExternalGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubexternalgroups"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubexternalgroups"
 
 datagithubexternalgroups.NewDataGithubExternalGroupsExternalGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubExternalGroupsExternalGroupsOutputReference
 ```
