@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_org
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.NewDataGithubActionsOrganizationVariables(scope Construct, id *string, config DataGithubActionsOrganizationVariablesConfig) DataGithubActionsOrganizationVariables
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 &datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariablesConfig {
 	Connection: interface{},
@@ -648,7 +648,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 &datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariablesVariables {
 
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorg
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.NewDataGithubActionsOrganizationVariablesVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubActionsOrganizationVariablesVariablesList
 ```
@@ -795,7 +795,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.NewDataGithubActionsOrganizationVariablesVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubActionsOrganizationVariablesVariablesOutputReference
 ```

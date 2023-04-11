@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_rep
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositorypermissions"
 
 actionsrepositorypermissions.NewActionsRepositoryPermissions(scope Construct, id *string, config ActionsRepositoryPermissionsConfig) ActionsRepositoryPermissions
 ```
@@ -307,7 +307,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositorypermissions"
 
 actionsrepositorypermissions.ActionsRepositoryPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositorypermissions"
 
 actionsrepositorypermissions.ActionsRepositoryPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ actionsrepositorypermissions.ActionsRepositoryPermissions_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositorypermissions"
 
 actionsrepositorypermissions.ActionsRepositoryPermissions_IsTerraformResource(x interface{}) *bool
 ```
@@ -662,7 +662,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositorypermissions"
 
 &actionsrepositorypermissions.ActionsRepositoryPermissionsAllowedActionsConfig {
 	GithubOwnedAllowed: interface{},
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositorypermissions"
 
 &actionsrepositorypermissions.ActionsRepositoryPermissionsConfig {
 	Connection: interface{},
@@ -744,7 +744,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v6/actionsrepositoryper
 	Provisioners: *[]interface{},
 	Repository: *string,
 	AllowedActions: *string,
-	AllowedActionsConfig: github.com/cdktf/cdktf-provider-github-go/github/v6.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig,
+	AllowedActionsConfig: github.com/cdktf/cdktf-provider-github-go/github.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig,
 	Enabled: interface{},
 	Id: *string,
 }
@@ -919,7 +919,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositorypermissions"
 
 actionsrepositorypermissions.NewActionsRepositoryPermissionsAllowedActionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionsRepositoryPermissionsAllowedActionsConfigOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/dependabot_
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.NewDataGithubDependabotOrganizationPublicKey(scope Construct, id *string, config DataGithubDependabotOrganizationPublicKeyConfig) DataGithubDependabotOrganizationPublicKey
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublic
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationpublickey"
 
 &datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKeyConfig {
 	Connection: interface{},
