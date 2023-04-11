@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/github/d/team github
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTeam.DataGithubTeam.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubteam"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubteam"
 
 datagithubteam.NewDataGithubTeam(scope Construct, id *string, config DataGithubTeamConfig) DataGithubTeam
 ```
@@ -294,7 +294,7 @@ func ResetSummaryOnly()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubTeam.DataGithubTeam.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubteam"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubteam"
 
 datagithubteam.DataGithubTeam_IsConstruct(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubTeam.DataGithubTeam.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubteam"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubteam"
 
 datagithubteam.DataGithubTeam_IsTerraformElement(x interface{}) *bool
 ```
@@ -340,7 +340,7 @@ datagithubteam.DataGithubTeam_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubTeam.DataGithubTeam.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubteam"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubteam"
 
 datagithubteam.DataGithubTeam_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubTeam.DataGithubTeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v6/datagithubteam"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubteam"
 
 &datagithubteam.DataGithubTeamConfig {
 	Connection: interface{},
