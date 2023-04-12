@@ -42,6 +42,7 @@ The following submodules are available:
 - [dataGithubEnterprise](./dataGithubEnterprise.java.md)
 - [dataGithubExternalGroups](./dataGithubExternalGroups.java.md)
 - [dataGithubIpRanges](./dataGithubIpRanges.java.md)
+- [dataGithubIssueLabels](./dataGithubIssueLabels.java.md)
 - [dataGithubMembership](./dataGithubMembership.java.md)
 - [dataGithubOrganization](./dataGithubOrganization.java.md)
 - [dataGithubOrganizationIpAllowList](./dataGithubOrganizationIpAllowList.java.md)

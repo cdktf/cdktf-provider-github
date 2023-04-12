@@ -77,6 +77,7 @@ export * as dataGithubDependabotSecrets from './data-github-dependabot-secrets';
 export * as dataGithubEnterprise from './data-github-enterprise';
 export * as dataGithubExternalGroups from './data-github-external-groups';
 export * as dataGithubIpRanges from './data-github-ip-ranges';
+export * as dataGithubIssueLabels from './data-github-issue-labels';
 export * as dataGithubMembership from './data-github-membership';
 export * as dataGithubOrganization from './data-github-organization';
 export * as dataGithubOrganizationIpAllowList from './data-github-organization-ip-allow-list';

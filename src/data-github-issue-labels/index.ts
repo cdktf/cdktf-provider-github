@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/d/organization_webhooks
+// https://www.terraform.io/docs/providers/github/d/issue_labels
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,19 +6,23 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataGithubOrganizationWebhooksConfig extends cdktf.TerraformMetaArguments {
+export interface DataGithubIssueLabelsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization_webhooks#id DataGithubOrganizationWebhooks#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/issue_labels#id DataGithubIssueLabels#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/issue_labels#repository DataGithubIssueLabels#repository}
+  */
+  readonly repository: string;
 }
-export interface DataGithubOrganizationWebhooksWebhooks {
+export interface DataGithubIssueLabelsLabels {
 }
 
-export function dataGithubOrganizationWebhooksWebhooksToTerraform(struct?: DataGithubOrganizationWebhooksWebhooks): any {
+export function dataGithubIssueLabelsLabelsToTerraform(struct?: DataGithubIssueLabelsLabels): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -27,7 +31,7 @@ export function dataGithubOrganizationWebhooksWebhooksToTerraform(struct?: DataG
   }
 }
 
-export class DataGithubOrganizationWebhooksWebhooksOutputReference extends cdktf.ComplexObject {
+export class DataGithubIssueLabelsLabelsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -40,13 +44,13 @@ export class DataGithubOrganizationWebhooksWebhooksOutputReference extends cdktf
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataGithubOrganizationWebhooksWebhooks | undefined {
+  public get internalValue(): DataGithubIssueLabelsLabels | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGithubOrganizationWebhooksWebhooks | undefined) {
+  public set internalValue(value: DataGithubIssueLabelsLabels | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -55,24 +59,19 @@ export class DataGithubOrganizationWebhooksWebhooksOutputReference extends cdktf
     }
   }
 
-  // active - computed: true, optional: false, required: false
-  public get active() {
-    return this.getBooleanAttribute('active');
+  // color - computed: true, optional: false, required: false
+  public get color() {
+    return this.getStringAttribute('color');
   }
 
-  // id - computed: true, optional: false, required: false
-  public get id() {
-    return this.getNumberAttribute('id');
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
   }
 
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
   }
 
   // url - computed: true, optional: false, required: false
@@ -81,7 +80,7 @@ export class DataGithubOrganizationWebhooksWebhooksOutputReference extends cdktf
   }
 }
 
-export class DataGithubOrganizationWebhooksWebhooksList extends cdktf.ComplexList {
+export class DataGithubIssueLabelsLabelsList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -95,35 +94,35 @@ export class DataGithubOrganizationWebhooksWebhooksList extends cdktf.ComplexLis
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataGithubOrganizationWebhooksWebhooksOutputReference {
-    return new DataGithubOrganizationWebhooksWebhooksOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataGithubIssueLabelsLabelsOutputReference {
+    return new DataGithubIssueLabelsLabelsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_webhooks github_organization_webhooks}
+* Represents a {@link https://www.terraform.io/docs/providers/github/d/issue_labels github_issue_labels}
 */
-export class DataGithubOrganizationWebhooks extends cdktf.TerraformDataSource {
+export class DataGithubIssueLabels extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "github_organization_webhooks";
+  public static readonly tfResourceType = "github_issue_labels";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/d/organization_webhooks github_organization_webhooks} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/github/d/issue_labels github_issue_labels} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataGithubOrganizationWebhooksConfig = {}
+  * @param options DataGithubIssueLabelsConfig
   */
-  public constructor(scope: Construct, id: string, config: DataGithubOrganizationWebhooksConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataGithubIssueLabelsConfig) {
     super(scope, id, {
-      terraformResourceType: 'github_organization_webhooks',
+      terraformResourceType: 'github_issue_labels',
       terraformGeneratorMetadata: {
         providerName: 'github',
         providerVersion: '5.22.0',
@@ -138,6 +137,7 @@ export class DataGithubOrganizationWebhooks extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
+    this._repository = config.repository;
   }
 
   // ==========
@@ -160,10 +160,23 @@ export class DataGithubOrganizationWebhooks extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // webhooks - computed: true, optional: false, required: false
-  private _webhooks = new DataGithubOrganizationWebhooksWebhooksList(this, "webhooks", false);
-  public get webhooks() {
-    return this._webhooks;
+  // labels - computed: true, optional: false, required: false
+  private _labels = new DataGithubIssueLabelsLabelsList(this, "labels", false);
+  public get labels() {
+    return this._labels;
+  }
+
+  // repository - computed: false, optional: false, required: true
+  private _repository?: string; 
+  public get repository() {
+    return this.getStringAttribute('repository');
+  }
+  public set repository(value: string) {
+    this._repository = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get repositoryInput() {
+    return this._repository;
   }
 
   // =========
@@ -173,6 +186,7 @@ export class DataGithubOrganizationWebhooks extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
+      repository: cdktf.stringToTerraform(this._repository),
     };
   }
 }

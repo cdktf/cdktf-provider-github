@@ -42,6 +42,7 @@ The following submodules are available:
 - [dataGithubEnterprise](./dataGithubEnterprise.python.md)
 - [dataGithubExternalGroups](./dataGithubExternalGroups.python.md)
 - [dataGithubIpRanges](./dataGithubIpRanges.python.md)
+- [dataGithubIssueLabels](./dataGithubIssueLabels.python.md)
 - [dataGithubMembership](./dataGithubMembership.python.md)
 - [dataGithubOrganization](./dataGithubOrganization.python.md)
 - [dataGithubOrganizationIpAllowList](./dataGithubOrganizationIpAllowList.python.md)
