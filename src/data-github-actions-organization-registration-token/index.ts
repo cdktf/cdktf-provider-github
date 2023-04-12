@@ -42,7 +42,7 @@ export class DataGithubActionsOrganizationRegistrationToken extends cdktf.Terraf
       terraformResourceType: 'github_actions_organization_registration_token',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.21.1',
+        providerVersion: '5.22.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

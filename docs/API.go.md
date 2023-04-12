@@ -42,6 +42,7 @@ The following submodules are available:
 - [dataGithubEnterprise](./dataGithubEnterprise.go.md)
 - [dataGithubExternalGroups](./dataGithubExternalGroups.go.md)
 - [dataGithubIpRanges](./dataGithubIpRanges.go.md)
+- [dataGithubIssueLabels](./dataGithubIssueLabels.go.md)
 - [dataGithubMembership](./dataGithubMembership.go.md)
 - [dataGithubOrganization](./dataGithubOrganization.go.md)
 - [dataGithubOrganizationIpAllowList](./dataGithubOrganizationIpAllowList.go.md)

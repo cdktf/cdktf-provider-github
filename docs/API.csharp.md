@@ -42,6 +42,7 @@ The following submodules are available:
 - [dataGithubEnterprise](./dataGithubEnterprise.csharp.md)
 - [dataGithubExternalGroups](./dataGithubExternalGroups.csharp.md)
 - [dataGithubIpRanges](./dataGithubIpRanges.csharp.md)
+- [dataGithubIssueLabels](./dataGithubIssueLabels.csharp.md)
 - [dataGithubMembership](./dataGithubMembership.csharp.md)
 - [dataGithubOrganization](./dataGithubOrganization.csharp.md)
 - [dataGithubOrganizationIpAllowList](./dataGithubOrganizationIpAllowList.csharp.md)

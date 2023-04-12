@@ -124,7 +124,7 @@ export class DataGithubRepositoryTeams extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository_teams',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.21.1',
+        providerVersion: '5.22.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

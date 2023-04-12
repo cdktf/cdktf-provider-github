@@ -60,7 +60,7 @@ export class ActionsRepositoryOidcSubjectClaimCustomizationTemplate extends cdkt
       terraformResourceType: 'github_actions_repository_oidc_subject_claim_customization_template',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.21.1',
+        providerVersion: '5.22.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

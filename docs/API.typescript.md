@@ -42,6 +42,7 @@ The following submodules are available:
 - [dataGithubEnterprise](./dataGithubEnterprise.typescript.md)
 - [dataGithubExternalGroups](./dataGithubExternalGroups.typescript.md)
 - [dataGithubIpRanges](./dataGithubIpRanges.typescript.md)
+- [dataGithubIssueLabels](./dataGithubIssueLabels.typescript.md)
 - [dataGithubMembership](./dataGithubMembership.typescript.md)
 - [dataGithubOrganization](./dataGithubOrganization.typescript.md)
 - [dataGithubOrganizationIpAllowList](./dataGithubOrganizationIpAllowList.typescript.md)

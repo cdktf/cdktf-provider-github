@@ -96,7 +96,7 @@ export class Release extends cdktf.TerraformResource {
       terraformResourceType: 'github_release',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.21.1',
+        providerVersion: '5.22.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
