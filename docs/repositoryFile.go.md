@@ -1,6 +1,6 @@
 # `github_repository_file`
 
-Refer to the Terraform Registory for docs: [`github_repository_file`](https://www.terraform.io/docs/providers/github/r/repository_file).
+Refer to the Terraform Registory for docs: [`github_repository_file`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file).
 
 # `repositoryFile` Submodule <a name="`repositoryFile` Submodule" id="@cdktf/provider-github.repositoryFile"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_repository_file`](https://ww
 
 ### RepositoryFile <a name="RepositoryFile" id="@cdktf/provider-github.repositoryFile.RepositoryFile"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file github_repository_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryfile"
 
 repositoryfile.NewRepositoryFile(scope Construct, id *string, config RepositoryFileConfig) RepositoryFile
 ```
@@ -312,7 +312,7 @@ func ResetOverwriteOnCreate()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryFile.RepositoryFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryfile"
 
 repositoryfile.RepositoryFile_IsConstruct(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryFile.RepositoryFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryfile"
 
 repositoryfile.RepositoryFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ repositoryfile.RepositoryFile_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryFile.RepositoryFile.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryfile"
 
 repositoryfile.RepositoryFile_IsTerraformResource(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ repositoryfile.RepositoryFile_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -496,10 +496,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -788,11 +788,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryFile.RepositoryFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryfile"
 
 &repositoryfile.RepositoryFileConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -815,7 +815,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryfile"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -828,7 +828,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryfile"
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitAuthor">CommitAuthor</a></code> | <code>*string</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitEmail">CommitEmail</a></code> | <code>*string</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitMessage">CommitMessage</a></code> | <code>*string</code> | The commit message when creating, updating or deleting the file. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#id RepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#id RepositoryFile#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.overwriteOnCreate">OverwriteOnCreate</a></code> | <code>interface{}</code> | Enable overwriting existing files, defaults to "false". |
 
 ---
@@ -846,10 +846,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -913,7 +913,7 @@ Content *string
 
 The file's content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#content RepositoryFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#content RepositoryFile#content}
 
 ---
 
@@ -927,7 +927,7 @@ File *string
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#file RepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#file RepositoryFile#file}
 
 ---
 
@@ -941,7 +941,7 @@ Repository *string
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#repository RepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#repository RepositoryFile#repository}
 
 ---
 
@@ -955,7 +955,7 @@ Branch *string
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#branch RepositoryFile#branch}
 
 ---
 
@@ -971,7 +971,7 @@ The commit author name, defaults to the authenticated user's name.
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_author RepositoryFile#commit_author}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
 
 ---
 
@@ -987,7 +987,7 @@ The commit author email address, defaults to the authenticated user's email addr
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_email RepositoryFile#commit_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
 
 ---
 
@@ -1001,7 +1001,7 @@ CommitMessage *string
 
 The commit message when creating, updating or deleting the file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_message RepositoryFile#commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
 
 ---
 
@@ -1013,7 +1013,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#id RepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#id RepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1030,7 +1030,7 @@ OverwriteOnCreate interface{}
 
 Enable overwriting existing files, defaults to "false".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
 
 ---
 

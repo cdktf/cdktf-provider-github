@@ -1,6 +1,6 @@
 # `github_release`
 
-Refer to the Terraform Registory for docs: [`github_release`](https://www.terraform.io/docs/providers/github/r/release).
+Refer to the Terraform Registory for docs: [`github_release`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release).
 
 # `release` Submodule <a name="`release` Submodule" id="@cdktf/provider-github.release"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_release`](https://www.terraf
 
 ### Release <a name="Release" id="@cdktf/provider-github.release.Release"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/release github_release}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release github_release}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.release.Release.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/release"
+import "github.com/cdktf/cdktf-provider-github-go/github/release"
 
 release.NewRelease(scope Construct, id *string, config ReleaseConfig) Release
 ```
@@ -326,7 +326,7 @@ func ResetTargetCommitish()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.release.Release.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/release"
+import "github.com/cdktf/cdktf-provider-github-go/github/release"
 
 release.Release_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.release.Release.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/release"
+import "github.com/cdktf/cdktf-provider-github-go/github/release"
 
 release.Release_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ release.Release_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.release.Release.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/release"
+import "github.com/cdktf/cdktf-provider-github-go/github/release"
 
 release.Release_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ release.Release_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.release.Release.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -510,10 +510,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.release.Release.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -802,11 +802,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.release.ReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/release"
+import "github.com/cdktf/cdktf-provider-github-go/github/release"
 
 &release.ReleaseConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -830,7 +830,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/release"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -842,7 +842,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/release"
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.discussionCategoryName">DiscussionCategoryName</a></code> | <code>*string</code> | If specified, a discussion of the specified category is created and linked to the release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.draft">Draft</a></code> | <code>interface{}</code> | Set to 'false' to create a published release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.generateReleaseNotes">GenerateReleaseNotes</a></code> | <code>interface{}</code> | Set to 'true' to automatically generate the name and body for this release. |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#id Release#id}. |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#id Release#id}. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.name">Name</a></code> | <code>*string</code> | The name of the release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.prerelease">Prerelease</a></code> | <code>interface{}</code> | Set to 'false' to identify the release as a full release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.targetCommitish">TargetCommitish</a></code> | <code>*string</code> | The branch name or commit SHA the tag is created from. |
@@ -862,10 +862,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.release.ReleaseConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -929,7 +929,7 @@ Repository *string
 
 The name of the repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#repository Release#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#repository Release#repository}
 
 ---
 
@@ -943,7 +943,7 @@ TagName *string
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#tag_name Release#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#tag_name Release#tag_name}
 
 ---
 
@@ -957,7 +957,7 @@ Body *string
 
 Text describing the contents of the tag.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#body Release#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#body Release#body}
 
 ---
 
@@ -973,7 +973,7 @@ If specified, a discussion of the specified category is created and linked to th
 
 The value must be a category that already exists in the repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#discussion_category_name Release#discussion_category_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#discussion_category_name Release#discussion_category_name}
 
 ---
 
@@ -987,7 +987,7 @@ Draft interface{}
 
 Set to 'false' to create a published release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#draft Release#draft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#draft Release#draft}
 
 ---
 
@@ -1003,7 +1003,7 @@ Set to 'true' to automatically generate the name and body for this release.
 
 If 'name' is specified, the specified name will be used; otherwise, a name will be automatically generated. If 'body' is specified, the body will be pre-pended to the automatically generated notes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#generate_release_notes Release#generate_release_notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#generate_release_notes Release#generate_release_notes}
 
 ---
 
@@ -1015,7 +1015,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#id Release#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#id Release#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1032,7 +1032,7 @@ Name *string
 
 The name of the release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#name Release#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#name Release#name}
 
 ---
 
@@ -1046,7 +1046,7 @@ Prerelease interface{}
 
 Set to 'false' to identify the release as a full release.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#prerelease Release#prerelease}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#prerelease Release#prerelease}
 
 ---
 
@@ -1060,7 +1060,7 @@ TargetCommitish *string
 
 The branch name or commit SHA the tag is created from.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/release#target_commitish Release#target_commitish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/release#target_commitish Release#target_commitish}
 
 ---
 

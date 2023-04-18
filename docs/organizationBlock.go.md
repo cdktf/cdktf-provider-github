@@ -1,6 +1,6 @@
 # `github_organization_block`
 
-Refer to the Terraform Registory for docs: [`github_organization_block`](https://www.terraform.io/docs/providers/github/r/organization_block).
+Refer to the Terraform Registory for docs: [`github_organization_block`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_block).
 
 # `organizationBlock` Submodule <a name="`organizationBlock` Submodule" id="@cdktf/provider-github.organizationBlock"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_organization_block`](https:/
 
 ### OrganizationBlock <a name="OrganizationBlock" id="@cdktf/provider-github.organizationBlock.OrganizationBlock"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_block github_organization_block}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_block github_organization_block}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.NewOrganizationBlock(scope Construct, id *string, config OrganizationBlockConfig) OrganizationBlock
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.OrganizationBlock_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.OrganizationBlock_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ organizationblock.OrganizationBlock_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.OrganizationBlock_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ organizationblock.OrganizationBlock_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlock.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlock.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlock.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlock.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlock.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlock.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlock.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlock.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -445,10 +445,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -577,11 +577,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 &organizationblock.OrganizationBlockConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -597,14 +597,14 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/organizationblock"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.username">Username</a></code> | <code>*string</code> | The name of the user to block. |
-| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#id OrganizationBlock#id}. |
+| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_block#id OrganizationBlock#id}. |
 
 ---
 
@@ -621,10 +621,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -688,7 +688,7 @@ Username *string
 
 The name of the user to block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#username OrganizationBlock#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_block#username OrganizationBlock#username}
 
 ---
 
@@ -700,7 +700,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_block#id OrganizationBlock#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_block#id OrganizationBlock#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

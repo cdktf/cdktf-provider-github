@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping
+// https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface TeamSyncGroupMappingConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#id TeamSyncGroupMapping#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface TeamSyncGroupMappingConfig extends cdktf.TerraformMetaArguments
   /**
   * Slug of the team.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}
   */
   readonly teamSlug: string;
   /**
   * group block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group TeamSyncGroupMapping#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping#group TeamSyncGroupMapping#group}
   */
   readonly group?: TeamSyncGroupMappingGroup[] | cdktf.IResolvable;
 }
@@ -31,19 +31,19 @@ export interface TeamSyncGroupMappingGroup {
   /**
   * The description of the IdP group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_description TeamSyncGroupMapping#group_description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping#group_description TeamSyncGroupMapping#group_description}
   */
   readonly groupDescription: string;
   /**
   * The ID of the IdP group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_id TeamSyncGroupMapping#group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping#group_id TeamSyncGroupMapping#group_id}
   */
   readonly groupId: string;
   /**
   * The name of the IdP group.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping#group_name TeamSyncGroupMapping#group_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping#group_name TeamSyncGroupMapping#group_name}
   */
   readonly groupName: string;
 }
@@ -177,7 +177,7 @@ export class TeamSyncGroupMappingGroupList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping github_team_sync_group_mapping}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping}
 */
 export class TeamSyncGroupMapping extends cdktf.TerraformResource {
 
@@ -191,7 +191,7 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/team_sync_group_mapping github_team_sync_group_mapping} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +202,7 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_sync_group_mapping',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
