@@ -1,6 +1,6 @@
 # `github_team_repository`
 
-Refer to the Terraform Registory for docs: [`github_team_repository`](https://www.terraform.io/docs/providers/github/r/team_repository).
+Refer to the Terraform Registory for docs: [`github_team_repository`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_repository).
 
 # `teamRepository` Submodule <a name="`teamRepository` Submodule" id="@cdktf/provider-github.teamRepository"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team_repository`](https://ww
 
 ### TeamRepository <a name="TeamRepository" id="@cdktf/provider-github.teamRepository.TeamRepository"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/team_repository github_team_repository}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_repository github_team_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamRepository.TeamRepository.Initializer"></a>
 
@@ -353,7 +353,7 @@ TeamRepository.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepository.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepository.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepository.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamRepository.TeamRepository.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamRepository.TeamRepository.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepository.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepository.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepository.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -456,10 +456,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.teamRepository.TeamRepository.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -632,7 +632,7 @@ using HashiCorp.Cdktf.Providers.Github;
 
 new TeamRepositoryConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -650,7 +650,7 @@ new TeamRepositoryConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -658,7 +658,7 @@ new TeamRepositoryConfig {
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.repository">Repository</a></code> | <code>string</code> | The repository to add to the team. |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.teamId">TeamId</a></code> | <code>string</code> | ID or slug of team. |
-| <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#id TeamRepository#id}. |
+| <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_repository#id TeamRepository#id}. |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.permission">Permission</a></code> | <code>string</code> | The permissions of team members regarding the repository. |
 
 ---
@@ -676,10 +676,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -743,7 +743,7 @@ public string Repository { get; set; }
 
 The repository to add to the team.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#repository TeamRepository#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_repository#repository TeamRepository#repository}
 
 ---
 
@@ -757,7 +757,7 @@ public string TeamId { get; set; }
 
 ID or slug of team.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#team_id TeamRepository#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_repository#team_id TeamRepository#team_id}
 
 ---
 
@@ -769,7 +769,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#id TeamRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_repository#id TeamRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -788,7 +788,7 @@ The permissions of team members regarding the repository.
 
 Must be one of 'pull', 'triage', 'push', 'maintain', 'admin' or the name of an existing custom repository role within the organisation.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_repository#permission TeamRepository#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_repository#permission TeamRepository#permission}
 
 ---
 

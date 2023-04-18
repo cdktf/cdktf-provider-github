@@ -1,6 +1,6 @@
 # `github_branch`
 
-Refer to the Terraform Registory for docs: [`github_branch`](https://www.terraform.io/docs/providers/github/r/branch).
+Refer to the Terraform Registory for docs: [`github_branch`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch).
 
 # `branch` Submodule <a name="`branch` Submodule" id="@cdktf/provider-github.branch"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_branch`](https://www.terrafo
 
 ### Branch <a name="Branch" id="@cdktf/provider-github.branch.Branch"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/branch github_branch}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch github_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branch.Branch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branch"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branch"
 
 branch.NewBranch(scope Construct, id *string, config BranchConfig) Branch
 ```
@@ -291,7 +291,7 @@ func ResetSourceSha()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.branch.Branch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branch"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branch"
 
 branch.Branch_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.branch.Branch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branch"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branch"
 
 branch.Branch_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ branch.Branch_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.branch.Branch.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branch"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branch"
 
 branch.Branch_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ branch.Branch_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branch.Branch.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branch.Branch.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -467,10 +467,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.branch.Branch.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -679,11 +679,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.branch.BranchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branch"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branch"
 
 &branch.BranchConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -702,7 +702,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/branch"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -710,7 +710,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/branch"
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.branch">Branch</a></code> | <code>*string</code> | The repository branch to create. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository name. |
-| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#id Branch#id}. |
+| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch#id Branch#id}. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.sourceBranch">SourceBranch</a></code> | <code>*string</code> | The branch name to start from. Defaults to 'main'. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.sourceSha">SourceSha</a></code> | <code>*string</code> | The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored. |
 
@@ -729,10 +729,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.branch.BranchConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -796,7 +796,7 @@ Branch *string
 
 The repository branch to create.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#branch Branch#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch#branch Branch#branch}
 
 ---
 
@@ -810,7 +810,7 @@ Repository *string
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#repository Branch#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch#repository Branch#repository}
 
 ---
 
@@ -822,7 +822,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#id Branch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch#id Branch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -839,7 +839,7 @@ SourceBranch *string
 
 The branch name to start from. Defaults to 'main'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_branch Branch#source_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch#source_branch Branch#source_branch}
 
 ---
 
@@ -853,7 +853,7 @@ SourceSha *string
 
 The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch#source_sha Branch#source_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch#source_sha Branch#source_sha}
 
 ---
 

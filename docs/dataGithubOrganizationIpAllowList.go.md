@@ -1,6 +1,6 @@
 # `data_github_organization_ip_allow_list`
 
-Refer to the Terraform Registory for docs: [`data_github_organization_ip_allow_list`](https://www.terraform.io/docs/providers/github/d/organization_ip_allow_list).
+Refer to the Terraform Registory for docs: [`data_github_organization_ip_allow_list`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_ip_allow_list).
 
 # `dataGithubOrganizationIpAllowList` Submodule <a name="`dataGithubOrganizationIpAllowList` Submodule" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_organization_ip_allow_l
 
 ### DataGithubOrganizationIpAllowList <a name="DataGithubOrganizationIpAllowList" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/d/organization_ip_allow_list github_organization_ip_allow_list}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_ip_allow_list github_organization_ip_allow_list}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowList(scope Construct, id *string, config DataGithubOrganizationIpAllowListConfig) DataGithubOrganizationIpAllowList
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformD
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -431,10 +431,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -533,11 +533,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
 
 &datagithuborganizationipallowlist.DataGithubOrganizationIpAllowListConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -552,13 +552,13 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizati
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization_ip_allow_list#id DataGithubOrganizationIpAllowList#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_ip_allow_list#id DataGithubOrganizationIpAllowList#id}. |
 
 ---
 
@@ -575,10 +575,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -640,7 +640,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/organization_ip_allow_list#id DataGithubOrganizationIpAllowList#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/organization_ip_allow_list#id DataGithubOrganizationIpAllowList#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -652,7 +652,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
 
 &datagithuborganizationipallowlist.DataGithubOrganizationIpAllowListIpAllowList {
 
@@ -667,7 +667,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizati
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowListIpAllowListList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationIpAllowListIpAllowListList
 ```
@@ -799,7 +799,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowListIpAllowListOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubOrganizationIpAllowListIpAllowListOutputReference
 ```

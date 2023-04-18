@@ -1,6 +1,6 @@
 # `github_membership`
 
-Refer to the Terraform Registory for docs: [`github_membership`](https://www.terraform.io/docs/providers/github/r/membership).
+Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/membership).
 
 # `membership` Submodule <a name="`membership` Submodule" id="@cdktf/provider-github.membership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_membership`](https://www.ter
 
 ### Membership <a name="Membership" id="@cdktf/provider-github.membership.Membership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/membership github_membership}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/membership github_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.membership.Membership.Initializer"></a>
 
@@ -353,7 +353,7 @@ membership.Membership.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.membership.Membership.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.membership.Membership.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -454,10 +454,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.membership.Membership.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -616,14 +616,14 @@ const membershipConfig: membership.MembershipConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.username">username</a></code> | <code>string</code> | The user to add to the organization. |
-| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#id Membership#id}. |
+| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/membership#id Membership#id}. |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.role">role</a></code> | <code>string</code> | The role of the user within the organization. Must be one of 'member' or 'admin'. |
 
 ---
@@ -641,10 +641,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.membership.MembershipConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -708,7 +708,7 @@ public readonly username: string;
 
 The user to add to the organization.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#username Membership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/membership#username Membership#username}
 
 ---
 
@@ -720,7 +720,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#id Membership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/membership#id Membership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -737,7 +737,7 @@ public readonly role: string;
 
 The role of the user within the organization. Must be one of 'member' or 'admin'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/membership#role Membership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/membership#role Membership#role}
 
 ---
 

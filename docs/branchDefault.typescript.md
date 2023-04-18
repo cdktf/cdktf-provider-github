@@ -1,6 +1,6 @@
 # `github_branch_default`
 
-Refer to the Terraform Registory for docs: [`github_branch_default`](https://www.terraform.io/docs/providers/github/r/branch_default).
+Refer to the Terraform Registory for docs: [`github_branch_default`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default).
 
 # `branchDefault` Submodule <a name="`branchDefault` Submodule" id="@cdktf/provider-github.branchDefault"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_branch_default`](https://www
 
 ### BranchDefault <a name="BranchDefault" id="@cdktf/provider-github.branchDefault.BranchDefault"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default github_branch_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchDefault.BranchDefault.Initializer"></a>
 
@@ -353,7 +353,7 @@ branchDefault.BranchDefault.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.branchDefault.BranchDefault.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -627,7 +627,7 @@ const branchDefaultConfig: branchDefault.BranchDefaultConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -635,7 +635,7 @@ const branchDefaultConfig: branchDefault.BranchDefaultConfig = { ... }
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.branch">branch</a></code> | <code>string</code> | The branch (e.g. 'main'). |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.repository">repository</a></code> | <code>string</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#id BranchDefault#id}. |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#id BranchDefault#id}. |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.rename">rename</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'. |
 
 ---
@@ -653,10 +653,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -720,7 +720,7 @@ public readonly branch: string;
 
 The branch (e.g. 'main').
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#branch BranchDefault#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#branch BranchDefault#branch}
 
 ---
 
@@ -734,7 +734,7 @@ public readonly repository: string;
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#repository BranchDefault#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#repository BranchDefault#repository}
 
 ---
 
@@ -746,7 +746,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#id BranchDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#id BranchDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -763,7 +763,7 @@ public readonly rename: boolean | IResolvable;
 
 Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#rename BranchDefault#rename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#rename BranchDefault#rename}
 
 ---
 

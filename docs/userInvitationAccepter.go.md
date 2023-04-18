@@ -1,6 +1,6 @@
 # `github_user_invitation_accepter`
 
-Refer to the Terraform Registory for docs: [`github_user_invitation_accepter`](https://www.terraform.io/docs/providers/github/r/user_invitation_accepter).
+Refer to the Terraform Registory for docs: [`github_user_invitation_accepter`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter).
 
 # `userInvitationAccepter` Submodule <a name="`userInvitationAccepter` Submodule" id="@cdktf/provider-github.userInvitationAccepter"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_user_invitation_accepter`](h
 
 ### UserInvitationAccepter <a name="UserInvitationAccepter" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter github_user_invitation_accepter}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/userinvitationaccepter"
 
 userinvitationaccepter.NewUserInvitationAccepter(scope Construct, id *string, config UserInvitationAccepterConfig) UserInvitationAccepter
 ```
@@ -291,7 +291,7 @@ func ResetInvitationId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/userinvitationaccepter"
 
 userinvitationaccepter.UserInvitationAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/userinvitationaccepter"
 
 userinvitationaccepter.UserInvitationAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ userinvitationaccepter.UserInvitationAccepter_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/userinvitationaccepter"
 
 userinvitationaccepter.UserInvitationAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,7 +360,7 @@ userinvitationaccepter.UserInvitationAccepter_IsTerraformResource(x interface{})
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -460,10 +460,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -602,11 +602,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/userinvitationaccepter"
 
 &userinvitationaccepter.UserInvitationAccepterConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -623,14 +623,14 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/userinvitationaccept
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.allowEmptyId">AllowEmptyId</a></code> | <code>interface{}</code> | Allow the ID to be unset. |
-| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#id UserInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}. |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.invitationId">InvitationId</a></code> | <code>*string</code> | ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'. |
 
 ---
@@ -648,10 +648,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -717,7 +717,7 @@ Allow the ID to be unset.
 
 This will result in the resource being skipped when the ID is not set instead of returning an error.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
 
 ---
 
@@ -729,7 +729,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#id UserInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -746,7 +746,7 @@ InvitationId *string
 
 ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
 
 ---
 

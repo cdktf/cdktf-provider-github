@@ -1,6 +1,6 @@
 # `github_project_card`
 
-Refer to the Terraform Registory for docs: [`github_project_card`](https://www.terraform.io/docs/providers/github/r/project_card).
+Refer to the Terraform Registory for docs: [`github_project_card`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card).
 
 # `projectCard` Submodule <a name="`projectCard` Submodule" id="@cdktf/provider-github.projectCard"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_project_card`](https://www.t
 
 ### ProjectCard <a name="ProjectCard" id="@cdktf/provider-github.projectCard.ProjectCard"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card github_project_card}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.projectCard.ProjectCard.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcard"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcard"
 
 projectcard.NewProjectCard(scope Construct, id *string, config ProjectCardConfig) ProjectCard
 ```
@@ -298,7 +298,7 @@ func ResetNote()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.projectCard.ProjectCard.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcard"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcard"
 
 projectcard.ProjectCard_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.projectCard.ProjectCard.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcard"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcard"
 
 projectcard.ProjectCard_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ projectcard.ProjectCard_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.projectCard.ProjectCard.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcard"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcard"
 
 projectcard.ProjectCard_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ projectcard.ProjectCard_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -473,10 +473,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.projectCard.ProjectCard.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -675,11 +675,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.projectCard.ProjectCardConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcard"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcard"
 
 &projectcard.ProjectCardConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -698,7 +698,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcard"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -707,7 +707,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcard"
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.columnId">ColumnId</a></code> | <code>*string</code> | The ID of the project column. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.contentId">ContentId</a></code> | <code>*f64</code> | 'github_issue.issue_id'. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.contentType">ContentType</a></code> | <code>*string</code> | Must be either 'Issue' or 'PullRequest'. |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}. |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#id ProjectCard#id}. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.note">Note</a></code> | <code>*string</code> | The note contents of the card. Markdown supported. |
 
 ---
@@ -725,10 +725,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.projectCard.ProjectCardConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -792,7 +792,7 @@ ColumnId *string
 
 The ID of the project column.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#column_id ProjectCard#column_id}
 
 ---
 
@@ -806,7 +806,7 @@ ContentId *f64
 
 'github_issue.issue_id'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#content_id ProjectCard#content_id}
 
 ---
 
@@ -820,7 +820,7 @@ ContentType *string
 
 Must be either 'Issue' or 'PullRequest'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#content_type ProjectCard#content_type}
 
 ---
 
@@ -832,7 +832,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#id ProjectCard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -849,7 +849,7 @@ Note *string
 
 The note contents of the card. Markdown supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#note ProjectCard#note}
 
 ---
 

@@ -1,6 +1,6 @@
 # `github_actions_organization_variable`
 
-Refer to the Terraform Registory for docs: [`github_actions_organization_variable`](https://www.terraform.io/docs/providers/github/r/actions_organization_variable).
+Refer to the Terraform Registory for docs: [`github_actions_organization_variable`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable).
 
 # `actionsOrganizationVariable` Submodule <a name="`actionsOrganizationVariable` Submodule" id="@cdktf/provider-github.actionsOrganizationVariable"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_actions_organization_variabl
 
 ### ActionsOrganizationVariable <a name="ActionsOrganizationVariable" id="@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable github_actions_organization_variable}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable github_actions_organization_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsorganizationvariable"
 
 actionsorganizationvariable.NewActionsOrganizationVariable(scope Construct, id *string, config ActionsOrganizationVariableConfig) ActionsOrganizationVariable
 ```
@@ -284,7 +284,7 @@ func ResetSelectedRepositoryIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsorganizationvariable"
 
 actionsorganizationvariable.ActionsOrganizationVariable_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsorganizationvariable"
 
 actionsorganizationvariable.ActionsOrganizationVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ actionsorganizationvariable.ActionsOrganizationVariable_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsorganizationvariable"
 
 actionsorganizationvariable.ActionsOrganizationVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ actionsorganizationvariable.ActionsOrganizationVariable_IsTerraformResource(x in
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -459,10 +459,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariable.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -661,11 +661,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsorganizationvariable"
 
 &actionsorganizationvariable.ActionsOrganizationVariableConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -684,7 +684,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationv
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -693,7 +693,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsorganizationv
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.value">Value</a></code> | <code>*string</code> | Value of the variable. |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.variableName">VariableName</a></code> | <code>*string</code> | Name of the variable. |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.visibility">Visibility</a></code> | <code>*string</code> | Configures the access that repositories have to the organization variable. |
-| <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable#id ActionsOrganizationVariable#id}. |
+| <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable#id ActionsOrganizationVariable#id}. |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.selectedRepositoryIds">SelectedRepositoryIds</a></code> | <code>*[]*f64</code> | An array of repository ids that can access the organization variable. |
 
 ---
@@ -711,10 +711,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.actionsOrganizationVariable.ActionsOrganizationVariableConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -778,7 +778,7 @@ Value *string
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable#value ActionsOrganizationVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable#value ActionsOrganizationVariable#value}
 
 ---
 
@@ -792,7 +792,7 @@ VariableName *string
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable#variable_name ActionsOrganizationVariable#variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable#variable_name ActionsOrganizationVariable#variable_name}
 
 ---
 
@@ -808,7 +808,7 @@ Configures the access that repositories have to the organization variable.
 
 Must be one of 'all', 'private', or 'selected'. 'selected_repository_ids' is required if set to 'selected'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable#visibility ActionsOrganizationVariable#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable#visibility ActionsOrganizationVariable#visibility}
 
 ---
 
@@ -820,7 +820,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable#id ActionsOrganizationVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable#id ActionsOrganizationVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -837,7 +837,7 @@ SelectedRepositoryIds *[]*f64
 
 An array of repository ids that can access the organization variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_organization_variable#selected_repository_ids ActionsOrganizationVariable#selected_repository_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_organization_variable#selected_repository_ids ActionsOrganizationVariable#selected_repository_ids}
 
 ---
 

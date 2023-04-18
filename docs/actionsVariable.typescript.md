@@ -1,6 +1,6 @@
 # `github_actions_variable`
 
-Refer to the Terraform Registory for docs: [`github_actions_variable`](https://www.terraform.io/docs/providers/github/r/actions_variable).
+Refer to the Terraform Registory for docs: [`github_actions_variable`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable).
 
 # `actionsVariable` Submodule <a name="`actionsVariable` Submodule" id="@cdktf/provider-github.actionsVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_actions_variable`](https://w
 
 ### ActionsVariable <a name="ActionsVariable" id="@cdktf/provider-github.actionsVariable.ActionsVariable"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_variable github_actions_variable}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable github_actions_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsVariable.ActionsVariable.Initializer"></a>
 
@@ -346,7 +346,7 @@ actionsVariable.ActionsVariable.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariable.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariable.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariable.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariable.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariable.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariable.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariable.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -450,10 +450,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.actionsVariable.ActionsVariable.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -642,7 +642,7 @@ const actionsVariableConfig: actionsVariable.ActionsVariableConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -651,7 +651,7 @@ const actionsVariableConfig: actionsVariable.ActionsVariableConfig = { ... }
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.repository">repository</a></code> | <code>string</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.value">value</a></code> | <code>string</code> | Value of the variable. |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.variableName">variableName</a></code> | <code>string</code> | Name of the variable. |
-| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_variable#id ActionsVariable#id}. |
+| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable#id ActionsVariable#id}. |
 
 ---
 
@@ -668,10 +668,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -735,7 +735,7 @@ public readonly repository: string;
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_variable#repository ActionsVariable#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable#repository ActionsVariable#repository}
 
 ---
 
@@ -749,7 +749,7 @@ public readonly value: string;
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_variable#value ActionsVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable#value ActionsVariable#value}
 
 ---
 
@@ -763,7 +763,7 @@ public readonly variableName: string;
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_variable#variable_name ActionsVariable#variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable#variable_name ActionsVariable#variable_name}
 
 ---
 
@@ -775,7 +775,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_variable#id ActionsVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_variable#id ActionsVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `github_repository_milestone`
 
-Refer to the Terraform Registory for docs: [`github_repository_milestone`](https://www.terraform.io/docs/providers/github/r/repository_milestone).
+Refer to the Terraform Registory for docs: [`github_repository_milestone`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone).
 
 # `repositoryMilestone` Submodule <a name="`repositoryMilestone` Submodule" id="@cdktf/provider-github.repositoryMilestone"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_repository_milestone`](https
 
 ### RepositoryMilestone <a name="RepositoryMilestone" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_milestone github_repository_milestone}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone github_repository_milestone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositorymilestone"
 
 repositorymilestone.NewRepositoryMilestone(scope Construct, id *string, config RepositoryMilestoneConfig) RepositoryMilestone
 ```
@@ -298,7 +298,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ repositorymilestone.RepositoryMilestone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsTerraformResource(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ repositorymilestone.RepositoryMilestone_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -476,10 +476,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -708,11 +708,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositorymilestone"
 
 &repositorymilestone.RepositoryMilestoneConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -733,7 +733,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositorymilestone"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -744,7 +744,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositorymilestone"
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.title">Title</a></code> | <code>*string</code> | The title of the milestone. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.description">Description</a></code> | <code>*string</code> | A description of the milestone. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.dueDate">DueDate</a></code> | <code>*string</code> | The milestone due date. In 'yyyy-mm-dd' format. |
-| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#id RepositoryMilestone#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone#id RepositoryMilestone#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.state">State</a></code> | <code>*string</code> | The state of the milestone. Either 'open' or 'closed'. Default: 'open'. |
 
 ---
@@ -762,10 +762,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -829,7 +829,7 @@ Owner *string
 
 The owner of the GitHub Repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#owner RepositoryMilestone#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone#owner RepositoryMilestone#owner}
 
 ---
 
@@ -843,7 +843,7 @@ Repository *string
 
 The name of the GitHub Repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#repository RepositoryMilestone#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone#repository RepositoryMilestone#repository}
 
 ---
 
@@ -857,7 +857,7 @@ Title *string
 
 The title of the milestone.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#title RepositoryMilestone#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone#title RepositoryMilestone#title}
 
 ---
 
@@ -871,7 +871,7 @@ Description *string
 
 A description of the milestone.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#description RepositoryMilestone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone#description RepositoryMilestone#description}
 
 ---
 
@@ -885,7 +885,7 @@ DueDate *string
 
 The milestone due date. In 'yyyy-mm-dd' format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#due_date RepositoryMilestone#due_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone#due_date RepositoryMilestone#due_date}
 
 ---
 
@@ -897,7 +897,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#id RepositoryMilestone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone#id RepositoryMilestone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -914,7 +914,7 @@ State *string
 
 The state of the milestone. Either 'open' or 'closed'. Default: 'open'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_milestone#state RepositoryMilestone#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_milestone#state RepositoryMilestone#state}
 
 ---
 

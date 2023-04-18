@@ -1,6 +1,6 @@
 # `data_github_repositories`
 
-Refer to the Terraform Registory for docs: [`data_github_repositories`](https://www.terraform.io/docs/providers/github/d/repositories).
+Refer to the Terraform Registory for docs: [`data_github_repositories`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories).
 
 # `dataGithubRepositories` Submodule <a name="`dataGithubRepositories` Submodule" id="@cdktf/provider-github.dataGithubRepositories"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_repositories`](https://
 
 ### DataGithubRepositories <a name="DataGithubRepositories" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/d/repositories github_repositories}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories github_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.Initializer"></a>
 
@@ -366,7 +366,7 @@ dataGithubRepositories.DataGithubRepositories.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -462,10 +462,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -674,17 +674,17 @@ const dataGithubRepositoriesConfig: dataGithubRepositories.DataGithubRepositorie
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.query">query</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#query DataGithubRepositories#query}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#id DataGithubRepositories#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.includeRepoId">includeRepoId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#include_repo_id DataGithubRepositories#include_repo_id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.resultsPerPage">resultsPerPage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#results_per_page DataGithubRepositories#results_per_page}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.sort">sort</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#sort DataGithubRepositories#sort}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.query">query</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#query DataGithubRepositories#query}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#id DataGithubRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.includeRepoId">includeRepoId</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#include_repo_id DataGithubRepositories#include_repo_id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.resultsPerPage">resultsPerPage</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#results_per_page DataGithubRepositories#results_per_page}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.sort">sort</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#sort DataGithubRepositories#sort}. |
 
 ---
 
@@ -701,10 +701,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -766,7 +766,7 @@ public readonly query: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#query DataGithubRepositories#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#query DataGithubRepositories#query}.
 
 ---
 
@@ -778,7 +778,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#id DataGithubRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#id DataGithubRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -793,7 +793,7 @@ public readonly includeRepoId: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#include_repo_id DataGithubRepositories#include_repo_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#include_repo_id DataGithubRepositories#include_repo_id}.
 
 ---
 
@@ -805,7 +805,7 @@ public readonly resultsPerPage: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#results_per_page DataGithubRepositories#results_per_page}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#results_per_page DataGithubRepositories#results_per_page}.
 
 ---
 
@@ -817,7 +817,7 @@ public readonly sort: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repositories#sort DataGithubRepositories#sort}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repositories#sort DataGithubRepositories#sort}.
 
 ---
 

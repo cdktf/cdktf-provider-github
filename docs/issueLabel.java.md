@@ -1,6 +1,6 @@
 # `github_issue_label`
 
-Refer to the Terraform Registory for docs: [`github_issue_label`](https://www.terraform.io/docs/providers/github/r/issue_label).
+Refer to the Terraform Registory for docs: [`github_issue_label`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label).
 
 # `issueLabel` Submodule <a name="`issueLabel` Submodule" id="@cdktf/provider-github.issueLabel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_issue_label`](https://www.te
 
 ### IssueLabel <a name="IssueLabel" id="@cdktf/provider-github.issueLabel.IssueLabel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label github_issue_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabel.IssueLabel.Initializer"></a>
 
@@ -19,6 +19,7 @@ IssueLabel.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -39,7 +40,7 @@ IssueLabel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -49,7 +50,7 @@ IssueLabel.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | The GitHub repository. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A short description of the label. |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#id IssueLabel#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#id IssueLabel#id}. |
 
 ---
 
@@ -79,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.issueLabel.IssueLabel.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -119,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 A 6 character hex code, without the leading '#', identifying the color of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#color IssueLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#color IssueLabel#color}
 
 ---
 
@@ -129,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#name IssueLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#name IssueLabel#name}
 
 ---
 
@@ -139,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#repository IssueLabel#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#repository IssueLabel#repository}
 
 ---
 
@@ -149,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 A short description of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#description IssueLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#description IssueLabel#description}
 
 ---
 
@@ -157,7 +158,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#id IssueLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#id IssueLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -467,7 +468,7 @@ IssueLabel.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -573,10 +574,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.issueLabel.IssueLabel.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -781,6 +782,7 @@ IssueLabelConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -801,7 +803,7 @@ IssueLabelConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -811,7 +813,7 @@ IssueLabelConfig.builder()
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | The GitHub repository. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.description">description</a></code> | <code>java.lang.String</code> | A short description of the label. |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#id IssueLabel#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#id IssueLabel#id}. |
 
 ---
 
@@ -828,10 +830,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.issueLabel.IssueLabelConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -895,7 +897,7 @@ public java.lang.String getColor();
 
 A 6 character hex code, without the leading '#', identifying the color of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#color IssueLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#color IssueLabel#color}
 
 ---
 
@@ -909,7 +911,7 @@ public java.lang.String getName();
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#name IssueLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#name IssueLabel#name}
 
 ---
 
@@ -923,7 +925,7 @@ public java.lang.String getRepository();
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#repository IssueLabel#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#repository IssueLabel#repository}
 
 ---
 
@@ -937,7 +939,7 @@ public java.lang.String getDescription();
 
 A short description of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#description IssueLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#description IssueLabel#description}
 
 ---
 
@@ -949,7 +951,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#id IssueLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#id IssueLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

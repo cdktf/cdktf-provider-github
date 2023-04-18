@@ -1,6 +1,6 @@
 # `github_organization_webhook`
 
-Refer to the Terraform Registory for docs: [`github_organization_webhook`](https://www.terraform.io/docs/providers/github/r/organization_webhook).
+Refer to the Terraform Registory for docs: [`github_organization_webhook`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook).
 
 # `organizationWebhook` Submodule <a name="`organizationWebhook` Submodule" id="@cdktf/provider-github.organizationWebhook"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_organization_webhook`](https
 
 ### OrganizationWebhook <a name="OrganizationWebhook" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_webhook github_organization_webhook}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook github_organization_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer"></a>
 
@@ -380,7 +380,7 @@ organizationWebhook.OrganizationWebhook.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -486,10 +486,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -698,7 +698,7 @@ const organizationWebhookConfig: organizationWebhook.OrganizationWebhookConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -707,8 +707,8 @@ const organizationWebhookConfig: organizationWebhook.OrganizationWebhookConfig =
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.events">events</a></code> | <code>string[]</code> | A list of events which should trigger the webhook. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicate if the webhook should receive events. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfiguration">OrganizationWebhookConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#id OrganizationWebhook#id}. |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#name OrganizationWebhook#name}. |
+| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#id OrganizationWebhook#id}. |
+| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#name OrganizationWebhook#name}. |
 
 ---
 
@@ -725,10 +725,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -792,7 +792,7 @@ public readonly events: string[];
 
 A list of events which should trigger the webhook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#events OrganizationWebhook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#events OrganizationWebhook#events}
 
 ---
 
@@ -806,7 +806,7 @@ public readonly active: boolean | IResolvable;
 
 Indicate if the webhook should receive events.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#active OrganizationWebhook#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#active OrganizationWebhook#active}
 
 ---
 
@@ -820,7 +820,7 @@ public readonly configuration: OrganizationWebhookConfiguration;
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#configuration OrganizationWebhook#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#configuration OrganizationWebhook#configuration}
 
 ---
 
@@ -832,7 +832,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#id OrganizationWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#id OrganizationWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -847,7 +847,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#name OrganizationWebhook#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#name OrganizationWebhook#name}.
 
 ---
 
@@ -882,7 +882,7 @@ public readonly url: string;
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#url OrganizationWebhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#url OrganizationWebhook#url}
 
 ---
 
@@ -896,7 +896,7 @@ public readonly contentType: string;
 
 The content type for the payload. Valid values are either 'form' or 'json'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#content_type OrganizationWebhook#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#content_type OrganizationWebhook#content_type}
 
 ---
 
@@ -910,7 +910,7 @@ public readonly insecureSsl: boolean | IResolvable;
 
 Insecure SSL boolean toggle. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}
 
 ---
 
@@ -924,7 +924,7 @@ public readonly secret: string;
 
 The shared secret for the webhook.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_webhook#secret OrganizationWebhook#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_webhook#secret OrganizationWebhook#secret}
 
 ---
 

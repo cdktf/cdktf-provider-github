@@ -1,6 +1,6 @@
 # `data_github_ref`
 
-Refer to the Terraform Registory for docs: [`data_github_ref`](https://www.terraform.io/docs/providers/github/d/ref).
+Refer to the Terraform Registory for docs: [`data_github_ref`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref).
 
 # `dataGithubRef` Submodule <a name="`dataGithubRef` Submodule" id="@cdktf/provider-github.dataGithubRef"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_ref`](https://www.terra
 
 ### DataGithubRef <a name="DataGithubRef" id="@cdktf/provider-github.dataGithubRef.DataGithubRef"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/d/ref github_ref}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref github_ref}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRef.DataGithubRef.Initializer"></a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.resetOwner">resetOwner</a></code> | *No description.* |
 
 ---
 
@@ -264,6 +265,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetId(): void
 ```
 
+##### `resetOwner` <a name="resetOwner" id="@cdktf/provider-github.dataGithubRef.DataGithubRef.resetOwner"></a>
+
+```typescript
+public resetOwner(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -345,7 +352,7 @@ dataGithubRef.DataGithubRef.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -353,9 +360,11 @@ dataGithubRef.DataGithubRef.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.etag">etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.sha">sha</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.ownerInput">ownerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.refInput">refInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.repositoryInput">repositoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.owner">owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.ref">ref</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRef.property.repository">repository</a></code> | <code>string</code> | *No description.* |
 
@@ -436,10 +445,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dataGithubRef.DataGithubRef.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -513,6 +522,16 @@ public readonly idInput: string;
 
 ---
 
+##### `ownerInput`<sup>Optional</sup> <a name="ownerInput" id="@cdktf/provider-github.dataGithubRef.DataGithubRef.property.ownerInput"></a>
+
+```typescript
+public readonly ownerInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `refInput`<sup>Optional</sup> <a name="refInput" id="@cdktf/provider-github.dataGithubRef.DataGithubRef.property.refInput"></a>
 
 ```typescript
@@ -537,6 +556,16 @@ public readonly repositoryInput: string;
 
 ```typescript
 public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `owner`<sup>Required</sup> <a name="owner" id="@cdktf/provider-github.dataGithubRef.DataGithubRef.property.owner"></a>
+
+```typescript
+public readonly owner: string;
 ```
 
 - *Type:* string
@@ -598,15 +627,16 @@ const dataGithubRefConfig: dataGithubRef.DataGithubRefConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.ref">ref</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#ref DataGithubRef#ref}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#repository DataGithubRef#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#id DataGithubRef#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.ref">ref</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref#ref DataGithubRef#ref}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref#repository DataGithubRef#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref#id DataGithubRef#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref#owner DataGithubRef#owner}. |
 
 ---
 
@@ -623,10 +653,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -688,7 +718,7 @@ public readonly ref: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#ref DataGithubRef#ref}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref#ref DataGithubRef#ref}.
 
 ---
 
@@ -700,7 +730,7 @@ public readonly repository: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#repository DataGithubRef#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref#repository DataGithubRef#repository}.
 
 ---
 
@@ -712,10 +742,22 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/ref#id DataGithubRef#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref#id DataGithubRef#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `owner`<sup>Optional</sup> <a name="owner" id="@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.owner"></a>
+
+```typescript
+public readonly owner: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/ref#owner DataGithubRef#owner}.
 
 ---
 

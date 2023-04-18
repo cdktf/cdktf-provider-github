@@ -1,6 +1,6 @@
 # `github_project_column`
 
-Refer to the Terraform Registory for docs: [`github_project_column`](https://www.terraform.io/docs/providers/github/r/project_column).
+Refer to the Terraform Registory for docs: [`github_project_column`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_column).
 
 # `projectColumn` Submodule <a name="`projectColumn` Submodule" id="@cdktf/provider-github.projectColumn"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_project_column`](https://www
 
 ### ProjectColumn <a name="ProjectColumn" id="@cdktf/provider-github.projectColumn.ProjectColumn"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/project_column github_project_column}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_column github_project_column}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.projectColumn.ProjectColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
 
 projectcolumn.NewProjectColumn(scope Construct, id *string, config ProjectColumnConfig) ProjectColumn
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.projectColumn.ProjectColumn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
 
 projectcolumn.ProjectColumn_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.projectColumn.ProjectColumn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
 
 projectcolumn.ProjectColumn_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ projectcolumn.ProjectColumn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.projectColumn.ProjectColumn.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
 
 projectcolumn.ProjectColumn_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ projectcolumn.ProjectColumn_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -448,10 +448,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.projectColumn.ProjectColumn.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -610,11 +610,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.projectColumn.ProjectColumnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
 
 &projectcolumn.ProjectColumnConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -631,7 +631,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcolumn"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/projectcolumn"
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.name">Name</a></code> | <code>*string</code> | The name of the column. |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The ID of an existing project that the column will be created in. |
-| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#id ProjectColumn#id}. |
+| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_column#id ProjectColumn#id}. |
 
 ---
 
@@ -656,10 +656,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -723,7 +723,7 @@ Name *string
 
 The name of the column.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#name ProjectColumn#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_column#name ProjectColumn#name}
 
 ---
 
@@ -737,7 +737,7 @@ ProjectId *string
 
 The ID of an existing project that the column will be created in.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#project_id ProjectColumn#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_column#project_id ProjectColumn#project_id}
 
 ---
 
@@ -749,7 +749,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_column#id ProjectColumn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_column#id ProjectColumn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

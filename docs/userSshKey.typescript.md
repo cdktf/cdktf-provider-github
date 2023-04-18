@@ -1,6 +1,6 @@
 # `github_user_ssh_key`
 
-Refer to the Terraform Registory for docs: [`github_user_ssh_key`](https://www.terraform.io/docs/providers/github/r/user_ssh_key).
+Refer to the Terraform Registory for docs: [`github_user_ssh_key`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_ssh_key).
 
 # `userSshKey` Submodule <a name="`userSshKey` Submodule" id="@cdktf/provider-github.userSshKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_user_ssh_key`](https://www.t
 
 ### UserSshKey <a name="UserSshKey" id="@cdktf/provider-github.userSshKey.UserSshKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key github_user_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_ssh_key github_user_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userSshKey.UserSshKey.Initializer"></a>
 
@@ -346,7 +346,7 @@ userSshKey.UserSshKey.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -448,10 +448,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.userSshKey.UserSshKey.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -620,7 +620,7 @@ const userSshKeyConfig: userSshKey.UserSshKeyConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -628,7 +628,7 @@ const userSshKeyConfig: userSshKey.UserSshKeyConfig = { ... }
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.key">key</a></code> | <code>string</code> | The public SSH key to add to your GitHub account. |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.title">title</a></code> | <code>string</code> | A descriptive name for the new key. |
-| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#id UserSshKey#id}. |
+| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_ssh_key#id UserSshKey#id}. |
 
 ---
 
@@ -645,10 +645,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -712,7 +712,7 @@ public readonly key: string;
 
 The public SSH key to add to your GitHub account.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#key UserSshKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_ssh_key#key UserSshKey#key}
 
 ---
 
@@ -726,7 +726,7 @@ public readonly title: string;
 
 A descriptive name for the new key.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#title UserSshKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_ssh_key#title UserSshKey#title}
 
 ---
 
@@ -738,7 +738,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_ssh_key#id UserSshKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_ssh_key#id UserSshKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

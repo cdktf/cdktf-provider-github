@@ -1,6 +1,6 @@
 # `data_github_membership`
 
-Refer to the Terraform Registory for docs: [`data_github_membership`](https://www.terraform.io/docs/providers/github/d/membership).
+Refer to the Terraform Registory for docs: [`data_github_membership`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/membership).
 
 # `dataGithubMembership` Submodule <a name="`dataGithubMembership` Submodule" id="@cdktf/provider-github.dataGithubMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_membership`](https://ww
 
 ### DataGithubMembership <a name="DataGithubMembership" id="@cdktf/provider-github.dataGithubMembership.DataGithubMembership"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/d/membership github_membership}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/membership github_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubMembership.DataGithubMembership.Initializer"></a>
 
@@ -352,7 +352,7 @@ dataGithubMembership.DataGithubMembership.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -444,10 +444,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dataGithubMembership.DataGithubMembership.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -616,15 +616,15 @@ const dataGithubMembershipConfig: dataGithubMembership.DataGithubMembershipConfi
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership#username DataGithubMembership#username}. |
-| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership#id DataGithubMembership#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership#organization DataGithubMembership#organization}. |
+| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/membership#username DataGithubMembership#username}. |
+| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/membership#id DataGithubMembership#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.organization">organization</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/membership#organization DataGithubMembership#organization}. |
 
 ---
 
@@ -641,10 +641,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dataGithubMembership.DataGithubMembershipConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -706,7 +706,7 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership#username DataGithubMembership#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/membership#username DataGithubMembership#username}.
 
 ---
 
@@ -718,7 +718,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership#id DataGithubMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/membership#id DataGithubMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -733,7 +733,7 @@ public readonly organization: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/membership#organization DataGithubMembership#organization}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/membership#organization DataGithubMembership#organization}.
 
 ---
 

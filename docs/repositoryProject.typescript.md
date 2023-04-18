@@ -1,6 +1,6 @@
 # `github_repository_project`
 
-Refer to the Terraform Registory for docs: [`github_repository_project`](https://www.terraform.io/docs/providers/github/r/repository_project).
+Refer to the Terraform Registory for docs: [`github_repository_project`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project).
 
 # `repositoryProject` Submodule <a name="`repositoryProject` Submodule" id="@cdktf/provider-github.repositoryProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_project`](https:/
 
 ### RepositoryProject <a name="RepositoryProject" id="@cdktf/provider-github.repositoryProject.RepositoryProject"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project github_repository_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer"></a>
 
@@ -353,7 +353,7 @@ repositoryProject.RepositoryProject.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -457,10 +457,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repositoryProject.RepositoryProject.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -649,7 +649,7 @@ const repositoryProjectConfig: repositoryProject.RepositoryProjectConfig = { ...
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -658,7 +658,7 @@ const repositoryProjectConfig: repositoryProject.RepositoryProjectConfig = { ...
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.name">name</a></code> | <code>string</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.repository">repository</a></code> | <code>string</code> | The repository of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.body">body</a></code> | <code>string</code> | The body of the project. |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#id RepositoryProject#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#id RepositoryProject#id}. |
 
 ---
 
@@ -675,10 +675,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -742,7 +742,7 @@ public readonly name: string;
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#name RepositoryProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#name RepositoryProject#name}
 
 ---
 
@@ -756,7 +756,7 @@ public readonly repository: string;
 
 The repository of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#repository RepositoryProject#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#repository RepositoryProject#repository}
 
 ---
 
@@ -770,7 +770,7 @@ public readonly body: string;
 
 The body of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#body RepositoryProject#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#body RepositoryProject#body}
 
 ---
 
@@ -782,7 +782,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#id RepositoryProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#id RepositoryProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

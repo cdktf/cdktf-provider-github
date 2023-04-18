@@ -1,6 +1,6 @@
 # `data_github_actions_organization_variables`
 
-Refer to the Terraform Registory for docs: [`data_github_actions_organization_variables`](https://www.terraform.io/docs/providers/github/d/actions_organization_variables).
+Refer to the Terraform Registory for docs: [`data_github_actions_organization_variables`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_organization_variables).
 
 # `dataGithubActionsOrganizationVariables` Submodule <a name="`dataGithubActionsOrganizationVariables` Submodule" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_actions_organization_va
 
 ### DataGithubActionsOrganizationVariables <a name="DataGithubActionsOrganizationVariables" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_organization_variables github_actions_organization_variables}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_organization_variables github_actions_organization_variables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.Initializer"></a>
 
@@ -345,7 +345,7 @@ DataGithubActionsOrganizationVariables.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -431,10 +431,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -537,7 +537,7 @@ using HashiCorp.Cdktf.Providers.Github;
 
 new DataGithubActionsOrganizationVariablesConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -552,13 +552,13 @@ new DataGithubActionsOrganizationVariablesConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_organization_variables#id DataGithubActionsOrganizationVariables#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_organization_variables#id DataGithubActionsOrganizationVariables#id}. |
 
 ---
 
@@ -575,10 +575,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -640,7 +640,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_organization_variables#id DataGithubActionsOrganizationVariables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_organization_variables#id DataGithubActionsOrganizationVariables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

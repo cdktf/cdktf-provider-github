@@ -1,6 +1,6 @@
 # `github_dependabot_organization_secret_repositories`
 
-Refer to the Terraform Registory for docs: [`github_dependabot_organization_secret_repositories`](https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories).
+Refer to the Terraform Registory for docs: [`github_dependabot_organization_secret_repositories`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories).
 
 # `dependabotOrganizationSecretRepositories` Submodule <a name="`dependabotOrganizationSecretRepositories` Submodule" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_dependabot_organization_secr
 
 ### DependabotOrganizationSecretRepositories <a name="DependabotOrganizationSecretRepositories" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer"></a>
 
@@ -19,7 +19,7 @@ dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositorie
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,7 +36,7 @@ dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositorie
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -44,7 +44,7 @@ dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositorie
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.secretName">secret_name</a></code> | <code>str</code> | Name of the existing secret. |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.selectedRepositoryIds">selected_repository_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | An array of repository ids that can access the organization secret. |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. |
 
 ---
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the existing secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 An array of repository ids that can access the organization secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -466,7 +466,7 @@ dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositorie
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -566,10 +566,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -712,7 +712,7 @@ from cdktf_cdktf_provider_github import dependabot_organization_secret_repositor
 
 dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -729,7 +729,7 @@ dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositorie
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -737,7 +737,7 @@ dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositorie
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.secretName">secret_name</a></code> | <code>str</code> | Name of the existing secret. |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.selectedRepositoryIds">selected_repository_ids</a></code> | <code>typing.List[typing.Union[int, float]]</code> | An array of repository ids that can access the organization secret. |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. |
 
 ---
 
@@ -754,10 +754,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -821,7 +821,7 @@ secret_name: str
 
 Name of the existing secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
 
 ---
 
@@ -835,7 +835,7 @@ selected_repository_ids: typing.List[typing.Union[int, float]]
 
 An array of repository ids that can access the organization secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
 
 ---
 
@@ -847,7 +847,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

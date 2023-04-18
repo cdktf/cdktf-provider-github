@@ -1,6 +1,6 @@
 # `github_repository_project`
 
-Refer to the Terraform Registory for docs: [`github_repository_project`](https://www.terraform.io/docs/providers/github/r/repository_project).
+Refer to the Terraform Registory for docs: [`github_repository_project`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project).
 
 # `repositoryProject` Submodule <a name="`repositoryProject` Submodule" id="@cdktf/provider-github.repositoryProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_project`](https:/
 
 ### RepositoryProject <a name="RepositoryProject" id="@cdktf/provider-github.repositoryProject.RepositoryProject"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_project github_repository_project}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project github_repository_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer"></a>
 
@@ -19,7 +19,7 @@ repositoryProject.RepositoryProject(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,7 +37,7 @@ repositoryProject.RepositoryProject(
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -46,7 +46,7 @@ repositoryProject.RepositoryProject(
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.repository">repository</a></code> | <code>str</code> | The repository of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.body">body</a></code> | <code>str</code> | The body of the project. |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#id RepositoryProject#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#id RepositoryProject#id}. |
 
 ---
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#name RepositoryProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#name RepositoryProject#name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The repository of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#repository RepositoryProject#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#repository RepositoryProject#repository}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The body of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#body RepositoryProject#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#body RepositoryProject#body}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#id RepositoryProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#id RepositoryProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -485,7 +485,7 @@ repositoryProject.RepositoryProject.is_terraform_resource(
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -589,10 +589,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repositoryProject.RepositoryProject.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -775,7 +775,7 @@ from cdktf_cdktf_provider_github import repository_project
 
 repositoryProject.RepositoryProjectConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -793,7 +793,7 @@ repositoryProject.RepositoryProjectConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -802,7 +802,7 @@ repositoryProject.RepositoryProjectConfig(
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.name">name</a></code> | <code>str</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.repository">repository</a></code> | <code>str</code> | The repository of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.body">body</a></code> | <code>str</code> | The body of the project. |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#id RepositoryProject#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#id RepositoryProject#id}. |
 
 ---
 
@@ -819,10 +819,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -886,7 +886,7 @@ name: str
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#name RepositoryProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#name RepositoryProject#name}
 
 ---
 
@@ -900,7 +900,7 @@ repository: str
 
 The repository of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#repository RepositoryProject#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#repository RepositoryProject#repository}
 
 ---
 
@@ -914,7 +914,7 @@ body: str
 
 The body of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#body RepositoryProject#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#body RepositoryProject#body}
 
 ---
 
@@ -926,7 +926,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_project#id RepositoryProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_project#id RepositoryProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

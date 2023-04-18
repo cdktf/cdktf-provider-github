@@ -1,6 +1,6 @@
 # `github_issue_label`
 
-Refer to the Terraform Registory for docs: [`github_issue_label`](https://www.terraform.io/docs/providers/github/r/issue_label).
+Refer to the Terraform Registory for docs: [`github_issue_label`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label).
 
 # `issueLabel` Submodule <a name="`issueLabel` Submodule" id="@cdktf/provider-github.issueLabel"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_issue_label`](https://www.te
 
 ### IssueLabel <a name="IssueLabel" id="@cdktf/provider-github.issueLabel.IssueLabel"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/issue_label github_issue_label}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label github_issue_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabel.IssueLabel.Initializer"></a>
 
@@ -353,7 +353,7 @@ issueLabel.IssueLabel.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -459,10 +459,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.issueLabel.IssueLabel.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -671,7 +671,7 @@ const issueLabelConfig: issueLabel.IssueLabelConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -681,7 +681,7 @@ const issueLabelConfig: issueLabel.IssueLabelConfig = { ... }
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.name">name</a></code> | <code>string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.repository">repository</a></code> | <code>string</code> | The GitHub repository. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.description">description</a></code> | <code>string</code> | A short description of the label. |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#id IssueLabel#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#id IssueLabel#id}. |
 
 ---
 
@@ -698,10 +698,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.issueLabel.IssueLabelConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -765,7 +765,7 @@ public readonly color: string;
 
 A 6 character hex code, without the leading '#', identifying the color of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#color IssueLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#color IssueLabel#color}
 
 ---
 
@@ -779,7 +779,7 @@ public readonly name: string;
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#name IssueLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#name IssueLabel#name}
 
 ---
 
@@ -793,7 +793,7 @@ public readonly repository: string;
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#repository IssueLabel#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#repository IssueLabel#repository}
 
 ---
 
@@ -807,7 +807,7 @@ public readonly description: string;
 
 A short description of the label.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#description IssueLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#description IssueLabel#description}
 
 ---
 
@@ -819,7 +819,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue_label#id IssueLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue_label#id IssueLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

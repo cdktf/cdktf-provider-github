@@ -1,6 +1,6 @@
 # `github_team_settings`
 
-Refer to the Terraform Registory for docs: [`github_team_settings`](https://www.terraform.io/docs/providers/github/r/team_settings).
+Refer to the Terraform Registory for docs: [`github_team_settings`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings).
 
 # `teamSettings` Submodule <a name="`teamSettings` Submodule" id="@cdktf/provider-github.teamSettings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team_settings`](https://www.
 
 ### TeamSettings <a name="TeamSettings" id="@cdktf/provider-github.teamSettings.TeamSettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/team_settings github_team_settings}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings github_team_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSettings.TeamSettings.Initializer"></a>
 
@@ -19,7 +19,7 @@ teamSettings.TeamSettings(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,14 +36,14 @@ teamSettings.TeamSettings(
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.teamId">team_id</a></code> | <code>str</code> | The GitHub team id or the GitHub team slug. |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#id TeamSettings#id}. |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#id TeamSettings#id}. |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.reviewRequestDelegation">review_request_delegation</a></code> | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsReviewRequestDelegation">TeamSettingsReviewRequestDelegation</a></code> | review_request_delegation block. |
 
 ---
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.teamSettings.TeamSettings.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The GitHub team id or the GitHub team slug.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#team_id TeamSettings#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#team_id TeamSettings#team_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#id TeamSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#id TeamSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 review_request_delegation block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#review_request_delegation TeamSettings#review_request_delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#review_request_delegation TeamSettings#review_request_delegation}
 
 ---
 
@@ -390,7 +390,7 @@ def put_review_request_delegation(
 
 The algorithm to use when assigning pull requests to team members. Supported values are 'ROUND_ROBIN' and 'LOAD_BALANCE'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#algorithm TeamSettings#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#algorithm TeamSettings#algorithm}
 
 ---
 
@@ -400,7 +400,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The number of team members to assign to a pull request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#member_count TeamSettings#member_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#member_count TeamSettings#member_count}
 
 ---
 
@@ -410,7 +410,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 whether to notify the entire team when at least one member is also assigned to the pull request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#notify TeamSettings#notify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#notify TeamSettings#notify}
 
 ---
 
@@ -514,7 +514,7 @@ teamSettings.TeamSettings.is_terraform_resource(
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -616,10 +616,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.teamSettings.TeamSettings.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -782,7 +782,7 @@ from cdktf_cdktf_provider_github import team_settings
 
 teamSettings.TeamSettingsConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -799,14 +799,14 @@ teamSettings.TeamSettingsConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.teamId">team_id</a></code> | <code>str</code> | The GitHub team id or the GitHub team slug. |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#id TeamSettings#id}. |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#id TeamSettings#id}. |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.reviewRequestDelegation">review_request_delegation</a></code> | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsReviewRequestDelegation">TeamSettingsReviewRequestDelegation</a></code> | review_request_delegation block. |
 
 ---
@@ -824,10 +824,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -891,7 +891,7 @@ team_id: str
 
 The GitHub team id or the GitHub team slug.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#team_id TeamSettings#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#team_id TeamSettings#team_id}
 
 ---
 
@@ -903,7 +903,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#id TeamSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#id TeamSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -920,7 +920,7 @@ review_request_delegation: TeamSettingsReviewRequestDelegation
 
 review_request_delegation block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#review_request_delegation TeamSettings#review_request_delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#review_request_delegation TeamSettings#review_request_delegation}
 
 ---
 
@@ -958,7 +958,7 @@ algorithm: str
 
 The algorithm to use when assigning pull requests to team members. Supported values are 'ROUND_ROBIN' and 'LOAD_BALANCE'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#algorithm TeamSettings#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#algorithm TeamSettings#algorithm}
 
 ---
 
@@ -972,7 +972,7 @@ member_count: typing.Union[int, float]
 
 The number of team members to assign to a pull request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#member_count TeamSettings#member_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#member_count TeamSettings#member_count}
 
 ---
 
@@ -986,7 +986,7 @@ notify: typing.Union[bool, IResolvable]
 
 whether to notify the entire team when at least one member is also assigned to the pull request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#notify TeamSettings#notify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#notify TeamSettings#notify}
 
 ---
 

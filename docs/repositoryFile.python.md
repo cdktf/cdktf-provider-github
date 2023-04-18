@@ -1,6 +1,6 @@
 # `github_repository_file`
 
-Refer to the Terraform Registory for docs: [`github_repository_file`](https://www.terraform.io/docs/providers/github/r/repository_file).
+Refer to the Terraform Registory for docs: [`github_repository_file`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file).
 
 # `repositoryFile` Submodule <a name="`repositoryFile` Submodule" id="@cdktf/provider-github.repositoryFile"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_file`](https://ww
 
 ### RepositoryFile <a name="RepositoryFile" id="@cdktf/provider-github.repositoryFile.RepositoryFile"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_file github_repository_file}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file github_repository_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer"></a>
 
@@ -19,7 +19,7 @@ repositoryFile.RepositoryFile(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -42,7 +42,7 @@ repositoryFile.RepositoryFile(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -55,7 +55,7 @@ repositoryFile.RepositoryFile(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitAuthor">commit_author</a></code> | <code>str</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitEmail">commit_email</a></code> | <code>str</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitMessage">commit_message</a></code> | <code>str</code> | The commit message when creating, updating or deleting the file. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#id RepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#id RepositoryFile#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.overwriteOnCreate">overwrite_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable overwriting existing files, defaults to "false". |
 
 ---
@@ -86,7 +86,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 The file's content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#content RepositoryFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#content RepositoryFile#content}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#file RepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#file RepositoryFile#file}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#repository RepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#repository RepositoryFile#repository}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#branch RepositoryFile#branch}
 
 ---
 
@@ -168,7 +168,7 @@ The commit author name, defaults to the authenticated user's name.
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_author RepositoryFile#commit_author}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
 
 ---
 
@@ -180,7 +180,7 @@ The commit author email address, defaults to the authenticated user's email addr
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_email RepositoryFile#commit_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 The commit message when creating, updating or deleting the file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_message RepositoryFile#commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
 
 ---
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#id RepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#id RepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -211,7 +211,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Enable overwriting existing files, defaults to "false".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
 
 ---
 
@@ -577,7 +577,7 @@ repositoryFile.RepositoryFile.is_terraform_resource(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -692,10 +692,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -988,7 +988,7 @@ from cdktf_cdktf_provider_github import repository_file
 
 repositoryFile.RepositoryFileConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1011,7 +1011,7 @@ repositoryFile.RepositoryFileConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1024,7 +1024,7 @@ repositoryFile.RepositoryFileConfig(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitAuthor">commit_author</a></code> | <code>str</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitEmail">commit_email</a></code> | <code>str</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitMessage">commit_message</a></code> | <code>str</code> | The commit message when creating, updating or deleting the file. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#id RepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#id RepositoryFile#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.overwriteOnCreate">overwrite_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable overwriting existing files, defaults to "false". |
 
 ---
@@ -1042,10 +1042,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1109,7 +1109,7 @@ content: str
 
 The file's content.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#content RepositoryFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#content RepositoryFile#content}
 
 ---
 
@@ -1123,7 +1123,7 @@ file: str
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#file RepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#file RepositoryFile#file}
 
 ---
 
@@ -1137,7 +1137,7 @@ repository: str
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#repository RepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#repository RepositoryFile#repository}
 
 ---
 
@@ -1151,7 +1151,7 @@ branch: str
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#branch RepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#branch RepositoryFile#branch}
 
 ---
 
@@ -1167,7 +1167,7 @@ The commit author name, defaults to the authenticated user's name.
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_author RepositoryFile#commit_author}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
 
 ---
 
@@ -1183,7 +1183,7 @@ The commit author email address, defaults to the authenticated user's email addr
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_email RepositoryFile#commit_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
 
 ---
 
@@ -1197,7 +1197,7 @@ commit_message: str
 
 The commit message when creating, updating or deleting the file.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#commit_message RepositoryFile#commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
 
 ---
 
@@ -1209,7 +1209,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#id RepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#id RepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1226,7 +1226,7 @@ overwrite_on_create: typing.Union[bool, IResolvable]
 
 Enable overwriting existing files, defaults to "false".
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
 
 ---
 

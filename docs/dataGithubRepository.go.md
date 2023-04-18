@@ -1,6 +1,6 @@
 # `data_github_repository`
 
-Refer to the Terraform Registory for docs: [`data_github_repository`](https://www.terraform.io/docs/providers/github/d/repository).
+Refer to the Terraform Registory for docs: [`data_github_repository`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository).
 
 # `dataGithubRepository` Submodule <a name="`dataGithubRepository` Submodule" id="@cdktf/provider-github.dataGithubRepository"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_repository`](https://ww
 
 ### DataGithubRepository <a name="DataGithubRepository" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/d/repository github_repository}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository github_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepository(scope Construct, id *string, config DataGithubRepositoryConfig) DataGithubRepository
 ```
@@ -305,7 +305,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.DataGithubRepository_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.DataGithubRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagithubrepository.DataGithubRepository_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.DataGithubRepository_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -373,7 +373,7 @@ datagithubrepository.DataGithubRepository_IsTerraformDataSource(x interface{}) *
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -384,6 +384,7 @@ datagithubrepository.DataGithubRepository_IsTerraformDataSource(x interface{}) *
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.allowSquashMerge">AllowSquashMerge</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.archived">Archived</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.defaultBranch">DefaultBranch</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.fork">Fork</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.gitCloneUrl">GitCloneUrl</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.hasDiscussions">HasDiscussions</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.hasDownloads">HasDownloads</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
@@ -494,10 +495,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -598,6 +599,16 @@ func DefaultBranch() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `Fork`<sup>Required</sup> <a name="Fork" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.property.fork"></a>
+
+```go
+func Fork() IResolvable
+```
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
 
 ---
 
@@ -946,11 +957,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 &datagithubrepository.DataGithubRepositoryConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -969,17 +980,17 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#description DataGithubRepository#description}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#full_name DataGithubRepository#full_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.homepageUrl">HomepageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#homepage_url DataGithubRepository#homepage_url}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#id DataGithubRepository#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#name DataGithubRepository#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#description DataGithubRepository#description}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#full_name DataGithubRepository#full_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.homepageUrl">HomepageUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#homepage_url DataGithubRepository#homepage_url}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#id DataGithubRepository#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#name DataGithubRepository#name}. |
 
 ---
 
@@ -996,10 +1007,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -1061,7 +1072,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#description DataGithubRepository#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#description DataGithubRepository#description}.
 
 ---
 
@@ -1073,7 +1084,7 @@ FullName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#full_name DataGithubRepository#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#full_name DataGithubRepository#full_name}.
 
 ---
 
@@ -1085,7 +1096,7 @@ HomepageUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#homepage_url DataGithubRepository#homepage_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#homepage_url DataGithubRepository#homepage_url}.
 
 ---
 
@@ -1097,7 +1108,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#id DataGithubRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#id DataGithubRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1123,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/repository#name DataGithubRepository#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/repository#name DataGithubRepository#name}.
 
 ---
 
@@ -1121,7 +1132,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 &datagithubrepository.DataGithubRepositoryPages {
 
@@ -1134,7 +1145,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 &datagithubrepository.DataGithubRepositoryPagesSource {
 
@@ -1147,7 +1158,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 &datagithubrepository.DataGithubRepositoryTemplate {
 
@@ -1162,7 +1173,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryPagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryPagesList
 ```
@@ -1294,7 +1305,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryPagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryPagesOutputReference
 ```
@@ -1627,7 +1638,7 @@ func InternalValue() DataGithubRepositoryPages
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryPagesSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryPagesSourceList
 ```
@@ -1759,7 +1770,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryPagesSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryPagesSourceOutputReference
 ```
@@ -2048,7 +2059,7 @@ func InternalValue() DataGithubRepositoryPagesSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryTemplateList
 ```
@@ -2180,7 +2191,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryTemplateOutputReference
 ```

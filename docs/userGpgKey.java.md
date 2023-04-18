@@ -1,6 +1,6 @@
 # `github_user_gpg_key`
 
-Refer to the Terraform Registory for docs: [`github_user_gpg_key`](https://www.terraform.io/docs/providers/github/r/user_gpg_key).
+Refer to the Terraform Registory for docs: [`github_user_gpg_key`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key).
 
 # `userGpgKey` Submodule <a name="`userGpgKey` Submodule" id="@cdktf/provider-github.userGpgKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_user_gpg_key`](https://www.t
 
 ### UserGpgKey <a name="UserGpgKey" id="@cdktf/provider-github.userGpgKey.UserGpgKey"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key github_user_gpg_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key github_user_gpg_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer"></a>
 
@@ -19,6 +19,7 @@ UserGpgKey.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -36,14 +37,14 @@ UserGpgKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.armoredPublicKey">armoredPublicKey</a></code> | <code>java.lang.String</code> | Your public GPG key, generated in ASCII-armored format. |
-| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#id UserGpgKey#id}. |
+| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key#id UserGpgKey#id}. |
 
 ---
 
@@ -73,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -113,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Your public GPG key, generated in ASCII-armored format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}
 
 ---
 
@@ -121,7 +122,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#id UserGpgKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key#id UserGpgKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -424,7 +425,7 @@ UserGpgKey.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKey.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -524,10 +525,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.userGpgKey.UserGpgKey.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -672,6 +673,7 @@ UserGpgKeyConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -689,14 +691,14 @@ UserGpgKeyConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.armoredPublicKey">armoredPublicKey</a></code> | <code>java.lang.String</code> | Your public GPG key, generated in ASCII-armored format. |
-| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#id UserGpgKey#id}. |
+| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key#id UserGpgKey#id}. |
 
 ---
 
@@ -713,10 +715,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -780,7 +782,7 @@ public java.lang.String getArmoredPublicKey();
 
 Your public GPG key, generated in ASCII-armored format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}
 
 ---
 
@@ -792,7 +794,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/user_gpg_key#id UserGpgKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/user_gpg_key#id UserGpgKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `data_github_enterprise`
 
-Refer to the Terraform Registory for docs: [`data_github_enterprise`](https://www.terraform.io/docs/providers/github/d/enterprise).
+Refer to the Terraform Registory for docs: [`data_github_enterprise`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise).
 
 # `dataGithubEnterprise` Submodule <a name="`dataGithubEnterprise` Submodule" id="@cdktf/provider-github.dataGithubEnterprise"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_enterprise`](https://ww
 
 ### DataGithubEnterprise <a name="DataGithubEnterprise" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/d/enterprise github_enterprise}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise github_enterprise}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubenterprise"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubenterprise"
 
 datagithubenterprise.NewDataGithubEnterprise(scope Construct, id *string, config DataGithubEnterpriseConfig) DataGithubEnterprise
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubenterprise"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubenterprise"
 
 datagithubenterprise.DataGithubEnterprise_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubenterprise"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubenterprise"
 
 datagithubenterprise.DataGithubEnterprise_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithubenterprise.DataGithubEnterprise_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubenterprise"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubenterprise"
 
 datagithubenterprise.DataGithubEnterprise_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datagithubenterprise.DataGithubEnterprise_IsTerraformDataSource(x interface{}) *
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -436,10 +436,10 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -588,11 +588,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubenterprise"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubenterprise"
 
 &datagithubenterprise.DataGithubEnterpriseConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -608,14 +608,14 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/datagithubenterprise
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.slug">Slug</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/enterprise#slug DataGithubEnterprise#slug}. |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/enterprise#id DataGithubEnterprise#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.slug">Slug</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}. |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}. |
 
 ---
 
@@ -632,10 +632,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -697,7 +697,7 @@ Slug *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/enterprise#slug DataGithubEnterprise#slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}.
 
 ---
 
@@ -709,7 +709,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/enterprise#id DataGithubEnterprise#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

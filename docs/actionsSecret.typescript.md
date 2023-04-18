@@ -1,6 +1,6 @@
 # `github_actions_secret`
 
-Refer to the Terraform Registory for docs: [`github_actions_secret`](https://www.terraform.io/docs/providers/github/r/actions_secret).
+Refer to the Terraform Registory for docs: [`github_actions_secret`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret).
 
 # `actionsSecret` Submodule <a name="`actionsSecret` Submodule" id="@cdktf/provider-github.actionsSecret"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_actions_secret`](https://www
 
 ### ActionsSecret <a name="ActionsSecret" id="@cdktf/provider-github.actionsSecret.ActionsSecret"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_secret github_actions_secret}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret github_actions_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer"></a>
 
@@ -360,7 +360,7 @@ actionsSecret.ActionsSecret.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -466,10 +466,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.actionsSecret.ActionsSecret.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -678,7 +678,7 @@ const actionsSecretConfig: actionsSecret.ActionsSecretConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -687,7 +687,7 @@ const actionsSecretConfig: actionsSecret.ActionsSecretConfig = { ... }
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.repository">repository</a></code> | <code>string</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.secretName">secretName</a></code> | <code>string</code> | Name of the secret. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.encryptedValue">encryptedValue</a></code> | <code>string</code> | Encrypted value of the secret using the GitHub public key in Base64 format. |
-| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#id ActionsSecret#id}. |
+| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret#id ActionsSecret#id}. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.plaintextValue">plaintextValue</a></code> | <code>string</code> | Plaintext value of the secret to be encrypted. |
 
 ---
@@ -705,10 +705,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -772,7 +772,7 @@ public readonly repository: string;
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#repository ActionsSecret#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret#repository ActionsSecret#repository}
 
 ---
 
@@ -786,7 +786,7 @@ public readonly secretName: string;
 
 Name of the secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#secret_name ActionsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret#secret_name ActionsSecret#secret_name}
 
 ---
 
@@ -800,7 +800,7 @@ public readonly encryptedValue: string;
 
 Encrypted value of the secret using the GitHub public key in Base64 format.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#encrypted_value ActionsSecret#encrypted_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret#encrypted_value ActionsSecret#encrypted_value}
 
 ---
 
@@ -812,7 +812,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#id ActionsSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret#id ActionsSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -829,7 +829,7 @@ public readonly plaintextValue: string;
 
 Plaintext value of the secret to be encrypted.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_secret#plaintext_value ActionsSecret#plaintext_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_secret#plaintext_value ActionsSecret#plaintext_value}
 
 ---
 

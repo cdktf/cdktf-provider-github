@@ -1,6 +1,6 @@
 # `github_actions_repository_permissions`
 
-Refer to the Terraform Registory for docs: [`github_actions_repository_permissions`](https://www.terraform.io/docs/providers/github/r/actions_repository_permissions).
+Refer to the Terraform Registory for docs: [`github_actions_repository_permissions`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions).
 
 # `actionsRepositoryPermissions` Submodule <a name="`actionsRepositoryPermissions` Submodule" id="@cdktf/provider-github.actionsRepositoryPermissions"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_actions_repository_permissio
 
 ### ActionsRepositoryPermissions <a name="ActionsRepositoryPermissions" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions github_actions_repository_permissions}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions github_actions_repository_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsrepositorypermissions"
 
 actionsrepositorypermissions.NewActionsRepositoryPermissions(scope Construct, id *string, config ActionsRepositoryPermissionsConfig) ActionsRepositoryPermissions
 ```
@@ -311,7 +311,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsrepositorypermissions"
 
 actionsrepositorypermissions.ActionsRepositoryPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsrepositorypermissions"
 
 actionsrepositorypermissions.ActionsRepositoryPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ actionsrepositorypermissions.ActionsRepositoryPermissions_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsrepositorypermissions"
 
 actionsrepositorypermissions.ActionsRepositoryPermissions_IsTerraformResource(x interface{}) *bool
 ```
@@ -380,7 +380,7 @@ actionsrepositorypermissions.ActionsRepositoryPermissions_IsTerraformResource(x 
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -484,10 +484,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissions.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -666,7 +666,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsrepositorypermissions"
 
 &actionsrepositorypermissions.ActionsRepositoryPermissionsAllowedActionsConfig {
 	GithubOwnedAllowed: interface{},
@@ -695,7 +695,7 @@ GithubOwnedAllowed interface{}
 
 Whether GitHub-owned actions are allowed in the repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#github_owned_allowed ActionsRepositoryPermissions#github_owned_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#github_owned_allowed ActionsRepositoryPermissions#github_owned_allowed}
 
 ---
 
@@ -711,7 +711,7 @@ Specifies a list of string-matching patterns to allow specific action(s).
 
 Wildcards, tags, and SHAs are allowed. For example, 'monalisa/octocat@', 'monalisa/octocat@v2', 'monalisa/'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#patterns_allowed ActionsRepositoryPermissions#patterns_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#patterns_allowed ActionsRepositoryPermissions#patterns_allowed}
 
 ---
 
@@ -727,7 +727,7 @@ Whether actions in GitHub Marketplace from verified creators are allowed.
 
 Set to 'true' to allow all GitHub Marketplace actions by verified creators.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#verified_allowed ActionsRepositoryPermissions#verified_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#verified_allowed ActionsRepositoryPermissions#verified_allowed}
 
 ---
 
@@ -736,11 +736,11 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsrepositorypermissions"
 
 &actionsrepositorypermissions.ActionsRepositoryPermissionsConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -748,7 +748,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositoryper
 	Provisioners: *[]interface{},
 	Repository: *string,
 	AllowedActions: *string,
-	AllowedActionsConfig: github.com/cdktf/cdktf-provider-github-go/github/v7.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig,
+	AllowedActionsConfig: github.com/cdktf/cdktf-provider-github-go/github/v8.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig,
 	Enabled: interface{},
 	Id: *string,
 }
@@ -759,7 +759,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositoryper
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositoryper
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.allowedActions">AllowedActions</a></code> | <code>*string</code> | The permissions policy that controls the actions that are allowed to run. |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.allowedActionsConfig">AllowedActionsConfig</a></code> | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfig">ActionsRepositoryPermissionsAllowedActionsConfig</a></code> | allowed_actions_config block. |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Should GitHub actions be enabled on this repository. |
-| <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#id ActionsRepositoryPermissions#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#id ActionsRepositoryPermissions#id}. |
 
 ---
 
@@ -786,10 +786,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -853,7 +853,7 @@ Repository *string
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#repository ActionsRepositoryPermissions#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#repository ActionsRepositoryPermissions#repository}
 
 ---
 
@@ -869,7 +869,7 @@ The permissions policy that controls the actions that are allowed to run.
 
 Can be one of: 'all', 'local_only', or 'selected'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#allowed_actions ActionsRepositoryPermissions#allowed_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#allowed_actions ActionsRepositoryPermissions#allowed_actions}
 
 ---
 
@@ -883,7 +883,7 @@ AllowedActionsConfig ActionsRepositoryPermissionsAllowedActionsConfig
 
 allowed_actions_config block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#allowed_actions_config ActionsRepositoryPermissions#allowed_actions_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#allowed_actions_config ActionsRepositoryPermissions#allowed_actions_config}
 
 ---
 
@@ -897,7 +897,7 @@ Enabled interface{}
 
 Should GitHub actions be enabled on this repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#enabled ActionsRepositoryPermissions#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#enabled ActionsRepositoryPermissions#enabled}
 
 ---
 
@@ -909,7 +909,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/actions_repository_permissions#id ActionsRepositoryPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#id ActionsRepositoryPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -923,7 +923,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsRepositoryPermissions.ActionsRepositoryPermissionsAllowedActionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/actionsrepositorypermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsrepositorypermissions"
 
 actionsrepositorypermissions.NewActionsRepositoryPermissionsAllowedActionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionsRepositoryPermissionsAllowedActionsConfigOutputReference
 ```

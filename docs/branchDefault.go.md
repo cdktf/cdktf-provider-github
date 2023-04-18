@@ -1,6 +1,6 @@
 # `github_branch_default`
 
-Refer to the Terraform Registory for docs: [`github_branch_default`](https://www.terraform.io/docs/providers/github/r/branch_default).
+Refer to the Terraform Registory for docs: [`github_branch_default`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default).
 
 # `branchDefault` Submodule <a name="`branchDefault` Submodule" id="@cdktf/provider-github.branchDefault"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_branch_default`](https://www
 
 ### BranchDefault <a name="BranchDefault" id="@cdktf/provider-github.branchDefault.BranchDefault"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/branch_default github_branch_default}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default github_branch_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchDefault.BranchDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branchdefault"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branchdefault"
 
 branchdefault.NewBranchDefault(scope Construct, id *string, config BranchDefaultConfig) BranchDefault
 ```
@@ -284,7 +284,7 @@ func ResetRename()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.branchDefault.BranchDefault.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branchdefault"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branchdefault"
 
 branchdefault.BranchDefault_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.branchDefault.BranchDefault.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branchdefault"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branchdefault"
 
 branchdefault.BranchDefault_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ branchdefault.BranchDefault_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.branchDefault.BranchDefault.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branchdefault"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branchdefault"
 
 branchdefault.BranchDefault_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ branchdefault.BranchDefault_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.branchDefault.BranchDefault.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -617,11 +617,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.branchDefault.BranchDefaultConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/branchdefault"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/branchdefault"
 
 &branchdefault.BranchDefaultConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/branchdefault"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/branchdefault"
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.branch">Branch</a></code> | <code>*string</code> | The branch (e.g. 'main'). |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#id BranchDefault#id}. |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#id BranchDefault#id}. |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.rename">Rename</a></code> | <code>interface{}</code> | Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'. |
 
 ---
@@ -665,10 +665,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -732,7 +732,7 @@ Branch *string
 
 The branch (e.g. 'main').
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#branch BranchDefault#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#branch BranchDefault#branch}
 
 ---
 
@@ -746,7 +746,7 @@ Repository *string
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#repository BranchDefault#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#repository BranchDefault#repository}
 
 ---
 
@@ -758,7 +758,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#id BranchDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#id BranchDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ Rename interface{}
 
 Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/branch_default#rename BranchDefault#rename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/branch_default#rename BranchDefault#rename}
 
 ---
 

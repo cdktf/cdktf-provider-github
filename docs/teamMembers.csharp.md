@@ -1,6 +1,6 @@
 # `github_team_members`
 
-Refer to the Terraform Registory for docs: [`github_team_members`](https://www.terraform.io/docs/providers/github/r/team_members).
+Refer to the Terraform Registory for docs: [`github_team_members`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_members).
 
 # `teamMembers` Submodule <a name="`teamMembers` Submodule" id="@cdktf/provider-github.teamMembers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team_members`](https://www.t
 
 ### TeamMembers <a name="TeamMembers" id="@cdktf/provider-github.teamMembers.TeamMembers"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/team_members github_team_members}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_members github_team_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembers.Initializer"></a>
 
@@ -359,7 +359,7 @@ TeamMembers.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -460,10 +460,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.teamMembers.TeamMembers.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -616,7 +616,7 @@ using HashiCorp.Cdktf.Providers.Github;
 
 new TeamMembersConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -633,7 +633,7 @@ new TeamMembersConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -641,7 +641,7 @@ new TeamMembersConfig {
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.members">Members</a></code> | <code>object</code> | members block. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.teamId">TeamId</a></code> | <code>string</code> | The GitHub team id. |
-| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#id TeamMembers#id}. |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_members#id TeamMembers#id}. |
 
 ---
 
@@ -658,10 +658,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.teamMembers.TeamMembersConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -725,7 +725,7 @@ public object Members { get; set; }
 
 members block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#members TeamMembers#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_members#members TeamMembers#members}
 
 ---
 
@@ -739,7 +739,7 @@ public string TeamId { get; set; }
 
 The GitHub team id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#team_id TeamMembers#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_members#team_id TeamMembers#team_id}
 
 ---
 
@@ -751,7 +751,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#id TeamMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_members#id TeamMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -790,7 +790,7 @@ public string Username { get; set; }
 
 The user to add to the team.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#username TeamMembers#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_members#username TeamMembers#username}
 
 ---
 
@@ -804,7 +804,7 @@ public string Role { get; set; }
 
 The role of the user within the team. Must be one of 'member' or 'maintainer'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_members#role TeamMembers#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_members#role TeamMembers#role}
 
 ---
 

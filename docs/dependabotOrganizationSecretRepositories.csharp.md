@@ -1,6 +1,6 @@
 # `github_dependabot_organization_secret_repositories`
 
-Refer to the Terraform Registory for docs: [`github_dependabot_organization_secret_repositories`](https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories).
+Refer to the Terraform Registory for docs: [`github_dependabot_organization_secret_repositories`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories).
 
 # `dependabotOrganizationSecretRepositories` Submodule <a name="`dependabotOrganizationSecretRepositories` Submodule" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_dependabot_organization_secr
 
 ### DependabotOrganizationSecretRepositories <a name="DependabotOrganizationSecretRepositories" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer"></a>
 
@@ -346,7 +346,7 @@ DependabotOrganizationSecretRepositories.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -592,7 +592,7 @@ using HashiCorp.Cdktf.Providers.Github;
 
 new DependabotOrganizationSecretRepositoriesConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -609,7 +609,7 @@ new DependabotOrganizationSecretRepositoriesConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ new DependabotOrganizationSecretRepositoriesConfig {
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.secretName">SecretName</a></code> | <code>string</code> | Name of the existing secret. |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.selectedRepositoryIds">SelectedRepositoryIds</a></code> | <code>double[]</code> | An array of repository ids that can access the organization secret. |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -701,7 +701,7 @@ public string SecretName { get; set; }
 
 Name of the existing secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
 
 ---
 
@@ -715,7 +715,7 @@ public double[] SelectedRepositoryIds { get; set; }
 
 An array of repository ids that can access the organization secret.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
 
 ---
 
@@ -727,7 +727,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

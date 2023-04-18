@@ -1,6 +1,6 @@
 # `github_team_settings`
 
-Refer to the Terraform Registory for docs: [`github_team_settings`](https://www.terraform.io/docs/providers/github/r/team_settings).
+Refer to the Terraform Registory for docs: [`github_team_settings`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings).
 
 # `teamSettings` Submodule <a name="`teamSettings` Submodule" id="@cdktf/provider-github.teamSettings"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team_settings`](https://www.
 
 ### TeamSettings <a name="TeamSettings" id="@cdktf/provider-github.teamSettings.TeamSettings"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/team_settings github_team_settings}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings github_team_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSettings.TeamSettings.Initializer"></a>
 
@@ -366,7 +366,7 @@ TeamSettings.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettings.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -468,10 +468,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.teamSettings.TeamSettings.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -634,7 +634,7 @@ using HashiCorp.Cdktf.Providers.Github;
 
 new TeamSettingsConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -651,14 +651,14 @@ new TeamSettingsConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.teamId">TeamId</a></code> | <code>string</code> | The GitHub team id or the GitHub team slug. |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#id TeamSettings#id}. |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#id TeamSettings#id}. |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.reviewRequestDelegation">ReviewRequestDelegation</a></code> | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsReviewRequestDelegation">TeamSettingsReviewRequestDelegation</a></code> | review_request_delegation block. |
 
 ---
@@ -676,10 +676,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -743,7 +743,7 @@ public string TeamId { get; set; }
 
 The GitHub team id or the GitHub team slug.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#team_id TeamSettings#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#team_id TeamSettings#team_id}
 
 ---
 
@@ -755,7 +755,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#id TeamSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#id TeamSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ public TeamSettingsReviewRequestDelegation ReviewRequestDelegation { get; set; }
 
 review_request_delegation block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#review_request_delegation TeamSettings#review_request_delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#review_request_delegation TeamSettings#review_request_delegation}
 
 ---
 
@@ -810,7 +810,7 @@ public string Algorithm { get; set; }
 
 The algorithm to use when assigning pull requests to team members. Supported values are 'ROUND_ROBIN' and 'LOAD_BALANCE'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#algorithm TeamSettings#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#algorithm TeamSettings#algorithm}
 
 ---
 
@@ -824,7 +824,7 @@ public double MemberCount { get; set; }
 
 The number of team members to assign to a pull request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#member_count TeamSettings#member_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#member_count TeamSettings#member_count}
 
 ---
 
@@ -838,7 +838,7 @@ public object Notify { get; set; }
 
 whether to notify the entire team when at least one member is also assigned to the pull request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/team_settings#notify TeamSettings#notify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#notify TeamSettings#notify}
 
 ---
 

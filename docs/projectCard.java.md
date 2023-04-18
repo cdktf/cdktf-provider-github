@@ -1,6 +1,6 @@
 # `github_project_card`
 
-Refer to the Terraform Registory for docs: [`github_project_card`](https://www.terraform.io/docs/providers/github/r/project_card).
+Refer to the Terraform Registory for docs: [`github_project_card`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card).
 
 # `projectCard` Submodule <a name="`projectCard` Submodule" id="@cdktf/provider-github.projectCard"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_project_card`](https://www.t
 
 ### ProjectCard <a name="ProjectCard" id="@cdktf/provider-github.projectCard.ProjectCard"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card github_project_card}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.projectCard.ProjectCard.Initializer"></a>
 
@@ -19,6 +19,7 @@ ProjectCard.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -39,7 +40,7 @@ ProjectCard.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -48,7 +49,7 @@ ProjectCard.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.columnId">columnId</a></code> | <code>java.lang.String</code> | The ID of the project column. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.contentId">contentId</a></code> | <code>java.lang.Number</code> | 'github_issue.issue_id'. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.contentType">contentType</a></code> | <code>java.lang.String</code> | Must be either 'Issue' or 'PullRequest'. |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}. |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#id ProjectCard#id}. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.note">note</a></code> | <code>java.lang.String</code> | The note contents of the card. Markdown supported. |
 
 ---
@@ -79,7 +80,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -119,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the project column.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#column_id ProjectCard#column_id}
 
 ---
 
@@ -129,7 +130,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 'github_issue.issue_id'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#content_id ProjectCard#content_id}
 
 ---
 
@@ -139,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 Must be either 'Issue' or 'PullRequest'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#content_type ProjectCard#content_type}
 
 ---
 
@@ -147,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/githu
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#id ProjectCard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -160,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The note contents of the card. Markdown supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#note ProjectCard#note}
 
 ---
 
@@ -481,7 +482,7 @@ ProjectCard.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -587,10 +588,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.projectCard.ProjectCard.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -795,6 +796,7 @@ ProjectCardConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -815,7 +817,7 @@ ProjectCardConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -824,7 +826,7 @@ ProjectCardConfig.builder()
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.columnId">columnId</a></code> | <code>java.lang.String</code> | The ID of the project column. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.contentId">contentId</a></code> | <code>java.lang.Number</code> | 'github_issue.issue_id'. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.contentType">contentType</a></code> | <code>java.lang.String</code> | Must be either 'Issue' or 'PullRequest'. |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}. |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#id ProjectCard#id}. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.note">note</a></code> | <code>java.lang.String</code> | The note contents of the card. Markdown supported. |
 
 ---
@@ -842,10 +844,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.projectCard.ProjectCardConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -909,7 +911,7 @@ public java.lang.String getColumnId();
 
 The ID of the project column.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#column_id ProjectCard#column_id}
 
 ---
 
@@ -923,7 +925,7 @@ public java.lang.Number getContentId();
 
 'github_issue.issue_id'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#content_id ProjectCard#content_id}
 
 ---
 
@@ -937,7 +939,7 @@ public java.lang.String getContentType();
 
 Must be either 'Issue' or 'PullRequest'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#content_type ProjectCard#content_type}
 
 ---
 
@@ -949,7 +951,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#id ProjectCard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -966,7 +968,7 @@ public java.lang.String getNote();
 
 The note contents of the card. Markdown supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#note ProjectCard#note}
 
 ---
 

@@ -1,6 +1,6 @@
 # `github_app_installation_repositories`
 
-Refer to the Terraform Registory for docs: [`github_app_installation_repositories`](https://www.terraform.io/docs/providers/github/r/app_installation_repositories).
+Refer to the Terraform Registory for docs: [`github_app_installation_repositories`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories).
 
 # `appInstallationRepositories` Submodule <a name="`appInstallationRepositories` Submodule" id="@cdktf/provider-github.appInstallationRepositories"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_app_installation_repositorie
 
 ### AppInstallationRepositories <a name="AppInstallationRepositories" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories github_app_installation_repositories}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories github_app_installation_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/appinstallationrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/appinstallationrepositories"
 
 appinstallationrepositories.NewAppInstallationRepositories(scope Construct, id *string, config AppInstallationRepositoriesConfig) AppInstallationRepositories
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/appinstallationrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/appinstallationrepositories"
 
 appinstallationrepositories.AppInstallationRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/appinstallationrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/appinstallationrepositories"
 
 appinstallationrepositories.AppInstallationRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ appinstallationrepositories.AppInstallationRepositories_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/appinstallationrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/appinstallationrepositories"
 
 appinstallationrepositories.AppInstallationRepositories_IsTerraformResource(x interface{}) *bool
 ```
@@ -346,7 +346,7 @@ appinstallationrepositories.AppInstallationRepositories_IsTerraformResource(x in
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -446,10 +446,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -588,11 +588,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/appinstallationrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/appinstallationrepositories"
 
 &appinstallationrepositories.AppInstallationRepositoriesConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -609,7 +609,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/appinstallationrepos
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -617,7 +617,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/appinstallationrepos
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.installationId">InstallationId</a></code> | <code>*string</code> | The GitHub app installation id. |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.selectedRepositories">SelectedRepositories</a></code> | <code>*[]*string</code> | A list of repository names to install the app on. |
-| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#id AppInstallationRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}. |
 
 ---
 
@@ -634,10 +634,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -701,7 +701,7 @@ InstallationId *string
 
 The GitHub app installation id.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}
 
 ---
 
@@ -715,7 +715,7 @@ SelectedRepositories *[]*string
 
 A list of repository names to install the app on.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}
 
 ---
 
@@ -727,7 +727,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/app_installation_repositories#id AppInstallationRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

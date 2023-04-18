@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/github/r/project_card
+// https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,23 +10,23 @@ export interface ProjectCardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ID of the project column.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#column_id ProjectCard#column_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#column_id ProjectCard#column_id}
   */
   readonly columnId: string;
   /**
   * 'github_issue.issue_id'.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_id ProjectCard#content_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#content_id ProjectCard#content_id}
   */
   readonly contentId?: number;
   /**
   * Must be either 'Issue' or 'PullRequest'.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#content_type ProjectCard#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#content_type ProjectCard#content_type}
   */
   readonly contentType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#id ProjectCard#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#id ProjectCard#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -35,13 +35,13 @@ export interface ProjectCardConfig extends cdktf.TerraformMetaArguments {
   /**
   * The note contents of the card. Markdown supported.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/project_card#note ProjectCard#note}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card#note ProjectCard#note}
   */
   readonly note?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card github_project_card}
 */
 export class ProjectCard extends cdktf.TerraformResource {
 
@@ -55,7 +55,7 @@ export class ProjectCard extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/github/r/project_card github_project_card} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/project_card github_project_card} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class ProjectCard extends cdktf.TerraformResource {
       terraformResourceType: 'github_project_card',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.22.0',
+        providerVersion: '5.23.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

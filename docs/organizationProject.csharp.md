@@ -1,6 +1,6 @@
 # `github_organization_project`
 
-Refer to the Terraform Registory for docs: [`github_organization_project`](https://www.terraform.io/docs/providers/github/r/organization_project).
+Refer to the Terraform Registory for docs: [`github_organization_project`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_project).
 
 # `organizationProject` Submodule <a name="`organizationProject` Submodule" id="@cdktf/provider-github.organizationProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_organization_project`](https
 
 ### OrganizationProject <a name="OrganizationProject" id="@cdktf/provider-github.organizationProject.OrganizationProject"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/organization_project github_organization_project}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_project github_organization_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationProject.OrganizationProject.Initializer"></a>
 
@@ -353,7 +353,7 @@ OrganizationProject.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProject.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProject.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProject.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProject.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProject.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProject.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProject.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProject.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ public object Connection { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.organizationProject.OrganizationProject.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -621,7 +621,7 @@ using HashiCorp.Cdktf.Providers.Github;
 
 new OrganizationProjectConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -638,7 +638,7 @@ new OrganizationProjectConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -646,7 +646,7 @@ new OrganizationProjectConfig {
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.name">Name</a></code> | <code>string</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.body">Body</a></code> | <code>string</code> | The body of the project. |
-| <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#id OrganizationProject#id}. |
+| <code><a href="#@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_project#id OrganizationProject#id}. |
 
 ---
 
@@ -663,10 +663,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.organizationProject.OrganizationProjectConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -730,7 +730,7 @@ public string Name { get; set; }
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#name OrganizationProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_project#name OrganizationProject#name}
 
 ---
 
@@ -744,7 +744,7 @@ public string Body { get; set; }
 
 The body of the project.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#body OrganizationProject#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_project#body OrganizationProject#body}
 
 ---
 
@@ -756,7 +756,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/organization_project#id OrganizationProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/organization_project#id OrganizationProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

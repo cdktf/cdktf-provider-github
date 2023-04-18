@@ -1,6 +1,6 @@
 # `data_github_actions_environment_secrets`
 
-Refer to the Terraform Registory for docs: [`data_github_actions_environment_secrets`](https://www.terraform.io/docs/providers/github/d/actions_environment_secrets).
+Refer to the Terraform Registory for docs: [`data_github_actions_environment_secrets`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets).
 
 # `dataGithubActionsEnvironmentSecrets` Submodule <a name="`dataGithubActionsEnvironmentSecrets` Submodule" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_actions_environment_sec
 
 ### DataGithubActionsEnvironmentSecrets <a name="DataGithubActionsEnvironmentSecrets" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets github_actions_environment_secrets}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets github_actions_environment_secrets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.Initializer"></a>
 
@@ -359,7 +359,7 @@ DataGithubActionsEnvironmentSecrets.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -451,10 +451,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -617,7 +617,7 @@ using HashiCorp.Cdktf.Providers.Github;
 
 new DataGithubActionsEnvironmentSecretsConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -635,16 +635,16 @@ new DataGithubActionsEnvironmentSecretsConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.environment">Environment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets#environment DataGithubActionsEnvironmentSecrets#environment}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.fullName">FullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets#full_name DataGithubActionsEnvironmentSecrets#full_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets#id DataGithubActionsEnvironmentSecrets#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets#name DataGithubActionsEnvironmentSecrets#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.environment">Environment</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets#environment DataGithubActionsEnvironmentSecrets#environment}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.fullName">FullName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets#full_name DataGithubActionsEnvironmentSecrets#full_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets#id DataGithubActionsEnvironmentSecrets#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets#name DataGithubActionsEnvironmentSecrets#name}. |
 
 ---
 
@@ -661,10 +661,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -726,7 +726,7 @@ public string Environment { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets#environment DataGithubActionsEnvironmentSecrets#environment}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets#environment DataGithubActionsEnvironmentSecrets#environment}.
 
 ---
 
@@ -738,7 +738,7 @@ public string FullName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets#full_name DataGithubActionsEnvironmentSecrets#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets#full_name DataGithubActionsEnvironmentSecrets#full_name}.
 
 ---
 
@@ -750,7 +750,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets#id DataGithubActionsEnvironmentSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets#id DataGithubActionsEnvironmentSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -765,7 +765,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/d/actions_environment_secrets#name DataGithubActionsEnvironmentSecrets#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/actions_environment_secrets#name DataGithubActionsEnvironmentSecrets#name}.
 
 ---
 

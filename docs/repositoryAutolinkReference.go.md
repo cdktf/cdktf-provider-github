@@ -1,6 +1,6 @@
 # `github_repository_autolink_reference`
 
-Refer to the Terraform Registory for docs: [`github_repository_autolink_reference`](https://www.terraform.io/docs/providers/github/r/repository_autolink_reference).
+Refer to the Terraform Registory for docs: [`github_repository_autolink_reference`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference).
 
 # `repositoryAutolinkReference` Submodule <a name="`repositoryAutolinkReference` Submodule" id="@cdktf/provider-github.repositoryAutolinkReference"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_repository_autolink_referenc
 
 ### RepositoryAutolinkReference <a name="RepositoryAutolinkReference" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference github_repository_autolink_reference}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference github_repository_autolink_reference}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositoryautolinkreference"
 
 repositoryautolinkreference.NewRepositoryAutolinkReference(scope Construct, id *string, config RepositoryAutolinkReferenceConfig) RepositoryAutolinkReference
 ```
@@ -284,7 +284,7 @@ func ResetIsAlphanumeric()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositoryautolinkreference"
 
 repositoryautolinkreference.RepositoryAutolinkReference_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositoryautolinkreference"
 
 repositoryautolinkreference.RepositoryAutolinkReference_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ repositoryautolinkreference.RepositoryAutolinkReference_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositoryautolinkreference"
 
 repositoryautolinkreference.RepositoryAutolinkReference_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ repositoryautolinkreference.RepositoryAutolinkReference_IsTerraformResource(x in
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -458,10 +458,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -650,11 +650,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/repositoryautolinkreference"
 
 &repositoryautolinkreference.RepositoryAutolinkReferenceConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -673,7 +673,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryautolinkre
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -682,7 +682,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/repositoryautolinkre
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.keyPrefix">KeyPrefix</a></code> | <code>*string</code> | This prefix appended by a number will generate a link any time it is found in an issue, pull request, or commit. |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.repository">Repository</a></code> | <code>*string</code> | The repository name. |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.targetUrlTemplate">TargetUrlTemplate</a></code> | <code>*string</code> | The template of the target URL used for the links; |
-| <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#id RepositoryAutolinkReference#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference#id RepositoryAutolinkReference#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.isAlphanumeric">IsAlphanumeric</a></code> | <code>interface{}</code> | Whether this autolink reference matches alphanumeric characters. If false, this autolink reference only matches numeric characters. |
 
 ---
@@ -700,10 +700,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -767,7 +767,7 @@ KeyPrefix *string
 
 This prefix appended by a number will generate a link any time it is found in an issue, pull request, or commit.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#key_prefix RepositoryAutolinkReference#key_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference#key_prefix RepositoryAutolinkReference#key_prefix}
 
 ---
 
@@ -781,7 +781,7 @@ Repository *string
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#repository RepositoryAutolinkReference#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference#repository RepositoryAutolinkReference#repository}
 
 ---
 
@@ -797,7 +797,7 @@ The template of the target URL used for the links;
 
 must be a valid URL and contain `<num>` for the reference number
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#target_url_template RepositoryAutolinkReference#target_url_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference#target_url_template RepositoryAutolinkReference#target_url_template}
 
 ---
 
@@ -809,7 +809,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#id RepositoryAutolinkReference#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference#id RepositoryAutolinkReference#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -826,7 +826,7 @@ IsAlphanumeric interface{}
 
 Whether this autolink reference matches alphanumeric characters. If false, this autolink reference only matches numeric characters.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/repository_autolink_reference#is_alphanumeric RepositoryAutolinkReference#is_alphanumeric}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/repository_autolink_reference#is_alphanumeric RepositoryAutolinkReference#is_alphanumeric}
 
 ---
 

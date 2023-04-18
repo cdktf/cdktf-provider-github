@@ -1,6 +1,6 @@
 # `github_issue`
 
-Refer to the Terraform Registory for docs: [`github_issue`](https://www.terraform.io/docs/providers/github/r/issue).
+Refer to the Terraform Registory for docs: [`github_issue`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue).
 
 # `issue` Submodule <a name="`issue` Submodule" id="@cdktf/provider-github.issue"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_issue`](https://www.terrafor
 
 ### Issue <a name="Issue" id="@cdktf/provider-github.issue.Issue"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/github/r/issue github_issue}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue github_issue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issue.Issue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/issue"
 
 issue.NewIssue(scope Construct, id *string, config IssueConfig) Issue
 ```
@@ -305,7 +305,7 @@ func ResetMilestoneNumber()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.issue.Issue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/issue"
 
 issue.Issue_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.issue.Issue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/issue"
 
 issue.Issue_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ issue.Issue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.issue.Issue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/issue"
 
 issue.Issue_IsTerraformResource(x interface{}) *bool
 ```
@@ -374,7 +374,7 @@ issue.Issue_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.issue.Issue.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issue.Issue.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issue.Issue.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.issue.Issue.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issue.Issue.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issue.Issue.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issue.Issue.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issue.Issue.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -485,10 +485,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.issue.Issue.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -737,11 +737,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.issue.IssueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v7/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/issue"
 
 &issue.IssueConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -762,7 +762,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/issue"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v7/issue"
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.title">Title</a></code> | <code>*string</code> | Title of the issue. |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.assignees">Assignees</a></code> | <code>*[]*string</code> | List of Logins to assign to the issue. |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.body">Body</a></code> | <code>*string</code> | Body of the issue. |
-| <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#id Issue#id}. |
+| <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue#id Issue#id}. |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.labels">Labels</a></code> | <code>*[]*string</code> | List of labels to attach to the issue. |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.milestoneNumber">MilestoneNumber</a></code> | <code>*f64</code> | Milestone number to assign to the issue. |
 
@@ -791,10 +791,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.issue.IssueConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -858,7 +858,7 @@ Repository *string
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#repository Issue#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue#repository Issue#repository}
 
 ---
 
@@ -872,7 +872,7 @@ Title *string
 
 Title of the issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#title Issue#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue#title Issue#title}
 
 ---
 
@@ -886,7 +886,7 @@ Assignees *[]*string
 
 List of Logins to assign to the issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#assignees Issue#assignees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue#assignees Issue#assignees}
 
 ---
 
@@ -900,7 +900,7 @@ Body *string
 
 Body of the issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#body Issue#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue#body Issue#body}
 
 ---
 
@@ -912,7 +912,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#id Issue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue#id Issue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -929,7 +929,7 @@ Labels *[]*string
 
 List of labels to attach to the issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#labels Issue#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue#labels Issue#labels}
 
 ---
 
@@ -943,7 +943,7 @@ MilestoneNumber *f64
 
 Milestone number to assign to the issue.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/github/r/issue#milestone_number Issue#milestone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/issue#milestone_number Issue#milestone_number}
 
 ---
 
