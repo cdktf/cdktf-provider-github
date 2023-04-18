@@ -1,3 +1,7 @@
+# `github_organization_project`
+
+Refer to the Terraform Registory for docs: [`github_organization_project`](https://www.terraform.io/docs/providers/github/r/organization_project).
+
 # `organizationProject` Submodule <a name="`organizationProject` Submodule" id="@cdktf/provider-github.organizationProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

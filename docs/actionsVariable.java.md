@@ -1,3 +1,7 @@
+# `github_actions_variable`
+
+Refer to the Terraform Registory for docs: [`github_actions_variable`](https://www.terraform.io/docs/providers/github/r/actions_variable).
+
 # `actionsVariable` Submodule <a name="`actionsVariable` Submodule" id="@cdktf/provider-github.actionsVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

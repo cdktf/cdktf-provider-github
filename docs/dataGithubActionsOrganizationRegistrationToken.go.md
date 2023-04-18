@@ -1,3 +1,7 @@
+# `data_github_actions_organization_registration_token`
+
+Refer to the Terraform Registory for docs: [`data_github_actions_organization_registration_token`](https://www.terraform.io/docs/providers/github/d/actions_organization_registration_token).
+
 # `dataGithubActionsOrganizationRegistrationToken` Submodule <a name="`dataGithubActionsOrganizationRegistrationToken` Submodule" id="@cdktf/provider-github.dataGithubActionsOrganizationRegistrationToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

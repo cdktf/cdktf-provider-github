@@ -1,3 +1,7 @@
+# `github_repository_webhook`
+
+Refer to the Terraform Registory for docs: [`github_repository_webhook`](https://www.terraform.io/docs/providers/github/r/repository_webhook).
+
 # `repositoryWebhook` Submodule <a name="`repositoryWebhook` Submodule" id="@cdktf/provider-github.repositoryWebhook"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

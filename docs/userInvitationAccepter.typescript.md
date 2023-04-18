@@ -1,3 +1,7 @@
+# `github_user_invitation_accepter`
+
+Refer to the Terraform Registory for docs: [`github_user_invitation_accepter`](https://www.terraform.io/docs/providers/github/r/user_invitation_accepter).
+
 # `userInvitationAccepter` Submodule <a name="`userInvitationAccepter` Submodule" id="@cdktf/provider-github.userInvitationAccepter"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

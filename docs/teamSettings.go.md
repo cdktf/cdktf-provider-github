@@ -1,3 +1,7 @@
+# `github_team_settings`
+
+Refer to the Terraform Registory for docs: [`github_team_settings`](https://www.terraform.io/docs/providers/github/r/team_settings).
+
 # `teamSettings` Submodule <a name="`teamSettings` Submodule" id="@cdktf/provider-github.teamSettings"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

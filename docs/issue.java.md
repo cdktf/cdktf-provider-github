@@ -1,3 +1,7 @@
+# `github_issue`
+
+Refer to the Terraform Registory for docs: [`github_issue`](https://www.terraform.io/docs/providers/github/r/issue).
+
 # `issue` Submodule <a name="`issue` Submodule" id="@cdktf/provider-github.issue"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

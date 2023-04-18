@@ -1,3 +1,7 @@
+# `github_repository_pull_request`
+
+Refer to the Terraform Registory for docs: [`github_repository_pull_request`](https://www.terraform.io/docs/providers/github/r/repository_pull_request).
+
 # `repositoryPullRequest` Submodule <a name="`repositoryPullRequest` Submodule" id="@cdktf/provider-github.repositoryPullRequest"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `github_project_card`
+
+Refer to the Terraform Registory for docs: [`github_project_card`](https://www.terraform.io/docs/providers/github/r/project_card).
+
 # `projectCard` Submodule <a name="`projectCard` Submodule" id="@cdktf/provider-github.projectCard"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

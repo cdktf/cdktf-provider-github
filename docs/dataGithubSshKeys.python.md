@@ -1,3 +1,7 @@
+# `data_github_ssh_keys`
+
+Refer to the Terraform Registory for docs: [`data_github_ssh_keys`](https://www.terraform.io/docs/providers/github/d/ssh_keys).
+
 # `dataGithubSshKeys` Submodule <a name="`dataGithubSshKeys` Submodule" id="@cdktf/provider-github.dataGithubSshKeys"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
