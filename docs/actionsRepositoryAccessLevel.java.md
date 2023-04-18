@@ -1,3 +1,7 @@
+# `github_actions_repository_access_level`
+
+Refer to the Terraform Registory for docs: [`github_actions_repository_access_level`](https://www.terraform.io/docs/providers/github/r/actions_repository_access_level).
+
 # `actionsRepositoryAccessLevel` Submodule <a name="`actionsRepositoryAccessLevel` Submodule" id="@cdktf/provider-github.actionsRepositoryAccessLevel"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

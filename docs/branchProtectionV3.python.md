@@ -1,3 +1,7 @@
+# `github_branch_protection_v3`
+
+Refer to the Terraform Registory for docs: [`github_branch_protection_v3`](https://www.terraform.io/docs/providers/github/r/branch_protection_v3).
+
 # `branchProtectionV3` Submodule <a name="`branchProtectionV3` Submodule" id="@cdktf/provider-github.branchProtectionV3"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

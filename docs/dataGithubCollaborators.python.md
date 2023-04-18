@@ -1,3 +1,7 @@
+# `data_github_collaborators`
+
+Refer to the Terraform Registory for docs: [`data_github_collaborators`](https://www.terraform.io/docs/providers/github/d/collaborators).
+
 # `dataGithubCollaborators` Submodule <a name="`dataGithubCollaborators` Submodule" id="@cdktf/provider-github.dataGithubCollaborators"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

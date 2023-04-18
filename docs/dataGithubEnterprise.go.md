@@ -1,3 +1,7 @@
+# `data_github_enterprise`
+
+Refer to the Terraform Registory for docs: [`data_github_enterprise`](https://www.terraform.io/docs/providers/github/d/enterprise).
+
 # `dataGithubEnterprise` Submodule <a name="`dataGithubEnterprise` Submodule" id="@cdktf/provider-github.dataGithubEnterprise"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

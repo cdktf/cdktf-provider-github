@@ -1,3 +1,7 @@
+# `github_repository_collaborator`
+
+Refer to the Terraform Registory for docs: [`github_repository_collaborator`](https://www.terraform.io/docs/providers/github/r/repository_collaborator).
+
 # `repositoryCollaborator` Submodule <a name="`repositoryCollaborator` Submodule" id="@cdktf/provider-github.repositoryCollaborator"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

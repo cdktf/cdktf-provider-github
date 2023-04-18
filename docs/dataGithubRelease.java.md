@@ -1,3 +1,7 @@
+# `data_github_release`
+
+Refer to the Terraform Registory for docs: [`data_github_release`](https://www.terraform.io/docs/providers/github/d/release).
+
 # `dataGithubRelease` Submodule <a name="`dataGithubRelease` Submodule" id="@cdktf/provider-github.dataGithubRelease"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

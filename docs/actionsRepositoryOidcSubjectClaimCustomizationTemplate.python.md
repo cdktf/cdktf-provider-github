@@ -1,3 +1,7 @@
+# `github_actions_repository_oidc_subject_claim_customization_template`
+
+Refer to the Terraform Registory for docs: [`github_actions_repository_oidc_subject_claim_customization_template`](https://www.terraform.io/docs/providers/github/r/actions_repository_oidc_subject_claim_customization_template).
+
 # `actionsRepositoryOidcSubjectClaimCustomizationTemplate` Submodule <a name="`actionsRepositoryOidcSubjectClaimCustomizationTemplate` Submodule" id="@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

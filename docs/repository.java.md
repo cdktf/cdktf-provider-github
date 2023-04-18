@@ -1,3 +1,7 @@
+# `github_repository`
+
+Refer to the Terraform Registory for docs: [`github_repository`](https://www.terraform.io/docs/providers/github/r/repository).
+
 # `repository` Submodule <a name="`repository` Submodule" id="@cdktf/provider-github.repository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

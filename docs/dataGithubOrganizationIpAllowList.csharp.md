@@ -1,3 +1,7 @@
+# `data_github_organization_ip_allow_list`
+
+Refer to the Terraform Registory for docs: [`data_github_organization_ip_allow_list`](https://www.terraform.io/docs/providers/github/d/organization_ip_allow_list).
+
 # `dataGithubOrganizationIpAllowList` Submodule <a name="`dataGithubOrganizationIpAllowList` Submodule" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

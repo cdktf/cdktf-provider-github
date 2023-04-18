@@ -1,3 +1,7 @@
+# `github_actions_organization_variable`
+
+Refer to the Terraform Registory for docs: [`github_actions_organization_variable`](https://www.terraform.io/docs/providers/github/r/actions_organization_variable).
+
 # `actionsOrganizationVariable` Submodule <a name="`actionsOrganizationVariable` Submodule" id="@cdktf/provider-github.actionsOrganizationVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

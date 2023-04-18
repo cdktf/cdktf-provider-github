@@ -1,3 +1,7 @@
+# `data_github_actions_secrets`
+
+Refer to the Terraform Registory for docs: [`data_github_actions_secrets`](https://www.terraform.io/docs/providers/github/d/actions_secrets).
+
 # `dataGithubActionsSecrets` Submodule <a name="`dataGithubActionsSecrets` Submodule" id="@cdktf/provider-github.dataGithubActionsSecrets"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
