@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions
+// https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,17 +10,17 @@ export interface ActionsRepositoryPermissionsConfig extends cdktf.TerraformMetaA
   /**
   * The permissions policy that controls the actions that are allowed to run. Can be one of: 'all', 'local_only', or 'selected'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#allowed_actions ActionsRepositoryPermissions#allowed_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions#allowed_actions ActionsRepositoryPermissions#allowed_actions}
   */
   readonly allowedActions?: string;
   /**
   * Should GitHub actions be enabled on this repository.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#enabled ActionsRepositoryPermissions#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions#enabled ActionsRepositoryPermissions#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#id ActionsRepositoryPermissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions#id ActionsRepositoryPermissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -29,13 +29,13 @@ export interface ActionsRepositoryPermissionsConfig extends cdktf.TerraformMetaA
   /**
   * The GitHub repository.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#repository ActionsRepositoryPermissions#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions#repository ActionsRepositoryPermissions#repository}
   */
   readonly repository: string;
   /**
   * allowed_actions_config block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#allowed_actions_config ActionsRepositoryPermissions#allowed_actions_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions#allowed_actions_config ActionsRepositoryPermissions#allowed_actions_config}
   */
   readonly allowedActionsConfig?: ActionsRepositoryPermissionsAllowedActionsConfig;
 }
@@ -43,19 +43,19 @@ export interface ActionsRepositoryPermissionsAllowedActionsConfig {
   /**
   * Whether GitHub-owned actions are allowed in the repository.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#github_owned_allowed ActionsRepositoryPermissions#github_owned_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions#github_owned_allowed ActionsRepositoryPermissions#github_owned_allowed}
   */
   readonly githubOwnedAllowed: boolean | cdktf.IResolvable;
   /**
   * Specifies a list of string-matching patterns to allow specific action(s). Wildcards, tags, and SHAs are allowed. For example, 'monalisa/octocat@', 'monalisa/octocat@v2', 'monalisa/'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#patterns_allowed ActionsRepositoryPermissions#patterns_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions#patterns_allowed ActionsRepositoryPermissions#patterns_allowed}
   */
   readonly patternsAllowed?: string[];
   /**
   * Whether actions in GitHub Marketplace from verified creators are allowed. Set to 'true' to allow all GitHub Marketplace actions by verified creators.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions#verified_allowed ActionsRepositoryPermissions#verified_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions#verified_allowed ActionsRepositoryPermissions#verified_allowed}
   */
   readonly verifiedAllowed?: boolean | cdktf.IResolvable;
 }
@@ -163,7 +163,7 @@ export class ActionsRepositoryPermissionsAllowedActionsConfigOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions github_actions_repository_permissions}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions github_actions_repository_permissions}
 */
 export class ActionsRepositoryPermissions extends cdktf.TerraformResource {
 
@@ -177,7 +177,7 @@ export class ActionsRepositoryPermissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/actions_repository_permissions github_actions_repository_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/actions_repository_permissions github_actions_repository_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -188,7 +188,7 @@ export class ActionsRepositoryPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_repository_permissions',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/collaborators
+// https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/collaborators
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,22 +8,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubCollaboratorsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/collaborators#affiliation DataGithubCollaborators#affiliation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/collaborators#affiliation DataGithubCollaborators#affiliation}
   */
   readonly affiliation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/collaborators#id DataGithubCollaborators#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/collaborators#id DataGithubCollaborators#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/collaborators#owner DataGithubCollaborators#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/collaborators#owner DataGithubCollaborators#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/collaborators#repository DataGithubCollaborators#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/collaborators#repository DataGithubCollaborators#repository}
   */
   readonly repository: string;
 }
@@ -168,7 +168,7 @@ export class DataGithubCollaboratorsCollaboratorList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/collaborators github_collaborators}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/collaborators github_collaborators}
 */
 export class DataGithubCollaborators extends cdktf.TerraformDataSource {
 
@@ -182,7 +182,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/data-sources/collaborators github_collaborators} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/collaborators github_collaborators} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +193,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_collaborators',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

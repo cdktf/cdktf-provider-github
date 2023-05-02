@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings
+// https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface TeamSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#id TeamSettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings#id TeamSettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,13 +17,13 @@ export interface TeamSettingsConfig extends cdktf.TerraformMetaArguments {
   /**
   * The GitHub team id or the GitHub team slug.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#team_id TeamSettings#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings#team_id TeamSettings#team_id}
   */
   readonly teamId: string;
   /**
   * review_request_delegation block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#review_request_delegation TeamSettings#review_request_delegation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings#review_request_delegation TeamSettings#review_request_delegation}
   */
   readonly reviewRequestDelegation?: TeamSettingsReviewRequestDelegation;
 }
@@ -31,19 +31,19 @@ export interface TeamSettingsReviewRequestDelegation {
   /**
   * The algorithm to use when assigning pull requests to team members. Supported values are 'ROUND_ROBIN' and 'LOAD_BALANCE'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#algorithm TeamSettings#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings#algorithm TeamSettings#algorithm}
   */
   readonly algorithm?: string;
   /**
   * The number of team members to assign to a pull request.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#member_count TeamSettings#member_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings#member_count TeamSettings#member_count}
   */
   readonly memberCount?: number;
   /**
   * whether to notify the entire team when at least one member is also assigned to the pull request.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings#notify TeamSettings#notify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings#notify TeamSettings#notify}
   */
   readonly notify?: boolean | cdktf.IResolvable;
 }
@@ -154,7 +154,7 @@ export class TeamSettingsReviewRequestDelegationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings github_team_settings}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings github_team_settings}
 */
 export class TeamSettings extends cdktf.TerraformResource {
 
@@ -168,7 +168,7 @@ export class TeamSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team_settings github_team_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_settings github_team_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +179,7 @@ export class TeamSettings extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_settings',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.23.0',
+        providerVersion: '5.24.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
