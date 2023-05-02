@@ -1,6 +1,6 @@
 # `github_team`
 
-Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team).
+Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team).
 
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-github.team"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team`](https://registry.terr
 
 ### Team <a name="Team" id="@cdktf/provider-github.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team github_team}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team github_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.team.Team.Initializer"></a>
 
@@ -396,14 +396,14 @@ team.Team.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-github.team.Team.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.ldapDnInput">ldapDnInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamIdInput">parentTeamIdInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamIdInput">parentTeamIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.privacyInput">privacyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.createDefaultMaintainer">createDefaultMaintainer</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.ldapDn">ldapDn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamId">parentTeamId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamId">parentTeamId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.privacy">privacy</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -643,10 +643,10 @@ public readonly nameInput: string;
 ##### `parentTeamIdInput`<sup>Optional</sup> <a name="parentTeamIdInput" id="@cdktf/provider-github.team.Team.property.parentTeamIdInput"></a>
 
 ```typescript
-public readonly parentTeamIdInput: number;
+public readonly parentTeamIdInput: string;
 ```
 
-- *Type:* number
+- *Type:* string
 
 ---
 
@@ -713,10 +713,10 @@ public readonly name: string;
 ##### `parentTeamId`<sup>Required</sup> <a name="parentTeamId" id="@cdktf/provider-github.team.Team.property.parentTeamId"></a>
 
 ```typescript
-public readonly parentTeamId: number;
+public readonly parentTeamId: string;
 ```
 
-- *Type:* number
+- *Type:* string
 
 ---
 
@@ -774,9 +774,9 @@ const teamConfig: team.TeamConfig = { ... }
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.name">name</a></code> | <code>string</code> | The name of the team. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.createDefaultMaintainer">createDefaultMaintainer</a></code> | <code>boolean \| cdktf.IResolvable</code> | Adds a default maintainer to the team. Adds the creating user to the team when 'true'. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.description">description</a></code> | <code>string</code> | A description of the team. |
-| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.ldapDn">ldapDn</a></code> | <code>string</code> | The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server. |
-| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.parentTeamId">parentTeamId</a></code> | <code>number</code> | The ID of the parent team, if this is a nested team. |
+| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.parentTeamId">parentTeamId</a></code> | <code>string</code> | The ID or slug of the parent team, if this is a nested team. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.privacy">privacy</a></code> | <code>string</code> | The level of privacy for the team. Must be one of 'secret' or 'closed'. |
 
 ---
@@ -861,7 +861,7 @@ public readonly name: string;
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team#name Team#name}
 
 ---
 
@@ -875,7 +875,7 @@ public readonly createDefaultMaintainer: boolean | IResolvable;
 
 Adds a default maintainer to the team. Adds the creating user to the team when 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
 
 ---
 
@@ -889,7 +889,7 @@ public readonly description: string;
 
 A description of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -901,7 +901,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -918,21 +918,21 @@ public readonly ldapDn: string;
 
 The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team#ldap_dn Team#ldap_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team#ldap_dn Team#ldap_dn}
 
 ---
 
 ##### `parentTeamId`<sup>Optional</sup> <a name="parentTeamId" id="@cdktf/provider-github.team.TeamConfig.property.parentTeamId"></a>
 
 ```typescript
-public readonly parentTeamId: number;
+public readonly parentTeamId: string;
 ```
 
-- *Type:* number
+- *Type:* string
 
-The ID of the parent team, if this is a nested team.
+The ID or slug of the parent team, if this is a nested team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team#parent_team_id Team#parent_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team#parent_team_id Team#parent_team_id}
 
 ---
 
@@ -946,7 +946,7 @@ public readonly privacy: string;
 
 The level of privacy for the team. Must be one of 'secret' or 'closed'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.23.0/docs/resources/team#privacy Team#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team#privacy Team#privacy}
 
 ---
 
