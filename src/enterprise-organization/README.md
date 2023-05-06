@@ -1,3 +1,3 @@
 # `github_enterprise_organization`
 
-Refer to the Terraform Registory for docs: [`github_enterprise_organization`](https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/enterprise_organization).
+Refer to the Terraform Registory for docs: [`github_enterprise_organization`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/enterprise_organization).

@@ -34,6 +34,7 @@ The following submodules are available:
 - [dataGithubActionsVariables](./dataGithubActionsVariables.typescript.md)
 - [dataGithubApp](./dataGithubApp.typescript.md)
 - [dataGithubBranch](./dataGithubBranch.typescript.md)
+- [dataGithubBranchProtectionRules](./dataGithubBranchProtectionRules.typescript.md)
 - [dataGithubCollaborators](./dataGithubCollaborators.typescript.md)
 - [dataGithubDependabotOrganizationPublicKey](./dataGithubDependabotOrganizationPublicKey.typescript.md)
 - [dataGithubDependabotOrganizationSecrets](./dataGithubDependabotOrganizationSecrets.typescript.md)

@@ -1,6 +1,6 @@
 # `github_repository_milestone`
 
-Refer to the Terraform Registory for docs: [`github_repository_milestone`](https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone).
+Refer to the Terraform Registory for docs: [`github_repository_milestone`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone).
 
 # `repositoryMilestone` Submodule <a name="`repositoryMilestone` Submodule" id="@cdktf/provider-github.repositoryMilestone"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_milestone`](https
 
 ### RepositoryMilestone <a name="RepositoryMilestone" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone github_repository_milestone}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone github_repository_milestone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer"></a>
 
@@ -729,7 +729,7 @@ const repositoryMilestoneConfig: repositoryMilestone.RepositoryMilestoneConfig =
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.title">title</a></code> | <code>string</code> | The title of the milestone. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.description">description</a></code> | <code>string</code> | A description of the milestone. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.dueDate">dueDate</a></code> | <code>string</code> | The milestone due date. In 'yyyy-mm-dd' format. |
-| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone#id RepositoryMilestone#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone#id RepositoryMilestone#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.state">state</a></code> | <code>string</code> | The state of the milestone. Either 'open' or 'closed'. Default: 'open'. |
 
 ---
@@ -814,7 +814,7 @@ public readonly owner: string;
 
 The owner of the GitHub Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone#owner RepositoryMilestone#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone#owner RepositoryMilestone#owner}
 
 ---
 
@@ -828,7 +828,7 @@ public readonly repository: string;
 
 The name of the GitHub Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone#repository RepositoryMilestone#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone#repository RepositoryMilestone#repository}
 
 ---
 
@@ -842,7 +842,7 @@ public readonly title: string;
 
 The title of the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone#title RepositoryMilestone#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone#title RepositoryMilestone#title}
 
 ---
 
@@ -856,7 +856,7 @@ public readonly description: string;
 
 A description of the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone#description RepositoryMilestone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone#description RepositoryMilestone#description}
 
 ---
 
@@ -870,7 +870,7 @@ public readonly dueDate: string;
 
 The milestone due date. In 'yyyy-mm-dd' format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone#due_date RepositoryMilestone#due_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone#due_date RepositoryMilestone#due_date}
 
 ---
 
@@ -882,7 +882,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone#id RepositoryMilestone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone#id RepositoryMilestone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -899,7 +899,7 @@ public readonly state: string;
 
 The state of the milestone. Either 'open' or 'closed'. Default: 'open'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/repository_milestone#state RepositoryMilestone#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/repository_milestone#state RepositoryMilestone#state}
 
 ---
 

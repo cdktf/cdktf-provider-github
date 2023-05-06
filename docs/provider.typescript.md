@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`github`](https://registry.terraform.io/providers/integrations/github/5.24.0/docs).
+Refer to the Terraform Registory for docs: [`github`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-github.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github`](https://registry.terraform
 
 ### GithubProvider <a name="GithubProvider" id="@cdktf/provider-github.provider.GithubProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs github}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs github}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.provider.GithubProvider.Initializer"></a>
 
@@ -66,6 +66,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetInsecure">resetInsecure</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetOrganization">resetOrganization</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetOwner">resetOwner</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetParallelRequests">resetParallelRequests</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetReadDelayMs">resetReadDelayMs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetToken">resetToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetWriteDelayMs">resetWriteDelayMs</a></code> | *No description.* |
@@ -170,6 +171,12 @@ public resetOrganization(): void
 
 ```typescript
 public resetOwner(): void
+```
+
+##### `resetParallelRequests` <a name="resetParallelRequests" id="@cdktf/provider-github.provider.GithubProvider.resetParallelRequests"></a>
+
+```typescript
+public resetParallelRequests(): void
 ```
 
 ##### `resetReadDelayMs` <a name="resetReadDelayMs" id="@cdktf/provider-github.provider.GithubProvider.resetReadDelayMs"></a>
@@ -279,6 +286,7 @@ provider.GithubProvider.isTerraformProvider(x: any)
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecureInput">insecureInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organizationInput">organizationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.ownerInput">ownerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput">parallelRequestsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMsInput">readDelayMsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.tokenInput">tokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.writeDelayMsInput">writeDelayMsInput</a></code> | <code>number</code> | *No description.* |
@@ -287,6 +295,7 @@ provider.GithubProvider.isTerraformProvider(x: any)
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecure">insecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organization">organization</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.owner">owner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequests">parallelRequests</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMs">readDelayMs</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.token">token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.writeDelayMs">writeDelayMs</a></code> | <code>number</code> | *No description.* |
@@ -445,6 +454,16 @@ public readonly ownerInput: string;
 
 ---
 
+##### `parallelRequestsInput`<sup>Optional</sup> <a name="parallelRequestsInput" id="@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput"></a>
+
+```typescript
+public readonly parallelRequestsInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
 ##### `readDelayMsInput`<sup>Optional</sup> <a name="readDelayMsInput" id="@cdktf/provider-github.provider.GithubProvider.property.readDelayMsInput"></a>
 
 ```typescript
@@ -522,6 +541,16 @@ public readonly owner: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `parallelRequests`<sup>Optional</sup> <a name="parallelRequests" id="@cdktf/provider-github.provider.GithubProvider.property.parallelRequests"></a>
+
+```typescript
+public readonly parallelRequests: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
 
 ---
 
@@ -605,7 +634,7 @@ public readonly id: string;
 
 The GitHub App ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#id GithubProvider#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#id GithubProvider#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -622,7 +651,7 @@ public readonly installationId: string;
 
 The GitHub App installation instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#installation_id GithubProvider#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#installation_id GithubProvider#installation_id}
 
 ---
 
@@ -636,7 +665,7 @@ public readonly pemFile: string;
 
 The GitHub App PEM file contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#pem_file GithubProvider#pem_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#pem_file GithubProvider#pem_file}
 
 ---
 
@@ -660,6 +689,7 @@ const githubProviderConfig: provider.GithubProviderConfig = { ... }
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.insecure">insecure</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable `insecure` mode for testing purposes. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.organization">organization</a></code> | <code>string</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.owner">owner</a></code> | <code>string</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests">parallelRequests</a></code> | <code>boolean \| cdktf.IResolvable</code> | Allow the provider to make parallel API calls to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.readDelayMs">readDelayMs</a></code> | <code>number</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.token">token</a></code> | <code>string</code> | The OAuth token used to connect to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.writeDelayMs">writeDelayMs</a></code> | <code>number</code> | Amount of time in milliseconds to sleep in between writes to GitHub API. |
@@ -676,7 +706,7 @@ public readonly alias: string;
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#alias GithubProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#alias GithubProvider#alias}
 
 ---
 
@@ -690,7 +720,7 @@ public readonly appAuth: GithubProviderAppAuth;
 
 app_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#app_auth GithubProvider#app_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#app_auth GithubProvider#app_auth}
 
 ---
 
@@ -704,7 +734,7 @@ public readonly baseUrl: string;
 
 The GitHub Base API URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#base_url GithubProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#base_url GithubProvider#base_url}
 
 ---
 
@@ -718,7 +748,7 @@ public readonly insecure: boolean | IResolvable;
 
 Enable `insecure` mode for testing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#insecure GithubProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#insecure GithubProvider#insecure}
 
 ---
 
@@ -732,7 +762,7 @@ public readonly organization: string;
 
 The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#organization GithubProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#organization GithubProvider#organization}
 
 ---
 
@@ -746,7 +776,23 @@ public readonly owner: string;
 
 The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#owner GithubProvider#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#owner GithubProvider#owner}
+
+---
+
+##### `parallelRequests`<sup>Optional</sup> <a name="parallelRequests" id="@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests"></a>
+
+```typescript
+public readonly parallelRequests: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Allow the provider to make parallel API calls to GitHub.
+
+You may want to set it to true when you have a private Github Enterprise without strict rate limits. Although, it is not possible to enable this setting on github.com because we enforce the respect of github.com's best practices to avoid hitting abuse rate limitsDefaults to false if not set
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#parallel_requests GithubProvider#parallel_requests}
 
 ---
 
@@ -762,7 +808,7 @@ Amount of time in milliseconds to sleep in between non-write requests to GitHub 
 
 Defaults to 0ms if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#read_delay_ms GithubProvider#read_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#read_delay_ms GithubProvider#read_delay_ms}
 
 ---
 
@@ -778,7 +824,7 @@ The OAuth token used to connect to GitHub.
 
 Anonymous mode is enabled if both `token` and `app_auth` are not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#token GithubProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#token GithubProvider#token}
 
 ---
 
@@ -794,7 +840,7 @@ Amount of time in milliseconds to sleep in between writes to GitHub API.
 
 Defaults to 1000ms or 1s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs#write_delay_ms GithubProvider#write_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs#write_delay_ms GithubProvider#write_delay_ms}
 
 ---
 

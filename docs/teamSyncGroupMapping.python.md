@@ -1,6 +1,6 @@
 # `github_team_sync_group_mapping`
 
-Refer to the Terraform Registory for docs: [`github_team_sync_group_mapping`](https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping).
+Refer to the Terraform Registory for docs: [`github_team_sync_group_mapping`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping).
 
 # `teamSyncGroupMapping` Submodule <a name="`teamSyncGroupMapping` Submodule" id="@cdktf/provider-github.teamSyncGroupMapping"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team_sync_group_mapping`](ht
 
 ### TeamSyncGroupMapping <a name="TeamSyncGroupMapping" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping github_team_sync_group_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.Initializer"></a>
 
@@ -44,7 +44,7 @@ teamSyncGroupMapping.TeamSyncGroupMapping(
 | <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.Initializer.parameter.teamSlug">team_slug</a></code> | <code>str</code> | Slug of the team. |
 | <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.Initializer.parameter.group">group</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingGroup">TeamSyncGroupMappingGroup</a>]]</code> | group block. |
-| <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}. |
+| <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMapping.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Slug of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#group TeamSyncGroupMapping#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#group TeamSyncGroupMapping#group}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -770,7 +770,7 @@ teamSyncGroupMapping.TeamSyncGroupMappingConfig(
 | <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingConfig.property.teamSlug">team_slug</a></code> | <code>str</code> | Slug of the team. |
 | <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingConfig.property.group">group</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingGroup">TeamSyncGroupMappingGroup</a>]]</code> | group block. |
-| <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}. |
+| <code><a href="#@cdktf/provider-github.teamSyncGroupMapping.TeamSyncGroupMappingConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}. |
 
 ---
 
@@ -854,7 +854,7 @@ team_slug: str
 
 Slug of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#team_slug TeamSyncGroupMapping#team_slug}
 
 ---
 
@@ -868,7 +868,7 @@ group: typing.Union[IResolvable, typing.List[TeamSyncGroupMappingGroup]]
 
 group block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#group TeamSyncGroupMapping#group}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#group TeamSyncGroupMapping#group}
 
 ---
 
@@ -880,7 +880,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#id TeamSyncGroupMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -921,7 +921,7 @@ group_description: str
 
 The description of the IdP group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#group_description TeamSyncGroupMapping#group_description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#group_description TeamSyncGroupMapping#group_description}
 
 ---
 
@@ -935,7 +935,7 @@ group_id: str
 
 The ID of the IdP group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#group_id TeamSyncGroupMapping#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#group_id TeamSyncGroupMapping#group_id}
 
 ---
 
@@ -949,7 +949,7 @@ group_name: str
 
 The name of the IdP group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_sync_group_mapping#group_name TeamSyncGroupMapping#group_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_sync_group_mapping#group_name TeamSyncGroupMapping#group_name}
 
 ---
 

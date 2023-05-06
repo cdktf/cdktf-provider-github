@@ -1,6 +1,6 @@
 # `data_github_dependabot_organization_public_key`
 
-Refer to the Terraform Registory for docs: [`data_github_dependabot_organization_public_key`](https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/dependabot_organization_public_key).
+Refer to the Terraform Registory for docs: [`data_github_dependabot_organization_public_key`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/dependabot_organization_public_key).
 
 # `dataGithubDependabotOrganizationPublicKey` Submodule <a name="`dataGithubDependabotOrganizationPublicKey` Submodule" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_dependabot_organization
 
 ### DataGithubDependabotOrganizationPublicKey <a name="DataGithubDependabotOrganizationPublicKey" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/dependabot_organization_public_key github_dependabot_organization_public_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/dependabot_organization_public_key github_dependabot_organization_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.Initializer"></a>
 
@@ -42,7 +42,7 @@ DataGithubDependabotOrganizationPublicKey.Builder.create(Construct scope, java.l
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -640,7 +640,7 @@ DataGithubDependabotOrganizationPublicKeyConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKeyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKeyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}. |
 
 ---
 
@@ -722,7 +722,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
