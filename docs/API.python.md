@@ -34,6 +34,7 @@ The following submodules are available:
 - [dataGithubActionsVariables](./dataGithubActionsVariables.python.md)
 - [dataGithubApp](./dataGithubApp.python.md)
 - [dataGithubBranch](./dataGithubBranch.python.md)
+- [dataGithubBranchProtectionRules](./dataGithubBranchProtectionRules.python.md)
 - [dataGithubCollaborators](./dataGithubCollaborators.python.md)
 - [dataGithubDependabotOrganizationPublicKey](./dataGithubDependabotOrganizationPublicKey.python.md)
 - [dataGithubDependabotOrganizationSecrets](./dataGithubDependabotOrganizationSecrets.python.md)

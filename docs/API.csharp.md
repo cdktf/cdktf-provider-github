@@ -34,6 +34,7 @@ The following submodules are available:
 - [dataGithubActionsVariables](./dataGithubActionsVariables.csharp.md)
 - [dataGithubApp](./dataGithubApp.csharp.md)
 - [dataGithubBranch](./dataGithubBranch.csharp.md)
+- [dataGithubBranchProtectionRules](./dataGithubBranchProtectionRules.csharp.md)
 - [dataGithubCollaborators](./dataGithubCollaborators.csharp.md)
 - [dataGithubDependabotOrganizationPublicKey](./dataGithubDependabotOrganizationPublicKey.csharp.md)
 - [dataGithubDependabotOrganizationSecrets](./dataGithubDependabotOrganizationSecrets.csharp.md)

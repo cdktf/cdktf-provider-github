@@ -1,6 +1,6 @@
 # `data_github_repository_teams`
 
-Refer to the Terraform Registory for docs: [`data_github_repository_teams`](https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/repository_teams).
+Refer to the Terraform Registory for docs: [`data_github_repository_teams`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/repository_teams).
 
 # `dataGithubRepositoryTeams` Submodule <a name="`dataGithubRepositoryTeams` Submodule" id="@cdktf/provider-github.dataGithubRepositoryTeams"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_repository_teams`](http
 
 ### DataGithubRepositoryTeams <a name="DataGithubRepositoryTeams" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/repository_teams github_repository_teams}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/repository_teams github_repository_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
 
 datagithubrepositoryteams.NewDataGithubRepositoryTeams(scope Construct, id *string, config DataGithubRepositoryTeamsConfig) DataGithubRepositoryTeams
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
 
 datagithubrepositoryteams.DataGithubRepositoryTeams_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
 
 datagithubrepositoryteams.DataGithubRepositoryTeams_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagithubrepositoryteams.DataGithubRepositoryTeams_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
 
 datagithubrepositoryteams.DataGithubRepositoryTeams_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
 
 &datagithubrepositoryteams.DataGithubRepositoryTeamsConfig {
 	Connection: interface{},
@@ -618,9 +618,9 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/repository_teams#full_name DataGithubRepositoryTeams#full_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/repository_teams#id DataGithubRepositoryTeams#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/repository_teams#name DataGithubRepositoryTeams#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/repository_teams#full_name DataGithubRepositoryTeams#full_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/repository_teams#id DataGithubRepositoryTeams#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/repository_teams#name DataGithubRepositoryTeams#name}. |
 
 ---
 
@@ -702,7 +702,7 @@ FullName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/repository_teams#full_name DataGithubRepositoryTeams#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/repository_teams#full_name DataGithubRepositoryTeams#full_name}.
 
 ---
 
@@ -714,7 +714,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/repository_teams#id DataGithubRepositoryTeams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/repository_teams#id DataGithubRepositoryTeams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -729,7 +729,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/data-sources/repository_teams#name DataGithubRepositoryTeams#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/repository_teams#name DataGithubRepositoryTeams#name}.
 
 ---
 
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
 
 &datagithubrepositoryteams.DataGithubRepositoryTeamsTeams {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepository
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsTeamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
 
 datagithubrepositoryteams.NewDataGithubRepositoryTeamsTeamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryTeamsTeamsList
 ```
@@ -885,7 +885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
 
 datagithubrepositoryteams.NewDataGithubRepositoryTeamsTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryTeamsTeamsOutputReference
 ```

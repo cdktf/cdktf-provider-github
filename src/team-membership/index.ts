@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_membership
+// https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_membership#id TeamMembership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_membership#id TeamMembership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,25 +17,25 @@ export interface TeamMembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The role of the user within the team. Must be one of 'member' or 'maintainer'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_membership#role TeamMembership#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_membership#role TeamMembership#role}
   */
   readonly role?: string;
   /**
   * The GitHub team id or the GitHub team slug.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_membership#team_id TeamMembership#team_id}
   */
   readonly teamId: string;
   /**
   * The user to add to the team.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_membership#username TeamMembership#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_membership#username TeamMembership#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_membership github_team_membership}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_membership github_team_membership}
 */
 export class TeamMembership extends cdktf.TerraformResource {
 
@@ -49,7 +49,7 @@ export class TeamMembership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/team_membership github_team_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/team_membership github_team_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +60,7 @@ export class TeamMembership extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_membership',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.24.0',
+        providerVersion: '5.25.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

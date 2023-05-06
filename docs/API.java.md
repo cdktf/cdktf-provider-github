@@ -34,6 +34,7 @@ The following submodules are available:
 - [dataGithubActionsVariables](./dataGithubActionsVariables.java.md)
 - [dataGithubApp](./dataGithubApp.java.md)
 - [dataGithubBranch](./dataGithubBranch.java.md)
+- [dataGithubBranchProtectionRules](./dataGithubBranchProtectionRules.java.md)
 - [dataGithubCollaborators](./dataGithubCollaborators.java.md)
 - [dataGithubDependabotOrganizationPublicKey](./dataGithubDependabotOrganizationPublicKey.java.md)
 - [dataGithubDependabotOrganizationSecrets](./dataGithubDependabotOrganizationSecrets.java.md)

@@ -1,6 +1,6 @@
 # `github_dependabot_secret`
 
-Refer to the Terraform Registory for docs: [`github_dependabot_secret`](https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/dependabot_secret).
+Refer to the Terraform Registory for docs: [`github_dependabot_secret`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/dependabot_secret).
 
 # `dependabotSecret` Submodule <a name="`dependabotSecret` Submodule" id="@cdktf/provider-github.dependabotSecret"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_dependabot_secret`](https://
 
 ### DependabotSecret <a name="DependabotSecret" id="@cdktf/provider-github.dependabotSecret.DependabotSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/dependabot_secret github_dependabot_secret}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/dependabot_secret github_dependabot_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dependabotSecret.DependabotSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
 
 dependabotsecret.NewDependabotSecret(scope Construct, id *string, config DependabotSecretConfig) DependabotSecret
 ```
@@ -291,7 +291,7 @@ func ResetPlaintextValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dependabotSecret.DependabotSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
 
 dependabotsecret.DependabotSecret_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dependabotSecret.DependabotSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
 
 dependabotsecret.DependabotSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dependabotsecret.DependabotSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.dependabotSecret.DependabotSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
 
 dependabotsecret.DependabotSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dependabotSecret.DependabotSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
 
 &dependabotsecret.DependabotSecretConfig {
 	Connection: interface{},
@@ -700,7 +700,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/dependabotsecret"
 | <code><a href="#@cdktf/provider-github.dependabotSecret.DependabotSecretConfig.property.repository">Repository</a></code> | <code>*string</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.dependabotSecret.DependabotSecretConfig.property.secretName">SecretName</a></code> | <code>*string</code> | Name of the secret. |
 | <code><a href="#@cdktf/provider-github.dependabotSecret.DependabotSecretConfig.property.encryptedValue">EncryptedValue</a></code> | <code>*string</code> | Encrypted value of the secret using the GitHub public key in Base64 format. |
-| <code><a href="#@cdktf/provider-github.dependabotSecret.DependabotSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/dependabot_secret#id DependabotSecret#id}. |
+| <code><a href="#@cdktf/provider-github.dependabotSecret.DependabotSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/dependabot_secret#id DependabotSecret#id}. |
 | <code><a href="#@cdktf/provider-github.dependabotSecret.DependabotSecretConfig.property.plaintextValue">PlaintextValue</a></code> | <code>*string</code> | Plaintext value of the secret to be encrypted. |
 
 ---
@@ -785,7 +785,7 @@ Repository *string
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/dependabot_secret#repository DependabotSecret#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/dependabot_secret#repository DependabotSecret#repository}
 
 ---
 
@@ -799,7 +799,7 @@ SecretName *string
 
 Name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/dependabot_secret#secret_name DependabotSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/dependabot_secret#secret_name DependabotSecret#secret_name}
 
 ---
 
@@ -813,7 +813,7 @@ EncryptedValue *string
 
 Encrypted value of the secret using the GitHub public key in Base64 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/dependabot_secret#encrypted_value DependabotSecret#encrypted_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/dependabot_secret#encrypted_value DependabotSecret#encrypted_value}
 
 ---
 
@@ -825,7 +825,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/dependabot_secret#id DependabotSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/dependabot_secret#id DependabotSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -842,7 +842,7 @@ PlaintextValue *string
 
 Plaintext value of the secret to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.24.0/docs/resources/dependabot_secret#plaintext_value DependabotSecret#plaintext_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/dependabot_secret#plaintext_value DependabotSecret#plaintext_value}
 
 ---
 

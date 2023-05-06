@@ -69,6 +69,7 @@ export * as dataGithubActionsSecrets from './data-github-actions-secrets';
 export * as dataGithubActionsVariables from './data-github-actions-variables';
 export * as dataGithubApp from './data-github-app';
 export * as dataGithubBranch from './data-github-branch';
+export * as dataGithubBranchProtectionRules from './data-github-branch-protection-rules';
 export * as dataGithubCollaborators from './data-github-collaborators';
 export * as dataGithubDependabotOrganizationPublicKey from './data-github-dependabot-organization-public-key';
 export * as dataGithubDependabotOrganizationSecrets from './data-github-dependabot-organization-secrets';
