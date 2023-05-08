@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.projectColumn.ProjectColumn.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/projectcolumn"
 
 projectcolumn.NewProjectColumn(scope Construct, id *string, config ProjectColumnConfig) ProjectColumn
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.projectColumn.ProjectColumn.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/projectcolumn"
 
 projectcolumn.ProjectColumn_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.projectColumn.ProjectColumn.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/projectcolumn"
 
 projectcolumn.ProjectColumn_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ projectcolumn.ProjectColumn_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.projectColumn.ProjectColumn.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/projectcolumn"
 
 projectcolumn.ProjectColumn_IsTerraformResource(x interface{}) *bool
 ```
@@ -610,7 +610,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.projectColumn.ProjectColumnConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/projectcolumn"
+import "github.com/cdktf/cdktf-provider-github-go/github/projectcolumn"
 
 &projectcolumn.ProjectColumnConfig {
 	Connection: interface{},
