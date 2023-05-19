@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_secret_repositories
+// https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_organization_secret_repositories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsOrganizationSecretRepositoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_secret_repositories#id ActionsOrganizationSecretRepositories#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_organization_secret_repositories#id ActionsOrganizationSecretRepositories#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -17,19 +17,19 @@ export interface ActionsOrganizationSecretRepositoriesConfig extends cdktf.Terra
   /**
   * Name of the existing secret.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_secret_repositories#secret_name ActionsOrganizationSecretRepositories#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_organization_secret_repositories#secret_name ActionsOrganizationSecretRepositories#secret_name}
   */
   readonly secretName: string;
   /**
   * An array of repository ids that can access the organization secret.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_secret_repositories#selected_repository_ids ActionsOrganizationSecretRepositories#selected_repository_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_organization_secret_repositories#selected_repository_ids ActionsOrganizationSecretRepositories#selected_repository_ids}
   */
   readonly selectedRepositoryIds: number[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories}
 */
 export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResource {
 
@@ -43,7 +43,7 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_organization_secret_repositories github_actions_organization_secret_repositories} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -54,7 +54,7 @@ export class ActionsOrganizationSecretRepositories extends cdktf.TerraformResour
       terraformResourceType: 'github_actions_organization_secret_repositories',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.25.0',
+        providerVersion: '5.25.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

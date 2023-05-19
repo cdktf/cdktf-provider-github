@@ -1,6 +1,6 @@
 # `data_github_actions_variables`
 
-Refer to the Terraform Registory for docs: [`data_github_actions_variables`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables).
+Refer to the Terraform Registory for docs: [`data_github_actions_variables`](https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables).
 
 # `dataGithubActionsVariables` Submodule <a name="`dataGithubActionsVariables` Submodule" id="@cdktf/provider-github.dataGithubActionsVariables"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_actions_variables`](htt
 
 ### DataGithubActionsVariables <a name="DataGithubActionsVariables" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables github_actions_variables}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables github_actions_variables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariables.Initializer"></a>
 
@@ -618,9 +618,9 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvar
 | <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#full_name DataGithubActionsVariables#full_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#id DataGithubActionsVariables#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#name DataGithubActionsVariables#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#full_name DataGithubActionsVariables#full_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#id DataGithubActionsVariables#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#name DataGithubActionsVariables#name}. |
 
 ---
 
@@ -702,7 +702,7 @@ FullName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#full_name DataGithubActionsVariables#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#full_name DataGithubActionsVariables#full_name}.
 
 ---
 
@@ -714,7 +714,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#id DataGithubActionsVariables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#id DataGithubActionsVariables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -729,7 +729,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#name DataGithubActionsVariables#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#name DataGithubActionsVariables#name}.
 
 ---
 

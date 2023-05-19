@@ -1,6 +1,6 @@
 # `data_github_users`
 
-Refer to the Terraform Registory for docs: [`data_github_users`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users).
+Refer to the Terraform Registory for docs: [`data_github_users`](https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/users).
 
 # `dataGithubUsers` Submodule <a name="`dataGithubUsers` Submodule" id="@cdktf/provider-github.dataGithubUsers"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_users`](https://registr
 
 ### DataGithubUsers <a name="DataGithubUsers" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users github_users}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/users github_users}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.Initializer"></a>
 
@@ -614,8 +614,8 @@ new DataGithubUsersConfig {
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.property.usernames">Usernames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users#usernames DataGithubUsers#usernames}. |
-| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users#id DataGithubUsers#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.property.usernames">Usernames</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/users#usernames DataGithubUsers#usernames}. |
+| <code><a href="#@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/users#id DataGithubUsers#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ public string[] Usernames { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users#usernames DataGithubUsers#usernames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/users#usernames DataGithubUsers#usernames}.
 
 ---
 
@@ -709,7 +709,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/users#id DataGithubUsers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/users#id DataGithubUsers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
