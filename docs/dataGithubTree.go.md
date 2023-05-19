@@ -1,6 +1,6 @@
 # `data_github_tree`
 
-Refer to the Terraform Registory for docs: [`data_github_tree`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree).
+Refer to the Terraform Registory for docs: [`data_github_tree`](https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree).
 
 # `dataGithubTree` Submodule <a name="`dataGithubTree` Submodule" id="@cdktf/provider-github.dataGithubTree"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_tree`](https://registry
 
 ### DataGithubTree <a name="DataGithubTree" id="@cdktf/provider-github.dataGithubTree.DataGithubTree"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree github_tree}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree github_tree}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.NewDataGithubTree(scope Construct, id *string, config DataGithubTreeConfig) DataGithubTree
 ```
@@ -284,7 +284,7 @@ func ResetRecursive()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.DataGithubTree_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.DataGithubTree_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ datagithubtree.DataGithubTree_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.DataGithubTree_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -606,7 +606,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 &datagithubtree.DataGithubTreeConfig {
 	Connection: interface{},
@@ -634,10 +634,10 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree#repository DataGithubTree#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.treeSha">TreeSha</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree#tree_sha DataGithubTree#tree_sha}. |
-| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree#id DataGithubTree#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree#recursive DataGithubTree#recursive}. |
+| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree#repository DataGithubTree#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.treeSha">TreeSha</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree#tree_sha DataGithubTree#tree_sha}. |
+| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree#id DataGithubTree#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.property.recursive">Recursive</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree#recursive DataGithubTree#recursive}. |
 
 ---
 
@@ -719,7 +719,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree#repository DataGithubTree#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree#repository DataGithubTree#repository}.
 
 ---
 
@@ -731,7 +731,7 @@ TreeSha *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree#tree_sha DataGithubTree#tree_sha}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree#tree_sha DataGithubTree#tree_sha}.
 
 ---
 
@@ -743,7 +743,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree#id DataGithubTree#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree#id DataGithubTree#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -758,7 +758,7 @@ Recursive interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/tree#recursive DataGithubTree#recursive}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/tree#recursive DataGithubTree#recursive}.
 
 ---
 
@@ -767,7 +767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 &datagithubtree.DataGithubTreeEntries {
 
@@ -782,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.NewDataGithubTreeEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubTreeEntriesList
 ```
@@ -914,7 +914,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.NewDataGithubTreeEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubTreeEntriesOutputReference
 ```

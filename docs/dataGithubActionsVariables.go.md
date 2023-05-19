@@ -1,6 +1,6 @@
 # `data_github_actions_variables`
 
-Refer to the Terraform Registory for docs: [`data_github_actions_variables`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables).
+Refer to the Terraform Registory for docs: [`data_github_actions_variables`](https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables).
 
 # `dataGithubActionsVariables` Submodule <a name="`dataGithubActionsVariables` Submodule" id="@cdktf/provider-github.dataGithubActionsVariables"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_actions_variables`](htt
 
 ### DataGithubActionsVariables <a name="DataGithubActionsVariables" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariables"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables github_actions_variables}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables github_actions_variables}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsvariables"
 
 datagithubactionsvariables.NewDataGithubActionsVariables(scope Construct, id *string, config DataGithubActionsVariablesConfig) DataGithubActionsVariables
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsvariables"
 
 datagithubactionsvariables.DataGithubActionsVariables_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsvariables"
 
 datagithubactionsvariables.DataGithubActionsVariables_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagithubactionsvariables.DataGithubActionsVariables_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsvariables"
 
 datagithubactionsvariables.DataGithubActionsVariables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsvariables"
 
 &datagithubactionsvariables.DataGithubActionsVariablesConfig {
 	Connection: interface{},
@@ -618,9 +618,9 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvar
 | <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#full_name DataGithubActionsVariables#full_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#id DataGithubActionsVariables#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#name DataGithubActionsVariables#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#full_name DataGithubActionsVariables#full_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#id DataGithubActionsVariables#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#name DataGithubActionsVariables#name}. |
 
 ---
 
@@ -702,7 +702,7 @@ FullName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#full_name DataGithubActionsVariables#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#full_name DataGithubActionsVariables#full_name}.
 
 ---
 
@@ -714,7 +714,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#id DataGithubActionsVariables#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#id DataGithubActionsVariables#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -729,7 +729,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/data-sources/actions_variables#name DataGithubActionsVariables#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/actions_variables#name DataGithubActionsVariables#name}.
 
 ---
 
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsvariables"
 
 &datagithubactionsvariables.DataGithubActionsVariablesVariables {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvar
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsvariables"
 
 datagithubactionsvariables.NewDataGithubActionsVariablesVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubActionsVariablesVariablesList
 ```
@@ -885,7 +885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsVariables.DataGithubActionsVariablesVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithubactionsvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsvariables"
 
 datagithubactionsvariables.NewDataGithubActionsVariablesVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubActionsVariablesVariablesOutputReference
 ```

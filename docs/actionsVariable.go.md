@@ -1,6 +1,6 @@
 # `github_actions_variable`
 
-Refer to the Terraform Registory for docs: [`github_actions_variable`](https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_variable).
+Refer to the Terraform Registory for docs: [`github_actions_variable`](https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_variable).
 
 # `actionsVariable` Submodule <a name="`actionsVariable` Submodule" id="@cdktf/provider-github.actionsVariable"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_actions_variable`](https://r
 
 ### ActionsVariable <a name="ActionsVariable" id="@cdktf/provider-github.actionsVariable.ActionsVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_variable github_actions_variable}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_variable github_actions_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsVariable.ActionsVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsvariable"
 
 actionsvariable.NewActionsVariable(scope Construct, id *string, config ActionsVariableConfig) ActionsVariable
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsVariable.ActionsVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsvariable"
 
 actionsvariable.ActionsVariable_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsVariable.ActionsVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsvariable"
 
 actionsvariable.ActionsVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ actionsvariable.ActionsVariable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsVariable.ActionsVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsvariable"
 
 actionsvariable.ActionsVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsVariable.ActionsVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsvariable"
 
 &actionsvariable.ActionsVariableConfig {
 	Connection: interface{},
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/actionsvariable"
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.repository">Repository</a></code> | <code>*string</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.value">Value</a></code> | <code>*string</code> | Value of the variable. |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.variableName">VariableName</a></code> | <code>*string</code> | Name of the variable. |
-| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_variable#id ActionsVariable#id}. |
+| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_variable#id ActionsVariable#id}. |
 
 ---
 
@@ -747,7 +747,7 @@ Repository *string
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_variable#repository ActionsVariable#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_variable#repository ActionsVariable#repository}
 
 ---
 
@@ -761,7 +761,7 @@ Value *string
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_variable#value ActionsVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_variable#value ActionsVariable#value}
 
 ---
 
@@ -775,7 +775,7 @@ VariableName *string
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_variable#variable_name ActionsVariable#variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_variable#variable_name ActionsVariable#variable_name}
 
 ---
 
@@ -787,7 +787,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.0/docs/resources/actions_variable#id ActionsVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/actions_variable#id ActionsVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
