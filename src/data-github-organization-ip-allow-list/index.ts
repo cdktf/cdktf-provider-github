@@ -20,10 +20,10 @@ export interface DataGithubOrganizationIpAllowListConfig extends cdktf.Terraform
   */
   readonly id?: string;
 }
-export interface DataGithubOrganizationIpAllowListIpAllowList {
+export interface DataGithubOrganizationIpAllowListIpAllowListStruct {
 }
 
-export function dataGithubOrganizationIpAllowListIpAllowListToTerraform(struct?: DataGithubOrganizationIpAllowListIpAllowList): any {
+export function dataGithubOrganizationIpAllowListIpAllowListStructToTerraform(struct?: DataGithubOrganizationIpAllowListIpAllowListStruct): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -32,7 +32,7 @@ export function dataGithubOrganizationIpAllowListIpAllowListToTerraform(struct?:
   }
 }
 
-export class DataGithubOrganizationIpAllowListIpAllowListOutputReference extends cdktf.ComplexObject {
+export class DataGithubOrganizationIpAllowListIpAllowListStructOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -45,13 +45,13 @@ export class DataGithubOrganizationIpAllowListIpAllowListOutputReference extends
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataGithubOrganizationIpAllowListIpAllowList | undefined {
+  public get internalValue(): DataGithubOrganizationIpAllowListIpAllowListStruct | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataGithubOrganizationIpAllowListIpAllowList | undefined) {
+  public set internalValue(value: DataGithubOrganizationIpAllowListIpAllowListStruct | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -91,7 +91,7 @@ export class DataGithubOrganizationIpAllowListIpAllowListOutputReference extends
   }
 }
 
-export class DataGithubOrganizationIpAllowListIpAllowListList extends cdktf.ComplexList {
+export class DataGithubOrganizationIpAllowListIpAllowListStructList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -105,8 +105,8 @@ export class DataGithubOrganizationIpAllowListIpAllowListList extends cdktf.Comp
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataGithubOrganizationIpAllowListIpAllowListOutputReference {
-    return new DataGithubOrganizationIpAllowListIpAllowListOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataGithubOrganizationIpAllowListIpAllowListStructOutputReference {
+    return new DataGithubOrganizationIpAllowListIpAllowListStructOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
@@ -171,7 +171,7 @@ export class DataGithubOrganizationIpAllowList extends cdktf.TerraformDataSource
   }
 
   // ip_allow_list - computed: true, optional: false, required: false
-  private _ipAllowList = new DataGithubOrganizationIpAllowListIpAllowListList(this, "ip_allow_list", false);
+  private _ipAllowList = new DataGithubOrganizationIpAllowListIpAllowListStructList(this, "ip_allow_list", false);
   public get ipAllowList() {
     return this._ipAllowList;
   }
