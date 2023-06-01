@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowList(scope Construct, id *string, config DataGithubOrganizationIpAllowListConfig) DataGithubOrganizationIpAllowList
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformD
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.ipAllowList">IpAllowList</a></code> | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList">DataGithubOrganizationIpAllowListIpAllowListList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.ipAllowList">IpAllowList</a></code> | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList">DataGithubOrganizationIpAllowListIpAllowListStructList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 
@@ -481,10 +481,10 @@ func Provider() TerraformProvider
 ##### `IpAllowList`<sup>Required</sup> <a name="IpAllowList" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.property.ipAllowList"></a>
 
 ```go
-func IpAllowList() DataGithubOrganizationIpAllowListIpAllowListList
+func IpAllowList() DataGithubOrganizationIpAllowListIpAllowListStructList
 ```
 
-- *Type:* <a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList">DataGithubOrganizationIpAllowListIpAllowListList</a>
+- *Type:* <a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList">DataGithubOrganizationIpAllowListIpAllowListStructList</a>
 
 ---
 
@@ -533,7 +533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 &datagithuborganizationipallowlist.DataGithubOrganizationIpAllowListConfig {
 	Connection: interface{},
@@ -647,14 +647,14 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-### DataGithubOrganizationIpAllowListIpAllowList <a name="DataGithubOrganizationIpAllowListIpAllowList" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowList"></a>
+### DataGithubOrganizationIpAllowListIpAllowListStruct <a name="DataGithubOrganizationIpAllowListIpAllowListStruct" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStruct"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowList.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
-&datagithuborganizationipallowlist.DataGithubOrganizationIpAllowListIpAllowList {
+&datagithuborganizationipallowlist.DataGithubOrganizationIpAllowListIpAllowListStruct {
 
 }
 ```
@@ -662,25 +662,25 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizati
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataGithubOrganizationIpAllowListIpAllowListList <a name="DataGithubOrganizationIpAllowListIpAllowListList" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList"></a>
+### DataGithubOrganizationIpAllowListIpAllowListStructList <a name="DataGithubOrganizationIpAllowListIpAllowListStructList" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
-datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowListIpAllowListList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationIpAllowListIpAllowListList
+datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowListIpAllowListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationIpAllowListIpAllowListStructList
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -688,7 +688,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -696,7 +696,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* *bool
 
@@ -708,20 +708,20 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.get">Get</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.get">Get</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -729,13 +729,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.toString"></a>
 
 ```go
 func ToString() *string
@@ -745,13 +745,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `Get` <a name="Get" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.get"></a>
+##### `Get` <a name="Get" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.get"></a>
 
 ```go
-func Get(index *f64) DataGithubOrganizationIpAllowListIpAllowListOutputReference
+func Get(index *f64) DataGithubOrganizationIpAllowListIpAllowListStructOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.get.parameter.index"></a>
 
 - *Type:* *f64
 
@@ -764,12 +764,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -783,7 +783,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListList.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -794,26 +794,26 @@ func Fqn() *string
 ---
 
 
-### DataGithubOrganizationIpAllowListIpAllowListOutputReference <a name="DataGithubOrganizationIpAllowListIpAllowListOutputReference" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference"></a>
+### DataGithubOrganizationIpAllowListIpAllowListStructOutputReference <a name="DataGithubOrganizationIpAllowListIpAllowListStructOutputReference" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v8/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
-datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowListIpAllowListOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubOrganizationIpAllowListIpAllowListOutputReference
+datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowListIpAllowListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubOrganizationIpAllowListIpAllowListStructOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -821,7 +821,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -829,7 +829,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* *f64
 
@@ -837,7 +837,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* *bool
 
@@ -849,149 +849,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -999,13 +999,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1020,19 +1020,19 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.allowListValue">AllowListValue</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.isActive">IsActive</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowList">DataGithubOrganizationIpAllowListIpAllowList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.allowListValue">AllowListValue</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.isActive">IsActive</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.updatedAt">UpdatedAt</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStruct">DataGithubOrganizationIpAllowListIpAllowListStruct</a></code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1046,7 +1046,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1056,7 +1056,7 @@ func Fqn() *string
 
 ---
 
-##### `AllowListValue`<sup>Required</sup> <a name="AllowListValue" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.allowListValue"></a>
+##### `AllowListValue`<sup>Required</sup> <a name="AllowListValue" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.allowListValue"></a>
 
 ```go
 func AllowListValue() *string
@@ -1066,7 +1066,7 @@ func AllowListValue() *string
 
 ---
 
-##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.createdAt"></a>
+##### `CreatedAt`<sup>Required</sup> <a name="CreatedAt" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.createdAt"></a>
 
 ```go
 func CreatedAt() *string
@@ -1076,7 +1076,7 @@ func CreatedAt() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.id"></a>
 
 ```go
 func Id() *string
@@ -1086,7 +1086,7 @@ func Id() *string
 
 ---
 
-##### `IsActive`<sup>Required</sup> <a name="IsActive" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.isActive"></a>
+##### `IsActive`<sup>Required</sup> <a name="IsActive" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.isActive"></a>
 
 ```go
 func IsActive() IResolvable
@@ -1096,7 +1096,7 @@ func IsActive() IResolvable
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.name"></a>
 
 ```go
 func Name() *string
@@ -1106,7 +1106,7 @@ func Name() *string
 
 ---
 
-##### `UpdatedAt`<sup>Required</sup> <a name="UpdatedAt" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.updatedAt"></a>
+##### `UpdatedAt`<sup>Required</sup> <a name="UpdatedAt" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.updatedAt"></a>
 
 ```go
 func UpdatedAt() *string
@@ -1116,13 +1116,13 @@ func UpdatedAt() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.property.internalValue"></a>
 
 ```go
-func InternalValue() DataGithubOrganizationIpAllowListIpAllowList
+func InternalValue() DataGithubOrganizationIpAllowListIpAllowListStruct
 ```
 
-- *Type:* <a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowList">DataGithubOrganizationIpAllowListIpAllowList</a>
+- *Type:* <a href="#@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStruct">DataGithubOrganizationIpAllowListIpAllowListStruct</a>
 
 ---
 
