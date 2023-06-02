@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/dependabot_organization_secret_repositories
+// https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/dependabot_organization_secret_repositories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DependabotOrganizationSecretRepositoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface DependabotOrganizationSecretRepositoriesConfig extends cdktf.Te
   /**
   * Name of the existing secret.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
   */
   readonly secretName: string;
   /**
   * An array of repository ids that can access the organization secret.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
   */
   readonly selectedRepositoryIds: number[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}
 */
 export class DependabotOrganizationSecretRepositories extends cdktf.TerraformResource {
 
@@ -48,7 +48,7 @@ export class DependabotOrganizationSecretRepositories extends cdktf.TerraformRes
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +59,7 @@ export class DependabotOrganizationSecretRepositories extends cdktf.TerraformRes
       terraformResourceType: 'github_dependabot_organization_secret_repositories',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.25.1',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `github_team`
 
-Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team).
+Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team).
 
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-github.team"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team`](https://registry.terr
 
 ### Team <a name="Team" id="@cdktf/provider-github.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team github_team}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team github_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.team.Team.Initializer"></a>
 
@@ -49,7 +49,7 @@ team.Team(
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the team. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.createDefaultMaintainer">create_default_maintainer</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Adds a default maintainer to the team. Adds the creating user to the team when 'true'. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.description">description</a></code> | <code>str</code> | A description of the team. |
-| <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.ldapDn">ldap_dn</a></code> | <code>str</code> | The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.parentTeamId">parent_team_id</a></code> | <code>str</code> | The ID or slug of the parent team, if this is a nested team. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.privacy">privacy</a></code> | <code>str</code> | The level of privacy for the team. Must be one of 'secret' or 'closed'. |
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#name Team#name}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Adds a default maintainer to the team. Adds the creating user to the team when 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 A description of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -163,7 +163,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#ldap_dn Team#ldap_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#ldap_dn Team#ldap_dn}
 
 ---
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The ID or slug of the parent team, if this is a nested team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#parent_team_id Team#parent_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#parent_team_id Team#parent_team_id}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The level of privacy for the team. Must be one of 'secret' or 'closed'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#privacy Team#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#privacy Team#privacy}
 
 ---
 
@@ -957,7 +957,7 @@ team.TeamConfig(
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.name">name</a></code> | <code>str</code> | The name of the team. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.createDefaultMaintainer">create_default_maintainer</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Adds a default maintainer to the team. Adds the creating user to the team when 'true'. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.description">description</a></code> | <code>str</code> | A description of the team. |
-| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.ldapDn">ldap_dn</a></code> | <code>str</code> | The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.parentTeamId">parent_team_id</a></code> | <code>str</code> | The ID or slug of the parent team, if this is a nested team. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.privacy">privacy</a></code> | <code>str</code> | The level of privacy for the team. Must be one of 'secret' or 'closed'. |
@@ -1044,7 +1044,7 @@ name: str
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#name Team#name}
 
 ---
 
@@ -1058,7 +1058,7 @@ create_default_maintainer: typing.Union[bool, IResolvable]
 
 Adds a default maintainer to the team. Adds the creating user to the team when 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
 
 ---
 
@@ -1072,7 +1072,7 @@ description: str
 
 A description of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -1084,7 +1084,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1101,7 +1101,7 @@ ldap_dn: str
 
 The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#ldap_dn Team#ldap_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#ldap_dn Team#ldap_dn}
 
 ---
 
@@ -1115,7 +1115,7 @@ parent_team_id: str
 
 The ID or slug of the parent team, if this is a nested team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#parent_team_id Team#parent_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#parent_team_id Team#parent_team_id}
 
 ---
 
@@ -1129,7 +1129,7 @@ privacy: str
 
 The level of privacy for the team. Must be one of 'secret' or 'closed'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/team#privacy Team#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/team#privacy Team#privacy}
 
 ---
 
