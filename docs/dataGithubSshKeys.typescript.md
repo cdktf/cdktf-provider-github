@@ -1,6 +1,6 @@
 # `data_github_ssh_keys`
 
-Refer to the Terraform Registory for docs: [`data_github_ssh_keys`](https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/ssh_keys).
+Refer to the Terraform Registory for docs: [`data_github_ssh_keys`](https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/ssh_keys).
 
 # `dataGithubSshKeys` Submodule <a name="`dataGithubSshKeys` Submodule" id="@cdktf/provider-github.dataGithubSshKeys"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_ssh_keys`](https://regi
 
 ### DataGithubSshKeys <a name="DataGithubSshKeys" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/ssh_keys github_ssh_keys}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/ssh_keys github_ssh_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.Initializer"></a>
 
@@ -549,7 +549,7 @@ const dataGithubSshKeysConfig: dataGithubSshKeys.DataGithubSshKeysConfig = { ...
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeysConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeysConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeysConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeysConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/ssh_keys#id DataGithubSshKeys#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeysConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/ssh_keys#id DataGithubSshKeys#id}. |
 
 ---
 
@@ -631,7 +631,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/ssh_keys#id DataGithubSshKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/ssh_keys#id DataGithubSshKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

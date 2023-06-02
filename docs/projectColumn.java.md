@@ -1,6 +1,6 @@
 # `github_project_column`
 
-Refer to the Terraform Registory for docs: [`github_project_column`](https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column).
+Refer to the Terraform Registory for docs: [`github_project_column`](https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column).
 
 # `projectColumn` Submodule <a name="`projectColumn` Submodule" id="@cdktf/provider-github.projectColumn"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_project_column`](https://reg
 
 ### ProjectColumn <a name="ProjectColumn" id="@cdktf/provider-github.projectColumn.ProjectColumn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column github_project_column}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column github_project_column}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.projectColumn.ProjectColumn.Initializer"></a>
 
@@ -46,7 +46,7 @@ ProjectColumn.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the column. |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.Initializer.parameter.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of an existing project that the column will be created in. |
-| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column#id ProjectColumn#id}. |
+| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumn.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column#id ProjectColumn#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column#name ProjectColumn#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column#name ProjectColumn#name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The ID of an existing project that the column will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column#project_id ProjectColumn#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column#project_id ProjectColumn#project_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column#id ProjectColumn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column#id ProjectColumn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -734,7 +734,7 @@ ProjectColumnConfig.builder()
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the column. |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.projectId">projectId</a></code> | <code>java.lang.String</code> | The ID of an existing project that the column will be created in. |
-| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column#id ProjectColumn#id}. |
+| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column#id ProjectColumn#id}. |
 
 ---
 
@@ -818,7 +818,7 @@ public java.lang.String getName();
 
 The name of the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column#name ProjectColumn#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column#name ProjectColumn#name}
 
 ---
 
@@ -832,7 +832,7 @@ public java.lang.String getProjectId();
 
 The ID of an existing project that the column will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column#project_id ProjectColumn#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column#project_id ProjectColumn#project_id}
 
 ---
 
@@ -844,7 +844,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/resources/project_column#id ProjectColumn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/project_column#id ProjectColumn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

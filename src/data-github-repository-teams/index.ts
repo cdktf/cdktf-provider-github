@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/repository_teams
+// https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_teams
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +8,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryTeamsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/repository_teams#full_name DataGithubRepositoryTeams#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_teams#full_name DataGithubRepositoryTeams#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/repository_teams#id DataGithubRepositoryTeams#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_teams#id DataGithubRepositoryTeams#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/repository_teams#name DataGithubRepositoryTeams#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_teams#name DataGithubRepositoryTeams#name}
   */
   readonly name?: string;
 }
@@ -104,7 +99,7 @@ export class DataGithubRepositoryTeamsTeamsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/repository_teams github_repository_teams}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_teams github_repository_teams}
 */
 export class DataGithubRepositoryTeams extends cdktf.TerraformDataSource {
 
@@ -118,7 +113,7 @@ export class DataGithubRepositoryTeams extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.25.1/docs/data-sources/repository_teams github_repository_teams} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/data-sources/repository_teams github_repository_teams} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -129,7 +124,7 @@ export class DataGithubRepositoryTeams extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository_teams',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.25.1',
+        providerVersion: '5.26.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
