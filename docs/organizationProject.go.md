@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationProject.OrganizationProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/organizationproject"
 
 organizationproject.NewOrganizationProject(scope Construct, id *string, config OrganizationProjectConfig) OrganizationProject
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationProject.OrganizationProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/organizationproject"
 
 organizationproject.OrganizationProject_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationProject.OrganizationProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/organizationproject"
 
 organizationproject.OrganizationProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ organizationproject.OrganizationProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationProject.OrganizationProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/organizationproject"
 
 organizationproject.OrganizationProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationProject.OrganizationProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/v8/organizationproject"
 
 &organizationproject.OrganizationProjectConfig {
 	Connection: interface{},
