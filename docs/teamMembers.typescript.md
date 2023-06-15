@@ -1178,7 +1178,7 @@ public resetRole(): void
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.usernameInput">usernameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.role">role</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.username">username</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a></code> | *No description.* |
 
 ---
 
@@ -1249,10 +1249,10 @@ public readonly username: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: TeamMembersMembers | IResolvable;
+public readonly internalValue: IResolvable | TeamMembersMembers;
 ```
 
-- *Type:* <a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a>
 
 ---
 

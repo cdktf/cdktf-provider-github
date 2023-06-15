@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorycollaborator"
 
 repositorycollaborator.NewRepositoryCollaborator(scope Construct, id *string, config RepositoryCollaboratorConfig) RepositoryCollaborator
 ```
@@ -291,7 +291,7 @@ func ResetPermissionDiffSuppression()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorycollaborator"
 
 repositorycollaborator.RepositoryCollaborator_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorycollaborator"
 
 repositorycollaborator.RepositoryCollaborator_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ repositorycollaborator.RepositoryCollaborator_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorycollaborator"
 
 repositorycollaborator.RepositoryCollaborator_IsTerraformResource(x interface{}) *bool
 ```
@@ -657,7 +657,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorycollaborator"
 
 &repositorycollaborator.RepositoryCollaboratorConfig {
 	Connection: interface{},

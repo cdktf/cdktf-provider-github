@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubApp.DataGithubApp.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubapp"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubapp"
 
 datagithubapp.NewDataGithubApp(scope Construct, id *string, config DataGithubAppConfig) DataGithubApp
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubApp.DataGithubApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubapp"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubapp"
 
 datagithubapp.DataGithubApp_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubApp.DataGithubApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubapp"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubapp"
 
 datagithubapp.DataGithubApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithubapp.DataGithubApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubApp.DataGithubApp.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubapp"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubapp"
 
 datagithubapp.DataGithubApp_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -577,7 +577,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubApp.DataGithubAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubapp"
+import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubapp"
 
 &datagithubapp.DataGithubAppConfig {
 	Connection: interface{},
