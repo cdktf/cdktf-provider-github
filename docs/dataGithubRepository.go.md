@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepository(scope Construct, id *string, config DataGithubRepositoryConfig) DataGithubRepository
 ```
@@ -305,7 +305,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.DataGithubRepository_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.DataGithubRepository_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datagithubrepository.DataGithubRepository_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepository.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.DataGithubRepository_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -957,7 +957,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 &datagithubrepository.DataGithubRepositoryConfig {
 	Connection: interface{},
@@ -1132,7 +1132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 &datagithubrepository.DataGithubRepositoryPages {
 
@@ -1145,7 +1145,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 &datagithubrepository.DataGithubRepositoryPagesSource {
 
@@ -1158,7 +1158,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 &datagithubrepository.DataGithubRepositoryTemplate {
 
@@ -1173,7 +1173,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryPagesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryPagesList
 ```
@@ -1305,7 +1305,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryPagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryPagesOutputReference
 ```
@@ -1638,7 +1638,7 @@ func InternalValue() DataGithubRepositoryPages
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesSourceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryPagesSourceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryPagesSourceList
 ```
@@ -1770,7 +1770,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryPagesSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryPagesSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryPagesSourceOutputReference
 ```
@@ -2059,7 +2059,7 @@ func InternalValue() DataGithubRepositoryPagesSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryTemplateList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryTemplateList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryTemplateList
 ```
@@ -2191,7 +2191,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepository.DataGithubRepositoryTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepository"
+import "github.com/cdktf/cdktf-provider-github-go/github/v9/datagithubrepository"
 
 datagithubrepository.NewDataGithubRepositoryTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryTemplateOutputReference
 ```
