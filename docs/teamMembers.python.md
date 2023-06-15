@@ -1349,7 +1349,7 @@ def reset_role() -> None
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.role">role</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.username">username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a>]</code> | *No description.* |
 
 ---
 
@@ -1420,10 +1420,10 @@ username: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[TeamMembersMembers, IResolvable]
+internal_value: typing.Union[IResolvable, TeamMembersMembers]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a>]
 
 ---
 

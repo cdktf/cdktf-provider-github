@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issue.Issue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/issue"
 
 issue.NewIssue(scope Construct, id *string, config IssueConfig) Issue
 ```
@@ -305,7 +305,7 @@ func ResetMilestoneNumber()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.issue.Issue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/issue"
 
 issue.Issue_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.issue.Issue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/issue"
 
 issue.Issue_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ issue.Issue_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.issue.Issue.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/issue"
 
 issue.Issue_IsTerraformResource(x interface{}) *bool
 ```
@@ -737,7 +737,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.issue.IssueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v9/issue"
+import "github.com/cdktf/cdktf-provider-github-go/github/issue"
 
 &issue.IssueConfig {
 	Connection: interface{},
