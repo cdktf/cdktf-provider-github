@@ -1,6 +1,6 @@
 # `github_actions_variable`
 
-Refer to the Terraform Registory for docs: [`github_actions_variable`](https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_variable).
+Refer to the Terraform Registory for docs: [`github_actions_variable`](https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_variable).
 
 # `actionsVariable` Submodule <a name="`actionsVariable` Submodule" id="@cdktf/provider-github.actionsVariable"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_actions_variable`](https://r
 
 ### ActionsVariable <a name="ActionsVariable" id="@cdktf/provider-github.actionsVariable.ActionsVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_variable github_actions_variable}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_variable github_actions_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsVariable.ActionsVariable.Initializer"></a>
 
@@ -663,7 +663,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/actionsvariable"
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.repository">Repository</a></code> | <code>*string</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.value">Value</a></code> | <code>*string</code> | Value of the variable. |
 | <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.variableName">VariableName</a></code> | <code>*string</code> | Name of the variable. |
-| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_variable#id ActionsVariable#id}. |
+| <code><a href="#@cdktf/provider-github.actionsVariable.ActionsVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_variable#id ActionsVariable#id}. |
 
 ---
 
@@ -747,7 +747,7 @@ Repository *string
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_variable#repository ActionsVariable#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_variable#repository ActionsVariable#repository}
 
 ---
 
@@ -761,7 +761,7 @@ Value *string
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_variable#value ActionsVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_variable#value ActionsVariable#value}
 
 ---
 
@@ -775,7 +775,7 @@ VariableName *string
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_variable#variable_name ActionsVariable#variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_variable#variable_name ActionsVariable#variable_name}
 
 ---
 
@@ -787,7 +787,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/actions_variable#id ActionsVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/actions_variable#id ActionsVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
