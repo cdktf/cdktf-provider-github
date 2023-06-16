@@ -1,6 +1,6 @@
 # `github_branch_protection_v3`
 
-Refer to the Terraform Registory for docs: [`github_branch_protection_v3`](https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3).
+Refer to the Terraform Registory for docs: [`github_branch_protection_v3`](https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3).
 
 # `branchProtectionV3` Submodule <a name="`branchProtectionV3` Submodule" id="@cdktf/provider-github.branchProtectionV3"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_branch_protection_v3`](https
 
 ### BranchProtectionV3 <a name="BranchProtectionV3" id="@cdktf/provider-github.branchProtectionV3.BranchProtectionV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3 github_branch_protection_v3}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3 github_branch_protection_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtectionV3.BranchProtectionV3.Initializer"></a>
 
@@ -831,7 +831,7 @@ const branchProtectionV3Config: branchProtectionV3.BranchProtectionV3Config = { 
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3Config.property.branch">branch</a></code> | <code>string</code> | The Git branch to protect. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3Config.property.repository">repository</a></code> | <code>string</code> | The GitHub repository name. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3Config.property.enforceAdmins">enforceAdmins</a></code> | <code>boolean \| cdktf.IResolvable</code> | Setting this to 'true' enforces status checks for repository administrators. |
-| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#id BranchProtectionV3#id}. |
+| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#id BranchProtectionV3#id}. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3Config.property.requireConversationResolution">requireConversationResolution</a></code> | <code>boolean \| cdktf.IResolvable</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3Config.property.requiredPullRequestReviews">requiredPullRequestReviews</a></code> | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews">BranchProtectionV3RequiredPullRequestReviews</a></code> | required_pull_request_reviews block. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3Config.property.requiredStatusChecks">requiredStatusChecks</a></code> | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecks">BranchProtectionV3RequiredStatusChecks</a></code> | required_status_checks block. |
@@ -920,7 +920,7 @@ public readonly branch: string;
 
 The Git branch to protect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#branch BranchProtectionV3#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#branch BranchProtectionV3#branch}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly repository: string;
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#repository BranchProtectionV3#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#repository BranchProtectionV3#repository}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly enforceAdmins: boolean | IResolvable;
 
 Setting this to 'true' enforces status checks for repository administrators.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#enforce_admins BranchProtectionV3#enforce_admins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#enforce_admins BranchProtectionV3#enforce_admins}
 
 ---
 
@@ -960,7 +960,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#id BranchProtectionV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#id BranchProtectionV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -977,7 +977,7 @@ public readonly requireConversationResolution: boolean | IResolvable;
 
 Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#require_conversation_resolution BranchProtectionV3#require_conversation_resolution}
 
 ---
 
@@ -991,7 +991,7 @@ public readonly requiredPullRequestReviews: BranchProtectionV3RequiredPullReques
 
 required_pull_request_reviews block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#required_pull_request_reviews BranchProtectionV3#required_pull_request_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#required_pull_request_reviews BranchProtectionV3#required_pull_request_reviews}
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly requiredStatusChecks: BranchProtectionV3RequiredStatusChecks;
 
 required_status_checks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#required_status_checks BranchProtectionV3#required_status_checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#required_status_checks BranchProtectionV3#required_status_checks}
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly requireSignedCommits: boolean | IResolvable;
 
 Setting this to 'true' requires all commits to be signed with GPG.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#require_signed_commits BranchProtectionV3#require_signed_commits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#require_signed_commits BranchProtectionV3#require_signed_commits}
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly restrictions: BranchProtectionV3Restrictions;
 
 restrictions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#restrictions BranchProtectionV3#restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#restrictions BranchProtectionV3#restrictions}
 
 ---
 
@@ -1055,7 +1055,7 @@ const branchProtectionV3RequiredPullRequestReviews: branchProtectionV3.BranchPro
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews.property.dismissalTeams">dismissalTeams</a></code> | <code>string[]</code> | The list of team slugs with dismissal access. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews.property.dismissalUsers">dismissalUsers</a></code> | <code>string[]</code> | The list of user logins with dismissal access. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews.property.dismissStaleReviews">dismissStaleReviews</a></code> | <code>boolean \| cdktf.IResolvable</code> | Dismiss approved reviews automatically when a new commit is pushed. |
-| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews.property.includeAdmins">includeAdmins</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#include_admins BranchProtectionV3#include_admins}. |
+| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews.property.includeAdmins">includeAdmins</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#include_admins BranchProtectionV3#include_admins}. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews.property.requireCodeOwnerReviews">requireCodeOwnerReviews</a></code> | <code>boolean \| cdktf.IResolvable</code> | Require an approved review in pull requests including files with a designated code owner. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviews.property.requiredApprovingReviewCount">requiredApprovingReviewCount</a></code> | <code>number</code> | Require 'x' number of approvals to satisfy branch protection requirements. |
 
@@ -1071,7 +1071,7 @@ public readonly bypassPullRequestAllowances: BranchProtectionV3RequiredPullReque
 
 bypass_pull_request_allowances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#bypass_pull_request_allowances BranchProtectionV3#bypass_pull_request_allowances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#bypass_pull_request_allowances BranchProtectionV3#bypass_pull_request_allowances}
 
 ---
 
@@ -1087,7 +1087,7 @@ The list of team slugs with dismissal access.
 
 Always use slug of the team, not its name. Each team already has to have access to the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#dismissal_teams BranchProtectionV3#dismissal_teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#dismissal_teams BranchProtectionV3#dismissal_teams}
 
 ---
 
@@ -1101,7 +1101,7 @@ public readonly dismissalUsers: string[];
 
 The list of user logins with dismissal access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#dismissal_users BranchProtectionV3#dismissal_users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#dismissal_users BranchProtectionV3#dismissal_users}
 
 ---
 
@@ -1115,7 +1115,7 @@ public readonly dismissStaleReviews: boolean | IResolvable;
 
 Dismiss approved reviews automatically when a new commit is pushed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#dismiss_stale_reviews BranchProtectionV3#dismiss_stale_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#dismiss_stale_reviews BranchProtectionV3#dismiss_stale_reviews}
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly includeAdmins: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#include_admins BranchProtectionV3#include_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#include_admins BranchProtectionV3#include_admins}.
 
 ---
 
@@ -1141,7 +1141,7 @@ public readonly requireCodeOwnerReviews: boolean | IResolvable;
 
 Require an approved review in pull requests including files with a designated code owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#require_code_owner_reviews BranchProtectionV3#require_code_owner_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#require_code_owner_reviews BranchProtectionV3#require_code_owner_reviews}
 
 ---
 
@@ -1157,7 +1157,7 @@ Require 'x' number of approvals to satisfy branch protection requirements.
 
 If this is specified it must be a number between 0-6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#required_approving_review_count BranchProtectionV3#required_approving_review_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#required_approving_review_count BranchProtectionV3#required_approving_review_count}
 
 ---
 
@@ -1175,9 +1175,9 @@ const branchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances: b
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances.property.apps">apps</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#apps BranchProtectionV3#apps}. |
-| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#teams BranchProtectionV3#teams}. |
-| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances.property.users">users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#users BranchProtectionV3#users}. |
+| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances.property.apps">apps</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#apps BranchProtectionV3#apps}. |
+| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances.property.teams">teams</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#teams BranchProtectionV3#teams}. |
+| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances.property.users">users</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#users BranchProtectionV3#users}. |
 
 ---
 
@@ -1189,7 +1189,7 @@ public readonly apps: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#apps BranchProtectionV3#apps}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#apps BranchProtectionV3#apps}.
 
 ---
 
@@ -1201,7 +1201,7 @@ public readonly teams: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#teams BranchProtectionV3#teams}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#teams BranchProtectionV3#teams}.
 
 ---
 
@@ -1213,7 +1213,7 @@ public readonly users: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#users BranchProtectionV3#users}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#users BranchProtectionV3#users}.
 
 ---
 
@@ -1232,8 +1232,8 @@ const branchProtectionV3RequiredStatusChecks: branchProtectionV3.BranchProtectio
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecks.property.checks">checks</a></code> | <code>string[]</code> | The list of status checks to require in order to merge into this branch. |
-| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecks.property.contexts">contexts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#contexts BranchProtectionV3#contexts}. |
-| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecks.property.includeAdmins">includeAdmins</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#include_admins BranchProtectionV3#include_admins}. |
+| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecks.property.contexts">contexts</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#contexts BranchProtectionV3#contexts}. |
+| <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecks.property.includeAdmins">includeAdmins</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#include_admins BranchProtectionV3#include_admins}. |
 | <code><a href="#@cdktf/provider-github.branchProtectionV3.BranchProtectionV3RequiredStatusChecks.property.strict">strict</a></code> | <code>boolean \| cdktf.IResolvable</code> | Require branches to be up to date before merging. |
 
 ---
@@ -1250,7 +1250,7 @@ The list of status checks to require in order to merge into this branch.
 
 No status checks are required by default. Checks should be strings containing the 'context' and 'app_id' like so 'context:app_id'
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#checks BranchProtectionV3#checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#checks BranchProtectionV3#checks}
 
 ---
 
@@ -1262,7 +1262,7 @@ public readonly contexts: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#contexts BranchProtectionV3#contexts}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#contexts BranchProtectionV3#contexts}.
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly includeAdmins: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#include_admins BranchProtectionV3#include_admins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#include_admins BranchProtectionV3#include_admins}.
 
 ---
 
@@ -1288,7 +1288,7 @@ public readonly strict: boolean | IResolvable;
 
 Require branches to be up to date before merging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#strict BranchProtectionV3#strict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#strict BranchProtectionV3#strict}
 
 ---
 
@@ -1322,7 +1322,7 @@ public readonly apps: string[];
 
 The list of app slugs with push access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#apps BranchProtectionV3#apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#apps BranchProtectionV3#apps}
 
 ---
 
@@ -1338,7 +1338,7 @@ The list of team slugs with push access.
 
 Always use slug of the team, not its name. Each team already has to have access to the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#teams BranchProtectionV3#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#teams BranchProtectionV3#teams}
 
 ---
 
@@ -1352,7 +1352,7 @@ public readonly users: string[];
 
 The list of user logins with push access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/branch_protection_v3#users BranchProtectionV3#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/branch_protection_v3#users BranchProtectionV3#users}
 
 ---
 

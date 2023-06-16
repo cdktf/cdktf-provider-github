@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment
+// https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface RepositoryEnvironmentConfig extends cdktf.TerraformMetaArgument
   /**
   * The name of the environment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#environment RepositoryEnvironment#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#environment RepositoryEnvironment#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#id RepositoryEnvironment#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#id RepositoryEnvironment#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface RepositoryEnvironmentConfig extends cdktf.TerraformMetaArgument
   /**
   * The repository of the environment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#repository RepositoryEnvironment#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#repository RepositoryEnvironment#repository}
   */
   readonly repository: string;
   /**
   * Amount of time to delay a job after the job is initially triggered.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
   */
   readonly waitTimer?: number;
   /**
   * deployment_branch_policy block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
   */
   readonly deploymentBranchPolicy?: RepositoryEnvironmentDeploymentBranchPolicy;
   /**
   * reviewers block
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#reviewers RepositoryEnvironment#reviewers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#reviewers RepositoryEnvironment#reviewers}
   */
   readonly reviewers?: RepositoryEnvironmentReviewers[] | cdktf.IResolvable;
 }
@@ -54,13 +49,13 @@ export interface RepositoryEnvironmentDeploymentBranchPolicy {
   /**
   * Whether only branches that match the specified name patterns can deploy to this environment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
   */
   readonly customBranchPolicies: boolean | cdktf.IResolvable;
   /**
   * Whether only branches with branch protection rules can deploy to this environment.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
   */
   readonly protectedBranches: boolean | cdktf.IResolvable;
 }
@@ -144,13 +139,13 @@ export interface RepositoryEnvironmentReviewers {
   /**
   * Up to 6 IDs for teams who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#teams RepositoryEnvironment#teams}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#teams RepositoryEnvironment#teams}
   */
   readonly teams?: number[];
   /**
   * Up to 6 IDs for users who may review jobs that reference the environment. Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment#users RepositoryEnvironment#users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment#users RepositoryEnvironment#users}
   */
   readonly users?: number[];
 }
@@ -270,7 +265,7 @@ export class RepositoryEnvironmentReviewersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment github_repository_environment}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment github_repository_environment}
 */
 export class RepositoryEnvironment extends cdktf.TerraformResource {
 
@@ -284,7 +279,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.26.0/docs/resources/repository_environment github_repository_environment} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/repository_environment github_repository_environment} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -295,7 +290,7 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_environment',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.26.0',
+        providerVersion: '5.27.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
