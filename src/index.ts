@@ -73,6 +73,7 @@ export * as dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate fro
 export * as dataGithubActionsSecrets from './data-github-actions-secrets';
 export * as dataGithubActionsVariables from './data-github-actions-variables';
 export * as dataGithubApp from './data-github-app';
+export * as dataGithubAppToken from './data-github-app-token';
 export * as dataGithubBranch from './data-github-branch';
 export * as dataGithubBranchProtectionRules from './data-github-branch-protection-rules';
 export * as dataGithubCollaborators from './data-github-collaborators';

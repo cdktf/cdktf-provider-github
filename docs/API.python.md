@@ -33,6 +33,7 @@ The following submodules are available:
 - [dataGithubActionsSecrets](./dataGithubActionsSecrets.python.md)
 - [dataGithubActionsVariables](./dataGithubActionsVariables.python.md)
 - [dataGithubApp](./dataGithubApp.python.md)
+- [dataGithubAppToken](./dataGithubAppToken.python.md)
 - [dataGithubBranch](./dataGithubBranch.python.md)
 - [dataGithubBranchProtectionRules](./dataGithubBranchProtectionRules.python.md)
 - [dataGithubCollaborators](./dataGithubCollaborators.python.md)

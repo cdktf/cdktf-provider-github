@@ -33,6 +33,7 @@ The following submodules are available:
 - [dataGithubActionsSecrets](./dataGithubActionsSecrets.java.md)
 - [dataGithubActionsVariables](./dataGithubActionsVariables.java.md)
 - [dataGithubApp](./dataGithubApp.java.md)
+- [dataGithubAppToken](./dataGithubAppToken.java.md)
 - [dataGithubBranch](./dataGithubBranch.java.md)
 - [dataGithubBranchProtectionRules](./dataGithubBranchProtectionRules.java.md)
 - [dataGithubCollaborators](./dataGithubCollaborators.java.md)

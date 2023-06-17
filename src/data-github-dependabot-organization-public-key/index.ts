@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_organization_public_key
+// https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_organization_public_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubDependabotOrganizationPublicKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_organization_public_key#id DataGithubDependabotOrganizationPublicKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGithubDependabotOrganizationPublicKeyConfig extends cdktf.T
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_organization_public_key github_dependabot_organization_public_key}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_organization_public_key github_dependabot_organization_public_key}
 */
 export class DataGithubDependabotOrganizationPublicKey extends cdktf.TerraformDataSource {
 
@@ -36,7 +36,7 @@ export class DataGithubDependabotOrganizationPublicKey extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_organization_public_key github_dependabot_organization_public_key} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_organization_public_key github_dependabot_organization_public_key} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -47,7 +47,7 @@ export class DataGithubDependabotOrganizationPublicKey extends cdktf.TerraformDa
       terraformResourceType: 'github_dependabot_organization_public_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.27.0',
+        providerVersion: '5.28.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
