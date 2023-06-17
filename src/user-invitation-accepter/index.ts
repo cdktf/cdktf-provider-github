@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter
+// https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_invitation_accepter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArgumen
   /**
   * Allow the ID to be unset. This will result in the resource being skipped when the ID is not set instead of returning an error.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
   */
   readonly allowEmptyId?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface UserInvitationAccepterConfig extends cdktf.TerraformMetaArgumen
   /**
   * ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
   */
   readonly invitationId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter github_user_invitation_accepter}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_invitation_accepter github_user_invitation_accepter}
 */
 export class UserInvitationAccepter extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_invitation_accepter github_user_invitation_accepter} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
       terraformResourceType: 'github_user_invitation_accepter',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.27.0',
+        providerVersion: '5.28.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

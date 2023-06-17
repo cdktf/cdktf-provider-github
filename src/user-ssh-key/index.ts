@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key
+// https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface UserSshKeyConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key#id UserSshKey#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key#id UserSshKey#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface UserSshKeyConfig extends cdktf.TerraformMetaArguments {
   /**
   * The public SSH key to add to your GitHub account.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key#key UserSshKey#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key#key UserSshKey#key}
   */
   readonly key: string;
   /**
   * A descriptive name for the new key.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key#title UserSshKey#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key#title UserSshKey#title}
   */
   readonly title: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key github_user_ssh_key}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key github_user_ssh_key}
 */
 export class UserSshKey extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class UserSshKey extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/resources/user_ssh_key github_user_ssh_key} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/user_ssh_key github_user_ssh_key} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class UserSshKey extends cdktf.TerraformResource {
       terraformResourceType: 'github_user_ssh_key',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.27.0',
+        providerVersion: '5.28.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

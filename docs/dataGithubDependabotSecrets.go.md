@@ -1,6 +1,6 @@
 # `data_github_dependabot_secrets`
 
-Refer to the Terraform Registory for docs: [`data_github_dependabot_secrets`](https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_secrets).
+Refer to the Terraform Registory for docs: [`data_github_dependabot_secrets`](https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_secrets).
 
 # `dataGithubDependabotSecrets` Submodule <a name="`dataGithubDependabotSecrets` Submodule" id="@cdktf/provider-github.dataGithubDependabotSecrets"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_dependabot_secrets`](ht
 
 ### DataGithubDependabotSecrets <a name="DataGithubDependabotSecrets" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_secrets github_dependabot_secrets}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_secrets github_dependabot_secrets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotsecrets"
 
 datagithubdependabotsecrets.NewDataGithubDependabotSecrets(scope Construct, id *string, config DataGithubDependabotSecretsConfig) DataGithubDependabotSecrets
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotsecrets"
 
 datagithubdependabotsecrets.DataGithubDependabotSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotsecrets"
 
 datagithubdependabotsecrets.DataGithubDependabotSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagithubdependabotsecrets.DataGithubDependabotSecrets_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotsecrets"
 
 datagithubdependabotsecrets.DataGithubDependabotSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotsecrets"
 
 &datagithubdependabotsecrets.DataGithubDependabotSecretsConfig {
 	Connection: interface{},
@@ -618,9 +618,9 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabo
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.fullName">FullName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}. |
 
 ---
 
@@ -702,7 +702,7 @@ FullName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}.
 
 ---
 
@@ -714,7 +714,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -729,7 +729,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.27.0/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}.
 
 ---
 
@@ -738,7 +738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotsecrets"
 
 &datagithubdependabotsecrets.DataGithubDependabotSecretsSecrets {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabo
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotsecrets"
 
 datagithubdependabotsecrets.NewDataGithubDependabotSecretsSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubDependabotSecretsSecretsList
 ```
@@ -885,7 +885,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubdependabotsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotsecrets"
 
 datagithubdependabotsecrets.NewDataGithubDependabotSecretsSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubDependabotSecretsSecretsOutputReference
 ```

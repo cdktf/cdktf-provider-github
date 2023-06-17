@@ -33,6 +33,7 @@ The following submodules are available:
 - [dataGithubActionsSecrets](./dataGithubActionsSecrets.csharp.md)
 - [dataGithubActionsVariables](./dataGithubActionsVariables.csharp.md)
 - [dataGithubApp](./dataGithubApp.csharp.md)
+- [dataGithubAppToken](./dataGithubAppToken.csharp.md)
 - [dataGithubBranch](./dataGithubBranch.csharp.md)
 - [dataGithubBranchProtectionRules](./dataGithubBranchProtectionRules.csharp.md)
 - [dataGithubCollaborators](./dataGithubCollaborators.csharp.md)
