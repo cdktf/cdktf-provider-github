@@ -1,6 +1,6 @@
 # `data_github_app`
 
-Refer to the Terraform Registory for docs: [`data_github_app`](https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/app).
+Refer to the Terraform Registory for docs: [`data_github_app`](https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/app).
 
 # `dataGithubApp` Submodule <a name="`dataGithubApp` Submodule" id="@cdktf/provider-github.dataGithubApp"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_app`](https://registry.
 
 ### DataGithubApp <a name="DataGithubApp" id="@cdktf/provider-github.dataGithubApp.DataGithubApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/app github_app}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/app github_app}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubApp.DataGithubApp.Initializer"></a>
 
@@ -603,8 +603,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubapp"
 | <code><a href="#@cdktf/provider-github.dataGithubApp.DataGithubAppConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubApp.DataGithubAppConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubApp.DataGithubAppConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubApp.DataGithubAppConfig.property.slug">Slug</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/app#slug DataGithubApp#slug}. |
-| <code><a href="#@cdktf/provider-github.dataGithubApp.DataGithubAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/app#id DataGithubApp#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubApp.DataGithubAppConfig.property.slug">Slug</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/app#slug DataGithubApp#slug}. |
+| <code><a href="#@cdktf/provider-github.dataGithubApp.DataGithubAppConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/app#id DataGithubApp#id}. |
 
 ---
 
@@ -686,7 +686,7 @@ Slug *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/app#slug DataGithubApp#slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/app#slug DataGithubApp#slug}.
 
 ---
 
@@ -698,7 +698,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/data-sources/app#id DataGithubApp#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/app#id DataGithubApp#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

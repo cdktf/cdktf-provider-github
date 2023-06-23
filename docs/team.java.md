@@ -1,6 +1,6 @@
 # `github_team`
 
-Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team).
+Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team).
 
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-github.team"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team`](https://registry.terr
 
 ### Team <a name="Team" id="@cdktf/provider-github.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team github_team}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team github_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.team.Team.Initializer"></a>
 
@@ -34,6 +34,8 @@ Team.Builder.create(Construct scope, java.lang.String id)
 //  .id(java.lang.String)
 //  .ldapDn(java.lang.String)
 //  .parentTeamId(java.lang.String)
+//  .parentTeamReadId(java.lang.String)
+//  .parentTeamReadSlug(java.lang.String)
 //  .privacy(java.lang.String)
     .build();
 ```
@@ -52,9 +54,11 @@ Team.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the team. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.createDefaultMaintainer">createDefaultMaintainer</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Adds a default maintainer to the team. Adds the creating user to the team when 'true'. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the team. |
-| <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.ldapDn">ldapDn</a></code> | <code>java.lang.String</code> | The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.parentTeamId">parentTeamId</a></code> | <code>java.lang.String</code> | The ID or slug of the parent team, if this is a nested team. |
+| <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.parentTeamReadId">parentTeamReadId</a></code> | <code>java.lang.String</code> | The id of the parent team read in Github. |
+| <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.parentTeamReadSlug">parentTeamReadSlug</a></code> | <code>java.lang.String</code> | The id of the parent team read in Github. |
 | <code><a href="#@cdktf/provider-github.team.Team.Initializer.parameter.privacy">privacy</a></code> | <code>java.lang.String</code> | The level of privacy for the team. Must be one of 'secret' or 'closed'. |
 
 ---
@@ -125,7 +129,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#name Team#name}
 
 ---
 
@@ -135,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Adds a default maintainer to the team. Adds the creating user to the team when 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
 
 ---
 
@@ -145,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 A description of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#description Team#description}
 
 ---
 
@@ -153,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -166,7 +170,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#ldap_dn Team#ldap_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#ldap_dn Team#ldap_dn}
 
 ---
 
@@ -176,7 +180,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The ID or slug of the parent team, if this is a nested team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#parent_team_id Team#parent_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_id Team#parent_team_id}
+
+---
+
+##### `parentTeamReadId`<sup>Optional</sup> <a name="parentTeamReadId" id="@cdktf/provider-github.team.Team.Initializer.parameter.parentTeamReadId"></a>
+
+- *Type:* java.lang.String
+
+The id of the parent team read in Github.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_read_id Team#parent_team_read_id}
+
+---
+
+##### `parentTeamReadSlug`<sup>Optional</sup> <a name="parentTeamReadSlug" id="@cdktf/provider-github.team.Team.Initializer.parameter.parentTeamReadSlug"></a>
+
+- *Type:* java.lang.String
+
+The id of the parent team read in Github.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_read_slug Team#parent_team_read_slug}
 
 ---
 
@@ -186,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The level of privacy for the team. Must be one of 'secret' or 'closed'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#privacy Team#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#privacy Team#privacy}
 
 ---
 
@@ -215,6 +239,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 | <code><a href="#@cdktf/provider-github.team.Team.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.resetLdapDn">resetLdapDn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.resetParentTeamId">resetParentTeamId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.team.Team.resetParentTeamReadId">resetParentTeamReadId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.team.Team.resetParentTeamReadSlug">resetParentTeamReadSlug</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.resetPrivacy">resetPrivacy</a></code> | *No description.* |
 
 ---
@@ -433,6 +459,18 @@ public void resetLdapDn()
 public void resetParentTeamId()
 ```
 
+##### `resetParentTeamReadId` <a name="resetParentTeamReadId" id="@cdktf/provider-github.team.Team.resetParentTeamReadId"></a>
+
+```java
+public void resetParentTeamReadId()
+```
+
+##### `resetParentTeamReadSlug` <a name="resetParentTeamReadSlug" id="@cdktf/provider-github.team.Team.resetParentTeamReadSlug"></a>
+
+```java
+public void resetParentTeamReadSlug()
+```
+
 ##### `resetPrivacy` <a name="resetPrivacy" id="@cdktf/provider-github.team.Team.resetPrivacy"></a>
 
 ```java
@@ -537,6 +575,8 @@ Team.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.team.Team.property.ldapDnInput">ldapDnInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamIdInput">parentTeamIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamReadIdInput">parentTeamReadIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamReadSlugInput">parentTeamReadSlugInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.privacyInput">privacyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.createDefaultMaintainer">createDefaultMaintainer</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -544,6 +584,8 @@ Team.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.team.Team.property.ldapDn">ldapDn</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamId">parentTeamId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamReadId">parentTeamReadId</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.team.Team.property.parentTeamReadSlug">parentTeamReadSlug</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.team.Team.property.privacy">privacy</a></code> | <code>java.lang.String</code> | *No description.* |
 
 ---
@@ -790,6 +832,26 @@ public java.lang.String getParentTeamIdInput();
 
 ---
 
+##### `parentTeamReadIdInput`<sup>Optional</sup> <a name="parentTeamReadIdInput" id="@cdktf/provider-github.team.Team.property.parentTeamReadIdInput"></a>
+
+```java
+public java.lang.String getParentTeamReadIdInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `parentTeamReadSlugInput`<sup>Optional</sup> <a name="parentTeamReadSlugInput" id="@cdktf/provider-github.team.Team.property.parentTeamReadSlugInput"></a>
+
+```java
+public java.lang.String getParentTeamReadSlugInput();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `privacyInput`<sup>Optional</sup> <a name="privacyInput" id="@cdktf/provider-github.team.Team.property.privacyInput"></a>
 
 ```java
@@ -860,6 +922,26 @@ public java.lang.String getParentTeamId();
 
 ---
 
+##### `parentTeamReadId`<sup>Required</sup> <a name="parentTeamReadId" id="@cdktf/provider-github.team.Team.property.parentTeamReadId"></a>
+
+```java
+public java.lang.String getParentTeamReadId();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `parentTeamReadSlug`<sup>Required</sup> <a name="parentTeamReadSlug" id="@cdktf/provider-github.team.Team.property.parentTeamReadSlug"></a>
+
+```java
+public java.lang.String getParentTeamReadSlug();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `privacy`<sup>Required</sup> <a name="privacy" id="@cdktf/provider-github.team.Team.property.privacy"></a>
 
 ```java
@@ -916,6 +998,8 @@ TeamConfig.builder()
 //  .id(java.lang.String)
 //  .ldapDn(java.lang.String)
 //  .parentTeamId(java.lang.String)
+//  .parentTeamReadId(java.lang.String)
+//  .parentTeamReadSlug(java.lang.String)
 //  .privacy(java.lang.String)
     .build();
 ```
@@ -934,9 +1018,11 @@ TeamConfig.builder()
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the team. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.createDefaultMaintainer">createDefaultMaintainer</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Adds a default maintainer to the team. Adds the creating user to the team when 'true'. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the team. |
-| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.ldapDn">ldapDn</a></code> | <code>java.lang.String</code> | The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.parentTeamId">parentTeamId</a></code> | <code>java.lang.String</code> | The ID or slug of the parent team, if this is a nested team. |
+| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.parentTeamReadId">parentTeamReadId</a></code> | <code>java.lang.String</code> | The id of the parent team read in Github. |
+| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.parentTeamReadSlug">parentTeamReadSlug</a></code> | <code>java.lang.String</code> | The id of the parent team read in Github. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.privacy">privacy</a></code> | <code>java.lang.String</code> | The level of privacy for the team. Must be one of 'secret' or 'closed'. |
 
 ---
@@ -1021,7 +1107,7 @@ public java.lang.String getName();
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#name Team#name}
 
 ---
 
@@ -1035,7 +1121,7 @@ public java.lang.Object getCreateDefaultMaintainer();
 
 Adds a default maintainer to the team. Adds the creating user to the team when 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
 
 ---
 
@@ -1049,7 +1135,7 @@ public java.lang.String getDescription();
 
 A description of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#description Team#description}
 
 ---
 
@@ -1061,7 +1147,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1078,7 +1164,7 @@ public java.lang.String getLdapDn();
 
 The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#ldap_dn Team#ldap_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#ldap_dn Team#ldap_dn}
 
 ---
 
@@ -1092,7 +1178,35 @@ public java.lang.String getParentTeamId();
 
 The ID or slug of the parent team, if this is a nested team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#parent_team_id Team#parent_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_id Team#parent_team_id}
+
+---
+
+##### `parentTeamReadId`<sup>Optional</sup> <a name="parentTeamReadId" id="@cdktf/provider-github.team.TeamConfig.property.parentTeamReadId"></a>
+
+```java
+public java.lang.String getParentTeamReadId();
+```
+
+- *Type:* java.lang.String
+
+The id of the parent team read in Github.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_read_id Team#parent_team_read_id}
+
+---
+
+##### `parentTeamReadSlug`<sup>Optional</sup> <a name="parentTeamReadSlug" id="@cdktf/provider-github.team.TeamConfig.property.parentTeamReadSlug"></a>
+
+```java
+public java.lang.String getParentTeamReadSlug();
+```
+
+- *Type:* java.lang.String
+
+The id of the parent team read in Github.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_read_slug Team#parent_team_read_slug}
 
 ---
 
@@ -1106,7 +1220,7 @@ public java.lang.String getPrivacy();
 
 The level of privacy for the team. Must be one of 'secret' or 'closed'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/team#privacy Team#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#privacy Team#privacy}
 
 ---
 
