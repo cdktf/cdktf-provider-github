@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/branch_default
+// https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/branch_default
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface BranchDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
   * The branch (e.g. 'main').
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/branch_default#branch BranchDefault#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/branch_default#branch BranchDefault#branch}
   */
   readonly branch: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/branch_default#id BranchDefault#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/branch_default#id BranchDefault#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface BranchDefaultConfig extends cdktf.TerraformMetaArguments {
   /**
   * Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/branch_default#rename BranchDefault#rename}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/branch_default#rename BranchDefault#rename}
   */
   readonly rename?: boolean | cdktf.IResolvable;
   /**
   * The GitHub repository.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/branch_default#repository BranchDefault#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/branch_default#repository BranchDefault#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/branch_default github_branch_default}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/branch_default github_branch_default}
 */
 export class BranchDefault extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class BranchDefault extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.0/docs/resources/branch_default github_branch_default} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/branch_default github_branch_default} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class BranchDefault extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch_default',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.28.0',
+        providerVersion: '5.28.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
