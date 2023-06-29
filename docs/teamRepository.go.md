@@ -1,6 +1,6 @@
 # `github_team_repository`
 
-Refer to the Terraform Registory for docs: [`github_team_repository`](https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team_repository).
+Refer to the Terraform Registory for docs: [`github_team_repository`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team_repository).
 
 # `teamRepository` Submodule <a name="`teamRepository` Submodule" id="@cdktf/provider-github.teamRepository"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team_repository`](https://re
 
 ### TeamRepository <a name="TeamRepository" id="@cdktf/provider-github.teamRepository.TeamRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team_repository github_team_repository}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team_repository github_team_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamRepository.TeamRepository.Initializer"></a>
 
@@ -658,7 +658,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/teamrepository"
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.repository">Repository</a></code> | <code>*string</code> | The repository to add to the team. |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.teamId">TeamId</a></code> | <code>*string</code> | ID or slug of team. |
-| <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team_repository#id TeamRepository#id}. |
+| <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team_repository#id TeamRepository#id}. |
 | <code><a href="#@cdktf/provider-github.teamRepository.TeamRepositoryConfig.property.permission">Permission</a></code> | <code>*string</code> | The permissions of team members regarding the repository. |
 
 ---
@@ -743,7 +743,7 @@ Repository *string
 
 The repository to add to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team_repository#repository TeamRepository#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team_repository#repository TeamRepository#repository}
 
 ---
 
@@ -757,7 +757,7 @@ TeamId *string
 
 ID or slug of team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team_repository#team_id TeamRepository#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team_repository#team_id TeamRepository#team_id}
 
 ---
 
@@ -769,7 +769,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team_repository#id TeamRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team_repository#id TeamRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -788,7 +788,7 @@ The permissions of team members regarding the repository.
 
 Must be one of 'pull', 'triage', 'push', 'maintain', 'admin' or the name of an existing custom repository role within the organisation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team_repository#permission TeamRepository#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team_repository#permission TeamRepository#permission}
 
 ---
 

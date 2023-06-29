@@ -1,6 +1,6 @@
 # `data_github_release`
 
-Refer to the Terraform Registory for docs: [`data_github_release`](https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release).
+Refer to the Terraform Registory for docs: [`data_github_release`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release).
 
 # `dataGithubRelease` Submodule <a name="`dataGithubRelease` Submodule" id="@cdktf/provider-github.dataGithubRelease"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_release`](https://regis
 
 ### DataGithubRelease <a name="DataGithubRelease" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release github_release}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release github_release}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer"></a>
 
@@ -47,12 +47,12 @@ DataGithubRelease.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#owner DataGithubRelease#owner}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#repository DataGithubRelease#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.retrieveBy">retrieveBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#id DataGithubRelease#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.releaseId">releaseId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#release_id DataGithubRelease#release_id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.releaseTag">releaseTag</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#release_tag DataGithubRelease#release_tag}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#owner DataGithubRelease#owner}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#repository DataGithubRelease#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.retrieveBy">retrieveBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#id DataGithubRelease#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.releaseId">releaseId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#release_id DataGithubRelease#release_id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer.parameter.releaseTag">releaseTag</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#release_tag DataGithubRelease#release_tag}. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#owner DataGithubRelease#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#owner DataGithubRelease#owner}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#repository DataGithubRelease#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#repository DataGithubRelease#repository}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#id DataGithubRelease#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#id DataGithubRelease#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#release_id DataGithubRelease#release_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#release_id DataGithubRelease#release_id}.
 
 ---
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#release_tag DataGithubRelease#release_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#release_tag DataGithubRelease#release_tag}.
 
 ---
 
@@ -974,12 +974,12 @@ DataGithubReleaseConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#owner DataGithubRelease#owner}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#repository DataGithubRelease#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.retrieveBy">retrieveBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#id DataGithubRelease#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.releaseId">releaseId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#release_id DataGithubRelease#release_id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.releaseTag">releaseTag</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#release_tag DataGithubRelease#release_tag}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.owner">owner</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#owner DataGithubRelease#owner}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#repository DataGithubRelease#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.retrieveBy">retrieveBy</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#id DataGithubRelease#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.releaseId">releaseId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#release_id DataGithubRelease#release_id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.releaseTag">releaseTag</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#release_tag DataGithubRelease#release_tag}. |
 
 ---
 
@@ -1061,7 +1061,7 @@ public java.lang.String getOwner();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#owner DataGithubRelease#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#owner DataGithubRelease#owner}.
 
 ---
 
@@ -1073,7 +1073,7 @@ public java.lang.String getRepository();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#repository DataGithubRelease#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#repository DataGithubRelease#repository}.
 
 ---
 
@@ -1085,7 +1085,7 @@ public java.lang.String getRetrieveBy();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}.
 
 ---
 
@@ -1097,7 +1097,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#id DataGithubRelease#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#id DataGithubRelease#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1112,7 +1112,7 @@ public java.lang.Number getReleaseId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#release_id DataGithubRelease#release_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#release_id DataGithubRelease#release_id}.
 
 ---
 
@@ -1124,7 +1124,7 @@ public java.lang.String getReleaseTag();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/release#release_tag DataGithubRelease#release_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/release#release_tag DataGithubRelease#release_tag}.
 
 ---
 

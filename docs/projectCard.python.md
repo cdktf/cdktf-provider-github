@@ -1,6 +1,6 @@
 # `github_project_card`
 
-Refer to the Terraform Registory for docs: [`github_project_card`](https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card).
+Refer to the Terraform Registory for docs: [`github_project_card`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card).
 
 # `projectCard` Submodule <a name="`projectCard` Submodule" id="@cdktf/provider-github.projectCard"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_project_card`](https://regis
 
 ### ProjectCard <a name="ProjectCard" id="@cdktf/provider-github.projectCard.ProjectCard"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card github_project_card}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card github_project_card}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.projectCard.ProjectCard.Initializer"></a>
 
@@ -47,7 +47,7 @@ projectCard.ProjectCard(
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.columnId">column_id</a></code> | <code>str</code> | The ID of the project column. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.contentId">content_id</a></code> | <code>typing.Union[int, float]</code> | 'github_issue.issue_id'. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.contentType">content_type</a></code> | <code>str</code> | Must be either 'Issue' or 'PullRequest'. |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#id ProjectCard#id}. |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#id ProjectCard#id}. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCard.Initializer.parameter.note">note</a></code> | <code>str</code> | The note contents of the card. Markdown supported. |
 
 ---
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the project column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#column_id ProjectCard#column_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#column_id ProjectCard#column_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 'github_issue.issue_id'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#content_id ProjectCard#content_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#content_id ProjectCard#content_id}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Must be either 'Issue' or 'PullRequest'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#content_type ProjectCard#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#content_type ProjectCard#content_type}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#id ProjectCard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#id ProjectCard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The note contents of the card. Markdown supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#note ProjectCard#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#note ProjectCard#note}
 
 ---
 
@@ -851,7 +851,7 @@ projectCard.ProjectCardConfig(
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.columnId">column_id</a></code> | <code>str</code> | The ID of the project column. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.contentId">content_id</a></code> | <code>typing.Union[int, float]</code> | 'github_issue.issue_id'. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.contentType">content_type</a></code> | <code>str</code> | Must be either 'Issue' or 'PullRequest'. |
-| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#id ProjectCard#id}. |
+| <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#id ProjectCard#id}. |
 | <code><a href="#@cdktf/provider-github.projectCard.ProjectCardConfig.property.note">note</a></code> | <code>str</code> | The note contents of the card. Markdown supported. |
 
 ---
@@ -936,7 +936,7 @@ column_id: str
 
 The ID of the project column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#column_id ProjectCard#column_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#column_id ProjectCard#column_id}
 
 ---
 
@@ -950,7 +950,7 @@ content_id: typing.Union[int, float]
 
 'github_issue.issue_id'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#content_id ProjectCard#content_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#content_id ProjectCard#content_id}
 
 ---
 
@@ -964,7 +964,7 @@ content_type: str
 
 Must be either 'Issue' or 'PullRequest'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#content_type ProjectCard#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#content_type ProjectCard#content_type}
 
 ---
 
@@ -976,7 +976,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#id ProjectCard#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#id ProjectCard#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -993,7 +993,7 @@ note: str
 
 The note contents of the card. Markdown supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/project_card#note ProjectCard#note}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/project_card#note ProjectCard#note}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/actions_repository_oidc_subject_claim_customization_template
+// https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/actions_repository_oidc_subject_claim_customization_template#id DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template#id DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/actions_repository_oidc_subject_claim_customization_template#name DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template#name DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template}
 */
 export class DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate ex
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate ex
       terraformResourceType: 'github_actions_repository_oidc_subject_claim_customization_template',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

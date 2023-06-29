@@ -1,6 +1,6 @@
 # `github_membership`
 
-Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership).
+Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership).
 
 # `membership` Submodule <a name="`membership` Submodule" id="@cdktf/provider-github.membership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_membership`](https://registr
 
 ### Membership <a name="Membership" id="@cdktf/provider-github.membership.Membership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership github_membership}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership github_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.membership.Membership.Initializer"></a>
 
@@ -45,7 +45,7 @@ Membership.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | The user to add to the organization. |
-| <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership#id Membership#id}. |
+| <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}. |
 | <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | The role of the user within the organization. Must be one of 'member' or 'admin'. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The user to add to the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership#username Membership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#username Membership#username}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership#id Membership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The role of the user within the organization. Must be one of 'member' or 'admin'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership#role Membership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#role Membership#role}
 
 ---
 
@@ -729,7 +729,7 @@ MembershipConfig.builder()
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.username">username</a></code> | <code>java.lang.String</code> | The user to add to the organization. |
-| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership#id Membership#id}. |
+| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}. |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.role">role</a></code> | <code>java.lang.String</code> | The role of the user within the organization. Must be one of 'member' or 'admin'. |
 
 ---
@@ -814,7 +814,7 @@ public java.lang.String getUsername();
 
 The user to add to the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership#username Membership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#username Membership#username}
 
 ---
 
@@ -826,7 +826,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership#id Membership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -843,7 +843,7 @@ public java.lang.String getRole();
 
 The role of the user within the organization. Must be one of 'member' or 'admin'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/membership#role Membership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#role Membership#role}
 
 ---
 
