@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team
+// https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * Adds a default maintainer to the team. Adds the creating user to the team when 'true'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
   */
   readonly createDefaultMaintainer?: boolean | cdktf.IResolvable;
   /**
   * A description of the team.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#description Team#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#description Team#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#id Team#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#id Team#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,43 +29,43 @@ export interface TeamConfig extends cdktf.TerraformMetaArguments {
   /**
   * The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#ldap_dn Team#ldap_dn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#ldap_dn Team#ldap_dn}
   */
   readonly ldapDn?: string;
   /**
   * The name of the team.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#name Team#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#name Team#name}
   */
   readonly name: string;
   /**
   * The ID or slug of the parent team, if this is a nested team.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_id Team#parent_team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#parent_team_id Team#parent_team_id}
   */
   readonly parentTeamId?: string;
   /**
   * The id of the parent team read in Github.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_read_id Team#parent_team_read_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#parent_team_read_id Team#parent_team_read_id}
   */
   readonly parentTeamReadId?: string;
   /**
   * The id of the parent team read in Github.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#parent_team_read_slug Team#parent_team_read_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#parent_team_read_slug Team#parent_team_read_slug}
   */
   readonly parentTeamReadSlug?: string;
   /**
   * The level of privacy for the team. Must be one of 'secret' or 'closed'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team#privacy Team#privacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team#privacy Team#privacy}
   */
   readonly privacy?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team github_team}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team github_team}
 */
 export class Team extends cdktf.TerraformResource {
 
@@ -84,7 +79,7 @@ export class Team extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.28.1/docs/resources/team github_team} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/team github_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -95,7 +90,7 @@ export class Team extends cdktf.TerraformResource {
       terraformResourceType: 'github_team',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.28.1',
+        providerVersion: '5.29.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
