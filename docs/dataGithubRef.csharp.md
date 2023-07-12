@@ -1,6 +1,6 @@
 # `data_github_ref`
 
-Refer to the Terraform Registory for docs: [`data_github_ref`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref).
+Refer to the Terraform Registory for docs: [`data_github_ref`](https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref).
 
 # `dataGithubRef` Submodule <a name="`dataGithubRef` Submodule" id="@cdktf/provider-github.dataGithubRef"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_ref`](https://registry.
 
 ### DataGithubRef <a name="DataGithubRef" id="@cdktf/provider-github.dataGithubRef.DataGithubRef"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref github_ref}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref github_ref}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRef.DataGithubRef.Initializer"></a>
 
@@ -645,10 +645,10 @@ new DataGithubRefConfig {
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.ref">Ref</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref#ref DataGithubRef#ref}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref#repository DataGithubRef#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref#id DataGithubRef#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref#owner DataGithubRef#owner}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.ref">Ref</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref#ref DataGithubRef#ref}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref#repository DataGithubRef#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref#id DataGithubRef#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRef.DataGithubRefConfig.property.owner">Owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref#owner DataGithubRef#owner}. |
 
 ---
 
@@ -730,7 +730,7 @@ public string Ref { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref#ref DataGithubRef#ref}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref#ref DataGithubRef#ref}.
 
 ---
 
@@ -742,7 +742,7 @@ public string Repository { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref#repository DataGithubRef#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref#repository DataGithubRef#repository}.
 
 ---
 
@@ -754,7 +754,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref#id DataGithubRef#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref#id DataGithubRef#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ public string Owner { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/ref#owner DataGithubRef#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/ref#owner DataGithubRef#owner}.
 
 ---
 
