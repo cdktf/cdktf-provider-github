@@ -1,6 +1,6 @@
 # `data_github_rest_api`
 
-Refer to the Terraform Registory for docs: [`data_github_rest_api`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/rest_api).
+Refer to the Terraform Registory for docs: [`data_github_rest_api`](https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/rest_api).
 
 # `dataGithubRestApi` Submodule <a name="`dataGithubRestApi` Submodule" id="@cdktf/provider-github.dataGithubRestApi"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_rest_api`](https://regi
 
 ### DataGithubRestApi <a name="DataGithubRestApi" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/rest_api github_rest_api}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/rest_api github_rest_api}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.NewDataGithubRestApi(scope Construct, id *string, config DataGithubRestApiConfig) DataGithubRestApi
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithubrestapi.DataGithubRestApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 &datagithubrestapi.DataGithubRestApiConfig {
 	Connection: interface{},
@@ -614,8 +614,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubrestapi"
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/rest_api#id DataGithubRestApi#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/rest_api#id DataGithubRestApi#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}.
 
 ---
 
@@ -709,7 +709,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/rest_api#id DataGithubRestApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/rest_api#id DataGithubRestApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

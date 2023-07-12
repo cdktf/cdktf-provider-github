@@ -1,6 +1,6 @@
 # `data_github_actions_organization_public_key`
 
-Refer to the Terraform Registory for docs: [`data_github_actions_organization_public_key`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_organization_public_key).
+Refer to the Terraform Registory for docs: [`data_github_actions_organization_public_key`](https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/actions_organization_public_key).
 
 # `dataGithubActionsOrganizationPublicKey` Submodule <a name="`dataGithubActionsOrganizationPublicKey` Submodule" id="@cdktf/provider-github.dataGithubActionsOrganizationPublicKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_actions_organization_pu
 
 ### DataGithubActionsOrganizationPublicKey <a name="DataGithubActionsOrganizationPublicKey" id="@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_organization_public_key github_actions_organization_public_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/actions_organization_public_key github_actions_organization_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKey.Initializer"></a>
 
@@ -42,7 +42,7 @@ DataGithubActionsOrganizationPublicKey.Builder.create(Construct scope, java.lang
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKey.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_organization_public_key#id DataGithubActionsOrganizationPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/actions_organization_public_key#id DataGithubActionsOrganizationPublicKey#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_organization_public_key#id DataGithubActionsOrganizationPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/actions_organization_public_key#id DataGithubActionsOrganizationPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -640,7 +640,7 @@ DataGithubActionsOrganizationPublicKeyConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKeyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKeyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_organization_public_key#id DataGithubActionsOrganizationPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationPublicKey.DataGithubActionsOrganizationPublicKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/actions_organization_public_key#id DataGithubActionsOrganizationPublicKey#id}. |
 
 ---
 
@@ -722,7 +722,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/data-sources/actions_organization_public_key#id DataGithubActionsOrganizationPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/data-sources/actions_organization_public_key#id DataGithubActionsOrganizationPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `github_repository_project`
 
-Refer to the Terraform Registory for docs: [`github_repository_project`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_project).
+Refer to the Terraform Registory for docs: [`github_repository_project`](https://registry.terraform.io/providers/integrations/github/5.30.1/docs/resources/repository_project).
 
 # `repositoryProject` Submodule <a name="`repositoryProject` Submodule" id="@cdktf/provider-github.repositoryProject"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_repository_project`](https:/
 
 ### RepositoryProject <a name="RepositoryProject" id="@cdktf/provider-github.repositoryProject.RepositoryProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_project github_repository_project}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/resources/repository_project github_repository_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositoryproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryproject"
 
 repositoryproject.NewRepositoryProject(scope Construct, id *string, config RepositoryProjectConfig) RepositoryProject
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryProject.RepositoryProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositoryproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryproject"
 
 repositoryproject.RepositoryProject_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryProject.RepositoryProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositoryproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryproject"
 
 repositoryproject.RepositoryProject_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ repositoryproject.RepositoryProject_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryProject.RepositoryProject.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositoryproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryproject"
 
 repositoryproject.RepositoryProject_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositoryproject"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryproject"
 
 &repositoryproject.RepositoryProjectConfig {
 	Connection: interface{},
@@ -670,7 +670,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositoryproject"
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.name">Name</a></code> | <code>*string</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.repository">Repository</a></code> | <code>*string</code> | The repository of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.body">Body</a></code> | <code>*string</code> | The body of the project. |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_project#id RepositoryProject#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/resources/repository_project#id RepositoryProject#id}. |
 
 ---
 
@@ -754,7 +754,7 @@ Name *string
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_project#name RepositoryProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/resources/repository_project#name RepositoryProject#name}
 
 ---
 
@@ -768,7 +768,7 @@ Repository *string
 
 The repository of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_project#repository RepositoryProject#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/resources/repository_project#repository RepositoryProject#repository}
 
 ---
 
@@ -782,7 +782,7 @@ Body *string
 
 The body of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_project#body RepositoryProject#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/resources/repository_project#body RepositoryProject#body}
 
 ---
 
@@ -794,7 +794,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_project#id RepositoryProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.30.1/docs/resources/repository_project#id RepositoryProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
