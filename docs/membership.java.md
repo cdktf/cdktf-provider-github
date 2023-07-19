@@ -1,6 +1,6 @@
 # `github_membership`
 
-Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership).
+Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership).
 
 # `membership` Submodule <a name="`membership` Submodule" id="@cdktf/provider-github.membership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_membership`](https://registr
 
 ### Membership <a name="Membership" id="@cdktf/provider-github.membership.Membership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership github_membership}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership github_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.membership.Membership.Initializer"></a>
 
@@ -28,6 +28,8 @@ Membership.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .username(java.lang.String)
+//  .downgradeOnDestroy(java.lang.Boolean)
+//  .downgradeOnDestroy(IResolvable)
 //  .id(java.lang.String)
 //  .role(java.lang.String)
     .build();
@@ -45,7 +47,8 @@ Membership.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | The user to add to the organization. |
-| <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}. |
+| <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.downgradeOnDestroy">downgradeOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Instead of removing the member from the org, you can choose to downgrade their membership to 'member' when this resource is destroyed. |
+| <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#id Membership#id}. |
 | <code><a href="#@cdktf/provider-github.membership.Membership.Initializer.parameter.role">role</a></code> | <code>java.lang.String</code> | The role of the user within the organization. Must be one of 'member' or 'admin'. |
 
 ---
@@ -116,7 +119,19 @@ Must be unique amongst siblings in the same scope
 
 The user to add to the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#username Membership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#username Membership#username}
+
+---
+
+##### `downgradeOnDestroy`<sup>Optional</sup> <a name="downgradeOnDestroy" id="@cdktf/provider-github.membership.Membership.Initializer.parameter.downgradeOnDestroy"></a>
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Instead of removing the member from the org, you can choose to downgrade their membership to 'member' when this resource is destroyed.
+
+This is useful when wanting to downgrade admins while keeping them in the organization
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#downgrade_on_destroy Membership#downgrade_on_destroy}
 
 ---
 
@@ -124,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#id Membership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +152,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The role of the user within the organization. Must be one of 'member' or 'admin'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#role Membership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#role Membership#role}
 
 ---
 
@@ -161,6 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 | <code><a href="#@cdktf/provider-github.membership.Membership.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.membership.Membership.resetDowngradeOnDestroy">resetDowngradeOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.resetRole">resetRole</a></code> | *No description.* |
 
@@ -350,6 +366,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
+##### `resetDowngradeOnDestroy` <a name="resetDowngradeOnDestroy" id="@cdktf/provider-github.membership.Membership.resetDowngradeOnDestroy"></a>
+
+```java
+public void resetDowngradeOnDestroy()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-github.membership.Membership.resetId"></a>
 
 ```java
@@ -451,9 +473,11 @@ Membership.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.membership.Membership.property.downgradeOnDestroyInput">downgradeOnDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.roleInput">roleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.usernameInput">usernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.membership.Membership.property.downgradeOnDestroy">downgradeOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.role">role</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.username">username</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -612,6 +636,16 @@ public java.lang.String getEtag();
 
 ---
 
+##### `downgradeOnDestroyInput`<sup>Optional</sup> <a name="downgradeOnDestroyInput" id="@cdktf/provider-github.membership.Membership.property.downgradeOnDestroyInput"></a>
+
+```java
+public java.lang.Object getDowngradeOnDestroyInput();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+---
+
 ##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-github.membership.Membership.property.idInput"></a>
 
 ```java
@@ -639,6 +673,16 @@ public java.lang.String getUsernameInput();
 ```
 
 - *Type:* java.lang.String
+
+---
+
+##### `downgradeOnDestroy`<sup>Required</sup> <a name="downgradeOnDestroy" id="@cdktf/provider-github.membership.Membership.property.downgradeOnDestroy"></a>
+
+```java
+public java.lang.Object getDowngradeOnDestroy();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -712,6 +756,8 @@ MembershipConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .username(java.lang.String)
+//  .downgradeOnDestroy(java.lang.Boolean)
+//  .downgradeOnDestroy(IResolvable)
 //  .id(java.lang.String)
 //  .role(java.lang.String)
     .build();
@@ -729,7 +775,8 @@ MembershipConfig.builder()
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.username">username</a></code> | <code>java.lang.String</code> | The user to add to the organization. |
-| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}. |
+| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.downgradeOnDestroy">downgradeOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Instead of removing the member from the org, you can choose to downgrade their membership to 'member' when this resource is destroyed. |
+| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#id Membership#id}. |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.role">role</a></code> | <code>java.lang.String</code> | The role of the user within the organization. Must be one of 'member' or 'admin'. |
 
 ---
@@ -814,7 +861,23 @@ public java.lang.String getUsername();
 
 The user to add to the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#username Membership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#username Membership#username}
+
+---
+
+##### `downgradeOnDestroy`<sup>Optional</sup> <a name="downgradeOnDestroy" id="@cdktf/provider-github.membership.MembershipConfig.property.downgradeOnDestroy"></a>
+
+```java
+public java.lang.Object getDowngradeOnDestroy();
+```
+
+- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+
+Instead of removing the member from the org, you can choose to downgrade their membership to 'member' when this resource is destroyed.
+
+This is useful when wanting to downgrade admins while keeping them in the organization
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#downgrade_on_destroy Membership#downgrade_on_destroy}
 
 ---
 
@@ -826,7 +889,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#id Membership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -843,7 +906,7 @@ public java.lang.String getRole();
 
 The role of the user within the organization. Must be one of 'member' or 'admin'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#role Membership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#role Membership#role}
 
 ---
 

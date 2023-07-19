@@ -1,6 +1,6 @@
 # `github_membership`
 
-Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership).
+Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership).
 
 # `membership` Submodule <a name="`membership` Submodule" id="@cdktf/provider-github.membership"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_membership`](https://registr
 
 ### Membership <a name="Membership" id="@cdktf/provider-github.membership.Membership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership github_membership}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership github_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.membership.Membership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.NewMembership(scope Construct, id *string, config MembershipConfig) Membership
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.membership.Membership.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.membership.Membership.resetDowngradeOnDestroy">ResetDowngradeOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.resetRole">ResetRole</a></code> | *No description.* |
 
@@ -259,6 +260,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetDowngradeOnDestroy` <a name="ResetDowngradeOnDestroy" id="@cdktf/provider-github.membership.Membership.resetDowngradeOnDestroy"></a>
+
+```go
+func ResetDowngradeOnDestroy()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-github.membership.Membership.resetId"></a>
 
 ```go
@@ -284,7 +291,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.membership.Membership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.membership.Membership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +337,7 @@ membership.Membership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.membership.Membership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsTerraformResource(x interface{}) *bool
 ```
@@ -360,9 +367,11 @@ membership.Membership_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.membership.Membership.property.downgradeOnDestroyInput">DowngradeOnDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.roleInput">RoleInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.usernameInput">UsernameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.membership.Membership.property.downgradeOnDestroy">DowngradeOnDestroy</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.role">Role</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.Membership.property.username">Username</a></code> | <code>*string</code> | *No description.* |
@@ -521,6 +530,16 @@ func Etag() *string
 
 ---
 
+##### `DowngradeOnDestroyInput`<sup>Optional</sup> <a name="DowngradeOnDestroyInput" id="@cdktf/provider-github.membership.Membership.property.downgradeOnDestroyInput"></a>
+
+```go
+func DowngradeOnDestroyInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-github.membership.Membership.property.idInput"></a>
 
 ```go
@@ -548,6 +567,16 @@ func UsernameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DowngradeOnDestroy`<sup>Required</sup> <a name="DowngradeOnDestroy" id="@cdktf/provider-github.membership.Membership.property.downgradeOnDestroy"></a>
+
+```go
+func DowngradeOnDestroy() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -606,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.membership.MembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 &membership.MembershipConfig {
 	Connection: interface{},
@@ -617,6 +646,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/membership"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Username: *string,
+	DowngradeOnDestroy: interface{},
 	Id: *string,
 	Role: *string,
 }
@@ -634,7 +664,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/membership"
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.username">Username</a></code> | <code>*string</code> | The user to add to the organization. |
-| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}. |
+| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.downgradeOnDestroy">DowngradeOnDestroy</a></code> | <code>interface{}</code> | Instead of removing the member from the org, you can choose to downgrade their membership to 'member' when this resource is destroyed. |
+| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#id Membership#id}. |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.role">Role</a></code> | <code>*string</code> | The role of the user within the organization. Must be one of 'member' or 'admin'. |
 
 ---
@@ -719,7 +750,23 @@ Username *string
 
 The user to add to the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#username Membership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#username Membership#username}
+
+---
+
+##### `DowngradeOnDestroy`<sup>Optional</sup> <a name="DowngradeOnDestroy" id="@cdktf/provider-github.membership.MembershipConfig.property.downgradeOnDestroy"></a>
+
+```go
+DowngradeOnDestroy interface{}
+```
+
+- *Type:* interface{}
+
+Instead of removing the member from the org, you can choose to downgrade their membership to 'member' when this resource is destroyed.
+
+This is useful when wanting to downgrade admins while keeping them in the organization
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#downgrade_on_destroy Membership#downgrade_on_destroy}
 
 ---
 
@@ -731,7 +778,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#id Membership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#id Membership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -748,7 +795,7 @@ Role *string
 
 The role of the user within the organization. Must be one of 'member' or 'admin'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/membership#role Membership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/membership#role Membership#role}
 
 ---
 

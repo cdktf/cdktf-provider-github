@@ -1,6 +1,6 @@
 # `github_repository_deploy_key`
 
-Refer to the Terraform Registory for docs: [`github_repository_deploy_key`](https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_deploy_key).
+Refer to the Terraform Registory for docs: [`github_repository_deploy_key`](https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_deploy_key).
 
 # `repositoryDeployKey` Submodule <a name="`repositoryDeployKey` Submodule" id="@cdktf/provider-github.repositoryDeployKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_repository_deploy_key`](http
 
 ### RepositoryDeployKey <a name="RepositoryDeployKey" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_deploy_key github_repository_deploy_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_deploy_key github_repository_deploy_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 repositorydeploykey.NewRepositoryDeployKey(scope Construct, id *string, config RepositoryDeployKeyConfig) RepositoryDeployKey
 ```
@@ -284,7 +284,7 @@ func ResetReadOnly()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 repositorydeploykey.RepositoryDeployKey_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 repositorydeploykey.RepositoryDeployKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ repositorydeploykey.RepositoryDeployKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 repositorydeploykey.RepositoryDeployKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -650,7 +650,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorydeploykey"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydeploykey"
 
 &repositorydeploykey.RepositoryDeployKeyConfig {
 	Connection: interface{},
@@ -682,7 +682,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/repositorydeploykey
 | <code><a href="#@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKeyConfig.property.key">Key</a></code> | <code>*string</code> | A SSH key. |
 | <code><a href="#@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKeyConfig.property.repository">Repository</a></code> | <code>*string</code> | Name of the GitHub repository. |
 | <code><a href="#@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKeyConfig.property.title">Title</a></code> | <code>*string</code> | A title. |
-| <code><a href="#@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_deploy_key#id RepositoryDeployKey#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_deploy_key#id RepositoryDeployKey#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryDeployKey.RepositoryDeployKeyConfig.property.readOnly">ReadOnly</a></code> | <code>interface{}</code> | A boolean qualifying the key to be either read only or read/write. |
 
 ---
@@ -767,7 +767,7 @@ Key *string
 
 A SSH key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_deploy_key#key RepositoryDeployKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_deploy_key#key RepositoryDeployKey#key}
 
 ---
 
@@ -781,7 +781,7 @@ Repository *string
 
 Name of the GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_deploy_key#repository RepositoryDeployKey#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_deploy_key#repository RepositoryDeployKey#repository}
 
 ---
 
@@ -795,7 +795,7 @@ Title *string
 
 A title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_deploy_key#title RepositoryDeployKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_deploy_key#title RepositoryDeployKey#title}
 
 ---
 
@@ -807,7 +807,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_deploy_key#id RepositoryDeployKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_deploy_key#id RepositoryDeployKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -824,7 +824,7 @@ ReadOnly interface{}
 
 A boolean qualifying the key to be either read only or read/write.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/repository_deploy_key#read_only RepositoryDeployKey#read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_deploy_key#read_only RepositoryDeployKey#read_only}
 
 ---
 
