@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group
+// https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ActionsRunnerGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Whether public repositories can be added to the runner group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group#allows_public_repositories ActionsRunnerGroup#allows_public_repositories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group#allows_public_repositories ActionsRunnerGroup#allows_public_repositories}
   */
   readonly allowsPublicRepositories?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group#id ActionsRunnerGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group#id ActionsRunnerGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +28,37 @@ export interface ActionsRunnerGroupConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the runner group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group#name ActionsRunnerGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group#name ActionsRunnerGroup#name}
   */
   readonly name: string;
   /**
   * If 'true', the runner group will be restricted to running only the workflows specified in the 'selected_workflows' array. Defaults to 'false'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
   */
   readonly restrictedToWorkflows?: boolean | cdktf.IResolvable;
   /**
   * List of repository IDs that can access the runner group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
   */
   readonly selectedRepositoryIds?: number[];
   /**
   * List of workflows the runner group should be allowed to run. This setting will be ignored unless restricted_to_workflows is set to 'true'.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
   */
   readonly selectedWorkflows?: string[];
   /**
   * The visibility of the runner group.
   * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group#visibility ActionsRunnerGroup#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group#visibility ActionsRunnerGroup#visibility}
   */
   readonly visibility: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group github_actions_runner_group}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group github_actions_runner_group}
 */
 export class ActionsRunnerGroup extends cdktf.TerraformResource {
 
@@ -72,7 +72,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.29.0/docs/resources/actions_runner_group github_actions_runner_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/actions_runner_group github_actions_runner_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -83,7 +83,7 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_runner_group',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.29.0',
+        providerVersion: '5.31.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
