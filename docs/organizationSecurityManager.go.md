@@ -1,6 +1,6 @@
 # `github_organization_security_manager`
 
-Refer to the Terraform Registory for docs: [`github_organization_security_manager`](https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_security_manager).
+Refer to the Terraform Registory for docs: [`github_organization_security_manager`](https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_security_manager).
 
 # `organizationSecurityManager` Submodule <a name="`organizationSecurityManager` Submodule" id="@cdktf/provider-github.organizationSecurityManager"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_organization_security_manage
 
 ### OrganizationSecurityManager <a name="OrganizationSecurityManager" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManager"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_security_manager github_organization_security_manager}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_security_manager github_organization_security_manager}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManager.Initializer"></a>
 
@@ -593,7 +593,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/organizationsecurit
 | <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.teamSlug">TeamSlug</a></code> | <code>*string</code> | The slug of the team to manage. |
-| <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}. |
+| <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}. |
 
 ---
 
@@ -677,7 +677,7 @@ TeamSlug *string
 
 The slug of the team to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}
 
 ---
 
@@ -689,7 +689,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

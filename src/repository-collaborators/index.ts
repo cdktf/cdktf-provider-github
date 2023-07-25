@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators
+// https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,38 +13,38 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryCollaboratorsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}
   */
   readonly repository: string;
   /**
   * team block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators#team RepositoryCollaborators#team}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators#team RepositoryCollaborators#team}
   */
   readonly team?: RepositoryCollaboratorsTeam[] | cdktf.IResolvable;
   /**
   * user block
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators#user RepositoryCollaborators#user}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators#user RepositoryCollaborators#user}
   */
   readonly user?: RepositoryCollaboratorsUser[] | cdktf.IResolvable;
 }
 export interface RepositoryCollaboratorsTeam {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}
   */
   readonly permission?: string;
   /**
   * Team ID or slug to add to the repository as a collaborator.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators#team_id RepositoryCollaborators#team_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators#team_id RepositoryCollaborators#team_id}
   */
   readonly teamId: string;
 }
@@ -161,13 +161,13 @@ export class RepositoryCollaboratorsTeamList extends cdktf.ComplexList {
 }
 export interface RepositoryCollaboratorsUser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}
   */
   readonly permission?: string;
   /**
   * (Required) The user to add to the repository as a collaborator.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators#username RepositoryCollaborators#username}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators#username RepositoryCollaborators#username}
   */
   readonly username: string;
 }
@@ -284,7 +284,7 @@ export class RepositoryCollaboratorsUserList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators github_repository_collaborators}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators github_repository_collaborators}
 */
 export class RepositoryCollaborators extends cdktf.TerraformResource {
 
@@ -298,7 +298,7 @@ export class RepositoryCollaborators extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/repository_collaborators github_repository_collaborators} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/repository_collaborators github_repository_collaborators} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -309,7 +309,7 @@ export class RepositoryCollaborators extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_collaborators',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
