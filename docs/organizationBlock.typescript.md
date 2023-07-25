@@ -1,6 +1,6 @@
 # `github_organization_block`
 
-Refer to the Terraform Registory for docs: [`github_organization_block`](https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_block).
+Refer to the Terraform Registory for docs: [`github_organization_block`](https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_block).
 
 # `organizationBlock` Submodule <a name="`organizationBlock` Submodule" id="@cdktf/provider-github.organizationBlock"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_organization_block`](https:/
 
 ### OrganizationBlock <a name="OrganizationBlock" id="@cdktf/provider-github.organizationBlock.OrganizationBlock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_block github_organization_block}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_block github_organization_block}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.Initializer"></a>
 
@@ -594,7 +594,7 @@ const organizationBlockConfig: organizationBlock.OrganizationBlockConfig = { ...
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.username">username</a></code> | <code>string</code> | The name of the user to block. |
-| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_block#id OrganizationBlock#id}. |
+| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_block#id OrganizationBlock#id}. |
 
 ---
 
@@ -678,7 +678,7 @@ public readonly username: string;
 
 The name of the user to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_block#username OrganizationBlock#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_block#username OrganizationBlock#username}
 
 ---
 
@@ -690,7 +690,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/organization_block#id OrganizationBlock#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/organization_block#id OrganizationBlock#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

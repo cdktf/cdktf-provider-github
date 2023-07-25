@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/project_column
+// https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/project_column
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ProjectColumnConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/project_column#id ProjectColumn#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/project_column#id ProjectColumn#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -21,20 +16,20 @@ export interface ProjectColumnConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The name of the column.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/project_column#name ProjectColumn#name}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/project_column#name ProjectColumn#name}
   */
   readonly name: string;
   /**
   * The ID of an existing project that the column will be created in.
-  * 
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/project_column#project_id ProjectColumn#project_id}
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/project_column#project_id ProjectColumn#project_id}
   */
   readonly projectId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/project_column github_project_column}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/project_column github_project_column}
 */
 export class ProjectColumn extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class ProjectColumn extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/resources/project_column github_project_column} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/project_column github_project_column} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class ProjectColumn extends cdktf.TerraformResource {
       terraformResourceType: 'github_project_column',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.31.0',
+        providerVersion: '5.32.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

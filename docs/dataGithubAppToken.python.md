@@ -1,6 +1,6 @@
 # `data_github_app_token`
 
-Refer to the Terraform Registory for docs: [`data_github_app_token`](https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token).
+Refer to the Terraform Registory for docs: [`data_github_app_token`](https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token).
 
 # `dataGithubAppToken` Submodule <a name="`dataGithubAppToken` Submodule" id="@cdktf/provider-github.dataGithubAppToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_app_token`](https://reg
 
 ### DataGithubAppToken <a name="DataGithubAppToken" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token github_app_token}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token github_app_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.Initializer"></a>
 
@@ -46,7 +46,7 @@ dataGithubAppToken.DataGithubAppToken(
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | The GitHub App ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.Initializer.parameter.installationId">installation_id</a></code> | <code>str</code> | The GitHub App installation instance ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.Initializer.parameter.pemFile">pem_file</a></code> | <code>str</code> | The GitHub App PEM file contents. |
-| <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#id DataGithubAppToken#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#id DataGithubAppToken#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The GitHub App ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#app_id DataGithubAppToken#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#app_id DataGithubAppToken#app_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The GitHub App installation instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#installation_id DataGithubAppToken#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#installation_id DataGithubAppToken#installation_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The GitHub App PEM file contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#pem_file DataGithubAppToken#pem_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#pem_file DataGithubAppToken#pem_file}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#id DataGithubAppToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#id DataGithubAppToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -762,7 +762,7 @@ dataGithubAppToken.DataGithubAppTokenConfig(
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.appId">app_id</a></code> | <code>str</code> | The GitHub App ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.installationId">installation_id</a></code> | <code>str</code> | The GitHub App installation instance ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.pemFile">pem_file</a></code> | <code>str</code> | The GitHub App PEM file contents. |
-| <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#id DataGithubAppToken#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#id DataGithubAppToken#id}. |
 
 ---
 
@@ -846,7 +846,7 @@ app_id: str
 
 The GitHub App ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#app_id DataGithubAppToken#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#app_id DataGithubAppToken#app_id}
 
 ---
 
@@ -860,7 +860,7 @@ installation_id: str
 
 The GitHub App installation instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#installation_id DataGithubAppToken#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#installation_id DataGithubAppToken#installation_id}
 
 ---
 
@@ -874,7 +874,7 @@ pem_file: str
 
 The GitHub App PEM file contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#pem_file DataGithubAppToken#pem_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#pem_file DataGithubAppToken#pem_file}
 
 ---
 
@@ -886,7 +886,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.31.0/docs/data-sources/app_token#id DataGithubAppToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/app_token#id DataGithubAppToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
