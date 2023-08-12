@@ -82,6 +82,7 @@ The following submodules are available:
 - [dataGithubTeam](./dataGithubTeam.java.md)
 - [dataGithubTree](./dataGithubTree.java.md)
 - [dataGithubUser](./dataGithubUser.java.md)
+- [dataGithubUserExternalIdentity](./dataGithubUserExternalIdentity.java.md)
 - [dataGithubUsers](./dataGithubUsers.java.md)
 - [dependabotOrganizationSecret](./dependabotOrganizationSecret.java.md)
 - [dependabotOrganizationSecretRepositories](./dependabotOrganizationSecretRepositories.java.md)

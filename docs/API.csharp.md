@@ -82,6 +82,7 @@ The following submodules are available:
 - [dataGithubTeam](./dataGithubTeam.csharp.md)
 - [dataGithubTree](./dataGithubTree.csharp.md)
 - [dataGithubUser](./dataGithubUser.csharp.md)
+- [dataGithubUserExternalIdentity](./dataGithubUserExternalIdentity.csharp.md)
 - [dataGithubUsers](./dataGithubUsers.csharp.md)
 - [dependabotOrganizationSecret](./dependabotOrganizationSecret.csharp.md)
 - [dependabotOrganizationSecretRepositories](./dependabotOrganizationSecretRepositories.csharp.md)
