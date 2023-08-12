@@ -1,6 +1,6 @@
 # `data_github_organization_webhooks`
 
-Refer to the Terraform Registory for docs: [`data_github_organization_webhooks`](https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/organization_webhooks).
+Refer to the Terraform Registory for docs: [`data_github_organization_webhooks`](https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization_webhooks).
 
 # `dataGithubOrganizationWebhooks` Submodule <a name="`dataGithubOrganizationWebhooks` Submodule" id="@cdktf/provider-github.dataGithubOrganizationWebhooks"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_organization_webhooks`]
 
 ### DataGithubOrganizationWebhooks <a name="DataGithubOrganizationWebhooks" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/organization_webhooks github_organization_webhooks}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization_webhooks github_organization_webhooks}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooks.Initializer"></a>
 
@@ -549,7 +549,7 @@ const dataGithubOrganizationWebhooksConfig: dataGithubOrganizationWebhooks.DataG
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/organization_webhooks#id DataGithubOrganizationWebhooks#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization_webhooks#id DataGithubOrganizationWebhooks#id}. |
 
 ---
 
@@ -631,7 +631,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/data-sources/organization_webhooks#id DataGithubOrganizationWebhooks#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization_webhooks#id DataGithubOrganizationWebhooks#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -125,6 +125,7 @@ export * as dataGithubSshKeys from './data-github-ssh-keys';
 export * as dataGithubTeam from './data-github-team';
 export * as dataGithubTree from './data-github-tree';
 export * as dataGithubUser from './data-github-user';
+export * as dataGithubUserExternalIdentity from './data-github-user-external-identity';
 export * as dataGithubUsers from './data-github-users';
 export * as provider from './provider';
 

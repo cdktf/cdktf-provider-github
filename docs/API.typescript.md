@@ -82,6 +82,7 @@ The following submodules are available:
 - [dataGithubTeam](./dataGithubTeam.typescript.md)
 - [dataGithubTree](./dataGithubTree.typescript.md)
 - [dataGithubUser](./dataGithubUser.typescript.md)
+- [dataGithubUserExternalIdentity](./dataGithubUserExternalIdentity.typescript.md)
 - [dataGithubUsers](./dataGithubUsers.typescript.md)
 - [dependabotOrganizationSecret](./dependabotOrganizationSecret.typescript.md)
 - [dependabotOrganizationSecretRepositories](./dependabotOrganizationSecretRepositories.typescript.md)

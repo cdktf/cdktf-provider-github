@@ -82,6 +82,7 @@ The following submodules are available:
 - [dataGithubTeam](./dataGithubTeam.go.md)
 - [dataGithubTree](./dataGithubTree.go.md)
 - [dataGithubUser](./dataGithubUser.go.md)
+- [dataGithubUserExternalIdentity](./dataGithubUserExternalIdentity.go.md)
 - [dataGithubUsers](./dataGithubUsers.go.md)
 - [dependabotOrganizationSecret](./dependabotOrganizationSecret.go.md)
 - [dependabotOrganizationSecretRepositories](./dependabotOrganizationSecretRepositories.go.md)

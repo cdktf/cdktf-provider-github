@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_repository
+// https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface TeamRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_repository#id TeamRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_repository#id TeamRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +22,25 @@ export interface TeamRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
   * The permissions of team members regarding the repository. Must be one of 'pull', 'triage', 'push', 'maintain', 'admin' or the name of an existing custom repository role within the organisation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_repository#permission TeamRepository#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_repository#permission TeamRepository#permission}
   */
   readonly permission?: string;
   /**
   * The repository to add to the team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_repository#repository TeamRepository#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_repository#repository TeamRepository#repository}
   */
   readonly repository: string;
   /**
   * ID or slug of team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_repository#team_id TeamRepository#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_repository#team_id TeamRepository#team_id}
   */
   readonly teamId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_repository github_team_repository}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_repository github_team_repository}
 */
 export class TeamRepository extends cdktf.TerraformResource {
 
@@ -54,7 +54,7 @@ export class TeamRepository extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.32.0/docs/resources/team_repository github_team_repository} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/team_repository github_team_repository} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class TeamRepository extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.32.0',
+        providerVersion: '5.33.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

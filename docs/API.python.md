@@ -82,6 +82,7 @@ The following submodules are available:
 - [dataGithubTeam](./dataGithubTeam.python.md)
 - [dataGithubTree](./dataGithubTree.python.md)
 - [dataGithubUser](./dataGithubUser.python.md)
+- [dataGithubUserExternalIdentity](./dataGithubUserExternalIdentity.python.md)
 - [dataGithubUsers](./dataGithubUsers.python.md)
 - [dependabotOrganizationSecret](./dependabotOrganizationSecret.python.md)
 - [dependabotOrganizationSecretRepositories](./dependabotOrganizationSecretRepositories.python.md)
