@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubBranchProtectionRules.DataGithubBranchProtectionRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchprotectionrules"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubbranchprotectionrules"
 
 datagithubbranchprotectionrules.NewDataGithubBranchProtectionRules(scope Construct, id *string, config DataGithubBranchProtectionRulesConfig) DataGithubBranchProtectionRules
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubBranchProtectionRules.DataGithubBranchProtectionRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchprotectionrules"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubbranchprotectionrules"
 
 datagithubbranchprotectionrules.DataGithubBranchProtectionRules_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubBranchProtectionRules.DataGithubBranchProtectionRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchprotectionrules"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubbranchprotectionrules"
 
 datagithubbranchprotectionrules.DataGithubBranchProtectionRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithubbranchprotectionrules.DataGithubBranchProtectionRules_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubBranchProtectionRules.DataGithubBranchProtectionRules.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchprotectionrules"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubbranchprotectionrules"
 
 datagithubbranchprotectionrules.DataGithubBranchProtectionRules_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubBranchProtectionRules.DataGithubBranchProtectionRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchprotectionrules"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubbranchprotectionrules"
 
 &datagithubbranchprotectionrules.DataGithubBranchProtectionRulesConfig {
 	Connection: interface{},
@@ -688,7 +688,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubBranchProtectionRules.DataGithubBranchProtectionRulesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchprotectionrules"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubbranchprotectionrules"
 
 &datagithubbranchprotectionrules.DataGithubBranchProtectionRulesRules {
 
@@ -703,7 +703,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchpro
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubBranchProtectionRules.DataGithubBranchProtectionRulesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchprotectionrules"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubbranchprotectionrules"
 
 datagithubbranchprotectionrules.NewDataGithubBranchProtectionRulesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubBranchProtectionRulesRulesList
 ```
@@ -835,7 +835,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubBranchProtectionRules.DataGithubBranchProtectionRulesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/datagithubbranchprotectionrules"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubbranchprotectionrules"
 
 datagithubbranchprotectionrules.NewDataGithubBranchProtectionRulesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubBranchProtectionRulesRulesOutputReference
 ```

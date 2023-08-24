@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/organizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationcustomrole"
 
 organizationcustomrole.NewOrganizationCustomRole(scope Construct, id *string, config OrganizationCustomRoleConfig) OrganizationCustomRole
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/organizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationcustomrole"
 
 organizationcustomrole.OrganizationCustomRole_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/organizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationcustomrole"
 
 organizationcustomrole.OrganizationCustomRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ organizationcustomrole.OrganizationCustomRole_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/organizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationcustomrole"
 
 organizationcustomrole.OrganizationCustomRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -639,7 +639,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v10/organizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationcustomrole"
 
 &organizationcustomrole.OrganizationCustomRoleConfig {
 	Connection: interface{},
