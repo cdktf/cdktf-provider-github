@@ -1,6 +1,6 @@
 # `github_user_ssh_key`
 
-Refer to the Terraform Registory for docs: [`github_user_ssh_key`](https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key).
+Refer to the Terraform Registory for docs: [`github_user_ssh_key`](https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key).
 
 # `userSshKey` Submodule <a name="`userSshKey` Submodule" id="@cdktf/provider-github.userSshKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_user_ssh_key`](https://regis
 
 ### UserSshKey <a name="UserSshKey" id="@cdktf/provider-github.userSshKey.UserSshKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key github_user_ssh_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key github_user_ssh_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userSshKey.UserSshKey.Initializer"></a>
 
@@ -46,7 +46,7 @@ UserSshKey.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.Initializer.parameter.key">key</a></code> | <code>java.lang.String</code> | The public SSH key to add to your GitHub account. |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | A descriptive name for the new key. |
-| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key#id UserSshKey#id}. |
+| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key#id UserSshKey#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The public SSH key to add to your GitHub account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key#key UserSshKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key#key UserSshKey#key}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 A descriptive name for the new key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key#title UserSshKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key#title UserSshKey#title}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key#id UserSshKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key#id UserSshKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -734,7 +734,7 @@ UserSshKeyConfig.builder()
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.key">key</a></code> | <code>java.lang.String</code> | The public SSH key to add to your GitHub account. |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.title">title</a></code> | <code>java.lang.String</code> | A descriptive name for the new key. |
-| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key#id UserSshKey#id}. |
+| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key#id UserSshKey#id}. |
 
 ---
 
@@ -818,7 +818,7 @@ public java.lang.String getKey();
 
 The public SSH key to add to your GitHub account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key#key UserSshKey#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key#key UserSshKey#key}
 
 ---
 
@@ -832,7 +832,7 @@ public java.lang.String getTitle();
 
 A descriptive name for the new key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key#title UserSshKey#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key#title UserSshKey#title}
 
 ---
 
@@ -844,7 +844,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/resources/user_ssh_key#id UserSshKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/user_ssh_key#id UserSshKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

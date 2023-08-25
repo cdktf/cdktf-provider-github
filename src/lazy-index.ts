@@ -24,6 +24,7 @@ Object.defineProperty(exports, 'branchDefault', { get: function () { return requ
 Object.defineProperty(exports, 'branchProtection', { get: function () { return require('./branch-protection'); } });
 Object.defineProperty(exports, 'branchProtectionV3', { get: function () { return require('./branch-protection-v3'); } });
 Object.defineProperty(exports, 'codespacesOrganizationSecret', { get: function () { return require('./codespaces-organization-secret'); } });
+Object.defineProperty(exports, 'codespacesOrganizationSecretRepositories', { get: function () { return require('./codespaces-organization-secret-repositories'); } });
 Object.defineProperty(exports, 'codespacesSecret', { get: function () { return require('./codespaces-secret'); } });
 Object.defineProperty(exports, 'codespacesUserSecret', { get: function () { return require('./codespaces-user-secret'); } });
 Object.defineProperty(exports, 'dependabotOrganizationSecret', { get: function () { return require('./dependabot-organization-secret'); } });
@@ -47,6 +48,7 @@ Object.defineProperty(exports, 'repository', { get: function () { return require
 Object.defineProperty(exports, 'repositoryAutolinkReference', { get: function () { return require('./repository-autolink-reference'); } });
 Object.defineProperty(exports, 'repositoryCollaborator', { get: function () { return require('./repository-collaborator'); } });
 Object.defineProperty(exports, 'repositoryCollaborators', { get: function () { return require('./repository-collaborators'); } });
+Object.defineProperty(exports, 'repositoryDependabotSecurityUpdates', { get: function () { return require('./repository-dependabot-security-updates'); } });
 Object.defineProperty(exports, 'repositoryDeployKey', { get: function () { return require('./repository-deploy-key'); } });
 Object.defineProperty(exports, 'repositoryDeploymentBranchPolicy', { get: function () { return require('./repository-deployment-branch-policy'); } });
 Object.defineProperty(exports, 'repositoryEnvironment', { get: function () { return require('./repository-environment'); } });

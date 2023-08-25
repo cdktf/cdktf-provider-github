@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization
+// https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization#id DataGithubOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization#id DataGithubOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization#name DataGithubOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization#name DataGithubOrganization#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization github_organization}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization github_organization}
 */
 export class DataGithubOrganization extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization github_organization} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization github_organization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_organization',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.33.0',
+        providerVersion: '5.34.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -69,6 +69,31 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // advanced_security_enabled_for_new_repositories - computed: true, optional: false, required: false
+  public get advancedSecurityEnabledForNewRepositories() {
+    return this.getBooleanAttribute('advanced_security_enabled_for_new_repositories');
+  }
+
+  // default_repository_permission - computed: true, optional: false, required: false
+  public get defaultRepositoryPermission() {
+    return this.getStringAttribute('default_repository_permission');
+  }
+
+  // dependabot_alerts_enabled_for_new_repositories - computed: true, optional: false, required: false
+  public get dependabotAlertsEnabledForNewRepositories() {
+    return this.getBooleanAttribute('dependabot_alerts_enabled_for_new_repositories');
+  }
+
+  // dependabot_security_updates_enabled_for_new_repositories - computed: true, optional: false, required: false
+  public get dependabotSecurityUpdatesEnabledForNewRepositories() {
+    return this.getBooleanAttribute('dependabot_security_updates_enabled_for_new_repositories');
+  }
+
+  // dependency_graph_enabled_for_new_repositories - computed: true, optional: false, required: false
+  public get dependencyGraphEnabledForNewRepositories() {
+    return this.getBooleanAttribute('dependency_graph_enabled_for_new_repositories');
+  }
 
   // description - computed: true, optional: false, required: false
   public get description() {
@@ -99,6 +124,51 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
   // members - computed: true, optional: false, required: false
   public get members() {
     return this.getListAttribute('members');
+  }
+
+  // members_allowed_repository_creation_type - computed: true, optional: false, required: false
+  public get membersAllowedRepositoryCreationType() {
+    return this.getStringAttribute('members_allowed_repository_creation_type');
+  }
+
+  // members_can_create_internal_repositories - computed: true, optional: false, required: false
+  public get membersCanCreateInternalRepositories() {
+    return this.getBooleanAttribute('members_can_create_internal_repositories');
+  }
+
+  // members_can_create_pages - computed: true, optional: false, required: false
+  public get membersCanCreatePages() {
+    return this.getBooleanAttribute('members_can_create_pages');
+  }
+
+  // members_can_create_private_pages - computed: true, optional: false, required: false
+  public get membersCanCreatePrivatePages() {
+    return this.getBooleanAttribute('members_can_create_private_pages');
+  }
+
+  // members_can_create_private_repositories - computed: true, optional: false, required: false
+  public get membersCanCreatePrivateRepositories() {
+    return this.getBooleanAttribute('members_can_create_private_repositories');
+  }
+
+  // members_can_create_public_pages - computed: true, optional: false, required: false
+  public get membersCanCreatePublicPages() {
+    return this.getBooleanAttribute('members_can_create_public_pages');
+  }
+
+  // members_can_create_public_repositories - computed: true, optional: false, required: false
+  public get membersCanCreatePublicRepositories() {
+    return this.getBooleanAttribute('members_can_create_public_repositories');
+  }
+
+  // members_can_create_repositories - computed: true, optional: false, required: false
+  public get membersCanCreateRepositories() {
+    return this.getBooleanAttribute('members_can_create_repositories');
+  }
+
+  // members_can_fork_private_repositories - computed: true, optional: false, required: false
+  public get membersCanForkPrivateRepositories() {
+    return this.getBooleanAttribute('members_can_fork_private_repositories');
   }
 
   // name - computed: false, optional: false, required: true
@@ -134,10 +204,30 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
     return this.getListAttribute('repositories');
   }
 
+  // secret_scanning_enabled_for_new_repositories - computed: true, optional: false, required: false
+  public get secretScanningEnabledForNewRepositories() {
+    return this.getBooleanAttribute('secret_scanning_enabled_for_new_repositories');
+  }
+
+  // secret_scanning_push_protection_enabled_for_new_repositories - computed: true, optional: false, required: false
+  public get secretScanningPushProtectionEnabledForNewRepositories() {
+    return this.getBooleanAttribute('secret_scanning_push_protection_enabled_for_new_repositories');
+  }
+
+  // two_factor_requirement_enabled - computed: true, optional: false, required: false
+  public get twoFactorRequirementEnabled() {
+    return this.getBooleanAttribute('two_factor_requirement_enabled');
+  }
+
   // users - computed: true, optional: false, required: false
   private _users = new cdktf.StringMapList(this, "users", false);
   public get users() {
     return this._users;
+  }
+
+  // web_commit_signoff_required - computed: true, optional: false, required: false
+  public get webCommitSignoffRequired() {
+    return this.getBooleanAttribute('web_commit_signoff_required');
   }
 
   // =========
