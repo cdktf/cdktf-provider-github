@@ -1,6 +1,6 @@
 # `data_github_dependabot_organization_secrets`
 
-Refer to the Terraform Registory for docs: [`data_github_dependabot_organization_secrets`](https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/dependabot_organization_secrets).
+Refer to the Terraform Registory for docs: [`data_github_dependabot_organization_secrets`](https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/dependabot_organization_secrets).
 
 # `dataGithubDependabotOrganizationSecrets` Submodule <a name="`dataGithubDependabotOrganizationSecrets` Submodule" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_dependabot_organization
 
 ### DataGithubDependabotOrganizationSecrets <a name="DataGithubDependabotOrganizationSecrets" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecrets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/dependabot_organization_secrets github_dependabot_organization_secrets}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/dependabot_organization_secrets github_dependabot_organization_secrets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecrets.Initializer"></a>
 
@@ -549,7 +549,7 @@ const dataGithubDependabotOrganizationSecretsConfig: dataGithubDependabotOrganiz
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/dependabot_organization_secrets#id DataGithubDependabotOrganizationSecrets#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/dependabot_organization_secrets#id DataGithubDependabotOrganizationSecrets#id}. |
 
 ---
 
@@ -631,7 +631,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/dependabot_organization_secrets#id DataGithubDependabotOrganizationSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/dependabot_organization_secrets#id DataGithubDependabotOrganizationSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

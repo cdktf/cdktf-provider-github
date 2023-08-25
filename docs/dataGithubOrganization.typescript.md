@@ -1,6 +1,6 @@
 # `data_github_organization`
 
-Refer to the Terraform Registory for docs: [`data_github_organization`](https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization).
+Refer to the Terraform Registory for docs: [`data_github_organization`](https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization).
 
 # `dataGithubOrganization` Submodule <a name="`dataGithubOrganization` Submodule" id="@cdktf/provider-github.dataGithubOrganization"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_organization`](https://
 
 ### DataGithubOrganization <a name="DataGithubOrganization" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization github_organization}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization github_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.Initializer"></a>
 
@@ -350,14 +350,32 @@ dataGithubOrganization.DataGithubOrganization.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.advancedSecurityEnabledForNewRepositories">advancedSecurityEnabledForNewRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.defaultRepositoryPermission">defaultRepositoryPermission</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.dependabotAlertsEnabledForNewRepositories">dependabotAlertsEnabledForNewRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabotSecurityUpdatesEnabledForNewRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.dependencyGraphEnabledForNewRepositories">dependencyGraphEnabledForNewRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.login">login</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.members">members</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersAllowedRepositoryCreationType">membersAllowedRepositoryCreationType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreateInternalRepositories">membersCanCreateInternalRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePages">membersCanCreatePages</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePrivatePages">membersCanCreatePrivatePages</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePrivateRepositories">membersCanCreatePrivateRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePublicPages">membersCanCreatePublicPages</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePublicRepositories">membersCanCreatePublicRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreateRepositories">membersCanCreateRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanForkPrivateRepositories">membersCanForkPrivateRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.nodeId">nodeId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.orgname">orgname</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.plan">plan</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.repositories">repositories</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.secretScanningEnabledForNewRepositories">secretScanningEnabledForNewRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.secretScanningPushProtectionEnabledForNewRepositories">secretScanningPushProtectionEnabledForNewRepositories</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.twoFactorRequirementEnabled">twoFactorRequirementEnabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.users">users</a></code> | <code>cdktf.StringMapList</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.id">id</a></code> | <code>string</code> | *No description.* |
@@ -487,6 +505,56 @@ public readonly provider: TerraformProvider;
 
 ---
 
+##### `advancedSecurityEnabledForNewRepositories`<sup>Required</sup> <a name="advancedSecurityEnabledForNewRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.advancedSecurityEnabledForNewRepositories"></a>
+
+```typescript
+public readonly advancedSecurityEnabledForNewRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `defaultRepositoryPermission`<sup>Required</sup> <a name="defaultRepositoryPermission" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.defaultRepositoryPermission"></a>
+
+```typescript
+public readonly defaultRepositoryPermission: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dependabotAlertsEnabledForNewRepositories`<sup>Required</sup> <a name="dependabotAlertsEnabledForNewRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.dependabotAlertsEnabledForNewRepositories"></a>
+
+```typescript
+public readonly dependabotAlertsEnabledForNewRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `dependabotSecurityUpdatesEnabledForNewRepositories`<sup>Required</sup> <a name="dependabotSecurityUpdatesEnabledForNewRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.dependabotSecurityUpdatesEnabledForNewRepositories"></a>
+
+```typescript
+public readonly dependabotSecurityUpdatesEnabledForNewRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `dependencyGraphEnabledForNewRepositories`<sup>Required</sup> <a name="dependencyGraphEnabledForNewRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.dependencyGraphEnabledForNewRepositories"></a>
+
+```typescript
+public readonly dependencyGraphEnabledForNewRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.description"></a>
 
 ```typescript
@@ -514,6 +582,96 @@ public readonly members: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `membersAllowedRepositoryCreationType`<sup>Required</sup> <a name="membersAllowedRepositoryCreationType" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersAllowedRepositoryCreationType"></a>
+
+```typescript
+public readonly membersAllowedRepositoryCreationType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `membersCanCreateInternalRepositories`<sup>Required</sup> <a name="membersCanCreateInternalRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreateInternalRepositories"></a>
+
+```typescript
+public readonly membersCanCreateInternalRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `membersCanCreatePages`<sup>Required</sup> <a name="membersCanCreatePages" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePages"></a>
+
+```typescript
+public readonly membersCanCreatePages: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `membersCanCreatePrivatePages`<sup>Required</sup> <a name="membersCanCreatePrivatePages" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePrivatePages"></a>
+
+```typescript
+public readonly membersCanCreatePrivatePages: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `membersCanCreatePrivateRepositories`<sup>Required</sup> <a name="membersCanCreatePrivateRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePrivateRepositories"></a>
+
+```typescript
+public readonly membersCanCreatePrivateRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `membersCanCreatePublicPages`<sup>Required</sup> <a name="membersCanCreatePublicPages" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePublicPages"></a>
+
+```typescript
+public readonly membersCanCreatePublicPages: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `membersCanCreatePublicRepositories`<sup>Required</sup> <a name="membersCanCreatePublicRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreatePublicRepositories"></a>
+
+```typescript
+public readonly membersCanCreatePublicRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `membersCanCreateRepositories`<sup>Required</sup> <a name="membersCanCreateRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanCreateRepositories"></a>
+
+```typescript
+public readonly membersCanCreateRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `membersCanForkPrivateRepositories`<sup>Required</sup> <a name="membersCanForkPrivateRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.membersCanForkPrivateRepositories"></a>
+
+```typescript
+public readonly membersCanForkPrivateRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -557,6 +715,36 @@ public readonly repositories: string[];
 
 ---
 
+##### `secretScanningEnabledForNewRepositories`<sup>Required</sup> <a name="secretScanningEnabledForNewRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.secretScanningEnabledForNewRepositories"></a>
+
+```typescript
+public readonly secretScanningEnabledForNewRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `secretScanningPushProtectionEnabledForNewRepositories`<sup>Required</sup> <a name="secretScanningPushProtectionEnabledForNewRepositories" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.secretScanningPushProtectionEnabledForNewRepositories"></a>
+
+```typescript
+public readonly secretScanningPushProtectionEnabledForNewRepositories: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
+##### `twoFactorRequirementEnabled`<sup>Required</sup> <a name="twoFactorRequirementEnabled" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.twoFactorRequirementEnabled"></a>
+
+```typescript
+public readonly twoFactorRequirementEnabled: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
+
+---
+
 ##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.users"></a>
 
 ```typescript
@@ -564,6 +752,16 @@ public readonly users: StringMapList;
 ```
 
 - *Type:* cdktf.StringMapList
+
+---
+
+##### `webCommitSignoffRequired`<sup>Required</sup> <a name="webCommitSignoffRequired" id="@cdktf/provider-github.dataGithubOrganization.DataGithubOrganization.property.webCommitSignoffRequired"></a>
+
+```typescript
+public readonly webCommitSignoffRequired: IResolvable;
+```
+
+- *Type:* cdktf.IResolvable
 
 ---
 
@@ -648,8 +846,8 @@ const dataGithubOrganizationConfig: dataGithubOrganization.DataGithubOrganizatio
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganizationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganizationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganizationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganizationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization#name DataGithubOrganization#name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization#id DataGithubOrganization#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganizationConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization#name DataGithubOrganization#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganization.DataGithubOrganizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization#id DataGithubOrganization#id}. |
 
 ---
 
@@ -731,7 +929,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization#name DataGithubOrganization#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization#name DataGithubOrganization#name}.
 
 ---
 
@@ -743,7 +941,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/organization#id DataGithubOrganization#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization#id DataGithubOrganization#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

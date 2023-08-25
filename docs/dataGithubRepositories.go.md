@@ -1,6 +1,6 @@
 # `data_github_repositories`
 
-Refer to the Terraform Registory for docs: [`data_github_repositories`](https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories).
+Refer to the Terraform Registory for docs: [`data_github_repositories`](https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories).
 
 # `dataGithubRepositories` Submodule <a name="`dataGithubRepositories` Submodule" id="@cdktf/provider-github.dataGithubRepositories"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_repositories`](https://
 
 ### DataGithubRepositories <a name="DataGithubRepositories" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories github_repositories}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories github_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 datagithubrepositories.NewDataGithubRepositories(scope Construct, id *string, config DataGithubRepositoriesConfig) DataGithubRepositories
 ```
@@ -298,7 +298,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -344,7 +344,7 @@ datagithubrepositories.DataGithubRepositories_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -664,7 +664,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositories"
 
 &datagithubrepositories.DataGithubRepositoriesConfig {
 	Connection: interface{},
@@ -693,11 +693,11 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositor
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#query DataGithubRepositories#query}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#id DataGithubRepositories#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.includeRepoId">IncludeRepoId</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#include_repo_id DataGithubRepositories#include_repo_id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.resultsPerPage">ResultsPerPage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#results_per_page DataGithubRepositories#results_per_page}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.sort">Sort</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#sort DataGithubRepositories#sort}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.query">Query</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#query DataGithubRepositories#query}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#id DataGithubRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.includeRepoId">IncludeRepoId</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#include_repo_id DataGithubRepositories#include_repo_id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.resultsPerPage">ResultsPerPage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#results_per_page DataGithubRepositories#results_per_page}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.property.sort">Sort</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#sort DataGithubRepositories#sort}. |
 
 ---
 
@@ -779,7 +779,7 @@ Query *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#query DataGithubRepositories#query}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#query DataGithubRepositories#query}.
 
 ---
 
@@ -791,7 +791,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#id DataGithubRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#id DataGithubRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -806,7 +806,7 @@ IncludeRepoId interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#include_repo_id DataGithubRepositories#include_repo_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#include_repo_id DataGithubRepositories#include_repo_id}.
 
 ---
 
@@ -818,7 +818,7 @@ ResultsPerPage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#results_per_page DataGithubRepositories#results_per_page}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#results_per_page DataGithubRepositories#results_per_page}.
 
 ---
 
@@ -830,7 +830,7 @@ Sort *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.33.0/docs/data-sources/repositories#sort DataGithubRepositories#sort}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repositories#sort DataGithubRepositories#sort}.
 
 ---
 
