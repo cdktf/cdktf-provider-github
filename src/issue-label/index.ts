@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.34.0/docs/resources/issue_label
 // generated from terraform resource schema
 
