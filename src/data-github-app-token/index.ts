@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/app_token
 // generated from terraform resource schema
 
