@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/actions_environment_variables
+// https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_environment_variables
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,22 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubActionsEnvironmentVariablesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/actions_environment_variables#environment DataGithubActionsEnvironmentVariables#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_environment_variables#environment DataGithubActionsEnvironmentVariables#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/actions_environment_variables#full_name DataGithubActionsEnvironmentVariables#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_environment_variables#full_name DataGithubActionsEnvironmentVariables#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/actions_environment_variables#id DataGithubActionsEnvironmentVariables#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_environment_variables#id DataGithubActionsEnvironmentVariables#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/actions_environment_variables#name DataGithubActionsEnvironmentVariables#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_environment_variables#name DataGithubActionsEnvironmentVariables#name}
   */
   readonly name?: string;
 }
@@ -113,7 +113,7 @@ export class DataGithubActionsEnvironmentVariablesVariablesList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/actions_environment_variables github_actions_environment_variables}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_environment_variables github_actions_environment_variables}
 */
 export class DataGithubActionsEnvironmentVariables extends cdktf.TerraformDataSource {
 
@@ -127,7 +127,7 @@ export class DataGithubActionsEnvironmentVariables extends cdktf.TerraformDataSo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/actions_environment_variables github_actions_environment_variables} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_environment_variables github_actions_environment_variables} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -138,7 +138,7 @@ export class DataGithubActionsEnvironmentVariables extends cdktf.TerraformDataSo
       terraformResourceType: 'github_actions_environment_variables',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.34.0',
+        providerVersion: '5.35.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

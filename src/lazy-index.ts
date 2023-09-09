@@ -38,6 +38,7 @@ Object.defineProperty(exports, 'membership', { get: function () { return require
 Object.defineProperty(exports, 'organizationBlock', { get: function () { return require('./organization-block'); } });
 Object.defineProperty(exports, 'organizationCustomRole', { get: function () { return require('./organization-custom-role'); } });
 Object.defineProperty(exports, 'organizationProject', { get: function () { return require('./organization-project'); } });
+Object.defineProperty(exports, 'organizationRuleset', { get: function () { return require('./organization-ruleset'); } });
 Object.defineProperty(exports, 'organizationSecurityManager', { get: function () { return require('./organization-security-manager'); } });
 Object.defineProperty(exports, 'organizationSettings', { get: function () { return require('./organization-settings'); } });
 Object.defineProperty(exports, 'organizationWebhook', { get: function () { return require('./organization-webhook'); } });
@@ -57,7 +58,9 @@ Object.defineProperty(exports, 'repositoryFile', { get: function () { return req
 Object.defineProperty(exports, 'repositoryMilestone', { get: function () { return require('./repository-milestone'); } });
 Object.defineProperty(exports, 'repositoryProject', { get: function () { return require('./repository-project'); } });
 Object.defineProperty(exports, 'repositoryPullRequest', { get: function () { return require('./repository-pull-request'); } });
+Object.defineProperty(exports, 'repositoryRuleset', { get: function () { return require('./repository-ruleset'); } });
 Object.defineProperty(exports, 'repositoryTagProtection', { get: function () { return require('./repository-tag-protection'); } });
+Object.defineProperty(exports, 'repositoryTopics', { get: function () { return require('./repository-topics'); } });
 Object.defineProperty(exports, 'repositoryWebhook', { get: function () { return require('./repository-webhook'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });
 Object.defineProperty(exports, 'teamMembers', { get: function () { return require('./team-members'); } });
