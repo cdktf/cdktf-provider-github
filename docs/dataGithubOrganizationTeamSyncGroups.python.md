@@ -1,6 +1,6 @@
 # `data_github_organization_team_sync_groups`
 
-Refer to the Terraform Registory for docs: [`data_github_organization_team_sync_groups`](https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization_team_sync_groups).
+Refer to the Terraform Registory for docs: [`data_github_organization_team_sync_groups`](https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization_team_sync_groups).
 
 # `dataGithubOrganizationTeamSyncGroups` Submodule <a name="`dataGithubOrganizationTeamSyncGroups` Submodule" id="@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_organization_team_sync_
 
 ### DataGithubOrganizationTeamSyncGroups <a name="DataGithubOrganizationTeamSyncGroups" id="@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization_team_sync_groups github_organization_team_sync_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups(
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization_team_sync_groups#id DataGithubOrganizationTeamSyncGroups#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroups.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization_team_sync_groups#id DataGithubOrganizationTeamSyncGroups#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization_team_sync_groups#id DataGithubOrganizationTeamSyncGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization_team_sync_groups#id DataGithubOrganizationTeamSyncGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -654,7 +654,7 @@ dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsConfig(
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization_team_sync_groups#id DataGithubOrganizationTeamSyncGroups#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeamSyncGroups.DataGithubOrganizationTeamSyncGroupsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization_team_sync_groups#id DataGithubOrganizationTeamSyncGroups#id}. |
 
 ---
 
@@ -736,7 +736,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/organization_team_sync_groups#id DataGithubOrganizationTeamSyncGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/organization_team_sync_groups#id DataGithubOrganizationTeamSyncGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

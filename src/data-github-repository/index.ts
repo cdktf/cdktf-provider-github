@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository
+// https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository#description DataGithubRepository#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository#description DataGithubRepository#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository#full_name DataGithubRepository#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository#full_name DataGithubRepository#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository#homepage_url DataGithubRepository#homepage_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository#homepage_url DataGithubRepository#homepage_url}
   */
   readonly homepageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository#id DataGithubRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository#id DataGithubRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository#name DataGithubRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository#name DataGithubRepository#name}
   */
   readonly name?: string;
 }
@@ -271,7 +266,7 @@ export class DataGithubRepositoryTemplateList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository github_repository}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository github_repository}
 */
 export class DataGithubRepository extends cdktf.TerraformDataSource {
 
@@ -285,7 +280,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository github_repository} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository github_repository} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -296,7 +291,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.34.0',
+        providerVersion: '5.35.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

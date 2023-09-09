@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository_file
+// https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_file
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface DataGithubRepositoryFileConfig extends cdktf.TerraformMetaArgum
   /**
   * The branch name, defaults to the repository's default branch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
   */
   readonly branch?: string;
   /**
   * The file path to manage
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
   */
   readonly file: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +29,13 @@ export interface DataGithubRepositoryFileConfig extends cdktf.TerraformMetaArgum
   /**
   * The repository name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository_file github_repository_file}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_file github_repository_file}
 */
 export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
 
@@ -54,7 +49,7 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.34.0/docs/data-sources/repository_file github_repository_file} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/repository_file github_repository_file} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class DataGithubRepositoryFile extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository_file',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.34.0',
+        providerVersion: '5.35.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
