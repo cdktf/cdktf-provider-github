@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level
+// https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/actions_repository_access_level
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface ActionsRepositoryAccessLevelConfig extends cdktf.TerraformMetaA
   /**
   * Where the actions or reusable workflows of the repository may be used. Possible values are 'none', 'user', 'organization', or 'enterprise'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
   */
   readonly accessLevel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface ActionsRepositoryAccessLevelConfig extends cdktf.TerraformMetaA
   /**
   * The GitHub repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level github_actions_repository_access_level}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/actions_repository_access_level github_actions_repository_access_level}
 */
 export class ActionsRepositoryAccessLevel extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class ActionsRepositoryAccessLevel extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_repository_access_level github_actions_repository_access_level} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/actions_repository_access_level github_actions_repository_access_level} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class ActionsRepositoryAccessLevel extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_repository_access_level',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

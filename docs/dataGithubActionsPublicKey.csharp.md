@@ -1,6 +1,6 @@
 # `data_github_actions_public_key`
 
-Refer to the Terraform Registory for docs: [`data_github_actions_public_key`](https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_public_key).
+Refer to the Terraform Registory for docs: [`data_github_actions_public_key`](https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_public_key).
 
 # `dataGithubActionsPublicKey` Submodule <a name="`dataGithubActionsPublicKey` Submodule" id="@cdktf/provider-github.dataGithubActionsPublicKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_actions_public_key`](ht
 
 ### DataGithubActionsPublicKey <a name="DataGithubActionsPublicKey" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_public_key github_actions_public_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_public_key github_actions_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKey.Initializer"></a>
 
@@ -592,8 +592,8 @@ new DataGithubActionsPublicKeyConfig {
 | <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_public_key#repository DataGithubActionsPublicKey#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_public_key#id DataGithubActionsPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_public_key#repository DataGithubActionsPublicKey#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_public_key#id DataGithubActionsPublicKey#id}. |
 
 ---
 
@@ -675,7 +675,7 @@ public string Repository { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_public_key#repository DataGithubActionsPublicKey#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_public_key#repository DataGithubActionsPublicKey#repository}.
 
 ---
 
@@ -687,7 +687,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_public_key#id DataGithubActionsPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_public_key#id DataGithubActionsPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

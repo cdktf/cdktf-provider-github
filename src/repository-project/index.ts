@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_project
+// https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * The body of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_project#body RepositoryProject#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_project#body RepositoryProject#body}
   */
   readonly body?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_project#id RepositoryProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_project#id RepositoryProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +23,19 @@ export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_project#name RepositoryProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_project#name RepositoryProject#name}
   */
   readonly name: string;
   /**
   * The repository of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_project#repository RepositoryProject#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_project#repository RepositoryProject#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_project github_repository_project}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_project github_repository_project}
 */
 export class RepositoryProject extends cdktf.TerraformResource {
 
@@ -54,7 +49,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_project github_repository_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_project github_repository_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +60,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_project',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

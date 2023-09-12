@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/issue_labels
+// https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/issue_labels
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubIssueLabelsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/issue_labels#id DataGithubIssueLabels#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/issue_labels#id DataGithubIssueLabels#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/issue_labels#repository DataGithubIssueLabels#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/issue_labels#repository DataGithubIssueLabels#repository}
   */
   readonly repository: string;
 }
@@ -105,7 +100,7 @@ export class DataGithubIssueLabelsLabelsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/issue_labels github_issue_labels}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/issue_labels github_issue_labels}
 */
 export class DataGithubIssueLabels extends cdktf.TerraformDataSource {
 
@@ -119,7 +114,7 @@ export class DataGithubIssueLabels extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/issue_labels github_issue_labels} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/issue_labels github_issue_labels} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -130,7 +125,7 @@ export class DataGithubIssueLabels extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_issue_labels',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

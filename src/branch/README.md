@@ -1,3 +1,3 @@
 # `github_branch`
 
-Refer to the Terraform Registory for docs: [`github_branch`](https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/branch).
+Refer to the Terraform Registory for docs: [`github_branch`](https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/branch).

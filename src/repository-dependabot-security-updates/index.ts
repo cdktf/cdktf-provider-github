@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_dependabot_security_updates
+// https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_dependabot_security_updates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface RepositoryDependabotSecurityUpdatesConfig extends cdktf.Terrafo
   /**
   * The state of the automated security fixes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_dependabot_security_updates#enabled RepositoryDependabotSecurityUpdates#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_dependabot_security_updates#enabled RepositoryDependabotSecurityUpdates#enabled}
   */
   readonly enabled: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_dependabot_security_updates#id RepositoryDependabotSecurityUpdates#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_dependabot_security_updates#id RepositoryDependabotSecurityUpdates#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface RepositoryDependabotSecurityUpdatesConfig extends cdktf.Terrafo
   /**
   * The GitHub repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_dependabot_security_updates#repository RepositoryDependabotSecurityUpdates#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_dependabot_security_updates#repository RepositoryDependabotSecurityUpdates#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_dependabot_security_updates github_repository_dependabot_security_updates}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_dependabot_security_updates github_repository_dependabot_security_updates}
 */
 export class RepositoryDependabotSecurityUpdates extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class RepositoryDependabotSecurityUpdates extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/repository_dependabot_security_updates github_repository_dependabot_security_updates} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/repository_dependabot_security_updates github_repository_dependabot_security_updates} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class RepositoryDependabotSecurityUpdates extends cdktf.TerraformResource
       terraformResourceType: 'github_repository_dependabot_security_updates',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
