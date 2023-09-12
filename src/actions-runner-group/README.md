@@ -1,3 +1,3 @@
 # `github_actions_runner_group`
 
-Refer to the Terraform Registory for docs: [`github_actions_runner_group`](https://registry.terraform.io/providers/integrations/github/5.35.0/docs/resources/actions_runner_group).
+Refer to the Terraform Registory for docs: [`github_actions_runner_group`](https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/actions_runner_group).

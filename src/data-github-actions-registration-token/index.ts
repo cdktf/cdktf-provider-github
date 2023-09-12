@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_registration_token
+// https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_registration_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,20 +13,20 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubActionsRegistrationTokenConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_registration_token#id DataGithubActionsRegistrationToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_registration_token#id DataGithubActionsRegistrationToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_registration_token#repository DataGithubActionsRegistrationToken#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_registration_token#repository DataGithubActionsRegistrationToken#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_registration_token github_actions_registration_token}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_registration_token github_actions_registration_token}
 */
 export class DataGithubActionsRegistrationToken extends cdktf.TerraformDataSource {
 
@@ -40,7 +40,7 @@ export class DataGithubActionsRegistrationToken extends cdktf.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.35.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/actions_registration_token github_actions_registration_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -51,7 +51,7 @@ export class DataGithubActionsRegistrationToken extends cdktf.TerraformDataSourc
       terraformResourceType: 'github_actions_registration_token',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.35.0',
+        providerVersion: '5.36.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
