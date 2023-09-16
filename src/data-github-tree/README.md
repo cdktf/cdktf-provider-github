@@ -1,3 +1,3 @@
 # `data_github_tree`
 
-Refer to the Terraform Registory for docs: [`data_github_tree`](https://registry.terraform.io/providers/integrations/github/5.36.0/docs/data-sources/tree).
+Refer to the Terraform Registory for docs: [`data_github_tree`](https://registry.terraform.io/providers/integrations/github/5.37.0/docs/data-sources/tree).
