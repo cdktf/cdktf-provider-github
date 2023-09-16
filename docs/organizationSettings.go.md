@@ -1,6 +1,6 @@
 # `github_organization_settings`
 
-Refer to the Terraform Registory for docs: [`github_organization_settings`](https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings).
+Refer to the Terraform Registory for docs: [`github_organization_settings`](https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings).
 
 # `organizationSettings` Submodule <a name="`organizationSettings` Submodule" id="@cdktf/provider-github.organizationSettings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_organization_settings`](http
 
 ### OrganizationSettings <a name="OrganizationSettings" id="@cdktf/provider-github.organizationSettings.OrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings github_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings github_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsettings"
 
 organizationsettings.NewOrganizationSettings(scope Construct, id *string, config OrganizationSettingsConfig) OrganizationSettings
 ```
@@ -452,7 +452,7 @@ func ResetWebCommitSignoffRequired()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsettings"
 
 organizationsettings.OrganizationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsettings"
 
 organizationsettings.OrganizationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ organizationsettings.OrganizationSettings_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsettings"
 
 organizationsettings.OrganizationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -1291,7 +1291,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsettings"
 
 &organizationsettings.OrganizationSettingsConfig {
 	Connection: interface{},
@@ -1354,7 +1354,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v11/organizationsetting
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.email">Email</a></code> | <code>*string</code> | The email address for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasOrganizationProjects">HasOrganizationProjects</a></code> | <code>interface{}</code> | Whether or not organization projects are enabled for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasRepositoryProjects">HasRepositoryProjects</a></code> | <code>interface{}</code> | Whether or not repository projects are enabled for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.location">Location</a></code> | <code>*string</code> | The location for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateInternalRepositories">MembersCanCreateInternalRepositories</a></code> | <code>interface{}</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePages">MembersCanCreatePages</a></code> | <code>interface{}</code> | Whether or not organization members can create new pages. |
@@ -1452,7 +1452,7 @@ BillingEmail *string
 
 The billing email address for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#billing_email OrganizationSettings#billing_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#billing_email OrganizationSettings#billing_email}
 
 ---
 
@@ -1466,7 +1466,7 @@ AdvancedSecurityEnabledForNewRepositories interface{}
 
 Whether or not advanced security is enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#advanced_security_enabled_for_new_repositories OrganizationSettings#advanced_security_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#advanced_security_enabled_for_new_repositories OrganizationSettings#advanced_security_enabled_for_new_repositories}
 
 ---
 
@@ -1480,7 +1480,7 @@ Blog *string
 
 The blog URL for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#blog OrganizationSettings#blog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#blog OrganizationSettings#blog}
 
 ---
 
@@ -1494,7 +1494,7 @@ Company *string
 
 The company name for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#company OrganizationSettings#company}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#company OrganizationSettings#company}
 
 ---
 
@@ -1508,7 +1508,7 @@ DefaultRepositoryPermission *string
 
 The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#default_repository_permission OrganizationSettings#default_repository_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#default_repository_permission OrganizationSettings#default_repository_permission}
 
 ---
 
@@ -1522,7 +1522,7 @@ DependabotAlertsEnabledForNewRepositories interface{}
 
 Whether or not dependabot alerts are enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#dependabot_alerts_enabled_for_new_repositories OrganizationSettings#dependabot_alerts_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#dependabot_alerts_enabled_for_new_repositories OrganizationSettings#dependabot_alerts_enabled_for_new_repositories}
 
 ---
 
@@ -1536,7 +1536,7 @@ DependabotSecurityUpdatesEnabledForNewRepositories interface{}
 
 Whether or not dependabot security updates are enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#dependabot_security_updates_enabled_for_new_repositories OrganizationSettings#dependabot_security_updates_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#dependabot_security_updates_enabled_for_new_repositories OrganizationSettings#dependabot_security_updates_enabled_for_new_repositories}
 
 ---
 
@@ -1550,7 +1550,7 @@ DependencyGraphEnabledForNewRepositories interface{}
 
 Whether or not dependency graph is enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#dependency_graph_enabled_for_new_repositories OrganizationSettings#dependency_graph_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#dependency_graph_enabled_for_new_repositories OrganizationSettings#dependency_graph_enabled_for_new_repositories}
 
 ---
 
@@ -1564,7 +1564,7 @@ Description *string
 
 The description for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#description OrganizationSettings#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#description OrganizationSettings#description}
 
 ---
 
@@ -1578,7 +1578,7 @@ Email *string
 
 The email address for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#email OrganizationSettings#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#email OrganizationSettings#email}
 
 ---
 
@@ -1592,7 +1592,7 @@ HasOrganizationProjects interface{}
 
 Whether or not organization projects are enabled for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#has_organization_projects OrganizationSettings#has_organization_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#has_organization_projects OrganizationSettings#has_organization_projects}
 
 ---
 
@@ -1606,7 +1606,7 @@ HasRepositoryProjects interface{}
 
 Whether or not repository projects are enabled for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#has_repository_projects OrganizationSettings#has_repository_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#has_repository_projects OrganizationSettings#has_repository_projects}
 
 ---
 
@@ -1618,7 +1618,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#id OrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#id OrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1635,7 +1635,7 @@ Location *string
 
 The location for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#location OrganizationSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#location OrganizationSettings#location}
 
 ---
 
@@ -1649,7 +1649,7 @@ MembersCanCreateInternalRepositories interface{}
 
 Whether or not organization members can create new internal repositories. For Enterprise Organizations only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#members_can_create_internal_repositories OrganizationSettings#members_can_create_internal_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#members_can_create_internal_repositories OrganizationSettings#members_can_create_internal_repositories}
 
 ---
 
@@ -1663,7 +1663,7 @@ MembersCanCreatePages interface{}
 
 Whether or not organization members can create new pages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#members_can_create_pages OrganizationSettings#members_can_create_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#members_can_create_pages OrganizationSettings#members_can_create_pages}
 
 ---
 
@@ -1677,7 +1677,7 @@ MembersCanCreatePrivatePages interface{}
 
 Whether or not organization members can create new private pages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#members_can_create_private_pages OrganizationSettings#members_can_create_private_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#members_can_create_private_pages OrganizationSettings#members_can_create_private_pages}
 
 ---
 
@@ -1691,7 +1691,7 @@ MembersCanCreatePrivateRepositories interface{}
 
 Whether or not organization members can create new private repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#members_can_create_private_repositories OrganizationSettings#members_can_create_private_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#members_can_create_private_repositories OrganizationSettings#members_can_create_private_repositories}
 
 ---
 
@@ -1705,7 +1705,7 @@ MembersCanCreatePublicPages interface{}
 
 Whether or not organization members can create new public pages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#members_can_create_public_pages OrganizationSettings#members_can_create_public_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#members_can_create_public_pages OrganizationSettings#members_can_create_public_pages}
 
 ---
 
@@ -1719,7 +1719,7 @@ MembersCanCreatePublicRepositories interface{}
 
 Whether or not organization members can create new public repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#members_can_create_public_repositories OrganizationSettings#members_can_create_public_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#members_can_create_public_repositories OrganizationSettings#members_can_create_public_repositories}
 
 ---
 
@@ -1733,7 +1733,7 @@ MembersCanCreateRepositories interface{}
 
 Whether or not organization members can create new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#members_can_create_repositories OrganizationSettings#members_can_create_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#members_can_create_repositories OrganizationSettings#members_can_create_repositories}
 
 ---
 
@@ -1747,7 +1747,7 @@ MembersCanForkPrivateRepositories interface{}
 
 Whether or not organization members can fork private repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#members_can_fork_private_repositories OrganizationSettings#members_can_fork_private_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#members_can_fork_private_repositories OrganizationSettings#members_can_fork_private_repositories}
 
 ---
 
@@ -1761,7 +1761,7 @@ Name *string
 
 The name for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#name OrganizationSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#name OrganizationSettings#name}
 
 ---
 
@@ -1775,7 +1775,7 @@ SecretScanningEnabledForNewRepositories interface{}
 
 Whether or not secret scanning is enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#secret_scanning_enabled_for_new_repositories OrganizationSettings#secret_scanning_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#secret_scanning_enabled_for_new_repositories OrganizationSettings#secret_scanning_enabled_for_new_repositories}
 
 ---
 
@@ -1789,7 +1789,7 @@ SecretScanningPushProtectionEnabledForNewRepositories interface{}
 
 Whether or not secret scanning push protection is enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#secret_scanning_push_protection_enabled_for_new_repositories OrganizationSettings#secret_scanning_push_protection_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#secret_scanning_push_protection_enabled_for_new_repositories OrganizationSettings#secret_scanning_push_protection_enabled_for_new_repositories}
 
 ---
 
@@ -1803,7 +1803,7 @@ TwitterUsername *string
 
 The Twitter username for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#twitter_username OrganizationSettings#twitter_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#twitter_username OrganizationSettings#twitter_username}
 
 ---
 
@@ -1817,7 +1817,7 @@ WebCommitSignoffRequired interface{}
 
 Whether or not commit signatures are required for commits to the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.36.0/docs/resources/organization_settings#web_commit_signoff_required OrganizationSettings#web_commit_signoff_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/organization_settings#web_commit_signoff_required OrganizationSettings#web_commit_signoff_required}
 
 ---
 
