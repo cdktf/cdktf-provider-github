@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespacessecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacessecrets"
 
 datagithubcodespacessecrets.NewDataGithubCodespacesSecrets(scope Construct, id *string, config DataGithubCodespacesSecretsConfig) DataGithubCodespacesSecrets
 ```
@@ -291,7 +291,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespacessecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacessecrets"
 
 datagithubcodespacessecrets.DataGithubCodespacesSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespacessecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacessecrets"
 
 datagithubcodespacessecrets.DataGithubCodespacesSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datagithubcodespacessecrets.DataGithubCodespacesSecrets_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespacessecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacessecrets"
 
 datagithubcodespacessecrets.DataGithubCodespacesSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespacessecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacessecrets"
 
 &datagithubcodespacessecrets.DataGithubCodespacesSecretsConfig {
 	Connection: interface{},
@@ -742,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespacessecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacessecrets"
 
 &datagithubcodespacessecrets.DataGithubCodespacesSecretsSecrets {
 
@@ -757,7 +757,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespace
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespacessecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacessecrets"
 
 datagithubcodespacessecrets.NewDataGithubCodespacesSecretsSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubCodespacesSecretsSecretsList
 ```
@@ -889,7 +889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubcodespacessecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacessecrets"
 
 datagithubcodespacessecrets.NewDataGithubCodespacesSecretsSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubCodespacesSecretsSecretsOutputReference
 ```
