@@ -1,6 +1,6 @@
 # `github_membership`
 
-Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/membership).
+Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/membership).
 
 # `membership` Submodule <a name="`membership` Submodule" id="@cdktf/provider-github.membership"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_membership`](https://registr
 
 ### Membership <a name="Membership" id="@cdktf/provider-github.membership.Membership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/membership github_membership}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/membership github_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.membership.Membership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.NewMembership(scope Construct, id *string, config MembershipConfig) Membership
 ```
@@ -291,7 +291,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.membership.Membership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.membership.Membership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ membership.Membership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.membership.Membership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.membership.MembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 &membership.MembershipConfig {
 	Connection: interface{},
@@ -665,7 +665,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.username">Username</a></code> | <code>*string</code> | The user to add to the organization. |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.downgradeOnDestroy">DowngradeOnDestroy</a></code> | <code>interface{}</code> | Instead of removing the member from the org, you can choose to downgrade their membership to 'member' when this resource is destroyed. |
-| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/membership#id Membership#id}. |
+| <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/membership#id Membership#id}. |
 | <code><a href="#@cdktf/provider-github.membership.MembershipConfig.property.role">Role</a></code> | <code>*string</code> | The role of the user within the organization. Must be one of 'member' or 'admin'. |
 
 ---
@@ -750,7 +750,7 @@ Username *string
 
 The user to add to the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/membership#username Membership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/membership#username Membership#username}
 
 ---
 
@@ -766,7 +766,7 @@ Instead of removing the member from the org, you can choose to downgrade their m
 
 This is useful when wanting to downgrade admins while keeping them in the organization
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/membership#downgrade_on_destroy Membership#downgrade_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/membership#downgrade_on_destroy Membership#downgrade_on_destroy}
 
 ---
 
@@ -778,7 +778,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/membership#id Membership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/membership#id Membership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -795,7 +795,7 @@ Role *string
 
 The role of the user within the organization. Must be one of 'member' or 'admin'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/membership#role Membership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/membership#role Membership#role}
 
 ---
 
