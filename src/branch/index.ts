@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/branch
+// https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/branch
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface BranchConfig extends cdktf.TerraformMetaArguments {
   /**
   * The repository branch to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/branch#branch Branch#branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/branch#branch Branch#branch}
   */
   readonly branch: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/branch#id Branch#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/branch#id Branch#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface BranchConfig extends cdktf.TerraformMetaArguments {
   /**
   * The GitHub repository name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/branch#repository Branch#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/branch#repository Branch#repository}
   */
   readonly repository: string;
   /**
   * The branch name to start from. Defaults to 'main'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/branch#source_branch Branch#source_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/branch#source_branch Branch#source_branch}
   */
   readonly sourceBranch?: string;
   /**
   * The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/branch#source_sha Branch#source_sha}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/branch#source_sha Branch#source_sha}
   */
   readonly sourceSha?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/branch github_branch}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/branch github_branch}
 */
 export class Branch extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class Branch extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.37.0/docs/resources/branch github_branch} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/branch github_branch} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class Branch extends cdktf.TerraformResource {
       terraformResourceType: 'github_branch',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.37.0',
+        providerVersion: '5.38.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
