@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_organization_variable
 // generated from terraform resource schema
 
