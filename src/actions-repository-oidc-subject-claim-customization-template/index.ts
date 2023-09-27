@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_repository_oidc_subject_claim_customization_template
 // generated from terraform resource schema
 
