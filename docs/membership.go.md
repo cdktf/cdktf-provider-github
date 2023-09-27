@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.membership.Membership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.NewMembership(scope Construct, id *string, config MembershipConfig) Membership
 ```
@@ -291,7 +291,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.membership.Membership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.membership.Membership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ membership.Membership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.membership.Membership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 membership.Membership_IsTerraformResource(x interface{}) *bool
 ```
@@ -635,7 +635,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.membership.MembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/membership"
+import "github.com/cdktf/cdktf-provider-github-go/github/membership"
 
 &membership.MembershipConfig {
 	Connection: interface{},
