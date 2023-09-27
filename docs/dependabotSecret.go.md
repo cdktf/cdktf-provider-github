@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dependabotSecret.DependabotSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/dependabotsecret"
 
 dependabotsecret.NewDependabotSecret(scope Construct, id *string, config DependabotSecretConfig) DependabotSecret
 ```
@@ -291,7 +291,7 @@ func ResetPlaintextValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dependabotSecret.DependabotSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/dependabotsecret"
 
 dependabotsecret.DependabotSecret_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dependabotSecret.DependabotSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/dependabotsecret"
 
 dependabotsecret.DependabotSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ dependabotsecret.DependabotSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.dependabotSecret.DependabotSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/dependabotsecret"
 
 dependabotsecret.DependabotSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dependabotSecret.DependabotSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/dependabotsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v11/dependabotsecret"
 
 &dependabotsecret.DependabotSecretConfig {
 	Connection: interface{},
