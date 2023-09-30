@@ -1,6 +1,6 @@
 # `data_github_enterprise`
 
-Refer to the Terraform Registory for docs: [`data_github_enterprise`](https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/enterprise).
+Refer to the Terraform Registory for docs: [`data_github_enterprise`](https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/enterprise).
 
 # `dataGithubEnterprise` Submodule <a name="`dataGithubEnterprise` Submodule" id="@cdktf/provider-github.dataGithubEnterprise"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_enterprise`](https://re
 
 ### DataGithubEnterprise <a name="DataGithubEnterprise" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/enterprise github_enterprise}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/enterprise github_enterprise}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer"></a>
 
@@ -604,8 +604,8 @@ const dataGithubEnterpriseConfig: dataGithubEnterprise.DataGithubEnterpriseConfi
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.slug">slug</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}. |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.slug">slug</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}. |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}. |
 
 ---
 
@@ -687,7 +687,7 @@ public readonly slug: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}.
 
 ---
 
@@ -699,7 +699,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

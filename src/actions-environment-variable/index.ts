@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_environment_variable
+// https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_environment_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface ActionsEnvironmentVariableConfig extends cdktf.TerraformMetaArg
   /**
   * Name of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_environment_variable#environment ActionsEnvironmentVariable#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_environment_variable#environment ActionsEnvironmentVariable#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_environment_variable#id ActionsEnvironmentVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_environment_variable#id ActionsEnvironmentVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +28,25 @@ export interface ActionsEnvironmentVariableConfig extends cdktf.TerraformMetaArg
   /**
   * Name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_environment_variable#repository ActionsEnvironmentVariable#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_environment_variable#repository ActionsEnvironmentVariable#repository}
   */
   readonly repository: string;
   /**
   * Value of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_environment_variable#value ActionsEnvironmentVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_environment_variable#value ActionsEnvironmentVariable#value}
   */
   readonly value: string;
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_environment_variable#variable_name ActionsEnvironmentVariable#variable_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_environment_variable#variable_name ActionsEnvironmentVariable#variable_name}
   */
   readonly variableName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_environment_variable github_actions_environment_variable}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_environment_variable github_actions_environment_variable}
 */
 export class ActionsEnvironmentVariable extends cdktf.TerraformResource {
 
@@ -60,7 +60,7 @@ export class ActionsEnvironmentVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_environment_variable github_actions_environment_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +71,7 @@ export class ActionsEnvironmentVariable extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_environment_variable',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.38.0',
+        providerVersion: '5.39.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

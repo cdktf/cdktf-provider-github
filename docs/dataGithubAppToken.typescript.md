@@ -1,6 +1,6 @@
 # `data_github_app_token`
 
-Refer to the Terraform Registory for docs: [`data_github_app_token`](https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/app_token).
+Refer to the Terraform Registory for docs: [`data_github_app_token`](https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/app_token).
 
 # `dataGithubAppToken` Submodule <a name="`dataGithubAppToken` Submodule" id="@cdktf/provider-github.dataGithubAppToken"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_app_token`](https://reg
 
 ### DataGithubAppToken <a name="DataGithubAppToken" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/app_token github_app_token}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/app_token github_app_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.Initializer"></a>
 
@@ -618,7 +618,7 @@ const dataGithubAppTokenConfig: dataGithubAppToken.DataGithubAppTokenConfig = { 
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.appId">appId</a></code> | <code>string</code> | The GitHub App ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.installationId">installationId</a></code> | <code>string</code> | The GitHub App installation instance ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.pemFile">pemFile</a></code> | <code>string</code> | The GitHub App PEM file contents. |
-| <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/app_token#id DataGithubAppToken#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/app_token#id DataGithubAppToken#id}. |
 
 ---
 
@@ -702,7 +702,7 @@ public readonly appId: string;
 
 The GitHub App ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/app_token#app_id DataGithubAppToken#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/app_token#app_id DataGithubAppToken#app_id}
 
 ---
 
@@ -716,7 +716,7 @@ public readonly installationId: string;
 
 The GitHub App installation instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/app_token#installation_id DataGithubAppToken#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/app_token#installation_id DataGithubAppToken#installation_id}
 
 ---
 
@@ -730,7 +730,7 @@ public readonly pemFile: string;
 
 The GitHub App PEM file contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/app_token#pem_file DataGithubAppToken#pem_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/app_token#pem_file DataGithubAppToken#pem_file}
 
 ---
 
@@ -742,7 +742,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/data-sources/app_token#id DataGithubAppToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/app_token#id DataGithubAppToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
