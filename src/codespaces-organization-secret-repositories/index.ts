@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret_repositories
+// https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret_repositories
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface CodespacesOrganizationSecretRepositoriesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret_repositories#id CodespacesOrganizationSecretRepositories#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret_repositories#id CodespacesOrganizationSecretRepositories#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface CodespacesOrganizationSecretRepositoriesConfig extends cdktf.Te
   /**
   * Name of the existing secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret_repositories#secret_name CodespacesOrganizationSecretRepositories#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret_repositories#secret_name CodespacesOrganizationSecretRepositories#secret_name}
   */
   readonly secretName: string;
   /**
   * An array of repository ids that can access the organization secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret_repositories#selected_repository_ids CodespacesOrganizationSecretRepositories#selected_repository_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret_repositories#selected_repository_ids CodespacesOrganizationSecretRepositories#selected_repository_ids}
   */
   readonly selectedRepositoryIds: number[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories}
 */
 export class CodespacesOrganizationSecretRepositories extends cdktf.TerraformResource {
 
@@ -48,7 +43,7 @@ export class CodespacesOrganizationSecretRepositories extends cdktf.TerraformRes
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret_repositories github_codespaces_organization_secret_repositories} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -59,7 +54,7 @@ export class CodespacesOrganizationSecretRepositories extends cdktf.TerraformRes
       terraformResourceType: 'github_codespaces_organization_secret_repositories',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.38.0',
+        providerVersion: '5.39.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `github_actions_repository_access_level`
 
-Refer to the Terraform Registory for docs: [`github_actions_repository_access_level`](https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_repository_access_level).
+Refer to the Terraform Registory for docs: [`github_actions_repository_access_level`](https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_access_level).
 
 # `actionsRepositoryAccessLevel` Submodule <a name="`actionsRepositoryAccessLevel` Submodule" id="@cdktf/provider-github.actionsRepositoryAccessLevel"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_actions_repository_access_le
 
 ### ActionsRepositoryAccessLevel <a name="ActionsRepositoryAccessLevel" id="@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_repository_access_level github_actions_repository_access_level}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_access_level github_actions_repository_access_level}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryaccesslevel"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryaccesslevel"
 
 actionsrepositoryaccesslevel.NewActionsRepositoryAccessLevel(scope Construct, id *string, config ActionsRepositoryAccessLevelConfig) ActionsRepositoryAccessLevel
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryaccesslevel"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryaccesslevel"
 
 actionsrepositoryaccesslevel.ActionsRepositoryAccessLevel_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryaccesslevel"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryaccesslevel"
 
 actionsrepositoryaccesslevel.ActionsRepositoryAccessLevel_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ actionsrepositoryaccesslevel.ActionsRepositoryAccessLevel_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryaccesslevel"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryaccesslevel"
 
 actionsrepositoryaccesslevel.ActionsRepositoryAccessLevel_IsTerraformResource(x interface{}) *bool
 ```
@@ -588,7 +588,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryaccesslevel"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryaccesslevel"
 
 &actionsrepositoryaccesslevel.ActionsRepositoryAccessLevelConfig {
 	Connection: interface{},
@@ -617,7 +617,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryac
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.accessLevel">AccessLevel</a></code> | <code>*string</code> | Where the actions or reusable workflows of the repository may be used. |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}. |
 
 ---
 
@@ -703,7 +703,7 @@ Where the actions or reusable workflows of the repository may be used.
 
 Possible values are 'none', 'user', 'organization', or 'enterprise'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
 
 ---
 
@@ -717,7 +717,7 @@ Repository *string
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
 
 ---
 
@@ -729,7 +729,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

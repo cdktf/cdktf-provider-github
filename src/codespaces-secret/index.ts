@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_secret
+// https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface CodespacesSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * Encrypted value of the secret using the GitHub public key in Base64 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_secret#encrypted_value CodespacesSecret#encrypted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_secret#encrypted_value CodespacesSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_secret#id CodespacesSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_secret#id CodespacesSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,25 +23,25 @@ export interface CodespacesSecretConfig extends cdktf.TerraformMetaArguments {
   /**
   * Plaintext value of the secret to be encrypted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_secret#plaintext_value CodespacesSecret#plaintext_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_secret#plaintext_value CodespacesSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
   * Name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_secret#repository CodespacesSecret#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_secret#repository CodespacesSecret#repository}
   */
   readonly repository: string;
   /**
   * Name of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_secret#secret_name CodespacesSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_secret#secret_name CodespacesSecret#secret_name}
   */
   readonly secretName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_secret github_codespaces_secret}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_secret github_codespaces_secret}
 */
 export class CodespacesSecret extends cdktf.TerraformResource {
 
@@ -60,7 +55,7 @@ export class CodespacesSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_secret github_codespaces_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_secret github_codespaces_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -71,7 +66,7 @@ export class CodespacesSecret extends cdktf.TerraformResource {
       terraformResourceType: 'github_codespaces_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.38.0',
+        providerVersion: '5.39.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

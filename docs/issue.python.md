@@ -1,6 +1,6 @@
 # `github_issue`
 
-Refer to the Terraform Registory for docs: [`github_issue`](https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue).
+Refer to the Terraform Registory for docs: [`github_issue`](https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue).
 
 # `issue` Submodule <a name="`issue` Submodule" id="@cdktf/provider-github.issue"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_issue`](https://registry.ter
 
 ### Issue <a name="Issue" id="@cdktf/provider-github.issue.Issue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue github_issue}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue github_issue}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issue.Issue.Initializer"></a>
 
@@ -50,7 +50,7 @@ issue.Issue(
 | <code><a href="#@cdktf/provider-github.issue.Issue.Initializer.parameter.title">title</a></code> | <code>str</code> | Title of the issue. |
 | <code><a href="#@cdktf/provider-github.issue.Issue.Initializer.parameter.assignees">assignees</a></code> | <code>typing.List[str]</code> | List of Logins to assign to the issue. |
 | <code><a href="#@cdktf/provider-github.issue.Issue.Initializer.parameter.body">body</a></code> | <code>str</code> | Body of the issue. |
-| <code><a href="#@cdktf/provider-github.issue.Issue.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#id Issue#id}. |
+| <code><a href="#@cdktf/provider-github.issue.Issue.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#id Issue#id}. |
 | <code><a href="#@cdktf/provider-github.issue.Issue.Initializer.parameter.labels">labels</a></code> | <code>typing.List[str]</code> | List of labels to attach to the issue. |
 | <code><a href="#@cdktf/provider-github.issue.Issue.Initializer.parameter.milestoneNumber">milestone_number</a></code> | <code>typing.Union[int, float]</code> | Milestone number to assign to the issue. |
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#repository Issue#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#repository Issue#repository}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Title of the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#title Issue#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#title Issue#title}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 List of Logins to assign to the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#assignees Issue#assignees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#assignees Issue#assignees}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Body of the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#body Issue#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#body Issue#body}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#id Issue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#id Issue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 List of labels to attach to the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#labels Issue#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#labels Issue#labels}
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Milestone number to assign to the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#milestone_number Issue#milestone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#milestone_number Issue#milestone_number}
 
 ---
 
@@ -940,7 +940,7 @@ issue.IssueConfig(
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.title">title</a></code> | <code>str</code> | Title of the issue. |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.assignees">assignees</a></code> | <code>typing.List[str]</code> | List of Logins to assign to the issue. |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.body">body</a></code> | <code>str</code> | Body of the issue. |
-| <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#id Issue#id}. |
+| <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#id Issue#id}. |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.labels">labels</a></code> | <code>typing.List[str]</code> | List of labels to attach to the issue. |
 | <code><a href="#@cdktf/provider-github.issue.IssueConfig.property.milestoneNumber">milestone_number</a></code> | <code>typing.Union[int, float]</code> | Milestone number to assign to the issue. |
 
@@ -1026,7 +1026,7 @@ repository: str
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#repository Issue#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#repository Issue#repository}
 
 ---
 
@@ -1040,7 +1040,7 @@ title: str
 
 Title of the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#title Issue#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#title Issue#title}
 
 ---
 
@@ -1054,7 +1054,7 @@ assignees: typing.List[str]
 
 List of Logins to assign to the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#assignees Issue#assignees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#assignees Issue#assignees}
 
 ---
 
@@ -1068,7 +1068,7 @@ body: str
 
 Body of the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#body Issue#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#body Issue#body}
 
 ---
 
@@ -1080,7 +1080,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#id Issue#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#id Issue#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1097,7 +1097,7 @@ labels: typing.List[str]
 
 List of labels to attach to the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#labels Issue#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#labels Issue#labels}
 
 ---
 
@@ -1111,7 +1111,7 @@ milestone_number: typing.Union[int, float]
 
 Milestone number to assign to the issue.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/issue#milestone_number Issue#milestone_number}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/issue#milestone_number Issue#milestone_number}
 
 ---
 

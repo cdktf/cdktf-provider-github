@@ -1,6 +1,6 @@
 # `github_codespaces_organization_secret`
 
-Refer to the Terraform Registory for docs: [`github_codespaces_organization_secret`](https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret).
+Refer to the Terraform Registory for docs: [`github_codespaces_organization_secret`](https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret).
 
 # `codespacesOrganizationSecret` Submodule <a name="`codespacesOrganizationSecret` Submodule" id="@cdktf/provider-github.codespacesOrganizationSecret"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_codespaces_organization_secr
 
 ### CodespacesOrganizationSecret <a name="CodespacesOrganizationSecret" id="@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret github_codespaces_organization_secret}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret github_codespaces_organization_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecret.Initializer"></a>
 
@@ -716,7 +716,7 @@ const codespacesOrganizationSecretConfig: codespacesOrganizationSecret.Codespace
 | <code><a href="#@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecretConfig.property.secretName">secretName</a></code> | <code>string</code> | Name of the secret. |
 | <code><a href="#@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecretConfig.property.visibility">visibility</a></code> | <code>string</code> | Configures the access that repositories have to the organization secret. |
 | <code><a href="#@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecretConfig.property.encryptedValue">encryptedValue</a></code> | <code>string</code> | Encrypted value of the secret using the GitHub public key in Base64 format. |
-| <code><a href="#@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret#id CodespacesOrganizationSecret#id}. |
+| <code><a href="#@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecretConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret#id CodespacesOrganizationSecret#id}. |
 | <code><a href="#@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecretConfig.property.plaintextValue">plaintextValue</a></code> | <code>string</code> | Plaintext value of the secret to be encrypted. |
 | <code><a href="#@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecretConfig.property.selectedRepositoryIds">selectedRepositoryIds</a></code> | <code>number[]</code> | An array of repository ids that can access the organization secret. |
 
@@ -802,7 +802,7 @@ public readonly secretName: string;
 
 Name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret#secret_name CodespacesOrganizationSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret#secret_name CodespacesOrganizationSecret#secret_name}
 
 ---
 
@@ -818,7 +818,7 @@ Configures the access that repositories have to the organization secret.
 
 Must be one of 'all', 'private' or 'selected'. 'selected_repository_ids' is required if set to 'selected'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret#visibility CodespacesOrganizationSecret#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret#visibility CodespacesOrganizationSecret#visibility}
 
 ---
 
@@ -832,7 +832,7 @@ public readonly encryptedValue: string;
 
 Encrypted value of the secret using the GitHub public key in Base64 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret#encrypted_value CodespacesOrganizationSecret#encrypted_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret#encrypted_value CodespacesOrganizationSecret#encrypted_value}
 
 ---
 
@@ -844,7 +844,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret#id CodespacesOrganizationSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret#id CodespacesOrganizationSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -861,7 +861,7 @@ public readonly plaintextValue: string;
 
 Plaintext value of the secret to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret#plaintext_value CodespacesOrganizationSecret#plaintext_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret#plaintext_value CodespacesOrganizationSecret#plaintext_value}
 
 ---
 
@@ -875,7 +875,7 @@ public readonly selectedRepositoryIds: number[];
 
 An array of repository ids that can access the organization secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.38.0/docs/resources/codespaces_organization_secret#selected_repository_ids CodespacesOrganizationSecret#selected_repository_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/codespaces_organization_secret#selected_repository_ids CodespacesOrganizationSecret#selected_repository_ids}
 
 ---
 
