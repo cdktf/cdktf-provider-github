@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabotorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationsecrets"
 
 datagithubdependabotorganizationsecrets.NewDataGithubDependabotOrganizationSecrets(scope Construct, id *string, config DataGithubDependabotOrganizationSecretsConfig) DataGithubDependabotOrganizationSecrets
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabotorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationsecrets"
 
 datagithubdependabotorganizationsecrets.DataGithubDependabotOrganizationSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabotorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationsecrets"
 
 datagithubdependabotorganizationsecrets.DataGithubDependabotOrganizationSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithubdependabotorganizationsecrets.DataGithubDependabotOrganizationSecrets_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabotorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationsecrets"
 
 datagithubdependabotorganizationsecrets.DataGithubDependabotOrganizationSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabotorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationsecrets"
 
 &datagithubdependabotorganizationsecrets.DataGithubDependabotOrganizationSecretsConfig {
 	Connection: interface{},
@@ -652,7 +652,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabotorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationsecrets"
 
 &datagithubdependabotorganizationsecrets.DataGithubDependabotOrganizationSecretsSecrets {
 
@@ -667,7 +667,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabo
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabotorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationsecrets"
 
 datagithubdependabotorganizationsecrets.NewDataGithubDependabotOrganizationSecretsSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubDependabotOrganizationSecretsSecretsList
 ```
@@ -799,7 +799,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotOrganizationSecrets.DataGithubDependabotOrganizationSecretsSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubdependabotorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotorganizationsecrets"
 
 datagithubdependabotorganizationsecrets.NewDataGithubDependabotOrganizationSecretsSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubDependabotOrganizationSecretsSecretsOutputReference
 ```
