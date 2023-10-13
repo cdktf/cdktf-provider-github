@@ -1,6 +1,6 @@
 # `data_github_codespaces_user_public_key`
 
-Refer to the Terraform Registory for docs: [`data_github_codespaces_user_public_key`](https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/codespaces_user_public_key).
+Refer to the Terraform Registory for docs: [`data_github_codespaces_user_public_key`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/codespaces_user_public_key).
 
 # `dataGithubCodespacesUserPublicKey` Submodule <a name="`dataGithubCodespacesUserPublicKey` Submodule" id="@cdktf/provider-github.dataGithubCodespacesUserPublicKey"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_codespaces_user_public_
 
 ### DataGithubCodespacesUserPublicKey <a name="DataGithubCodespacesUserPublicKey" id="@cdktf/provider-github.dataGithubCodespacesUserPublicKey.DataGithubCodespacesUserPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/codespaces_user_public_key github_codespaces_user_public_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/codespaces_user_public_key github_codespaces_user_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCodespacesUserPublicKey.DataGithubCodespacesUserPublicKey.Initializer"></a>
 
@@ -569,7 +569,7 @@ new DataGithubCodespacesUserPublicKeyConfig {
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesUserPublicKey.DataGithubCodespacesUserPublicKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesUserPublicKey.DataGithubCodespacesUserPublicKeyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesUserPublicKey.DataGithubCodespacesUserPublicKeyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubCodespacesUserPublicKey.DataGithubCodespacesUserPublicKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/codespaces_user_public_key#id DataGithubCodespacesUserPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubCodespacesUserPublicKey.DataGithubCodespacesUserPublicKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/codespaces_user_public_key#id DataGithubCodespacesUserPublicKey#id}. |
 
 ---
 
@@ -651,7 +651,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/codespaces_user_public_key#id DataGithubCodespacesUserPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/codespaces_user_public_key#id DataGithubCodespacesUserPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

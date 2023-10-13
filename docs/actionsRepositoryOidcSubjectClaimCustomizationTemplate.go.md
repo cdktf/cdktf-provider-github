@@ -1,6 +1,6 @@
 # `github_actions_repository_oidc_subject_claim_customization_template`
 
-Refer to the Terraform Registory for docs: [`github_actions_repository_oidc_subject_claim_customization_template`](https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_oidc_subject_claim_customization_template).
+Refer to the Terraform Registory for docs: [`github_actions_repository_oidc_subject_claim_customization_template`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_oidc_subject_claim_customization_template).
 
 # `actionsRepositoryOidcSubjectClaimCustomizationTemplate` Submodule <a name="`actionsRepositoryOidcSubjectClaimCustomizationTemplate` Submodule" id="@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_actions_repository_oidc_subj
 
 ### ActionsRepositoryOidcSubjectClaimCustomizationTemplate <a name="ActionsRepositoryOidcSubjectClaimCustomizationTemplate" id="@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_oidc_subject_claim_customization_template github_actions_repository_oidc_subject_claim_customization_template}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 actionsrepositoryoidcsubjectclaimcustomizationtemplate.NewActionsRepositoryOidcSubjectClaimCustomizationTemplate(scope Construct, id *string, config ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig) ActionsRepositoryOidcSubjectClaimCustomizationTemplate
 ```
@@ -284,7 +284,7 @@ func ResetIncludeClaimKeys()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 actionsrepositoryoidcsubjectclaimcustomizationtemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 actionsrepositoryoidcsubjectclaimcustomizationtemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ actionsrepositoryoidcsubjectclaimcustomizationtemplate.ActionsRepositoryOidcSubj
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 actionsrepositoryoidcsubjectclaimcustomizationtemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrepositoryoidcsubjectclaimcustomizationtemplate"
 
 &actionsrepositoryoidcsubjectclaimcustomizationtemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig {
 	Connection: interface{},
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v11/actionsrepositoryoi
 | <code><a href="#@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig.property.repository">Repository</a></code> | <code>*string</code> | The name of the repository. |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig.property.useDefault">UseDefault</a></code> | <code>interface{}</code> | Whether to use the default template or not. If 'true', 'include_claim_keys' must not be set. |
-| <code><a href="#@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#id ActionsRepositoryOidcSubjectClaimCustomizationTemplate#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#id ActionsRepositoryOidcSubjectClaimCustomizationTemplate#id}. |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryOidcSubjectClaimCustomizationTemplate.ActionsRepositoryOidcSubjectClaimCustomizationTemplateConfig.property.includeClaimKeys">IncludeClaimKeys</a></code> | <code>*[]*string</code> | A list of OpenID Connect claims. |
 
 ---
@@ -732,7 +732,7 @@ Repository *string
 
 The name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#repository ActionsRepositoryOidcSubjectClaimCustomizationTemplate#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#repository ActionsRepositoryOidcSubjectClaimCustomizationTemplate#repository}
 
 ---
 
@@ -746,7 +746,7 @@ UseDefault interface{}
 
 Whether to use the default template or not. If 'true', 'include_claim_keys' must not be set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#use_default ActionsRepositoryOidcSubjectClaimCustomizationTemplate#use_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#use_default ActionsRepositoryOidcSubjectClaimCustomizationTemplate#use_default}
 
 ---
 
@@ -758,7 +758,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#id ActionsRepositoryOidcSubjectClaimCustomizationTemplate#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#id ActionsRepositoryOidcSubjectClaimCustomizationTemplate#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -775,7 +775,7 @@ IncludeClaimKeys *[]*string
 
 A list of OpenID Connect claims.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#include_claim_keys ActionsRepositoryOidcSubjectClaimCustomizationTemplate#include_claim_keys}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_oidc_subject_claim_customization_template#include_claim_keys ActionsRepositoryOidcSubjectClaimCustomizationTemplate#include_claim_keys}
 
 ---
 
