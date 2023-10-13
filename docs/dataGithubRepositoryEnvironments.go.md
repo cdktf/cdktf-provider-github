@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryenvironments"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryenvironments"
 
 datagithubrepositoryenvironments.NewDataGithubRepositoryEnvironments(scope Construct, id *string, config DataGithubRepositoryEnvironmentsConfig) DataGithubRepositoryEnvironments
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryenvironments"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryenvironments"
 
 datagithubrepositoryenvironments.DataGithubRepositoryEnvironments_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryenvironments"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryenvironments"
 
 datagithubrepositoryenvironments.DataGithubRepositoryEnvironments_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithubrepositoryenvironments.DataGithubRepositoryEnvironments_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryenvironments"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryenvironments"
 
 datagithubrepositoryenvironments.DataGithubRepositoryEnvironments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -555,7 +555,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryenvironments"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryenvironments"
 
 &datagithubrepositoryenvironments.DataGithubRepositoryEnvironmentsConfig {
 	Connection: interface{},
@@ -688,7 +688,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsEnvironments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryenvironments"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryenvironments"
 
 &datagithubrepositoryenvironments.DataGithubRepositoryEnvironmentsEnvironments {
 
@@ -703,7 +703,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositor
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsEnvironmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryenvironments"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryenvironments"
 
 datagithubrepositoryenvironments.NewDataGithubRepositoryEnvironmentsEnvironmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryEnvironmentsEnvironmentsList
 ```
@@ -835,7 +835,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsEnvironmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/datagithubrepositoryenvironments"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryenvironments"
 
 datagithubrepositoryenvironments.NewDataGithubRepositoryEnvironmentsEnvironmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryEnvironmentsEnvironmentsOutputReference
 ```

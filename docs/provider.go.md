@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.provider.GithubProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/provider"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/provider"
 
 provider.NewGithubProvider(scope Construct, id *string, config GithubProviderConfig) GithubProvider
 ```
@@ -210,7 +210,7 @@ func ResetWriteDelayMs()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.provider.GithubProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/provider"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/provider"
 
 provider.GithubProvider_IsConstruct(x interface{}) *bool
 ```
@@ -242,7 +242,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.provider.GithubProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/provider"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/provider"
 
 provider.GithubProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -256,7 +256,7 @@ provider.GithubProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-github.provider.GithubProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/provider"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/provider"
 
 provider.GithubProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.provider.GithubProviderAppAuth.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/provider"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/provider"
 
 &provider.GithubProviderAppAuth {
 	Id: *string,
@@ -678,11 +678,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.provider.GithubProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v11/provider"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/provider"
 
 &provider.GithubProviderConfig {
 	Alias: *string,
-	AppAuth: github.com/cdktf/cdktf-provider-github-go/github/v11.provider.GithubProviderAppAuth,
+	AppAuth: github.com/cdktf/cdktf-provider-github-go/github/v12.provider.GithubProviderAppAuth,
 	BaseUrl: *string,
 	Insecure: interface{},
 	Organization: *string,
