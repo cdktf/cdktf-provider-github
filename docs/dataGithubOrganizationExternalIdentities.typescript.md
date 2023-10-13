@@ -1,6 +1,6 @@
 # `data_github_organization_external_identities`
 
-Refer to the Terraform Registory for docs: [`data_github_organization_external_identities`](https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/organization_external_identities).
+Refer to the Terraform Registory for docs: [`data_github_organization_external_identities`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/organization_external_identities).
 
 # `dataGithubOrganizationExternalIdentities` Submodule <a name="`dataGithubOrganizationExternalIdentities` Submodule" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_organization_external_i
 
 ### DataGithubOrganizationExternalIdentities <a name="DataGithubOrganizationExternalIdentities" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/organization_external_identities github_organization_external_identities}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/organization_external_identities github_organization_external_identities}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities.Initializer"></a>
 
@@ -549,7 +549,7 @@ const dataGithubOrganizationExternalIdentitiesConfig: dataGithubOrganizationExte
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/organization_external_identities#id DataGithubOrganizationExternalIdentities#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/organization_external_identities#id DataGithubOrganizationExternalIdentities#id}. |
 
 ---
 
@@ -631,7 +631,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.39.0/docs/data-sources/organization_external_identities#id DataGithubOrganizationExternalIdentities#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/organization_external_identities#id DataGithubOrganizationExternalIdentities#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
