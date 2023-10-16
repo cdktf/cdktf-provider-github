@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionssecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionssecret"
 
 actionssecret.NewActionsSecret(scope Construct, id *string, config ActionsSecretConfig) ActionsSecret
 ```
@@ -291,7 +291,7 @@ func ResetPlaintextValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsSecret.ActionsSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionssecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionssecret"
 
 actionssecret.ActionsSecret_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsSecret.ActionsSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionssecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionssecret"
 
 actionssecret.ActionsSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ actionssecret.ActionsSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsSecret.ActionsSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionssecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionssecret"
 
 actionssecret.ActionsSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +668,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsSecret.ActionsSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionssecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionssecret"
 
 &actionssecret.ActionsSecretConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubBranch.DataGithubBranch.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubbranch"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubbranch"
 
 datagithubbranch.NewDataGithubBranch(scope Construct, id *string, config DataGithubBranchConfig) DataGithubBranch
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubBranch.DataGithubBranch.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubbranch"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubbranch"
 
 datagithubbranch.DataGithubBranch_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubBranch.DataGithubBranch.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubbranch"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubbranch"
 
 datagithubbranch.DataGithubBranch_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datagithubbranch.DataGithubBranch_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubBranch.DataGithubBranch.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubbranch"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubbranch"
 
 datagithubbranch.DataGithubBranch_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -599,7 +599,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubBranch.DataGithubBranchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubbranch"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubbranch"
 
 &datagithubbranch.DataGithubBranchConfig {
 	Connection: interface{},
