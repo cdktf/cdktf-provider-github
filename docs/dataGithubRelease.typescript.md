@@ -285,6 +285,7 @@ public resetReleaseTag(): void
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataGithubRelease resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -345,6 +346,50 @@ dataGithubRelease.DataGithubRelease.isTerraformDataSource(x: any)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.generateConfigForImport"></a>
+
+```typescript
+import { dataGithubRelease } from '@cdktf/provider-github'
+
+dataGithubRelease.DataGithubRelease.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataGithubRelease resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataGithubRelease to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataGithubRelease that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/release#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataGithubRelease to import is found.
 
 ---
 

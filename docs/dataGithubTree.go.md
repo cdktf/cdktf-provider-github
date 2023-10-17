@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.NewDataGithubTree(scope Construct, id *string, config DataGithubTreeConfig) DataGithubTree
 ```
@@ -278,13 +278,14 @@ func ResetRecursive()
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGithubTree resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.DataGithubTree_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.DataGithubTree_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datagithubtree.DataGithubTree_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.DataGithubTree_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datagithubtree.DataGithubTree_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
+
+datagithubtree.DataGithubTree_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataGithubTree resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataGithubTree to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataGithubTree that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/tree#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataGithubTree to import is found.
 
 ---
 
@@ -606,7 +651,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 &datagithubtree.DataGithubTreeConfig {
 	Connection: interface{},
@@ -767,7 +812,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 &datagithubtree.DataGithubTreeEntries {
 
@@ -782,7 +827,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.NewDataGithubTreeEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubTreeEntriesList
 ```
@@ -914,7 +959,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubtree"
 
 datagithubtree.NewDataGithubTreeEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubTreeEntriesOutputReference
 ```

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/issue_label
 // generated from terraform resource schema
 
@@ -54,6 +49,20 @@ export class IssueLabel extends cdktf.TerraformResource {
   // STATIC PROPERTIES
   // =================
   public static readonly tfResourceType = "github_issue_label";
+
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a IssueLabel resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the IssueLabel to import
+  * @param importFromId The id of the existing IssueLabel that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/issue_label#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the IssueLabel to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "github_issue_label", importId: importFromId, provider });
+      }
 
   // ===========
   // INITIALIZER

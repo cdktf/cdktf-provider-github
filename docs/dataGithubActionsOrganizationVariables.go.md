@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.NewDataGithubActionsOrganizationVariables(scope Construct, id *string, config DataGithubActionsOrganizationVariablesConfig) DataGithubActionsOrganizationVariables
 ```
@@ -271,13 +271,14 @@ func ResetId()
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGithubActionsOrganizationVariables resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +324,7 @@ datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -331,6 +332,50 @@ datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_Is
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
+
+datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariables_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataGithubActionsOrganizationVariables resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataGithubActionsOrganizationVariables to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataGithubActionsOrganizationVariables that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_organization_variables#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariables.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataGithubActionsOrganizationVariables to import is found.
 
 ---
 
@@ -533,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 &datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariablesConfig {
 	Connection: interface{},
@@ -652,7 +697,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesVariables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 &datagithubactionsorganizationvariables.DataGithubActionsOrganizationVariablesVariables {
 
@@ -667,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsor
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesVariablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.NewDataGithubActionsOrganizationVariablesVariablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubActionsOrganizationVariablesVariablesList
 ```
@@ -799,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationVariables.DataGithubActionsOrganizationVariablesVariablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationvariables"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationvariables"
 
 datagithubactionsorganizationvariables.NewDataGithubActionsOrganizationVariablesVariablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubActionsOrganizationVariablesVariablesOutputReference
 ```
