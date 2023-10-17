@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.NewDataGithubActionsEnvironmentSecrets(scope Construct, id *string, config DataGithubActionsEnvironmentSecretsConfig) DataGithubActionsEnvironmentSecrets
 ```
@@ -292,7 +292,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -658,7 +658,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 &datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecretsConfig {
 	Connection: interface{},
@@ -819,7 +819,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 &datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecretsSecrets {
 
@@ -834,7 +834,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenviro
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.NewDataGithubActionsEnvironmentSecretsSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubActionsEnvironmentSecretsSecretsList
 ```
@@ -966,7 +966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.NewDataGithubActionsEnvironmentSecretsSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubActionsEnvironmentSecretsSecretsOutputReference
 ```
