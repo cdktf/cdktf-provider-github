@@ -198,6 +198,20 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
   // =================
   public static readonly tfResourceType = "github_repository_pull_requests";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a DataGithubRepositoryPullRequests resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the DataGithubRepositoryPullRequests to import
+  * @param importFromId The id of the existing DataGithubRepositoryPullRequests that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/repository_pull_requests#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the DataGithubRepositoryPullRequests to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "github_repository_pull_requests", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

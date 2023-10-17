@@ -348,6 +348,7 @@ public void resetId()
 | <code><a href="#@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -408,6 +409,50 @@ DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.isTerraformData
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* java.lang.Object
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.generateConfigForImport"></a>
+
+```java
+import com.hashicorp.cdktf.providers.github.data_github_actions_repository_oidc_subject_claim_customization_template.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate;
+
+DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId),DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.generateConfigForImport(Construct scope, java.lang.String importToId, java.lang.String importFromId, TerraformProvider provider)
+```
+
+Generates CDKTF code for importing a DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* software.constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* java.lang.String
+
+The construct id used in the generated config for the DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* java.lang.String
+
+The id of the existing DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_repository_oidc_subject_claim_customization_template#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-github.dataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* com.hashicorp.cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataGithubActionsRepositoryOidcSubjectClaimCustomizationTemplate to import is found.
 
 ---
 

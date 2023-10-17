@@ -43,6 +43,20 @@ export class CodespacesOrganizationSecretRepositories extends cdktf.TerraformRes
   // =================
   public static readonly tfResourceType = "github_codespaces_organization_secret_repositories";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a CodespacesOrganizationSecretRepositories resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the CodespacesOrganizationSecretRepositories to import
+  * @param importFromId The id of the existing CodespacesOrganizationSecretRepositories that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/codespaces_organization_secret_repositories#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the CodespacesOrganizationSecretRepositories to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "github_codespaces_organization_secret_repositories", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========

@@ -177,6 +177,20 @@ export class ActionsRepositoryPermissions extends cdktf.TerraformResource {
   // =================
   public static readonly tfResourceType = "github_actions_repository_permissions";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ActionsRepositoryPermissions resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ActionsRepositoryPermissions to import
+  * @param importFromId The id of the existing ActionsRepositoryPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_repository_permissions#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ActionsRepositoryPermissions to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "github_actions_repository_permissions", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
