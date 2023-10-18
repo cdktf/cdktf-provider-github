@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_milestone
 // generated from terraform resource schema
 
