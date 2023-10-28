@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 datagithuborganizationexternalidentities.NewDataGithubOrganizationExternalIdentities(scope Construct, id *string, config DataGithubOrganizationExternalIdentitiesConfig) DataGithubOrganizationExternalIdentities
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 datagithuborganizationexternalidentities.DataGithubOrganizationExternalIdentities_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 datagithuborganizationexternalidentities.DataGithubOrganizationExternalIdentities_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagithuborganizationexternalidentities.DataGithubOrganizationExternalIdentitie
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 datagithuborganizationexternalidentities.DataGithubOrganizationExternalIdentities_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagithuborganizationexternalidentities.DataGithubOrganizationExternalIdentitie
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 datagithuborganizationexternalidentities.DataGithubOrganizationExternalIdentities_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -578,7 +578,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 &datagithuborganizationexternalidentities.DataGithubOrganizationExternalIdentitiesConfig {
 	Connection: interface{},
@@ -697,7 +697,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesIdentities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 &datagithuborganizationexternalidentities.DataGithubOrganizationExternalIdentitiesIdentities {
 
@@ -712,7 +712,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizatione
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesIdentitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 datagithuborganizationexternalidentities.NewDataGithubOrganizationExternalIdentitiesIdentitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationExternalIdentitiesIdentitiesList
 ```
@@ -844,7 +844,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesIdentitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationexternalidentities"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationexternalidentities"
 
 datagithuborganizationexternalidentities.NewDataGithubOrganizationExternalIdentitiesIdentitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubOrganizationExternalIdentitiesIdentitiesOutputReference
 ```
