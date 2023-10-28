@@ -1,6 +1,6 @@
 # `github_organization_custom_role`
 
-Refer to the Terraform Registory for docs: [`github_organization_custom_role`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role).
+Refer to the Terraform Registory for docs: [`github_organization_custom_role`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role).
 
 # `organizationCustomRole` Submodule <a name="`organizationCustomRole` Submodule" id="@cdktf/provider-github.organizationCustomRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_organization_custom_role`](h
 
 ### OrganizationCustomRole <a name="OrganizationCustomRole" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role github_organization_custom_role}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role github_organization_custom_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.Initializer"></a>
 
@@ -48,7 +48,7 @@ organizationCustomRole.OrganizationCustomRole(
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.Initializer.parameter.name">name</a></code> | <code>str</code> | The organization custom repository role to create. |
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.Initializer.parameter.permissions">permissions</a></code> | <code>typing.List[str]</code> | The permissions for the custom repository role. |
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the custom repository role. |
-| <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}. |
+| <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}. |
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The base role for the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The organization custom repository role to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The permissions for the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The description of the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -592,7 +592,7 @@ The construct id used in the generated config for the OrganizationCustomRole to 
 
 The id of the existing OrganizationCustomRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,7 +935,7 @@ organizationCustomRole.OrganizationCustomRoleConfig(
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.name">name</a></code> | <code>str</code> | The organization custom repository role to create. |
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.permissions">permissions</a></code> | <code>typing.List[str]</code> | The permissions for the custom repository role. |
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.description">description</a></code> | <code>str</code> | The description of the custom repository role. |
-| <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}. |
+| <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}. |
 
 ---
 
@@ -1019,7 +1019,7 @@ base_role: str
 
 The base role for the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
 
 ---
 
@@ -1033,7 +1033,7 @@ name: str
 
 The organization custom repository role to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
 
 ---
 
@@ -1047,7 +1047,7 @@ permissions: typing.List[str]
 
 The permissions for the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
 
 ---
 
@@ -1061,7 +1061,7 @@ description: str
 
 The description of the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
 
 ---
 
@@ -1073,7 +1073,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

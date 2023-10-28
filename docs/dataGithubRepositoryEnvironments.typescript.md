@@ -1,6 +1,6 @@
 # `data_github_repository_environments`
 
-Refer to the Terraform Registory for docs: [`data_github_repository_environments`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/repository_environments).
+Refer to the Terraform Registory for docs: [`data_github_repository_environments`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_environments).
 
 # `dataGithubRepositoryEnvironments` Submodule <a name="`dataGithubRepositoryEnvironments` Submodule" id="@cdktf/provider-github.dataGithubRepositoryEnvironments"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_repository_environments
 
 ### DataGithubRepositoryEnvironments <a name="DataGithubRepositoryEnvironments" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironments"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/repository_environments github_repository_environments}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_environments github_repository_environments}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironments.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataGithubRepositoryEnviro
 
 The id of the existing DataGithubRepositoryEnvironments that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/repository_environments#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_environments#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,8 +616,8 @@ const dataGithubRepositoryEnvironmentsConfig: dataGithubRepositoryEnvironments.D
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/repository_environments#repository DataGithubRepositoryEnvironments#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/repository_environments#id DataGithubRepositoryEnvironments#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_environments#repository DataGithubRepositoryEnvironments#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryEnvironments.DataGithubRepositoryEnvironmentsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_environments#id DataGithubRepositoryEnvironments#id}. |
 
 ---
 
@@ -699,7 +699,7 @@ public readonly repository: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/repository_environments#repository DataGithubRepositoryEnvironments#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_environments#repository DataGithubRepositoryEnvironments#repository}.
 
 ---
 
@@ -711,7 +711,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/repository_environments#id DataGithubRepositoryEnvironments#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_environments#id DataGithubRepositoryEnvironments#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `github_repository_topics`
 
-Refer to the Terraform Registory for docs: [`github_repository_topics`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics).
+Refer to the Terraform Registory for docs: [`github_repository_topics`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics).
 
 # `repositoryTopics` Submodule <a name="`repositoryTopics` Submodule" id="@cdktf/provider-github.repositoryTopics"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_topics`](https://
 
 ### RepositoryTopics <a name="RepositoryTopics" id="@cdktf/provider-github.repositoryTopics.RepositoryTopics"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics github_repository_topics}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics github_repository_topics}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryTopics.RepositoryTopics.Initializer"></a>
 
@@ -44,7 +44,7 @@ repositoryTopics.RepositoryTopics(
 | <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopics.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopics.Initializer.parameter.repository">repository</a></code> | <code>str</code> | The name of the repository. The name is not case sensitive. |
 | <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopics.Initializer.parameter.topics">topics</a></code> | <code>typing.List[str]</code> | An array of topics to add to the repository. |
-| <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopics.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#id RepositoryTopics#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopics.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#id RepositoryTopics#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the repository. The name is not case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#repository RepositoryTopics#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#repository RepositoryTopics#repository}
 
 ---
 
@@ -126,7 +126,7 @@ An array of topics to add to the repository.
 
 Pass one or more topics to replace the set of existing topics. Send an empty array ([]) to clear all topics from the repository. Note: Topic names cannot contain uppercase letters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#topics RepositoryTopics#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#topics RepositoryTopics#topics}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#id RepositoryTopics#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#id RepositoryTopics#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -563,7 +563,7 @@ The construct id used in the generated config for the RepositoryTopics to import
 
 The id of the existing RepositoryTopics that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,7 +858,7 @@ repositoryTopics.RepositoryTopicsConfig(
 | <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopicsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopicsConfig.property.repository">repository</a></code> | <code>str</code> | The name of the repository. The name is not case sensitive. |
 | <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopicsConfig.property.topics">topics</a></code> | <code>typing.List[str]</code> | An array of topics to add to the repository. |
-| <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopicsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#id RepositoryTopics#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryTopics.RepositoryTopicsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#id RepositoryTopics#id}. |
 
 ---
 
@@ -942,7 +942,7 @@ repository: str
 
 The name of the repository. The name is not case sensitive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#repository RepositoryTopics#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#repository RepositoryTopics#repository}
 
 ---
 
@@ -958,7 +958,7 @@ An array of topics to add to the repository.
 
 Pass one or more topics to replace the set of existing topics. Send an empty array ([]) to clear all topics from the repository. Note: Topic names cannot contain uppercase letters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#topics RepositoryTopics#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#topics RepositoryTopics#topics}
 
 ---
 
@@ -970,7 +970,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_topics#id RepositoryTopics#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_topics#id RepositoryTopics#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

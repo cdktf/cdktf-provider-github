@@ -1,6 +1,6 @@
 # `github_branch_protection`
 
-Refer to the Terraform Registory for docs: [`github_branch_protection`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection).
+Refer to the Terraform Registory for docs: [`github_branch_protection`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection).
 
 # `branchProtection` Submodule <a name="`branchProtection` Submodule" id="@cdktf/provider-github.branchProtection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_branch_protection`](https://
 
 ### BranchProtection <a name="BranchProtection" id="@cdktf/provider-github.branchProtection.BranchProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection github_branch_protection}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection github_branch_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer"></a>
 
@@ -538,7 +538,7 @@ The construct id used in the generated config for the BranchProtection to import
 
 The id of the existing BranchProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1114,7 +1114,7 @@ new BranchProtectionConfig {
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.blocksCreations">BlocksCreations</a></code> | <code>object</code> | Setting this to 'true' to block creating the branch. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.enforceAdmins">EnforceAdmins</a></code> | <code>object</code> | Setting this to 'true' enforces status checks for repository administrators. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.forcePushBypassers">ForcePushBypassers</a></code> | <code>string[]</code> | The list of actor Names/IDs that are allowed to bypass force push restrictions. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#id BranchProtection#id}. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#id BranchProtection#id}. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.lockBranch">LockBranch</a></code> | <code>object</code> | Setting this to 'true' will make the branch read-only and preventing any pushes to it. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.pushRestrictions">PushRestrictions</a></code> | <code>string[]</code> | The list of actor Names/IDs that may push to the branch. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireConversationResolution">RequireConversationResolution</a></code> | <code>object</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. |
@@ -1205,7 +1205,7 @@ public string Pattern { get; set; }
 
 Identifies the protection rule pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#pattern BranchProtection#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#pattern BranchProtection#pattern}
 
 ---
 
@@ -1219,7 +1219,7 @@ public string RepositoryId { get; set; }
 
 The name or node ID of the repository associated with this branch protection rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#repository_id BranchProtection#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#repository_id BranchProtection#repository_id}
 
 ---
 
@@ -1233,7 +1233,7 @@ public object AllowsDeletions { get; set; }
 
 Setting this to 'true' to allow the branch to be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#allows_deletions BranchProtection#allows_deletions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#allows_deletions BranchProtection#allows_deletions}
 
 ---
 
@@ -1247,7 +1247,7 @@ public object AllowsForcePushes { get; set; }
 
 Setting this to 'true' to allow force pushes on the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}
 
 ---
 
@@ -1261,7 +1261,7 @@ public object BlocksCreations { get; set; }
 
 Setting this to 'true' to block creating the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#blocks_creations BranchProtection#blocks_creations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#blocks_creations BranchProtection#blocks_creations}
 
 ---
 
@@ -1275,7 +1275,7 @@ public object EnforceAdmins { get; set; }
 
 Setting this to 'true' enforces status checks for repository administrators.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#enforce_admins BranchProtection#enforce_admins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#enforce_admins BranchProtection#enforce_admins}
 
 ---
 
@@ -1291,7 +1291,7 @@ The list of actor Names/IDs that are allowed to bypass force push restrictions.
 
 Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#force_push_bypassers BranchProtection#force_push_bypassers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#force_push_bypassers BranchProtection#force_push_bypassers}
 
 ---
 
@@ -1303,7 +1303,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#id BranchProtection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#id BranchProtection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1320,7 +1320,7 @@ public object LockBranch { get; set; }
 
 Setting this to 'true' will make the branch read-only and preventing any pushes to it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#lock_branch BranchProtection#lock_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#lock_branch BranchProtection#lock_branch}
 
 ---
 
@@ -1336,7 +1336,7 @@ The list of actor Names/IDs that may push to the branch.
 
 Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#push_restrictions BranchProtection#push_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#push_restrictions BranchProtection#push_restrictions}
 
 ---
 
@@ -1350,7 +1350,7 @@ public object RequireConversationResolution { get; set; }
 
 Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}
 
 ---
 
@@ -1364,7 +1364,7 @@ public object RequiredLinearHistory { get; set; }
 
 Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#required_linear_history BranchProtection#required_linear_history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#required_linear_history BranchProtection#required_linear_history}
 
 ---
 
@@ -1378,7 +1378,7 @@ public object RequiredPullRequestReviews { get; set; }
 
 required_pull_request_reviews block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#required_pull_request_reviews BranchProtection#required_pull_request_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#required_pull_request_reviews BranchProtection#required_pull_request_reviews}
 
 ---
 
@@ -1392,7 +1392,7 @@ public object RequiredStatusChecks { get; set; }
 
 required_status_checks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#required_status_checks BranchProtection#required_status_checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#required_status_checks BranchProtection#required_status_checks}
 
 ---
 
@@ -1406,7 +1406,7 @@ public object RequireSignedCommits { get; set; }
 
 Setting this to 'true' requires all commits to be signed with GPG.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#require_signed_commits BranchProtection#require_signed_commits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#require_signed_commits BranchProtection#require_signed_commits}
 
 ---
 
@@ -1454,7 +1454,7 @@ The list of actor Names/IDs with dismissal access.
 
 If not empty, 'restrict_dismissals' is ignored. Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#dismissal_restrictions BranchProtection#dismissal_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#dismissal_restrictions BranchProtection#dismissal_restrictions}
 
 ---
 
@@ -1468,7 +1468,7 @@ public object DismissStaleReviews { get; set; }
 
 Dismiss approved reviews automatically when a new commit is pushed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}
 
 ---
 
@@ -1484,7 +1484,7 @@ The list of actor Names/IDs that are allowed to bypass pull request requirements
 
 Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}
 
 ---
 
@@ -1498,7 +1498,7 @@ public object RequireCodeOwnerReviews { get; set; }
 
 Require an approved review in pull requests including files with a designated code owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
 
 ---
 
@@ -1514,7 +1514,7 @@ Require 'x' number of approvals to satisfy branch protection requirements.
 
 If this is specified it must be a number between 0-6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}
 
 ---
 
@@ -1528,7 +1528,7 @@ public object RequireLastPushApproval { get; set; }
 
 Require that The most recent push must be approved by someone other than the last pusher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}
 
 ---
 
@@ -1542,7 +1542,7 @@ public object RestrictDismissals { get; set; }
 
 Restrict pull request review dismissals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}
 
 ---
 
@@ -1580,7 +1580,7 @@ The list of status checks to require in order to merge into this branch.
 
 No status checks are required by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#contexts BranchProtection#contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#contexts BranchProtection#contexts}
 
 ---
 
@@ -1594,7 +1594,7 @@ public object Strict { get; set; }
 
 Require branches to be up to date before merging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/branch_protection#strict BranchProtection#strict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/branch_protection#strict BranchProtection#strict}
 
 ---
 

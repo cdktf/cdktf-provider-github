@@ -1,6 +1,6 @@
 # `github_team_membership`
 
-Refer to the Terraform Registory for docs: [`github_team_membership`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_membership).
+Refer to the Terraform Registory for docs: [`github_team_membership`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_membership).
 
 # `teamMembership` Submodule <a name="`teamMembership` Submodule" id="@cdktf/provider-github.teamMembership"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_team_membership`](https://re
 
 ### TeamMembership <a name="TeamMembership" id="@cdktf/provider-github.teamMembership.TeamMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_membership github_team_membership}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_membership github_team_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembership.TeamMembership.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the TeamMembership to import.
 
 The id of the existing TeamMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -764,7 +764,7 @@ new TeamMembershipConfig {
 | <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.teamId">TeamId</a></code> | <code>string</code> | The GitHub team id or the GitHub team slug. |
 | <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.username">Username</a></code> | <code>string</code> | The user to add to the team. |
-| <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_membership#id TeamMembership#id}. |
+| <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_membership#id TeamMembership#id}. |
 | <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.role">Role</a></code> | <code>string</code> | The role of the user within the team. Must be one of 'member' or 'maintainer'. |
 
 ---
@@ -849,7 +849,7 @@ public string TeamId { get; set; }
 
 The GitHub team id or the GitHub team slug.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_membership#team_id TeamMembership#team_id}
 
 ---
 
@@ -863,7 +863,7 @@ public string Username { get; set; }
 
 The user to add to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_membership#username TeamMembership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_membership#username TeamMembership#username}
 
 ---
 
@@ -875,7 +875,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_membership#id TeamMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_membership#id TeamMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -892,7 +892,7 @@ public string Role { get; set; }
 
 The role of the user within the team. Must be one of 'member' or 'maintainer'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_membership#role TeamMembership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_membership#role TeamMembership#role}
 
 ---
 
