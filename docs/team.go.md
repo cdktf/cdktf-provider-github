@@ -1,6 +1,6 @@
 # `github_team`
 
-Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team).
+Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team).
 
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-github.team"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_team`](https://registry.terr
 
 ### Team <a name="Team" id="@cdktf/provider-github.team.Team"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team github_team}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team github_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.team.Team.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/team"
+import "github.com/cdktf/cdktf-provider-github-go/github/team"
 
 team.NewTeam(scope Construct, id *string, config TeamConfig) Team
 ```
@@ -388,7 +388,7 @@ func ResetPrivacy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.team.Team.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/team"
+import "github.com/cdktf/cdktf-provider-github-go/github/team"
 
 team.Team_IsConstruct(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.team.Team.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/team"
+import "github.com/cdktf/cdktf-provider-github-go/github/team"
 
 team.Team_IsTerraformElement(x interface{}) *bool
 ```
@@ -434,7 +434,7 @@ team.Team_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.team.Team.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/team"
+import "github.com/cdktf/cdktf-provider-github-go/github/team"
 
 team.Team_IsTerraformResource(x interface{}) *bool
 ```
@@ -448,7 +448,7 @@ team.Team_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.team.Team.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/team"
+import "github.com/cdktf/cdktf-provider-github-go/github/team"
 
 team.Team_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -477,7 +477,7 @@ The construct id used in the generated config for the Team to import.
 
 The id of the existing Team that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -919,7 +919,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.team.TeamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/team"
+import "github.com/cdktf/cdktf-provider-github-go/github/team"
 
 &team.TeamConfig {
 	Connection: interface{},
@@ -955,7 +955,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/team"
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.name">Name</a></code> | <code>*string</code> | The name of the team. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.createDefaultMaintainer">CreateDefaultMaintainer</a></code> | <code>interface{}</code> | Adds a default maintainer to the team. Adds the creating user to the team when 'true'. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.description">Description</a></code> | <code>*string</code> | A description of the team. |
-| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#id Team#id}. |
+| <code><a href="#@cdktf/provider-github.team.TeamConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#id Team#id}. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.ldapDn">LdapDn</a></code> | <code>*string</code> | The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.parentTeamId">ParentTeamId</a></code> | <code>*string</code> | The ID or slug of the parent team, if this is a nested team. |
 | <code><a href="#@cdktf/provider-github.team.TeamConfig.property.parentTeamReadId">ParentTeamReadId</a></code> | <code>*string</code> | The id of the parent team read in Github. |
@@ -1044,7 +1044,7 @@ Name *string
 
 The name of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#name Team#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#name Team#name}
 
 ---
 
@@ -1058,7 +1058,7 @@ CreateDefaultMaintainer interface{}
 
 Adds a default maintainer to the team. Adds the creating user to the team when 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#create_default_maintainer Team#create_default_maintainer}
 
 ---
 
@@ -1072,7 +1072,7 @@ Description *string
 
 A description of the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#description Team#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#description Team#description}
 
 ---
 
@@ -1084,7 +1084,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#id Team#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#id Team#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1101,7 +1101,7 @@ LdapDn *string
 
 The LDAP Distinguished Name of the group where membership will be synchronized. Only available in GitHub Enterprise Server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#ldap_dn Team#ldap_dn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#ldap_dn Team#ldap_dn}
 
 ---
 
@@ -1115,7 +1115,7 @@ ParentTeamId *string
 
 The ID or slug of the parent team, if this is a nested team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#parent_team_id Team#parent_team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#parent_team_id Team#parent_team_id}
 
 ---
 
@@ -1129,7 +1129,7 @@ ParentTeamReadId *string
 
 The id of the parent team read in Github.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#parent_team_read_id Team#parent_team_read_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#parent_team_read_id Team#parent_team_read_id}
 
 ---
 
@@ -1143,7 +1143,7 @@ ParentTeamReadSlug *string
 
 The id of the parent team read in Github.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#parent_team_read_slug Team#parent_team_read_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#parent_team_read_slug Team#parent_team_read_slug}
 
 ---
 
@@ -1157,7 +1157,7 @@ Privacy *string
 
 The level of privacy for the team. Must be one of 'secret' or 'closed'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team#privacy Team#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team#privacy Team#privacy}
 
 ---
 

@@ -1,6 +1,6 @@
 # `github_repository_tag_protection`
 
-Refer to the Terraform Registory for docs: [`github_repository_tag_protection`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection).
+Refer to the Terraform Registory for docs: [`github_repository_tag_protection`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection).
 
 # `repositoryTagProtection` Submodule <a name="`repositoryTagProtection` Submodule" id="@cdktf/provider-github.repositoryTagProtection"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_tag_protection`](
 
 ### RepositoryTagProtection <a name="RepositoryTagProtection" id="@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection github_repository_tag_protection}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection github_repository_tag_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtection.Initializer"></a>
 
@@ -46,7 +46,7 @@ RepositoryTagProtection.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtection.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtection.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | The pattern of the tag to protect. |
 | <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtection.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | Name of the repository to add the tag protection to. |
-| <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtection.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The pattern of the tag to protect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#pattern RepositoryTagProtection#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#pattern RepositoryTagProtection#pattern}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Name of the repository to add the tag protection to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#repository RepositoryTagProtection#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#repository RepositoryTagProtection#repository}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -521,7 +521,7 @@ The construct id used in the generated config for the RepositoryTagProtection to
 
 The id of the existing RepositoryTagProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ RepositoryTagProtectionConfig.builder()
 | <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtectionConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtectionConfig.property.pattern">pattern</a></code> | <code>java.lang.String</code> | The pattern of the tag to protect. |
 | <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtectionConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | Name of the repository to add the tag protection to. |
-| <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryTagProtection.RepositoryTagProtectionConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}. |
 
 ---
 
@@ -915,7 +915,7 @@ public java.lang.String getPattern();
 
 The pattern of the tag to protect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#pattern RepositoryTagProtection#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#pattern RepositoryTagProtection#pattern}
 
 ---
 
@@ -929,7 +929,7 @@ public java.lang.String getRepository();
 
 Name of the repository to add the tag protection to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#repository RepositoryTagProtection#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#repository RepositoryTagProtection#repository}
 
 ---
 
@@ -941,7 +941,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

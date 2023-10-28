@@ -1,6 +1,6 @@
 # `github_actions_organization_permissions`
 
-Refer to the Terraform Registory for docs: [`github_actions_organization_permissions`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions).
+Refer to the Terraform Registory for docs: [`github_actions_organization_permissions`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions).
 
 # `actionsOrganizationPermissions` Submodule <a name="`actionsOrganizationPermissions` Submodule" id="@cdktf/provider-github.actionsOrganizationPermissions"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_actions_organization_permiss
 
 ### ActionsOrganizationPermissions <a name="ActionsOrganizationPermissions" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions github_actions_organization_permissions}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions github_actions_organization_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 actionsorganizationpermissions.NewActionsOrganizationPermissions(scope Construct, id *string, config ActionsOrganizationPermissionsConfig) ActionsOrganizationPermissions
 ```
@@ -386,7 +386,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 actionsorganizationpermissions.ActionsOrganizationPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 actionsorganizationpermissions.ActionsOrganizationPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ actionsorganizationpermissions.ActionsOrganizationPermissions_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 actionsorganizationpermissions.ActionsOrganizationPermissions_IsTerraformResource(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ actionsorganizationpermissions.ActionsOrganizationPermissions_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 actionsorganizationpermissions.ActionsOrganizationPermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -475,7 +475,7 @@ The construct id used in the generated config for the ActionsOrganizationPermiss
 
 The id of the existing ActionsOrganizationPermissions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -785,7 +785,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 &actionsorganizationpermissions.ActionsOrganizationPermissionsAllowedActionsConfig {
 	GithubOwnedAllowed: interface{},
@@ -814,7 +814,7 @@ GithubOwnedAllowed interface{}
 
 Whether GitHub-owned actions are allowed in the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}
 
 ---
 
@@ -830,7 +830,7 @@ Specifies a list of string-matching patterns to allow specific action(s).
 
 Wildcards, tags, and SHAs are allowed. For example, 'monalisa/octocat@', 'monalisa/octocat@v2', 'monalisa/'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}
 
 ---
 
@@ -846,7 +846,7 @@ Whether actions in GitHub Marketplace from verified creators are allowed.
 
 Set to 'true' to allow all GitHub Marketplace actions by verified creators.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}
 
 ---
 
@@ -855,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 &actionsorganizationpermissions.ActionsOrganizationPermissionsConfig {
 	Connection: interface{},
@@ -867,8 +867,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganization
 	Provisioners: *[]interface{},
 	EnabledRepositories: *string,
 	AllowedActions: *string,
-	AllowedActionsConfig: github.com/cdktf/cdktf-provider-github-go/github/v12.actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig,
-	EnabledRepositoriesConfig: github.com/cdktf/cdktf-provider-github-go/github/v12.actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig,
+	AllowedActionsConfig: github.com/cdktf/cdktf-provider-github-go/github.actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig,
+	EnabledRepositoriesConfig: github.com/cdktf/cdktf-provider-github-go/github.actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig,
 	Id: *string,
 }
 ```
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganization
 | <code><a href="#@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsConfig.property.allowedActions">AllowedActions</a></code> | <code>*string</code> | The permissions policy that controls the actions that are allowed to run. |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsConfig.property.allowedActionsConfig">AllowedActionsConfig</a></code> | <code><a href="#@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfig">ActionsOrganizationPermissionsAllowedActionsConfig</a></code> | allowed_actions_config block. |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsConfig.property.enabledRepositoriesConfig">EnabledRepositoriesConfig</a></code> | <code><a href="#@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig">ActionsOrganizationPermissionsEnabledRepositoriesConfig</a></code> | enabled_repositories_config block. |
-| <code><a href="#@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#id ActionsOrganizationPermissions#id}. |
+| <code><a href="#@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#id ActionsOrganizationPermissions#id}. |
 
 ---
 
@@ -974,7 +974,7 @@ The policy that controls the repositories in the organization that are allowed t
 
 Can be one of: 'all', 'none', or 'selected'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
 
 ---
 
@@ -990,7 +990,7 @@ The permissions policy that controls the actions that are allowed to run.
 
 Can be one of: 'all', 'local_only', or 'selected'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}
 
 ---
 
@@ -1004,7 +1004,7 @@ AllowedActionsConfig ActionsOrganizationPermissionsAllowedActionsConfig
 
 allowed_actions_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
 
 ---
 
@@ -1018,7 +1018,7 @@ EnabledRepositoriesConfig ActionsOrganizationPermissionsEnabledRepositoriesConfi
 
 enabled_repositories_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#enabled_repositories_config ActionsOrganizationPermissions#enabled_repositories_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#enabled_repositories_config ActionsOrganizationPermissions#enabled_repositories_config}
 
 ---
 
@@ -1030,7 +1030,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#id ActionsOrganizationPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#id ActionsOrganizationPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1042,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 &actionsorganizationpermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfig {
 	RepositoryIds: *[]*f64,
@@ -1067,7 +1067,7 @@ RepositoryIds *[]*f64
 
 List of repository IDs to enable for GitHub Actions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}
 
 ---
 
@@ -1078,7 +1078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsAllowedActionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 actionsorganizationpermissions.NewActionsOrganizationPermissionsAllowedActionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionsOrganizationPermissionsAllowedActionsConfigOutputReference
 ```
@@ -1407,7 +1407,7 @@ func InternalValue() ActionsOrganizationPermissionsAllowedActionsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsOrganizationPermissions.ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationpermissions"
 
 actionsorganizationpermissions.NewActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputReference
 ```

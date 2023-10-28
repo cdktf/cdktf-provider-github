@@ -1,6 +1,6 @@
 # `github_app_installation_repositories`
 
-Refer to the Terraform Registory for docs: [`github_app_installation_repositories`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories).
+Refer to the Terraform Registory for docs: [`github_app_installation_repositories`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories).
 
 # `appInstallationRepositories` Submodule <a name="`appInstallationRepositories` Submodule" id="@cdktf/provider-github.appInstallationRepositories"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_app_installation_repositorie
 
 ### AppInstallationRepositories <a name="AppInstallationRepositories" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories github_app_installation_repositories}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories github_app_installation_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.Initializer"></a>
 
@@ -44,7 +44,7 @@ appInstallationRepositories.AppInstallationRepositories(
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.Initializer.parameter.installationId">installation_id</a></code> | <code>str</code> | The GitHub app installation id. |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.Initializer.parameter.selectedRepositories">selected_repositories</a></code> | <code>typing.List[str]</code> | A list of repository names to install the app on. |
-| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositories.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}. |
 
 ---
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The GitHub app installation id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 A list of repository names to install the app on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -561,7 +561,7 @@ The construct id used in the generated config for the AppInstallationRepositorie
 
 The id of the existing AppInstallationRepositories that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -856,7 +856,7 @@ appInstallationRepositories.AppInstallationRepositoriesConfig(
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.installationId">installation_id</a></code> | <code>str</code> | The GitHub app installation id. |
 | <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.selectedRepositories">selected_repositories</a></code> | <code>typing.List[str]</code> | A list of repository names to install the app on. |
-| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.appInstallationRepositories.AppInstallationRepositoriesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}. |
 
 ---
 
@@ -940,7 +940,7 @@ installation_id: str
 
 The GitHub app installation id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#installation_id AppInstallationRepositories#installation_id}
 
 ---
 
@@ -954,7 +954,7 @@ selected_repositories: typing.List[str]
 
 A list of repository names to install the app on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#selected_repositories AppInstallationRepositories#selected_repositories}
 
 ---
 
@@ -966,7 +966,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/app_installation_repositories#id AppInstallationRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

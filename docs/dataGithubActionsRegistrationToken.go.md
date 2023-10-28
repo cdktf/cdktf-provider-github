@@ -1,6 +1,6 @@
 # `data_github_actions_registration_token`
 
-Refer to the Terraform Registory for docs: [`data_github_actions_registration_token`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_registration_token).
+Refer to the Terraform Registory for docs: [`data_github_actions_registration_token`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/actions_registration_token).
 
 # `dataGithubActionsRegistrationToken` Submodule <a name="`dataGithubActionsRegistrationToken` Submodule" id="@cdktf/provider-github.dataGithubActionsRegistrationToken"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_actions_registration_to
 
 ### DataGithubActionsRegistrationToken <a name="DataGithubActionsRegistrationToken" id="@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_registration_token github_actions_registration_token}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/actions_registration_token github_actions_registration_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsregistrationtoken"
 
 datagithubactionsregistrationtoken.NewDataGithubActionsRegistrationToken(scope Construct, id *string, config DataGithubActionsRegistrationTokenConfig) DataGithubActionsRegistrationToken
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsregistrationtoken"
 
 datagithubactionsregistrationtoken.DataGithubActionsRegistrationToken_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsregistrationtoken"
 
 datagithubactionsregistrationtoken.DataGithubActionsRegistrationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagithubactionsregistrationtoken.DataGithubActionsRegistrationToken_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsregistrationtoken"
 
 datagithubactionsregistrationtoken.DataGithubActionsRegistrationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagithubactionsregistrationtoken.DataGithubActionsRegistrationToken_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsregistrationtoken"
 
 datagithubactionsregistrationtoken.DataGithubActionsRegistrationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataGithubActionsRegistrat
 
 The id of the existing DataGithubActionsRegistrationToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_registration_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/actions_registration_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,7 +611,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsregistrationtoken"
 
 &datagithubactionsregistrationtoken.DataGithubActionsRegistrationTokenConfig {
 	Connection: interface{},
@@ -637,8 +637,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsre
 | <code><a href="#@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_registration_token#repository DataGithubActionsRegistrationToken#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_registration_token#id DataGithubActionsRegistrationToken#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/actions_registration_token#repository DataGithubActionsRegistrationToken#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsRegistrationToken.DataGithubActionsRegistrationTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/actions_registration_token#id DataGithubActionsRegistrationToken#id}. |
 
 ---
 
@@ -720,7 +720,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_registration_token#repository DataGithubActionsRegistrationToken#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/actions_registration_token#repository DataGithubActionsRegistrationToken#repository}.
 
 ---
 
@@ -732,7 +732,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/data-sources/actions_registration_token#id DataGithubActionsRegistrationToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/actions_registration_token#id DataGithubActionsRegistrationToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

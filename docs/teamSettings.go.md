@@ -1,6 +1,6 @@
 # `github_team_settings`
 
-Refer to the Terraform Registory for docs: [`github_team_settings`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings).
+Refer to the Terraform Registory for docs: [`github_team_settings`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings).
 
 # `teamSettings` Submodule <a name="`teamSettings` Submodule" id="@cdktf/provider-github.teamSettings"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_team_settings`](https://regi
 
 ### TeamSettings <a name="TeamSettings" id="@cdktf/provider-github.teamSettings.TeamSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings github_team_settings}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings github_team_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSettings.TeamSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.NewTeamSettings(scope Construct, id *string, config TeamSettingsConfig) TeamSettings
 ```
@@ -359,7 +359,7 @@ func ResetReviewRequestDelegation()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.teamSettings.TeamSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.TeamSettings_IsConstruct(x interface{}) *bool
 ```
@@ -391,7 +391,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.teamSettings.TeamSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.TeamSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -405,7 +405,7 @@ teamsettings.TeamSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.teamSettings.TeamSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.TeamSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -419,7 +419,7 @@ teamsettings.TeamSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.teamSettings.TeamSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.TeamSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -448,7 +448,7 @@ The construct id used in the generated config for the TeamSettings to import.
 
 The id of the existing TeamSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -736,7 +736,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamSettings.TeamSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 &teamsettings.TeamSettingsConfig {
 	Connection: interface{},
@@ -748,7 +748,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
 	Provisioners: *[]interface{},
 	TeamId: *string,
 	Id: *string,
-	ReviewRequestDelegation: github.com/cdktf/cdktf-provider-github-go/github/v12.teamSettings.TeamSettingsReviewRequestDelegation,
+	ReviewRequestDelegation: github.com/cdktf/cdktf-provider-github-go/github.teamSettings.TeamSettingsReviewRequestDelegation,
 }
 ```
 
@@ -764,7 +764,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.teamId">TeamId</a></code> | <code>*string</code> | The GitHub team id or the GitHub team slug. |
-| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings#id TeamSettings#id}. |
+| <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings#id TeamSettings#id}. |
 | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsConfig.property.reviewRequestDelegation">ReviewRequestDelegation</a></code> | <code><a href="#@cdktf/provider-github.teamSettings.TeamSettingsReviewRequestDelegation">TeamSettingsReviewRequestDelegation</a></code> | review_request_delegation block. |
 
 ---
@@ -849,7 +849,7 @@ TeamId *string
 
 The GitHub team id or the GitHub team slug.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings#team_id TeamSettings#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings#team_id TeamSettings#team_id}
 
 ---
 
@@ -861,7 +861,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings#id TeamSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings#id TeamSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -878,7 +878,7 @@ ReviewRequestDelegation TeamSettingsReviewRequestDelegation
 
 review_request_delegation block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings#review_request_delegation TeamSettings#review_request_delegation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings#review_request_delegation TeamSettings#review_request_delegation}
 
 ---
 
@@ -887,7 +887,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamSettings.TeamSettingsReviewRequestDelegation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 &teamsettings.TeamSettingsReviewRequestDelegation {
 	Algorithm: *string,
@@ -916,7 +916,7 @@ Algorithm *string
 
 The algorithm to use when assigning pull requests to team members. Supported values are 'ROUND_ROBIN' and 'LOAD_BALANCE'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings#algorithm TeamSettings#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings#algorithm TeamSettings#algorithm}
 
 ---
 
@@ -930,7 +930,7 @@ MemberCount *f64
 
 The number of team members to assign to a pull request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings#member_count TeamSettings#member_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings#member_count TeamSettings#member_count}
 
 ---
 
@@ -944,7 +944,7 @@ Notify interface{}
 
 whether to notify the entire team when at least one member is also assigned to the pull request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_settings#notify TeamSettings#notify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_settings#notify TeamSettings#notify}
 
 ---
 
@@ -955,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamSettings.TeamSettingsReviewRequestDelegationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teamsettings"
+import "github.com/cdktf/cdktf-provider-github-go/github/teamsettings"
 
 teamsettings.NewTeamSettingsReviewRequestDelegationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TeamSettingsReviewRequestDelegationOutputReference
 ```

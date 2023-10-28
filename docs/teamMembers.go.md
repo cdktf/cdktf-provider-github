@@ -1,6 +1,6 @@
 # `github_team_members`
 
-Refer to the Terraform Registory for docs: [`github_team_members`](https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members).
+Refer to the Terraform Registory for docs: [`github_team_members`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members).
 
 # `teamMembers` Submodule <a name="`teamMembers` Submodule" id="@cdktf/provider-github.teamMembers"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_team_members`](https://regis
 
 ### TeamMembers <a name="TeamMembers" id="@cdktf/provider-github.teamMembers.TeamMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members github_team_members}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members github_team_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembers(scope Construct, id *string, config TeamMembersConfig) TeamMembers
 ```
@@ -352,7 +352,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.teamMembers.TeamMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsConstruct(x interface{}) *bool
 ```
@@ -384,7 +384,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.teamMembers.TeamMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -398,7 +398,7 @@ teammembers.TeamMembers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.teamMembers.TeamMembers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsTerraformResource(x interface{}) *bool
 ```
@@ -412,7 +412,7 @@ teammembers.TeamMembers_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.teamMembers.TeamMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -441,7 +441,7 @@ The construct id used in the generated config for the TeamMembers to import.
 
 The id of the existing TeamMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -707,7 +707,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamMembers.TeamMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 &teammembers.TeamMembersConfig {
 	Connection: interface{},
@@ -736,7 +736,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.members">Members</a></code> | <code>interface{}</code> | members block. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.teamId">TeamId</a></code> | <code>*string</code> | The GitHub team id or slug. |
-| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members#id TeamMembers#id}. |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members#id TeamMembers#id}. |
 
 ---
 
@@ -820,7 +820,7 @@ Members interface{}
 
 members block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members#members TeamMembers#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members#members TeamMembers#members}
 
 ---
 
@@ -834,7 +834,7 @@ TeamId *string
 
 The GitHub team id or slug.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members#team_id TeamMembers#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members#team_id TeamMembers#team_id}
 
 ---
 
@@ -846,7 +846,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members#id TeamMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members#id TeamMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -858,7 +858,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamMembers.TeamMembersMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 &teammembers.TeamMembersMembers {
 	Username: *string,
@@ -885,7 +885,7 @@ Username *string
 
 The user to add to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members#username TeamMembers#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members#username TeamMembers#username}
 
 ---
 
@@ -899,7 +899,7 @@ Role *string
 
 The role of the user within the team. Must be one of 'member' or 'maintainer'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.40.0/docs/resources/team_members#role TeamMembers#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/team_members#role TeamMembers#role}
 
 ---
 
@@ -910,7 +910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembersMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembersMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamMembersMembersList
 ```
@@ -1053,7 +1053,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembersMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamMembersMembersOutputReference
 ```
