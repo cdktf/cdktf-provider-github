@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesorganizationsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesorganizationsecret"
 
 codespacesorganizationsecret.NewCodespacesOrganizationSecret(scope Construct, id *string, config CodespacesOrganizationSecretConfig) CodespacesOrganizationSecret
 ```
@@ -360,7 +360,7 @@ func ResetSelectedRepositoryIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesorganizationsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesorganizationsecret"
 
 codespacesorganizationsecret.CodespacesOrganizationSecret_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesorganizationsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesorganizationsecret"
 
 codespacesorganizationsecret.CodespacesOrganizationSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +406,7 @@ codespacesorganizationsecret.CodespacesOrganizationSecret_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesorganizationsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesorganizationsecret"
 
 codespacesorganizationsecret.CodespacesOrganizationSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +420,7 @@ codespacesorganizationsecret.CodespacesOrganizationSecret_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesorganizationsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesorganizationsecret"
 
 codespacesorganizationsecret.CodespacesOrganizationSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -803,7 +803,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.codespacesOrganizationSecret.CodespacesOrganizationSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesorganizationsecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesorganizationsecret"
 
 &codespacesorganizationsecret.CodespacesOrganizationSecretConfig {
 	Connection: interface{},

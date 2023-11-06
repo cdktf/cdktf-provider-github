@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.NewDataGithubRepositoryDeploymentBranchPolicies(scope Construct, id *string, config DataGithubRepositoryDeploymentBranchPoliciesConfig) DataGithubRepositoryDeploymentBranchPolicies
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranc
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -622,7 +622,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 &datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig {
 	Connection: interface{},
@@ -773,7 +773,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 &datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPolicies {
 
@@ -788,7 +788,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositor
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.NewDataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesList
 ```
@@ -920,7 +920,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.NewDataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesOutputReference
 ```
