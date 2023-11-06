@@ -1,7 +1,9 @@
 
-# Terraform CDK github Provider ~> 5.0
+# Terraform CDK github Provider tracks ~> 5.0
 
 This repo builds and publishes the Terraform github Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on github 5.41.0
 
 ## Available Packages
 
@@ -61,7 +63,7 @@ This project is explicitly not tracking the Terraform github Provider version 1:
 These are the upstream dependencies:
 
 - [Terraform CDK](https://cdk.tf)
-- [Terraform github Provider](https://registry.terraform.io/providers/integrations/github/5.0.0)
+- [Terraform github Provider](https://registry.terraform.io/providers/integrations/github/5.41.0)
     - This links to the minimum version being tracked, you can find the latest released version [in our releases](https://github.com/cdktf/cdktf-provider-github/releases)
 - [Terraform Engine](https://terraform.io)
 
