@@ -1,6 +1,6 @@
 # `github_release`
 
-Refer to the Terraform Registory for docs: [`github_release`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release).
+Refer to the Terraform Registory for docs: [`github_release`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release).
 
 # `release` Submodule <a name="`release` Submodule" id="@cdktf/provider-github.release"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_release`](https://registry.t
 
 ### Release <a name="Release" id="@cdktf/provider-github.release.Release"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release github_release}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release github_release}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.release.Release.Initializer"></a>
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the Release to import.
 
 The id of the existing Release that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,7 +948,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/release"
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.discussionCategoryName">DiscussionCategoryName</a></code> | <code>*string</code> | If specified, a discussion of the specified category is created and linked to the release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.draft">Draft</a></code> | <code>interface{}</code> | Set to 'false' to create a published release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.generateReleaseNotes">GenerateReleaseNotes</a></code> | <code>interface{}</code> | Set to 'true' to automatically generate the name and body for this release. |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#id Release#id}. |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#id Release#id}. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.name">Name</a></code> | <code>*string</code> | The name of the release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.prerelease">Prerelease</a></code> | <code>interface{}</code> | Set to 'false' to identify the release as a full release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.targetCommitish">TargetCommitish</a></code> | <code>*string</code> | The branch name or commit SHA the tag is created from. |
@@ -1035,7 +1035,7 @@ Repository *string
 
 The name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#repository Release#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#repository Release#repository}
 
 ---
 
@@ -1049,7 +1049,7 @@ TagName *string
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#tag_name Release#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#tag_name Release#tag_name}
 
 ---
 
@@ -1063,7 +1063,7 @@ Body *string
 
 Text describing the contents of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#body Release#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#body Release#body}
 
 ---
 
@@ -1079,7 +1079,7 @@ If specified, a discussion of the specified category is created and linked to th
 
 The value must be a category that already exists in the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#discussion_category_name Release#discussion_category_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#discussion_category_name Release#discussion_category_name}
 
 ---
 
@@ -1093,7 +1093,7 @@ Draft interface{}
 
 Set to 'false' to create a published release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#draft Release#draft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#draft Release#draft}
 
 ---
 
@@ -1109,7 +1109,7 @@ Set to 'true' to automatically generate the name and body for this release.
 
 If 'name' is specified, the specified name will be used; otherwise, a name will be automatically generated. If 'body' is specified, the body will be pre-pended to the automatically generated notes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#generate_release_notes Release#generate_release_notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#generate_release_notes Release#generate_release_notes}
 
 ---
 
@@ -1121,7 +1121,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#id Release#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#id Release#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1138,7 +1138,7 @@ Name *string
 
 The name of the release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#name Release#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#name Release#name}
 
 ---
 
@@ -1152,7 +1152,7 @@ Prerelease interface{}
 
 Set to 'false' to identify the release as a full release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#prerelease Release#prerelease}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#prerelease Release#prerelease}
 
 ---
 
@@ -1166,7 +1166,7 @@ TargetCommitish *string
 
 The branch name or commit SHA the tag is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/release#target_commitish Release#target_commitish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/release#target_commitish Release#target_commitish}
 
 ---
 

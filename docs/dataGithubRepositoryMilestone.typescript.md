@@ -1,6 +1,6 @@
 # `data_github_repository_milestone`
 
-Refer to the Terraform Registory for docs: [`data_github_repository_milestone`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone).
+Refer to the Terraform Registory for docs: [`data_github_repository_milestone`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone).
 
 # `dataGithubRepositoryMilestone` Submodule <a name="`dataGithubRepositoryMilestone` Submodule" id="@cdktf/provider-github.dataGithubRepositoryMilestone"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_repository_milestone`](
 
 ### DataGithubRepositoryMilestone <a name="DataGithubRepositoryMilestone" id="@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone github_repository_milestone}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone github_repository_milestone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestone.Initializer"></a>
 
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataGithubRepositoryMilest
 
 The id of the existing DataGithubRepositoryMilestone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,10 +693,10 @@ const dataGithubRepositoryMilestoneConfig: dataGithubRepositoryMilestone.DataGit
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.number">number</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#number DataGithubRepositoryMilestone#number}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#owner DataGithubRepositoryMilestone#owner}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#repository DataGithubRepositoryMilestone#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#id DataGithubRepositoryMilestone#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.number">number</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#number DataGithubRepositoryMilestone#number}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.owner">owner</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#owner DataGithubRepositoryMilestone#owner}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.repository">repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#repository DataGithubRepositoryMilestone#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#id DataGithubRepositoryMilestone#id}. |
 
 ---
 
@@ -778,7 +778,7 @@ public readonly number: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#number DataGithubRepositoryMilestone#number}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#number DataGithubRepositoryMilestone#number}.
 
 ---
 
@@ -790,7 +790,7 @@ public readonly owner: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#owner DataGithubRepositoryMilestone#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#owner DataGithubRepositoryMilestone#owner}.
 
 ---
 
@@ -802,7 +802,7 @@ public readonly repository: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#repository DataGithubRepositoryMilestone#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#repository DataGithubRepositoryMilestone#repository}.
 
 ---
 
@@ -814,7 +814,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_milestone#id DataGithubRepositoryMilestone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_milestone#id DataGithubRepositoryMilestone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

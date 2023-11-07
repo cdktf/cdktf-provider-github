@@ -1,6 +1,6 @@
 # `data_github_rest_api`
 
-Refer to the Terraform Registory for docs: [`data_github_rest_api`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api).
+Refer to the Terraform Registory for docs: [`data_github_rest_api`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api).
 
 # `dataGithubRestApi` Submodule <a name="`dataGithubRestApi` Submodule" id="@cdktf/provider-github.dataGithubRestApi"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_rest_api`](https://regi
 
 ### DataGithubRestApi <a name="DataGithubRestApi" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api github_rest_api}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api github_rest_api}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataGithubRestApi.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer.parameter.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#id DataGithubRestApi#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer.parameter.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#id DataGithubRestApi#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#id DataGithubRestApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#id DataGithubRestApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -444,7 +444,7 @@ The construct id used in the generated config for the DataGithubRestApi to impor
 
 The id of the existing DataGithubRestApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,8 +740,8 @@ DataGithubRestApiConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#id DataGithubRestApi#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.endpoint">endpoint</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#id DataGithubRestApi#id}. |
 
 ---
 
@@ -823,7 +823,7 @@ public java.lang.String getEndpoint();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}.
 
 ---
 
@@ -835,7 +835,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/rest_api#id DataGithubRestApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api#id DataGithubRestApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

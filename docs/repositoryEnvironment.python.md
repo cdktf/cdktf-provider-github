@@ -1,6 +1,6 @@
 # `github_repository_environment`
 
-Refer to the Terraform Registory for docs: [`github_repository_environment`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment).
+Refer to the Terraform Registory for docs: [`github_repository_environment`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment).
 
 # `repositoryEnvironment` Submodule <a name="`repositoryEnvironment` Submodule" id="@cdktf/provider-github.repositoryEnvironment"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_environment`](htt
 
 ### RepositoryEnvironment <a name="RepositoryEnvironment" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment github_repository_environment}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment github_repository_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer"></a>
 
@@ -48,7 +48,7 @@ repositoryEnvironment.RepositoryEnvironment(
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer.parameter.environment">environment</a></code> | <code>str</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer.parameter.repository">repository</a></code> | <code>str</code> | The repository of the environment. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer.parameter.deploymentBranchPolicy">deployment_branch_policy</a></code> | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy">RepositoryEnvironmentDeploymentBranchPolicy</a></code> | deployment_branch_policy block. |
-| <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#id RepositoryEnvironment#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#id RepositoryEnvironment#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer.parameter.reviewers">reviewers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentReviewers">RepositoryEnvironmentReviewers</a>]]</code> | reviewers block. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer.parameter.waitTimer">wait_timer</a></code> | <code>typing.Union[int, float]</code> | Amount of time to delay a job after the job is initially triggered. |
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#environment RepositoryEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#environment RepositoryEnvironment#environment}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The repository of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#repository RepositoryEnvironment#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#repository RepositoryEnvironment#repository}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 deployment_branch_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#id RepositoryEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#id RepositoryEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -161,7 +161,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 reviewers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#reviewers RepositoryEnvironment#reviewers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#reviewers RepositoryEnvironment#reviewers}
 
 ---
 
@@ -171,7 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Amount of time to delay a job after the job is initially triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
 
 ---
 
@@ -497,7 +497,7 @@ def put_deployment_branch_policy(
 
 Whether only branches that match the specified name patterns can deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
 
 ---
 
@@ -507,7 +507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Whether only branches with branch protection rules can deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
 
 ---
 
@@ -663,7 +663,7 @@ The construct id used in the generated config for the RepositoryEnvironment to i
 
 The id of the existing RepositoryEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1028,7 +1028,7 @@ repositoryEnvironment.RepositoryEnvironmentConfig(
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.environment">environment</a></code> | <code>str</code> | The name of the environment. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.repository">repository</a></code> | <code>str</code> | The repository of the environment. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.deploymentBranchPolicy">deployment_branch_policy</a></code> | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy">RepositoryEnvironmentDeploymentBranchPolicy</a></code> | deployment_branch_policy block. |
-| <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#id RepositoryEnvironment#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#id RepositoryEnvironment#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.reviewers">reviewers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentReviewers">RepositoryEnvironmentReviewers</a>]]</code> | reviewers block. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.waitTimer">wait_timer</a></code> | <code>typing.Union[int, float]</code> | Amount of time to delay a job after the job is initially triggered. |
 
@@ -1114,7 +1114,7 @@ environment: str
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#environment RepositoryEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#environment RepositoryEnvironment#environment}
 
 ---
 
@@ -1128,7 +1128,7 @@ repository: str
 
 The repository of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#repository RepositoryEnvironment#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#repository RepositoryEnvironment#repository}
 
 ---
 
@@ -1142,7 +1142,7 @@ deployment_branch_policy: RepositoryEnvironmentDeploymentBranchPolicy
 
 deployment_branch_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
 
 ---
 
@@ -1154,7 +1154,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#id RepositoryEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#id RepositoryEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1171,7 +1171,7 @@ reviewers: typing.Union[IResolvable, typing.List[RepositoryEnvironmentReviewers]
 
 reviewers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#reviewers RepositoryEnvironment#reviewers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#reviewers RepositoryEnvironment#reviewers}
 
 ---
 
@@ -1185,7 +1185,7 @@ wait_timer: typing.Union[int, float]
 
 Amount of time to delay a job after the job is initially triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
 
 ---
 
@@ -1221,7 +1221,7 @@ custom_branch_policies: typing.Union[bool, IResolvable]
 
 Whether only branches that match the specified name patterns can deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
 
 ---
 
@@ -1235,7 +1235,7 @@ protected_branches: typing.Union[bool, IResolvable]
 
 Whether only branches with branch protection rules can deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
 
 ---
 
@@ -1273,7 +1273,7 @@ Up to 6 IDs for teams who may review jobs that reference the environment.
 
 Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#teams RepositoryEnvironment#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#teams RepositoryEnvironment#teams}
 
 ---
 
@@ -1289,7 +1289,7 @@ Up to 6 IDs for users who may review jobs that reference the environment.
 
 Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_environment#users RepositoryEnvironment#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_environment#users RepositoryEnvironment#users}
 
 ---
 

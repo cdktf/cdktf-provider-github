@@ -1,6 +1,6 @@
 # `github_emu_group_mapping`
 
-Refer to the Terraform Registory for docs: [`github_emu_group_mapping`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping).
+Refer to the Terraform Registory for docs: [`github_emu_group_mapping`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping).
 
 # `emuGroupMapping` Submodule <a name="`emuGroupMapping` Submodule" id="@cdktf/provider-github.emuGroupMapping"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_emu_group_mapping`](https://
 
 ### EmuGroupMapping <a name="EmuGroupMapping" id="@cdktf/provider-github.emuGroupMapping.EmuGroupMapping"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping github_emu_group_mapping}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping github_emu_group_mapping}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.emuGroupMapping.EmuGroupMapping.Initializer"></a>
 
@@ -46,7 +46,7 @@ EmuGroupMapping.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMapping.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMapping.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.Number</code> | Integer corresponding to the external group ID to be linked. |
 | <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMapping.Initializer.parameter.teamSlug">teamSlug</a></code> | <code>java.lang.String</code> | Slug of the GitHub team. |
-| <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMapping.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#id EmuGroupMapping#id}. |
+| <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMapping.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#id EmuGroupMapping#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Integer corresponding to the external group ID to be linked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#group_id EmuGroupMapping#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#group_id EmuGroupMapping#group_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Slug of the GitHub team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#team_slug EmuGroupMapping#team_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#team_slug EmuGroupMapping#team_slug}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#id EmuGroupMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#id EmuGroupMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -521,7 +521,7 @@ The construct id used in the generated config for the EmuGroupMapping to import.
 
 The id of the existing EmuGroupMapping that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,7 +831,7 @@ EmuGroupMappingConfig.builder()
 | <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMappingConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMappingConfig.property.groupId">groupId</a></code> | <code>java.lang.Number</code> | Integer corresponding to the external group ID to be linked. |
 | <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMappingConfig.property.teamSlug">teamSlug</a></code> | <code>java.lang.String</code> | Slug of the GitHub team. |
-| <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMappingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#id EmuGroupMapping#id}. |
+| <code><a href="#@cdktf/provider-github.emuGroupMapping.EmuGroupMappingConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#id EmuGroupMapping#id}. |
 
 ---
 
@@ -915,7 +915,7 @@ public java.lang.Number getGroupId();
 
 Integer corresponding to the external group ID to be linked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#group_id EmuGroupMapping#group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#group_id EmuGroupMapping#group_id}
 
 ---
 
@@ -929,7 +929,7 @@ public java.lang.String getTeamSlug();
 
 Slug of the GitHub team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#team_slug EmuGroupMapping#team_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#team_slug EmuGroupMapping#team_slug}
 
 ---
 
@@ -941,7 +941,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/emu_group_mapping#id EmuGroupMapping#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/emu_group_mapping#id EmuGroupMapping#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

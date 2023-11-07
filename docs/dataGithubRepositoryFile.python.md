@@ -1,6 +1,6 @@
 # `data_github_repository_file`
 
-Refer to the Terraform Registory for docs: [`data_github_repository_file`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file).
+Refer to the Terraform Registory for docs: [`data_github_repository_file`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file).
 
 # `dataGithubRepositoryFile` Submodule <a name="`dataGithubRepositoryFile` Submodule" id="@cdktf/provider-github.dataGithubRepositoryFile"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_repository_file`](https
 
 ### DataGithubRepositoryFile <a name="DataGithubRepositoryFile" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file github_repository_file}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file github_repository_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer"></a>
 
@@ -46,7 +46,7 @@ dataGithubRepositoryFile.DataGithubRepositoryFile(
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.file">file</a></code> | <code>str</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.repository">repository</a></code> | <code>str</code> | The repository name. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.branch">branch</a></code> | <code>str</code> | The branch name, defaults to the repository's default branch. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}. |
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -511,7 +511,7 @@ The construct id used in the generated config for the DataGithubRepositoryFile t
 
 The id of the existing DataGithubRepositoryFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -885,7 +885,7 @@ dataGithubRepositoryFile.DataGithubRepositoryFileConfig(
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.file">file</a></code> | <code>str</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.repository">repository</a></code> | <code>str</code> | The repository name. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.branch">branch</a></code> | <code>str</code> | The branch name, defaults to the repository's default branch. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}. |
 
 ---
 
@@ -969,7 +969,7 @@ file: str
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
 
 ---
 
@@ -983,7 +983,7 @@ repository: str
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
 
 ---
 
@@ -997,7 +997,7 @@ branch: str
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
 
 ---
 
@@ -1009,7 +1009,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

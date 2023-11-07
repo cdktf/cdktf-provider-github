@@ -1,6 +1,6 @@
 # `data_github_organization_teams`
 
-Refer to the Terraform Registory for docs: [`data_github_organization_teams`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams).
+Refer to the Terraform Registory for docs: [`data_github_organization_teams`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams).
 
 # `dataGithubOrganizationTeams` Submodule <a name="`dataGithubOrganizationTeams` Submodule" id="@cdktf/provider-github.dataGithubOrganizationTeams"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_organization_teams`](ht
 
 ### DataGithubOrganizationTeams <a name="DataGithubOrganizationTeams" id="@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams github_organization_teams}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams github_organization_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeams.Initializer"></a>
 
@@ -388,7 +388,7 @@ The construct id used in the generated config for the DataGithubOrganizationTeam
 
 The id of the existing DataGithubOrganizationTeams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -693,10 +693,10 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizat
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#id DataGithubOrganizationTeams#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.resultsPerPage">ResultsPerPage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#results_per_page DataGithubOrganizationTeams#results_per_page}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.rootTeamsOnly">RootTeamsOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#root_teams_only DataGithubOrganizationTeams#root_teams_only}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.summaryOnly">SummaryOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#summary_only DataGithubOrganizationTeams#summary_only}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#id DataGithubOrganizationTeams#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.resultsPerPage">ResultsPerPage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#results_per_page DataGithubOrganizationTeams#results_per_page}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.rootTeamsOnly">RootTeamsOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#root_teams_only DataGithubOrganizationTeams#root_teams_only}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationTeams.DataGithubOrganizationTeamsConfig.property.summaryOnly">SummaryOnly</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#summary_only DataGithubOrganizationTeams#summary_only}. |
 
 ---
 
@@ -778,7 +778,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#id DataGithubOrganizationTeams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#id DataGithubOrganizationTeams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -793,7 +793,7 @@ ResultsPerPage *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#results_per_page DataGithubOrganizationTeams#results_per_page}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#results_per_page DataGithubOrganizationTeams#results_per_page}.
 
 ---
 
@@ -805,7 +805,7 @@ RootTeamsOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#root_teams_only DataGithubOrganizationTeams#root_teams_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#root_teams_only DataGithubOrganizationTeams#root_teams_only}.
 
 ---
 
@@ -817,7 +817,7 @@ SummaryOnly interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/organization_teams#summary_only DataGithubOrganizationTeams#summary_only}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_teams#summary_only DataGithubOrganizationTeams#summary_only}.
 
 ---
 

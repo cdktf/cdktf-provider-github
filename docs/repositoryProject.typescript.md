@@ -1,6 +1,6 @@
 # `github_repository_project`
 
-Refer to the Terraform Registory for docs: [`github_repository_project`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_project).
+Refer to the Terraform Registory for docs: [`github_repository_project`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_project).
 
 # `repositoryProject` Submodule <a name="`repositoryProject` Submodule" id="@cdktf/provider-github.repositoryProject"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_project`](https:/
 
 ### RepositoryProject <a name="RepositoryProject" id="@cdktf/provider-github.repositoryProject.RepositoryProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_project github_repository_project}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_project github_repository_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer"></a>
 
@@ -435,7 +435,7 @@ The construct id used in the generated config for the RepositoryProject to impor
 
 The id of the existing RepositoryProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -764,7 +764,7 @@ const repositoryProjectConfig: repositoryProject.RepositoryProjectConfig = { ...
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.name">name</a></code> | <code>string</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.repository">repository</a></code> | <code>string</code> | The repository of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.body">body</a></code> | <code>string</code> | The body of the project. |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_project#id RepositoryProject#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_project#id RepositoryProject#id}. |
 
 ---
 
@@ -848,7 +848,7 @@ public readonly name: string;
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_project#name RepositoryProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_project#name RepositoryProject#name}
 
 ---
 
@@ -862,7 +862,7 @@ public readonly repository: string;
 
 The repository of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_project#repository RepositoryProject#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_project#repository RepositoryProject#repository}
 
 ---
 
@@ -876,7 +876,7 @@ public readonly body: string;
 
 The body of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_project#body RepositoryProject#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_project#body RepositoryProject#body}
 
 ---
 
@@ -888,7 +888,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_project#id RepositoryProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_project#id RepositoryProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

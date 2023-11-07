@@ -1,6 +1,6 @@
 # `data_github_user_external_identity`
 
-Refer to the Terraform Registory for docs: [`data_github_user_external_identity`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity).
+Refer to the Terraform Registory for docs: [`data_github_user_external_identity`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity).
 
 # `dataGithubUserExternalIdentity` Submodule <a name="`dataGithubUserExternalIdentity` Submodule" id="@cdktf/provider-github.dataGithubUserExternalIdentity"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_github_user_external_identity`
 
 ### DataGithubUserExternalIdentity <a name="DataGithubUserExternalIdentity" id="@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity github_user_external_identity}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity github_user_external_identity}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity.Initializer"></a>
 
@@ -43,8 +43,8 @@ DataGithubUserExternalIdentity.Builder.create(Construct scope, java.lang.String 
 | <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#username DataGithubUserExternalIdentity#username}. |
-| <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#id DataGithubUserExternalIdentity#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity.Initializer.parameter.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#username DataGithubUserExternalIdentity#username}. |
+| <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentity.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#id DataGithubUserExternalIdentity#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#username DataGithubUserExternalIdentity#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#username DataGithubUserExternalIdentity#username}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#id DataGithubUserExternalIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#id DataGithubUserExternalIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -444,7 +444,7 @@ The construct id used in the generated config for the DataGithubUserExternalIden
 
 The id of the existing DataGithubUserExternalIdentity that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,8 +729,8 @@ DataGithubUserExternalIdentityConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentityConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentityConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentityConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentityConfig.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#username DataGithubUserExternalIdentity#username}. |
-| <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentityConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#id DataGithubUserExternalIdentity#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentityConfig.property.username">username</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#username DataGithubUserExternalIdentity#username}. |
+| <code><a href="#@cdktf/provider-github.dataGithubUserExternalIdentity.DataGithubUserExternalIdentityConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#id DataGithubUserExternalIdentity#id}. |
 
 ---
 
@@ -812,7 +812,7 @@ public java.lang.String getUsername();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#username DataGithubUserExternalIdentity#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#username DataGithubUserExternalIdentity#username}.
 
 ---
 
@@ -824,7 +824,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/user_external_identity#id DataGithubUserExternalIdentity#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity#id DataGithubUserExternalIdentity#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
