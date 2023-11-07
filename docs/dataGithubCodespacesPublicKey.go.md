@@ -1,6 +1,6 @@
 # `data_github_codespaces_public_key`
 
-Refer to the Terraform Registory for docs: [`data_github_codespaces_public_key`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/codespaces_public_key).
+Refer to the Terraform Registory for docs: [`data_github_codespaces_public_key`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_public_key).
 
 # `dataGithubCodespacesPublicKey` Submodule <a name="`dataGithubCodespacesPublicKey` Submodule" id="@cdktf/provider-github.dataGithubCodespacesPublicKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_codespaces_public_key`]
 
 ### DataGithubCodespacesPublicKey <a name="DataGithubCodespacesPublicKey" id="@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/codespaces_public_key github_codespaces_public_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_public_key github_codespaces_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacespublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacespublickey"
 
 datagithubcodespacespublickey.NewDataGithubCodespacesPublicKey(scope Construct, id *string, config DataGithubCodespacesPublicKeyConfig) DataGithubCodespacesPublicKey
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacespublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacespublickey"
 
 datagithubcodespacespublickey.DataGithubCodespacesPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacespublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacespublickey"
 
 datagithubcodespacespublickey.DataGithubCodespacesPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagithubcodespacespublickey.DataGithubCodespacesPublicKey_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacespublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacespublickey"
 
 datagithubcodespacespublickey.DataGithubCodespacesPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagithubcodespacespublickey.DataGithubCodespacesPublicKey_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacespublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacespublickey"
 
 datagithubcodespacespublickey.DataGithubCodespacesPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataGithubCodespacesPublic
 
 The id of the existing DataGithubCodespacesPublicKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/codespaces_public_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_public_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,7 +611,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacespublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacespublickey"
 
 &datagithubcodespacespublickey.DataGithubCodespacesPublicKeyConfig {
 	Connection: interface{},
@@ -637,8 +637,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespace
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKeyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/codespaces_public_key#repository DataGithubCodespacesPublicKey#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/codespaces_public_key#id DataGithubCodespacesPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKeyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_public_key#repository DataGithubCodespacesPublicKey#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubCodespacesPublicKey.DataGithubCodespacesPublicKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_public_key#id DataGithubCodespacesPublicKey#id}. |
 
 ---
 
@@ -720,7 +720,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/codespaces_public_key#repository DataGithubCodespacesPublicKey#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_public_key#repository DataGithubCodespacesPublicKey#repository}.
 
 ---
 
@@ -732,7 +732,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/codespaces_public_key#id DataGithubCodespacesPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_public_key#id DataGithubCodespacesPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

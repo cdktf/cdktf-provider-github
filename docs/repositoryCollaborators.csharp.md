@@ -1,6 +1,6 @@
 # `github_repository_collaborators`
 
-Refer to the Terraform Registory for docs: [`github_repository_collaborators`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators).
+Refer to the Terraform Registory for docs: [`github_repository_collaborators`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators).
 
 # `repositoryCollaborators` Submodule <a name="`repositoryCollaborators` Submodule" id="@cdktf/provider-github.repositoryCollaborators"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`github_repository_collaborators`](h
 
 ### RepositoryCollaborators <a name="RepositoryCollaborators" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators github_repository_collaborators}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators github_repository_collaborators}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.Initializer"></a>
 
@@ -468,7 +468,7 @@ The construct id used in the generated config for the RepositoryCollaborators to
 
 The id of the existing RepositoryCollaborators that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -795,8 +795,8 @@ new RepositoryCollaboratorsConfig {
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}. |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.team">Team</a></code> | <code>object</code> | team block. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.user">User</a></code> | <code>object</code> | user block. |
 
@@ -880,7 +880,7 @@ public string Repository { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}.
 
 ---
 
@@ -892,7 +892,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -909,7 +909,7 @@ public object Team { get; set; }
 
 team block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#team RepositoryCollaborators#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#team RepositoryCollaborators#team}
 
 ---
 
@@ -923,7 +923,7 @@ public object User { get; set; }
 
 user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#user RepositoryCollaborators#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#user RepositoryCollaborators#user}
 
 ---
 
@@ -945,7 +945,7 @@ new RepositoryCollaboratorsTeam {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsTeam.property.teamId">TeamId</a></code> | <code>string</code> | Team ID or slug to add to the repository as a collaborator. |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsTeam.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsTeam.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}. |
 
 ---
 
@@ -959,7 +959,7 @@ public string TeamId { get; set; }
 
 Team ID or slug to add to the repository as a collaborator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#team_id RepositoryCollaborators#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#team_id RepositoryCollaborators#team_id}
 
 ---
 
@@ -971,7 +971,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}.
 
 ---
 
@@ -993,7 +993,7 @@ new RepositoryCollaboratorsUser {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsUser.property.username">Username</a></code> | <code>string</code> | (Required) The user to add to the repository as a collaborator. |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsUser.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsUser.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}. |
 
 ---
 
@@ -1007,7 +1007,7 @@ public string Username { get; set; }
 
 (Required) The user to add to the repository as a collaborator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#username RepositoryCollaborators#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#username RepositoryCollaborators#username}
 
 ---
 
@@ -1019,7 +1019,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}.
 
 ---
 

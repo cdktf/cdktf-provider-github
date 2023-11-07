@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_variable
+// https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsVariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_variable#id ActionsVariable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_variable#id ActionsVariable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface ActionsVariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_variable#repository ActionsVariable#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_variable#repository ActionsVariable#repository}
   */
   readonly repository: string;
   /**
   * Value of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_variable#value ActionsVariable#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_variable#value ActionsVariable#value}
   */
   readonly value: string;
   /**
   * Name of the variable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_variable#variable_name ActionsVariable#variable_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_variable#variable_name ActionsVariable#variable_name}
   */
   readonly variableName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_variable github_actions_variable}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_variable github_actions_variable}
 */
 export class ActionsVariable extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class ActionsVariable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ActionsVariable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActionsVariable to import
-  * @param importFromId The id of the existing ActionsVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActionsVariable that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActionsVariable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class ActionsVariable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/actions_variable github_actions_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_variable github_actions_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class ActionsVariable extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_variable',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.41.0',
+        providerVersion: '5.42.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

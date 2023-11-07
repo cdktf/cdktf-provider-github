@@ -1,6 +1,6 @@
 # `github_repository_collaborator`
 
-Refer to the Terraform Registory for docs: [`github_repository_collaborator`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator).
+Refer to the Terraform Registory for docs: [`github_repository_collaborator`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator).
 
 # `repositoryCollaborator` Submodule <a name="`repositoryCollaborator` Submodule" id="@cdktf/provider-github.repositoryCollaborator"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_repository_collaborator`](ht
 
 ### RepositoryCollaborator <a name="RepositoryCollaborator" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator github_repository_collaborator}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator github_repository_collaborator}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycollaborator"
 
 repositorycollaborator.NewRepositoryCollaborator(scope Construct, id *string, config RepositoryCollaboratorConfig) RepositoryCollaborator
 ```
@@ -353,7 +353,7 @@ func ResetPermissionDiffSuppression()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycollaborator"
 
 repositorycollaborator.RepositoryCollaborator_IsConstruct(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycollaborator"
 
 repositorycollaborator.RepositoryCollaborator_IsTerraformElement(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ repositorycollaborator.RepositoryCollaborator_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycollaborator"
 
 repositorycollaborator.RepositoryCollaborator_IsTerraformResource(x interface{}) *bool
 ```
@@ -413,7 +413,7 @@ repositorycollaborator.RepositoryCollaborator_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaborator.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycollaborator"
 
 repositorycollaborator.RepositoryCollaborator_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -442,7 +442,7 @@ The construct id used in the generated config for the RepositoryCollaborator to 
 
 The id of the existing RepositoryCollaborator that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -763,7 +763,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorycollaborator"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycollaborator"
 
 &repositorycollaborator.RepositoryCollaboratorConfig {
 	Connection: interface{},
@@ -794,7 +794,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorycollabora
 | <code><a href="#@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.property.username">Username</a></code> | <code>*string</code> | The user to add to the repository as a collaborator. |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator#id RepositoryCollaborator#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator#id RepositoryCollaborator#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.property.permission">Permission</a></code> | <code>*string</code> | The permission of the outside collaborator for the repository. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborator.RepositoryCollaboratorConfig.property.permissionDiffSuppression">PermissionDiffSuppression</a></code> | <code>interface{}</code> | Suppress plan diffs for triage and maintain. Defaults to 'false'. |
 
@@ -880,7 +880,7 @@ Repository *string
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator#repository RepositoryCollaborator#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator#repository RepositoryCollaborator#repository}
 
 ---
 
@@ -894,7 +894,7 @@ Username *string
 
 The user to add to the repository as a collaborator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator#username RepositoryCollaborator#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator#username RepositoryCollaborator#username}
 
 ---
 
@@ -906,7 +906,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator#id RepositoryCollaborator#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator#id RepositoryCollaborator#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -925,7 +925,7 @@ The permission of the outside collaborator for the repository.
 
 Must be one of 'pull', 'push', 'maintain', 'triage' or 'admin' or the name of an existing custom repository role within the organization for organization-owned repositories. Must be 'push' for personal repositories. Defaults to 'push'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator#permission RepositoryCollaborator#permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator#permission RepositoryCollaborator#permission}
 
 ---
 
@@ -939,7 +939,7 @@ PermissionDiffSuppression interface{}
 
 Suppress plan diffs for triage and maintain. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
 
 ---
 

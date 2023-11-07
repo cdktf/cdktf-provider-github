@@ -1,6 +1,6 @@
 # `data_github_dependabot_public_key`
 
-Refer to the Terraform Registory for docs: [`data_github_dependabot_public_key`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/dependabot_public_key).
+Refer to the Terraform Registory for docs: [`data_github_dependabot_public_key`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/dependabot_public_key).
 
 # `dataGithubDependabotPublicKey` Submodule <a name="`dataGithubDependabotPublicKey` Submodule" id="@cdktf/provider-github.dataGithubDependabotPublicKey"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_github_dependabot_public_key`]
 
 ### DataGithubDependabotPublicKey <a name="DataGithubDependabotPublicKey" id="@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/dependabot_public_key github_dependabot_public_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/dependabot_public_key github_dependabot_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotpublickey"
 
 datagithubdependabotpublickey.NewDataGithubDependabotPublicKey(scope Construct, id *string, config DataGithubDependabotPublicKeyConfig) DataGithubDependabotPublicKey
 ```
@@ -278,7 +278,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotpublickey"
 
 datagithubdependabotpublickey.DataGithubDependabotPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +310,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotpublickey"
 
 datagithubdependabotpublickey.DataGithubDependabotPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ datagithubdependabotpublickey.DataGithubDependabotPublicKey_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotpublickey"
 
 datagithubdependabotpublickey.DataGithubDependabotPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datagithubdependabotpublickey.DataGithubDependabotPublicKey_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotpublickey"
 
 datagithubdependabotpublickey.DataGithubDependabotPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -367,7 +367,7 @@ The construct id used in the generated config for the DataGithubDependabotPublic
 
 The id of the existing DataGithubDependabotPublicKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/dependabot_public_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/dependabot_public_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -611,7 +611,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubdependabotpublickey"
 
 &datagithubdependabotpublickey.DataGithubDependabotPublicKeyConfig {
 	Connection: interface{},
@@ -637,8 +637,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabo
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/dependabot_public_key#repository DataGithubDependabotPublicKey#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/dependabot_public_key#id DataGithubDependabotPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/dependabot_public_key#repository DataGithubDependabotPublicKey#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotPublicKey.DataGithubDependabotPublicKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/dependabot_public_key#id DataGithubDependabotPublicKey#id}. |
 
 ---
 
@@ -720,7 +720,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/dependabot_public_key#repository DataGithubDependabotPublicKey#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/dependabot_public_key#repository DataGithubDependabotPublicKey#repository}.
 
 ---
 
@@ -732,7 +732,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/data-sources/dependabot_public_key#id DataGithubDependabotPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/dependabot_public_key#id DataGithubDependabotPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

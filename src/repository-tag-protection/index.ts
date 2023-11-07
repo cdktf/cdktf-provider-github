@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection
+// https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_tag_protection
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryTagProtectionConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_tag_protection#id RepositoryTagProtection#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +17,19 @@ export interface RepositoryTagProtectionConfig extends cdktf.TerraformMetaArgume
   /**
   * The pattern of the tag to protect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#pattern RepositoryTagProtection#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_tag_protection#pattern RepositoryTagProtection#pattern}
   */
   readonly pattern: string;
   /**
   * Name of the repository to add the tag protection to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#repository RepositoryTagProtection#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_tag_protection#repository RepositoryTagProtection#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection github_repository_tag_protection}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_tag_protection github_repository_tag_protection}
 */
 export class RepositoryTagProtection extends cdktf.TerraformResource {
 
@@ -50,7 +45,7 @@ export class RepositoryTagProtection extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RepositoryTagProtection resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RepositoryTagProtection to import
-  * @param importFromId The id of the existing RepositoryTagProtection that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RepositoryTagProtection that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_tag_protection#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RepositoryTagProtection to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +57,7 @@ export class RepositoryTagProtection extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_tag_protection github_repository_tag_protection} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +68,7 @@ export class RepositoryTagProtection extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_tag_protection',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.41.0',
+        providerVersion: '5.42.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

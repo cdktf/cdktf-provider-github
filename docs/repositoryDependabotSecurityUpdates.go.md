@@ -1,6 +1,6 @@
 # `github_repository_dependabot_security_updates`
 
-Refer to the Terraform Registory for docs: [`github_repository_dependabot_security_updates`](https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_dependabot_security_updates).
+Refer to the Terraform Registory for docs: [`github_repository_dependabot_security_updates`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_dependabot_security_updates).
 
 # `repositoryDependabotSecurityUpdates` Submodule <a name="`repositoryDependabotSecurityUpdates` Submodule" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`github_repository_dependabot_securi
 
 ### RepositoryDependabotSecurityUpdates <a name="RepositoryDependabotSecurityUpdates" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_dependabot_security_updates github_repository_dependabot_security_updates}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_dependabot_security_updates github_repository_dependabot_security_updates}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.NewRepositoryDependabotSecurityUpdates(scope Construct, id *string, config RepositoryDependabotSecurityUpdatesConfig) RepositoryDependabotSecurityUpdates
 ```
@@ -339,7 +339,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +399,7 @@ repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -428,7 +428,7 @@ The construct id used in the generated config for the RepositoryDependabotSecuri
 
 The id of the existing RepositoryDependabotSecurityUpdates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_dependabot_security_updates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_dependabot_security_updates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -694,7 +694,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
 
 &repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdatesConfig {
 	Connection: interface{},
@@ -723,7 +723,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabo
 | <code><a href="#@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdatesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdatesConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | The state of the automated security fixes. |
 | <code><a href="#@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdatesConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdatesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_dependabot_security_updates#id RepositoryDependabotSecurityUpdates#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdatesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_dependabot_security_updates#id RepositoryDependabotSecurityUpdates#id}. |
 
 ---
 
@@ -807,7 +807,7 @@ Enabled interface{}
 
 The state of the automated security fixes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_dependabot_security_updates#enabled RepositoryDependabotSecurityUpdates#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_dependabot_security_updates#enabled RepositoryDependabotSecurityUpdates#enabled}
 
 ---
 
@@ -821,7 +821,7 @@ Repository *string
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_dependabot_security_updates#repository RepositoryDependabotSecurityUpdates#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_dependabot_security_updates#repository RepositoryDependabotSecurityUpdates#repository}
 
 ---
 
@@ -833,7 +833,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.41.0/docs/resources/repository_dependabot_security_updates#id RepositoryDependabotSecurityUpdates#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_dependabot_security_updates#id RepositoryDependabotSecurityUpdates#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
