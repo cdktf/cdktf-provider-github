@@ -1,7 +1,3 @@
-# `github_repository_autolink_reference`
-
-Refer to the Terraform Registory for docs: [`github_repository_autolink_reference`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_autolink_reference).
-
 # `repositoryAutolinkReference` Submodule <a name="`repositoryAutolinkReference` Submodule" id="@cdktf/provider-github.repositoryAutolinkReference"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryautolinkreference"
 
 repositoryautolinkreference.NewRepositoryAutolinkReference(scope Construct, id *string, config RepositoryAutolinkReferenceConfig) RepositoryAutolinkReference
 ```
@@ -346,7 +342,7 @@ func ResetIsAlphanumeric()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryautolinkreference"
 
 repositoryautolinkreference.RepositoryAutolinkReference_IsConstruct(x interface{}) *bool
 ```
@@ -378,7 +374,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryautolinkreference"
 
 repositoryautolinkreference.RepositoryAutolinkReference_IsTerraformElement(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ repositoryautolinkreference.RepositoryAutolinkReference_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryautolinkreference"
 
 repositoryautolinkreference.RepositoryAutolinkReference_IsTerraformResource(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ repositoryautolinkreference.RepositoryAutolinkReference_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReference.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryautolinkreference"
 
 repositoryautolinkreference.RepositoryAutolinkReference_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +752,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryAutolinkReference.RepositoryAutolinkReferenceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryautolinkreference"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryautolinkreference"
 
 &repositoryautolinkreference.RepositoryAutolinkReferenceConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `data_github_repository_autolink_references`
-
-Refer to the Terraform Registory for docs: [`data_github_repository_autolink_references`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_autolink_references).
-
 # `dataGithubRepositoryAutolinkReferences` Submodule <a name="`dataGithubRepositoryAutolinkReferences` Submodule" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.NewDataGithubRepositoryAutolinkReferences(scope Construct, id *string, config DataGithubRepositoryAutolinkReferencesConfig) DataGithubRepositoryAutolinkReferences
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -600,7 +596,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesAutolinkReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 &datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferencesAutolinkReferences {
 
@@ -613,7 +609,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositor
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 &datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferencesConfig {
 	Connection: interface{},
@@ -748,7 +744,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesAutolinkReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.NewDataGithubRepositoryAutolinkReferencesAutolinkReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryAutolinkReferencesAutolinkReferencesList
 ```
@@ -880,7 +876,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesAutolinkReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.NewDataGithubRepositoryAutolinkReferencesAutolinkReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryAutolinkReferencesAutolinkReferencesOutputReference
 ```

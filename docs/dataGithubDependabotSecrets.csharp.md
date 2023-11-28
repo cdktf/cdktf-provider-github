@@ -1,7 +1,3 @@
-# `data_github_dependabot_secrets`
-
-Refer to the Terraform Registory for docs: [`data_github_dependabot_secrets`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/dependabot_secrets).
-
 # `dataGithubDependabotSecrets` Submodule <a name="`dataGithubDependabotSecrets` Submodule" id="@cdktf/provider-github.dataGithubDependabotSecrets"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

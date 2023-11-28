@@ -1,7 +1,3 @@
-# `github_actions_organization_secret_repositories`
-
-Refer to the Terraform Registory for docs: [`github_actions_organization_secret_repositories`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_organization_secret_repositories).
-
 # `actionsOrganizationSecretRepositories` Submodule <a name="`actionsOrganizationSecretRepositories` Submodule" id="@cdktf/provider-github.actionsOrganizationSecretRepositories"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationsecretrepositories"
 
 actionsorganizationsecretrepositories.NewActionsOrganizationSecretRepositories(scope Construct, id *string, config ActionsOrganizationSecretRepositoriesConfig) ActionsOrganizationSecretRepositories
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationsecretrepositories"
 
 actionsorganizationsecretrepositories.ActionsOrganizationSecretRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationsecretrepositories"
 
 actionsorganizationsecretrepositories.ActionsOrganizationSecretRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ actionsorganizationsecretrepositories.ActionsOrganizationSecretRepositories_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationsecretrepositories"
 
 actionsorganizationsecretrepositories.ActionsOrganizationSecretRepositories_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ actionsorganizationsecretrepositories.ActionsOrganizationSecretRepositories_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationsecretrepositories"
 
 actionsorganizationsecretrepositories.ActionsOrganizationSecretRepositories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsOrganizationSecretRepositories.ActionsOrganizationSecretRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsorganizationsecretrepositories"
 
 &actionsorganizationsecretrepositories.ActionsOrganizationSecretRepositoriesConfig {
 	Connection: interface{},

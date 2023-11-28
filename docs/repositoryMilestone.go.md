@@ -1,7 +1,3 @@
-# `github_repository_milestone`
-
-Refer to the Terraform Registory for docs: [`github_repository_milestone`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_milestone).
-
 # `repositoryMilestone` Submodule <a name="`repositoryMilestone` Submodule" id="@cdktf/provider-github.repositoryMilestone"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.NewRepositoryMilestone(scope Construct, id *string, config RepositoryMilestoneConfig) RepositoryMilestone
 ```
@@ -360,7 +356,7 @@ func ResetState()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ repositorymilestone.RepositoryMilestone_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ repositorymilestone.RepositoryMilestone_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 repositorymilestone.RepositoryMilestone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -814,7 +810,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorymilestone"
 
 &repositorymilestone.RepositoryMilestoneConfig {
 	Connection: interface{},

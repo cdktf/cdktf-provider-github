@@ -1,7 +1,3 @@
-# `data_github_rest_api`
-
-Refer to the Terraform Registory for docs: [`data_github_rest_api`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/rest_api).
-
 # `dataGithubRestApi` Submodule <a name="`dataGithubRestApi` Submodule" id="@cdktf/provider-github.dataGithubRestApi"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.NewDataGithubRestApi(scope Construct, id *string, config DataGithubRestApiConfig) DataGithubRestApi
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datagithubrestapi.DataGithubRestApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagithubrestapi.DataGithubRestApi_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -633,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrestapi"
 
 &datagithubrestapi.DataGithubRestApiConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `github_organization_block`
-
-Refer to the Terraform Registory for docs: [`github_organization_block`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_block).
-
 # `organizationBlock` Submodule <a name="`organizationBlock` Submodule" id="@cdktf/provider-github.organizationBlock"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

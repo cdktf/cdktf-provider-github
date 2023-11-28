@@ -1,7 +1,3 @@
-# `github_dependabot_organization_secret_repositories`
-
-Refer to the Terraform Registory for docs: [`github_dependabot_organization_secret_repositories`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/dependabot_organization_secret_repositories).
-
 # `dependabotOrganizationSecretRepositories` Submodule <a name="`dependabotOrganizationSecretRepositories` Submodule" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.NewDependabotOrganizationSecretRepositories(scope Construct, id *string, config DependabotOrganizationSecretRepositoriesConfig) DependabotOrganizationSecretRepositories
 ```
@@ -339,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -371,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -385,7 +381,7 @@ dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositorie
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsTerraformResource(x interface{}) *bool
 ```
@@ -399,7 +395,7 @@ dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositorie
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -694,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 &dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositoriesConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `data_github_repository_webhooks`
-
-Refer to the Terraform Registory for docs: [`data_github_repository_webhooks`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_webhooks).
-
 # `dataGithubRepositoryWebhooks` Submodule <a name="`dataGithubRepositoryWebhooks` Submodule" id="@cdktf/provider-github.dataGithubRepositoryWebhooks"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

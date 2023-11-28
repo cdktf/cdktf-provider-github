@@ -1,7 +1,3 @@
-# `github_actions_organization_permissions`
-
-Refer to the Terraform Registory for docs: [`github_actions_organization_permissions`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_organization_permissions).
-
 # `actionsOrganizationPermissions` Submodule <a name="`actionsOrganizationPermissions` Submodule" id="@cdktf/provider-github.actionsOrganizationPermissions"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

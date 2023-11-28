@@ -1,7 +1,3 @@
-# `data_github_codespaces_public_key`
-
-Refer to the Terraform Registory for docs: [`data_github_codespaces_public_key`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_public_key).
-
 # `dataGithubCodespacesPublicKey` Submodule <a name="`dataGithubCodespacesPublicKey` Submodule" id="@cdktf/provider-github.dataGithubCodespacesPublicKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

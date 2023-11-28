@@ -1,7 +1,3 @@
-# `data_github_external_groups`
-
-Refer to the Terraform Registory for docs: [`data_github_external_groups`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/external_groups).
-
 # `dataGithubExternalGroups` Submodule <a name="`dataGithubExternalGroups` Submodule" id="@cdktf/provider-github.dataGithubExternalGroups"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

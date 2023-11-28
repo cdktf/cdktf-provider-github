@@ -1,7 +1,3 @@
-# `github_repository`
-
-Refer to the Terraform Registory for docs: [`github_repository`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository).
-
 # `repository` Submodule <a name="`repository` Submodule" id="@cdktf/provider-github.repository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.Repository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.NewRepository(scope Construct, id *string, config RepositoryConfig) Repository
 ```
@@ -602,7 +598,7 @@ func ResetVulnerabilityAlerts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repository.Repository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.Repository_IsConstruct(x interface{}) *bool
 ```
@@ -634,7 +630,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repository.Repository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.Repository_IsTerraformElement(x interface{}) *bool
 ```
@@ -648,7 +644,7 @@ repository.Repository_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repository.Repository.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.Repository_IsTerraformResource(x interface{}) *bool
 ```
@@ -662,7 +658,7 @@ repository.Repository_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repository.Repository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.Repository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1749,7 +1745,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repository.RepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 &repository.RepositoryConfig {
 	Connection: interface{},
@@ -1784,12 +1780,12 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
 	LicenseTemplate: *string,
 	MergeCommitMessage: *string,
 	MergeCommitTitle: *string,
-	Pages: github.com/cdktf/cdktf-provider-github-go/github/v12.repository.RepositoryPages,
+	Pages: github.com/cdktf/cdktf-provider-github-go/github.repository.RepositoryPages,
 	Private: interface{},
-	SecurityAndAnalysis: github.com/cdktf/cdktf-provider-github-go/github/v12.repository.RepositorySecurityAndAnalysis,
+	SecurityAndAnalysis: github.com/cdktf/cdktf-provider-github-go/github.repository.RepositorySecurityAndAnalysis,
 	SquashMergeCommitMessage: *string,
 	SquashMergeCommitTitle: *string,
-	Template: github.com/cdktf/cdktf-provider-github-go/github/v12.repository.RepositoryTemplate,
+	Template: github.com/cdktf/cdktf-provider-github-go/github.repository.RepositoryTemplate,
 	Topics: *[]*string,
 	Visibility: *string,
 	VulnerabilityAlerts: interface{},
@@ -2400,12 +2396,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repository.RepositoryPages.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 &repository.RepositoryPages {
 	BuildType: *string,
 	Cname: *string,
-	Source: github.com/cdktf/cdktf-provider-github-go/github/v12.repository.RepositoryPagesSource,
+	Source: github.com/cdktf/cdktf-provider-github-go/github.repository.RepositoryPagesSource,
 }
 ```
 
@@ -2466,7 +2462,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repository.RepositoryPagesSource.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 &repository.RepositoryPagesSource {
 	Branch: *string,
@@ -2516,12 +2512,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repository.RepositorySecurityAndAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 &repository.RepositorySecurityAndAnalysis {
-	AdvancedSecurity: github.com/cdktf/cdktf-provider-github-go/github/v12.repository.RepositorySecurityAndAnalysisAdvancedSecurity,
-	SecretScanning: github.com/cdktf/cdktf-provider-github-go/github/v12.repository.RepositorySecurityAndAnalysisSecretScanning,
-	SecretScanningPushProtection: github.com/cdktf/cdktf-provider-github-go/github/v12.repository.RepositorySecurityAndAnalysisSecretScanningPushProtection,
+	AdvancedSecurity: github.com/cdktf/cdktf-provider-github-go/github.repository.RepositorySecurityAndAnalysisAdvancedSecurity,
+	SecretScanning: github.com/cdktf/cdktf-provider-github-go/github.repository.RepositorySecurityAndAnalysisSecretScanning,
+	SecretScanningPushProtection: github.com/cdktf/cdktf-provider-github-go/github.repository.RepositorySecurityAndAnalysisSecretScanningPushProtection,
 }
 ```
 
@@ -2582,7 +2578,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repository.RepositorySecurityAndAnalysisAdvancedSecurity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 &repository.RepositorySecurityAndAnalysisAdvancedSecurity {
 	Status: *string,
@@ -2616,7 +2612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanning.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 &repository.RepositorySecurityAndAnalysisSecretScanning {
 	Status: *string,
@@ -2652,7 +2648,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanningPushProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 &repository.RepositorySecurityAndAnalysisSecretScanningPushProtection {
 	Status: *string,
@@ -2688,7 +2684,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repository.RepositoryTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 &repository.RepositoryTemplate {
 	Owner: *string,
@@ -2756,7 +2752,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.RepositoryPagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.NewRepositoryPagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryPagesOutputReference
 ```
@@ -3149,7 +3145,7 @@ func InternalValue() RepositoryPages
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.RepositoryPagesSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.NewRepositoryPagesSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryPagesSourceOutputReference
 ```
@@ -3449,7 +3445,7 @@ func InternalValue() RepositoryPagesSource
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.RepositorySecurityAndAnalysisAdvancedSecurityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.NewRepositorySecurityAndAnalysisAdvancedSecurityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositorySecurityAndAnalysisAdvancedSecurityOutputReference
 ```
@@ -3720,7 +3716,7 @@ func InternalValue() RepositorySecurityAndAnalysisAdvancedSecurity
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.RepositorySecurityAndAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.NewRepositorySecurityAndAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositorySecurityAndAnalysisOutputReference
 ```
@@ -4095,7 +4091,7 @@ func InternalValue() RepositorySecurityAndAnalysis
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanningOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.NewRepositorySecurityAndAnalysisSecretScanningOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositorySecurityAndAnalysisSecretScanningOutputReference
 ```
@@ -4366,7 +4362,7 @@ func InternalValue() RepositorySecurityAndAnalysisSecretScanning
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.NewRepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference
 ```
@@ -4637,7 +4633,7 @@ func InternalValue() RepositorySecurityAndAnalysisSecretScanningPushProtection
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.RepositoryTemplateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/repository"
+import "github.com/cdktf/cdktf-provider-github-go/github/repository"
 
 repository.NewRepositoryTemplateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryTemplateOutputReference
 ```

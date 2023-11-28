@@ -1,7 +1,3 @@
-# `data_github_repositories`
-
-Refer to the Terraform Registory for docs: [`data_github_repositories`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repositories).
-
 # `dataGithubRepositories` Submodule <a name="`dataGithubRepositories` Submodule" id="@cdktf/provider-github.dataGithubRepositories"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

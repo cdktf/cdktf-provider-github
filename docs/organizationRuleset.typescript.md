@@ -1,7 +1,3 @@
-# `github_organization_ruleset`
-
-Refer to the Terraform Registory for docs: [`github_organization_ruleset`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_ruleset).
-
 # `organizationRuleset` Submodule <a name="`organizationRuleset` Submodule" id="@cdktf/provider-github.organizationRuleset"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

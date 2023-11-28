@@ -1,7 +1,3 @@
-# `data_github_codespaces_organization_public_key`
-
-Refer to the Terraform Registory for docs: [`data_github_codespaces_organization_public_key`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/codespaces_organization_public_key).
-
 # `dataGithubCodespacesOrganizationPublicKey` Submodule <a name="`dataGithubCodespacesOrganizationPublicKey` Submodule" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacesorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacesorganizationpublickey"
 
 datagithubcodespacesorganizationpublickey.NewDataGithubCodespacesOrganizationPublicKey(scope Construct, id *string, config DataGithubCodespacesOrganizationPublicKeyConfig) DataGithubCodespacesOrganizationPublicKey
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacesorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacesorganizationpublickey"
 
 datagithubcodespacesorganizationpublickey.DataGithubCodespacesOrganizationPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacesorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacesorganizationpublickey"
 
 datagithubcodespacesorganizationpublickey.DataGithubCodespacesOrganizationPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datagithubcodespacesorganizationpublickey.DataGithubCodespacesOrganizationPublic
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacesorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacesorganizationpublickey"
 
 datagithubcodespacesorganizationpublickey.DataGithubCodespacesOrganizationPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagithubcodespacesorganizationpublickey.DataGithubCodespacesOrganizationPublic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacesorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacesorganizationpublickey"
 
 datagithubcodespacesorganizationpublickey.DataGithubCodespacesOrganizationPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -589,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubcodespacesorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubcodespacesorganizationpublickey"
 
 &datagithubcodespacesorganizationpublickey.DataGithubCodespacesOrganizationPublicKeyConfig {
 	Connection: interface{},

@@ -1,7 +1,3 @@
-# `data_github_organization_custom_role`
-
-Refer to the Terraform Registory for docs: [`data_github_organization_custom_role`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization_custom_role).
-
 # `dataGithubOrganizationCustomRole` Submodule <a name="`dataGithubOrganizationCustomRole` Submodule" id="@cdktf/provider-github.dataGithubOrganizationCustomRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationCustomRole.DataGithubOrganizationCustomRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomrole"
 
 datagithuborganizationcustomrole.NewDataGithubOrganizationCustomRole(scope Construct, id *string, config DataGithubOrganizationCustomRoleConfig) DataGithubOrganizationCustomRole
 ```
@@ -278,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubOrganizationCustomRole.DataGithubOrganizationCustomRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomrole"
 
 datagithuborganizationcustomrole.DataGithubOrganizationCustomRole_IsConstruct(x interface{}) *bool
 ```
@@ -310,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubOrganizationCustomRole.DataGithubOrganizationCustomRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomrole"
 
 datagithuborganizationcustomrole.DataGithubOrganizationCustomRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -324,7 +320,7 @@ datagithuborganizationcustomrole.DataGithubOrganizationCustomRole_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubOrganizationCustomRole.DataGithubOrganizationCustomRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomrole"
 
 datagithuborganizationcustomrole.DataGithubOrganizationCustomRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,7 +334,7 @@ datagithuborganizationcustomrole.DataGithubOrganizationCustomRole_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubOrganizationCustomRole.DataGithubOrganizationCustomRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomrole"
 
 datagithuborganizationcustomrole.DataGithubOrganizationCustomRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -622,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationCustomRole.DataGithubOrganizationCustomRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationcustomrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomrole"
 
 &datagithuborganizationcustomrole.DataGithubOrganizationCustomRoleConfig {
 	Connection: interface{},

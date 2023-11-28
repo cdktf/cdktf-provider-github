@@ -1,7 +1,3 @@
-# `github_team`
-
-Refer to the Terraform Registory for docs: [`github_team`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/team).
-
 # `team` Submodule <a name="`team` Submodule" id="@cdktf/provider-github.team"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `github_codespaces_user_secret`
-
-Refer to the Terraform Registory for docs: [`github_codespaces_user_secret`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/codespaces_user_secret).
-
 # `codespacesUserSecret` Submodule <a name="`codespacesUserSecret` Submodule" id="@cdktf/provider-github.codespacesUserSecret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.codespacesUserSecret.CodespacesUserSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesusersecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesusersecret"
 
 codespacesusersecret.NewCodespacesUserSecret(scope Construct, id *string, config CodespacesUserSecretConfig) CodespacesUserSecret
 ```
@@ -360,7 +356,7 @@ func ResetSelectedRepositoryIds()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.codespacesUserSecret.CodespacesUserSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesusersecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesusersecret"
 
 codespacesusersecret.CodespacesUserSecret_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.codespacesUserSecret.CodespacesUserSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesusersecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesusersecret"
 
 codespacesusersecret.CodespacesUserSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ codespacesusersecret.CodespacesUserSecret_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.codespacesUserSecret.CodespacesUserSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesusersecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesusersecret"
 
 codespacesusersecret.CodespacesUserSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ codespacesusersecret.CodespacesUserSecret_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.codespacesUserSecret.CodespacesUserSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesusersecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesusersecret"
 
 codespacesusersecret.CodespacesUserSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.codespacesUserSecret.CodespacesUserSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacesusersecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/codespacesusersecret"
 
 &codespacesusersecret.CodespacesUserSecretConfig {
 	Connection: interface{},

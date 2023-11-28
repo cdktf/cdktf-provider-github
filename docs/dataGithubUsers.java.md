@@ -1,7 +1,3 @@
-# `data_github_users`
-
-Refer to the Terraform Registory for docs: [`data_github_users`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/users).
-
 # `dataGithubUsers` Submodule <a name="`dataGithubUsers` Submodule" id="@cdktf/provider-github.dataGithubUsers"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

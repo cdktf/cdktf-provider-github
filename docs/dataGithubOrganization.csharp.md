@@ -1,7 +1,3 @@
-# `data_github_organization`
-
-Refer to the Terraform Registory for docs: [`data_github_organization`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/organization).
-
 # `dataGithubOrganization` Submodule <a name="`dataGithubOrganization` Submodule" id="@cdktf/provider-github.dataGithubOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
