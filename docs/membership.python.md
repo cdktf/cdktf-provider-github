@@ -1,7 +1,3 @@
-# `github_membership`
-
-Refer to the Terraform Registory for docs: [`github_membership`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/membership).
-
 # `membership` Submodule <a name="`membership` Submodule" id="@cdktf/provider-github.membership"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_github_ip_ranges`
-
-Refer to the Terraform Registory for docs: [`data_github_ip_ranges`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/ip_ranges).
-
 # `dataGithubIpRanges` Submodule <a name="`dataGithubIpRanges` Submodule" id="@cdktf/provider-github.dataGithubIpRanges"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

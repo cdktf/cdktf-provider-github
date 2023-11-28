@@ -1,7 +1,3 @@
-# `github_repository_autolink_reference`
-
-Refer to the Terraform Registory for docs: [`github_repository_autolink_reference`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_autolink_reference).
-
 # `repositoryAutolinkReference` Submodule <a name="`repositoryAutolinkReference` Submodule" id="@cdktf/provider-github.repositoryAutolinkReference"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

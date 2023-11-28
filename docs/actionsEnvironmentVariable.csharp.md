@@ -1,7 +1,3 @@
-# `github_actions_environment_variable`
-
-Refer to the Terraform Registory for docs: [`github_actions_environment_variable`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_environment_variable).
-
 # `actionsEnvironmentVariable` Submodule <a name="`actionsEnvironmentVariable` Submodule" id="@cdktf/provider-github.actionsEnvironmentVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_github_actions_organization_public_key`
-
-Refer to the Terraform Registory for docs: [`data_github_actions_organization_public_key`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/actions_organization_public_key).
-
 # `dataGithubActionsOrganizationPublicKey` Submodule <a name="`dataGithubActionsOrganizationPublicKey` Submodule" id="@cdktf/provider-github.dataGithubActionsOrganizationPublicKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

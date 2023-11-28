@@ -1,7 +1,3 @@
-# `github_repository_deployment_branch_policy`
-
-Refer to the Terraform Registory for docs: [`github_repository_deployment_branch_policy`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_deployment_branch_policy).
-
 # `repositoryDeploymentBranchPolicy` Submodule <a name="`repositoryDeploymentBranchPolicy` Submodule" id="@cdktf/provider-github.repositoryDeploymentBranchPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `github_actions_organization_secret`
-
-Refer to the Terraform Registory for docs: [`github_actions_organization_secret`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/actions_organization_secret).
-
 # `actionsOrganizationSecret` Submodule <a name="`actionsOrganizationSecret` Submodule" id="@cdktf/provider-github.actionsOrganizationSecret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

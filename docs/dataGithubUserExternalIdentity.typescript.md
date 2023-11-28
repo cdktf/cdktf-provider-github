@@ -1,7 +1,3 @@
-# `data_github_user_external_identity`
-
-Refer to the Terraform Registory for docs: [`data_github_user_external_identity`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/user_external_identity).
-
 # `dataGithubUserExternalIdentity` Submodule <a name="`dataGithubUserExternalIdentity` Submodule" id="@cdktf/provider-github.dataGithubUserExternalIdentity"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

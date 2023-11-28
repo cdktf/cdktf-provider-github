@@ -1,7 +1,3 @@
-# `github_user_ssh_key`
-
-Refer to the Terraform Registory for docs: [`github_user_ssh_key`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/user_ssh_key).
-
 # `userSshKey` Submodule <a name="`userSshKey` Submodule" id="@cdktf/provider-github.userSshKey"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

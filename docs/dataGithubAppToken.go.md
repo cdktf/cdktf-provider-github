@@ -1,7 +1,3 @@
-# `data_github_app_token`
-
-Refer to the Terraform Registory for docs: [`data_github_app_token`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/app_token).
-
 # `dataGithubAppToken` Submodule <a name="`dataGithubAppToken` Submodule" id="@cdktf/provider-github.dataGithubAppToken"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

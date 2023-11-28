@@ -1,7 +1,3 @@
-# `data_github_issue_labels`
-
-Refer to the Terraform Registory for docs: [`data_github_issue_labels`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/issue_labels).
-
 # `dataGithubIssueLabels` Submodule <a name="`dataGithubIssueLabels` Submodule" id="@cdktf/provider-github.dataGithubIssueLabels"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

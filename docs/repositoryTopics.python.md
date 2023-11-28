@@ -1,7 +1,3 @@
-# `github_repository_topics`
-
-Refer to the Terraform Registory for docs: [`github_repository_topics`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/repository_topics).
-
 # `repositoryTopics` Submodule <a name="`repositoryTopics` Submodule" id="@cdktf/provider-github.repositoryTopics"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

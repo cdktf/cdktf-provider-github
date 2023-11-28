@@ -1,7 +1,3 @@
-# `github_codespaces_organization_secret`
-
-Refer to the Terraform Registory for docs: [`github_codespaces_organization_secret`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/codespaces_organization_secret).
-
 # `codespacesOrganizationSecret` Submodule <a name="`codespacesOrganizationSecret` Submodule" id="@cdktf/provider-github.codespacesOrganizationSecret"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

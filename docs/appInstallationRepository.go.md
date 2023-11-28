@@ -1,7 +1,3 @@
-# `github_app_installation_repository`
-
-Refer to the Terraform Registory for docs: [`github_app_installation_repository`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/app_installation_repository).
-
 # `appInstallationRepository` Submodule <a name="`appInstallationRepository` Submodule" id="@cdktf/provider-github.appInstallationRepository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

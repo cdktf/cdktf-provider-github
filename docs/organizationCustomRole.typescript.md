@@ -1,7 +1,3 @@
-# `github_organization_custom_role`
-
-Refer to the Terraform Registory for docs: [`github_organization_custom_role`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/organization_custom_role).
-
 # `organizationCustomRole` Submodule <a name="`organizationCustomRole` Submodule" id="@cdktf/provider-github.organizationCustomRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

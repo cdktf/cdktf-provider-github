@@ -1,7 +1,3 @@
-# `github_enterprise_organization`
-
-Refer to the Terraform Registory for docs: [`github_enterprise_organization`](https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/enterprise_organization).
-
 # `enterpriseOrganization` Submodule <a name="`enterpriseOrganization` Submodule" id="@cdktf/provider-github.enterpriseOrganization"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
