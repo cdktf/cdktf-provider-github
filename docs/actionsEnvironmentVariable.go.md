@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsenvironmentvariable"
 
 actionsenvironmentvariable.NewActionsEnvironmentVariable(scope Construct, id *string, config ActionsEnvironmentVariableConfig) ActionsEnvironmentVariable
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsenvironmentvariable"
 
 actionsenvironmentvariable.ActionsEnvironmentVariable_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsenvironmentvariable"
 
 actionsenvironmentvariable.ActionsEnvironmentVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ actionsenvironmentvariable.ActionsEnvironmentVariable_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsenvironmentvariable"
 
 actionsenvironmentvariable.ActionsEnvironmentVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ actionsenvironmentvariable.ActionsEnvironmentVariable_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsenvironmentvariable"
 
 actionsenvironmentvariable.ActionsEnvironmentVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -756,7 +756,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/actionsenvironmentvariable"
 
 &actionsenvironmentvariable.ActionsEnvironmentVariableConfig {
 	Connection: interface{},

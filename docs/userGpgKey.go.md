@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/usergpgkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/usergpgkey"
 
 usergpgkey.NewUserGpgKey(scope Construct, id *string, config UserGpgKeyConfig) UserGpgKey
 ```
@@ -335,7 +335,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.userGpgKey.UserGpgKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/usergpgkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/usergpgkey"
 
 usergpgkey.UserGpgKey_IsConstruct(x interface{}) *bool
 ```
@@ -367,7 +367,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.userGpgKey.UserGpgKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/usergpgkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/usergpgkey"
 
 usergpgkey.UserGpgKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ usergpgkey.UserGpgKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.userGpgKey.UserGpgKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/usergpgkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/usergpgkey"
 
 usergpgkey.UserGpgKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ usergpgkey.UserGpgKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.userGpgKey.UserGpgKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/usergpgkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/usergpgkey"
 
 usergpgkey.UserGpgKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/usergpgkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/usergpgkey"
 
 &usergpgkey.UserGpgKeyConfig {
 	Connection: interface{},

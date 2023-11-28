@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.codespacesSecret.CodespacesSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/codespacessecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacessecret"
 
 codespacessecret.NewCodespacesSecret(scope Construct, id *string, config CodespacesSecretConfig) CodespacesSecret
 ```
@@ -349,7 +349,7 @@ func ResetPlaintextValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.codespacesSecret.CodespacesSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/codespacessecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacessecret"
 
 codespacessecret.CodespacesSecret_IsConstruct(x interface{}) *bool
 ```
@@ -381,7 +381,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.codespacesSecret.CodespacesSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/codespacessecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacessecret"
 
 codespacessecret.CodespacesSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -395,7 +395,7 @@ codespacessecret.CodespacesSecret_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.codespacesSecret.CodespacesSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/codespacessecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacessecret"
 
 codespacessecret.CodespacesSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -409,7 +409,7 @@ codespacessecret.CodespacesSecret_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.codespacesSecret.CodespacesSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/codespacessecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacessecret"
 
 codespacessecret.CodespacesSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.codespacesSecret.CodespacesSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/codespacessecret"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/codespacessecret"
 
 &codespacessecret.CodespacesSecretConfig {
 	Connection: interface{},
