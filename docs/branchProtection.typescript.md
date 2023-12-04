@@ -66,9 +66,12 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.hasResourceMove">hasResourceMove</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.importFrom">importFrom</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.putRequiredPullRequestReviews">putRequiredPullRequestReviews</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.putRequiredStatusChecks">putRequiredStatusChecks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetAllowsDeletions">resetAllowsDeletions</a></code> | *No description.* |
@@ -275,6 +278,12 @@ public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: stri
 
 ---
 
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-github.branchProtection.BranchProtection.hasResourceMove"></a>
+
+```typescript
+public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
+```
+
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-github.branchProtection.BranchProtection.importFrom"></a>
 
 ```typescript
@@ -305,6 +314,24 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-github.branchProtection.BranchProtection.moveFromId"></a>
+
+```typescript
+public moveFromId(id: string): void
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-github.branchProtection.BranchProtection.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
 ##### `moveTo` <a name="moveTo" id="@cdktf/provider-github.branchProtection.BranchProtection.moveTo"></a>
 
 ```typescript
@@ -326,6 +353,22 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 - *Type:* string | number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `moveToId` <a name="moveToId" id="@cdktf/provider-github.branchProtection.BranchProtection.moveToId"></a>
+
+```typescript
+public moveToId(id: string): void
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-github.branchProtection.BranchProtection.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
