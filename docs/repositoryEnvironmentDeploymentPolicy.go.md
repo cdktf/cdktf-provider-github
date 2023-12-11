@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironmentDeploymentPolicy.RepositoryEnvironmentDeploymentPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironmentdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryenvironmentdeploymentpolicy"
 
 repositoryenvironmentdeploymentpolicy.NewRepositoryEnvironmentDeploymentPolicy(scope Construct, id *string, config RepositoryEnvironmentDeploymentPolicyConfig) RepositoryEnvironmentDeploymentPolicy
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryEnvironmentDeploymentPolicy.RepositoryEnvironmentDeploymentPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironmentdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryenvironmentdeploymentpolicy"
 
 repositoryenvironmentdeploymentpolicy.RepositoryEnvironmentDeploymentPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryEnvironmentDeploymentPolicy.RepositoryEnvironmentDeploymentPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironmentdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryenvironmentdeploymentpolicy"
 
 repositoryenvironmentdeploymentpolicy.RepositoryEnvironmentDeploymentPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ repositoryenvironmentdeploymentpolicy.RepositoryEnvironmentDeploymentPolicy_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryEnvironmentDeploymentPolicy.RepositoryEnvironmentDeploymentPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironmentdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryenvironmentdeploymentpolicy"
 
 repositoryenvironmentdeploymentpolicy.RepositoryEnvironmentDeploymentPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ repositoryenvironmentdeploymentpolicy.RepositoryEnvironmentDeploymentPolicy_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryEnvironmentDeploymentPolicy.RepositoryEnvironmentDeploymentPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironmentdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryenvironmentdeploymentpolicy"
 
 repositoryenvironmentdeploymentpolicy.RepositoryEnvironmentDeploymentPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +755,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryEnvironmentDeploymentPolicy.RepositoryEnvironmentDeploymentPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironmentdeploymentpolicy"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositoryenvironmentdeploymentpolicy"
 
 &repositoryenvironmentdeploymentpolicy.RepositoryEnvironmentDeploymentPolicyConfig {
 	Connection: interface{},
