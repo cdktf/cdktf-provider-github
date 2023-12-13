@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.NewRepositoryDependabotSecurityUpdates(scope Construct, id *string, config RepositoryDependabotSecurityUpdatesConfig) RepositoryDependabotSecurityUpdates
 ```
@@ -378,7 +378,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +410,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdates.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
 
 repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdates_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +733,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryDependabotSecurityUpdates.RepositoryDependabotSecurityUpdatesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorydependabotsecurityupdates"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/repositorydependabotsecurityupdates"
 
 &repositorydependabotsecurityupdates.RepositoryDependabotSecurityUpdatesConfig {
 	Connection: interface{},
