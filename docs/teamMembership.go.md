@@ -4,12 +4,12 @@
 
 ### TeamMembership <a name="TeamMembership" id="@cdktf/provider-github.teamMembership.TeamMembership"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/team_membership github_team_membership}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/team_membership github_team_membership}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembership.TeamMembership.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembership"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembership"
 
 teammembership.NewTeamMembership(scope Construct, id *string, config TeamMembershipConfig) TeamMembership
 ```
@@ -385,7 +385,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.teamMembership.TeamMembership.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembership"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembership"
 
 teammembership.TeamMembership_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.teamMembership.TeamMembership.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembership"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembership"
 
 teammembership.TeamMembership_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ teammembership.TeamMembership_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.teamMembership.TeamMembership.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembership"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembership"
 
 teammembership.TeamMembership_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ teammembership.TeamMembership_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.teamMembership.TeamMembership.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembership"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembership"
 
 teammembership.TeamMembership_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the TeamMembership to import.
 
 The id of the existing TeamMembership that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/team_membership#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamMembership.TeamMembershipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembership"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembership"
 
 &teammembership.TeamMembershipConfig {
 	Connection: interface{},
@@ -803,7 +803,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembership"
 | <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.teamId">TeamId</a></code> | <code>*string</code> | The GitHub team id or the GitHub team slug. |
 | <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.username">Username</a></code> | <code>*string</code> | The user to add to the team. |
-| <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/team_membership#id TeamMembership#id}. |
+| <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/team_membership#id TeamMembership#id}. |
 | <code><a href="#@cdktf/provider-github.teamMembership.TeamMembershipConfig.property.role">Role</a></code> | <code>*string</code> | The role of the user within the team. Must be one of 'member' or 'maintainer'. |
 
 ---
@@ -888,7 +888,7 @@ TeamId *string
 
 The GitHub team id or the GitHub team slug.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/team_membership#team_id TeamMembership#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/team_membership#team_id TeamMembership#team_id}
 
 ---
 
@@ -902,7 +902,7 @@ Username *string
 
 The user to add to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/team_membership#username TeamMembership#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/team_membership#username TeamMembership#username}
 
 ---
 
@@ -914,7 +914,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/team_membership#id TeamMembership#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/team_membership#id TeamMembership#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ Role *string
 
 The role of the user within the team. Must be one of 'member' or 'maintainer'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/team_membership#role TeamMembership#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/team_membership#role TeamMembership#role}
 
 ---
 

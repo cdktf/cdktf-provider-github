@@ -4,12 +4,12 @@
 
 ### DataGithubRepositoryDeploymentBranchPolicies <a name="DataGithubRepositoryDeploymentBranchPolicies" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_deployment_branch_policies github_repository_deployment_branch_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.NewDataGithubRepositoryDeploymentBranchPolicies(scope Construct, id *string, config DataGithubRepositoryDeploymentBranchPoliciesConfig) DataGithubRepositoryDeploymentBranchPolicies
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranc
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataGithubRepositoryDeploy
 
 The id of the existing DataGithubRepositoryDeploymentBranchPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_deployment_branch_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_deployment_branch_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -618,7 +618,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 &datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig {
 	Connection: interface{},
@@ -647,7 +647,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositor
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig.property.environmentName">EnvironmentName</a></code> | <code>*string</code> | The target environment name. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository name. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_deployment_branch_policies#id DataGithubRepositoryDeploymentBranchPolicies#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_deployment_branch_policies#id DataGithubRepositoryDeploymentBranchPolicies#id}. |
 
 ---
 
@@ -731,7 +731,7 @@ EnvironmentName *string
 
 The target environment name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_deployment_branch_policies#environment_name DataGithubRepositoryDeploymentBranchPolicies#environment_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_deployment_branch_policies#environment_name DataGithubRepositoryDeploymentBranchPolicies#environment_name}
 
 ---
 
@@ -745,7 +745,7 @@ Repository *string
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_deployment_branch_policies#repository DataGithubRepositoryDeploymentBranchPolicies#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_deployment_branch_policies#repository DataGithubRepositoryDeploymentBranchPolicies#repository}
 
 ---
 
@@ -757,7 +757,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/data-sources/repository_deployment_branch_policies#id DataGithubRepositoryDeploymentBranchPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_deployment_branch_policies#id DataGithubRepositoryDeploymentBranchPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 &datagithubrepositorydeploymentbranchpolicies.DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPolicies {
 
@@ -784,7 +784,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositor
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.NewDataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesList
 ```
@@ -916,7 +916,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeploymentBranchPolicies.DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrepositorydeploymentbranchpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploymentbranchpolicies"
 
 datagithubrepositorydeploymentbranchpolicies.NewDataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryDeploymentBranchPoliciesDeploymentBranchPoliciesOutputReference
 ```
