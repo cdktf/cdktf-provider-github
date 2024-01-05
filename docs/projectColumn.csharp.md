@@ -4,7 +4,7 @@
 
 ### ProjectColumn <a name="ProjectColumn" id="@cdktf/provider-github.projectColumn.ProjectColumn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/project_column github_project_column}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/project_column github_project_column}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.projectColumn.ProjectColumn.Initializer"></a>
 
@@ -467,7 +467,7 @@ The construct id used in the generated config for the ProjectColumn to import.
 
 The id of the existing ProjectColumn that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/project_column#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/project_column#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ new ProjectColumnConfig {
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.name">Name</a></code> | <code>string</code> | The name of the column. |
 | <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.projectId">ProjectId</a></code> | <code>string</code> | The ID of an existing project that the column will be created in. |
-| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/project_column#id ProjectColumn#id}. |
+| <code><a href="#@cdktf/provider-github.projectColumn.ProjectColumnConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/project_column#id ProjectColumn#id}. |
 
 ---
 
@@ -868,7 +868,7 @@ public string Name { get; set; }
 
 The name of the column.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/project_column#name ProjectColumn#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/project_column#name ProjectColumn#name}
 
 ---
 
@@ -882,7 +882,7 @@ public string ProjectId { get; set; }
 
 The ID of an existing project that the column will be created in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/project_column#project_id ProjectColumn#project_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/project_column#project_id ProjectColumn#project_id}
 
 ---
 
@@ -894,7 +894,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs/resources/project_column#id ProjectColumn#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/project_column#id ProjectColumn#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

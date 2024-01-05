@@ -4,7 +4,7 @@
 
 ### GithubProvider <a name="GithubProvider" id="@cdktf/provider-github.provider.GithubProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs github}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs github}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.provider.GithubProvider.Initializer"></a>
 
@@ -296,7 +296,7 @@ The construct id used in the generated config for the GithubProvider to import.
 
 The id of the existing GithubProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,7 +679,7 @@ Id *string
 
 The GitHub App ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#id GithubProvider#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#id GithubProvider#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -696,7 +696,7 @@ InstallationId *string
 
 The GitHub App installation instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#installation_id GithubProvider#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#installation_id GithubProvider#installation_id}
 
 ---
 
@@ -710,7 +710,7 @@ PemFile *string
 
 The GitHub App PEM file contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#pem_file GithubProvider#pem_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#pem_file GithubProvider#pem_file}
 
 ---
 
@@ -762,7 +762,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#alias GithubProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#alias GithubProvider#alias}
 
 ---
 
@@ -776,7 +776,7 @@ AppAuth GithubProviderAppAuth
 
 app_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#app_auth GithubProvider#app_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#app_auth GithubProvider#app_auth}
 
 ---
 
@@ -790,7 +790,7 @@ BaseUrl *string
 
 The GitHub Base API URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#base_url GithubProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#base_url GithubProvider#base_url}
 
 ---
 
@@ -804,7 +804,7 @@ Insecure interface{}
 
 Enable `insecure` mode for testing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#insecure GithubProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#insecure GithubProvider#insecure}
 
 ---
 
@@ -818,7 +818,7 @@ Organization *string
 
 The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#organization GithubProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#organization GithubProvider#organization}
 
 ---
 
@@ -832,7 +832,7 @@ Owner *string
 
 The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#owner GithubProvider#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#owner GithubProvider#owner}
 
 ---
 
@@ -848,7 +848,7 @@ Allow the provider to make parallel API calls to GitHub.
 
 You may want to set it to true when you have a private Github Enterprise without strict rate limits. Although, it is not possible to enable this setting on github.com because we enforce the respect of github.com's best practices to avoid hitting abuse rate limitsDefaults to false if not set
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#parallel_requests GithubProvider#parallel_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#parallel_requests GithubProvider#parallel_requests}
 
 ---
 
@@ -864,7 +864,7 @@ Amount of time in milliseconds to sleep in between non-write requests to GitHub 
 
 Defaults to 0ms if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#read_delay_ms GithubProvider#read_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#read_delay_ms GithubProvider#read_delay_ms}
 
 ---
 
@@ -880,7 +880,7 @@ The OAuth token used to connect to GitHub.
 
 Anonymous mode is enabled if both `token` and `app_auth` are not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#token GithubProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#token GithubProvider#token}
 
 ---
 
@@ -896,7 +896,7 @@ Amount of time in milliseconds to sleep in between writes to GitHub API.
 
 Defaults to 1000ms or 1s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.42.0/docs#write_delay_ms GithubProvider#write_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs#write_delay_ms GithubProvider#write_delay_ms}
 
 ---
 

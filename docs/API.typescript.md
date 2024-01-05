@@ -95,6 +95,7 @@ The following submodules are available:
 - [enterpriseOrganization](./enterpriseOrganization.typescript.md)
 - [issue](./issue.typescript.md)
 - [issueLabel](./issueLabel.typescript.md)
+- [issueLabels](./issueLabels.typescript.md)
 - [membership](./membership.typescript.md)
 - [organizationBlock](./organizationBlock.typescript.md)
 - [organizationCustomRole](./organizationCustomRole.typescript.md)

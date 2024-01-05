@@ -95,6 +95,7 @@ The following submodules are available:
 - [enterpriseOrganization](./enterpriseOrganization.java.md)
 - [issue](./issue.java.md)
 - [issueLabel](./issueLabel.java.md)
+- [issueLabels](./issueLabels.java.md)
 - [membership](./membership.java.md)
 - [organizationBlock](./organizationBlock.java.md)
 - [organizationCustomRole](./organizationCustomRole.java.md)

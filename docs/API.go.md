@@ -95,6 +95,7 @@ The following submodules are available:
 - [enterpriseOrganization](./enterpriseOrganization.go.md)
 - [issue](./issue.go.md)
 - [issueLabel](./issueLabel.go.md)
+- [issueLabels](./issueLabels.go.md)
 - [membership](./membership.go.md)
 - [organizationBlock](./organizationBlock.go.md)
 - [organizationCustomRole](./organizationCustomRole.go.md)

@@ -34,6 +34,7 @@ Object.defineProperty(exports, 'emuGroupMapping', { get: function () { return re
 Object.defineProperty(exports, 'enterpriseOrganization', { get: function () { return require('./enterprise-organization'); } });
 Object.defineProperty(exports, 'issue', { get: function () { return require('./issue'); } });
 Object.defineProperty(exports, 'issueLabel', { get: function () { return require('./issue-label'); } });
+Object.defineProperty(exports, 'issueLabels', { get: function () { return require('./issue-labels'); } });
 Object.defineProperty(exports, 'membership', { get: function () { return require('./membership'); } });
 Object.defineProperty(exports, 'organizationBlock', { get: function () { return require('./organization-block'); } });
 Object.defineProperty(exports, 'organizationCustomRole', { get: function () { return require('./organization-custom-role'); } });

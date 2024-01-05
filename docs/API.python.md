@@ -95,6 +95,7 @@ The following submodules are available:
 - [enterpriseOrganization](./enterpriseOrganization.python.md)
 - [issue](./issue.python.md)
 - [issueLabel](./issueLabel.python.md)
+- [issueLabels](./issueLabels.python.md)
 - [membership](./membership.python.md)
 - [organizationBlock](./organizationBlock.python.md)
 - [organizationCustomRole](./organizationCustomRole.python.md)

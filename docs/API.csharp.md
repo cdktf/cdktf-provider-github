@@ -95,6 +95,7 @@ The following submodules are available:
 - [enterpriseOrganization](./enterpriseOrganization.csharp.md)
 - [issue](./issue.csharp.md)
 - [issueLabel](./issueLabel.csharp.md)
+- [issueLabels](./issueLabels.csharp.md)
 - [membership](./membership.csharp.md)
 - [organizationBlock](./organizationBlock.csharp.md)
 - [organizationCustomRole](./organizationCustomRole.csharp.md)

@@ -34,6 +34,7 @@ export * as emuGroupMapping from './emu-group-mapping';
 export * as enterpriseOrganization from './enterprise-organization';
 export * as issue from './issue';
 export * as issueLabel from './issue-label';
+export * as issueLabels from './issue-labels';
 export * as membership from './membership';
 export * as organizationBlock from './organization-block';
 export * as organizationCustomRole from './organization-custom-role';
