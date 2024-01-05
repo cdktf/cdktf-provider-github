@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubusers"
 
 datagithubusers.NewDataGithubUsers(scope Construct, id *string, config DataGithubUsersConfig) DataGithubUsers
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubusers"
 
 datagithubusers.DataGithubUsers_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubusers"
 
 datagithubusers.DataGithubUsers_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datagithubusers.DataGithubUsers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubusers"
 
 datagithubusers.DataGithubUsers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagithubusers.DataGithubUsers_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubusers"
 
 datagithubusers.DataGithubUsers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubUsers.DataGithubUsersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubusers"
+import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubusers"
 
 &datagithubusers.DataGithubUsersConfig {
 	Connection: interface{},
