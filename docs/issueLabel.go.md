@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabel.IssueLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/issuelabel"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabel"
 
 issuelabel.NewIssueLabel(scope Construct, id *string, config IssueLabelConfig) IssueLabel
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.issueLabel.IssueLabel.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/issuelabel"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabel"
 
 issuelabel.IssueLabel_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.issueLabel.IssueLabel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/issuelabel"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabel"
 
 issuelabel.IssueLabel_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ issuelabel.IssueLabel_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.issueLabel.IssueLabel.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/issuelabel"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabel"
 
 issuelabel.IssueLabel_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ issuelabel.IssueLabel_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.issueLabel.IssueLabel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/issuelabel"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabel"
 
 issuelabel.IssueLabel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.issueLabel.IssueLabelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/issuelabel"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabel"
 
 &issuelabel.IssueLabelConfig {
 	Connection: interface{},

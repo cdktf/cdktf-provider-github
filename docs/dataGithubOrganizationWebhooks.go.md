@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 datagithuborganizationwebhooks.NewDataGithubOrganizationWebhooks(scope Construct, id *string, config DataGithubOrganizationWebhooksConfig) DataGithubOrganizationWebhooks
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 datagithuborganizationwebhooks.DataGithubOrganizationWebhooks_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 datagithuborganizationwebhooks.DataGithubOrganizationWebhooks_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datagithuborganizationwebhooks.DataGithubOrganizationWebhooks_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 datagithuborganizationwebhooks.DataGithubOrganizationWebhooks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagithuborganizationwebhooks.DataGithubOrganizationWebhooks_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 datagithuborganizationwebhooks.DataGithubOrganizationWebhooks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 &datagithuborganizationwebhooks.DataGithubOrganizationWebhooksConfig {
 	Connection: interface{},
@@ -693,7 +693,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksWebhooks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 &datagithuborganizationwebhooks.DataGithubOrganizationWebhooksWebhooks {
 
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizat
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksWebhooksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 datagithuborganizationwebhooks.NewDataGithubOrganizationWebhooksWebhooksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationWebhooksWebhooksList
 ```
@@ -840,7 +840,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationWebhooks.DataGithubOrganizationWebhooksWebhooksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithuborganizationwebhooks"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationwebhooks"
 
 datagithuborganizationwebhooks.NewDataGithubOrganizationWebhooksWebhooksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubOrganizationWebhooksWebhooksOutputReference
 ```
