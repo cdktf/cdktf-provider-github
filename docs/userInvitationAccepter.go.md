@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/userinvitationaccepter"
 
 userinvitationaccepter.NewUserInvitationAccepter(scope Construct, id *string, config UserInvitationAccepterConfig) UserInvitationAccepter
 ```
@@ -392,7 +392,7 @@ func ResetInvitationId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/userinvitationaccepter"
 
 userinvitationaccepter.UserInvitationAccepter_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/userinvitationaccepter"
 
 userinvitationaccepter.UserInvitationAccepter_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ userinvitationaccepter.UserInvitationAccepter_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/userinvitationaccepter"
 
 userinvitationaccepter.UserInvitationAccepter_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ userinvitationaccepter.UserInvitationAccepter_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/userinvitationaccepter"
 
 userinvitationaccepter.UserInvitationAccepter_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -747,7 +747,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/userinvitationaccepter"
+import "github.com/cdktf/cdktf-provider-github-go/github/userinvitationaccepter"
 
 &userinvitationaccepter.UserInvitationAccepterConfig {
 	Connection: interface{},

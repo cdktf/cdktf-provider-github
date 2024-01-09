@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationregistrationtoken"
 
 datagithubactionsorganizationregistrationtoken.NewDataGithubActionsOrganizationRegistrationToken(scope Construct, id *string, config DataGithubActionsOrganizationRegistrationTokenConfig) DataGithubActionsOrganizationRegistrationToken
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationregistrationtoken"
 
 datagithubactionsorganizationregistrationtoken.DataGithubActionsOrganizationRegistrationToken_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationregistrationtoken"
 
 datagithubactionsorganizationregistrationtoken.DataGithubActionsOrganizationRegistrationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datagithubactionsorganizationregistrationtoken.DataGithubActionsOrganizationRegi
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationregistrationtoken"
 
 datagithubactionsorganizationregistrationtoken.DataGithubActionsOrganizationRegistrationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datagithubactionsorganizationregistrationtoken.DataGithubActionsOrganizationRegi
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationregistrationtoken"
 
 datagithubactionsorganizationregistrationtoken.DataGithubActionsOrganizationRegistrationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +585,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsOrganizationRegistrationToken.DataGithubActionsOrganizationRegistrationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsorganizationregistrationtoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationregistrationtoken"
 
 &datagithubactionsorganizationregistrationtoken.DataGithubActionsOrganizationRegistrationTokenConfig {
 	Connection: interface{},
