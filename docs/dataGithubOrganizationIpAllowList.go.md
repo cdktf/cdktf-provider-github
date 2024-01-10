@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowList(scope Construct, id *string, config DataGithubOrganizationIpAllowListConfig) DataGithubOrganizationIpAllowList
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.DataGithubOrganizationIpAllowList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 &datagithuborganizationipallowlist.DataGithubOrganizationIpAllowListConfig {
 	Connection: interface{},
@@ -702,7 +702,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 &datagithuborganizationipallowlist.DataGithubOrganizationIpAllowListIpAllowListStruct {
 
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizat
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowListIpAllowListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubOrganizationIpAllowListIpAllowListStructList
 ```
@@ -866,7 +866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationIpAllowList.DataGithubOrganizationIpAllowListIpAllowListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithuborganizationipallowlist"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationipallowlist"
 
 datagithuborganizationipallowlist.NewDataGithubOrganizationIpAllowListIpAllowListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubOrganizationIpAllowListIpAllowListStructOutputReference
 ```
