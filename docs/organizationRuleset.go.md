@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRuleset.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRuleset(scope Construct, id *string, config OrganizationRulesetConfig) OrganizationRuleset
 ```
@@ -438,7 +438,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationRuleset.OrganizationRuleset.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.OrganizationRuleset_IsConstruct(x interface{}) *bool
 ```
@@ -470,7 +470,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationRuleset.OrganizationRuleset.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.OrganizationRuleset_IsTerraformElement(x interface{}) *bool
 ```
@@ -484,7 +484,7 @@ organizationruleset.OrganizationRuleset_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationRuleset.OrganizationRuleset.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.OrganizationRuleset_IsTerraformResource(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ organizationruleset.OrganizationRuleset_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.organizationRuleset.OrganizationRuleset.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.OrganizationRuleset_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -914,7 +914,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetBypassActors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetBypassActors {
 	ActorId: *f64,
@@ -984,12 +984,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetConditions {
-	RefName: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetConditionsRefName,
+	RefName: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetConditionsRefName,
 	RepositoryId: *[]*f64,
-	RepositoryName: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetConditionsRepositoryName,
+	RepositoryName: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetConditionsRepositoryName,
 }
 ```
 
@@ -1050,7 +1050,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetConditionsRefName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetConditionsRefName {
 	Exclude: *[]*string,
@@ -1102,7 +1102,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetConditionsRepositoryName.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetConditionsRepositoryName {
 	Exclude: *[]*string,
@@ -1170,7 +1170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetConfig {
 	Connection: interface{},
@@ -1182,10 +1182,10 @@ import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
 	Provisioners: *[]interface{},
 	Enforcement: *string,
 	Name: *string,
-	Rules: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetRules,
+	Rules: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetRules,
 	Target: *string,
 	BypassActors: interface{},
-	Conditions: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetConditions,
+	Conditions: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetConditions,
 	Id: *string,
 }
 ```
@@ -1385,21 +1385,21 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRules {
-	BranchNamePattern: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetRulesBranchNamePattern,
-	CommitAuthorEmailPattern: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetRulesCommitAuthorEmailPattern,
-	CommitMessagePattern: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetRulesCommitMessagePattern,
-	CommitterEmailPattern: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetRulesCommitterEmailPattern,
+	BranchNamePattern: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetRulesBranchNamePattern,
+	CommitAuthorEmailPattern: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetRulesCommitAuthorEmailPattern,
+	CommitMessagePattern: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetRulesCommitMessagePattern,
+	CommitterEmailPattern: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetRulesCommitterEmailPattern,
 	Creation: interface{},
 	Deletion: interface{},
 	NonFastForward: interface{},
-	PullRequest: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetRulesPullRequest,
+	PullRequest: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetRulesPullRequest,
 	RequiredLinearHistory: interface{},
 	RequiredSignatures: interface{},
-	RequiredStatusChecks: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetRulesRequiredStatusChecks,
-	TagNamePattern: github.com/cdktf/cdktf-provider-github-go/github.organizationRuleset.OrganizationRulesetRulesTagNamePattern,
+	RequiredStatusChecks: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetRulesRequiredStatusChecks,
+	TagNamePattern: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationRuleset.OrganizationRulesetRulesTagNamePattern,
 	Update: interface{},
 }
 ```
@@ -1611,7 +1611,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesBranchNamePattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRulesBranchNamePattern {
 	Operator: *string,
@@ -1693,7 +1693,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitAuthorEmailPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRulesCommitAuthorEmailPattern {
 	Operator: *string,
@@ -1775,7 +1775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitMessagePattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRulesCommitMessagePattern {
 	Operator: *string,
@@ -1857,7 +1857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitterEmailPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRulesCommitterEmailPattern {
 	Operator: *string,
@@ -1939,7 +1939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesPullRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRulesPullRequest {
 	DismissStaleReviewsOnPush: interface{},
@@ -2039,7 +2039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredStatusChecks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRulesRequiredStatusChecks {
 	RequiredCheck: interface{},
@@ -2091,7 +2091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredStatusChecksRequiredCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRulesRequiredStatusChecksRequiredCheck {
 	Context: *string,
@@ -2141,7 +2141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesTagNamePattern.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 &organizationruleset.OrganizationRulesetRulesTagNamePattern {
 	Operator: *string,
@@ -2225,7 +2225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetBypassActorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetBypassActorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationRulesetBypassActorsList
 ```
@@ -2385,7 +2385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetBypassActorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetBypassActorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrganizationRulesetBypassActorsOutputReference
 ```
@@ -2718,7 +2718,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetConditionsOutputReference
 ```
@@ -3073,7 +3073,7 @@ func InternalValue() OrganizationRulesetConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetConditionsRefNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetConditionsRefNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetConditionsRefNameOutputReference
 ```
@@ -3366,7 +3366,7 @@ func InternalValue() OrganizationRulesetConditionsRefName
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetConditionsRepositoryNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetConditionsRepositoryNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetConditionsRepositoryNameOutputReference
 ```
@@ -3688,7 +3688,7 @@ func InternalValue() OrganizationRulesetConditionsRepositoryName
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesBranchNamePatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesBranchNamePatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetRulesBranchNamePatternOutputReference
 ```
@@ -4039,7 +4039,7 @@ func InternalValue() OrganizationRulesetRulesBranchNamePattern
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitAuthorEmailPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesCommitAuthorEmailPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetRulesCommitAuthorEmailPatternOutputReference
 ```
@@ -4390,7 +4390,7 @@ func InternalValue() OrganizationRulesetRulesCommitAuthorEmailPattern
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitMessagePatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesCommitMessagePatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetRulesCommitMessagePatternOutputReference
 ```
@@ -4741,7 +4741,7 @@ func InternalValue() OrganizationRulesetRulesCommitMessagePattern
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitterEmailPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesCommitterEmailPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetRulesCommitterEmailPatternOutputReference
 ```
@@ -5092,7 +5092,7 @@ func InternalValue() OrganizationRulesetRulesCommitterEmailPattern
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetRulesOutputReference
 ```
@@ -5809,7 +5809,7 @@ func InternalValue() OrganizationRulesetRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesPullRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesPullRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetRulesPullRequestOutputReference
 ```
@@ -6203,7 +6203,7 @@ func InternalValue() OrganizationRulesetRulesPullRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredStatusChecksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesRequiredStatusChecksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetRulesRequiredStatusChecksOutputReference
 ```
@@ -6516,7 +6516,7 @@ func InternalValue() OrganizationRulesetRulesRequiredStatusChecks
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredStatusChecksRequiredCheckList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesRequiredStatusChecksRequiredCheckList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrganizationRulesetRulesRequiredStatusChecksRequiredCheckList
 ```
@@ -6676,7 +6676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OrganizationRulesetRulesRequiredStatusChecksRequiredCheckOutputReference
 ```
@@ -6994,7 +6994,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesTagNamePatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/organizationruleset"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationruleset"
 
 organizationruleset.NewOrganizationRulesetRulesTagNamePatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationRulesetRulesTagNamePatternOutputReference
 ```
