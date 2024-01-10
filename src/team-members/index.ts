@@ -58,6 +58,31 @@ export function teamMembersMembersToTerraform(struct?: TeamMembersMembers | cdkt
   }
 }
 
+
+export function teamMembersMembersToHclTerraform(struct?: TeamMembersMembers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    role: {
+      value: cdktf.stringToHclTerraform(struct!.role),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    username: {
+      value: cdktf.stringToHclTerraform(struct!.username),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamMembersMembersOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -270,5 +295,31 @@ export class TeamMembers extends cdktf.TerraformResource {
       team_id: cdktf.stringToTerraform(this._teamId),
       members: cdktf.listMapper(teamMembersMembersToTerraform, true)(this._members.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      members: {
+        value: cdktf.listMapperHcl(teamMembersMembersToHclTerraform, true)(this._members.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "TeamMembersMembersList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

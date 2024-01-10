@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.NewBranchProtection(scope Construct, id *string, config BranchProtectionConfig) BranchProtection
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -139,6 +140,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.branchProtection.BranchProtection.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.branchProtection.BranchProtection.toMetadata"></a>
 
@@ -488,7 +495,7 @@ func ResetRequireSignedCommits()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.branchProtection.BranchProtection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.BranchProtection_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.branchProtection.BranchProtection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.BranchProtection_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +541,7 @@ branchprotection.BranchProtection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.branchProtection.BranchProtection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.BranchProtection_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +555,7 @@ branchprotection.BranchProtection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.branchProtection.BranchProtection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.BranchProtection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1107,7 +1114,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 &branchprotection.BranchProtectionConfig {
 	Connection: interface{},
@@ -1454,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 &branchprotection.BranchProtectionRequiredPullRequestReviews {
 	DismissalRestrictions: *[]*string,
@@ -1590,7 +1597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 &branchprotection.BranchProtectionRequiredStatusChecks {
 	Contexts: *[]*string,
@@ -1644,7 +1651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.NewBranchProtectionRequiredPullRequestReviewsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionRequiredPullRequestReviewsList
 ```
@@ -1685,10 +1692,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1787,7 +1811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.NewBranchProtectionRequiredPullRequestReviewsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchProtectionRequiredPullRequestReviewsOutputReference
 ```
@@ -2257,7 +2281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.NewBranchProtectionRequiredStatusChecksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionRequiredStatusChecksList
 ```
@@ -2298,10 +2322,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2400,7 +2441,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 
 branchprotection.NewBranchProtectionRequiredStatusChecksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchProtectionRequiredStatusChecksOutputReference
 ```

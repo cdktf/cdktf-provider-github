@@ -207,4 +207,42 @@ export class ProjectCard extends cdktf.TerraformResource {
       note: cdktf.stringToTerraform(this._note),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      column_id: {
+        value: cdktf.stringToHclTerraform(this._columnId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content_id: {
+        value: cdktf.numberToHclTerraform(this._contentId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      content_type: {
+        value: cdktf.stringToHclTerraform(this._contentType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      note: {
+        value: cdktf.stringToHclTerraform(this._note),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

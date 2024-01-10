@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 datagithubrelease.NewDataGithubRelease(scope Construct, id *string, config DataGithubReleaseConfig) DataGithubRelease
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubRelease.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetReleaseTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 datagithubrelease.DataGithubRelease_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 datagithubrelease.DataGithubRelease_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datagithubrelease.DataGithubRelease_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 datagithubrelease.DataGithubRelease_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ datagithubrelease.DataGithubRelease_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 datagithubrelease.DataGithubRelease_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -852,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 &datagithubrelease.DataGithubReleaseAssets {
 
@@ -865,7 +874,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 &datagithubrelease.DataGithubReleaseConfig {
 	Connection: interface{},
@@ -1056,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 datagithubrelease.NewDataGithubReleaseAssetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubReleaseAssetsList
 ```
@@ -1097,10 +1106,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1188,7 +1214,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrelease"
 
 datagithubrelease.NewDataGithubReleaseAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubReleaseAssetsOutputReference
 ```

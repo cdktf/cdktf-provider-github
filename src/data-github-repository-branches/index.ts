@@ -44,6 +44,17 @@ export function dataGithubRepositoryBranchesBranchesToTerraform(struct?: DataGit
   }
 }
 
+
+export function dataGithubRepositoryBranchesBranchesToHclTerraform(struct?: DataGithubRepositoryBranchesBranches): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGithubRepositoryBranchesBranchesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -241,5 +252,37 @@ export class DataGithubRepositoryBranches extends cdktf.TerraformDataSource {
       only_protected_branches: cdktf.booleanToTerraform(this._onlyProtectedBranches),
       repository: cdktf.stringToTerraform(this._repository),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      only_non_protected_branches: {
+        value: cdktf.booleanToHclTerraform(this._onlyNonProtectedBranches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      only_protected_branches: {
+        value: cdktf.booleanToHclTerraform(this._onlyProtectedBranches),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

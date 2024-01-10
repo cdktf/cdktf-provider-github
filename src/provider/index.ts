@@ -110,6 +110,37 @@ export function githubProviderAppAuthToTerraform(struct?: GithubProviderAppAuth)
 }
 
 
+export function githubProviderAppAuthToHclTerraform(struct?: GithubProviderAppAuth): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    installation_id: {
+      value: cdktf.stringToHclTerraform(struct!.installationId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pem_file: {
+      value: cdktf.stringToHclTerraform(struct!.pemFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+
 /**
 * Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs github}
 */
@@ -348,5 +379,73 @@ export class GithubProvider extends cdktf.TerraformProvider {
       alias: cdktf.stringToTerraform(this._alias),
       app_auth: githubProviderAppAuthToTerraform(this._appAuth),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_url: {
+        value: cdktf.stringToHclTerraform(this._baseUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      insecure: {
+        value: cdktf.booleanToHclTerraform(this._insecure),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      organization: {
+        value: cdktf.stringToHclTerraform(this._organization),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parallel_requests: {
+        value: cdktf.booleanToHclTerraform(this._parallelRequests),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      read_delay_ms: {
+        value: cdktf.numberToHclTerraform(this._readDelayMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      token: {
+        value: cdktf.stringToHclTerraform(this._token),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      write_delay_ms: {
+        value: cdktf.numberToHclTerraform(this._writeDelayMs),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      alias: {
+        value: cdktf.stringToHclTerraform(this._alias),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      app_auth: {
+        value: githubProviderAppAuthToHclTerraform(this._appAuth),
+        isBlock: true,
+        type: "list",
+        storageClassType: "GithubProviderAppAuthList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

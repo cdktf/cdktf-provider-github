@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
 
 datagithubrestapi.NewDataGithubRestApi(scope Construct, id *string, config DataGithubRestApiConfig) DataGithubRestApi
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datagithubrestapi.DataGithubRestApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datagithubrestapi.DataGithubRestApi_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
 
 &datagithubrestapi.DataGithubRestApiConfig {
 	Connection: interface{},

@@ -267,4 +267,54 @@ export class ActionsRunnerGroup extends cdktf.TerraformResource {
       visibility: cdktf.stringToTerraform(this._visibility),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allows_public_repositories: {
+        value: cdktf.booleanToHclTerraform(this._allowsPublicRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      restricted_to_workflows: {
+        value: cdktf.booleanToHclTerraform(this._restrictedToWorkflows),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      selected_repository_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._selectedRepositoryIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      selected_workflows: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._selectedWorkflows),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

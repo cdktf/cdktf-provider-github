@@ -209,4 +209,42 @@ export class Branch extends cdktf.TerraformResource {
       source_sha: cdktf.stringToTerraform(this._sourceSha),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branch: {
+        value: cdktf.stringToHclTerraform(this._branch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_branch: {
+        value: cdktf.stringToHclTerraform(this._sourceBranch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      source_sha: {
+        value: cdktf.stringToHclTerraform(this._sourceSha),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

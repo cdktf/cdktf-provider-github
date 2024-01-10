@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 datagithubtree.NewDataGithubTree(scope Construct, id *string, config DataGithubTreeConfig) DataGithubTree
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTree.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetRecursive()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 datagithubtree.DataGithubTree_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 datagithubtree.DataGithubTree_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datagithubtree.DataGithubTree_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 datagithubtree.DataGithubTree_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datagithubtree.DataGithubTree_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubTree.DataGithubTree.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 datagithubtree.DataGithubTree_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -647,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 &datagithubtree.DataGithubTreeConfig {
 	Connection: interface{},
@@ -808,7 +817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 &datagithubtree.DataGithubTreeEntries {
 
@@ -823,7 +832,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 datagithubtree.NewDataGithubTreeEntriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubTreeEntriesList
 ```
@@ -864,10 +873,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -955,7 +981,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubTree.DataGithubTreeEntriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubtree"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubtree"
 
 datagithubtree.NewDataGithubTreeEntriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubTreeEntriesOutputReference
 ```

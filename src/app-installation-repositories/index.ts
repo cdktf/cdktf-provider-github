@@ -146,4 +146,30 @@ export class AppInstallationRepositories extends cdktf.TerraformResource {
       selected_repositories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._selectedRepositories),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      installation_id: {
+        value: cdktf.stringToHclTerraform(this._installationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      selected_repositories: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._selectedRepositories),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

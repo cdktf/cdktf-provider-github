@@ -77,6 +77,37 @@ export function actionsRepositoryPermissionsAllowedActionsConfigToTerraform(stru
   }
 }
 
+
+export function actionsRepositoryPermissionsAllowedActionsConfigToHclTerraform(struct?: ActionsRepositoryPermissionsAllowedActionsConfigOutputReference | ActionsRepositoryPermissionsAllowedActionsConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    github_owned_allowed: {
+      value: cdktf.booleanToHclTerraform(struct!.githubOwnedAllowed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    patterns_allowed: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.patternsAllowed),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    verified_allowed: {
+      value: cdktf.booleanToHclTerraform(struct!.verifiedAllowed),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class ActionsRepositoryPermissionsAllowedActionsConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -318,5 +349,43 @@ export class ActionsRepositoryPermissions extends cdktf.TerraformResource {
       repository: cdktf.stringToTerraform(this._repository),
       allowed_actions_config: actionsRepositoryPermissionsAllowedActionsConfigToTerraform(this._allowedActionsConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allowed_actions: {
+        value: cdktf.stringToHclTerraform(this._allowedActions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enabled: {
+        value: cdktf.booleanToHclTerraform(this._enabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      allowed_actions_config: {
+        value: actionsRepositoryPermissionsAllowedActionsConfigToHclTerraform(this._allowedActionsConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "ActionsRepositoryPermissionsAllowedActionsConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

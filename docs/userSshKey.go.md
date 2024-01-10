@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userSshKey.UserSshKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/usersshkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/usersshkey"
 
 usersshkey.NewUserSshKey(scope Construct, id *string, config UserSshKeyConfig) UserSshKey
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.userSshKey.UserSshKey.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -125,6 +126,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.userSshKey.UserSshKey.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.userSshKey.UserSshKey.toMetadata"></a>
 
@@ -378,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.userSshKey.UserSshKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/usersshkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/usersshkey"
 
 usersshkey.UserSshKey_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.userSshKey.UserSshKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/usersshkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/usersshkey"
 
 usersshkey.UserSshKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ usersshkey.UserSshKey_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.userSshKey.UserSshKey.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/usersshkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/usersshkey"
 
 usersshkey.UserSshKey_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ usersshkey.UserSshKey_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.userSshKey.UserSshKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/usersshkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/usersshkey"
 
 usersshkey.UserSshKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -755,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.userSshKey.UserSshKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/usersshkey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/usersshkey"
 
 &usersshkey.UserSshKeyConfig {
 	Connection: interface{},

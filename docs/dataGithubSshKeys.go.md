@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubsshkeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubsshkeys"
 
 datagithubsshkeys.NewDataGithubSshKeys(scope Construct, id *string, config DataGithubSshKeysConfig) DataGithubSshKeys
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubsshkeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubsshkeys"
 
 datagithubsshkeys.DataGithubSshKeys_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubsshkeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubsshkeys"
 
 datagithubsshkeys.DataGithubSshKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datagithubsshkeys.DataGithubSshKeys_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubsshkeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubsshkeys"
 
 datagithubsshkeys.DataGithubSshKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datagithubsshkeys.DataGithubSshKeys_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubsshkeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubsshkeys"
 
 datagithubsshkeys.DataGithubSshKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubSshKeys.DataGithubSshKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubsshkeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubsshkeys"
 
 &datagithubsshkeys.DataGithubSshKeysConfig {
 	Connection: interface{},

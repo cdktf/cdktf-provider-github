@@ -65,6 +65,37 @@ export function teamSyncGroupMappingGroupToTerraform(struct?: TeamSyncGroupMappi
   }
 }
 
+
+export function teamSyncGroupMappingGroupToHclTerraform(struct?: TeamSyncGroupMappingGroup | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group_description: {
+      value: cdktf.stringToHclTerraform(struct!.groupDescription),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_id: {
+      value: cdktf.stringToHclTerraform(struct!.groupId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    group_name: {
+      value: cdktf.stringToHclTerraform(struct!.groupName),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class TeamSyncGroupMappingGroupOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -301,5 +332,31 @@ export class TeamSyncGroupMapping extends cdktf.TerraformResource {
       team_slug: cdktf.stringToTerraform(this._teamSlug),
       group: cdktf.listMapper(teamSyncGroupMappingGroupToTerraform, true)(this._group.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_slug: {
+        value: cdktf.stringToHclTerraform(this._teamSlug),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      group: {
+        value: cdktf.listMapperHcl(teamSyncGroupMappingGroupToHclTerraform, true)(this._group.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "TeamSyncGroupMappingGroupList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

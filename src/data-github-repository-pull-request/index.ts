@@ -239,4 +239,36 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
       owner: cdktf.stringToTerraform(this._owner),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_repository: {
+        value: cdktf.stringToHclTerraform(this._baseRepository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      number: {
+        value: cdktf.numberToHclTerraform(this._number),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

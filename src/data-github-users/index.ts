@@ -143,4 +143,24 @@ export class DataGithubUsers extends cdktf.TerraformDataSource {
       usernames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._usernames),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      usernames: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._usernames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

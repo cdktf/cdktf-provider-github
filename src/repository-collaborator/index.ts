@@ -199,4 +199,42 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
       username: cdktf.stringToTerraform(this._username),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission: {
+        value: cdktf.stringToHclTerraform(this._permission),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission_diff_suppression: {
+        value: cdktf.booleanToHclTerraform(this._permissionDiffSuppression),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      username: {
+        value: cdktf.stringToHclTerraform(this._username),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -198,4 +198,42 @@ export class ActionsEnvironmentVariable extends cdktf.TerraformResource {
       variable_name: cdktf.stringToTerraform(this._variableName),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      variable_name: {
+        value: cdktf.stringToHclTerraform(this._variableName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

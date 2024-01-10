@@ -60,6 +60,17 @@ export function dataGithubRepositoryPullRequestsResultsToTerraform(struct?: Data
   }
 }
 
+
+export function dataGithubRepositoryPullRequestsResultsToHclTerraform(struct?: DataGithubRepositoryPullRequestsResults): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataGithubRepositoryPullRequestsResultsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -399,5 +410,61 @@ export class DataGithubRepositoryPullRequests extends cdktf.TerraformDataSource 
       sort_direction: cdktf.stringToTerraform(this._sortDirection),
       state: cdktf.stringToTerraform(this._state),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_ref: {
+        value: cdktf.stringToHclTerraform(this._baseRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      base_repository: {
+        value: cdktf.stringToHclTerraform(this._baseRepository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      head_ref: {
+        value: cdktf.stringToHclTerraform(this._headRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sort_by: {
+        value: cdktf.stringToHclTerraform(this._sortBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      sort_direction: {
+        value: cdktf.stringToHclTerraform(this._sortDirection),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      state: {
+        value: cdktf.stringToHclTerraform(this._state),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

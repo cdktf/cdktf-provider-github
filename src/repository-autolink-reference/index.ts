@@ -196,4 +196,42 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
       target_url_template: cdktf.stringToTerraform(this._targetUrlTemplate),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_alphanumeric: {
+        value: cdktf.booleanToHclTerraform(this._isAlphanumeric),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key_prefix: {
+        value: cdktf.stringToHclTerraform(this._keyPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_url_template: {
+        value: cdktf.stringToHclTerraform(this._targetUrlTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

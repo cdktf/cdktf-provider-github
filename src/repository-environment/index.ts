@@ -82,6 +82,31 @@ export function repositoryEnvironmentDeploymentBranchPolicyToTerraform(struct?: 
   }
 }
 
+
+export function repositoryEnvironmentDeploymentBranchPolicyToHclTerraform(struct?: RepositoryEnvironmentDeploymentBranchPolicyOutputReference | RepositoryEnvironmentDeploymentBranchPolicy): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    custom_branch_policies: {
+      value: cdktf.booleanToHclTerraform(struct!.customBranchPolicies),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    protected_branches: {
+      value: cdktf.booleanToHclTerraform(struct!.protectedBranches),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RepositoryEnvironmentDeploymentBranchPolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -170,6 +195,31 @@ export function repositoryEnvironmentReviewersToTerraform(struct?: RepositoryEnv
     teams: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.teams),
     users: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.users),
   }
+}
+
+
+export function repositoryEnvironmentReviewersToHclTerraform(struct?: RepositoryEnvironmentReviewers | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    teams: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.teams),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+    users: {
+      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.users),
+      isBlock: false,
+      type: "set",
+      storageClassType: "numberList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RepositoryEnvironmentReviewersOutputReference extends cdktf.ComplexObject {
@@ -459,5 +509,55 @@ export class RepositoryEnvironment extends cdktf.TerraformResource {
       deployment_branch_policy: repositoryEnvironmentDeploymentBranchPolicyToTerraform(this._deploymentBranchPolicy.internalValue),
       reviewers: cdktf.listMapper(repositoryEnvironmentReviewersToTerraform, true)(this._reviewers.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      can_admins_bypass: {
+        value: cdktf.booleanToHclTerraform(this._canAdminsBypass),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      environment: {
+        value: cdktf.stringToHclTerraform(this._environment),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_timer: {
+        value: cdktf.numberToHclTerraform(this._waitTimer),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      deployment_branch_policy: {
+        value: repositoryEnvironmentDeploymentBranchPolicyToHclTerraform(this._deploymentBranchPolicy.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RepositoryEnvironmentDeploymentBranchPolicyList",
+      },
+      reviewers: {
+        value: cdktf.listMapperHcl(repositoryEnvironmentReviewersToHclTerraform, true)(this._reviewers.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RepositoryEnvironmentReviewersList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

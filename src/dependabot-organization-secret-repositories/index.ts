@@ -146,4 +146,30 @@ export class DependabotOrganizationSecretRepositories extends cdktf.TerraformRes
       selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._selectedRepositoryIds),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_name: {
+        value: cdktf.stringToHclTerraform(this._secretName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      selected_repository_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._selectedRepositoryIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

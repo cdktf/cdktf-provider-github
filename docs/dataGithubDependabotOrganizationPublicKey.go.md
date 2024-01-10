@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.NewDataGithubDependabotOrganizationPublicKey(scope Construct, id *string, config DataGithubDependabotOrganizationPublicKeyConfig) DataGithubDependabotOrganizationPublicKey
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -119,6 +120,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.toMetadata"></a>
 
@@ -274,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublic
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublic
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubdependabotorganizationpublickey"
 
 datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -585,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubDependabotOrganizationPublicKey.DataGithubDependabotOrganizationPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubdependabotorganizationpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubdependabotorganizationpublickey"
 
 &datagithubdependabotorganizationpublickey.DataGithubDependabotOrganizationPublicKeyConfig {
 	Connection: interface{},

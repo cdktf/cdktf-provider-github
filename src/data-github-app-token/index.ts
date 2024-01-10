@@ -172,4 +172,36 @@ export class DataGithubAppToken extends cdktf.TerraformDataSource {
       pem_file: cdktf.stringToTerraform(this._pemFile),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      app_id: {
+        value: cdktf.stringToHclTerraform(this._appId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      installation_id: {
+        value: cdktf.stringToHclTerraform(this._installationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      pem_file: {
+        value: cdktf.stringToHclTerraform(this._pemFile),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

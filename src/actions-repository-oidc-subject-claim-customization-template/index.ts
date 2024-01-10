@@ -170,4 +170,36 @@ export class ActionsRepositoryOidcSubjectClaimCustomizationTemplate extends cdkt
       use_default: cdktf.booleanToTerraform(this._useDefault),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_claim_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._includeClaimKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_default: {
+        value: cdktf.booleanToHclTerraform(this._useDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

@@ -165,6 +165,61 @@ export function branchProtectionRequiredPullRequestReviewsToTerraform(struct?: B
   }
 }
 
+
+export function branchProtectionRequiredPullRequestReviewsToHclTerraform(struct?: BranchProtectionRequiredPullRequestReviews | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dismiss_stale_reviews: {
+      value: cdktf.booleanToHclTerraform(struct!.dismissStaleReviews),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    dismissal_restrictions: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dismissalRestrictions),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    pull_request_bypassers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pullRequestBypassers),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    require_code_owner_reviews: {
+      value: cdktf.booleanToHclTerraform(struct!.requireCodeOwnerReviews),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    require_last_push_approval: {
+      value: cdktf.booleanToHclTerraform(struct!.requireLastPushApproval),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    required_approving_review_count: {
+      value: cdktf.numberToHclTerraform(struct!.requiredApprovingReviewCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    restrict_dismissals: {
+      value: cdktf.booleanToHclTerraform(struct!.restrictDismissals),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BranchProtectionRequiredPullRequestReviewsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
   private resolvableValue?: cdktf.IResolvable;
@@ -401,6 +456,31 @@ export function branchProtectionRequiredStatusChecksToTerraform(struct?: BranchP
     contexts: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.contexts),
     strict: cdktf.booleanToTerraform(struct!.strict),
   }
+}
+
+
+export function branchProtectionRequiredStatusChecksToHclTerraform(struct?: BranchProtectionRequiredStatusChecks | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contexts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contexts),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    strict: {
+      value: cdktf.booleanToHclTerraform(struct!.strict),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BranchProtectionRequiredStatusChecksOutputReference extends cdktf.ComplexObject {
@@ -834,5 +914,103 @@ export class BranchProtection extends cdktf.TerraformResource {
       required_pull_request_reviews: cdktf.listMapper(branchProtectionRequiredPullRequestReviewsToTerraform, true)(this._requiredPullRequestReviews.internalValue),
       required_status_checks: cdktf.listMapper(branchProtectionRequiredStatusChecksToTerraform, true)(this._requiredStatusChecks.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allows_deletions: {
+        value: cdktf.booleanToHclTerraform(this._allowsDeletions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allows_force_pushes: {
+        value: cdktf.booleanToHclTerraform(this._allowsForcePushes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      blocks_creations: {
+        value: cdktf.booleanToHclTerraform(this._blocksCreations),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      enforce_admins: {
+        value: cdktf.booleanToHclTerraform(this._enforceAdmins),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      force_push_bypassers: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._forcePushBypassers),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      lock_branch: {
+        value: cdktf.booleanToHclTerraform(this._lockBranch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pattern: {
+        value: cdktf.stringToHclTerraform(this._pattern),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      push_restrictions: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._pushRestrictions),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      repository_id: {
+        value: cdktf.stringToHclTerraform(this._repositoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      require_conversation_resolution: {
+        value: cdktf.booleanToHclTerraform(this._requireConversationResolution),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      require_signed_commits: {
+        value: cdktf.booleanToHclTerraform(this._requireSignedCommits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      required_linear_history: {
+        value: cdktf.booleanToHclTerraform(this._requiredLinearHistory),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      required_pull_request_reviews: {
+        value: cdktf.listMapperHcl(branchProtectionRequiredPullRequestReviewsToHclTerraform, true)(this._requiredPullRequestReviews.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BranchProtectionRequiredPullRequestReviewsList",
+      },
+      required_status_checks: {
+        value: cdktf.listMapperHcl(branchProtectionRequiredStatusChecksToHclTerraform, true)(this._requiredStatusChecks.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BranchProtectionRequiredStatusChecksList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
