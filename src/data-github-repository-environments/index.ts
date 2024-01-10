@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_environments
 // generated from terraform resource schema
 
@@ -34,6 +29,17 @@ export function dataGithubRepositoryEnvironmentsEnvironmentsToTerraform(struct?:
   }
   return {
   }
+}
+
+
+export function dataGithubRepositoryEnvironmentsEnvironmentsToHclTerraform(struct?: DataGithubRepositoryEnvironmentsEnvironments): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGithubRepositoryEnvironmentsEnvironmentsOutputReference extends cdktf.ComplexObject {
@@ -197,5 +203,25 @@ export class DataGithubRepositoryEnvironments extends cdktf.TerraformDataSource 
       id: cdktf.stringToTerraform(this._id),
       repository: cdktf.stringToTerraform(this._repository),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

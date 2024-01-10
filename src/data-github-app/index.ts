@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/app
 // generated from terraform resource schema
 
@@ -137,5 +132,25 @@ export class DataGithubApp extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       slug: cdktf.stringToTerraform(this._slug),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      slug: {
+        value: cdktf.stringToHclTerraform(this._slug),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

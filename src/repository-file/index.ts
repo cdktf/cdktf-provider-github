@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_file
 // generated from terraform resource schema
 
@@ -301,5 +296,67 @@ export class RepositoryFile extends cdktf.TerraformResource {
       overwrite_on_create: cdktf.booleanToTerraform(this._overwriteOnCreate),
       repository: cdktf.stringToTerraform(this._repository),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branch: {
+        value: cdktf.stringToHclTerraform(this._branch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      commit_author: {
+        value: cdktf.stringToHclTerraform(this._commitAuthor),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      commit_email: {
+        value: cdktf.stringToHclTerraform(this._commitEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      commit_message: {
+        value: cdktf.stringToHclTerraform(this._commitMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      content: {
+        value: cdktf.stringToHclTerraform(this._content),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      file: {
+        value: cdktf.stringToHclTerraform(this._file),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      overwrite_on_create: {
+        value: cdktf.booleanToHclTerraform(this._overwriteOnCreate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

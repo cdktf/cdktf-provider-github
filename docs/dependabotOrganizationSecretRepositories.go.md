@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.NewDependabotOrganizationSecretRepositories(scope Construct, id *string, config DependabotOrganizationSecretRepositoriesConfig) DependabotOrganizationSecretRepositories
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -125,6 +126,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.toMetadata"></a>
 
@@ -378,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -410,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -424,7 +431,7 @@ dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositorie
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsTerraformResource(x interface{}) *bool
 ```
@@ -438,7 +445,7 @@ dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositorie
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -733,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 &dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositoriesConfig {
 	Connection: interface{},

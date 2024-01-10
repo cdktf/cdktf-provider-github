@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository
 // generated from terraform resource schema
 
@@ -46,6 +41,17 @@ export function dataGithubRepositoryPagesSourceToTerraform(struct?: DataGithubRe
   }
   return {
   }
+}
+
+
+export function dataGithubRepositoryPagesSourceToHclTerraform(struct?: DataGithubRepositoryPagesSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGithubRepositoryPagesSourceOutputReference extends cdktf.ComplexObject {
@@ -115,6 +121,17 @@ export function dataGithubRepositoryPagesToTerraform(struct?: DataGithubReposito
   }
   return {
   }
+}
+
+
+export function dataGithubRepositoryPagesToHclTerraform(struct?: DataGithubRepositoryPages): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGithubRepositoryPagesOutputReference extends cdktf.ComplexObject {
@@ -210,6 +227,17 @@ export function dataGithubRepositoryTemplateToTerraform(struct?: DataGithubRepos
   }
   return {
   }
+}
+
+
+export function dataGithubRepositoryTemplateToHclTerraform(struct?: DataGithubRepositoryTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGithubRepositoryTemplateOutputReference extends cdktf.ComplexObject {
@@ -576,5 +604,43 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      full_name: {
+        value: cdktf.stringToHclTerraform(this._fullName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      homepage_url: {
+        value: cdktf.stringToHclTerraform(this._homepageUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

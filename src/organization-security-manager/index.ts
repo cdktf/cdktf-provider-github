@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/organization_security_manager
 // generated from terraform resource schema
 
@@ -124,5 +119,25 @@ export class OrganizationSecurityManager extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       team_slug: cdktf.stringToTerraform(this._teamSlug),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_slug: {
+        value: cdktf.stringToHclTerraform(this._teamSlug),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

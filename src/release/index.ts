@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/release
 // generated from terraform resource schema
 
@@ -318,5 +313,73 @@ export class Release extends cdktf.TerraformResource {
       tag_name: cdktf.stringToTerraform(this._tagName),
       target_commitish: cdktf.stringToTerraform(this._targetCommitish),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      body: {
+        value: cdktf.stringToHclTerraform(this._body),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      discussion_category_name: {
+        value: cdktf.stringToHclTerraform(this._discussionCategoryName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      draft: {
+        value: cdktf.booleanToHclTerraform(this._draft),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      generate_release_notes: {
+        value: cdktf.booleanToHclTerraform(this._generateReleaseNotes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prerelease: {
+        value: cdktf.booleanToHclTerraform(this._prerelease),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_name: {
+        value: cdktf.stringToHclTerraform(this._tagName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_commitish: {
+        value: cdktf.stringToHclTerraform(this._targetCommitish),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

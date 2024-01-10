@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository
 // generated from terraform resource schema
 
@@ -248,6 +243,31 @@ export function repositoryPagesSourceToTerraform(struct?: RepositoryPagesSourceO
   }
 }
 
+
+export function repositoryPagesSourceToHclTerraform(struct?: RepositoryPagesSourceOutputReference | RepositoryPagesSource): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    branch: {
+      value: cdktf.stringToHclTerraform(struct!.branch),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    path: {
+      value: cdktf.stringToHclTerraform(struct!.path),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RepositoryPagesSourceOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -346,6 +366,37 @@ export function repositoryPagesToTerraform(struct?: RepositoryPagesOutputReferen
     cname: cdktf.stringToTerraform(struct!.cname),
     source: repositoryPagesSourceToTerraform(struct!.source),
   }
+}
+
+
+export function repositoryPagesToHclTerraform(struct?: RepositoryPagesOutputReference | RepositoryPages): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    build_type: {
+      value: cdktf.stringToHclTerraform(struct!.buildType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    cname: {
+      value: cdktf.stringToHclTerraform(struct!.cname),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    source: {
+      value: repositoryPagesSourceToHclTerraform(struct!.source),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RepositoryPagesSourceList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RepositoryPagesOutputReference extends cdktf.ComplexObject {
@@ -479,6 +530,25 @@ export function repositorySecurityAndAnalysisAdvancedSecurityToTerraform(struct?
   }
 }
 
+
+export function repositorySecurityAndAnalysisAdvancedSecurityToHclTerraform(struct?: RepositorySecurityAndAnalysisAdvancedSecurityOutputReference | RepositorySecurityAndAnalysisAdvancedSecurity): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RepositorySecurityAndAnalysisAdvancedSecurityOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -543,6 +613,25 @@ export function repositorySecurityAndAnalysisSecretScanningToTerraform(struct?: 
   }
 }
 
+
+export function repositorySecurityAndAnalysisSecretScanningToHclTerraform(struct?: RepositorySecurityAndAnalysisSecretScanningOutputReference | RepositorySecurityAndAnalysisSecretScanning): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class RepositorySecurityAndAnalysisSecretScanningOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -605,6 +694,25 @@ export function repositorySecurityAndAnalysisSecretScanningPushProtectionToTerra
   return {
     status: cdktf.stringToTerraform(struct!.status),
   }
+}
+
+
+export function repositorySecurityAndAnalysisSecretScanningPushProtectionToHclTerraform(struct?: RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference | RepositorySecurityAndAnalysisSecretScanningPushProtection): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    status: {
+      value: cdktf.stringToHclTerraform(struct!.status),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RepositorySecurityAndAnalysisSecretScanningPushProtectionOutputReference extends cdktf.ComplexObject {
@@ -683,6 +791,37 @@ export function repositorySecurityAndAnalysisToTerraform(struct?: RepositorySecu
     secret_scanning: repositorySecurityAndAnalysisSecretScanningToTerraform(struct!.secretScanning),
     secret_scanning_push_protection: repositorySecurityAndAnalysisSecretScanningPushProtectionToTerraform(struct!.secretScanningPushProtection),
   }
+}
+
+
+export function repositorySecurityAndAnalysisToHclTerraform(struct?: RepositorySecurityAndAnalysisOutputReference | RepositorySecurityAndAnalysis): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    advanced_security: {
+      value: repositorySecurityAndAnalysisAdvancedSecurityToHclTerraform(struct!.advancedSecurity),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RepositorySecurityAndAnalysisAdvancedSecurityList",
+    },
+    secret_scanning: {
+      value: repositorySecurityAndAnalysisSecretScanningToHclTerraform(struct!.secretScanning),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RepositorySecurityAndAnalysisSecretScanningList",
+    },
+    secret_scanning_push_protection: {
+      value: repositorySecurityAndAnalysisSecretScanningPushProtectionToHclTerraform(struct!.secretScanningPushProtection),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RepositorySecurityAndAnalysisSecretScanningPushProtectionList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RepositorySecurityAndAnalysisOutputReference extends cdktf.ComplexObject {
@@ -808,6 +947,37 @@ export function repositoryTemplateToTerraform(struct?: RepositoryTemplateOutputR
     owner: cdktf.stringToTerraform(struct!.owner),
     repository: cdktf.stringToTerraform(struct!.repository),
   }
+}
+
+
+export function repositoryTemplateToHclTerraform(struct?: RepositoryTemplateOutputReference | RepositoryTemplate): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    include_all_branches: {
+      value: cdktf.booleanToHclTerraform(struct!.includeAllBranches),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    owner: {
+      value: cdktf.stringToHclTerraform(struct!.owner),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    repository: {
+      value: cdktf.stringToHclTerraform(struct!.repository),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RepositoryTemplateOutputReference extends cdktf.ComplexObject {
@@ -1638,5 +1808,223 @@ export class Repository extends cdktf.TerraformResource {
       security_and_analysis: repositorySecurityAndAnalysisToTerraform(this._securityAndAnalysis.internalValue),
       template: repositoryTemplateToTerraform(this._template.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_auto_merge: {
+        value: cdktf.booleanToHclTerraform(this._allowAutoMerge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_merge_commit: {
+        value: cdktf.booleanToHclTerraform(this._allowMergeCommit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_rebase_merge: {
+        value: cdktf.booleanToHclTerraform(this._allowRebaseMerge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_squash_merge: {
+        value: cdktf.booleanToHclTerraform(this._allowSquashMerge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      allow_update_branch: {
+        value: cdktf.booleanToHclTerraform(this._allowUpdateBranch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      archive_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._archiveOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      archived: {
+        value: cdktf.booleanToHclTerraform(this._archived),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      auto_init: {
+        value: cdktf.booleanToHclTerraform(this._autoInit),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      default_branch: {
+        value: cdktf.stringToHclTerraform(this._defaultBranch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      delete_branch_on_merge: {
+        value: cdktf.booleanToHclTerraform(this._deleteBranchOnMerge),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      gitignore_template: {
+        value: cdktf.stringToHclTerraform(this._gitignoreTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      has_discussions: {
+        value: cdktf.booleanToHclTerraform(this._hasDiscussions),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      has_downloads: {
+        value: cdktf.booleanToHclTerraform(this._hasDownloads),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      has_issues: {
+        value: cdktf.booleanToHclTerraform(this._hasIssues),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      has_projects: {
+        value: cdktf.booleanToHclTerraform(this._hasProjects),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      has_wiki: {
+        value: cdktf.booleanToHclTerraform(this._hasWiki),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      homepage_url: {
+        value: cdktf.stringToHclTerraform(this._homepageUrl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_vulnerability_alerts_during_read: {
+        value: cdktf.booleanToHclTerraform(this._ignoreVulnerabilityAlertsDuringRead),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      is_template: {
+        value: cdktf.booleanToHclTerraform(this._isTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      license_template: {
+        value: cdktf.stringToHclTerraform(this._licenseTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_commit_message: {
+        value: cdktf.stringToHclTerraform(this._mergeCommitMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      merge_commit_title: {
+        value: cdktf.stringToHclTerraform(this._mergeCommitTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      private: {
+        value: cdktf.booleanToHclTerraform(this._private),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      squash_merge_commit_message: {
+        value: cdktf.stringToHclTerraform(this._squashMergeCommitMessage),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      squash_merge_commit_title: {
+        value: cdktf.stringToHclTerraform(this._squashMergeCommitTitle),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      topics: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._topics),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      vulnerability_alerts: {
+        value: cdktf.booleanToHclTerraform(this._vulnerabilityAlerts),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      web_commit_signoff_required: {
+        value: cdktf.booleanToHclTerraform(this._webCommitSignoffRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      pages: {
+        value: repositoryPagesToHclTerraform(this._pages.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RepositoryPagesList",
+      },
+      security_and_analysis: {
+        value: repositorySecurityAndAnalysisToHclTerraform(this._securityAndAnalysis.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RepositorySecurityAndAnalysisList",
+      },
+      template: {
+        value: repositoryTemplateToHclTerraform(this._template.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RepositoryTemplateList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

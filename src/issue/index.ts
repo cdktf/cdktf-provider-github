@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/issue
 // generated from terraform resource schema
 
@@ -256,5 +251,55 @@ export class Issue extends cdktf.TerraformResource {
       repository: cdktf.stringToTerraform(this._repository),
       title: cdktf.stringToTerraform(this._title),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      assignees: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._assignees),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      body: {
+        value: cdktf.stringToHclTerraform(this._body),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      labels: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._labels),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      milestone_number: {
+        value: cdktf.numberToHclTerraform(this._milestoneNumber),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

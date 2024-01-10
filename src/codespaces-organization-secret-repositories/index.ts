@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/codespaces_organization_secret_repositories
 // generated from terraform resource schema
 
@@ -145,5 +140,31 @@ export class CodespacesOrganizationSecretRepositories extends cdktf.TerraformRes
       secret_name: cdktf.stringToTerraform(this._secretName),
       selected_repository_ids: cdktf.listMapper(cdktf.numberToTerraform, false)(this._selectedRepositoryIds),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_name: {
+        value: cdktf.stringToHclTerraform(this._secretName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      selected_repository_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._selectedRepositoryIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_webhook
 // generated from terraform resource schema
 
@@ -86,6 +81,43 @@ export function repositoryWebhookConfigurationToTerraform(struct?: RepositoryWeb
     secret: cdktf.stringToTerraform(struct!.secret),
     url: cdktf.stringToTerraform(struct!.url),
   }
+}
+
+
+export function repositoryWebhookConfigurationToHclTerraform(struct?: RepositoryWebhookConfigurationOutputReference | RepositoryWebhookConfiguration): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    content_type: {
+      value: cdktf.stringToHclTerraform(struct!.contentType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    insecure_ssl: {
+      value: cdktf.booleanToHclTerraform(struct!.insecureSsl),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    secret: {
+      value: cdktf.stringToHclTerraform(struct!.secret),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    url: {
+      value: cdktf.stringToHclTerraform(struct!.url),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class RepositoryWebhookConfigurationOutputReference extends cdktf.ComplexObject {
@@ -376,5 +408,49 @@ export class RepositoryWebhook extends cdktf.TerraformResource {
       repository: cdktf.stringToTerraform(this._repository),
       configuration: repositoryWebhookConfigurationToTerraform(this._configuration.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      active: {
+        value: cdktf.booleanToHclTerraform(this._active),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      events: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._events),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      configuration: {
+        value: repositoryWebhookConfigurationToHclTerraform(this._configuration.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "RepositoryWebhookConfigurationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

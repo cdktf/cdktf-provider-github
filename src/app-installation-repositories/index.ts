@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/app_installation_repositories
 // generated from terraform resource schema
 
@@ -145,5 +140,31 @@ export class AppInstallationRepositories extends cdktf.TerraformResource {
       installation_id: cdktf.stringToTerraform(this._installationId),
       selected_repositories: cdktf.listMapper(cdktf.stringToTerraform, false)(this._selectedRepositories),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      installation_id: {
+        value: cdktf.stringToHclTerraform(this._installationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      selected_repositories: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._selectedRepositories),
+        isBlock: false,
+        type: "set",
+        storageClassType: "stringList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

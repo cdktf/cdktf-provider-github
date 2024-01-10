@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.NewOrganizationWebhook(scope Construct, id *string, config OrganizationWebhookConfig) OrganizationWebhook
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -129,6 +130,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.toMetadata"></a>
 
@@ -412,7 +419,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.OrganizationWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.OrganizationWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +465,7 @@ organizationwebhook.OrganizationWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.OrganizationWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +479,7 @@ organizationwebhook.OrganizationWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.OrganizationWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 &organizationwebhook.OrganizationWebhookConfig {
 	Connection: interface{},
@@ -845,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook
 	Provisioners: *[]interface{},
 	Events: *[]*string,
 	Active: interface{},
-	Configuration: github.com/cdktf/cdktf-provider-github-go/github/v12.organizationWebhook.OrganizationWebhookConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-github-go/github.organizationWebhook.OrganizationWebhookConfiguration,
 	Id: *string,
 	Name: *string,
 }
@@ -1014,7 +1021,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 &organizationwebhook.OrganizationWebhookConfiguration {
 	Url: *string,
@@ -1098,7 +1105,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.NewOrganizationWebhookConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationWebhookConfigurationOutputReference
 ```

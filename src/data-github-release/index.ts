@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/release
 // generated from terraform resource schema
 
@@ -50,6 +45,17 @@ export function dataGithubReleaseAssetsToTerraform(struct?: DataGithubReleaseAss
   }
   return {
   }
+}
+
+
+export function dataGithubReleaseAssetsToHclTerraform(struct?: DataGithubReleaseAssets): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataGithubReleaseAssetsOutputReference extends cdktf.ComplexObject {
@@ -389,5 +395,49 @@ export class DataGithubRelease extends cdktf.TerraformDataSource {
       repository: cdktf.stringToTerraform(this._repository),
       retrieve_by: cdktf.stringToTerraform(this._retrieveBy),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      release_id: {
+        value: cdktf.numberToHclTerraform(this._releaseId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      release_tag: {
+        value: cdktf.stringToHclTerraform(this._releaseTag),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      retrieve_by: {
+        value: cdktf.stringToHclTerraform(this._retrieveBy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

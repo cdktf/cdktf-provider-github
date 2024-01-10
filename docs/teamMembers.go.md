@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembers(scope Construct, id *string, config TeamMembersConfig) TeamMembers
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -126,6 +127,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.teamMembers.TeamMembers.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.teamMembers.TeamMembers.toMetadata"></a>
 
@@ -391,7 +398,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.teamMembers.TeamMembers.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsConstruct(x interface{}) *bool
 ```
@@ -423,7 +430,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.teamMembers.TeamMembers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsTerraformElement(x interface{}) *bool
 ```
@@ -437,7 +444,7 @@ teammembers.TeamMembers_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.teamMembers.TeamMembers.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_IsTerraformResource(x interface{}) *bool
 ```
@@ -451,7 +458,7 @@ teammembers.TeamMembers_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.teamMembers.TeamMembers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.TeamMembers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -746,7 +753,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamMembers.TeamMembersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 &teammembers.TeamMembersConfig {
 	Connection: interface{},
@@ -897,7 +904,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.teamMembers.TeamMembersMembers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 &teammembers.TeamMembersMembers {
 	Username: *string,
@@ -949,7 +956,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembersMembersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembersMembersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TeamMembersMembersList
 ```
@@ -990,10 +997,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersMembersList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-github.teamMembers.TeamMembersMembersList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-github.teamMembers.TeamMembersMembersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1092,7 +1116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembersMembersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/teammembers"
+import "github.com/cdktf/cdktf-provider-github-go/github/teammembers"
 
 teammembers.NewTeamMembersMembersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TeamMembersMembersOutputReference
 ```

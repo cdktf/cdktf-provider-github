@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.NewDataGithubActionsEnvironmentSecrets(scope Construct, id *string, config DataGithubActionsEnvironmentSecretsConfig) DataGithubActionsEnvironmentSecrets
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecrets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecrets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -654,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 &datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecretsConfig {
 	Connection: interface{},
@@ -815,7 +824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 &datagithubactionsenvironmentsecrets.DataGithubActionsEnvironmentSecretsSecrets {
 
@@ -830,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsen
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.NewDataGithubActionsEnvironmentSecretsSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubActionsEnvironmentSecretsSecretsList
 ```
@@ -871,10 +880,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -962,7 +988,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsEnvironmentSecrets.DataGithubActionsEnvironmentSecretsSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v12/datagithubactionsenvironmentsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentsecrets"
 
 datagithubactionsenvironmentsecrets.NewDataGithubActionsEnvironmentSecretsSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubActionsEnvironmentSecretsSecretsOutputReference
 ```

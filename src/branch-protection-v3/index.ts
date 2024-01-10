@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/branch_protection_v3
 // generated from terraform resource schema
 
@@ -93,6 +88,37 @@ export function branchProtectionV3RequiredPullRequestReviewsBypassPullRequestAll
     teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
     users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
   }
+}
+
+
+export function branchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesToHclTerraform(struct?: BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference | BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowances): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    apps: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.apps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    teams: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.teams),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    users: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.users),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesOutputReference extends cdktf.ComplexObject {
@@ -251,6 +277,67 @@ export function branchProtectionV3RequiredPullRequestReviewsToTerraform(struct?:
     required_approving_review_count: cdktf.numberToTerraform(struct!.requiredApprovingReviewCount),
     bypass_pull_request_allowances: branchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesToTerraform(struct!.bypassPullRequestAllowances),
   }
+}
+
+
+export function branchProtectionV3RequiredPullRequestReviewsToHclTerraform(struct?: BranchProtectionV3RequiredPullRequestReviewsOutputReference | BranchProtectionV3RequiredPullRequestReviews): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    dismiss_stale_reviews: {
+      value: cdktf.booleanToHclTerraform(struct!.dismissStaleReviews),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    dismissal_apps: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dismissalApps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    dismissal_teams: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dismissalTeams),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    dismissal_users: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dismissalUsers),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    include_admins: {
+      value: cdktf.booleanToHclTerraform(struct!.includeAdmins),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    require_code_owner_reviews: {
+      value: cdktf.booleanToHclTerraform(struct!.requireCodeOwnerReviews),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    required_approving_review_count: {
+      value: cdktf.numberToHclTerraform(struct!.requiredApprovingReviewCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    bypass_pull_request_allowances: {
+      value: branchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesToHclTerraform(struct!.bypassPullRequestAllowances),
+      isBlock: true,
+      type: "list",
+      storageClassType: "BranchProtectionV3RequiredPullRequestReviewsBypassPullRequestAllowancesList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BranchProtectionV3RequiredPullRequestReviewsOutputReference extends cdktf.ComplexObject {
@@ -491,6 +578,43 @@ export function branchProtectionV3RequiredStatusChecksToTerraform(struct?: Branc
   }
 }
 
+
+export function branchProtectionV3RequiredStatusChecksToHclTerraform(struct?: BranchProtectionV3RequiredStatusChecksOutputReference | BranchProtectionV3RequiredStatusChecks): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    checks: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.checks),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    contexts: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.contexts),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    include_admins: {
+      value: cdktf.booleanToHclTerraform(struct!.includeAdmins),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    strict: {
+      value: cdktf.booleanToHclTerraform(struct!.strict),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class BranchProtectionV3RequiredStatusChecksOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -636,6 +760,37 @@ export function branchProtectionV3RestrictionsToTerraform(struct?: BranchProtect
     teams: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.teams),
     users: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.users),
   }
+}
+
+
+export function branchProtectionV3RestrictionsToHclTerraform(struct?: BranchProtectionV3RestrictionsOutputReference | BranchProtectionV3Restrictions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    apps: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.apps),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    teams: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.teams),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    users: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.users),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class BranchProtectionV3RestrictionsOutputReference extends cdktf.ComplexObject {
@@ -956,5 +1111,67 @@ export class BranchProtectionV3 extends cdktf.TerraformResource {
       required_status_checks: branchProtectionV3RequiredStatusChecksToTerraform(this._requiredStatusChecks.internalValue),
       restrictions: branchProtectionV3RestrictionsToTerraform(this._restrictions.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      branch: {
+        value: cdktf.stringToHclTerraform(this._branch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      enforce_admins: {
+        value: cdktf.booleanToHclTerraform(this._enforceAdmins),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      require_conversation_resolution: {
+        value: cdktf.booleanToHclTerraform(this._requireConversationResolution),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      require_signed_commits: {
+        value: cdktf.booleanToHclTerraform(this._requireSignedCommits),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      required_pull_request_reviews: {
+        value: branchProtectionV3RequiredPullRequestReviewsToHclTerraform(this._requiredPullRequestReviews.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BranchProtectionV3RequiredPullRequestReviewsList",
+      },
+      required_status_checks: {
+        value: branchProtectionV3RequiredStatusChecksToHclTerraform(this._requiredStatusChecks.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BranchProtectionV3RequiredStatusChecksList",
+      },
+      restrictions: {
+        value: branchProtectionV3RestrictionsToHclTerraform(this._restrictions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "BranchProtectionV3RestrictionsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/user_invitation_accepter
 // generated from terraform resource schema
 
@@ -151,5 +146,31 @@ export class UserInvitationAccepter extends cdktf.TerraformResource {
       id: cdktf.stringToTerraform(this._id),
       invitation_id: cdktf.stringToTerraform(this._invitationId),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      allow_empty_id: {
+        value: cdktf.booleanToHclTerraform(this._allowEmptyId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      invitation_id: {
+        value: cdktf.stringToHclTerraform(this._invitationId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

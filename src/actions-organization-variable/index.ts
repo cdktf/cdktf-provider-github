@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/actions_organization_variable
 // generated from terraform resource schema
 
@@ -200,5 +195,43 @@ export class ActionsOrganizationVariable extends cdktf.TerraformResource {
       variable_name: cdktf.stringToTerraform(this._variableName),
       visibility: cdktf.stringToTerraform(this._visibility),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      selected_repository_ids: {
+        value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(this._selectedRepositoryIds),
+        isBlock: false,
+        type: "set",
+        storageClassType: "numberList",
+      },
+      value: {
+        value: cdktf.stringToHclTerraform(this._value),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      variable_name: {
+        value: cdktf.stringToHclTerraform(this._variableName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      visibility: {
+        value: cdktf.stringToHclTerraform(this._visibility),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

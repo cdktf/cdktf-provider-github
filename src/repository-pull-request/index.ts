@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_pull_request
 // generated from terraform resource schema
 
@@ -304,5 +299,61 @@ export class RepositoryPullRequest extends cdktf.TerraformResource {
       owner: cdktf.stringToTerraform(this._owner),
       title: cdktf.stringToTerraform(this._title),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_ref: {
+        value: cdktf.stringToHclTerraform(this._baseRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      base_repository: {
+        value: cdktf.stringToHclTerraform(this._baseRepository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      body: {
+        value: cdktf.stringToHclTerraform(this._body),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      head_ref: {
+        value: cdktf.stringToHclTerraform(this._headRef),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      maintainer_can_modify: {
+        value: cdktf.booleanToHclTerraform(this._maintainerCanModify),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      title: {
+        value: cdktf.stringToHclTerraform(this._title),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

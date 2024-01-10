@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/actions_repository_oidc_subject_claim_customization_template
 // generated from terraform resource schema
 
@@ -169,5 +164,37 @@ export class ActionsRepositoryOidcSubjectClaimCustomizationTemplate extends cdkt
       repository: cdktf.stringToTerraform(this._repository),
       use_default: cdktf.booleanToTerraform(this._useDefault),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      include_claim_keys: {
+        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._includeClaimKeys),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      use_default: {
+        value: cdktf.booleanToHclTerraform(this._useDefault),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

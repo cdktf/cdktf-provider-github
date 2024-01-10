@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/repository_autolink_reference
 // generated from terraform resource schema
 
@@ -195,5 +190,43 @@ export class RepositoryAutolinkReference extends cdktf.TerraformResource {
       repository: cdktf.stringToTerraform(this._repository),
       target_url_template: cdktf.stringToTerraform(this._targetUrlTemplate),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      is_alphanumeric: {
+        value: cdktf.booleanToHclTerraform(this._isAlphanumeric),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      key_prefix: {
+        value: cdktf.stringToHclTerraform(this._keyPrefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      repository: {
+        value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      target_url_template: {
+        value: cdktf.stringToHclTerraform(this._targetUrlTemplate),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

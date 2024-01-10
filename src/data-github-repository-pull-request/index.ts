@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_pull_request
 // generated from terraform resource schema
 
@@ -238,5 +233,37 @@ export class DataGithubRepositoryPullRequest extends cdktf.TerraformDataSource {
       number: cdktf.numberToTerraform(this._number),
       owner: cdktf.stringToTerraform(this._owner),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      base_repository: {
+        value: cdktf.stringToHclTerraform(this._baseRepository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      number: {
+        value: cdktf.numberToHclTerraform(this._number),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      owner: {
+        value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

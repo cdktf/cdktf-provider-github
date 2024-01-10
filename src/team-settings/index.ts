@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/team_settings
 // generated from terraform resource schema
 
@@ -63,6 +58,37 @@ export function teamSettingsReviewRequestDelegationToTerraform(struct?: TeamSett
     member_count: cdktf.numberToTerraform(struct!.memberCount),
     notify: cdktf.booleanToTerraform(struct!.notify),
   }
+}
+
+
+export function teamSettingsReviewRequestDelegationToHclTerraform(struct?: TeamSettingsReviewRequestDelegationOutputReference | TeamSettingsReviewRequestDelegation): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    member_count: {
+      value: cdktf.numberToHclTerraform(struct!.memberCount),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    notify: {
+      value: cdktf.booleanToHclTerraform(struct!.notify),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class TeamSettingsReviewRequestDelegationOutputReference extends cdktf.ComplexObject {
@@ -283,5 +309,31 @@ export class TeamSettings extends cdktf.TerraformResource {
       team_id: cdktf.stringToTerraform(this._teamId),
       review_request_delegation: teamSettingsReviewRequestDelegationToTerraform(this._reviewRequestDelegation.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      team_id: {
+        value: cdktf.stringToHclTerraform(this._teamId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      review_request_delegation: {
+        value: teamSettingsReviewRequestDelegationToHclTerraform(this._reviewRequestDelegation.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "TeamSettingsReviewRequestDelegationList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

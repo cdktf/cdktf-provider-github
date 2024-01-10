@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/organization_settings
 // generated from terraform resource schema
 
@@ -724,5 +719,175 @@ export class OrganizationSettings extends cdktf.TerraformResource {
       twitter_username: cdktf.stringToTerraform(this._twitterUsername),
       web_commit_signoff_required: cdktf.booleanToTerraform(this._webCommitSignoffRequired),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      advanced_security_enabled_for_new_repositories: {
+        value: cdktf.booleanToHclTerraform(this._advancedSecurityEnabledForNewRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      billing_email: {
+        value: cdktf.stringToHclTerraform(this._billingEmail),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      blog: {
+        value: cdktf.stringToHclTerraform(this._blog),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      company: {
+        value: cdktf.stringToHclTerraform(this._company),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      default_repository_permission: {
+        value: cdktf.stringToHclTerraform(this._defaultRepositoryPermission),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      dependabot_alerts_enabled_for_new_repositories: {
+        value: cdktf.booleanToHclTerraform(this._dependabotAlertsEnabledForNewRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      dependabot_security_updates_enabled_for_new_repositories: {
+        value: cdktf.booleanToHclTerraform(this._dependabotSecurityUpdatesEnabledForNewRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      dependency_graph_enabled_for_new_repositories: {
+        value: cdktf.booleanToHclTerraform(this._dependencyGraphEnabledForNewRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      email: {
+        value: cdktf.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      has_organization_projects: {
+        value: cdktf.booleanToHclTerraform(this._hasOrganizationProjects),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      has_repository_projects: {
+        value: cdktf.booleanToHclTerraform(this._hasRepositoryProjects),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      location: {
+        value: cdktf.stringToHclTerraform(this._location),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      members_can_create_internal_repositories: {
+        value: cdktf.booleanToHclTerraform(this._membersCanCreateInternalRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      members_can_create_pages: {
+        value: cdktf.booleanToHclTerraform(this._membersCanCreatePages),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      members_can_create_private_pages: {
+        value: cdktf.booleanToHclTerraform(this._membersCanCreatePrivatePages),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      members_can_create_private_repositories: {
+        value: cdktf.booleanToHclTerraform(this._membersCanCreatePrivateRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      members_can_create_public_pages: {
+        value: cdktf.booleanToHclTerraform(this._membersCanCreatePublicPages),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      members_can_create_public_repositories: {
+        value: cdktf.booleanToHclTerraform(this._membersCanCreatePublicRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      members_can_create_repositories: {
+        value: cdktf.booleanToHclTerraform(this._membersCanCreateRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      members_can_fork_private_repositories: {
+        value: cdktf.booleanToHclTerraform(this._membersCanForkPrivateRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secret_scanning_enabled_for_new_repositories: {
+        value: cdktf.booleanToHclTerraform(this._secretScanningEnabledForNewRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      secret_scanning_push_protection_enabled_for_new_repositories: {
+        value: cdktf.booleanToHclTerraform(this._secretScanningPushProtectionEnabledForNewRepositories),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      twitter_username: {
+        value: cdktf.stringToHclTerraform(this._twitterUsername),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      web_commit_signoff_required: {
+        value: cdktf.booleanToHclTerraform(this._webCommitSignoffRequired),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
