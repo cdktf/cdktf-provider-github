@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/dependabot_secrets
+// https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/dependabot_secrets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,18 +13,18 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubDependabotSecretsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}
   */
   readonly name?: string;
 }
@@ -115,7 +115,7 @@ export class DataGithubDependabotSecretsSecretsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/dependabot_secrets github_dependabot_secrets}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/dependabot_secrets github_dependabot_secrets}
 */
 export class DataGithubDependabotSecrets extends cdktf.TerraformDataSource {
 
@@ -131,7 +131,7 @@ export class DataGithubDependabotSecrets extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGithubDependabotSecrets resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubDependabotSecrets to import
-  * @param importFromId The id of the existing DataGithubDependabotSecrets that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/dependabot_secrets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubDependabotSecrets that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/dependabot_secrets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubDependabotSecrets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -143,7 +143,7 @@ export class DataGithubDependabotSecrets extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/dependabot_secrets github_dependabot_secrets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/dependabot_secrets github_dependabot_secrets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -154,7 +154,7 @@ export class DataGithubDependabotSecrets extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_dependabot_secrets',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.43.0',
+        providerVersion: '5.44.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
