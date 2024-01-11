@@ -4,12 +4,12 @@
 
 ### DataGithubRepositoryAutolinkReferences <a name="DataGithubRepositoryAutolinkReferences" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_autolink_references github_repository_autolink_references}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_autolink_references github_repository_autolink_references}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.NewDataGithubRepositoryAutolinkReferences(scope Construct, id *string, config DataGithubRepositoryAutolinkReferencesConfig) DataGithubRepositoryAutolinkReferences
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferences_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubRepositoryAutoli
 
 The id of the existing DataGithubRepositoryAutolinkReferences that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_autolink_references#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_autolink_references#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesAutolinkReferences.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 &datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferencesAutolinkReferences {
 
@@ -618,7 +618,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositor
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 &datagithubrepositoryautolinkreferences.DataGithubRepositoryAutolinkReferencesConfig {
 	Connection: interface{},
@@ -644,8 +644,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositor
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_autolink_references#repository DataGithubRepositoryAutolinkReferences#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_autolink_references#id DataGithubRepositoryAutolinkReferences#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_autolink_references#repository DataGithubRepositoryAutolinkReferences#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_autolink_references#id DataGithubRepositoryAutolinkReferences#id}. |
 
 ---
 
@@ -727,7 +727,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_autolink_references#repository DataGithubRepositoryAutolinkReferences#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_autolink_references#repository DataGithubRepositoryAutolinkReferences#repository}.
 
 ---
 
@@ -739,7 +739,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_autolink_references#id DataGithubRepositoryAutolinkReferences#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_autolink_references#id DataGithubRepositoryAutolinkReferences#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -753,7 +753,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesAutolinkReferencesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.NewDataGithubRepositoryAutolinkReferencesAutolinkReferencesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryAutolinkReferencesAutolinkReferencesList
 ```
@@ -902,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesAutolinkReferencesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryautolinkreferences"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryautolinkreferences"
 
 datagithubrepositoryautolinkreferences.NewDataGithubRepositoryAutolinkReferencesAutolinkReferencesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryAutolinkReferencesAutolinkReferencesOutputReference
 ```

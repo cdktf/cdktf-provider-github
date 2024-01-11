@@ -4,12 +4,12 @@
 
 ### DataGithubRepositoryFile <a name="DataGithubRepositoryFile" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_file github_repository_file}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_file github_repository_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryfile"
 
 datagithubrepositoryfile.NewDataGithubRepositoryFile(scope Construct, id *string, config DataGithubRepositoryFileConfig) DataGithubRepositoryFile
 ```
@@ -290,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryfile"
 
 datagithubrepositoryfile.DataGithubRepositoryFile_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryfile"
 
 datagithubrepositoryfile.DataGithubRepositoryFile_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagithubrepositoryfile.DataGithubRepositoryFile_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryfile"
 
 datagithubrepositoryfile.DataGithubRepositoryFile_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagithubrepositoryfile.DataGithubRepositoryFile_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFile.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryfile"
 
 datagithubrepositoryfile.DataGithubRepositoryFile_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataGithubRepositoryFile t
 
 The id of the existing DataGithubRepositoryFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositoryfile"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryfile"
 
 &datagithubrepositoryfile.DataGithubRepositoryFileConfig {
 	Connection: interface{},
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrepositor
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.file">File</a></code> | <code>*string</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.repository">Repository</a></code> | <code>*string</code> | The repository name. |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.branch">Branch</a></code> | <code>*string</code> | The branch name, defaults to the repository's default branch. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryFile.DataGithubRepositoryFileConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}. |
 
 ---
 
@@ -837,7 +837,7 @@ File *string
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_file#file DataGithubRepositoryFile#file}
 
 ---
 
@@ -851,7 +851,7 @@ Repository *string
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_file#repository DataGithubRepositoryFile#repository}
 
 ---
 
@@ -865,7 +865,7 @@ Branch *string
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_file#branch DataGithubRepositoryFile#branch}
 
 ---
 
@@ -877,7 +877,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository_file#id DataGithubRepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

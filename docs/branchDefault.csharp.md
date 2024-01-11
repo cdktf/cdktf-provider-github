@@ -4,7 +4,7 @@
 
 ### BranchDefault <a name="BranchDefault" id="@cdktf/provider-github.branchDefault.BranchDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/branch_default github_branch_default}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/branch_default github_branch_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchDefault.BranchDefault.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the BranchDefault to import.
 
 The id of the existing BranchDefault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/branch_default#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/branch_default#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -810,7 +810,7 @@ new BranchDefaultConfig {
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.branch">Branch</a></code> | <code>string</code> | The branch (e.g. 'main'). |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.repository">Repository</a></code> | <code>string</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/branch_default#id BranchDefault#id}. |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/branch_default#id BranchDefault#id}. |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.rename">Rename</a></code> | <code>object</code> | Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'. |
 
 ---
@@ -895,7 +895,7 @@ public string Branch { get; set; }
 
 The branch (e.g. 'main').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/branch_default#branch BranchDefault#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/branch_default#branch BranchDefault#branch}
 
 ---
 
@@ -909,7 +909,7 @@ public string Repository { get; set; }
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/branch_default#repository BranchDefault#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/branch_default#repository BranchDefault#repository}
 
 ---
 
@@ -921,7 +921,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/branch_default#id BranchDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/branch_default#id BranchDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -938,7 +938,7 @@ public object Rename { get; set; }
 
 Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/resources/branch_default#rename BranchDefault#rename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/branch_default#rename BranchDefault#rename}
 
 ---
 

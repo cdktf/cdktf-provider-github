@@ -1,3 +1,3 @@
 # `data_github_actions_variables`
 
-Refer to the Terraform Registry for docs: [`data_github_actions_variables`](https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/actions_variables).
+Refer to the Terraform Registry for docs: [`data_github_actions_variables`](https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/actions_variables).

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository
+// https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,26 +8,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository#description DataGithubRepository#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository#description DataGithubRepository#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository#full_name DataGithubRepository#full_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository#full_name DataGithubRepository#full_name}
   */
   readonly fullName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository#homepage_url DataGithubRepository#homepage_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository#homepage_url DataGithubRepository#homepage_url}
   */
   readonly homepageUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository#id DataGithubRepository#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository#id DataGithubRepository#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository#name DataGithubRepository#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository#name DataGithubRepository#name}
   */
   readonly name?: string;
 }
@@ -222,6 +217,267 @@ export class DataGithubRepositoryPagesList extends cdktf.ComplexList {
     return new DataGithubRepositoryPagesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataGithubRepositoryRepositoryLicenseLicense {
+}
+
+export function dataGithubRepositoryRepositoryLicenseLicenseToTerraform(struct?: DataGithubRepositoryRepositoryLicenseLicense): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGithubRepositoryRepositoryLicenseLicenseToHclTerraform(struct?: DataGithubRepositoryRepositoryLicenseLicense): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGithubRepositoryRepositoryLicenseLicenseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGithubRepositoryRepositoryLicenseLicense | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGithubRepositoryRepositoryLicenseLicense | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // body - computed: true, optional: false, required: false
+  public get body() {
+    return this.getStringAttribute('body');
+  }
+
+  // conditions - computed: true, optional: false, required: false
+  public get conditions() {
+    return cdktf.Fn.tolist(this.getListAttribute('conditions'));
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // featured - computed: true, optional: false, required: false
+  public get featured() {
+    return this.getBooleanAttribute('featured');
+  }
+
+  // html_url - computed: true, optional: false, required: false
+  public get htmlUrl() {
+    return this.getStringAttribute('html_url');
+  }
+
+  // implementation - computed: true, optional: false, required: false
+  public get implementation() {
+    return this.getStringAttribute('implementation');
+  }
+
+  // key - computed: true, optional: false, required: false
+  public get key() {
+    return this.getStringAttribute('key');
+  }
+
+  // limitations - computed: true, optional: false, required: false
+  public get limitations() {
+    return cdktf.Fn.tolist(this.getListAttribute('limitations'));
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // permissions - computed: true, optional: false, required: false
+  public get permissions() {
+    return cdktf.Fn.tolist(this.getListAttribute('permissions'));
+  }
+
+  // spdx_id - computed: true, optional: false, required: false
+  public get spdxId() {
+    return this.getStringAttribute('spdx_id');
+  }
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+}
+
+export class DataGithubRepositoryRepositoryLicenseLicenseList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGithubRepositoryRepositoryLicenseLicenseOutputReference {
+    return new DataGithubRepositoryRepositoryLicenseLicenseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataGithubRepositoryRepositoryLicense {
+}
+
+export function dataGithubRepositoryRepositoryLicenseToTerraform(struct?: DataGithubRepositoryRepositoryLicense): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataGithubRepositoryRepositoryLicenseToHclTerraform(struct?: DataGithubRepositoryRepositoryLicense): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataGithubRepositoryRepositoryLicenseOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataGithubRepositoryRepositoryLicense | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataGithubRepositoryRepositoryLicense | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // content - computed: true, optional: false, required: false
+  public get content() {
+    return this.getStringAttribute('content');
+  }
+
+  // download_url - computed: true, optional: false, required: false
+  public get downloadUrl() {
+    return this.getStringAttribute('download_url');
+  }
+
+  // encoding - computed: true, optional: false, required: false
+  public get encoding() {
+    return this.getStringAttribute('encoding');
+  }
+
+  // git_url - computed: true, optional: false, required: false
+  public get gitUrl() {
+    return this.getStringAttribute('git_url');
+  }
+
+  // html_url - computed: true, optional: false, required: false
+  public get htmlUrl() {
+    return this.getStringAttribute('html_url');
+  }
+
+  // license - computed: true, optional: false, required: false
+  private _license = new DataGithubRepositoryRepositoryLicenseLicenseList(this, "license", false);
+  public get license() {
+    return this._license;
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // path - computed: true, optional: false, required: false
+  public get path() {
+    return this.getStringAttribute('path');
+  }
+
+  // sha - computed: true, optional: false, required: false
+  public get sha() {
+    return this.getStringAttribute('sha');
+  }
+
+  // size - computed: true, optional: false, required: false
+  public get size() {
+    return this.getNumberAttribute('size');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // url - computed: true, optional: false, required: false
+  public get url() {
+    return this.getStringAttribute('url');
+  }
+}
+
+export class DataGithubRepositoryRepositoryLicenseList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataGithubRepositoryRepositoryLicenseOutputReference {
+    return new DataGithubRepositoryRepositoryLicenseOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataGithubRepositoryTemplate {
 }
 
@@ -304,7 +560,7 @@ export class DataGithubRepositoryTemplateList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository github_repository}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository github_repository}
 */
 export class DataGithubRepository extends cdktf.TerraformDataSource {
 
@@ -320,7 +576,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGithubRepository resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubRepository to import
-  * @param importFromId The id of the existing DataGithubRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubRepository that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubRepository to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -332,7 +588,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.43.0/docs/data-sources/repository github_repository} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/data-sources/repository github_repository} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -343,7 +599,7 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_repository',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.43.0',
+        providerVersion: '5.44.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -559,6 +815,12 @@ export class DataGithubRepository extends cdktf.TerraformDataSource {
   // repo_id - computed: true, optional: false, required: false
   public get repoId() {
     return this.getNumberAttribute('repo_id');
+  }
+
+  // repository_license - computed: true, optional: false, required: false
+  private _repositoryLicense = new DataGithubRepositoryRepositoryLicenseList(this, "repository_license", false);
+  public get repositoryLicense() {
+    return this._repositoryLicense;
   }
 
   // squash_merge_commit_message - computed: true, optional: false, required: false
