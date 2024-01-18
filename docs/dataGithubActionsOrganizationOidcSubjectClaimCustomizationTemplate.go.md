@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate.NewDataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate(scope Construct, id *string, config DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig) DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate.DataGithubAct
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate.DataGithubAct
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
 
 datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
+import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate"
 
 &datagithubactionsorganizationoidcsubjectclaimcustomizationtemplate.DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig {
 	Connection: interface{},
