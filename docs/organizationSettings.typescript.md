@@ -4,7 +4,7 @@
 
 ### OrganizationSettings <a name="OrganizationSettings" id="@cdktf/provider-github.organizationSettings.OrganizationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings github_organization_settings}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings github_organization_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer"></a>
 
@@ -649,7 +649,7 @@ The construct id used in the generated config for the OrganizationSettings to im
 
 The id of the existing OrganizationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1471,7 +1471,7 @@ const organizationSettingsConfig: organizationSettings.OrganizationSettingsConfi
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.email">email</a></code> | <code>string</code> | The email address for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasOrganizationProjects">hasOrganizationProjects</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not organization projects are enabled for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasRepositoryProjects">hasRepositoryProjects</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not repository projects are enabled for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.location">location</a></code> | <code>string</code> | The location for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateInternalRepositories">membersCanCreateInternalRepositories</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePages">membersCanCreatePages</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not organization members can create new pages. |
@@ -1569,7 +1569,7 @@ public readonly billingEmail: string;
 
 The billing email address for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#billing_email OrganizationSettings#billing_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#billing_email OrganizationSettings#billing_email}
 
 ---
 
@@ -1583,7 +1583,7 @@ public readonly advancedSecurityEnabledForNewRepositories: boolean | IResolvable
 
 Whether or not advanced security is enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#advanced_security_enabled_for_new_repositories OrganizationSettings#advanced_security_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#advanced_security_enabled_for_new_repositories OrganizationSettings#advanced_security_enabled_for_new_repositories}
 
 ---
 
@@ -1597,7 +1597,7 @@ public readonly blog: string;
 
 The blog URL for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#blog OrganizationSettings#blog}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#blog OrganizationSettings#blog}
 
 ---
 
@@ -1611,7 +1611,7 @@ public readonly company: string;
 
 The company name for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#company OrganizationSettings#company}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#company OrganizationSettings#company}
 
 ---
 
@@ -1625,7 +1625,7 @@ public readonly defaultRepositoryPermission: string;
 
 The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#default_repository_permission OrganizationSettings#default_repository_permission}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#default_repository_permission OrganizationSettings#default_repository_permission}
 
 ---
 
@@ -1639,7 +1639,7 @@ public readonly dependabotAlertsEnabledForNewRepositories: boolean | IResolvable
 
 Whether or not dependabot alerts are enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#dependabot_alerts_enabled_for_new_repositories OrganizationSettings#dependabot_alerts_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#dependabot_alerts_enabled_for_new_repositories OrganizationSettings#dependabot_alerts_enabled_for_new_repositories}
 
 ---
 
@@ -1653,7 +1653,7 @@ public readonly dependabotSecurityUpdatesEnabledForNewRepositories: boolean | IR
 
 Whether or not dependabot security updates are enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#dependabot_security_updates_enabled_for_new_repositories OrganizationSettings#dependabot_security_updates_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#dependabot_security_updates_enabled_for_new_repositories OrganizationSettings#dependabot_security_updates_enabled_for_new_repositories}
 
 ---
 
@@ -1667,7 +1667,7 @@ public readonly dependencyGraphEnabledForNewRepositories: boolean | IResolvable;
 
 Whether or not dependency graph is enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#dependency_graph_enabled_for_new_repositories OrganizationSettings#dependency_graph_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#dependency_graph_enabled_for_new_repositories OrganizationSettings#dependency_graph_enabled_for_new_repositories}
 
 ---
 
@@ -1681,7 +1681,7 @@ public readonly description: string;
 
 The description for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#description OrganizationSettings#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#description OrganizationSettings#description}
 
 ---
 
@@ -1695,7 +1695,7 @@ public readonly email: string;
 
 The email address for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#email OrganizationSettings#email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#email OrganizationSettings#email}
 
 ---
 
@@ -1709,7 +1709,7 @@ public readonly hasOrganizationProjects: boolean | IResolvable;
 
 Whether or not organization projects are enabled for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#has_organization_projects OrganizationSettings#has_organization_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#has_organization_projects OrganizationSettings#has_organization_projects}
 
 ---
 
@@ -1723,7 +1723,7 @@ public readonly hasRepositoryProjects: boolean | IResolvable;
 
 Whether or not repository projects are enabled for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#has_repository_projects OrganizationSettings#has_repository_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#has_repository_projects OrganizationSettings#has_repository_projects}
 
 ---
 
@@ -1735,7 +1735,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#id OrganizationSettings#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#id OrganizationSettings#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1752,7 +1752,7 @@ public readonly location: string;
 
 The location for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#location OrganizationSettings#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#location OrganizationSettings#location}
 
 ---
 
@@ -1766,7 +1766,7 @@ public readonly membersCanCreateInternalRepositories: boolean | IResolvable;
 
 Whether or not organization members can create new internal repositories. For Enterprise Organizations only.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#members_can_create_internal_repositories OrganizationSettings#members_can_create_internal_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#members_can_create_internal_repositories OrganizationSettings#members_can_create_internal_repositories}
 
 ---
 
@@ -1780,7 +1780,7 @@ public readonly membersCanCreatePages: boolean | IResolvable;
 
 Whether or not organization members can create new pages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#members_can_create_pages OrganizationSettings#members_can_create_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#members_can_create_pages OrganizationSettings#members_can_create_pages}
 
 ---
 
@@ -1794,7 +1794,7 @@ public readonly membersCanCreatePrivatePages: boolean | IResolvable;
 
 Whether or not organization members can create new private pages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#members_can_create_private_pages OrganizationSettings#members_can_create_private_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#members_can_create_private_pages OrganizationSettings#members_can_create_private_pages}
 
 ---
 
@@ -1808,7 +1808,7 @@ public readonly membersCanCreatePrivateRepositories: boolean | IResolvable;
 
 Whether or not organization members can create new private repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#members_can_create_private_repositories OrganizationSettings#members_can_create_private_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#members_can_create_private_repositories OrganizationSettings#members_can_create_private_repositories}
 
 ---
 
@@ -1822,7 +1822,7 @@ public readonly membersCanCreatePublicPages: boolean | IResolvable;
 
 Whether or not organization members can create new public pages.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#members_can_create_public_pages OrganizationSettings#members_can_create_public_pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#members_can_create_public_pages OrganizationSettings#members_can_create_public_pages}
 
 ---
 
@@ -1836,7 +1836,7 @@ public readonly membersCanCreatePublicRepositories: boolean | IResolvable;
 
 Whether or not organization members can create new public repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#members_can_create_public_repositories OrganizationSettings#members_can_create_public_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#members_can_create_public_repositories OrganizationSettings#members_can_create_public_repositories}
 
 ---
 
@@ -1850,7 +1850,7 @@ public readonly membersCanCreateRepositories: boolean | IResolvable;
 
 Whether or not organization members can create new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#members_can_create_repositories OrganizationSettings#members_can_create_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#members_can_create_repositories OrganizationSettings#members_can_create_repositories}
 
 ---
 
@@ -1864,7 +1864,7 @@ public readonly membersCanForkPrivateRepositories: boolean | IResolvable;
 
 Whether or not organization members can fork private repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#members_can_fork_private_repositories OrganizationSettings#members_can_fork_private_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#members_can_fork_private_repositories OrganizationSettings#members_can_fork_private_repositories}
 
 ---
 
@@ -1878,7 +1878,7 @@ public readonly name: string;
 
 The name for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#name OrganizationSettings#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#name OrganizationSettings#name}
 
 ---
 
@@ -1892,7 +1892,7 @@ public readonly secretScanningEnabledForNewRepositories: boolean | IResolvable;
 
 Whether or not secret scanning is enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#secret_scanning_enabled_for_new_repositories OrganizationSettings#secret_scanning_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#secret_scanning_enabled_for_new_repositories OrganizationSettings#secret_scanning_enabled_for_new_repositories}
 
 ---
 
@@ -1906,7 +1906,7 @@ public readonly secretScanningPushProtectionEnabledForNewRepositories: boolean |
 
 Whether or not secret scanning push protection is enabled for new repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#secret_scanning_push_protection_enabled_for_new_repositories OrganizationSettings#secret_scanning_push_protection_enabled_for_new_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#secret_scanning_push_protection_enabled_for_new_repositories OrganizationSettings#secret_scanning_push_protection_enabled_for_new_repositories}
 
 ---
 
@@ -1920,7 +1920,7 @@ public readonly twitterUsername: string;
 
 The Twitter username for the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#twitter_username OrganizationSettings#twitter_username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#twitter_username OrganizationSettings#twitter_username}
 
 ---
 
@@ -1934,7 +1934,7 @@ public readonly webCommitSignoffRequired: boolean | IResolvable;
 
 Whether or not commit signatures are required for commits to the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_settings#web_commit_signoff_required OrganizationSettings#web_commit_signoff_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_settings#web_commit_signoff_required OrganizationSettings#web_commit_signoff_required}
 
 ---
 
