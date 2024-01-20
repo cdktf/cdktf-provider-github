@@ -4,12 +4,12 @@
 
 ### OrganizationBlock <a name="OrganizationBlock" id="@cdktf/provider-github.organizationBlock.OrganizationBlock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_block github_organization_block}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_block github_organization_block}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.NewOrganizationBlock(scope Construct, id *string, config OrganizationBlockConfig) OrganizationBlock
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.OrganizationBlock_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.OrganizationBlock_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ organizationblock.OrganizationBlock_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.OrganizationBlock_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ organizationblock.OrganizationBlock_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.organizationBlock.OrganizationBlock.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 organizationblock.OrganizationBlock_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the OrganizationBlock to impor
 
 The id of the existing OrganizationBlock that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_block#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_block#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -729,7 +729,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationblock"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationblock"
 
 &organizationblock.OrganizationBlockConfig {
 	Connection: interface{},
@@ -756,7 +756,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationblock"
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.username">Username</a></code> | <code>*string</code> | The name of the user to block. |
-| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_block#id OrganizationBlock#id}. |
+| <code><a href="#@cdktf/provider-github.organizationBlock.OrganizationBlockConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_block#id OrganizationBlock#id}. |
 
 ---
 
@@ -840,7 +840,7 @@ Username *string
 
 The name of the user to block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_block#username OrganizationBlock#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_block#username OrganizationBlock#username}
 
 ---
 
@@ -852,7 +852,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.44.0/docs/resources/organization_block#id OrganizationBlock#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_block#id OrganizationBlock#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
