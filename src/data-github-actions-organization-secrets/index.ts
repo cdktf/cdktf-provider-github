@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/actions_organization_secrets
 // generated from terraform resource schema
 
