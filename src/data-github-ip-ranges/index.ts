@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ip_ranges
+// https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/ip_ranges
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubIpRangesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ip_ranges#id DataGithubIpRanges#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/ip_ranges#id DataGithubIpRanges#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGithubIpRangesConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ip_ranges github_ip_ranges}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/ip_ranges github_ip_ranges}
 */
 export class DataGithubIpRanges extends cdktf.TerraformDataSource {
 
@@ -38,7 +38,7 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGithubIpRanges resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubIpRanges to import
-  * @param importFromId The id of the existing DataGithubIpRanges that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubIpRanges that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubIpRanges to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -50,7 +50,7 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/ip_ranges github_ip_ranges} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/ip_ranges github_ip_ranges} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -61,8 +61,8 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_ip_ranges',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.45.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -183,6 +183,21 @@ export class DataGithubIpRanges extends cdktf.TerraformDataSource {
   // importer_ipv6 - computed: true, optional: false, required: false
   public get importerIpv6() {
     return this.getListAttribute('importer_ipv6');
+  }
+
+  // packages - computed: true, optional: false, required: false
+  public get packages() {
+    return this.getListAttribute('packages');
+  }
+
+  // packages_ipv4 - computed: true, optional: false, required: false
+  public get packagesIpv4() {
+    return this.getListAttribute('packages_ipv4');
+  }
+
+  // packages_ipv6 - computed: true, optional: false, required: false
+  public get packagesIpv6() {
+    return this.getListAttribute('packages_ipv6');
   }
 
   // pages - computed: true, optional: false, required: false

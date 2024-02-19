@@ -4,12 +4,12 @@
 
 ### DataGithubRestApi <a name="DataGithubRestApi" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/rest_api github_rest_api}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/rest_api github_rest_api}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrestapi"
 
 datagithubrestapi.NewDataGithubRestApi(scope Construct, id *string, config DataGithubRestApiConfig) DataGithubRestApi
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubrestapi.DataGithubRestApi_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubrestapi.DataGithubRestApi_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrestapi"
 
 datagithubrestapi.DataGithubRestApi_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubRestApi to impor
 
 The id of the existing DataGithubRestApi that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/rest_api#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/rest_api#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -400,9 +400,9 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.body">Body</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.body">Body</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.code">Code</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.headers">Headers</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.headers">Headers</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.endpointInput">EndpointInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
@@ -536,10 +536,10 @@ func Provider() TerraformProvider
 ##### `Body`<sup>Required</sup> <a name="Body" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.body"></a>
 
 ```go
-func Body() StringMap
+func Body() *string
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
+- *Type:* *string
 
 ---
 
@@ -556,10 +556,10 @@ func Code() *f64
 ##### `Headers`<sup>Required</sup> <a name="Headers" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApi.property.headers"></a>
 
 ```go
-func Headers() StringMap
+func Headers() *string
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
+- *Type:* *string
 
 ---
 
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrestapi"
 
 &datagithubrestapi.DataGithubRestApiConfig {
 	Connection: interface{},
@@ -664,8 +664,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/datagithubrestapi"
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/rest_api#id DataGithubRestApi#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.endpoint">Endpoint</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRestApi.DataGithubRestApiConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/rest_api#id DataGithubRestApi#id}. |
 
 ---
 
@@ -747,7 +747,7 @@ Endpoint *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/rest_api#endpoint DataGithubRestApi#endpoint}.
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/rest_api#id DataGithubRestApi#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/rest_api#id DataGithubRestApi#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

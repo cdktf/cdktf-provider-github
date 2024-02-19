@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for integrations/github provider version 5.45.0
+# CDKTF prebuilt bindings for integrations/github provider version 6.0.0
 
-This repo builds and publishes the [Terraform github provider](https://registry.terraform.io/providers/integrations/github/5.45.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform github provider](https://registry.terraform.io/providers/integrations/github/6.0.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -58,12 +58,12 @@ You can also visit a hosted version of the documentation on [constructs.dev](htt
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform github provider version 1:1. In fact, it always tracks `latest` of `~> 5.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdk.tf/imports).
+This project is explicitly not tracking the Terraform github provider version 1:1. In fact, it always tracks `latest` of `~> 6.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdk.tf/imports).
 
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform github provider](https://registry.terraform.io/providers/integrations/github/5.45.0)
+- [Terraform github provider](https://registry.terraform.io/providers/integrations/github/6.0.0)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

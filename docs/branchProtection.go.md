@@ -4,12 +4,12 @@
 
 ### BranchProtection <a name="BranchProtection" id="@cdktf/provider-github.branchProtection.BranchProtection"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection github_branch_protection}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection github_branch_protection}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.NewBranchProtection(scope Construct, id *string, config BranchProtectionConfig) BranchProtection
 ```
@@ -75,19 +75,19 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.putRequiredPullRequestReviews">PutRequiredPullRequestReviews</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.putRequiredStatusChecks">PutRequiredStatusChecks</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.putRestrictPushes">PutRestrictPushes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetAllowsDeletions">ResetAllowsDeletions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetAllowsForcePushes">ResetAllowsForcePushes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetBlocksCreations">ResetBlocksCreations</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetEnforceAdmins">ResetEnforceAdmins</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetForcePushBypassers">ResetForcePushBypassers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetLockBranch">ResetLockBranch</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetPushRestrictions">ResetPushRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetRequireConversationResolution">ResetRequireConversationResolution</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetRequiredLinearHistory">ResetRequiredLinearHistory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetRequiredPullRequestReviews">ResetRequiredPullRequestReviews</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetRequiredStatusChecks">ResetRequiredStatusChecks</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetRequireSignedCommits">ResetRequireSignedCommits</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.resetRestrictPushes">ResetRestrictPushes</a></code> | *No description.* |
 
 ---
 
@@ -403,6 +403,18 @@ func PutRequiredStatusChecks(value interface{})
 
 ---
 
+##### `PutRestrictPushes` <a name="PutRestrictPushes" id="@cdktf/provider-github.branchProtection.BranchProtection.putRestrictPushes"></a>
+
+```go
+func PutRestrictPushes(value interface{})
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-github.branchProtection.BranchProtection.putRestrictPushes.parameter.value"></a>
+
+- *Type:* interface{}
+
+---
+
 ##### `ResetAllowsDeletions` <a name="ResetAllowsDeletions" id="@cdktf/provider-github.branchProtection.BranchProtection.resetAllowsDeletions"></a>
 
 ```go
@@ -413,12 +425,6 @@ func ResetAllowsDeletions()
 
 ```go
 func ResetAllowsForcePushes()
-```
-
-##### `ResetBlocksCreations` <a name="ResetBlocksCreations" id="@cdktf/provider-github.branchProtection.BranchProtection.resetBlocksCreations"></a>
-
-```go
-func ResetBlocksCreations()
 ```
 
 ##### `ResetEnforceAdmins` <a name="ResetEnforceAdmins" id="@cdktf/provider-github.branchProtection.BranchProtection.resetEnforceAdmins"></a>
@@ -443,12 +449,6 @@ func ResetId()
 
 ```go
 func ResetLockBranch()
-```
-
-##### `ResetPushRestrictions` <a name="ResetPushRestrictions" id="@cdktf/provider-github.branchProtection.BranchProtection.resetPushRestrictions"></a>
-
-```go
-func ResetPushRestrictions()
 ```
 
 ##### `ResetRequireConversationResolution` <a name="ResetRequireConversationResolution" id="@cdktf/provider-github.branchProtection.BranchProtection.resetRequireConversationResolution"></a>
@@ -481,6 +481,12 @@ func ResetRequiredStatusChecks()
 func ResetRequireSignedCommits()
 ```
 
+##### `ResetRestrictPushes` <a name="ResetRestrictPushes" id="@cdktf/provider-github.branchProtection.BranchProtection.resetRestrictPushes"></a>
+
+```go
+func ResetRestrictPushes()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -495,7 +501,7 @@ func ResetRequireSignedCommits()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.branchProtection.BranchProtection.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.BranchProtection_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.branchProtection.BranchProtection.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.BranchProtection_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +547,7 @@ branchprotection.BranchProtection_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.branchProtection.BranchProtection.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.BranchProtection_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +561,7 @@ branchprotection.BranchProtection_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.branchProtection.BranchProtection.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.BranchProtection_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -584,7 +590,7 @@ The construct id used in the generated config for the BranchProtection to import
 
 The id of the existing BranchProtection that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,30 +622,28 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredPullRequestReviews">RequiredPullRequestReviews</a></code> | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList">BranchProtectionRequiredPullRequestReviewsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredStatusChecks">RequiredStatusChecks</a></code> | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList">BranchProtectionRequiredStatusChecksList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.restrictPushes">RestrictPushes</a></code> | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList">BranchProtectionRestrictPushesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletionsInput">AllowsDeletionsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsForcePushesInput">AllowsForcePushesInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.blocksCreationsInput">BlocksCreationsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.enforceAdminsInput">EnforceAdminsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.forcePushBypassersInput">ForcePushBypassersInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.lockBranchInput">LockBranchInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.patternInput">PatternInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.pushRestrictionsInput">PushRestrictionsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.repositoryIdInput">RepositoryIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireConversationResolutionInput">RequireConversationResolutionInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredLinearHistoryInput">RequiredLinearHistoryInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredPullRequestReviewsInput">RequiredPullRequestReviewsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredStatusChecksInput">RequiredStatusChecksInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireSignedCommitsInput">RequireSignedCommitsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.restrictPushesInput">RestrictPushesInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletions">AllowsDeletions</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsForcePushes">AllowsForcePushes</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.blocksCreations">BlocksCreations</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.enforceAdmins">EnforceAdmins</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.forcePushBypassers">ForcePushBypassers</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.lockBranch">LockBranch</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.pattern">Pattern</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.pushRestrictions">PushRestrictions</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireConversationResolution">RequireConversationResolution</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredLinearHistory">RequiredLinearHistory</a></code> | <code>interface{}</code> | *No description.* |
@@ -809,6 +813,16 @@ func RequiredStatusChecks() BranchProtectionRequiredStatusChecksList
 
 ---
 
+##### `RestrictPushes`<sup>Required</sup> <a name="RestrictPushes" id="@cdktf/provider-github.branchProtection.BranchProtection.property.restrictPushes"></a>
+
+```go
+func RestrictPushes() BranchProtectionRestrictPushesList
+```
+
+- *Type:* <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList">BranchProtectionRestrictPushesList</a>
+
+---
+
 ##### `AllowsDeletionsInput`<sup>Optional</sup> <a name="AllowsDeletionsInput" id="@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletionsInput"></a>
 
 ```go
@@ -823,16 +837,6 @@ func AllowsDeletionsInput() interface{}
 
 ```go
 func AllowsForcePushesInput() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `BlocksCreationsInput`<sup>Optional</sup> <a name="BlocksCreationsInput" id="@cdktf/provider-github.branchProtection.BranchProtection.property.blocksCreationsInput"></a>
-
-```go
-func BlocksCreationsInput() interface{}
 ```
 
 - *Type:* interface{}
@@ -886,16 +890,6 @@ func PatternInput() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `PushRestrictionsInput`<sup>Optional</sup> <a name="PushRestrictionsInput" id="@cdktf/provider-github.branchProtection.BranchProtection.property.pushRestrictionsInput"></a>
-
-```go
-func PushRestrictionsInput() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -959,6 +953,16 @@ func RequireSignedCommitsInput() interface{}
 
 ---
 
+##### `RestrictPushesInput`<sup>Optional</sup> <a name="RestrictPushesInput" id="@cdktf/provider-github.branchProtection.BranchProtection.property.restrictPushesInput"></a>
+
+```go
+func RestrictPushesInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `AllowsDeletions`<sup>Required</sup> <a name="AllowsDeletions" id="@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletions"></a>
 
 ```go
@@ -973,16 +977,6 @@ func AllowsDeletions() interface{}
 
 ```go
 func AllowsForcePushes() interface{}
-```
-
-- *Type:* interface{}
-
----
-
-##### `BlocksCreations`<sup>Required</sup> <a name="BlocksCreations" id="@cdktf/provider-github.branchProtection.BranchProtection.property.blocksCreations"></a>
-
-```go
-func BlocksCreations() interface{}
 ```
 
 - *Type:* interface{}
@@ -1036,16 +1030,6 @@ func Pattern() *string
 ```
 
 - *Type:* *string
-
----
-
-##### `PushRestrictions`<sup>Required</sup> <a name="PushRestrictions" id="@cdktf/provider-github.branchProtection.BranchProtection.property.pushRestrictions"></a>
-
-```go
-func PushRestrictions() *[]*string
-```
-
-- *Type:* *[]*string
 
 ---
 
@@ -1114,7 +1098,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 &branchprotection.BranchProtectionConfig {
 	Connection: interface{},
@@ -1128,17 +1112,16 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 	RepositoryId: *string,
 	AllowsDeletions: interface{},
 	AllowsForcePushes: interface{},
-	BlocksCreations: interface{},
 	EnforceAdmins: interface{},
 	ForcePushBypassers: *[]*string,
 	Id: *string,
 	LockBranch: interface{},
-	PushRestrictions: *[]*string,
 	RequireConversationResolution: interface{},
 	RequiredLinearHistory: interface{},
 	RequiredPullRequestReviews: interface{},
 	RequiredStatusChecks: interface{},
 	RequireSignedCommits: interface{},
+	RestrictPushes: interface{},
 }
 ```
 
@@ -1157,17 +1140,16 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | The name or node ID of the repository associated with this branch protection rule. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.allowsDeletions">AllowsDeletions</a></code> | <code>interface{}</code> | Setting this to 'true' to allow the branch to be deleted. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.allowsForcePushes">AllowsForcePushes</a></code> | <code>interface{}</code> | Setting this to 'true' to allow force pushes on the branch. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.blocksCreations">BlocksCreations</a></code> | <code>interface{}</code> | Setting this to 'true' to block creating the branch. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.enforceAdmins">EnforceAdmins</a></code> | <code>interface{}</code> | Setting this to 'true' enforces status checks for repository administrators. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.forcePushBypassers">ForcePushBypassers</a></code> | <code>*[]*string</code> | The list of actor Names/IDs that are allowed to bypass force push restrictions. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#id BranchProtection#id}. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#id BranchProtection#id}. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.lockBranch">LockBranch</a></code> | <code>interface{}</code> | Setting this to 'true' will make the branch read-only and preventing any pushes to it. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.pushRestrictions">PushRestrictions</a></code> | <code>*[]*string</code> | The list of actor Names/IDs that may push to the branch. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireConversationResolution">RequireConversationResolution</a></code> | <code>interface{}</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredLinearHistory">RequiredLinearHistory</a></code> | <code>interface{}</code> | Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredPullRequestReviews">RequiredPullRequestReviews</a></code> | <code>interface{}</code> | required_pull_request_reviews block. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredStatusChecks">RequiredStatusChecks</a></code> | <code>interface{}</code> | required_status_checks block. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireSignedCommits">RequireSignedCommits</a></code> | <code>interface{}</code> | Setting this to 'true' requires all commits to be signed with GPG. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.restrictPushes">RestrictPushes</a></code> | <code>interface{}</code> | restrict_pushes block. |
 
 ---
 
@@ -1251,7 +1233,7 @@ Pattern *string
 
 Identifies the protection rule pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#pattern BranchProtection#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#pattern BranchProtection#pattern}
 
 ---
 
@@ -1265,7 +1247,7 @@ RepositoryId *string
 
 The name or node ID of the repository associated with this branch protection rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#repository_id BranchProtection#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#repository_id BranchProtection#repository_id}
 
 ---
 
@@ -1279,7 +1261,7 @@ AllowsDeletions interface{}
 
 Setting this to 'true' to allow the branch to be deleted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#allows_deletions BranchProtection#allows_deletions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#allows_deletions BranchProtection#allows_deletions}
 
 ---
 
@@ -1293,21 +1275,7 @@ AllowsForcePushes interface{}
 
 Setting this to 'true' to allow force pushes on the branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}
-
----
-
-##### `BlocksCreations`<sup>Optional</sup> <a name="BlocksCreations" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.blocksCreations"></a>
-
-```go
-BlocksCreations interface{}
-```
-
-- *Type:* interface{}
-
-Setting this to 'true' to block creating the branch.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#blocks_creations BranchProtection#blocks_creations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#allows_force_pushes BranchProtection#allows_force_pushes}
 
 ---
 
@@ -1321,7 +1289,7 @@ EnforceAdmins interface{}
 
 Setting this to 'true' enforces status checks for repository administrators.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#enforce_admins BranchProtection#enforce_admins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#enforce_admins BranchProtection#enforce_admins}
 
 ---
 
@@ -1337,7 +1305,7 @@ The list of actor Names/IDs that are allowed to bypass force push restrictions.
 
 Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#force_push_bypassers BranchProtection#force_push_bypassers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#force_push_bypassers BranchProtection#force_push_bypassers}
 
 ---
 
@@ -1349,7 +1317,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#id BranchProtection#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#id BranchProtection#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1366,23 +1334,7 @@ LockBranch interface{}
 
 Setting this to 'true' will make the branch read-only and preventing any pushes to it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#lock_branch BranchProtection#lock_branch}
-
----
-
-##### `PushRestrictions`<sup>Optional</sup> <a name="PushRestrictions" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.pushRestrictions"></a>
-
-```go
-PushRestrictions *[]*string
-```
-
-- *Type:* *[]*string
-
-The list of actor Names/IDs that may push to the branch.
-
-Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#push_restrictions BranchProtection#push_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#lock_branch BranchProtection#lock_branch}
 
 ---
 
@@ -1396,7 +1348,7 @@ RequireConversationResolution interface{}
 
 Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#require_conversation_resolution BranchProtection#require_conversation_resolution}
 
 ---
 
@@ -1410,7 +1362,7 @@ RequiredLinearHistory interface{}
 
 Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#required_linear_history BranchProtection#required_linear_history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#required_linear_history BranchProtection#required_linear_history}
 
 ---
 
@@ -1424,7 +1376,7 @@ RequiredPullRequestReviews interface{}
 
 required_pull_request_reviews block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#required_pull_request_reviews BranchProtection#required_pull_request_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#required_pull_request_reviews BranchProtection#required_pull_request_reviews}
 
 ---
 
@@ -1438,7 +1390,7 @@ RequiredStatusChecks interface{}
 
 required_status_checks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#required_status_checks BranchProtection#required_status_checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#required_status_checks BranchProtection#required_status_checks}
 
 ---
 
@@ -1452,7 +1404,21 @@ RequireSignedCommits interface{}
 
 Setting this to 'true' requires all commits to be signed with GPG.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#require_signed_commits BranchProtection#require_signed_commits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#require_signed_commits BranchProtection#require_signed_commits}
+
+---
+
+##### `RestrictPushes`<sup>Optional</sup> <a name="RestrictPushes" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.restrictPushes"></a>
+
+```go
+RestrictPushes interface{}
+```
+
+- *Type:* interface{}
+
+restrict_pushes block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#restrict_pushes BranchProtection#restrict_pushes}
 
 ---
 
@@ -1461,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 &branchprotection.BranchProtectionRequiredPullRequestReviews {
 	DismissalRestrictions: *[]*string,
@@ -1500,7 +1466,7 @@ The list of actor Names/IDs with dismissal access.
 
 If not empty, 'restrict_dismissals' is ignored. Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#dismissal_restrictions BranchProtection#dismissal_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#dismissal_restrictions BranchProtection#dismissal_restrictions}
 
 ---
 
@@ -1514,7 +1480,7 @@ DismissStaleReviews interface{}
 
 Dismiss approved reviews automatically when a new commit is pushed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#dismiss_stale_reviews BranchProtection#dismiss_stale_reviews}
 
 ---
 
@@ -1530,7 +1496,7 @@ The list of actor Names/IDs that are allowed to bypass pull request requirements
 
 Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#pull_request_bypassers BranchProtection#pull_request_bypassers}
 
 ---
 
@@ -1544,7 +1510,7 @@ RequireCodeOwnerReviews interface{}
 
 Require an approved review in pull requests including files with a designated code owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#require_code_owner_reviews BranchProtection#require_code_owner_reviews}
 
 ---
 
@@ -1560,7 +1526,7 @@ Require 'x' number of approvals to satisfy branch protection requirements.
 
 If this is specified it must be a number between 0-6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#required_approving_review_count BranchProtection#required_approving_review_count}
 
 ---
 
@@ -1574,7 +1540,7 @@ RequireLastPushApproval interface{}
 
 Require that The most recent push must be approved by someone other than the last pusher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#require_last_push_approval BranchProtection#require_last_push_approval}
 
 ---
 
@@ -1588,7 +1554,7 @@ RestrictDismissals interface{}
 
 Restrict pull request review dismissals.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#restrict_dismissals BranchProtection#restrict_dismissals}
 
 ---
 
@@ -1597,7 +1563,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 &branchprotection.BranchProtectionRequiredStatusChecks {
 	Contexts: *[]*string,
@@ -1626,7 +1592,7 @@ The list of status checks to require in order to merge into this branch.
 
 No status checks are required by default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#contexts BranchProtection#contexts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#contexts BranchProtection#contexts}
 
 ---
 
@@ -1640,7 +1606,59 @@ Strict interface{}
 
 Require branches to be up to date before merging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/branch_protection#strict BranchProtection#strict}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#strict BranchProtection#strict}
+
+---
+
+### BranchProtectionRestrictPushes <a name="BranchProtectionRestrictPushes" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
+
+&branchprotection.BranchProtectionRestrictPushes {
+	BlocksCreations: interface{},
+	PushAllowances: *[]*string,
+}
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.property.blocksCreations">BlocksCreations</a></code> | <code>interface{}</code> | Restrict pushes that create matching branches. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.property.pushAllowances">PushAllowances</a></code> | <code>*[]*string</code> | The list of actor Names/IDs that may push to the branch. |
+
+---
+
+##### `BlocksCreations`<sup>Optional</sup> <a name="BlocksCreations" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.property.blocksCreations"></a>
+
+```go
+BlocksCreations interface{}
+```
+
+- *Type:* interface{}
+
+Restrict pushes that create matching branches.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#blocks_creations BranchProtection#blocks_creations}
+
+---
+
+##### `PushAllowances`<sup>Optional</sup> <a name="PushAllowances" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.property.pushAllowances"></a>
+
+```go
+PushAllowances *[]*string
+```
+
+- *Type:* *[]*string
+
+The list of actor Names/IDs that may push to the branch.
+
+Actor names must either begin with a '/' for users or the organization name followed by a '/' for teams.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/branch_protection#push_allowances BranchProtection#push_allowances}
 
 ---
 
@@ -1651,7 +1669,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.NewBranchProtectionRequiredPullRequestReviewsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionRequiredPullRequestReviewsList
 ```
@@ -1811,7 +1829,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.NewBranchProtectionRequiredPullRequestReviewsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchProtectionRequiredPullRequestReviewsOutputReference
 ```
@@ -2281,7 +2299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.NewBranchProtectionRequiredStatusChecksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionRequiredStatusChecksList
 ```
@@ -2441,7 +2459,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/branchprotection"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
 
 branchprotection.NewBranchProtectionRequiredStatusChecksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchProtectionRequiredStatusChecksOutputReference
 ```
@@ -2751,6 +2769,491 @@ func Strict() interface{}
 ---
 
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### BranchProtectionRestrictPushesList <a name="BranchProtectionRestrictPushesList" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
+
+branchprotection.NewBranchProtectionRestrictPushesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BranchProtectionRestrictPushesList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.get"></a>
+
+```go
+func Get(index *f64) BranchProtectionRestrictPushesOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.internalValue"></a>
+
+```go
+func InternalValue() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+
+### BranchProtectionRestrictPushesOutputReference <a name="BranchProtectionRestrictPushesOutputReference" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/branchprotection"
+
+branchprotection.NewBranchProtectionRestrictPushesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BranchProtectionRestrictPushesOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.resetBlocksCreations">ResetBlocksCreations</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.resetPushAllowances">ResetPushAllowances</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetBlocksCreations` <a name="ResetBlocksCreations" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.resetBlocksCreations"></a>
+
+```go
+func ResetBlocksCreations()
+```
+
+##### `ResetPushAllowances` <a name="ResetPushAllowances" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.resetPushAllowances"></a>
+
+```go
+func ResetPushAllowances()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreationsInput">BlocksCreationsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.pushAllowancesInput">PushAllowancesInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreations">BlocksCreations</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.pushAllowances">PushAllowances</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `BlocksCreationsInput`<sup>Optional</sup> <a name="BlocksCreationsInput" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreationsInput"></a>
+
+```go
+func BlocksCreationsInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `PushAllowancesInput`<sup>Optional</sup> <a name="PushAllowancesInput" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.pushAllowancesInput"></a>
+
+```go
+func PushAllowancesInput() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `BlocksCreations`<sup>Required</sup> <a name="BlocksCreations" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreations"></a>
+
+```go
+func BlocksCreations() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
+##### `PushAllowances`<sup>Required</sup> <a name="PushAllowances" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.pushAllowances"></a>
+
+```go
+func PushAllowances() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

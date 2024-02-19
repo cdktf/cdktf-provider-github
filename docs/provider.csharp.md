@@ -4,7 +4,7 @@
 
 ### GithubProvider <a name="GithubProvider" id="@cdktf/provider-github.provider.GithubProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs github}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs github}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.provider.GithubProvider.Initializer"></a>
 
@@ -61,10 +61,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetAppAuth">ResetAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetBaseUrl">ResetBaseUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetInsecure">ResetInsecure</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetMaxRetries">ResetMaxRetries</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetOrganization">ResetOrganization</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetOwner">ResetOwner</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetParallelRequests">ResetParallelRequests</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetReadDelayMs">ResetReadDelayMs</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetRetryableErrors">ResetRetryableErrors</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetRetryDelayMs">ResetRetryDelayMs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetToken">ResetToken</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.resetWriteDelayMs">ResetWriteDelayMs</a></code> | *No description.* |
 
@@ -164,6 +167,12 @@ private void ResetBaseUrl()
 private void ResetInsecure()
 ```
 
+##### `ResetMaxRetries` <a name="ResetMaxRetries" id="@cdktf/provider-github.provider.GithubProvider.resetMaxRetries"></a>
+
+```csharp
+private void ResetMaxRetries()
+```
+
 ##### `ResetOrganization` <a name="ResetOrganization" id="@cdktf/provider-github.provider.GithubProvider.resetOrganization"></a>
 
 ```csharp
@@ -186,6 +195,18 @@ private void ResetParallelRequests()
 
 ```csharp
 private void ResetReadDelayMs()
+```
+
+##### `ResetRetryableErrors` <a name="ResetRetryableErrors" id="@cdktf/provider-github.provider.GithubProvider.resetRetryableErrors"></a>
+
+```csharp
+private void ResetRetryableErrors()
+```
+
+##### `ResetRetryDelayMs` <a name="ResetRetryDelayMs" id="@cdktf/provider-github.provider.GithubProvider.resetRetryDelayMs"></a>
+
+```csharp
+private void ResetRetryDelayMs()
 ```
 
 ##### `ResetToken` <a name="ResetToken" id="@cdktf/provider-github.provider.GithubProvider.resetToken"></a>
@@ -303,7 +324,7 @@ The construct id used in the generated config for the GithubProvider to import.
 
 The id of the existing GithubProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -332,19 +353,25 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.appAuthInput">AppAuthInput</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.baseUrlInput">BaseUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecureInput">InsecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.maxRetriesInput">MaxRetriesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput">ParallelRequestsInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMsInput">ReadDelayMsInput</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryableErrorsInput">RetryableErrorsInput</a></code> | <code>double[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryDelayMsInput">RetryDelayMsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.tokenInput">TokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.writeDelayMsInput">WriteDelayMsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.appAuth">AppAuth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.baseUrl">BaseUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecure">Insecure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.maxRetries">MaxRetries</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequests">ParallelRequests</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMs">ReadDelayMs</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryableErrors">RetryableErrors</a></code> | <code>double[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryDelayMs">RetryDelayMs</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.token">Token</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.writeDelayMs">WriteDelayMs</a></code> | <code>double</code> | *No description.* |
 
@@ -482,6 +509,16 @@ public object InsecureInput { get; }
 
 ---
 
+##### `MaxRetriesInput`<sup>Optional</sup> <a name="MaxRetriesInput" id="@cdktf/provider-github.provider.GithubProvider.property.maxRetriesInput"></a>
+
+```csharp
+public double MaxRetriesInput { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `OrganizationInput`<sup>Optional</sup> <a name="OrganizationInput" id="@cdktf/provider-github.provider.GithubProvider.property.organizationInput"></a>
 
 ```csharp
@@ -516,6 +553,26 @@ public object ParallelRequestsInput { get; }
 
 ```csharp
 public double ReadDelayMsInput { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `RetryableErrorsInput`<sup>Optional</sup> <a name="RetryableErrorsInput" id="@cdktf/provider-github.provider.GithubProvider.property.retryableErrorsInput"></a>
+
+```csharp
+public double[] RetryableErrorsInput { get; }
+```
+
+- *Type:* double[]
+
+---
+
+##### `RetryDelayMsInput`<sup>Optional</sup> <a name="RetryDelayMsInput" id="@cdktf/provider-github.provider.GithubProvider.property.retryDelayMsInput"></a>
+
+```csharp
+public double RetryDelayMsInput { get; }
 ```
 
 - *Type:* double
@@ -572,6 +629,16 @@ public object Insecure { get; }
 
 ---
 
+##### `MaxRetries`<sup>Optional</sup> <a name="MaxRetries" id="@cdktf/provider-github.provider.GithubProvider.property.maxRetries"></a>
+
+```csharp
+public double MaxRetries { get; }
+```
+
+- *Type:* double
+
+---
+
 ##### `Organization`<sup>Optional</sup> <a name="Organization" id="@cdktf/provider-github.provider.GithubProvider.property.organization"></a>
 
 ```csharp
@@ -606,6 +673,26 @@ public object ParallelRequests { get; }
 
 ```csharp
 public double ReadDelayMs { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `RetryableErrors`<sup>Optional</sup> <a name="RetryableErrors" id="@cdktf/provider-github.provider.GithubProvider.property.retryableErrors"></a>
+
+```csharp
+public double[] RetryableErrors { get; }
+```
+
+- *Type:* double[]
+
+---
+
+##### `RetryDelayMs`<sup>Optional</sup> <a name="RetryDelayMs" id="@cdktf/provider-github.provider.GithubProvider.property.retryDelayMs"></a>
+
+```csharp
+public double RetryDelayMs { get; }
 ```
 
 - *Type:* double
@@ -686,7 +773,7 @@ public string Id { get; set; }
 
 The GitHub App ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#id GithubProvider#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#id GithubProvider#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -703,7 +790,7 @@ public string InstallationId { get; set; }
 
 The GitHub App installation instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#installation_id GithubProvider#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#installation_id GithubProvider#installation_id}
 
 ---
 
@@ -717,7 +804,7 @@ public string PemFile { get; set; }
 
 The GitHub App PEM file contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#pem_file GithubProvider#pem_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#pem_file GithubProvider#pem_file}
 
 ---
 
@@ -733,10 +820,13 @@ new GithubProviderConfig {
     GithubProviderAppAuth AppAuth = null,
     string BaseUrl = null,
     object Insecure = null,
+    double MaxRetries = null,
     string Organization = null,
     string Owner = null,
     object ParallelRequests = null,
     double ReadDelayMs = null,
+    double[] RetryableErrors = null,
+    double RetryDelayMs = null,
     string Token = null,
     double WriteDelayMs = null
 };
@@ -750,10 +840,13 @@ new GithubProviderConfig {
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.appAuth">AppAuth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | app_auth block. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.baseUrl">BaseUrl</a></code> | <code>string</code> | The GitHub Base API URL. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.insecure">Insecure</a></code> | <code>object</code> | Enable `insecure` mode for testing purposes. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.maxRetries">MaxRetries</a></code> | <code>double</code> | Number of times to retry a request after receiving an error status codeDefaults to 3. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.organization">Organization</a></code> | <code>string</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.owner">Owner</a></code> | <code>string</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests">ParallelRequests</a></code> | <code>object</code> | Allow the provider to make parallel API calls to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.readDelayMs">ReadDelayMs</a></code> | <code>double</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.retryableErrors">RetryableErrors</a></code> | <code>double[]</code> | Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504]. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.retryDelayMs">RetryDelayMs</a></code> | <code>double</code> | Amount of time in milliseconds to sleep in between requests to GitHub API after an error response. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.token">Token</a></code> | <code>string</code> | The OAuth token used to connect to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.writeDelayMs">WriteDelayMs</a></code> | <code>double</code> | Amount of time in milliseconds to sleep in between writes to GitHub API. |
 
@@ -769,7 +862,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#alias GithubProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#alias GithubProvider#alias}
 
 ---
 
@@ -783,7 +876,7 @@ public GithubProviderAppAuth AppAuth { get; set; }
 
 app_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#app_auth GithubProvider#app_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#app_auth GithubProvider#app_auth}
 
 ---
 
@@ -797,7 +890,7 @@ public string BaseUrl { get; set; }
 
 The GitHub Base API URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#base_url GithubProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#base_url GithubProvider#base_url}
 
 ---
 
@@ -811,7 +904,21 @@ public object Insecure { get; set; }
 
 Enable `insecure` mode for testing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#insecure GithubProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#insecure GithubProvider#insecure}
+
+---
+
+##### `MaxRetries`<sup>Optional</sup> <a name="MaxRetries" id="@cdktf/provider-github.provider.GithubProviderConfig.property.maxRetries"></a>
+
+```csharp
+public double MaxRetries { get; set; }
+```
+
+- *Type:* double
+
+Number of times to retry a request after receiving an error status codeDefaults to 3.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#max_retries GithubProvider#max_retries}
 
 ---
 
@@ -825,7 +932,7 @@ public string Organization { get; set; }
 
 The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#organization GithubProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#organization GithubProvider#organization}
 
 ---
 
@@ -839,7 +946,7 @@ public string Owner { get; set; }
 
 The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#owner GithubProvider#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#owner GithubProvider#owner}
 
 ---
 
@@ -855,7 +962,7 @@ Allow the provider to make parallel API calls to GitHub.
 
 You may want to set it to true when you have a private Github Enterprise without strict rate limits. Although, it is not possible to enable this setting on github.com because we enforce the respect of github.com's best practices to avoid hitting abuse rate limitsDefaults to false if not set
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#parallel_requests GithubProvider#parallel_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#parallel_requests GithubProvider#parallel_requests}
 
 ---
 
@@ -871,7 +978,37 @@ Amount of time in milliseconds to sleep in between non-write requests to GitHub 
 
 Defaults to 0ms if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#read_delay_ms GithubProvider#read_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#read_delay_ms GithubProvider#read_delay_ms}
+
+---
+
+##### `RetryableErrors`<sup>Optional</sup> <a name="RetryableErrors" id="@cdktf/provider-github.provider.GithubProviderConfig.property.retryableErrors"></a>
+
+```csharp
+public double[] RetryableErrors { get; set; }
+```
+
+- *Type:* double[]
+
+Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504].
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#retryable_errors GithubProvider#retryable_errors}
+
+---
+
+##### `RetryDelayMs`<sup>Optional</sup> <a name="RetryDelayMs" id="@cdktf/provider-github.provider.GithubProviderConfig.property.retryDelayMs"></a>
+
+```csharp
+public double RetryDelayMs { get; set; }
+```
+
+- *Type:* double
+
+Amount of time in milliseconds to sleep in between requests to GitHub API after an error response.
+
+Defaults to 1000ms or 1s if not set, the max_retries must be set to greater than zero.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#retry_delay_ms GithubProvider#retry_delay_ms}
 
 ---
 
@@ -887,7 +1024,7 @@ The OAuth token used to connect to GitHub.
 
 Anonymous mode is enabled if both `token` and `app_auth` are not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#token GithubProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#token GithubProvider#token}
 
 ---
 
@@ -903,7 +1040,7 @@ Amount of time in milliseconds to sleep in between writes to GitHub API.
 
 Defaults to 1000ms or 1s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs#write_delay_ms GithubProvider#write_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs#write_delay_ms GithubProvider#write_delay_ms}
 
 ---
 

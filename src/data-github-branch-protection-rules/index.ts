@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules
+// https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubBranchProtectionRulesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules#id DataGithubBranchProtectionRules#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules#id DataGithubBranchProtectionRules#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules#repository DataGithubBranchProtectionRules#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules#repository DataGithubBranchProtectionRules#repository}
   */
   readonly repository: string;
 }
@@ -101,7 +101,7 @@ export class DataGithubBranchProtectionRulesRulesList extends cdktf.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules github_branch_protection_rules}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules github_branch_protection_rules}
 */
 export class DataGithubBranchProtectionRules extends cdktf.TerraformDataSource {
 
@@ -117,7 +117,7 @@ export class DataGithubBranchProtectionRules extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGithubBranchProtectionRules resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubBranchProtectionRules to import
-  * @param importFromId The id of the existing DataGithubBranchProtectionRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubBranchProtectionRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubBranchProtectionRules to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -129,7 +129,7 @@ export class DataGithubBranchProtectionRules extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/data-sources/branch_protection_rules github_branch_protection_rules} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/branch_protection_rules github_branch_protection_rules} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -140,8 +140,8 @@ export class DataGithubBranchProtectionRules extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_branch_protection_rules',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.45.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
