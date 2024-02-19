@@ -4,12 +4,12 @@
 
 ### OrganizationWebhook <a name="OrganizationWebhook" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook github_organization_webhook}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook github_organization_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.NewOrganizationWebhook(scope Construct, id *string, config OrganizationWebhookConfig) OrganizationWebhook
 ```
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.resetActive">ResetActive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.resetConfiguration">ResetConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.resetName">ResetName</a></code> | *No description.* |
 
 ---
 
@@ -399,12 +398,6 @@ func ResetConfiguration()
 func ResetId()
 ```
 
-##### `ResetName` <a name="ResetName" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.resetName"></a>
-
-```go
-func ResetName()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -419,7 +412,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.OrganizationWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.OrganizationWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +458,7 @@ organizationwebhook.OrganizationWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.OrganizationWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +472,7 @@ organizationwebhook.OrganizationWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.OrganizationWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -508,7 +501,7 @@ The construct id used in the generated config for the OrganizationWebhook to imp
 
 The id of the existing OrganizationWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -545,11 +538,9 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.configurationInput">ConfigurationInput</a></code> | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfiguration">OrganizationWebhookConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.eventsInput">EventsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.active">Active</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.events">Events</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
@@ -765,16 +756,6 @@ func IdInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.nameInput"></a>
-
-```go
-func NameInput() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Active`<sup>Required</sup> <a name="Active" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.active"></a>
 
 ```go
@@ -799,16 +780,6 @@ func Events() *[]*string
 
 ```go
 func Id() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.property.name"></a>
-
-```go
-func Name() *string
 ```
 
 - *Type:* *string
@@ -840,7 +811,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 &organizationwebhook.OrganizationWebhookConfig {
 	Connection: interface{},
@@ -852,9 +823,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook
 	Provisioners: *[]interface{},
 	Events: *[]*string,
 	Active: interface{},
-	Configuration: github.com/cdktf/cdktf-provider-github-go/github/v13.organizationWebhook.OrganizationWebhookConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-github-go/github.organizationWebhook.OrganizationWebhookConfiguration,
 	Id: *string,
-	Name: *string,
 }
 ```
 
@@ -872,8 +842,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.events">Events</a></code> | <code>*[]*string</code> | A list of events which should trigger the webhook. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.active">Active</a></code> | <code>interface{}</code> | Indicate if the webhook should receive events. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfiguration">OrganizationWebhookConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#id OrganizationWebhook#id}. |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#name OrganizationWebhook#name}. |
+| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#id OrganizationWebhook#id}. |
 
 ---
 
@@ -957,7 +926,7 @@ Events *[]*string
 
 A list of events which should trigger the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#events OrganizationWebhook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#events OrganizationWebhook#events}
 
 ---
 
@@ -971,7 +940,7 @@ Active interface{}
 
 Indicate if the webhook should receive events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#active OrganizationWebhook#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#active OrganizationWebhook#active}
 
 ---
 
@@ -985,7 +954,7 @@ Configuration OrganizationWebhookConfiguration
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#configuration OrganizationWebhook#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#configuration OrganizationWebhook#configuration}
 
 ---
 
@@ -997,22 +966,10 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#id OrganizationWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#id OrganizationWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
-##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.name"></a>
-
-```go
-Name *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#name OrganizationWebhook#name}.
 
 ---
 
@@ -1021,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 &organizationwebhook.OrganizationWebhookConfiguration {
 	Url: *string,
@@ -1052,7 +1009,7 @@ Url *string
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#url OrganizationWebhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#url OrganizationWebhook#url}
 
 ---
 
@@ -1066,7 +1023,7 @@ ContentType *string
 
 The content type for the payload. Valid values are either 'form' or 'json'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#content_type OrganizationWebhook#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#content_type OrganizationWebhook#content_type}
 
 ---
 
@@ -1080,7 +1037,7 @@ InsecureSsl interface{}
 
 Insecure SSL boolean toggle. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}
 
 ---
 
@@ -1094,7 +1051,7 @@ Secret *string
 
 The shared secret for the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/organization_webhook#secret OrganizationWebhook#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/organization_webhook#secret OrganizationWebhook#secret}
 
 ---
 
@@ -1105,7 +1062,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v13/organizationwebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationwebhook"
 
 organizationwebhook.NewOrganizationWebhookConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OrganizationWebhookConfigurationOutputReference
 ```

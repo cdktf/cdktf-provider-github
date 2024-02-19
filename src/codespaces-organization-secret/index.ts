@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret
+// https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface CodespacesOrganizationSecretConfig extends cdktf.TerraformMetaA
   /**
   * Encrypted value of the secret using the GitHub public key in Base64 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret#encrypted_value CodespacesOrganizationSecret#encrypted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret#encrypted_value CodespacesOrganizationSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret#id CodespacesOrganizationSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret#id CodespacesOrganizationSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +23,31 @@ export interface CodespacesOrganizationSecretConfig extends cdktf.TerraformMetaA
   /**
   * Plaintext value of the secret to be encrypted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret#plaintext_value CodespacesOrganizationSecret#plaintext_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret#plaintext_value CodespacesOrganizationSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
   * Name of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret#secret_name CodespacesOrganizationSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret#secret_name CodespacesOrganizationSecret#secret_name}
   */
   readonly secretName: string;
   /**
   * An array of repository ids that can access the organization secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret#selected_repository_ids CodespacesOrganizationSecret#selected_repository_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret#selected_repository_ids CodespacesOrganizationSecret#selected_repository_ids}
   */
   readonly selectedRepositoryIds?: number[];
   /**
   * Configures the access that repositories have to the organization secret. Must be one of 'all', 'private' or 'selected'. 'selected_repository_ids' is required if set to 'selected'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret#visibility CodespacesOrganizationSecret#visibility}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret#visibility CodespacesOrganizationSecret#visibility}
   */
   readonly visibility: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret github_codespaces_organization_secret}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret github_codespaces_organization_secret}
 */
 export class CodespacesOrganizationSecret extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class CodespacesOrganizationSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CodespacesOrganizationSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CodespacesOrganizationSecret to import
-  * @param importFromId The id of the existing CodespacesOrganizationSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CodespacesOrganizationSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CodespacesOrganizationSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class CodespacesOrganizationSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/5.45.0/docs/resources/codespaces_organization_secret github_codespaces_organization_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/codespaces_organization_secret github_codespaces_organization_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,8 +86,8 @@ export class CodespacesOrganizationSecret extends cdktf.TerraformResource {
       terraformResourceType: 'github_codespaces_organization_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '5.45.0',
-        providerVersionConstraint: '~> 5.0'
+        providerVersion: '6.0.0',
+        providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
