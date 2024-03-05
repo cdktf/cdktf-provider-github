@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_environment_deployment_policy
+// https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_environment_deployment_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface RepositoryEnvironmentDeploymentPolicyConfig extends cdktf.Terra
   /**
   * The name pattern that branches must match in order to deploy to the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_environment_deployment_policy#branch_pattern RepositoryEnvironmentDeploymentPolicy#branch_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_environment_deployment_policy#branch_pattern RepositoryEnvironmentDeploymentPolicy#branch_pattern}
   */
   readonly branchPattern: string;
   /**
   * The name of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_environment_deployment_policy#environment RepositoryEnvironmentDeploymentPolicy#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_environment_deployment_policy#environment RepositoryEnvironmentDeploymentPolicy#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_environment_deployment_policy#id RepositoryEnvironmentDeploymentPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_environment_deployment_policy#id RepositoryEnvironmentDeploymentPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +29,13 @@ export interface RepositoryEnvironmentDeploymentPolicyConfig extends cdktf.Terra
   /**
   * The name of the repository. The name is not case sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_environment_deployment_policy#repository RepositoryEnvironmentDeploymentPolicy#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_environment_deployment_policy#repository RepositoryEnvironmentDeploymentPolicy#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy}
 */
 export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
   * Generates CDKTF code for importing a RepositoryEnvironmentDeploymentPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RepositoryEnvironmentDeploymentPolicy to import
-  * @param importFromId The id of the existing RepositoryEnvironmentDeploymentPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_environment_deployment_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RepositoryEnvironmentDeploymentPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_environment_deployment_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RepositoryEnvironmentDeploymentPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
       terraformResourceType: 'github_repository_environment_deployment_policy',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.0.0',
+        providerVersion: '6.0.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

@@ -4,12 +4,12 @@
 
 ### DataGithubRelease <a name="DataGithubRelease" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release github_release}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release github_release}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 datagithubrelease.NewDataGithubRelease(scope Construct, id *string, config DataGithubReleaseConfig) DataGithubRelease
 ```
@@ -297,7 +297,7 @@ func ResetReleaseTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 datagithubrelease.DataGithubRelease_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 datagithubrelease.DataGithubRelease_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubrelease.DataGithubRelease_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 datagithubrelease.DataGithubRelease_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagithubrelease.DataGithubRelease_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRelease.DataGithubRelease.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 datagithubrelease.DataGithubRelease_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGithubRelease to impor
 
 The id of the existing DataGithubRelease that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,7 +861,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 &datagithubrelease.DataGithubReleaseAssets {
 
@@ -874,7 +874,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 &datagithubrelease.DataGithubReleaseConfig {
 	Connection: interface{},
@@ -904,12 +904,12 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#owner DataGithubRelease#owner}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#repository DataGithubRelease#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.retrieveBy">RetrieveBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#id DataGithubRelease#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.releaseId">ReleaseId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#release_id DataGithubRelease#release_id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.releaseTag">ReleaseTag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#release_tag DataGithubRelease#release_tag}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.owner">Owner</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#owner DataGithubRelease#owner}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#repository DataGithubRelease#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.retrieveBy">RetrieveBy</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#id DataGithubRelease#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.releaseId">ReleaseId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#release_id DataGithubRelease#release_id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRelease.DataGithubReleaseConfig.property.releaseTag">ReleaseTag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#release_tag DataGithubRelease#release_tag}. |
 
 ---
 
@@ -991,7 +991,7 @@ Owner *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#owner DataGithubRelease#owner}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#owner DataGithubRelease#owner}.
 
 ---
 
@@ -1003,7 +1003,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#repository DataGithubRelease#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#repository DataGithubRelease#repository}.
 
 ---
 
@@ -1015,7 +1015,7 @@ RetrieveBy *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#retrieve_by DataGithubRelease#retrieve_by}.
 
 ---
 
@@ -1027,7 +1027,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#id DataGithubRelease#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#id DataGithubRelease#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1042,7 @@ ReleaseId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#release_id DataGithubRelease#release_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#release_id DataGithubRelease#release_id}.
 
 ---
 
@@ -1054,7 +1054,7 @@ ReleaseTag *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/data-sources/release#release_tag DataGithubRelease#release_tag}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/release#release_tag DataGithubRelease#release_tag}.
 
 ---
 
@@ -1065,7 +1065,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 datagithubrelease.NewDataGithubReleaseAssetsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubReleaseAssetsList
 ```
@@ -1214,7 +1214,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRelease.DataGithubReleaseAssetsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrelease"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrelease"
 
 datagithubrelease.NewDataGithubReleaseAssetsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubReleaseAssetsOutputReference
 ```

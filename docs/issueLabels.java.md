@@ -4,7 +4,7 @@
 
 ### IssueLabels <a name="IssueLabels" id="@cdktf/provider-github.issueLabels.IssueLabels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels github_issue_labels}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels github_issue_labels}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabels.IssueLabels.Initializer"></a>
 
@@ -42,7 +42,7 @@ IssueLabels.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#id IssueLabels#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#id IssueLabels#id}. |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.label">label</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-github.issueLabels.IssueLabelsLabel">IssueLabelsLabel</a>></code> | label block. |
 
 ---
@@ -113,7 +113,7 @@ Must be unique amongst siblings in the same scope
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#repository IssueLabels#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#repository IssueLabels#repository}
 
 ---
 
@@ -121,7 +121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#id IssueLabels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#id IssueLabels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -134,7 +134,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#label IssueLabels#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#label IssueLabels#label}
 
 ---
 
@@ -588,7 +588,7 @@ The construct id used in the generated config for the IssueLabels to import.
 
 The id of the existing IssueLabels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -887,7 +887,7 @@ IssueLabelsConfig.builder()
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#id IssueLabels#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#id IssueLabels#id}. |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.label">label</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-github.issueLabels.IssueLabelsLabel">IssueLabelsLabel</a>></code> | label block. |
 
 ---
@@ -972,7 +972,7 @@ public java.lang.String getRepository();
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#repository IssueLabels#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#repository IssueLabels#repository}
 
 ---
 
@@ -984,7 +984,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#id IssueLabels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#id IssueLabels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1001,7 +1001,7 @@ public java.lang.Object getLabel();
 
 label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#label IssueLabels#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#label IssueLabels#label}
 
 ---
 
@@ -1039,7 +1039,7 @@ public java.lang.String getColor();
 
 A 6 character hex code, without the leading '#', identifying the color of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#color IssueLabels#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#color IssueLabels#color}
 
 ---
 
@@ -1053,7 +1053,7 @@ public java.lang.String getName();
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#name IssueLabels#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#name IssueLabels#name}
 
 ---
 
@@ -1067,7 +1067,7 @@ public java.lang.String getDescription();
 
 A short description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.0/docs/resources/issue_labels#description IssueLabels#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/issue_labels#description IssueLabels#description}
 
 ---
 
