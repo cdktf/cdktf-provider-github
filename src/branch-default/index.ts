@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/branch_default
 // generated from terraform resource schema
 
