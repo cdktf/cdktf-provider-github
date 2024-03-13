@@ -4,12 +4,12 @@
 
 ### DataGithubAppToken <a name="DataGithubAppToken" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/app_token github_app_token}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/app_token github_app_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubapptoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubapptoken"
 
 datagithubapptoken.NewDataGithubAppToken(scope Construct, id *string, config DataGithubAppTokenConfig) DataGithubAppToken
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubapptoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubapptoken"
 
 datagithubapptoken.DataGithubAppToken_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubapptoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubapptoken"
 
 datagithubapptoken.DataGithubAppToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubapptoken.DataGithubAppToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubapptoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubapptoken"
 
 datagithubapptoken.DataGithubAppToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubapptoken.DataGithubAppToken_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubapptoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubapptoken"
 
 datagithubapptoken.DataGithubAppToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubAppToken to impo
 
 The id of the existing DataGithubAppToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/app_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/app_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubapptoken"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubapptoken"
 
 &datagithubapptoken.DataGithubAppTokenConfig {
 	Connection: interface{},
@@ -680,7 +680,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubapptoken"
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.appId">AppId</a></code> | <code>*string</code> | The GitHub App ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.installationId">InstallationId</a></code> | <code>*string</code> | The GitHub App installation instance ID. |
 | <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.pemFile">PemFile</a></code> | <code>*string</code> | The GitHub App PEM file contents. |
-| <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/app_token#id DataGithubAppToken#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubAppToken.DataGithubAppTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/app_token#id DataGithubAppToken#id}. |
 
 ---
 
@@ -764,7 +764,7 @@ AppId *string
 
 The GitHub App ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/app_token#app_id DataGithubAppToken#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/app_token#app_id DataGithubAppToken#app_id}
 
 ---
 
@@ -778,7 +778,7 @@ InstallationId *string
 
 The GitHub App installation instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/app_token#installation_id DataGithubAppToken#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/app_token#installation_id DataGithubAppToken#installation_id}
 
 ---
 
@@ -792,7 +792,7 @@ PemFile *string
 
 The GitHub App PEM file contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/app_token#pem_file DataGithubAppToken#pem_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/app_token#pem_file DataGithubAppToken#pem_file}
 
 ---
 
@@ -804,7 +804,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/data-sources/app_token#id DataGithubAppToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/app_token#id DataGithubAppToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -92,6 +92,7 @@ The following submodules are available:
 - [dependabotOrganizationSecretRepositories](./dependabotOrganizationSecretRepositories.python.md)
 - [dependabotSecret](./dependabotSecret.python.md)
 - [emuGroupMapping](./emuGroupMapping.python.md)
+- [enterpriseActionsPermissions](./enterpriseActionsPermissions.python.md)
 - [enterpriseOrganization](./enterpriseOrganization.python.md)
 - [issue](./issue.python.md)
 - [issueLabel](./issueLabel.python.md)

@@ -4,12 +4,12 @@
 
 ### RepositoryPullRequest <a name="RepositoryPullRequest" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request github_repository_pull_request}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request github_repository_pull_request}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
 
 repositorypullrequest.NewRepositoryPullRequest(scope Construct, id *string, config RepositoryPullRequestConfig) RepositoryPullRequest
 ```
@@ -406,7 +406,7 @@ func ResetOwner()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
 
 repositorypullrequest.RepositoryPullRequest_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
 
 repositorypullrequest.RepositoryPullRequest_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ repositorypullrequest.RepositoryPullRequest_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
 
 repositorypullrequest.RepositoryPullRequest_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ repositorypullrequest.RepositoryPullRequest_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
 
 repositorypullrequest.RepositoryPullRequest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the RepositoryPullRequest to i
 
 The id of the existing RepositoryPullRequest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
 
 &repositorypullrequest.RepositoryPullRequestConfig {
 	Connection: interface{},
@@ -1007,7 +1007,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullreque
 | <code><a href="#@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.property.headRef">HeadRef</a></code> | <code>*string</code> | Name of the branch serving as the head of the Pull Request. |
 | <code><a href="#@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.property.title">Title</a></code> | <code>*string</code> | The title of the Pull Request. |
 | <code><a href="#@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.property.body">Body</a></code> | <code>*string</code> | Body of the Pull Request. |
-| <code><a href="#@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#id RepositoryPullRequest#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#id RepositoryPullRequest#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.property.maintainerCanModify">MaintainerCanModify</a></code> | <code>interface{}</code> | Controls whether the base repository maintainers can modify the Pull Request. Default: 'false'. |
 | <code><a href="#@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.property.owner">Owner</a></code> | <code>*string</code> | Owner of the repository. If not provided, the provider's default owner is used. |
 
@@ -1093,7 +1093,7 @@ BaseRef *string
 
 Name of the branch serving as the base of the Pull Request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#base_ref RepositoryPullRequest#base_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#base_ref RepositoryPullRequest#base_ref}
 
 ---
 
@@ -1107,7 +1107,7 @@ BaseRepository *string
 
 Name of the base repository to retrieve the Pull Requests from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#base_repository RepositoryPullRequest#base_repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#base_repository RepositoryPullRequest#base_repository}
 
 ---
 
@@ -1121,7 +1121,7 @@ HeadRef *string
 
 Name of the branch serving as the head of the Pull Request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#head_ref RepositoryPullRequest#head_ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#head_ref RepositoryPullRequest#head_ref}
 
 ---
 
@@ -1135,7 +1135,7 @@ Title *string
 
 The title of the Pull Request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#title RepositoryPullRequest#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#title RepositoryPullRequest#title}
 
 ---
 
@@ -1149,7 +1149,7 @@ Body *string
 
 Body of the Pull Request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#body RepositoryPullRequest#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#body RepositoryPullRequest#body}
 
 ---
 
@@ -1161,7 +1161,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#id RepositoryPullRequest#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#id RepositoryPullRequest#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1178,7 +1178,7 @@ MaintainerCanModify interface{}
 
 Controls whether the base repository maintainers can modify the Pull Request. Default: 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#maintainer_can_modify RepositoryPullRequest#maintainer_can_modify}
 
 ---
 
@@ -1192,7 +1192,7 @@ Owner *string
 
 Owner of the repository. If not provided, the provider's default owner is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/repository_pull_request#owner RepositoryPullRequest#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/repository_pull_request#owner RepositoryPullRequest#owner}
 
 ---
 
