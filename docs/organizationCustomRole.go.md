@@ -4,7 +4,7 @@
 
 ### OrganizationCustomRole <a name="OrganizationCustomRole" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/organization_custom_role github_organization_custom_role}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role github_organization_custom_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationCustomRole.OrganizationCustomRole.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the OrganizationCustomRole to 
 
 The id of the existing OrganizationCustomRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/organization_custom_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/organizationcustomr
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.name">Name</a></code> | <code>*string</code> | The organization custom repository role to create. |
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.permissions">Permissions</a></code> | <code>*[]*string</code> | The permissions for the custom repository role. |
 | <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.description">Description</a></code> | <code>*string</code> | The description of the custom repository role. |
-| <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/organization_custom_role#id OrganizationCustomRole#id}. |
+| <code><a href="#@cdktf/provider-github.organizationCustomRole.OrganizationCustomRoleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}. |
 
 ---
 
@@ -908,7 +908,7 @@ BaseRole *string
 
 The base role for the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
 
 ---
 
@@ -922,7 +922,7 @@ Name *string
 
 The organization custom repository role to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
 
 ---
 
@@ -936,7 +936,7 @@ Permissions *[]*string
 
 The permissions for the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
 
 ---
 
@@ -950,7 +950,7 @@ Description *string
 
 The description of the custom repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
 
 ---
 
@@ -962,7 +962,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.0.1/docs/resources/organization_custom_role#id OrganizationCustomRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

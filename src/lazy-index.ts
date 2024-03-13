@@ -31,6 +31,7 @@ Object.defineProperty(exports, 'dependabotOrganizationSecret', { get: function (
 Object.defineProperty(exports, 'dependabotOrganizationSecretRepositories', { get: function () { return require('./dependabot-organization-secret-repositories'); } });
 Object.defineProperty(exports, 'dependabotSecret', { get: function () { return require('./dependabot-secret'); } });
 Object.defineProperty(exports, 'emuGroupMapping', { get: function () { return require('./emu-group-mapping'); } });
+Object.defineProperty(exports, 'enterpriseActionsPermissions', { get: function () { return require('./enterprise-actions-permissions'); } });
 Object.defineProperty(exports, 'enterpriseOrganization', { get: function () { return require('./enterprise-organization'); } });
 Object.defineProperty(exports, 'issue', { get: function () { return require('./issue'); } });
 Object.defineProperty(exports, 'issueLabel', { get: function () { return require('./issue-label'); } });
