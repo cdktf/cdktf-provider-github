@@ -93,6 +93,7 @@ The following submodules are available:
 - [dependabotSecret](./dependabotSecret.csharp.md)
 - [emuGroupMapping](./emuGroupMapping.csharp.md)
 - [enterpriseActionsPermissions](./enterpriseActionsPermissions.csharp.md)
+- [enterpriseActionsRunnerGroup](./enterpriseActionsRunnerGroup.csharp.md)
 - [enterpriseOrganization](./enterpriseOrganization.csharp.md)
 - [issue](./issue.csharp.md)
 - [issueLabel](./issueLabel.csharp.md)

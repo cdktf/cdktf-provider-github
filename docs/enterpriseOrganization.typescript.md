@@ -4,7 +4,7 @@
 
 ### EnterpriseOrganization <a name="EnterpriseOrganization" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization github_enterprise_organization}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization github_enterprise_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.resetDisplayName">resetDisplayName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.resetId">resetId</a></code> | *No description.* |
 
 ---
 
@@ -379,12 +378,6 @@ public resetDescription(): void
 public resetDisplayName(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.resetId"></a>
-
-```typescript
-public resetId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -488,7 +481,7 @@ The construct id used in the generated config for the EnterpriseOrganization to 
 
 The id of the existing EnterpriseOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,19 +511,19 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.databaseId">databaseId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.adminLoginsInput">adminLoginsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.billingEmailInput">billingEmailInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.enterpriseIdInput">enterpriseIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.adminLogins">adminLogins</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.billingEmail">billingEmail</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.enterpriseId">enterpriseId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.name">name</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -677,6 +670,26 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `databaseId`<sup>Required</sup> <a name="databaseId" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.databaseId"></a>
+
+```typescript
+public readonly databaseId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `adminLoginsInput`<sup>Optional</sup> <a name="adminLoginsInput" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.adminLoginsInput"></a>
 
 ```typescript
@@ -721,16 +734,6 @@ public readonly displayNameInput: string;
 
 ```typescript
 public readonly enterpriseIdInput: string;
-```
-
-- *Type:* string
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.idInput"></a>
-
-```typescript
-public readonly idInput: string;
 ```
 
 - *Type:* string
@@ -797,16 +800,6 @@ public readonly enterpriseId: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.name"></a>
 
 ```typescript
@@ -864,7 +857,6 @@ const enterpriseOrganizationConfig: enterpriseOrganization.EnterpriseOrganizatio
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.name">name</a></code> | <code>string</code> | The name of the organization. |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.description">description</a></code> | <code>string</code> | The description of the organization. |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.displayName">displayName</a></code> | <code>string</code> | The display name of the organization. |
-| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#id EnterpriseOrganization#id}. |
 
 ---
 
@@ -948,7 +940,7 @@ public readonly adminLogins: string[];
 
 List of organization owner usernames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
 
 ---
 
@@ -962,7 +954,7 @@ public readonly billingEmail: string;
 
 The billing email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
 
 ---
 
@@ -976,7 +968,7 @@ public readonly enterpriseId: string;
 
 The ID of the enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
 
 ---
 
@@ -990,7 +982,7 @@ public readonly name: string;
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
 
 ---
 
@@ -1004,7 +996,7 @@ public readonly description: string;
 
 The description of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
 
 ---
 
@@ -1018,22 +1010,7 @@ public readonly displayName: string;
 
 The display name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.id"></a>
-
-```typescript
-public readonly id: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#id EnterpriseOrganization#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
 
 ---
 

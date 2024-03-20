@@ -4,7 +4,7 @@
 
 ### ActionsSecret <a name="ActionsSecret" id="@cdktf/provider-github.actionsSecret.ActionsSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret github_actions_secret}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret github_actions_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer"></a>
 
@@ -43,7 +43,7 @@ actionsSecret.ActionsSecret(
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer.parameter.repository">repository</a></code> | <code>str</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer.parameter.secretName">secret_name</a></code> | <code>str</code> | Name of the secret. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer.parameter.encryptedValue">encrypted_value</a></code> | <code>str</code> | Encrypted value of the secret using the GitHub public key in Base64 format. |
-| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#id ActionsSecret#id}. |
+| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#id ActionsSecret#id}. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecret.Initializer.parameter.plaintextValue">plaintext_value</a></code> | <code>str</code> | Plaintext value of the secret to be encrypted. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#repository ActionsSecret#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#repository ActionsSecret#repository}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#secret_name ActionsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#secret_name ActionsSecret#secret_name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Encrypted value of the secret using the GitHub public key in Base64 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#encrypted_value ActionsSecret#encrypted_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#encrypted_value ActionsSecret#encrypted_value}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#id ActionsSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#id ActionsSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +155,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Plaintext value of the secret to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#plaintext_value ActionsSecret#plaintext_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#plaintext_value ActionsSecret#plaintext_value}
 
 ---
 
@@ -649,7 +649,7 @@ The construct id used in the generated config for the ActionsSecret to import.
 
 The id of the existing ActionsSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1013,7 +1013,7 @@ actionsSecret.ActionsSecretConfig(
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.repository">repository</a></code> | <code>str</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.secretName">secret_name</a></code> | <code>str</code> | Name of the secret. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.encryptedValue">encrypted_value</a></code> | <code>str</code> | Encrypted value of the secret using the GitHub public key in Base64 format. |
-| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#id ActionsSecret#id}. |
+| <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#id ActionsSecret#id}. |
 | <code><a href="#@cdktf/provider-github.actionsSecret.ActionsSecretConfig.property.plaintextValue">plaintext_value</a></code> | <code>str</code> | Plaintext value of the secret to be encrypted. |
 
 ---
@@ -1098,7 +1098,7 @@ repository: str
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#repository ActionsSecret#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#repository ActionsSecret#repository}
 
 ---
 
@@ -1112,7 +1112,7 @@ secret_name: str
 
 Name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#secret_name ActionsSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#secret_name ActionsSecret#secret_name}
 
 ---
 
@@ -1126,7 +1126,7 @@ encrypted_value: str
 
 Encrypted value of the secret using the GitHub public key in Base64 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#encrypted_value ActionsSecret#encrypted_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#encrypted_value ActionsSecret#encrypted_value}
 
 ---
 
@@ -1138,7 +1138,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#id ActionsSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#id ActionsSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1155,7 +1155,7 @@ plaintext_value: str
 
 Plaintext value of the secret to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/actions_secret#plaintext_value ActionsSecret#plaintext_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/actions_secret#plaintext_value ActionsSecret#plaintext_value}
 
 ---
 

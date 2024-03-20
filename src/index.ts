@@ -32,6 +32,7 @@ export * as dependabotOrganizationSecretRepositories from './dependabot-organiza
 export * as dependabotSecret from './dependabot-secret';
 export * as emuGroupMapping from './emu-group-mapping';
 export * as enterpriseActionsPermissions from './enterprise-actions-permissions';
+export * as enterpriseActionsRunnerGroup from './enterprise-actions-runner-group';
 export * as enterpriseOrganization from './enterprise-organization';
 export * as issue from './issue';
 export * as issueLabel from './issue-label';

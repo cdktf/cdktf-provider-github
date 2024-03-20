@@ -4,7 +4,7 @@
 
 ### DataGithubEnterprise <a name="DataGithubEnterprise" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise github_enterprise}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise github_enterprise}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer"></a>
 
@@ -39,8 +39,8 @@ DataGithubEnterprise.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer.parameter.slug">slug</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}. |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer.parameter.slug">slug</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}. |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -449,7 +449,7 @@ The construct id used in the generated config for the DataGithubEnterprise to im
 
 The id of the existing DataGithubEnterprise that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -478,6 +478,7 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.createdAt">createdAt</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.databaseId">databaseId</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.url">url</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -620,6 +621,16 @@ public java.lang.String getCreatedAt();
 
 ---
 
+##### `databaseId`<sup>Required</sup> <a name="databaseId" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.databaseId"></a>
+
+```java
+public java.lang.Number getDatabaseId();
+```
+
+- *Type:* java.lang.Number
+
+---
+
 ##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterprise.property.description"></a>
 
 ```java
@@ -745,8 +756,8 @@ DataGithubEnterpriseConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.slug">slug</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}. |
-| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.slug">slug</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}. |
+| <code><a href="#@cdktf/provider-github.dataGithubEnterprise.DataGithubEnterpriseConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}. |
 
 ---
 
@@ -828,7 +839,7 @@ public java.lang.String getSlug();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#slug DataGithubEnterprise#slug}.
 
 ---
 
@@ -840,7 +851,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/enterprise#id DataGithubEnterprise#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
