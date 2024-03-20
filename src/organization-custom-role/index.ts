@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role
+// https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface OrganizationCustomRoleConfig extends cdktf.TerraformMetaArgumen
   /**
   * The base role for the custom repository role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role#base_role OrganizationCustomRole#base_role}
   */
   readonly baseRole: string;
   /**
   * The description of the custom repository role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role#description OrganizationCustomRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role#id OrganizationCustomRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +29,19 @@ export interface OrganizationCustomRoleConfig extends cdktf.TerraformMetaArgumen
   /**
   * The organization custom repository role to create.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role#name OrganizationCustomRole#name}
   */
   readonly name: string;
   /**
   * The permissions for the custom repository role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role#permissions OrganizationCustomRole#permissions}
   */
   readonly permissions: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role github_organization_custom_role}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role github_organization_custom_role}
 */
 export class OrganizationCustomRole extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class OrganizationCustomRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationCustomRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationCustomRole to import
-  * @param importFromId The id of the existing OrganizationCustomRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationCustomRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationCustomRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class OrganizationCustomRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/organization_custom_role github_organization_custom_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/organization_custom_role github_organization_custom_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class OrganizationCustomRole extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_custom_role',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.1.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

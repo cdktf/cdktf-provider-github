@@ -93,6 +93,7 @@ The following submodules are available:
 - [dependabotSecret](./dependabotSecret.typescript.md)
 - [emuGroupMapping](./emuGroupMapping.typescript.md)
 - [enterpriseActionsPermissions](./enterpriseActionsPermissions.typescript.md)
+- [enterpriseActionsRunnerGroup](./enterpriseActionsRunnerGroup.typescript.md)
 - [enterpriseOrganization](./enterpriseOrganization.typescript.md)
 - [issue](./issue.typescript.md)
 - [issueLabel](./issueLabel.typescript.md)

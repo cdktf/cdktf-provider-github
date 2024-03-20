@@ -4,12 +4,12 @@
 
 ### EnterpriseOrganization <a name="EnterpriseOrganization" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization github_enterprise_organization}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization github_enterprise_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseorganization"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseorganization"
 
 enterpriseorganization.NewEnterpriseOrganization(scope Construct, id *string, config EnterpriseOrganizationConfig) EnterpriseOrganization
 ```
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.resetDisplayName">ResetDisplayName</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.resetId">ResetId</a></code> | *No description.* |
 
 ---
 
@@ -379,12 +378,6 @@ func ResetDescription()
 func ResetDisplayName()
 ```
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.resetId"></a>
-
-```go
-func ResetId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -399,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseorganization"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseorganization"
 
 enterpriseorganization.EnterpriseOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseorganization"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseorganization"
 
 enterpriseorganization.EnterpriseOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +438,7 @@ enterpriseorganization.EnterpriseOrganization_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseorganization"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseorganization"
 
 enterpriseorganization.EnterpriseOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +452,7 @@ enterpriseorganization.EnterpriseOrganization_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseorganization"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseorganization"
 
 enterpriseorganization.EnterpriseOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -488,7 +481,7 @@ The construct id used in the generated config for the EnterpriseOrganization to 
 
 The id of the existing EnterpriseOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,19 +511,19 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.databaseId">DatabaseId</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.adminLoginsInput">AdminLoginsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.billingEmailInput">BillingEmailInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.displayNameInput">DisplayNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.enterpriseIdInput">EnterpriseIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.adminLogins">AdminLogins</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.billingEmail">BillingEmail</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.enterpriseId">EnterpriseId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -677,6 +670,26 @@ func Provisioners() *[]interface{}
 
 ---
 
+##### `DatabaseId`<sup>Required</sup> <a name="DatabaseId" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.databaseId"></a>
+
+```go
+func DatabaseId() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `AdminLoginsInput`<sup>Optional</sup> <a name="AdminLoginsInput" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.adminLoginsInput"></a>
 
 ```go
@@ -721,16 +734,6 @@ func DisplayNameInput() *string
 
 ```go
 func EnterpriseIdInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.idInput"></a>
-
-```go
-func IdInput() *string
 ```
 
 - *Type:* *string
@@ -797,16 +800,6 @@ func EnterpriseId() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.id"></a>
-
-```go
-func Id() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.property.name"></a>
 
 ```go
@@ -842,7 +835,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseorganization"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseorganization"
 
 &enterpriseorganization.EnterpriseOrganizationConfig {
 	Connection: interface{},
@@ -858,7 +851,6 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseorganizat
 	Name: *string,
 	Description: *string,
 	DisplayName: *string,
-	Id: *string,
 }
 ```
 
@@ -879,7 +871,6 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseorganizat
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.name">Name</a></code> | <code>*string</code> | The name of the organization. |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.description">Description</a></code> | <code>*string</code> | The description of the organization. |
 | <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.displayName">DisplayName</a></code> | <code>*string</code> | The display name of the organization. |
-| <code><a href="#@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#id EnterpriseOrganization#id}. |
 
 ---
 
@@ -963,7 +954,7 @@ AdminLogins *[]*string
 
 List of organization owner usernames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
 
 ---
 
@@ -977,7 +968,7 @@ BillingEmail *string
 
 The billing email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
 
 ---
 
@@ -991,7 +982,7 @@ EnterpriseId *string
 
 The ID of the enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
 
 ---
 
@@ -1005,7 +996,7 @@ Name *string
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
 
 ---
 
@@ -1019,7 +1010,7 @@ Description *string
 
 The description of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
 
 ---
 
@@ -1033,22 +1024,7 @@ DisplayName *string
 
 The display name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganizationConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#id EnterpriseOrganization#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
 
 ---
 

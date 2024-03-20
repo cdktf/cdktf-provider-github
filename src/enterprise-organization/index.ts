@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization
+// https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,50 +10,43 @@ export interface EnterpriseOrganizationConfig extends cdktf.TerraformMetaArgumen
   /**
   * List of organization owner usernames.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
   */
   readonly adminLogins: string[];
   /**
   * The billing email address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
   */
   readonly billingEmail: string;
   /**
   * The description of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
   */
   readonly description?: string;
   /**
   * The display name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
   */
   readonly displayName?: string;
   /**
   * The ID of the enterprise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
   */
   readonly enterpriseId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#id EnterpriseOrganization#id}
-  *
-  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-  */
-  readonly id?: string;
-  /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization github_enterprise_organization}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization github_enterprise_organization}
 */
 export class EnterpriseOrganization extends cdktf.TerraformResource {
 
@@ -74,7 +62,7 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EnterpriseOrganization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EnterpriseOrganization to import
-  * @param importFromId The id of the existing EnterpriseOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EnterpriseOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EnterpriseOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -86,7 +74,7 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.1.0/docs/resources/enterprise_organization github_enterprise_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization github_enterprise_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -97,7 +85,7 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'github_enterprise_organization',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.1.0',
+        providerVersion: '6.2.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -113,7 +101,6 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
     this._description = config.description;
     this._displayName = config.displayName;
     this._enterpriseId = config.enterpriseId;
-    this._id = config.id;
     this._name = config.name;
   }
 
@@ -145,6 +132,11 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get billingEmailInput() {
     return this._billingEmail;
+  }
+
+  // database_id - computed: true, optional: false, required: false
+  public get databaseId() {
+    return this.getNumberAttribute('database_id');
   }
 
   // description - computed: false, optional: true, required: false
@@ -192,20 +184,9 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
     return this._enterpriseId;
   }
 
-  // id - computed: true, optional: true, required: false
-  private _id?: string; 
+  // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-  public set id(value: string) {
-    this._id = value;
-  }
-  public resetId() {
-    this._id = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get idInput() {
-    return this._id;
   }
 
   // name - computed: false, optional: false, required: true
@@ -232,7 +213,6 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
       description: cdktf.stringToTerraform(this._description),
       display_name: cdktf.stringToTerraform(this._displayName),
       enterprise_id: cdktf.stringToTerraform(this._enterpriseId),
-      id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
     };
   }
@@ -265,12 +245,6 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
       },
       enterprise_id: {
         value: cdktf.stringToHclTerraform(this._enterpriseId),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
-      id: {
-        value: cdktf.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

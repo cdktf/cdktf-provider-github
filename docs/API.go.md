@@ -93,6 +93,7 @@ The following submodules are available:
 - [dependabotSecret](./dependabotSecret.go.md)
 - [emuGroupMapping](./emuGroupMapping.go.md)
 - [enterpriseActionsPermissions](./enterpriseActionsPermissions.go.md)
+- [enterpriseActionsRunnerGroup](./enterpriseActionsRunnerGroup.go.md)
 - [enterpriseOrganization](./enterpriseOrganization.go.md)
 - [issue](./issue.go.md)
 - [issueLabel](./issueLabel.go.md)
