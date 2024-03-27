@@ -4,7 +4,7 @@
 
 ### RepositoryFile <a name="RepositoryFile" id="@cdktf/provider-github.repositoryFile.RepositoryFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file github_repository_file}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file github_repository_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer"></a>
 
@@ -51,7 +51,7 @@ repositoryFile.RepositoryFile(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitAuthor">commit_author</a></code> | <code>str</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitEmail">commit_email</a></code> | <code>str</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.commitMessage">commit_message</a></code> | <code>str</code> | The commit message when creating, updating or deleting the file. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#id RepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#id RepositoryFile#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer.parameter.overwriteOnCreate">overwrite_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable overwriting existing files, defaults to "false". |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 The file's content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#content RepositoryFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#content RepositoryFile#content}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#file RepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#file RepositoryFile#file}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#repository RepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#repository RepositoryFile#repository}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#branch RepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#branch RepositoryFile#branch}
 
 ---
 
@@ -164,7 +164,7 @@ The commit author name, defaults to the authenticated user's name.
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
 
 ---
 
@@ -176,7 +176,7 @@ The commit author email address, defaults to the authenticated user's email addr
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
 
 ---
 
@@ -186,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The commit message when creating, updating or deleting the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
 
 ---
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#id RepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#id RepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -207,7 +207,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Enable overwriting existing files, defaults to "false".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
 
 ---
 
@@ -722,7 +722,7 @@ The construct id used in the generated config for the RepositoryFile to import.
 
 The id of the existing RepositoryFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1193,7 +1193,7 @@ repositoryFile.RepositoryFileConfig(
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitAuthor">commit_author</a></code> | <code>str</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitEmail">commit_email</a></code> | <code>str</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitMessage">commit_message</a></code> | <code>str</code> | The commit message when creating, updating or deleting the file. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#id RepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#id RepositoryFile#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.overwriteOnCreate">overwrite_on_create</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable overwriting existing files, defaults to "false". |
 
 ---
@@ -1278,7 +1278,7 @@ content: str
 
 The file's content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#content RepositoryFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#content RepositoryFile#content}
 
 ---
 
@@ -1292,7 +1292,7 @@ file: str
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#file RepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#file RepositoryFile#file}
 
 ---
 
@@ -1306,7 +1306,7 @@ repository: str
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#repository RepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#repository RepositoryFile#repository}
 
 ---
 
@@ -1320,7 +1320,7 @@ branch: str
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#branch RepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#branch RepositoryFile#branch}
 
 ---
 
@@ -1336,7 +1336,7 @@ The commit author name, defaults to the authenticated user's name.
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
 
 ---
 
@@ -1352,7 +1352,7 @@ The commit author email address, defaults to the authenticated user's email addr
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
 
 ---
 
@@ -1366,7 +1366,7 @@ commit_message: str
 
 The commit message when creating, updating or deleting the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
 
 ---
 
@@ -1378,7 +1378,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#id RepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#id RepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1395,7 +1395,7 @@ overwrite_on_create: typing.Union[bool, IResolvable]
 
 Enable overwriting existing files, defaults to "false".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
 
 ---
 
