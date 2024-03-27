@@ -4,12 +4,12 @@
 
 ### RepositoryEnvironment <a name="RepositoryEnvironment" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment github_repository_environment}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment github_repository_environment}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.NewRepositoryEnvironment(scope Construct, id *string, config RepositoryEnvironmentConfig) RepositoryEnvironment
 ```
@@ -446,7 +446,7 @@ func ResetWaitTimer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.RepositoryEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.RepositoryEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ repositoryenvironment.RepositoryEnvironment_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.RepositoryEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ repositoryenvironment.RepositoryEnvironment_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.RepositoryEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -535,7 +535,7 @@ The construct id used in the generated config for the RepositoryEnvironment to i
 
 The id of the existing RepositoryEnvironment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 &repositoryenvironment.RepositoryEnvironmentConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironme
 	Environment: *string,
 	Repository: *string,
 	CanAdminsBypass: interface{},
-	DeploymentBranchPolicy: github.com/cdktf/cdktf-provider-github-go/github/v14.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy,
+	DeploymentBranchPolicy: github.com/cdktf/cdktf-provider-github-go/github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy,
 	Id: *string,
 	PreventSelfReview: interface{},
 	Reviewers: interface{},
@@ -947,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironme
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.repository">Repository</a></code> | <code>*string</code> | The repository of the environment. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.canAdminsBypass">CanAdminsBypass</a></code> | <code>interface{}</code> | Can Admins bypass deployment protections. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.deploymentBranchPolicy">DeploymentBranchPolicy</a></code> | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy">RepositoryEnvironmentDeploymentBranchPolicy</a></code> | deployment_branch_policy block. |
-| <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#id RepositoryEnvironment#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#id RepositoryEnvironment#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.preventSelfReview">PreventSelfReview</a></code> | <code>interface{}</code> | Prevent users from approving workflows runs that they triggered. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.reviewers">Reviewers</a></code> | <code>interface{}</code> | reviewers block. |
 | <code><a href="#@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.property.waitTimer">WaitTimer</a></code> | <code>*f64</code> | Amount of time to delay a job after the job is initially triggered. |
@@ -1034,7 +1034,7 @@ Environment *string
 
 The name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#environment RepositoryEnvironment#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#environment RepositoryEnvironment#environment}
 
 ---
 
@@ -1048,7 +1048,7 @@ Repository *string
 
 The repository of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#repository RepositoryEnvironment#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#repository RepositoryEnvironment#repository}
 
 ---
 
@@ -1062,7 +1062,7 @@ CanAdminsBypass interface{}
 
 Can Admins bypass deployment protections.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#can_admins_bypass RepositoryEnvironment#can_admins_bypass}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#can_admins_bypass RepositoryEnvironment#can_admins_bypass}
 
 ---
 
@@ -1076,7 +1076,7 @@ DeploymentBranchPolicy RepositoryEnvironmentDeploymentBranchPolicy
 
 deployment_branch_policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#deployment_branch_policy RepositoryEnvironment#deployment_branch_policy}
 
 ---
 
@@ -1088,7 +1088,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#id RepositoryEnvironment#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#id RepositoryEnvironment#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1105,7 +1105,7 @@ PreventSelfReview interface{}
 
 Prevent users from approving workflows runs that they triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#prevent_self_review RepositoryEnvironment#prevent_self_review}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#prevent_self_review RepositoryEnvironment#prevent_self_review}
 
 ---
 
@@ -1119,7 +1119,7 @@ Reviewers interface{}
 
 reviewers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#reviewers RepositoryEnvironment#reviewers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#reviewers RepositoryEnvironment#reviewers}
 
 ---
 
@@ -1133,7 +1133,7 @@ WaitTimer *f64
 
 Amount of time to delay a job after the job is initially triggered.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#wait_timer RepositoryEnvironment#wait_timer}
 
 ---
 
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 &repositoryenvironment.RepositoryEnvironmentDeploymentBranchPolicy {
 	CustomBranchPolicies: interface{},
@@ -1169,7 +1169,7 @@ CustomBranchPolicies interface{}
 
 Whether only branches that match the specified name patterns can deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#custom_branch_policies RepositoryEnvironment#custom_branch_policies}
 
 ---
 
@@ -1183,7 +1183,7 @@ ProtectedBranches interface{}
 
 Whether only branches with branch protection rules can deploy to this environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#protected_branches RepositoryEnvironment#protected_branches}
 
 ---
 
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentReviewers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 &repositoryenvironment.RepositoryEnvironmentReviewers {
 	Teams: *[]*f64,
@@ -1221,7 +1221,7 @@ Up to 6 IDs for teams who may review jobs that reference the environment.
 
 Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#teams RepositoryEnvironment#teams}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#teams RepositoryEnvironment#teams}
 
 ---
 
@@ -1237,7 +1237,7 @@ Up to 6 IDs for users who may review jobs that reference the environment.
 
 Reviewers must have at least read access to the repository. Only one of the required reviewers needs to approve the job for it to proceed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/repository_environment#users RepositoryEnvironment#users}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/repository_environment#users RepositoryEnvironment#users}
 
 ---
 
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.NewRepositoryEnvironmentDeploymentBranchPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryEnvironmentDeploymentBranchPolicyOutputReference
 ```
@@ -1541,7 +1541,7 @@ func InternalValue() RepositoryEnvironmentDeploymentBranchPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentReviewersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.NewRepositoryEnvironmentReviewersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RepositoryEnvironmentReviewersList
 ```
@@ -1701,7 +1701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentReviewersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.NewRepositoryEnvironmentReviewersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RepositoryEnvironmentReviewersOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization
+// https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +10,43 @@ export interface EnterpriseOrganizationConfig extends cdktf.TerraformMetaArgumen
   /**
   * List of organization owner usernames.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
   */
   readonly adminLogins: string[];
   /**
   * The billing email address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
   */
   readonly billingEmail: string;
   /**
   * The description of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
   */
   readonly description?: string;
   /**
   * The display name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
   */
   readonly displayName?: string;
   /**
   * The ID of the enterprise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
   */
   readonly enterpriseId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization github_enterprise_organization}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization github_enterprise_organization}
 */
 export class EnterpriseOrganization extends cdktf.TerraformResource {
 
@@ -67,7 +62,7 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EnterpriseOrganization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EnterpriseOrganization to import
-  * @param importFromId The id of the existing EnterpriseOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EnterpriseOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EnterpriseOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -79,7 +74,7 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/resources/enterprise_organization github_enterprise_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/enterprise_organization github_enterprise_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +85,7 @@ export class EnterpriseOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'github_enterprise_organization',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.2.0',
+        providerVersion: '6.2.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

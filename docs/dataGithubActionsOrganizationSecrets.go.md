@@ -4,12 +4,12 @@
 
 ### DataGithubActionsOrganizationSecrets <a name="DataGithubActionsOrganizationSecrets" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecrets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/actions_organization_secrets github_actions_organization_secrets}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_organization_secrets github_actions_organization_secrets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 datagithubactionsorganizationsecrets.NewDataGithubActionsOrganizationSecrets(scope Construct, id *string, config DataGithubActionsOrganizationSecretsConfig) DataGithubActionsOrganizationSecrets
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecrets.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 datagithubactionsorganizationsecrets.DataGithubActionsOrganizationSecrets_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecrets.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 datagithubactionsorganizationsecrets.DataGithubActionsOrganizationSecrets_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubactionsorganizationsecrets.DataGithubActionsOrganizationSecrets_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecrets.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 datagithubactionsorganizationsecrets.DataGithubActionsOrganizationSecrets_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubactionsorganizationsecrets.DataGithubActionsOrganizationSecrets_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecrets.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 datagithubactionsorganizationsecrets.DataGithubActionsOrganizationSecrets_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubActionsOrganizat
 
 The id of the existing DataGithubActionsOrganizationSecrets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/actions_organization_secrets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_organization_secrets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 &datagithubactionsorganizationsecrets.DataGithubActionsOrganizationSecretsConfig {
 	Connection: interface{},
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsor
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/actions_organization_secrets#id DataGithubActionsOrganizationSecrets#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_organization_secrets#id DataGithubActionsOrganizationSecrets#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.0/docs/data-sources/actions_organization_secrets#id DataGithubActionsOrganizationSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_organization_secrets#id DataGithubActionsOrganizationSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -702,7 +702,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsSecrets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 &datagithubactionsorganizationsecrets.DataGithubActionsOrganizationSecretsSecrets {
 
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsor
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsSecretsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 datagithubactionsorganizationsecrets.NewDataGithubActionsOrganizationSecretsSecretsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubActionsOrganizationSecretsSecretsList
 ```
@@ -866,7 +866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsOrganizationSecrets.DataGithubActionsOrganizationSecretsSecretsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionsorganizationsecrets"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsorganizationsecrets"
 
 datagithubactionsorganizationsecrets.NewDataGithubActionsOrganizationSecretsSecretsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubActionsOrganizationSecretsSecretsOutputReference
 ```
