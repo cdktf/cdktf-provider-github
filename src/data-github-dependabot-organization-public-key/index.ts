@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/dependabot_organization_public_key
 // generated from terraform resource schema
 
