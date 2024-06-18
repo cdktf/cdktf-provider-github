@@ -4,7 +4,7 @@
 
 ### CodespacesSecret <a name="CodespacesSecret" id="@cdktf/provider-github.codespacesSecret.CodespacesSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/codespaces_secret github_codespaces_secret}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/codespaces_secret github_codespaces_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.codespacesSecret.CodespacesSecret.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the CodespacesSecret to import
 
 The id of the existing CodespacesSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/codespaces_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/codespaces_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,7 +852,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/codespacessecret"
 | <code><a href="#@cdktf/provider-github.codespacesSecret.CodespacesSecretConfig.property.repository">Repository</a></code> | <code>*string</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.codespacesSecret.CodespacesSecretConfig.property.secretName">SecretName</a></code> | <code>*string</code> | Name of the secret. |
 | <code><a href="#@cdktf/provider-github.codespacesSecret.CodespacesSecretConfig.property.encryptedValue">EncryptedValue</a></code> | <code>*string</code> | Encrypted value of the secret using the GitHub public key in Base64 format. |
-| <code><a href="#@cdktf/provider-github.codespacesSecret.CodespacesSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/codespaces_secret#id CodespacesSecret#id}. |
+| <code><a href="#@cdktf/provider-github.codespacesSecret.CodespacesSecretConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/codespaces_secret#id CodespacesSecret#id}. |
 | <code><a href="#@cdktf/provider-github.codespacesSecret.CodespacesSecretConfig.property.plaintextValue">PlaintextValue</a></code> | <code>*string</code> | Plaintext value of the secret to be encrypted. |
 
 ---
@@ -937,7 +937,7 @@ Repository *string
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/codespaces_secret#repository CodespacesSecret#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/codespaces_secret#repository CodespacesSecret#repository}
 
 ---
 
@@ -951,7 +951,7 @@ SecretName *string
 
 Name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/codespaces_secret#secret_name CodespacesSecret#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/codespaces_secret#secret_name CodespacesSecret#secret_name}
 
 ---
 
@@ -965,7 +965,7 @@ EncryptedValue *string
 
 Encrypted value of the secret using the GitHub public key in Base64 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/codespaces_secret#encrypted_value CodespacesSecret#encrypted_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/codespaces_secret#encrypted_value CodespacesSecret#encrypted_value}
 
 ---
 
@@ -977,7 +977,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/codespaces_secret#id CodespacesSecret#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/codespaces_secret#id CodespacesSecret#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -994,7 +994,7 @@ PlaintextValue *string
 
 Plaintext value of the secret to be encrypted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/codespaces_secret#plaintext_value CodespacesSecret#plaintext_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/codespaces_secret#plaintext_value CodespacesSecret#plaintext_value}
 
 ---
 

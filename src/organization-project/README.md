@@ -1,3 +1,3 @@
 # `github_organization_project`
 
-Refer to the Terraform Registry for docs: [`github_organization_project`](https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/organization_project).
+Refer to the Terraform Registry for docs: [`github_organization_project`](https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/organization_project).

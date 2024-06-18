@@ -4,7 +4,7 @@
 
 ### Branch <a name="Branch" id="@cdktf/provider-github.branch.Branch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/branch github_branch}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/branch github_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branch.Branch.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the Branch to import.
 
 The id of the existing Branch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/branch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/branch#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -862,7 +862,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/branch"
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.branch">Branch</a></code> | <code>*string</code> | The repository branch to create. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository name. |
-| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/branch#id Branch#id}. |
+| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/branch#id Branch#id}. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.sourceBranch">SourceBranch</a></code> | <code>*string</code> | The branch name to start from. Defaults to 'main'. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.sourceSha">SourceSha</a></code> | <code>*string</code> | The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored. |
 
@@ -948,7 +948,7 @@ Branch *string
 
 The repository branch to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/branch#branch Branch#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/branch#branch Branch#branch}
 
 ---
 
@@ -962,7 +962,7 @@ Repository *string
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/branch#repository Branch#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/branch#repository Branch#repository}
 
 ---
 
@@ -974,7 +974,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/branch#id Branch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/branch#id Branch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +991,7 @@ SourceBranch *string
 
 The branch name to start from. Defaults to 'main'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/branch#source_branch Branch#source_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/branch#source_branch Branch#source_branch}
 
 ---
 
@@ -1005,7 +1005,7 @@ SourceSha *string
 
 The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/branch#source_sha Branch#source_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/branch#source_sha Branch#source_sha}
 
 ---
 
