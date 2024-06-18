@@ -4,12 +4,12 @@
 
 ### DataGithubActionsPublicKey <a name="DataGithubActionsPublicKey" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_public_key github_actions_public_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_public_key github_actions_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionspublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionspublickey"
 
 datagithubactionspublickey.NewDataGithubActionsPublicKey(scope Construct, id *string, config DataGithubActionsPublicKeyConfig) DataGithubActionsPublicKey
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionspublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionspublickey"
 
 datagithubactionspublickey.DataGithubActionsPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionspublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionspublickey"
 
 datagithubactionspublickey.DataGithubActionsPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubactionspublickey.DataGithubActionsPublicKey_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionspublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionspublickey"
 
 datagithubactionspublickey.DataGithubActionsPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubactionspublickey.DataGithubActionsPublicKey_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionspublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionspublickey"
 
 datagithubactionspublickey.DataGithubActionsPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubActionsPublicKey
 
 The id of the existing DataGithubActionsPublicKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_public_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_public_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionspublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionspublickey"
 
 &datagithubactionspublickey.DataGithubActionsPublicKeyConfig {
 	Connection: interface{},
@@ -642,8 +642,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubactionspu
 | <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_public_key#repository DataGithubActionsPublicKey#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_public_key#id DataGithubActionsPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_public_key#repository DataGithubActionsPublicKey#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubActionsPublicKey.DataGithubActionsPublicKeyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_public_key#id DataGithubActionsPublicKey#id}. |
 
 ---
 
@@ -725,7 +725,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_public_key#repository DataGithubActionsPublicKey#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_public_key#repository DataGithubActionsPublicKey#repository}.
 
 ---
 
@@ -737,7 +737,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/data-sources/actions_public_key#id DataGithubActionsPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_public_key#id DataGithubActionsPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

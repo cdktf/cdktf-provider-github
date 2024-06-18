@@ -4,7 +4,7 @@
 
 ### IssueLabels <a name="IssueLabels" id="@cdktf/provider-github.issueLabels.IssueLabels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels github_issue_labels}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels github_issue_labels}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabels.IssueLabels.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the IssueLabels to import.
 
 The id of the existing IssueLabels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,7 +777,7 @@ const issueLabelsConfig: issueLabels.IssueLabelsConfig = { ... }
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.repository">repository</a></code> | <code>string</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels#id IssueLabels#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels#id IssueLabels#id}. |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.label">label</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-github.issueLabels.IssueLabelsLabel">IssueLabelsLabel</a>[]</code> | label block. |
 
 ---
@@ -862,7 +862,7 @@ public readonly repository: string;
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels#repository IssueLabels#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels#repository IssueLabels#repository}
 
 ---
 
@@ -874,7 +874,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels#id IssueLabels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels#id IssueLabels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -891,7 +891,7 @@ public readonly label: IResolvable | IssueLabelsLabel[];
 
 label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels#label IssueLabels#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels#label IssueLabels#label}
 
 ---
 
@@ -925,7 +925,7 @@ public readonly color: string;
 
 A 6 character hex code, without the leading '#', identifying the color of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels#color IssueLabels#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels#color IssueLabels#color}
 
 ---
 
@@ -939,7 +939,7 @@ public readonly name: string;
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels#name IssueLabels#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels#name IssueLabels#name}
 
 ---
 
@@ -953,7 +953,7 @@ public readonly description: string;
 
 A short description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.1/docs/resources/issue_labels#description IssueLabels#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/issue_labels#description IssueLabels#description}
 
 ---
 
