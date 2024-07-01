@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 enterpriseactionspermissions.NewEnterpriseActionsPermissions(scope Construct, id *string, config EnterpriseActionsPermissionsConfig) EnterpriseActionsPermissions
 ```
@@ -432,7 +432,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 enterpriseactionspermissions.EnterpriseActionsPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 enterpriseactionspermissions.EnterpriseActionsPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ enterpriseactionspermissions.EnterpriseActionsPermissions_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 enterpriseactionspermissions.EnterpriseActionsPermissions_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ enterpriseactionspermissions.EnterpriseActionsPermissions_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 enterpriseactionspermissions.EnterpriseActionsPermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -853,7 +853,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissionsAllowedActionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 &enterpriseactionspermissions.EnterpriseActionsPermissionsAllowedActionsConfig {
 	GithubOwnedAllowed: interface{},
@@ -923,7 +923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 &enterpriseactionspermissions.EnterpriseActionsPermissionsConfig {
 	Connection: interface{},
@@ -936,8 +936,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspe
 	EnabledOrganizations: *string,
 	EnterpriseId: *string,
 	AllowedActions: *string,
-	AllowedActionsConfig: github.com/cdktf/cdktf-provider-github-go/github/v14.enterpriseActionsPermissions.EnterpriseActionsPermissionsAllowedActionsConfig,
-	EnabledOrganizationsConfig: github.com/cdktf/cdktf-provider-github-go/github/v14.enterpriseActionsPermissions.EnterpriseActionsPermissionsEnabledOrganizationsConfig,
+	AllowedActionsConfig: github.com/cdktf/cdktf-provider-github-go/github.enterpriseActionsPermissions.EnterpriseActionsPermissionsAllowedActionsConfig,
+	EnabledOrganizationsConfig: github.com/cdktf/cdktf-provider-github-go/github.enterpriseActionsPermissions.EnterpriseActionsPermissionsEnabledOrganizationsConfig,
 	Id: *string,
 }
 ```
@@ -1126,7 +1126,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissionsEnabledOrganizationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 &enterpriseactionspermissions.EnterpriseActionsPermissionsEnabledOrganizationsConfig {
 	OrganizationIds: *[]*f64,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissionsAllowedActionsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 enterpriseactionspermissions.NewEnterpriseActionsPermissionsAllowedActionsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EnterpriseActionsPermissionsAllowedActionsConfigOutputReference
 ```
@@ -1491,7 +1491,7 @@ func InternalValue() EnterpriseActionsPermissionsAllowedActionsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.enterpriseActionsPermissions.EnterpriseActionsPermissionsEnabledOrganizationsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/enterpriseactionspermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionspermissions"
 
 enterpriseactionspermissions.NewEnterpriseActionsPermissionsEnabledOrganizationsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) EnterpriseActionsPermissionsEnabledOrganizationsConfigOutputReference
 ```
