@@ -4,7 +4,7 @@
 
 ### Release <a name="Release" id="@cdktf/provider-github.release.Release"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release github_release}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release github_release}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.release.Release.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the Release to import.
 
 The id of the existing Release that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -553,7 +553,17 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.release.Release.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.assetsUrl">assetsUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.etag">etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.htmlUrl">htmlUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.nodeId">nodeId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.publishedAt">publishedAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.releaseId">releaseId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.tarballUrl">tarballUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.uploadUrl">uploadUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.zipballUrl">zipballUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.bodyInput">bodyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.discussionCategoryNameInput">discussionCategoryNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.draftInput">draftInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -719,10 +729,110 @@ public readonly provisioners: FileProvisioner | LocalExecProvisioner | RemoteExe
 
 ---
 
+##### `assetsUrl`<sup>Required</sup> <a name="assetsUrl" id="@cdktf/provider-github.release.Release.property.assetsUrl"></a>
+
+```typescript
+public readonly assetsUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `createdAt`<sup>Required</sup> <a name="createdAt" id="@cdktf/provider-github.release.Release.property.createdAt"></a>
+
+```typescript
+public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-github.release.Release.property.etag"></a>
 
 ```typescript
 public readonly etag: string;
+```
+
+- *Type:* string
+
+---
+
+##### `htmlUrl`<sup>Required</sup> <a name="htmlUrl" id="@cdktf/provider-github.release.Release.property.htmlUrl"></a>
+
+```typescript
+public readonly htmlUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nodeId`<sup>Required</sup> <a name="nodeId" id="@cdktf/provider-github.release.Release.property.nodeId"></a>
+
+```typescript
+public readonly nodeId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `publishedAt`<sup>Required</sup> <a name="publishedAt" id="@cdktf/provider-github.release.Release.property.publishedAt"></a>
+
+```typescript
+public readonly publishedAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `releaseId`<sup>Required</sup> <a name="releaseId" id="@cdktf/provider-github.release.Release.property.releaseId"></a>
+
+```typescript
+public readonly releaseId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `tarballUrl`<sup>Required</sup> <a name="tarballUrl" id="@cdktf/provider-github.release.Release.property.tarballUrl"></a>
+
+```typescript
+public readonly tarballUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `uploadUrl`<sup>Required</sup> <a name="uploadUrl" id="@cdktf/provider-github.release.Release.property.uploadUrl"></a>
+
+```typescript
+public readonly uploadUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-github.release.Release.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `zipballUrl`<sup>Required</sup> <a name="zipballUrl" id="@cdktf/provider-github.release.Release.property.zipballUrl"></a>
+
+```typescript
+public readonly zipballUrl: string;
 ```
 
 - *Type:* string
@@ -976,7 +1086,7 @@ const releaseConfig: release.ReleaseConfig = { ... }
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.discussionCategoryName">discussionCategoryName</a></code> | <code>string</code> | If specified, a discussion of the specified category is created and linked to the release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.draft">draft</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to 'false' to create a published release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.generateReleaseNotes">generateReleaseNotes</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to 'true' to automatically generate the name and body for this release. |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#id Release#id}. |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#id Release#id}. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.name">name</a></code> | <code>string</code> | The name of the release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.prerelease">prerelease</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set to 'false' to identify the release as a full release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.targetCommitish">targetCommitish</a></code> | <code>string</code> | The branch name or commit SHA the tag is created from. |
@@ -1063,7 +1173,7 @@ public readonly repository: string;
 
 The name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#repository Release#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#repository Release#repository}
 
 ---
 
@@ -1077,7 +1187,7 @@ public readonly tagName: string;
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#tag_name Release#tag_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#tag_name Release#tag_name}
 
 ---
 
@@ -1091,7 +1201,7 @@ public readonly body: string;
 
 Text describing the contents of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#body Release#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#body Release#body}
 
 ---
 
@@ -1107,7 +1217,7 @@ If specified, a discussion of the specified category is created and linked to th
 
 The value must be a category that already exists in the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#discussion_category_name Release#discussion_category_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#discussion_category_name Release#discussion_category_name}
 
 ---
 
@@ -1121,7 +1231,7 @@ public readonly draft: boolean | IResolvable;
 
 Set to 'false' to create a published release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#draft Release#draft}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#draft Release#draft}
 
 ---
 
@@ -1137,7 +1247,7 @@ Set to 'true' to automatically generate the name and body for this release.
 
 If 'name' is specified, the specified name will be used; otherwise, a name will be automatically generated. If 'body' is specified, the body will be pre-pended to the automatically generated notes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#generate_release_notes Release#generate_release_notes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#generate_release_notes Release#generate_release_notes}
 
 ---
 
@@ -1149,7 +1259,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#id Release#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#id Release#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1166,7 +1276,7 @@ public readonly name: string;
 
 The name of the release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#name Release#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#name Release#name}
 
 ---
 
@@ -1180,7 +1290,7 @@ public readonly prerelease: boolean | IResolvable;
 
 Set to 'false' to identify the release as a full release.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#prerelease Release#prerelease}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#prerelease Release#prerelease}
 
 ---
 
@@ -1194,7 +1304,7 @@ public readonly targetCommitish: string;
 
 The branch name or commit SHA the tag is created from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/release#target_commitish Release#target_commitish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/release#target_commitish Release#target_commitish}
 
 ---
 

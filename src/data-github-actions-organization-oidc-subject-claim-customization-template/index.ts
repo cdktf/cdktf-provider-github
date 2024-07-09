@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_organization_oidc_subject_claim_customization_template
+// https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/actions_organization_oidc_subject_claim_customization_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_organization_oidc_subject_claim_customization_template#id DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/actions_organization_oidc_subject_claim_customization_template#id DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGithubActionsOrganizationOidcSubjectClaimCustomizationTempl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template}
 */
 export class DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate extends cdktf.TerraformDataSource {
 
@@ -38,7 +38,7 @@ export class DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate 
   * Generates CDKTF code for importing a DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate to import
-  * @param importFromId The id of the existing DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_organization_oidc_subject_claim_customization_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/actions_organization_oidc_subject_claim_customization_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -50,7 +50,7 @@ export class DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -61,7 +61,7 @@ export class DataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate 
       terraformResourceType: 'github_actions_organization_oidc_subject_claim_customization_template',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.2.2',
+        providerVersion: '6.2.3',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
