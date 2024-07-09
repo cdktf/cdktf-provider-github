@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator
+// https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface RepositoryCollaboratorConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator#id RepositoryCollaborator#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator#id RepositoryCollaborator#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,31 +17,31 @@ export interface RepositoryCollaboratorConfig extends cdktf.TerraformMetaArgumen
   /**
   * The permission of the outside collaborator for the repository. Must be one of 'pull', 'push', 'maintain', 'triage' or 'admin' or the name of an existing custom repository role within the organization for organization-owned repositories. Must be 'push' for personal repositories. Defaults to 'push'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator#permission RepositoryCollaborator#permission}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator#permission RepositoryCollaborator#permission}
   */
   readonly permission?: string;
   /**
   * Suppress plan diffs for triage and maintain. Defaults to 'false'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator#permission_diff_suppression RepositoryCollaborator#permission_diff_suppression}
   */
   readonly permissionDiffSuppression?: boolean | cdktf.IResolvable;
   /**
   * The GitHub repository
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator#repository RepositoryCollaborator#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator#repository RepositoryCollaborator#repository}
   */
   readonly repository: string;
   /**
   * The user to add to the repository as a collaborator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator#username RepositoryCollaborator#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator#username RepositoryCollaborator#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator github_repository_collaborator}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator github_repository_collaborator}
 */
 export class RepositoryCollaborator extends cdktf.TerraformResource {
 
@@ -62,7 +57,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RepositoryCollaborator resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RepositoryCollaborator to import
-  * @param importFromId The id of the existing RepositoryCollaborator that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RepositoryCollaborator that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RepositoryCollaborator to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +69,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_collaborator github_repository_collaborator} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_collaborator github_repository_collaborator} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +80,7 @@ export class RepositoryCollaborator extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_collaborator',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.2.2',
+        providerVersion: '6.2.3',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

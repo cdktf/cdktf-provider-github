@@ -4,12 +4,12 @@
 
 ### DependabotOrganizationSecretRepositories <a name="DependabotOrganizationSecretRepositories" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/dependabot_organization_secret_repositories github_dependabot_organization_secret_repositories}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.NewDependabotOrganizationSecretRepositories(scope Construct, id *string, config DependabotOrganizationSecretRepositoriesConfig) DependabotOrganizationSecretRepositories
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositorie
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositorie
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the DependabotOrganizationSecr
 
 The id of the existing DependabotOrganizationSecretRepositories that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/dependabot_organization_secret_repositories#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/dependabot_organization_secret_repositories#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/dependabotorganizationsecretrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/dependabotorganizationsecretrepositories"
 
 &dependabotorganizationsecretrepositories.DependabotOrganizationSecretRepositoriesConfig {
 	Connection: interface{},
@@ -769,7 +769,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/dependabotorganizat
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.secretName">SecretName</a></code> | <code>*string</code> | Name of the existing secret. |
 | <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.selectedRepositoryIds">SelectedRepositoryIds</a></code> | <code>*[]*f64</code> | An array of repository ids that can access the organization secret. |
-| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. |
+| <code><a href="#@cdktf/provider-github.dependabotOrganizationSecretRepositories.DependabotOrganizationSecretRepositoriesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ SecretName *string
 
 Name of the existing secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/dependabot_organization_secret_repositories#secret_name DependabotOrganizationSecretRepositories#secret_name}
 
 ---
 
@@ -867,7 +867,7 @@ SelectedRepositoryIds *[]*f64
 
 An array of repository ids that can access the organization secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/dependabot_organization_secret_repositories#selected_repository_ids DependabotOrganizationSecretRepositories#selected_repository_ids}
 
 ---
 
@@ -879,7 +879,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/dependabot_organization_secret_repositories#id DependabotOrganizationSecretRepositories#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,3 +1,3 @@
 # `data_github_branch_protection_rules`
 
-Refer to the Terraform Registry for docs: [`data_github_branch_protection_rules`](https://registry.terraform.io/providers/integrations/github/6.2.2/docs/data-sources/branch_protection_rules).
+Refer to the Terraform Registry for docs: [`data_github_branch_protection_rules`](https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/branch_protection_rules).

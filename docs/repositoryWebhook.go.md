@@ -4,12 +4,12 @@
 
 ### RepositoryWebhook <a name="RepositoryWebhook" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook github_repository_webhook}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook github_repository_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorywebhook"
 
 repositorywebhook.NewRepositoryWebhook(scope Construct, id *string, config RepositoryWebhookConfig) RepositoryWebhook
 ```
@@ -412,7 +412,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorywebhook"
 
 repositorywebhook.RepositoryWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorywebhook"
 
 repositorywebhook.RepositoryWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ repositorywebhook.RepositoryWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorywebhook"
 
 repositorywebhook.RepositoryWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ repositorywebhook.RepositoryWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorywebhook"
 
 repositorywebhook.RepositoryWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -501,7 +501,7 @@ The construct id used in the generated config for the RepositoryWebhook to impor
 
 The id of the existing RepositoryWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorywebhook"
 
 &repositorywebhook.RepositoryWebhookConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
 	Events: *[]*string,
 	Repository: *string,
 	Active: interface{},
-	Configuration: github.com/cdktf/cdktf-provider-github-go/github/v14.repositoryWebhook.RepositoryWebhookConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-github-go/github.repositoryWebhook.RepositoryWebhookConfiguration,
 	Id: *string,
 }
 ```
@@ -866,7 +866,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.repository">Repository</a></code> | <code>*string</code> | The repository of the webhook. |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.active">Active</a></code> | <code>interface{}</code> | Indicate if the webhook should receive events. Defaults to 'true'. |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfiguration">RepositoryWebhookConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#id RepositoryWebhook#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#id RepositoryWebhook#id}. |
 
 ---
 
@@ -950,7 +950,7 @@ Events *[]*string
 
 A list of events which should trigger the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#events RepositoryWebhook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#events RepositoryWebhook#events}
 
 ---
 
@@ -964,7 +964,7 @@ Repository *string
 
 The repository of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#repository RepositoryWebhook#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#repository RepositoryWebhook#repository}
 
 ---
 
@@ -978,7 +978,7 @@ Active interface{}
 
 Indicate if the webhook should receive events. Defaults to 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#active RepositoryWebhook#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#active RepositoryWebhook#active}
 
 ---
 
@@ -992,7 +992,7 @@ Configuration RepositoryWebhookConfiguration
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#configuration RepositoryWebhook#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#configuration RepositoryWebhook#configuration}
 
 ---
 
@@ -1004,7 +1004,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#id RepositoryWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#id RepositoryWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1016,7 +1016,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorywebhook"
 
 &repositorywebhook.RepositoryWebhookConfiguration {
 	Url: *string,
@@ -1047,7 +1047,7 @@ Url *string
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#url RepositoryWebhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#url RepositoryWebhook#url}
 
 ---
 
@@ -1061,7 +1061,7 @@ ContentType *string
 
 The content type for the payload. Valid values are either 'form' or 'json'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#content_type RepositoryWebhook#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#content_type RepositoryWebhook#content_type}
 
 ---
 
@@ -1075,7 +1075,7 @@ InsecureSsl interface{}
 
 Insecure SSL boolean toggle. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}
 
 ---
 
@@ -1089,7 +1089,7 @@ Secret *string
 
 The shared secret for the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.2/docs/resources/repository_webhook#secret RepositoryWebhook#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_webhook#secret RepositoryWebhook#secret}
 
 ---
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorywebhook"
 
 repositorywebhook.NewRepositoryWebhookConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryWebhookConfigurationOutputReference
 ```
