@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/user_invitation_accepter
 // generated from terraform resource schema
 
