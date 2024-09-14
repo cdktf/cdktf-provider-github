@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization
+// https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,24 +13,28 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubOrganizationConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization#id DataGithubOrganization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#id DataGithubOrganization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization#ignore_archived_repos DataGithubOrganization#ignore_archived_repos}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#ignore_archived_repos DataGithubOrganization#ignore_archived_repos}
   */
   readonly ignoreArchivedRepos?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization#name DataGithubOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#name DataGithubOrganization#name}
   */
   readonly name: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#summary_only DataGithubOrganization#summary_only}
+  */
+  readonly summaryOnly?: boolean | cdktf.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization github_organization}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization github_organization}
 */
 export class DataGithubOrganization extends cdktf.TerraformDataSource {
 
@@ -46,7 +50,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGithubOrganization resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubOrganization to import
-  * @param importFromId The id of the existing DataGithubOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -58,7 +62,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/organization github_organization} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/organization github_organization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -69,7 +73,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_organization',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.2.3',
+        providerVersion: '6.3.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -83,6 +87,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
     this._id = config.id;
     this._ignoreArchivedRepos = config.ignoreArchivedRepos;
     this._name = config.name;
+    this._summaryOnly = config.summaryOnly;
   }
 
   // ==========
@@ -249,6 +254,22 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
     return this.getBooleanAttribute('secret_scanning_push_protection_enabled_for_new_repositories');
   }
 
+  // summary_only - computed: false, optional: true, required: false
+  private _summaryOnly?: boolean | cdktf.IResolvable; 
+  public get summaryOnly() {
+    return this.getBooleanAttribute('summary_only');
+  }
+  public set summaryOnly(value: boolean | cdktf.IResolvable) {
+    this._summaryOnly = value;
+  }
+  public resetSummaryOnly() {
+    this._summaryOnly = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get summaryOnlyInput() {
+    return this._summaryOnly;
+  }
+
   // two_factor_requirement_enabled - computed: true, optional: false, required: false
   public get twoFactorRequirementEnabled() {
     return this.getBooleanAttribute('two_factor_requirement_enabled');
@@ -274,6 +295,7 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       ignore_archived_repos: cdktf.booleanToTerraform(this._ignoreArchivedRepos),
       name: cdktf.stringToTerraform(this._name),
+      summary_only: cdktf.booleanToTerraform(this._summaryOnly),
     };
   }
 
@@ -296,6 +318,12 @@ export class DataGithubOrganization extends cdktf.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      summary_only: {
+        value: cdktf.booleanToHclTerraform(this._summaryOnly),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
       },
     };
 

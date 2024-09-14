@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/collaborators
+// https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,26 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubCollaboratorsConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/collaborators#affiliation DataGithubCollaborators#affiliation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators#affiliation DataGithubCollaborators#affiliation}
   */
   readonly affiliation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/collaborators#id DataGithubCollaborators#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators#id DataGithubCollaborators#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/collaborators#owner DataGithubCollaborators#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators#owner DataGithubCollaborators#owner}
   */
   readonly owner: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/collaborators#repository DataGithubCollaborators#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators#permission DataGithubCollaborators#permission}
+  */
+  readonly permission?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators#repository DataGithubCollaborators#repository}
   */
   readonly repository: string;
 }
@@ -184,7 +188,7 @@ export class DataGithubCollaboratorsCollaboratorList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/collaborators github_collaborators}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators github_collaborators}
 */
 export class DataGithubCollaborators extends cdktf.TerraformDataSource {
 
@@ -200,7 +204,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGithubCollaborators resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubCollaborators to import
-  * @param importFromId The id of the existing DataGithubCollaborators that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/collaborators#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubCollaborators that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubCollaborators to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -212,7 +216,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/data-sources/collaborators github_collaborators} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/data-sources/collaborators github_collaborators} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +227,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_collaborators',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.2.3',
+        providerVersion: '6.3.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -237,6 +241,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
     this._affiliation = config.affiliation;
     this._id = config.id;
     this._owner = config.owner;
+    this._permission = config.permission;
     this._repository = config.repository;
   }
 
@@ -295,6 +300,22 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
     return this._owner;
   }
 
+  // permission - computed: false, optional: true, required: false
+  private _permission?: string; 
+  public get permission() {
+    return this.getStringAttribute('permission');
+  }
+  public set permission(value: string) {
+    this._permission = value;
+  }
+  public resetPermission() {
+    this._permission = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get permissionInput() {
+    return this._permission;
+  }
+
   // repository - computed: false, optional: false, required: true
   private _repository?: string; 
   public get repository() {
@@ -317,6 +338,7 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
       affiliation: cdktf.stringToTerraform(this._affiliation),
       id: cdktf.stringToTerraform(this._id),
       owner: cdktf.stringToTerraform(this._owner),
+      permission: cdktf.stringToTerraform(this._permission),
       repository: cdktf.stringToTerraform(this._repository),
     };
   }
@@ -337,6 +359,12 @@ export class DataGithubCollaborators extends cdktf.TerraformDataSource {
       },
       owner: {
         value: cdktf.stringToHclTerraform(this._owner),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      permission: {
+        value: cdktf.stringToHclTerraform(this._permission),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
