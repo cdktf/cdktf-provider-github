@@ -4,7 +4,7 @@
 
 ### RepositoryFile <a name="RepositoryFile" id="@cdktf/provider-github.repositoryFile.RepositoryFile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file github_repository_file}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file github_repository_file}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryFile.RepositoryFile.Initializer"></a>
 
@@ -73,6 +73,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.resetAutocreateBranch">resetAutocreateBranch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.resetAutocreateBranchSourceBranch">resetAutocreateBranchSourceBranch</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.resetAutocreateBranchSourceSha">resetAutocreateBranchSourceSha</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.resetBranch">resetBranch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.resetCommitAuthor">resetCommitAuthor</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.resetCommitEmail">resetCommitEmail</a></code> | *No description.* |
@@ -370,6 +373,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAutocreateBranch` <a name="resetAutocreateBranch" id="@cdktf/provider-github.repositoryFile.RepositoryFile.resetAutocreateBranch"></a>
+
+```typescript
+public resetAutocreateBranch(): void
+```
+
+##### `resetAutocreateBranchSourceBranch` <a name="resetAutocreateBranchSourceBranch" id="@cdktf/provider-github.repositoryFile.RepositoryFile.resetAutocreateBranchSourceBranch"></a>
+
+```typescript
+public resetAutocreateBranchSourceBranch(): void
+```
+
+##### `resetAutocreateBranchSourceSha` <a name="resetAutocreateBranchSourceSha" id="@cdktf/provider-github.repositoryFile.RepositoryFile.resetAutocreateBranchSourceSha"></a>
+
+```typescript
+public resetAutocreateBranchSourceSha(): void
+```
+
 ##### `resetBranch` <a name="resetBranch" id="@cdktf/provider-github.repositoryFile.RepositoryFile.resetBranch"></a>
 
 ```typescript
@@ -509,7 +530,7 @@ The construct id used in the generated config for the RepositoryFile to import.
 
 The id of the existing RepositoryFile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -542,6 +563,9 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitSha">commitSha</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.ref">ref</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.sha">sha</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchInput">autocreateBranchInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchSourceBranchInput">autocreateBranchSourceBranchInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchSourceShaInput">autocreateBranchSourceShaInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.branchInput">branchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitAuthorInput">commitAuthorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitEmailInput">commitEmailInput</a></code> | <code>string</code> | *No description.* |
@@ -551,6 +575,9 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.overwriteOnCreateInput">overwriteOnCreateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.repositoryInput">repositoryInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranch">autocreateBranch</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchSourceBranch">autocreateBranchSourceBranch</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchSourceSha">autocreateBranchSourceSha</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.branch">branch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitAuthor">commitAuthor</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFile.property.commitEmail">commitEmail</a></code> | <code>string</code> | *No description.* |
@@ -735,6 +762,36 @@ public readonly sha: string;
 
 ---
 
+##### `autocreateBranchInput`<sup>Optional</sup> <a name="autocreateBranchInput" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchInput"></a>
+
+```typescript
+public readonly autocreateBranchInput: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `autocreateBranchSourceBranchInput`<sup>Optional</sup> <a name="autocreateBranchSourceBranchInput" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchSourceBranchInput"></a>
+
+```typescript
+public readonly autocreateBranchSourceBranchInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autocreateBranchSourceShaInput`<sup>Optional</sup> <a name="autocreateBranchSourceShaInput" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchSourceShaInput"></a>
+
+```typescript
+public readonly autocreateBranchSourceShaInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `branchInput`<sup>Optional</sup> <a name="branchInput" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.branchInput"></a>
 
 ```typescript
@@ -819,6 +876,36 @@ public readonly overwriteOnCreateInput: boolean | IResolvable;
 
 ```typescript
 public readonly repositoryInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autocreateBranch`<sup>Required</sup> <a name="autocreateBranch" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranch"></a>
+
+```typescript
+public readonly autocreateBranch: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `autocreateBranchSourceBranch`<sup>Required</sup> <a name="autocreateBranchSourceBranch" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchSourceBranch"></a>
+
+```typescript
+public readonly autocreateBranchSourceBranch: string;
+```
+
+- *Type:* string
+
+---
+
+##### `autocreateBranchSourceSha`<sup>Required</sup> <a name="autocreateBranchSourceSha" id="@cdktf/provider-github.repositoryFile.RepositoryFile.property.autocreateBranchSourceSha"></a>
+
+```typescript
+public readonly autocreateBranchSourceSha: string;
 ```
 
 - *Type:* string
@@ -959,11 +1046,14 @@ const repositoryFileConfig: repositoryFile.RepositoryFileConfig = { ... }
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.content">content</a></code> | <code>string</code> | The file's content. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.file">file</a></code> | <code>string</code> | The file path to manage. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.repository">repository</a></code> | <code>string</code> | The repository name. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.autocreateBranch">autocreateBranch</a></code> | <code>boolean \| cdktf.IResolvable</code> | Automatically create the branch if it could not be found. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.autocreateBranchSourceBranch">autocreateBranchSourceBranch</a></code> | <code>string</code> | The branch name to start from, if 'autocreate_branch' is set. Defaults to 'main'. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.autocreateBranchSourceSha">autocreateBranchSourceSha</a></code> | <code>string</code> | The commit hash to start from, if 'autocreate_branch' is set. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.branch">branch</a></code> | <code>string</code> | The branch name, defaults to the repository's default branch. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitAuthor">commitAuthor</a></code> | <code>string</code> | The commit author name, defaults to the authenticated user's name. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitEmail">commitEmail</a></code> | <code>string</code> | The commit author email address, defaults to the authenticated user's email address. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.commitMessage">commitMessage</a></code> | <code>string</code> | The commit message when creating, updating or deleting the file. |
-| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#id RepositoryFile#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#id RepositoryFile#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.overwriteOnCreate">overwriteOnCreate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable overwriting existing files, defaults to "false". |
 
 ---
@@ -1048,7 +1138,7 @@ public readonly content: string;
 
 The file's content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#content RepositoryFile#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#content RepositoryFile#content}
 
 ---
 
@@ -1062,7 +1152,7 @@ public readonly file: string;
 
 The file path to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#file RepositoryFile#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#file RepositoryFile#file}
 
 ---
 
@@ -1076,7 +1166,53 @@ public readonly repository: string;
 
 The repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#repository RepositoryFile#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#repository RepositoryFile#repository}
+
+---
+
+##### `autocreateBranch`<sup>Optional</sup> <a name="autocreateBranch" id="@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.autocreateBranch"></a>
+
+```typescript
+public readonly autocreateBranch: boolean | IResolvable;
+```
+
+- *Type:* boolean | cdktf.IResolvable
+
+Automatically create the branch if it could not be found.
+
+Subsequent reads if the branch is deleted will occur from 'autocreate_branch_source_branch'
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#autocreate_branch RepositoryFile#autocreate_branch}
+
+---
+
+##### `autocreateBranchSourceBranch`<sup>Optional</sup> <a name="autocreateBranchSourceBranch" id="@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.autocreateBranchSourceBranch"></a>
+
+```typescript
+public readonly autocreateBranchSourceBranch: string;
+```
+
+- *Type:* string
+
+The branch name to start from, if 'autocreate_branch' is set. Defaults to 'main'.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#autocreate_branch_source_branch RepositoryFile#autocreate_branch_source_branch}
+
+---
+
+##### `autocreateBranchSourceSha`<sup>Optional</sup> <a name="autocreateBranchSourceSha" id="@cdktf/provider-github.repositoryFile.RepositoryFileConfig.property.autocreateBranchSourceSha"></a>
+
+```typescript
+public readonly autocreateBranchSourceSha: string;
+```
+
+- *Type:* string
+
+The commit hash to start from, if 'autocreate_branch' is set.
+
+Defaults to the tip of 'autocreate_branch_source_branch'. If provided, 'autocreate_branch_source_branch' is ignored.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#autocreate_branch_source_sha RepositoryFile#autocreate_branch_source_sha}
 
 ---
 
@@ -1090,7 +1226,7 @@ public readonly branch: string;
 
 The branch name, defaults to the repository's default branch.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#branch RepositoryFile#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#branch RepositoryFile#branch}
 
 ---
 
@@ -1106,7 +1242,7 @@ The commit author name, defaults to the authenticated user's name.
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App. 
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#commit_author RepositoryFile#commit_author}
 
 ---
 
@@ -1122,7 +1258,7 @@ The commit author email address, defaults to the authenticated user's email addr
 
 GitHub app users may omit author and email information so GitHub can verify commits as the GitHub App.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#commit_email RepositoryFile#commit_email}
 
 ---
 
@@ -1136,7 +1272,7 @@ public readonly commitMessage: string;
 
 The commit message when creating, updating or deleting the file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#commit_message RepositoryFile#commit_message}
 
 ---
 
@@ -1148,7 +1284,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#id RepositoryFile#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#id RepositoryFile#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1165,7 +1301,7 @@ public readonly overwriteOnCreate: boolean | IResolvable;
 
 Enable overwriting existing files, defaults to "false".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/repository_file#overwrite_on_create RepositoryFile#overwrite_on_create}
 
 ---
 

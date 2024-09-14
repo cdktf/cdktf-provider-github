@@ -4,12 +4,12 @@
 
 ### OrganizationSecurityManager <a name="OrganizationSecurityManager" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManager"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/organization_security_manager github_organization_security_manager}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/organization_security_manager github_organization_security_manager}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManager.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/organizationsecuritymanager"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsecuritymanager"
 
 organizationsecuritymanager.NewOrganizationSecurityManager(scope Construct, id *string, config OrganizationSecurityManagerConfig) OrganizationSecurityManager
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManager.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/organizationsecuritymanager"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsecuritymanager"
 
 organizationsecuritymanager.OrganizationSecurityManager_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManager.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/organizationsecuritymanager"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsecuritymanager"
 
 organizationsecuritymanager.OrganizationSecurityManager_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ organizationsecuritymanager.OrganizationSecurityManager_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManager.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/organizationsecuritymanager"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsecuritymanager"
 
 organizationsecuritymanager.OrganizationSecurityManager_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ organizationsecuritymanager.OrganizationSecurityManager_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManager.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/organizationsecuritymanager"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsecuritymanager"
 
 organizationsecuritymanager.OrganizationSecurityManager_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the OrganizationSecurityManage
 
 The id of the existing OrganizationSecurityManager that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/organization_security_manager#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/organization_security_manager#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +718,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/organizationsecuritymanager"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationsecuritymanager"
 
 &organizationsecuritymanager.OrganizationSecurityManagerConfig {
 	Connection: interface{},
@@ -745,7 +745,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/organizationsecurit
 | <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.teamSlug">TeamSlug</a></code> | <code>*string</code> | The slug of the team to manage. |
-| <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}. |
+| <code><a href="#@cdktf/provider-github.organizationSecurityManager.OrganizationSecurityManagerConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}. |
 
 ---
 
@@ -829,7 +829,7 @@ TeamSlug *string
 
 The slug of the team to manage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/organization_security_manager#team_slug OrganizationSecurityManager#team_slug}
 
 ---
 
@@ -841,7 +841,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.2.3/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/organization_security_manager#id OrganizationSecurityManager#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
