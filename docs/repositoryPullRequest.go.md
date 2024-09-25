@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
 
 repositorypullrequest.NewRepositoryPullRequest(scope Construct, id *string, config RepositoryPullRequestConfig) RepositoryPullRequest
 ```
@@ -406,7 +406,7 @@ func ResetOwner()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
 
 repositorypullrequest.RepositoryPullRequest_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
 
 repositorypullrequest.RepositoryPullRequest_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ repositorypullrequest.RepositoryPullRequest_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
 
 repositorypullrequest.RepositoryPullRequest_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ repositorypullrequest.RepositoryPullRequest_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
 
 repositorypullrequest.RepositoryPullRequest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryPullRequest.RepositoryPullRequestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/repositorypullrequest"
+import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorypullrequest"
 
 &repositorypullrequest.RepositoryPullRequestConfig {
 	Connection: interface{},
