@@ -4,12 +4,12 @@
 
 ### ActionsEnvironmentVariable <a name="ActionsEnvironmentVariable" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/actions_environment_variable github_actions_environment_variable}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_environment_variable github_actions_environment_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
 
 actionsenvironmentvariable.NewActionsEnvironmentVariable(scope Construct, id *string, config ActionsEnvironmentVariableConfig) ActionsEnvironmentVariable
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
 
 actionsenvironmentvariable.ActionsEnvironmentVariable_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
 
 actionsenvironmentvariable.ActionsEnvironmentVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ actionsenvironmentvariable.ActionsEnvironmentVariable_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
 
 actionsenvironmentvariable.ActionsEnvironmentVariable_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ actionsenvironmentvariable.ActionsEnvironmentVariable_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
 
 actionsenvironmentvariable.ActionsEnvironmentVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the ActionsEnvironmentVariable
 
 The id of the existing ActionsEnvironmentVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/actions_environment_variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_environment_variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentvariable"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsenvironmentvariable"
 
 &actionsenvironmentvariable.ActionsEnvironmentVariableConfig {
 	Connection: interface{},
@@ -839,7 +839,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsenvironmentv
 | <code><a href="#@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariableConfig.property.repository">Repository</a></code> | <code>*string</code> | Name of the repository. |
 | <code><a href="#@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariableConfig.property.value">Value</a></code> | <code>*string</code> | Value of the variable. |
 | <code><a href="#@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariableConfig.property.variableName">VariableName</a></code> | <code>*string</code> | Name of the variable. |
-| <code><a href="#@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/actions_environment_variable#id ActionsEnvironmentVariable#id}. |
+| <code><a href="#@cdktf/provider-github.actionsEnvironmentVariable.ActionsEnvironmentVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_environment_variable#id ActionsEnvironmentVariable#id}. |
 
 ---
 
@@ -923,7 +923,7 @@ Environment *string
 
 Name of the environment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/actions_environment_variable#environment ActionsEnvironmentVariable#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_environment_variable#environment ActionsEnvironmentVariable#environment}
 
 ---
 
@@ -937,7 +937,7 @@ Repository *string
 
 Name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/actions_environment_variable#repository ActionsEnvironmentVariable#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_environment_variable#repository ActionsEnvironmentVariable#repository}
 
 ---
 
@@ -951,7 +951,7 @@ Value *string
 
 Value of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/actions_environment_variable#value ActionsEnvironmentVariable#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_environment_variable#value ActionsEnvironmentVariable#value}
 
 ---
 
@@ -965,7 +965,7 @@ VariableName *string
 
 Name of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/actions_environment_variable#variable_name ActionsEnvironmentVariable#variable_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_environment_variable#variable_name ActionsEnvironmentVariable#variable_name}
 
 ---
 
@@ -977,7 +977,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/actions_environment_variable#id ActionsEnvironmentVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_environment_variable#id ActionsEnvironmentVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

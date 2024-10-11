@@ -4,7 +4,7 @@
 
 ### EnterpriseOrganization <a name="EnterpriseOrganization" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_organization github_enterprise_organization}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/enterprise_organization github_enterprise_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.enterpriseOrganization.EnterpriseOrganization.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the EnterpriseOrganization to 
 
 The id of the existing EnterpriseOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/enterprise_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,7 +954,7 @@ public string[] AdminLogins { get; set; }
 
 List of organization owner usernames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/enterprise_organization#admin_logins EnterpriseOrganization#admin_logins}
 
 ---
 
@@ -968,7 +968,7 @@ public string BillingEmail { get; set; }
 
 The billing email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/enterprise_organization#billing_email EnterpriseOrganization#billing_email}
 
 ---
 
@@ -982,7 +982,7 @@ public string EnterpriseId { get; set; }
 
 The ID of the enterprise.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/enterprise_organization#enterprise_id EnterpriseOrganization#enterprise_id}
 
 ---
 
@@ -996,7 +996,7 @@ public string Name { get; set; }
 
 The name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/enterprise_organization#name EnterpriseOrganization#name}
 
 ---
 
@@ -1010,7 +1010,7 @@ public string Description { get; set; }
 
 The description of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/enterprise_organization#description EnterpriseOrganization#description}
 
 ---
 
@@ -1024,7 +1024,7 @@ public string DisplayName { get; set; }
 
 The display name of the organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/enterprise_organization#display_name EnterpriseOrganization#display_name}
 
 ---
 
