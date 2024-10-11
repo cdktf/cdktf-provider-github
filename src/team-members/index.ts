@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members
+// https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface TeamMembersConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members#id TeamMembers#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members#id TeamMembers#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface TeamMembersConfig extends cdktf.TerraformMetaArguments {
   /**
   * The GitHub team id or slug
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members#team_id TeamMembers#team_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members#team_id TeamMembers#team_id}
   */
   readonly teamId: string;
   /**
   * members block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members#members TeamMembers#members}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members#members TeamMembers#members}
   */
   readonly members: TeamMembersMembers[] | cdktf.IResolvable;
 }
@@ -36,13 +36,13 @@ export interface TeamMembersMembers {
   /**
   * The role of the user within the team. Must be one of 'member' or 'maintainer'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members#role TeamMembers#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members#role TeamMembers#role}
   */
   readonly role?: string;
   /**
   * The user to add to the team.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members#username TeamMembers#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members#username TeamMembers#username}
   */
   readonly username: string;
 }
@@ -184,7 +184,7 @@ export class TeamMembersMembersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members github_team_members}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members github_team_members}
 */
 export class TeamMembers extends cdktf.TerraformResource {
 
@@ -200,7 +200,7 @@ export class TeamMembers extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a TeamMembers resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TeamMembers to import
-  * @param importFromId The id of the existing TeamMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TeamMembers that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TeamMembers to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -212,7 +212,7 @@ export class TeamMembers extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.0/docs/resources/team_members github_team_members} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/team_members github_team_members} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -223,7 +223,7 @@ export class TeamMembers extends cdktf.TerraformResource {
       terraformResourceType: 'github_team_members',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.3.0',
+        providerVersion: '6.3.1',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
