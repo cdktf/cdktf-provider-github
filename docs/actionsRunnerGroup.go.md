@@ -4,12 +4,12 @@
 
 ### ActionsRunnerGroup <a name="ActionsRunnerGroup" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_runner_group github_actions_runner_group}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_runner_group github_actions_runner_group}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsrunnergroup"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrunnergroup"
 
 actionsrunnergroup.NewActionsRunnerGroup(scope Construct, id *string, config ActionsRunnerGroupConfig) ActionsRunnerGroup
 ```
@@ -406,7 +406,7 @@ func ResetSelectedWorkflows()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsrunnergroup"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrunnergroup"
 
 actionsrunnergroup.ActionsRunnerGroup_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsrunnergroup"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrunnergroup"
 
 actionsrunnergroup.ActionsRunnerGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ actionsrunnergroup.ActionsRunnerGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsrunnergroup"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrunnergroup"
 
 actionsrunnergroup.ActionsRunnerGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ actionsrunnergroup.ActionsRunnerGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsrunnergroup"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrunnergroup"
 
 actionsrunnergroup.ActionsRunnerGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the ActionsRunnerGroup to impo
 
 The id of the existing ActionsRunnerGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_runner_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_runner_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,7 +893,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.actionsRunnerGroup.ActionsRunnerGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/actionsrunnergroup"
+import "github.com/cdktf/cdktf-provider-github-go/github/actionsrunnergroup"
 
 &actionsrunnergroup.ActionsRunnerGroupConfig {
 	Connection: interface{},
@@ -1012,7 +1012,7 @@ Name *string
 
 Name of the runner group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_runner_group#name ActionsRunnerGroup#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_runner_group#name ActionsRunnerGroup#name}
 
 ---
 
@@ -1026,7 +1026,7 @@ Visibility *string
 
 The visibility of the runner group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_runner_group#visibility ActionsRunnerGroup#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_runner_group#visibility ActionsRunnerGroup#visibility}
 
 ---
 
@@ -1040,7 +1040,7 @@ AllowsPublicRepositories interface{}
 
 Whether public repositories can be added to the runner group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_runner_group#allows_public_repositories ActionsRunnerGroup#allows_public_repositories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_runner_group#allows_public_repositories ActionsRunnerGroup#allows_public_repositories}
 
 ---
 
@@ -1056,7 +1056,7 @@ If 'true', the runner group will be restricted to running only the workflows spe
 
 Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_runner_group#restricted_to_workflows ActionsRunnerGroup#restricted_to_workflows}
 
 ---
 
@@ -1070,7 +1070,7 @@ SelectedRepositoryIds *[]*f64
 
 List of repository IDs that can access the runner group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_runner_group#selected_repository_ids ActionsRunnerGroup#selected_repository_ids}
 
 ---
 
@@ -1086,7 +1086,7 @@ List of workflows the runner group should be allowed to run.
 
 This setting will be ignored unless restricted_to_workflows is set to 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_runner_group#selected_workflows ActionsRunnerGroup#selected_workflows}
 
 ---
 

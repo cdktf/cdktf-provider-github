@@ -4,12 +4,12 @@
 
 ### IssueLabels <a name="IssueLabels" id="@cdktf/provider-github.issueLabels.IssueLabels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels github_issue_labels}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels github_issue_labels}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabels.IssueLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 issuelabels.NewIssueLabels(scope Construct, id *string, config IssueLabelsConfig) IssueLabels
 ```
@@ -405,7 +405,7 @@ func ResetLabel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.issueLabels.IssueLabels.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 issuelabels.IssueLabels_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.issueLabels.IssueLabels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 issuelabels.IssueLabels_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ issuelabels.IssueLabels_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.issueLabels.IssueLabels.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 issuelabels.IssueLabels_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ issuelabels.IssueLabels_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.issueLabels.IssueLabels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 issuelabels.IssueLabels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -494,7 +494,7 @@ The construct id used in the generated config for the IssueLabels to import.
 
 The id of the existing IssueLabels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,7 +760,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.issueLabels.IssueLabelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 &issuelabels.IssueLabelsConfig {
 	Connection: interface{},
@@ -788,7 +788,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels#id IssueLabels#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels#id IssueLabels#id}. |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.label">Label</a></code> | <code>interface{}</code> | label block. |
 
 ---
@@ -873,7 +873,7 @@ Repository *string
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels#repository IssueLabels#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels#repository IssueLabels#repository}
 
 ---
 
@@ -885,7 +885,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels#id IssueLabels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels#id IssueLabels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -902,7 +902,7 @@ Label interface{}
 
 label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels#label IssueLabels#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels#label IssueLabels#label}
 
 ---
 
@@ -911,7 +911,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.issueLabels.IssueLabelsLabel.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 &issuelabels.IssueLabelsLabel {
 	Color: *string,
@@ -940,7 +940,7 @@ Color *string
 
 A 6 character hex code, without the leading '#', identifying the color of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels#color IssueLabels#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels#color IssueLabels#color}
 
 ---
 
@@ -954,7 +954,7 @@ Name *string
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels#name IssueLabels#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels#name IssueLabels#name}
 
 ---
 
@@ -968,7 +968,7 @@ Description *string
 
 A short description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/issue_labels#description IssueLabels#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/issue_labels#description IssueLabels#description}
 
 ---
 
@@ -979,7 +979,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabels.IssueLabelsLabelList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 issuelabels.NewIssueLabelsLabelList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IssueLabelsLabelList
 ```
@@ -1139,7 +1139,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabels.IssueLabelsLabelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/issuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/issuelabels"
 
 issuelabels.NewIssueLabelsLabelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IssueLabelsLabelOutputReference
 ```

@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset
+// https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface RepositoryRulesetConfig extends cdktf.TerraformMetaArguments {
   /**
   * Possible values for Enforcement are `disabled`, `active`, `evaluate`. Note: `evaluate` is currently only supported for owners of type `organization`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#enforcement RepositoryRuleset#enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#enforcement RepositoryRuleset#enforcement}
   */
   readonly enforcement: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#id RepositoryRuleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#id RepositoryRuleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,37 +23,37 @@ export interface RepositoryRulesetConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#name RepositoryRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#name RepositoryRuleset#name}
   */
   readonly name: string;
   /**
   * Name of the repository to apply rulset to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#repository RepositoryRuleset#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#repository RepositoryRuleset#repository}
   */
   readonly repository?: string;
   /**
   * Possible values are `branch` and `tag`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#target RepositoryRuleset#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#target RepositoryRuleset#target}
   */
   readonly target: string;
   /**
   * bypass_actors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#bypass_actors RepositoryRuleset#bypass_actors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#bypass_actors RepositoryRuleset#bypass_actors}
   */
   readonly bypassActors?: RepositoryRulesetBypassActors[] | cdktf.IResolvable;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#conditions RepositoryRuleset#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#conditions RepositoryRuleset#conditions}
   */
   readonly conditions?: RepositoryRulesetConditions;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#rules RepositoryRuleset#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#rules RepositoryRuleset#rules}
   */
   readonly rules: RepositoryRulesetRules;
 }
@@ -66,19 +61,19 @@ export interface RepositoryRulesetBypassActors {
   /**
   * The ID of the actor that can bypass a ruleset. When `actor_type` is `OrganizationAdmin`, this should be set to `1`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#actor_id RepositoryRuleset#actor_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#actor_id RepositoryRuleset#actor_id}
   */
   readonly actorId: number;
   /**
   * The type of actor that can bypass a ruleset. Can be one of: `RepositoryRole`, `Team`, `Integration`, `OrganizationAdmin`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#actor_type RepositoryRuleset#actor_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#actor_type RepositoryRuleset#actor_type}
   */
   readonly actorType: string;
   /**
   * When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#bypass_mode RepositoryRuleset#bypass_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#bypass_mode RepositoryRuleset#bypass_mode}
   */
   readonly bypassMode: string;
 }
@@ -245,13 +240,13 @@ export interface RepositoryRulesetConditionsRefName {
   /**
   * Array of ref names or patterns to exclude. The condition will not pass if any of these patterns match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#exclude RepositoryRuleset#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#exclude RepositoryRuleset#exclude}
   */
   readonly exclude: string[];
   /**
   * Array of ref names or patterns to include. One of these patterns must match for the condition to pass. Also accepts `~DEFAULT_BRANCH` to include the default branch or `~ALL` to include all branches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#include RepositoryRuleset#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#include RepositoryRuleset#include}
   */
   readonly include: string[];
 }
@@ -360,7 +355,7 @@ export interface RepositoryRulesetConditions {
   /**
   * ref_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#ref_name RepositoryRuleset#ref_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#ref_name RepositoryRuleset#ref_name}
   */
   readonly refName: RepositoryRulesetConditionsRefName;
 }
@@ -443,25 +438,25 @@ export interface RepositoryRulesetRulesBranchNamePattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#name RepositoryRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#name RepositoryRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -628,25 +623,25 @@ export interface RepositoryRulesetRulesCommitAuthorEmailPattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#name RepositoryRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#name RepositoryRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -813,25 +808,25 @@ export interface RepositoryRulesetRulesCommitMessagePattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#name RepositoryRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#name RepositoryRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -998,25 +993,25 @@ export interface RepositoryRulesetRulesCommitterEmailPattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#name RepositoryRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#name RepositoryRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -1183,31 +1178,31 @@ export interface RepositoryRulesetRulesPullRequest {
   /**
   * New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#dismiss_stale_reviews_on_push RepositoryRuleset#dismiss_stale_reviews_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#dismiss_stale_reviews_on_push RepositoryRuleset#dismiss_stale_reviews_on_push}
   */
   readonly dismissStaleReviewsOnPush?: boolean | cdktf.IResolvable;
   /**
   * Require an approving review in pull requests that modify files that have a designated code owner. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#require_code_owner_review RepositoryRuleset#require_code_owner_review}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#require_code_owner_review RepositoryRuleset#require_code_owner_review}
   */
   readonly requireCodeOwnerReview?: boolean | cdktf.IResolvable;
   /**
   * Whether the most recent reviewable push must be approved by someone other than the person who pushed it. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#require_last_push_approval RepositoryRuleset#require_last_push_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#require_last_push_approval RepositoryRuleset#require_last_push_approval}
   */
   readonly requireLastPushApproval?: boolean | cdktf.IResolvable;
   /**
   * The number of approving reviews that are required before a pull request can be merged. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#required_approving_review_count RepositoryRuleset#required_approving_review_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_approving_review_count RepositoryRuleset#required_approving_review_count}
   */
   readonly requiredApprovingReviewCount?: number;
   /**
   * All conversations on code must be resolved before a pull request can be merged. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#required_review_thread_resolution RepositoryRuleset#required_review_thread_resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_review_thread_resolution RepositoryRuleset#required_review_thread_resolution}
   */
   readonly requiredReviewThreadResolution?: boolean | cdktf.IResolvable;
 }
@@ -1405,11 +1400,273 @@ export class RepositoryRulesetRulesPullRequestOutputReference extends cdktf.Comp
     return this._requiredReviewThreadResolution;
   }
 }
+export interface RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool {
+  /**
+  * The severity level at which code scanning results that raise alerts block a reference update. Can be one of: `none`, `errors`, `errors_and_warnings`, `all`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#alerts_threshold RepositoryRuleset#alerts_threshold}
+  */
+  readonly alertsThreshold: string;
+  /**
+  * The severity level at which code scanning results that raise security alerts block a reference update. Can be one of: `none`, `critical`, `high_or_higher`, `medium_or_higher`, `all`.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#security_alerts_threshold RepositoryRuleset#security_alerts_threshold}
+  */
+  readonly securityAlertsThreshold: string;
+  /**
+  * The name of a code scanning tool
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#tool RepositoryRuleset#tool}
+  */
+  readonly tool: string;
+}
+
+export function repositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolToTerraform(struct?: RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    alerts_threshold: cdktf.stringToTerraform(struct!.alertsThreshold),
+    security_alerts_threshold: cdktf.stringToTerraform(struct!.securityAlertsThreshold),
+    tool: cdktf.stringToTerraform(struct!.tool),
+  }
+}
+
+
+export function repositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolToHclTerraform(struct?: RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    alerts_threshold: {
+      value: cdktf.stringToHclTerraform(struct!.alertsThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    security_alerts_threshold: {
+      value: cdktf.stringToHclTerraform(struct!.securityAlertsThreshold),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    tool: {
+      value: cdktf.stringToHclTerraform(struct!.tool),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._alertsThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.alertsThreshold = this._alertsThreshold;
+    }
+    if (this._securityAlertsThreshold !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.securityAlertsThreshold = this._securityAlertsThreshold;
+    }
+    if (this._tool !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.tool = this._tool;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._alertsThreshold = undefined;
+      this._securityAlertsThreshold = undefined;
+      this._tool = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._alertsThreshold = value.alertsThreshold;
+      this._securityAlertsThreshold = value.securityAlertsThreshold;
+      this._tool = value.tool;
+    }
+  }
+
+  // alerts_threshold - computed: false, optional: false, required: true
+  private _alertsThreshold?: string; 
+  public get alertsThreshold() {
+    return this.getStringAttribute('alerts_threshold');
+  }
+  public set alertsThreshold(value: string) {
+    this._alertsThreshold = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get alertsThresholdInput() {
+    return this._alertsThreshold;
+  }
+
+  // security_alerts_threshold - computed: false, optional: false, required: true
+  private _securityAlertsThreshold?: string; 
+  public get securityAlertsThreshold() {
+    return this.getStringAttribute('security_alerts_threshold');
+  }
+  public set securityAlertsThreshold(value: string) {
+    this._securityAlertsThreshold = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get securityAlertsThresholdInput() {
+    return this._securityAlertsThreshold;
+  }
+
+  // tool - computed: false, optional: false, required: true
+  private _tool?: string; 
+  public get tool() {
+    return this.getStringAttribute('tool');
+  }
+  public set tool(value: string) {
+    this._tool = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get toolInput() {
+    return this._tool;
+  }
+}
+
+export class RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolList extends cdktf.ComplexList {
+  public internalValue? : RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolOutputReference {
+    return new RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface RepositoryRulesetRulesRequiredCodeScanning {
+  /**
+  * required_code_scanning_tool block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_code_scanning_tool RepositoryRuleset#required_code_scanning_tool}
+  */
+  readonly requiredCodeScanningTool: RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool[] | cdktf.IResolvable;
+}
+
+export function repositoryRulesetRulesRequiredCodeScanningToTerraform(struct?: RepositoryRulesetRulesRequiredCodeScanningOutputReference | RepositoryRulesetRulesRequiredCodeScanning): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    required_code_scanning_tool: cdktf.listMapper(repositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolToTerraform, true)(struct!.requiredCodeScanningTool),
+  }
+}
+
+
+export function repositoryRulesetRulesRequiredCodeScanningToHclTerraform(struct?: RepositoryRulesetRulesRequiredCodeScanningOutputReference | RepositoryRulesetRulesRequiredCodeScanning): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    required_code_scanning_tool: {
+      value: cdktf.listMapperHcl(repositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolToHclTerraform, true)(struct!.requiredCodeScanningTool),
+      isBlock: true,
+      type: "set",
+      storageClassType: "RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class RepositoryRulesetRulesRequiredCodeScanningOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): RepositoryRulesetRulesRequiredCodeScanning | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._requiredCodeScanningTool?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requiredCodeScanningTool = this._requiredCodeScanningTool?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: RepositoryRulesetRulesRequiredCodeScanning | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._requiredCodeScanningTool.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._requiredCodeScanningTool.internalValue = value.requiredCodeScanningTool;
+    }
+  }
+
+  // required_code_scanning_tool - computed: false, optional: false, required: true
+  private _requiredCodeScanningTool = new RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningToolList(this, "required_code_scanning_tool", true);
+  public get requiredCodeScanningTool() {
+    return this._requiredCodeScanningTool;
+  }
+  public putRequiredCodeScanningTool(value: RepositoryRulesetRulesRequiredCodeScanningRequiredCodeScanningTool[] | cdktf.IResolvable) {
+    this._requiredCodeScanningTool.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredCodeScanningToolInput() {
+    return this._requiredCodeScanningTool.internalValue;
+  }
+}
 export interface RepositoryRulesetRulesRequiredDeployments {
   /**
   * The environments that must be successfully deployed to before branches can be merged.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#required_deployment_environments RepositoryRuleset#required_deployment_environments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_deployment_environments RepositoryRuleset#required_deployment_environments}
   */
   readonly requiredDeploymentEnvironments: string[];
 }
@@ -1492,13 +1749,13 @@ export interface RepositoryRulesetRulesRequiredStatusChecksRequiredCheck {
   /**
   * The status check context name that must be present on the commit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#context RepositoryRuleset#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#context RepositoryRuleset#context}
   */
   readonly context: string;
   /**
   * The optional integration ID that this status check must originate from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#integration_id RepositoryRuleset#integration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#integration_id RepositoryRuleset#integration_id}
   */
   readonly integrationId?: number;
 }
@@ -1642,13 +1899,13 @@ export interface RepositoryRulesetRulesRequiredStatusChecks {
   /**
   * Whether pull requests targeting a matching branch must be tested with the latest code. This setting will not take effect unless at least one status check is enabled. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#strict_required_status_checks_policy RepositoryRuleset#strict_required_status_checks_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#strict_required_status_checks_policy RepositoryRuleset#strict_required_status_checks_policy}
   */
   readonly strictRequiredStatusChecksPolicy?: boolean | cdktf.IResolvable;
   /**
   * required_check block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#required_check RepositoryRuleset#required_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_check RepositoryRuleset#required_check}
   */
   readonly requiredCheck: RepositoryRulesetRulesRequiredStatusChecksRequiredCheck[] | cdktf.IResolvable;
 }
@@ -1760,25 +2017,25 @@ export interface RepositoryRulesetRulesTagNamePattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#name RepositoryRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#name RepositoryRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#negate RepositoryRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#operator RepositoryRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#pattern RepositoryRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -1945,91 +2202,97 @@ export interface RepositoryRulesetRules {
   /**
   * Only allow users with bypass permission to create matching refs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#creation RepositoryRuleset#creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#creation RepositoryRuleset#creation}
   */
   readonly creation?: boolean | cdktf.IResolvable;
   /**
   * Only allow users with bypass permissions to delete matching refs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#deletion RepositoryRuleset#deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#deletion RepositoryRuleset#deletion}
   */
   readonly deletion?: boolean | cdktf.IResolvable;
   /**
   * Prevent users with push access from force pushing to branches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#non_fast_forward RepositoryRuleset#non_fast_forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#non_fast_forward RepositoryRuleset#non_fast_forward}
   */
   readonly nonFastForward?: boolean | cdktf.IResolvable;
   /**
   * Prevent merge commits from being pushed to matching branches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#required_linear_history RepositoryRuleset#required_linear_history}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_linear_history RepositoryRuleset#required_linear_history}
   */
   readonly requiredLinearHistory?: boolean | cdktf.IResolvable;
   /**
   * Commits pushed to matching branches must have verified signatures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#required_signatures RepositoryRuleset#required_signatures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_signatures RepositoryRuleset#required_signatures}
   */
   readonly requiredSignatures?: boolean | cdktf.IResolvable;
   /**
   * Only allow users with bypass permission to update matching refs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#update RepositoryRuleset#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#update RepositoryRuleset#update}
   */
   readonly update?: boolean | cdktf.IResolvable;
   /**
   * Branch can pull changes from its upstream repository. This is only applicable to forked repositories. Requires `update` to be set to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#update_allows_fetch_and_merge RepositoryRuleset#update_allows_fetch_and_merge}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#update_allows_fetch_and_merge RepositoryRuleset#update_allows_fetch_and_merge}
   */
   readonly updateAllowsFetchAndMerge?: boolean | cdktf.IResolvable;
   /**
   * branch_name_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#branch_name_pattern RepositoryRuleset#branch_name_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#branch_name_pattern RepositoryRuleset#branch_name_pattern}
   */
   readonly branchNamePattern?: RepositoryRulesetRulesBranchNamePattern;
   /**
   * commit_author_email_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#commit_author_email_pattern RepositoryRuleset#commit_author_email_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#commit_author_email_pattern RepositoryRuleset#commit_author_email_pattern}
   */
   readonly commitAuthorEmailPattern?: RepositoryRulesetRulesCommitAuthorEmailPattern;
   /**
   * commit_message_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#commit_message_pattern RepositoryRuleset#commit_message_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#commit_message_pattern RepositoryRuleset#commit_message_pattern}
   */
   readonly commitMessagePattern?: RepositoryRulesetRulesCommitMessagePattern;
   /**
   * committer_email_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#committer_email_pattern RepositoryRuleset#committer_email_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#committer_email_pattern RepositoryRuleset#committer_email_pattern}
   */
   readonly committerEmailPattern?: RepositoryRulesetRulesCommitterEmailPattern;
   /**
   * pull_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#pull_request RepositoryRuleset#pull_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#pull_request RepositoryRuleset#pull_request}
   */
   readonly pullRequest?: RepositoryRulesetRulesPullRequest;
   /**
+  * required_code_scanning block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_code_scanning RepositoryRuleset#required_code_scanning}
+  */
+  readonly requiredCodeScanning?: RepositoryRulesetRulesRequiredCodeScanning;
+  /**
   * required_deployments block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#required_deployments RepositoryRuleset#required_deployments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_deployments RepositoryRuleset#required_deployments}
   */
   readonly requiredDeployments?: RepositoryRulesetRulesRequiredDeployments;
   /**
   * required_status_checks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#required_status_checks RepositoryRuleset#required_status_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#required_status_checks RepositoryRuleset#required_status_checks}
   */
   readonly requiredStatusChecks?: RepositoryRulesetRulesRequiredStatusChecks;
   /**
   * tag_name_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#tag_name_pattern RepositoryRuleset#tag_name_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#tag_name_pattern RepositoryRuleset#tag_name_pattern}
   */
   readonly tagNamePattern?: RepositoryRulesetRulesTagNamePattern;
 }
@@ -2052,6 +2315,7 @@ export function repositoryRulesetRulesToTerraform(struct?: RepositoryRulesetRule
     commit_message_pattern: repositoryRulesetRulesCommitMessagePatternToTerraform(struct!.commitMessagePattern),
     committer_email_pattern: repositoryRulesetRulesCommitterEmailPatternToTerraform(struct!.committerEmailPattern),
     pull_request: repositoryRulesetRulesPullRequestToTerraform(struct!.pullRequest),
+    required_code_scanning: repositoryRulesetRulesRequiredCodeScanningToTerraform(struct!.requiredCodeScanning),
     required_deployments: repositoryRulesetRulesRequiredDeploymentsToTerraform(struct!.requiredDeployments),
     required_status_checks: repositoryRulesetRulesRequiredStatusChecksToTerraform(struct!.requiredStatusChecks),
     tag_name_pattern: repositoryRulesetRulesTagNamePatternToTerraform(struct!.tagNamePattern),
@@ -2136,6 +2400,12 @@ export function repositoryRulesetRulesToHclTerraform(struct?: RepositoryRulesetR
       isBlock: true,
       type: "list",
       storageClassType: "RepositoryRulesetRulesPullRequestList",
+    },
+    required_code_scanning: {
+      value: repositoryRulesetRulesRequiredCodeScanningToHclTerraform(struct!.requiredCodeScanning),
+      isBlock: true,
+      type: "list",
+      storageClassType: "RepositoryRulesetRulesRequiredCodeScanningList",
     },
     required_deployments: {
       value: repositoryRulesetRulesRequiredDeploymentsToHclTerraform(struct!.requiredDeployments),
@@ -2223,6 +2493,10 @@ export class RepositoryRulesetRulesOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.pullRequest = this._pullRequest?.internalValue;
     }
+    if (this._requiredCodeScanning?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.requiredCodeScanning = this._requiredCodeScanning?.internalValue;
+    }
     if (this._requiredDeployments?.internalValue !== undefined) {
       hasAnyValues = true;
       internalValueResult.requiredDeployments = this._requiredDeployments?.internalValue;
@@ -2253,6 +2527,7 @@ export class RepositoryRulesetRulesOutputReference extends cdktf.ComplexObject {
       this._commitMessagePattern.internalValue = undefined;
       this._committerEmailPattern.internalValue = undefined;
       this._pullRequest.internalValue = undefined;
+      this._requiredCodeScanning.internalValue = undefined;
       this._requiredDeployments.internalValue = undefined;
       this._requiredStatusChecks.internalValue = undefined;
       this._tagNamePattern.internalValue = undefined;
@@ -2271,6 +2546,7 @@ export class RepositoryRulesetRulesOutputReference extends cdktf.ComplexObject {
       this._commitMessagePattern.internalValue = value.commitMessagePattern;
       this._committerEmailPattern.internalValue = value.committerEmailPattern;
       this._pullRequest.internalValue = value.pullRequest;
+      this._requiredCodeScanning.internalValue = value.requiredCodeScanning;
       this._requiredDeployments.internalValue = value.requiredDeployments;
       this._requiredStatusChecks.internalValue = value.requiredStatusChecks;
       this._tagNamePattern.internalValue = value.tagNamePattern;
@@ -2469,6 +2745,22 @@ export class RepositoryRulesetRulesOutputReference extends cdktf.ComplexObject {
     return this._pullRequest.internalValue;
   }
 
+  // required_code_scanning - computed: false, optional: true, required: false
+  private _requiredCodeScanning = new RepositoryRulesetRulesRequiredCodeScanningOutputReference(this, "required_code_scanning");
+  public get requiredCodeScanning() {
+    return this._requiredCodeScanning;
+  }
+  public putRequiredCodeScanning(value: RepositoryRulesetRulesRequiredCodeScanning) {
+    this._requiredCodeScanning.internalValue = value;
+  }
+  public resetRequiredCodeScanning() {
+    this._requiredCodeScanning.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get requiredCodeScanningInput() {
+    return this._requiredCodeScanning.internalValue;
+  }
+
   // required_deployments - computed: false, optional: true, required: false
   private _requiredDeployments = new RepositoryRulesetRulesRequiredDeploymentsOutputReference(this, "required_deployments");
   public get requiredDeployments() {
@@ -2519,7 +2811,7 @@ export class RepositoryRulesetRulesOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset github_repository_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset github_repository_ruleset}
 */
 export class RepositoryRuleset extends cdktf.TerraformResource {
 
@@ -2535,7 +2827,7 @@ export class RepositoryRuleset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RepositoryRuleset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RepositoryRuleset to import
-  * @param importFromId The id of the existing RepositoryRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RepositoryRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RepositoryRuleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -2547,7 +2839,7 @@ export class RepositoryRuleset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_ruleset github_repository_ruleset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_ruleset github_repository_ruleset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2558,7 +2850,7 @@ export class RepositoryRuleset extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.3.1',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

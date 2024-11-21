@@ -124,7 +124,6 @@ The following submodules are available:
 - [repositoryProject](./repositoryProject.typescript.md)
 - [repositoryPullRequest](./repositoryPullRequest.typescript.md)
 - [repositoryRuleset](./repositoryRuleset.typescript.md)
-- [repositoryTagProtection](./repositoryTagProtection.typescript.md)
 - [repositoryTopics](./repositoryTopics.typescript.md)
 - [repositoryWebhook](./repositoryWebhook.typescript.md)
 - [team](./team.typescript.md)

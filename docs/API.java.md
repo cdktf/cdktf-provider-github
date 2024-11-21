@@ -124,7 +124,6 @@ The following submodules are available:
 - [repositoryProject](./repositoryProject.java.md)
 - [repositoryPullRequest](./repositoryPullRequest.java.md)
 - [repositoryRuleset](./repositoryRuleset.java.md)
-- [repositoryTagProtection](./repositoryTagProtection.java.md)
 - [repositoryTopics](./repositoryTopics.java.md)
 - [repositoryWebhook](./repositoryWebhook.java.md)
 - [team](./team.java.md)
