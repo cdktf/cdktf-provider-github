@@ -4,7 +4,7 @@
 
 ### DataGithubExternalGroups <a name="DataGithubExternalGroups" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/data-sources/external_groups github_external_groups}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/external_groups github_external_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroups.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubExternalGroups t
 
 The id of the existing DataGithubExternalGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/data-sources/external_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/external_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -608,7 +608,7 @@ new DataGithubExternalGroupsConfig {
 | <code><a href="#@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/data-sources/external_groups#id DataGithubExternalGroups#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubExternalGroups.DataGithubExternalGroupsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/external_groups#id DataGithubExternalGroups#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/data-sources/external_groups#id DataGithubExternalGroups#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/external_groups#id DataGithubExternalGroups#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

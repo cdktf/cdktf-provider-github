@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy
+// https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface RepositoryEnvironmentDeploymentPolicyConfig extends cdktf.Terra
   /**
   * The name pattern that branches must match in order to deploy to the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy#branch_pattern RepositoryEnvironmentDeploymentPolicy#branch_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy#branch_pattern RepositoryEnvironmentDeploymentPolicy#branch_pattern}
   */
-  readonly branchPattern: string;
+  readonly branchPattern?: string;
   /**
   * The name of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy#environment RepositoryEnvironmentDeploymentPolicy#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy#environment RepositoryEnvironmentDeploymentPolicy#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy#id RepositoryEnvironmentDeploymentPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy#id RepositoryEnvironmentDeploymentPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,19 @@ export interface RepositoryEnvironmentDeploymentPolicyConfig extends cdktf.Terra
   /**
   * The name of the repository. The name is not case sensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy#repository RepositoryEnvironmentDeploymentPolicy#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy#repository RepositoryEnvironmentDeploymentPolicy#repository}
   */
   readonly repository: string;
+  /**
+  * The name pattern that tags must match in order to deploy to the environment.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy#tag_pattern RepositoryEnvironmentDeploymentPolicy#tag_pattern}
+  */
+  readonly tagPattern?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy}
 */
 export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResource {
 
@@ -56,7 +62,7 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
   * Generates CDKTF code for importing a RepositoryEnvironmentDeploymentPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RepositoryEnvironmentDeploymentPolicy to import
-  * @param importFromId The id of the existing RepositoryEnvironmentDeploymentPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RepositoryEnvironmentDeploymentPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RepositoryEnvironmentDeploymentPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +74,7 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_environment_deployment_policy github_repository_environment_deployment_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +85,7 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
       terraformResourceType: 'github_repository_environment_deployment_policy',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.3.1',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -94,19 +100,23 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
     this._environment = config.environment;
     this._id = config.id;
     this._repository = config.repository;
+    this._tagPattern = config.tagPattern;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // branch_pattern - computed: false, optional: false, required: true
+  // branch_pattern - computed: false, optional: true, required: false
   private _branchPattern?: string; 
   public get branchPattern() {
     return this.getStringAttribute('branch_pattern');
   }
   public set branchPattern(value: string) {
     this._branchPattern = value;
+  }
+  public resetBranchPattern() {
+    this._branchPattern = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get branchPatternInput() {
@@ -155,6 +165,22 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
     return this._repository;
   }
 
+  // tag_pattern - computed: false, optional: true, required: false
+  private _tagPattern?: string; 
+  public get tagPattern() {
+    return this.getStringAttribute('tag_pattern');
+  }
+  public set tagPattern(value: string) {
+    this._tagPattern = value;
+  }
+  public resetTagPattern() {
+    this._tagPattern = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tagPatternInput() {
+    return this._tagPattern;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -165,6 +191,7 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
       environment: cdktf.stringToTerraform(this._environment),
       id: cdktf.stringToTerraform(this._id),
       repository: cdktf.stringToTerraform(this._repository),
+      tag_pattern: cdktf.stringToTerraform(this._tagPattern),
     };
   }
 
@@ -190,6 +217,12 @@ export class RepositoryEnvironmentDeploymentPolicy extends cdktf.TerraformResour
       },
       repository: {
         value: cdktf.stringToHclTerraform(this._repository),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      tag_pattern: {
+        value: cdktf.stringToHclTerraform(this._tagPattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

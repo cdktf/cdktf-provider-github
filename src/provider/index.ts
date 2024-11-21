@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.3.1/docs
+// https://registry.terraform.io/providers/integrations/github/6.4.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,79 +15,79 @@ export interface GithubProviderConfig {
   /**
   * The GitHub Base API URL
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#base_url GithubProvider#base_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#base_url GithubProvider#base_url}
   */
   readonly baseUrl?: string;
   /**
   * Enable `insecure` mode for testing purposes
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#insecure GithubProvider#insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#insecure GithubProvider#insecure}
   */
   readonly insecure?: boolean | cdktf.IResolvable;
   /**
   * Number of times to retry a request after receiving an error status codeDefaults to 3
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#max_retries GithubProvider#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#max_retries GithubProvider#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#organization GithubProvider#organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#organization GithubProvider#organization}
   */
   readonly organization?: string;
   /**
   * The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#owner GithubProvider#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#owner GithubProvider#owner}
   */
   readonly owner?: string;
   /**
   * Allow the provider to make parallel API calls to GitHub. You may want to set it to true when you have a private Github Enterprise without strict rate limits. Although, it is not possible to enable this setting on github.com because we enforce the respect of github.com's best practices to avoid hitting abuse rate limitsDefaults to false if not set
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#parallel_requests GithubProvider#parallel_requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#parallel_requests GithubProvider#parallel_requests}
   */
   readonly parallelRequests?: boolean | cdktf.IResolvable;
   /**
   * Amount of time in milliseconds to sleep in between non-write requests to GitHub API. Defaults to 0ms if not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#read_delay_ms GithubProvider#read_delay_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#read_delay_ms GithubProvider#read_delay_ms}
   */
   readonly readDelayMs?: number;
   /**
   * Amount of time in milliseconds to sleep in between requests to GitHub API after an error response. Defaults to 1000ms or 1s if not set, the max_retries must be set to greater than zero.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#retry_delay_ms GithubProvider#retry_delay_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#retry_delay_ms GithubProvider#retry_delay_ms}
   */
   readonly retryDelayMs?: number;
   /**
   * Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504]
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#retryable_errors GithubProvider#retryable_errors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#retryable_errors GithubProvider#retryable_errors}
   */
   readonly retryableErrors?: number[];
   /**
   * The OAuth token used to connect to GitHub. Anonymous mode is enabled if both `token` and `app_auth` are not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#token GithubProvider#token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#token GithubProvider#token}
   */
   readonly token?: string;
   /**
   * Amount of time in milliseconds to sleep in between writes to GitHub API. Defaults to 1000ms or 1s if not set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#write_delay_ms GithubProvider#write_delay_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#write_delay_ms GithubProvider#write_delay_ms}
   */
   readonly writeDelayMs?: number;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#alias GithubProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#alias GithubProvider#alias}
   */
   readonly alias?: string;
   /**
   * app_auth block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#app_auth GithubProvider#app_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#app_auth GithubProvider#app_auth}
   */
   readonly appAuth?: GithubProviderAppAuth;
 }
@@ -95,7 +95,7 @@ export interface GithubProviderAppAuth {
   /**
   * The GitHub App ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#id GithubProvider#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#id GithubProvider#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -104,13 +104,13 @@ export interface GithubProviderAppAuth {
   /**
   * The GitHub App installation instance ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#installation_id GithubProvider#installation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#installation_id GithubProvider#installation_id}
   */
   readonly installationId: string;
   /**
   * The GitHub App PEM file contents.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#pem_file GithubProvider#pem_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#pem_file GithubProvider#pem_file}
   */
   readonly pemFile: string;
 }
@@ -160,7 +160,7 @@ export function githubProviderAppAuthToHclTerraform(struct?: GithubProviderAppAu
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs github}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs github}
 */
 export class GithubProvider extends cdktf.TerraformProvider {
 
@@ -176,7 +176,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a GithubProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the GithubProvider to import
-  * @param importFromId The id of the existing GithubProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing GithubProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the GithubProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -188,7 +188,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.3.1/docs github} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs github} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,7 +199,7 @@ export class GithubProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'github',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.3.1',
+        providerVersion: '6.4.0',
         providerVersionConstraint: '~> 6.0'
       },
       terraformProviderSource: 'integrations/github'

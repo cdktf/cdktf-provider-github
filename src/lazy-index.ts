@@ -62,7 +62,6 @@ Object.defineProperty(exports, 'repositoryMilestone', { get: function () { retur
 Object.defineProperty(exports, 'repositoryProject', { get: function () { return require('./repository-project'); } });
 Object.defineProperty(exports, 'repositoryPullRequest', { get: function () { return require('./repository-pull-request'); } });
 Object.defineProperty(exports, 'repositoryRuleset', { get: function () { return require('./repository-ruleset'); } });
-Object.defineProperty(exports, 'repositoryTagProtection', { get: function () { return require('./repository-tag-protection'); } });
 Object.defineProperty(exports, 'repositoryTopics', { get: function () { return require('./repository-topics'); } });
 Object.defineProperty(exports, 'repositoryWebhook', { get: function () { return require('./repository-webhook'); } });
 Object.defineProperty(exports, 'team', { get: function () { return require('./team'); } });

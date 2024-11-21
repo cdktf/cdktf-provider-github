@@ -124,7 +124,6 @@ The following submodules are available:
 - [repositoryProject](./repositoryProject.python.md)
 - [repositoryPullRequest](./repositoryPullRequest.python.md)
 - [repositoryRuleset](./repositoryRuleset.python.md)
-- [repositoryTagProtection](./repositoryTagProtection.python.md)
 - [repositoryTopics](./repositoryTopics.python.md)
 - [repositoryWebhook](./repositoryWebhook.python.md)
 - [team](./team.python.md)

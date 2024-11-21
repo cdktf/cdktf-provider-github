@@ -124,7 +124,6 @@ The following submodules are available:
 - [repositoryProject](./repositoryProject.csharp.md)
 - [repositoryPullRequest](./repositoryPullRequest.csharp.md)
 - [repositoryRuleset](./repositoryRuleset.csharp.md)
-- [repositoryTagProtection](./repositoryTagProtection.csharp.md)
 - [repositoryTopics](./repositoryTopics.csharp.md)
 - [repositoryWebhook](./repositoryWebhook.csharp.md)
 - [team](./team.csharp.md)

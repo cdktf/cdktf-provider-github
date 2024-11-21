@@ -124,7 +124,6 @@ The following submodules are available:
 - [repositoryProject](./repositoryProject.go.md)
 - [repositoryPullRequest](./repositoryPullRequest.go.md)
 - [repositoryRuleset](./repositoryRuleset.go.md)
-- [repositoryTagProtection](./repositoryTagProtection.go.md)
 - [repositoryTopics](./repositoryTopics.go.md)
 - [repositoryWebhook](./repositoryWebhook.go.md)
 - [team](./team.go.md)

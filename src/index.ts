@@ -62,7 +62,6 @@ export * as repositoryMilestone from './repository-milestone';
 export * as repositoryProject from './repository-project';
 export * as repositoryPullRequest from './repository-pull-request';
 export * as repositoryRuleset from './repository-ruleset';
-export * as repositoryTagProtection from './repository-tag-protection';
 export * as repositoryTopics from './repository-topics';
 export * as repositoryWebhook from './repository-webhook';
 export * as team from './team';
