@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/organization_team_sync_groups
 // generated from terraform resource schema
 
