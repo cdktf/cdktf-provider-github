@@ -52,6 +52,7 @@ Object.defineProperty(exports, 'repository', { get: function () { return require
 Object.defineProperty(exports, 'repositoryAutolinkReference', { get: function () { return require('./repository-autolink-reference'); } });
 Object.defineProperty(exports, 'repositoryCollaborator', { get: function () { return require('./repository-collaborator'); } });
 Object.defineProperty(exports, 'repositoryCollaborators', { get: function () { return require('./repository-collaborators'); } });
+Object.defineProperty(exports, 'repositoryCustomProperty', { get: function () { return require('./repository-custom-property'); } });
 Object.defineProperty(exports, 'repositoryDependabotSecurityUpdates', { get: function () { return require('./repository-dependabot-security-updates'); } });
 Object.defineProperty(exports, 'repositoryDeployKey', { get: function () { return require('./repository-deploy-key'); } });
 Object.defineProperty(exports, 'repositoryDeploymentBranchPolicy', { get: function () { return require('./repository-deployment-branch-policy'); } });
@@ -118,6 +119,7 @@ Object.defineProperty(exports, 'dataGithubRepositories', { get: function () { re
 Object.defineProperty(exports, 'dataGithubRepository', { get: function () { return require('./data-github-repository'); } });
 Object.defineProperty(exports, 'dataGithubRepositoryAutolinkReferences', { get: function () { return require('./data-github-repository-autolink-references'); } });
 Object.defineProperty(exports, 'dataGithubRepositoryBranches', { get: function () { return require('./data-github-repository-branches'); } });
+Object.defineProperty(exports, 'dataGithubRepositoryCustomProperties', { get: function () { return require('./data-github-repository-custom-properties'); } });
 Object.defineProperty(exports, 'dataGithubRepositoryDeployKeys', { get: function () { return require('./data-github-repository-deploy-keys'); } });
 Object.defineProperty(exports, 'dataGithubRepositoryDeploymentBranchPolicies', { get: function () { return require('./data-github-repository-deployment-branch-policies'); } });
 Object.defineProperty(exports, 'dataGithubRepositoryEnvironments', { get: function () { return require('./data-github-repository-environments'); } });

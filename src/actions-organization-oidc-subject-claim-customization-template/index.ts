@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_organization_oidc_subject_claim_customization_template
+// https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_organization_oidc_subject_claim_customization_template
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface ActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_organization_oidc_subject_claim_customization_template#id ActionsOrganizationOidcSubjectClaimCustomizationTemplate#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_organization_oidc_subject_claim_customization_template#id ActionsOrganizationOidcSubjectClaimCustomizationTemplate#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface ActionsOrganizationOidcSubjectClaimCustomizationTemplateConfig 
   /**
   * A list of OpenID Connect claims.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_organization_oidc_subject_claim_customization_template#include_claim_keys ActionsOrganizationOidcSubjectClaimCustomizationTemplate#include_claim_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_organization_oidc_subject_claim_customization_template#include_claim_keys ActionsOrganizationOidcSubjectClaimCustomizationTemplate#include_claim_keys}
   */
   readonly includeClaimKeys: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template}
 */
 export class ActionsOrganizationOidcSubjectClaimCustomizationTemplate extends cdktf.TerraformResource {
 
@@ -44,7 +44,7 @@ export class ActionsOrganizationOidcSubjectClaimCustomizationTemplate extends cd
   * Generates CDKTF code for importing a ActionsOrganizationOidcSubjectClaimCustomizationTemplate resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActionsOrganizationOidcSubjectClaimCustomizationTemplate to import
-  * @param importFromId The id of the existing ActionsOrganizationOidcSubjectClaimCustomizationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_organization_oidc_subject_claim_customization_template#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActionsOrganizationOidcSubjectClaimCustomizationTemplate that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_organization_oidc_subject_claim_customization_template#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActionsOrganizationOidcSubjectClaimCustomizationTemplate to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +56,7 @@ export class ActionsOrganizationOidcSubjectClaimCustomizationTemplate extends cd
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_organization_oidc_subject_claim_customization_template github_actions_organization_oidc_subject_claim_customization_template} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class ActionsOrganizationOidcSubjectClaimCustomizationTemplate extends cd
       terraformResourceType: 'github_actions_organization_oidc_subject_claim_customization_template',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.4.0',
+        providerVersion: '6.5.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

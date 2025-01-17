@@ -4,7 +4,7 @@
 
 ### RepositoryCollaborators <a name="RepositoryCollaborators" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators github_repository_collaborators}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators github_repository_collaborators}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.Initializer"></a>
 
@@ -73,9 +73,11 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.putIgnoreTeam">PutIgnoreTeam</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.putTeam">PutTeam</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.putUser">PutUser</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.resetIgnoreTeam">ResetIgnoreTeam</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.resetTeam">ResetTeam</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.resetUser">ResetUser</a></code> | *No description.* |
 
@@ -369,6 +371,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `PutIgnoreTeam` <a name="PutIgnoreTeam" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.putIgnoreTeam"></a>
+
+```csharp
+private void PutIgnoreTeam(object Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.putIgnoreTeam.parameter.value"></a>
+
+- *Type:* object
+
+---
+
 ##### `PutTeam` <a name="PutTeam" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.putTeam"></a>
 
 ```csharp
@@ -397,6 +411,12 @@ private void PutUser(object Value)
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetIgnoreTeam` <a name="ResetIgnoreTeam" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.resetIgnoreTeam"></a>
+
+```csharp
+private void ResetIgnoreTeam()
 ```
 
 ##### `ResetTeam` <a name="ResetTeam" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.resetTeam"></a>
@@ -514,7 +534,7 @@ The construct id used in the generated config for the RepositoryCollaborators to
 
 The id of the existing RepositoryCollaborators that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -544,10 +564,12 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.ignoreTeam">IgnoreTeam</a></code> | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList">RepositoryCollaboratorsIgnoreTeamList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.invitationIds">InvitationIds</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.team">Team</a></code> | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsTeamList">RepositoryCollaboratorsTeamList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.user">User</a></code> | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsUserList">RepositoryCollaboratorsUserList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.ignoreTeamInput">IgnoreTeamInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.repositoryInput">RepositoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.teamInput">TeamInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.userInput">UserInput</a></code> | <code>object</code> | *No description.* |
@@ -698,6 +720,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `IgnoreTeam`<sup>Required</sup> <a name="IgnoreTeam" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.ignoreTeam"></a>
+
+```csharp
+public RepositoryCollaboratorsIgnoreTeamList IgnoreTeam { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList">RepositoryCollaboratorsIgnoreTeamList</a>
+
+---
+
 ##### `InvitationIds`<sup>Required</sup> <a name="InvitationIds" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.invitationIds"></a>
 
 ```csharp
@@ -735,6 +767,16 @@ public string IdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `IgnoreTeamInput`<sup>Optional</sup> <a name="IgnoreTeamInput" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaborators.property.ignoreTeamInput"></a>
+
+```csharp
+public object IgnoreTeamInput { get; }
+```
+
+- *Type:* object
 
 ---
 
@@ -825,6 +867,7 @@ new RepositoryCollaboratorsConfig {
     object[] Provisioners = null,
     string Repository,
     string Id = null,
+    object IgnoreTeam = null,
     object Team = null,
     object User = null
 };
@@ -841,8 +884,9 @@ new RepositoryCollaboratorsConfig {
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}. |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.ignoreTeam">IgnoreTeam</a></code> | <code>object</code> | ignore_team block. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.team">Team</a></code> | <code>object</code> | team block. |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.user">User</a></code> | <code>object</code> | user block. |
 
@@ -926,7 +970,7 @@ public string Repository { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#repository RepositoryCollaborators#repository}.
 
 ---
 
@@ -938,10 +982,24 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#id RepositoryCollaborators#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `IgnoreTeam`<sup>Optional</sup> <a name="IgnoreTeam" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsConfig.property.ignoreTeam"></a>
+
+```csharp
+public object IgnoreTeam { get; set; }
+```
+
+- *Type:* object
+
+ignore_team block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#ignore_team RepositoryCollaborators#ignore_team}
 
 ---
 
@@ -955,7 +1013,7 @@ public object Team { get; set; }
 
 team block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#team RepositoryCollaborators#team}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#team RepositoryCollaborators#team}
 
 ---
 
@@ -969,7 +1027,41 @@ public object User { get; set; }
 
 user block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#user RepositoryCollaborators#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#user RepositoryCollaborators#user}
+
+---
+
+### RepositoryCollaboratorsIgnoreTeam <a name="RepositoryCollaboratorsIgnoreTeam" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeam"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeam.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Github;
+
+new RepositoryCollaboratorsIgnoreTeam {
+    string TeamId
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeam.property.teamId">TeamId</a></code> | <code>string</code> | ID or slug of the team to ignore. |
+
+---
+
+##### `TeamId`<sup>Required</sup> <a name="TeamId" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeam.property.teamId"></a>
+
+```csharp
+public string TeamId { get; set; }
+```
+
+- *Type:* string
+
+ID or slug of the team to ignore.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#team_id RepositoryCollaborators#team_id}
 
 ---
 
@@ -991,7 +1083,7 @@ new RepositoryCollaboratorsTeam {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsTeam.property.teamId">TeamId</a></code> | <code>string</code> | Team ID or slug to add to the repository as a collaborator. |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsTeam.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsTeam.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}. |
 
 ---
 
@@ -1005,7 +1097,7 @@ public string TeamId { get; set; }
 
 Team ID or slug to add to the repository as a collaborator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#team_id RepositoryCollaborators#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#team_id RepositoryCollaborators#team_id}
 
 ---
 
@@ -1017,7 +1109,7 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}.
 
 ---
 
@@ -1039,7 +1131,7 @@ new RepositoryCollaboratorsUser {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsUser.property.username">Username</a></code> | <code>string</code> | (Required) The user to add to the repository as a collaborator. |
-| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsUser.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsUser.property.permission">Permission</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}. |
 
 ---
 
@@ -1053,7 +1145,7 @@ public string Username { get; set; }
 
 (Required) The user to add to the repository as a collaborator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#username RepositoryCollaborators#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#username RepositoryCollaborators#username}
 
 ---
 
@@ -1065,11 +1157,460 @@ public string Permission { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_collaborators#permission RepositoryCollaborators#permission}.
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### RepositoryCollaboratorsIgnoreTeamList <a name="RepositoryCollaboratorsIgnoreTeamList" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Github;
+
+new RepositoryCollaboratorsIgnoreTeamList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.get"></a>
+
+```csharp
+private RepositoryCollaboratorsIgnoreTeamOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamList.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
+
+### RepositoryCollaboratorsIgnoreTeamOutputReference <a name="RepositoryCollaboratorsIgnoreTeamOutputReference" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Github;
+
+new RepositoryCollaboratorsIgnoreTeamOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.teamIdInput">TeamIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.teamId">TeamId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TeamIdInput`<sup>Optional</sup> <a name="TeamIdInput" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.teamIdInput"></a>
+
+```csharp
+public string TeamIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TeamId`<sup>Required</sup> <a name="TeamId" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.teamId"></a>
+
+```csharp
+public string TeamId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsIgnoreTeamOutputReference.property.internalValue"></a>
+
+```csharp
+public object InternalValue { get; }
+```
+
+- *Type:* object
+
+---
+
 
 ### RepositoryCollaboratorsTeamList <a name="RepositoryCollaboratorsTeamList" id="@cdktf/provider-github.repositoryCollaborators.RepositoryCollaboratorsTeamList"></a>
 

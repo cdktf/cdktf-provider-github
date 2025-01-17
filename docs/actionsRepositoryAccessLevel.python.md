@@ -4,7 +4,7 @@
 
 ### ActionsRepositoryAccessLevel <a name="ActionsRepositoryAccessLevel" id="@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level github_actions_repository_access_level}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level github_actions_repository_access_level}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.Initializer"></a>
 
@@ -40,7 +40,7 @@ actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel(
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.Initializer.parameter.accessLevel">access_level</a></code> | <code>str</code> | Where the actions or reusable workflows of the repository may be used. |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.Initializer.parameter.repository">repository</a></code> | <code>str</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevel.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Where the actions or reusable workflows of the repository may be used.
 
 Possible values are 'none', 'user', 'organization', or 'enterprise'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -613,7 +613,7 @@ The construct id used in the generated config for the ActionsRepositoryAccessLev
 
 The id of the existing ActionsRepositoryAccessLevel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +908,7 @@ actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig(
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.accessLevel">access_level</a></code> | <code>str</code> | Where the actions or reusable workflows of the repository may be used. |
 | <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.repository">repository</a></code> | <code>str</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}. |
+| <code><a href="#@cdktf/provider-github.actionsRepositoryAccessLevel.ActionsRepositoryAccessLevelConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}. |
 
 ---
 
@@ -994,7 +994,7 @@ Where the actions or reusable workflows of the repository may be used.
 
 Possible values are 'none', 'user', 'organization', or 'enterprise'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#access_level ActionsRepositoryAccessLevel#access_level}
 
 ---
 
@@ -1008,7 +1008,7 @@ repository: str
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#repository ActionsRepositoryAccessLevel#repository}
 
 ---
 
@@ -1020,7 +1020,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/actions_repository_access_level#id ActionsRepositoryAccessLevel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
