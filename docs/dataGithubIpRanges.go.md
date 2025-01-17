@@ -4,12 +4,12 @@
 
 ### DataGithubIpRanges <a name="DataGithubIpRanges" id="@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRanges"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/ip_ranges github_ip_ranges}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/ip_ranges github_ip_ranges}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubipranges"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubipranges"
 
 datagithubipranges.NewDataGithubIpRanges(scope Construct, id *string, config DataGithubIpRangesConfig) DataGithubIpRanges
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubipranges"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubipranges"
 
 datagithubipranges.DataGithubIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubipranges"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubipranges"
 
 datagithubipranges.DataGithubIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubipranges.DataGithubIpRanges_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubipranges"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubipranges"
 
 datagithubipranges.DataGithubIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubipranges.DataGithubIpRanges_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRanges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubipranges"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubipranges"
 
 datagithubipranges.DataGithubIpRanges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubIpRanges to impo
 
 The id of the existing DataGithubIpRanges that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/ip_ranges#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubipranges"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubipranges"
 
 &datagithubipranges.DataGithubIpRangesConfig {
 	Connection: interface{},
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubipranges"
 | <code><a href="#@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRangesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRangesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRangesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRangesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/ip_ranges#id DataGithubIpRanges#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubIpRanges.DataGithubIpRangesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/ip_ranges#id DataGithubIpRanges#id}. |
 
 ---
 
@@ -976,7 +976,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/ip_ranges#id DataGithubIpRanges#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/ip_ranges#id DataGithubIpRanges#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

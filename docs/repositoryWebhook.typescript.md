@@ -4,7 +4,7 @@
 
 ### RepositoryWebhook <a name="RepositoryWebhook" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook github_repository_webhook}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook github_repository_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the RepositoryWebhook to impor
 
 The id of the existing RepositoryWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,7 +853,7 @@ const repositoryWebhookConfig: repositoryWebhook.RepositoryWebhookConfig = { ...
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.repository">repository</a></code> | <code>string</code> | The repository of the webhook. |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.active">active</a></code> | <code>boolean \| cdktf.IResolvable</code> | Indicate if the webhook should receive events. Defaults to 'true'. |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfiguration">RepositoryWebhookConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#id RepositoryWebhook#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#id RepositoryWebhook#id}. |
 
 ---
 
@@ -937,7 +937,7 @@ public readonly events: string[];
 
 A list of events which should trigger the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#events RepositoryWebhook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#events RepositoryWebhook#events}
 
 ---
 
@@ -951,7 +951,7 @@ public readonly repository: string;
 
 The repository of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#repository RepositoryWebhook#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#repository RepositoryWebhook#repository}
 
 ---
 
@@ -965,7 +965,7 @@ public readonly active: boolean | IResolvable;
 
 Indicate if the webhook should receive events. Defaults to 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#active RepositoryWebhook#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#active RepositoryWebhook#active}
 
 ---
 
@@ -979,7 +979,7 @@ public readonly configuration: RepositoryWebhookConfiguration;
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#configuration RepositoryWebhook#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#configuration RepositoryWebhook#configuration}
 
 ---
 
@@ -991,7 +991,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#id RepositoryWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#id RepositoryWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1029,7 +1029,7 @@ public readonly url: string;
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#url RepositoryWebhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#url RepositoryWebhook#url}
 
 ---
 
@@ -1043,7 +1043,7 @@ public readonly contentType: string;
 
 The content type for the payload. Valid values are either 'form' or 'json'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#content_type RepositoryWebhook#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#content_type RepositoryWebhook#content_type}
 
 ---
 
@@ -1057,7 +1057,7 @@ public readonly insecureSsl: boolean | IResolvable;
 
 Insecure SSL boolean toggle. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly secret: string;
 
 The shared secret for the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/repository_webhook#secret RepositoryWebhook#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_webhook#secret RepositoryWebhook#secret}
 
 ---
 

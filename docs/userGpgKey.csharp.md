@@ -4,7 +4,7 @@
 
 ### UserGpgKey <a name="UserGpgKey" id="@cdktf/provider-github.userGpgKey.UserGpgKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/user_gpg_key github_user_gpg_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/user_gpg_key github_user_gpg_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userGpgKey.UserGpgKey.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the UserGpgKey to import.
 
 The id of the existing UserGpgKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/user_gpg_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/user_gpg_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -767,7 +767,7 @@ new UserGpgKeyConfig {
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.armoredPublicKey">ArmoredPublicKey</a></code> | <code>string</code> | Your public GPG key, generated in ASCII-armored format. |
-| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/user_gpg_key#id UserGpgKey#id}. |
+| <code><a href="#@cdktf/provider-github.userGpgKey.UserGpgKeyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/user_gpg_key#id UserGpgKey#id}. |
 
 ---
 
@@ -851,7 +851,7 @@ public string ArmoredPublicKey { get; set; }
 
 Your public GPG key, generated in ASCII-armored format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/user_gpg_key#armored_public_key UserGpgKey#armored_public_key}
 
 ---
 
@@ -863,7 +863,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/resources/user_gpg_key#id UserGpgKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/user_gpg_key#id UserGpgKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

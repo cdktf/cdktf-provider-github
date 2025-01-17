@@ -4,12 +4,12 @@
 
 ### DataGithubRepositoryDeployKeys <a name="DataGithubRepositoryDeployKeys" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeys"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/repository_deploy_keys github_repository_deploy_keys}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/repository_deploy_keys github_repository_deploy_keys}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 datagithubrepositorydeploykeys.NewDataGithubRepositoryDeployKeys(scope Construct, id *string, config DataGithubRepositoryDeployKeysConfig) DataGithubRepositoryDeployKeys
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeys.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 datagithubrepositorydeploykeys.DataGithubRepositoryDeployKeys_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeys.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 datagithubrepositorydeploykeys.DataGithubRepositoryDeployKeys_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubrepositorydeploykeys.DataGithubRepositoryDeployKeys_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeys.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 datagithubrepositorydeploykeys.DataGithubRepositoryDeployKeys_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubrepositorydeploykeys.DataGithubRepositoryDeployKeys_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeys.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 datagithubrepositorydeploykeys.DataGithubRepositoryDeployKeys_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubRepositoryDeploy
 
 The id of the existing DataGithubRepositoryDeployKeys that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/repository_deploy_keys#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/repository_deploy_keys#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 &datagithubrepositorydeploykeys.DataGithubRepositoryDeployKeysConfig {
 	Connection: interface{},
@@ -631,8 +631,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositor
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/repository_deploy_keys#repository DataGithubRepositoryDeployKeys#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/repository_deploy_keys#id DataGithubRepositoryDeployKeys#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysConfig.property.repository">Repository</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/repository_deploy_keys#repository DataGithubRepositoryDeployKeys#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/repository_deploy_keys#id DataGithubRepositoryDeployKeys#id}. |
 
 ---
 
@@ -714,7 +714,7 @@ Repository *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/repository_deploy_keys#repository DataGithubRepositoryDeployKeys#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/repository_deploy_keys#repository DataGithubRepositoryDeployKeys#repository}.
 
 ---
 
@@ -726,7 +726,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.4.0/docs/data-sources/repository_deploy_keys#id DataGithubRepositoryDeployKeys#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/repository_deploy_keys#id DataGithubRepositoryDeployKeys#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -738,7 +738,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 &datagithubrepositorydeploykeys.DataGithubRepositoryDeployKeysKeys {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositor
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 datagithubrepositorydeploykeys.NewDataGithubRepositoryDeployKeysKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryDeployKeysKeysList
 ```
@@ -902,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryDeployKeys.DataGithubRepositoryDeployKeysKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositorydeploykeys"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorydeploykeys"
 
 datagithubrepositorydeploykeys.NewDataGithubRepositoryDeployKeysKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryDeployKeysKeysOutputReference
 ```
