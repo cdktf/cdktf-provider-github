@@ -1,3 +1,8 @@
+/**
+ * Copyright (c) HashiCorp, Inc.
+ * SPDX-License-Identifier: MPL-2.0
+ */
+
 // https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/codespaces_organization_secret_repositories
 // generated from terraform resource schema
 
