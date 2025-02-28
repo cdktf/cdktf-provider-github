@@ -4,12 +4,12 @@
 
 ### RepositoryCustomProperty <a name="RepositoryCustomProperty" id="@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomProperty"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_custom_property github_repository_custom_property}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property github_repository_custom_property}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomProperty.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorycustomproperty"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycustomproperty"
 
 repositorycustomproperty.NewRepositoryCustomProperty(scope Construct, id *string, config RepositoryCustomPropertyConfig) RepositoryCustomProperty
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomProperty.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorycustomproperty"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycustomproperty"
 
 repositorycustomproperty.RepositoryCustomProperty_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomProperty.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorycustomproperty"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycustomproperty"
 
 repositorycustomproperty.RepositoryCustomProperty_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ repositorycustomproperty.RepositoryCustomProperty_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomProperty.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorycustomproperty"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycustomproperty"
 
 repositorycustomproperty.RepositoryCustomProperty_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ repositorycustomproperty.RepositoryCustomProperty_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomProperty.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorycustomproperty"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycustomproperty"
 
 repositorycustomproperty.RepositoryCustomProperty_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -474,7 +474,7 @@ The construct id used in the generated config for the RepositoryCustomProperty t
 
 The id of the existing RepositoryCustomProperty that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_custom_property#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -784,7 +784,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomPropertyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorycustomproperty"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositorycustomproperty"
 
 &repositorycustomproperty.RepositoryCustomPropertyConfig {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorycustompro
 | <code><a href="#@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomPropertyConfig.property.propertyType">PropertyType</a></code> | <code>*string</code> | Type of the custom property. |
 | <code><a href="#@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomPropertyConfig.property.propertyValue">PropertyValue</a></code> | <code>*[]*string</code> | Value of the custom property. |
 | <code><a href="#@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomPropertyConfig.property.repository">Repository</a></code> | <code>*string</code> | Name of the repository which the custom properties should be on. |
-| <code><a href="#@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomPropertyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_custom_property#id RepositoryCustomProperty#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryCustomProperty.RepositoryCustomPropertyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#id RepositoryCustomProperty#id}. |
 
 ---
 
@@ -901,7 +901,7 @@ PropertyName *string
 
 Name of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_custom_property#property_name RepositoryCustomProperty#property_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#property_name RepositoryCustomProperty#property_name}
 
 ---
 
@@ -915,7 +915,7 @@ PropertyType *string
 
 Type of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_custom_property#property_type RepositoryCustomProperty#property_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#property_type RepositoryCustomProperty#property_type}
 
 ---
 
@@ -929,7 +929,7 @@ PropertyValue *[]*string
 
 Value of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_custom_property#property_value RepositoryCustomProperty#property_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#property_value RepositoryCustomProperty#property_value}
 
 ---
 
@@ -943,7 +943,7 @@ Repository *string
 
 Name of the repository which the custom properties should be on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_custom_property#repository RepositoryCustomProperty#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#repository RepositoryCustomProperty#repository}
 
 ---
 
@@ -955,7 +955,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/repository_custom_property#id RepositoryCustomProperty#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository_custom_property#id RepositoryCustomProperty#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

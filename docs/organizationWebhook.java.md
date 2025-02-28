@@ -4,7 +4,7 @@
 
 ### OrganizationWebhook <a name="OrganizationWebhook" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook github_organization_webhook}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook github_organization_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer"></a>
 
@@ -45,7 +45,7 @@ OrganizationWebhook.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer.parameter.events">events</a></code> | <code>java.util.List<java.lang.String></code> | A list of events which should trigger the webhook. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer.parameter.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicate if the webhook should receive events. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer.parameter.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfiguration">OrganizationWebhookConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#id OrganizationWebhook#id}. |
+| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhook.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#id OrganizationWebhook#id}. |
 
 ---
 
@@ -115,7 +115,7 @@ Must be unique amongst siblings in the same scope
 
 A list of events which should trigger the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#events OrganizationWebhook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#events OrganizationWebhook#events}
 
 ---
 
@@ -125,7 +125,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Indicate if the webhook should receive events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#active OrganizationWebhook#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#active OrganizationWebhook#active}
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#configuration OrganizationWebhook#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#configuration OrganizationWebhook#configuration}
 
 ---
 
@@ -143,7 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#id OrganizationWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#id OrganizationWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -607,7 +607,7 @@ The construct id used in the generated config for the OrganizationWebhook to imp
 
 The id of the existing OrganizationWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -953,7 +953,7 @@ OrganizationWebhookConfig.builder()
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.events">events</a></code> | <code>java.util.List<java.lang.String></code> | A list of events which should trigger the webhook. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.active">active</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Indicate if the webhook should receive events. |
 | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfiguration">OrganizationWebhookConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#id OrganizationWebhook#id}. |
+| <code><a href="#@cdktf/provider-github.organizationWebhook.OrganizationWebhookConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#id OrganizationWebhook#id}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ public java.util.List<java.lang.String> getEvents();
 
 A list of events which should trigger the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#events OrganizationWebhook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#events OrganizationWebhook#events}
 
 ---
 
@@ -1051,7 +1051,7 @@ public java.lang.Object getActive();
 
 Indicate if the webhook should receive events.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#active OrganizationWebhook#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#active OrganizationWebhook#active}
 
 ---
 
@@ -1065,7 +1065,7 @@ public OrganizationWebhookConfiguration getConfiguration();
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#configuration OrganizationWebhook#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#configuration OrganizationWebhook#configuration}
 
 ---
 
@@ -1077,7 +1077,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#id OrganizationWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#id OrganizationWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1121,7 +1121,7 @@ public java.lang.String getUrl();
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#url OrganizationWebhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#url OrganizationWebhook#url}
 
 ---
 
@@ -1135,7 +1135,7 @@ public java.lang.String getContentType();
 
 The content type for the payload. Valid values are either 'form' or 'json'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#content_type OrganizationWebhook#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#content_type OrganizationWebhook#content_type}
 
 ---
 
@@ -1149,7 +1149,7 @@ public java.lang.Object getInsecureSsl();
 
 Insecure SSL boolean toggle. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#insecure_ssl OrganizationWebhook#insecure_ssl}
 
 ---
 
@@ -1163,7 +1163,7 @@ public java.lang.String getSecret();
 
 The shared secret for the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/resources/organization_webhook#secret OrganizationWebhook#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_webhook#secret OrganizationWebhook#secret}
 
 ---
 
