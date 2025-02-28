@@ -4,7 +4,7 @@
 
 ### DataGithubCodespacesSecrets <a name="DataGithubCodespacesSecrets" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecrets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/codespaces_secrets github_codespaces_secrets}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/codespaces_secrets github_codespaces_secrets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecrets.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataGithubCodespacesSecret
 
 The id of the existing DataGithubCodespacesSecrets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/codespaces_secrets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/codespaces_secrets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -669,7 +669,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubcodespace
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsConfig.property.fullName">FullName</a></code> | <code>*string</code> | Full name of the repository (in `org/name` format). |
-| <code><a href="#@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/codespaces_secrets#id DataGithubCodespacesSecrets#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/codespaces_secrets#id DataGithubCodespacesSecrets#id}. |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesSecrets.DataGithubCodespacesSecretsConfig.property.name">Name</a></code> | <code>*string</code> | The name of the repository. |
 
 ---
@@ -754,7 +754,7 @@ FullName *string
 
 Full name of the repository (in `org/name` format).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/codespaces_secrets#full_name DataGithubCodespacesSecrets#full_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/codespaces_secrets#full_name DataGithubCodespacesSecrets#full_name}
 
 ---
 
@@ -766,7 +766,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/codespaces_secrets#id DataGithubCodespacesSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/codespaces_secrets#id DataGithubCodespacesSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +783,7 @@ Name *string
 
 The name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.5.0/docs/data-sources/codespaces_secrets#name DataGithubCodespacesSecrets#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/codespaces_secrets#name DataGithubCodespacesSecrets#name}
 
 ---
 
