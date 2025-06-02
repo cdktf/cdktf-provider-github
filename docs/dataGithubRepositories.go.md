@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositories"
 
 datagithubrepositories.NewDataGithubRepositories(scope Construct, id *string, config DataGithubRepositoriesConfig) DataGithubRepositories
 ```
@@ -304,7 +304,7 @@ func ResetSort()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagithubrepositories.DataGithubRepositories_IsTerraformElement(x interface{}) 
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datagithubrepositories.DataGithubRepositories_IsTerraformDataSource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositories.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositories"
 
 datagithubrepositories.DataGithubRepositories_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositories.DataGithubRepositoriesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/datagithubrepositories"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositories"
 
 &datagithubrepositories.DataGithubRepositoriesConfig {
 	Connection: interface{},

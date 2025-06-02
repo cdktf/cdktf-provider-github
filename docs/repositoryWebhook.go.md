@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 
 repositorywebhook.NewRepositoryWebhook(scope Construct, id *string, config RepositoryWebhookConfig) RepositoryWebhook
 ```
@@ -412,7 +412,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 
 repositorywebhook.RepositoryWebhook_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 
 repositorywebhook.RepositoryWebhook_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ repositorywebhook.RepositoryWebhook_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 
 repositorywebhook.RepositoryWebhook_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ repositorywebhook.RepositoryWebhook_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 
 repositorywebhook.RepositoryWebhook_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -833,7 +833,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 
 &repositorywebhook.RepositoryWebhookConfig {
 	Connection: interface{},
@@ -846,7 +846,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
 	Events: *[]*string,
 	Repository: *string,
 	Active: interface{},
-	Configuration: github.com/cdktf/cdktf-provider-github-go/github/v14.repositoryWebhook.RepositoryWebhookConfiguration,
+	Configuration: github.com/cdktf/cdktf-provider-github-go/github/v15.repositoryWebhook.RepositoryWebhookConfiguration,
 	Id: *string,
 }
 ```
@@ -1016,7 +1016,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 
 &repositorywebhook.RepositoryWebhookConfiguration {
 	Url: *string,
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v14/repositorywebhook"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 
 repositorywebhook.NewRepositoryWebhookConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryWebhookConfigurationOutputReference
 ```
