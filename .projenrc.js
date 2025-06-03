@@ -5,7 +5,6 @@
 
 const { CdktfProviderProject } = require("@cdktf/provider-project");
 
-const typescriptVersion = "~5.4.0";
 const project = new CdktfProviderProject({
   useCustomGithubRunner: false,
   terraformProvider: "integrations/github@~> 6.0",
