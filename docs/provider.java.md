@@ -15,13 +15,11 @@ GithubProvider.Builder.create(Construct scope, java.lang.String id)
 //  .alias(java.lang.String)
 //  .appAuth(GithubProviderAppAuth)
 //  .baseUrl(java.lang.String)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .maxRetries(java.lang.Number)
 //  .organization(java.lang.String)
 //  .owner(java.lang.String)
-//  .parallelRequests(java.lang.Boolean)
-//  .parallelRequests(IResolvable)
+//  .parallelRequests(java.lang.Boolean|IResolvable)
 //  .readDelayMs(java.lang.Number)
 //  .retryableErrors(java.util.List<java.lang.Number>)
 //  .retryDelayMs(java.lang.Number)
@@ -37,11 +35,11 @@ GithubProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.appAuth">appAuth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | app_auth block. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | The GitHub Base API URL. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable `insecure` mode for testing purposes. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable `insecure` mode for testing purposes. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | Number of times to retry a request after receiving an error status codeDefaults to 3. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.organization">organization</a></code> | <code>java.lang.String</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.owner">owner</a></code> | <code>java.lang.String</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.parallelRequests">parallelRequests</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow the provider to make parallel API calls to GitHub. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.parallelRequests">parallelRequests</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow the provider to make parallel API calls to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.readDelayMs">readDelayMs</a></code> | <code>java.lang.Number</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.retryableErrors">retryableErrors</a></code> | <code>java.util.List<java.lang.Number></code> | Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504]. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.retryDelayMs">retryDelayMs</a></code> | <code>java.lang.Number</code> | Amount of time in milliseconds to sleep in between requests to GitHub API after an error response. |
@@ -100,7 +98,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Enable `insecure` mode for testing purposes.
 
@@ -140,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `parallelRequests`<sup>Optional</sup> <a name="parallelRequests" id="@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.parallelRequests"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow the provider to make parallel API calls to GitHub.
 
@@ -514,11 +512,11 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.aliasInput">aliasInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.appAuthInput">appAuthInput</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.baseUrlInput">baseUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecureInput">insecureInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.maxRetriesInput">maxRetriesInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organizationInput">organizationInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.ownerInput">ownerInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput">parallelRequestsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput">parallelRequestsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMsInput">readDelayMsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryableErrorsInput">retryableErrorsInput</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryDelayMsInput">retryDelayMsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -526,11 +524,11 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.writeDelayMsInput">writeDelayMsInput</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.appAuth">appAuth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organization">organization</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.owner">owner</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequests">parallelRequests</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequests">parallelRequests</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMs">readDelayMs</a></code> | <code>java.lang.Number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryableErrors">retryableErrors</a></code> | <code>java.util.List<java.lang.Number></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryDelayMs">retryDelayMs</a></code> | <code>java.lang.Number</code> | *No description.* |
@@ -664,10 +662,10 @@ public java.lang.String getBaseUrlInput();
 ##### `insecureInput`<sup>Optional</sup> <a name="insecureInput" id="@cdktf/provider-github.provider.GithubProvider.property.insecureInput"></a>
 
 ```java
-public java.lang.Object getInsecureInput();
+public java.lang.Boolean|IResolvable getInsecureInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -704,10 +702,10 @@ public java.lang.String getOwnerInput();
 ##### `parallelRequestsInput`<sup>Optional</sup> <a name="parallelRequestsInput" id="@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput"></a>
 
 ```java
-public java.lang.Object getParallelRequestsInput();
+public java.lang.Boolean|IResolvable getParallelRequestsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -784,10 +782,10 @@ public java.lang.String getBaseUrl();
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-github.provider.GithubProvider.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -824,10 +822,10 @@ public java.lang.String getOwner();
 ##### `parallelRequests`<sup>Optional</sup> <a name="parallelRequests" id="@cdktf/provider-github.provider.GithubProvider.property.parallelRequests"></a>
 
 ```java
-public java.lang.Object getParallelRequests();
+public java.lang.Boolean|IResolvable getParallelRequests();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -981,13 +979,11 @@ GithubProviderConfig.builder()
 //  .alias(java.lang.String)
 //  .appAuth(GithubProviderAppAuth)
 //  .baseUrl(java.lang.String)
-//  .insecure(java.lang.Boolean)
-//  .insecure(IResolvable)
+//  .insecure(java.lang.Boolean|IResolvable)
 //  .maxRetries(java.lang.Number)
 //  .organization(java.lang.String)
 //  .owner(java.lang.String)
-//  .parallelRequests(java.lang.Boolean)
-//  .parallelRequests(IResolvable)
+//  .parallelRequests(java.lang.Boolean|IResolvable)
 //  .readDelayMs(java.lang.Number)
 //  .retryableErrors(java.util.List<java.lang.Number>)
 //  .retryDelayMs(java.lang.Number)
@@ -1003,11 +999,11 @@ GithubProviderConfig.builder()
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.alias">alias</a></code> | <code>java.lang.String</code> | Alias name. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.appAuth">appAuth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | app_auth block. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.baseUrl">baseUrl</a></code> | <code>java.lang.String</code> | The GitHub Base API URL. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Enable `insecure` mode for testing purposes. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.insecure">insecure</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Enable `insecure` mode for testing purposes. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.maxRetries">maxRetries</a></code> | <code>java.lang.Number</code> | Number of times to retry a request after receiving an error status codeDefaults to 3. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.organization">organization</a></code> | <code>java.lang.String</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.owner">owner</a></code> | <code>java.lang.String</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests">parallelRequests</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Allow the provider to make parallel API calls to GitHub. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests">parallelRequests</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Allow the provider to make parallel API calls to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.readDelayMs">readDelayMs</a></code> | <code>java.lang.Number</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.retryableErrors">retryableErrors</a></code> | <code>java.util.List<java.lang.Number></code> | Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504]. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.retryDelayMs">retryDelayMs</a></code> | <code>java.lang.Number</code> | Amount of time in milliseconds to sleep in between requests to GitHub API after an error response. |
@@ -1061,10 +1057,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-github.provider.GithubProviderConfig.property.insecure"></a>
 
 ```java
-public java.lang.Object getInsecure();
+public java.lang.Boolean|IResolvable getInsecure();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Enable `insecure` mode for testing purposes.
 
@@ -1117,10 +1113,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `parallelRequests`<sup>Optional</sup> <a name="parallelRequests" id="@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests"></a>
 
 ```java
-public java.lang.Object getParallelRequests();
+public java.lang.Boolean|IResolvable getParallelRequests();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Allow the provider to make parallel API calls to GitHub.
 

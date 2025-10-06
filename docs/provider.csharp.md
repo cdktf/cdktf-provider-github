@@ -352,11 +352,11 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.aliasInput">AliasInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.appAuthInput">AppAuthInput</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.baseUrlInput">BaseUrlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecureInput">InsecureInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecureInput">InsecureInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.maxRetriesInput">MaxRetriesInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organizationInput">OrganizationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput">ParallelRequestsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput">ParallelRequestsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMsInput">ReadDelayMsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryableErrorsInput">RetryableErrorsInput</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryDelayMsInput">RetryDelayMsInput</a></code> | <code>double</code> | *No description.* |
@@ -364,11 +364,11 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.writeDelayMsInput">WriteDelayMsInput</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.appAuth">AppAuth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.baseUrl">BaseUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecure">Insecure</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecure">Insecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.maxRetries">MaxRetries</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organization">Organization</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequests">ParallelRequests</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequests">ParallelRequests</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMs">ReadDelayMs</a></code> | <code>double</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryableErrors">RetryableErrors</a></code> | <code>double[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryDelayMs">RetryDelayMs</a></code> | <code>double</code> | *No description.* |
@@ -502,10 +502,10 @@ public string BaseUrlInput { get; }
 ##### `InsecureInput`<sup>Optional</sup> <a name="InsecureInput" id="@cdktf/provider-github.provider.GithubProvider.property.insecureInput"></a>
 
 ```csharp
-public object InsecureInput { get; }
+public bool|IResolvable InsecureInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -542,10 +542,10 @@ public string OwnerInput { get; }
 ##### `ParallelRequestsInput`<sup>Optional</sup> <a name="ParallelRequestsInput" id="@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput"></a>
 
 ```csharp
-public object ParallelRequestsInput { get; }
+public bool|IResolvable ParallelRequestsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -622,10 +622,10 @@ public string BaseUrl { get; }
 ##### `Insecure`<sup>Optional</sup> <a name="Insecure" id="@cdktf/provider-github.provider.GithubProvider.property.insecure"></a>
 
 ```csharp
-public object Insecure { get; }
+public bool|IResolvable Insecure { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -662,10 +662,10 @@ public string Owner { get; }
 ##### `ParallelRequests`<sup>Optional</sup> <a name="ParallelRequests" id="@cdktf/provider-github.provider.GithubProvider.property.parallelRequests"></a>
 
 ```csharp
-public object ParallelRequests { get; }
+public bool|IResolvable ParallelRequests { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -819,11 +819,11 @@ new GithubProviderConfig {
     string Alias = null,
     GithubProviderAppAuth AppAuth = null,
     string BaseUrl = null,
-    object Insecure = null,
+    bool|IResolvable Insecure = null,
     double MaxRetries = null,
     string Organization = null,
     string Owner = null,
-    object ParallelRequests = null,
+    bool|IResolvable ParallelRequests = null,
     double ReadDelayMs = null,
     double[] RetryableErrors = null,
     double RetryDelayMs = null,
@@ -839,11 +839,11 @@ new GithubProviderConfig {
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.alias">Alias</a></code> | <code>string</code> | Alias name. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.appAuth">AppAuth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | app_auth block. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.baseUrl">BaseUrl</a></code> | <code>string</code> | The GitHub Base API URL. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.insecure">Insecure</a></code> | <code>object</code> | Enable `insecure` mode for testing purposes. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.insecure">Insecure</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Enable `insecure` mode for testing purposes. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.maxRetries">MaxRetries</a></code> | <code>double</code> | Number of times to retry a request after receiving an error status codeDefaults to 3. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.organization">Organization</a></code> | <code>string</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.owner">Owner</a></code> | <code>string</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests">ParallelRequests</a></code> | <code>object</code> | Allow the provider to make parallel API calls to GitHub. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests">ParallelRequests</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the provider to make parallel API calls to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.readDelayMs">ReadDelayMs</a></code> | <code>double</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.retryableErrors">RetryableErrors</a></code> | <code>double[]</code> | Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504]. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.retryDelayMs">RetryDelayMs</a></code> | <code>double</code> | Amount of time in milliseconds to sleep in between requests to GitHub API after an error response. |
@@ -897,10 +897,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `Insecure`<sup>Optional</sup> <a name="Insecure" id="@cdktf/provider-github.provider.GithubProviderConfig.property.insecure"></a>
 
 ```csharp
-public object Insecure { get; set; }
+public bool|IResolvable Insecure { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Enable `insecure` mode for testing purposes.
 
@@ -953,10 +953,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `ParallelRequests`<sup>Optional</sup> <a name="ParallelRequests" id="@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests"></a>
 
 ```csharp
-public object ParallelRequests { get; set; }
+public bool|IResolvable ParallelRequests { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Allow the provider to make parallel API calls to GitHub.
 

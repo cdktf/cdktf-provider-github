@@ -17,11 +17,11 @@ provider.GithubProvider(
   alias: str = None,
   app_auth: GithubProviderAppAuth = None,
   base_url: str = None,
-  insecure: typing.Union[bool, IResolvable] = None,
+  insecure: bool | IResolvable = None,
   max_retries: typing.Union[int, float] = None,
   organization: str = None,
   owner: str = None,
-  parallel_requests: typing.Union[bool, IResolvable] = None,
+  parallel_requests: bool | IResolvable = None,
   read_delay_ms: typing.Union[int, float] = None,
   retryable_errors: typing.List[typing.Union[int, float]] = None,
   retry_delay_ms: typing.Union[int, float] = None,
@@ -37,11 +37,11 @@ provider.GithubProvider(
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.appAuth">app_auth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | app_auth block. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.baseUrl">base_url</a></code> | <code>str</code> | The GitHub Base API URL. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable `insecure` mode for testing purposes. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable `insecure` mode for testing purposes. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Number of times to retry a request after receiving an error status codeDefaults to 3. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.owner">owner</a></code> | <code>str</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.parallelRequests">parallel_requests</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow the provider to make parallel API calls to GitHub. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.parallelRequests">parallel_requests</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow the provider to make parallel API calls to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.readDelayMs">read_delay_ms</a></code> | <code>typing.Union[int, float]</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.retryableErrors">retryable_errors</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504]. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.retryDelayMs">retry_delay_ms</a></code> | <code>typing.Union[int, float]</code> | Amount of time in milliseconds to sleep in between requests to GitHub API after an error response. |
@@ -100,7 +100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.insecure"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable `insecure` mode for testing purposes.
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `parallel_requests`<sup>Optional</sup> <a name="parallel_requests" id="@cdktf/provider-github.provider.GithubProvider.Initializer.parameter.parallelRequests"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow the provider to make parallel API calls to GitHub.
 
@@ -530,11 +530,11 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.aliasInput">alias_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.appAuthInput">app_auth_input</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.baseUrlInput">base_url_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecureInput">insecure_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecureInput">insecure_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.maxRetriesInput">max_retries_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.ownerInput">owner_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput">parallel_requests_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput">parallel_requests_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMsInput">read_delay_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryableErrorsInput">retryable_errors_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryDelayMsInput">retry_delay_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -542,11 +542,11 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.writeDelayMsInput">write_delay_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.appAuth">app_auth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.baseUrl">base_url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.organization">organization</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.owner">owner</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequests">parallel_requests</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.parallelRequests">parallel_requests</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.readDelayMs">read_delay_ms</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryableErrors">retryable_errors</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.provider.GithubProvider.property.retryDelayMs">retry_delay_ms</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -680,10 +680,10 @@ base_url_input: str
 ##### `insecure_input`<sup>Optional</sup> <a name="insecure_input" id="@cdktf/provider-github.provider.GithubProvider.property.insecureInput"></a>
 
 ```python
-insecure_input: typing.Union[bool, IResolvable]
+insecure_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -720,10 +720,10 @@ owner_input: str
 ##### `parallel_requests_input`<sup>Optional</sup> <a name="parallel_requests_input" id="@cdktf/provider-github.provider.GithubProvider.property.parallelRequestsInput"></a>
 
 ```python
-parallel_requests_input: typing.Union[bool, IResolvable]
+parallel_requests_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -800,10 +800,10 @@ base_url: str
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-github.provider.GithubProvider.property.insecure"></a>
 
 ```python
-insecure: typing.Union[bool, IResolvable]
+insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -840,10 +840,10 @@ owner: str
 ##### `parallel_requests`<sup>Optional</sup> <a name="parallel_requests" id="@cdktf/provider-github.provider.GithubProvider.property.parallelRequests"></a>
 
 ```python
-parallel_requests: typing.Union[bool, IResolvable]
+parallel_requests: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -997,11 +997,11 @@ provider.GithubProviderConfig(
   alias: str = None,
   app_auth: GithubProviderAppAuth = None,
   base_url: str = None,
-  insecure: typing.Union[bool, IResolvable] = None,
+  insecure: bool | IResolvable = None,
   max_retries: typing.Union[int, float] = None,
   organization: str = None,
   owner: str = None,
-  parallel_requests: typing.Union[bool, IResolvable] = None,
+  parallel_requests: bool | IResolvable = None,
   read_delay_ms: typing.Union[int, float] = None,
   retryable_errors: typing.List[typing.Union[int, float]] = None,
   retry_delay_ms: typing.Union[int, float] = None,
@@ -1017,11 +1017,11 @@ provider.GithubProviderConfig(
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.alias">alias</a></code> | <code>str</code> | Alias name. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.appAuth">app_auth</a></code> | <code><a href="#@cdktf/provider-github.provider.GithubProviderAppAuth">GithubProviderAppAuth</a></code> | app_auth block. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.baseUrl">base_url</a></code> | <code>str</code> | The GitHub Base API URL. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.insecure">insecure</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Enable `insecure` mode for testing purposes. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.insecure">insecure</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable `insecure` mode for testing purposes. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.maxRetries">max_retries</a></code> | <code>typing.Union[int, float]</code> | Number of times to retry a request after receiving an error status codeDefaults to 3. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.organization">organization</a></code> | <code>str</code> | The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.owner">owner</a></code> | <code>str</code> | The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts. |
-| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests">parallel_requests</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Allow the provider to make parallel API calls to GitHub. |
+| <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests">parallel_requests</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow the provider to make parallel API calls to GitHub. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.readDelayMs">read_delay_ms</a></code> | <code>typing.Union[int, float]</code> | Amount of time in milliseconds to sleep in between non-write requests to GitHub API. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.retryableErrors">retryable_errors</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504]. |
 | <code><a href="#@cdktf/provider-github.provider.GithubProviderConfig.property.retryDelayMs">retry_delay_ms</a></code> | <code>typing.Union[int, float]</code> | Amount of time in milliseconds to sleep in between requests to GitHub API after an error response. |
@@ -1075,10 +1075,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `insecure`<sup>Optional</sup> <a name="insecure" id="@cdktf/provider-github.provider.GithubProviderConfig.property.insecure"></a>
 
 ```python
-insecure: typing.Union[bool, IResolvable]
+insecure: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Enable `insecure` mode for testing purposes.
 
@@ -1131,10 +1131,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `parallel_requests`<sup>Optional</sup> <a name="parallel_requests" id="@cdktf/provider-github.provider.GithubProviderConfig.property.parallelRequests"></a>
 
 ```python
-parallel_requests: typing.Union[bool, IResolvable]
+parallel_requests: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Allow the provider to make parallel API calls to GitHub.
 

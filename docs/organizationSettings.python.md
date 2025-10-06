@@ -14,40 +14,40 @@ from cdktf_cdktf_provider_github import organization_settings
 organizationSettings.OrganizationSettings(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   billing_email: str,
-  advanced_security_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
+  advanced_security_enabled_for_new_repositories: bool | IResolvable = None,
   blog: str = None,
   company: str = None,
   default_repository_permission: str = None,
-  dependabot_alerts_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
-  dependabot_security_updates_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
-  dependency_graph_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
+  dependabot_alerts_enabled_for_new_repositories: bool | IResolvable = None,
+  dependabot_security_updates_enabled_for_new_repositories: bool | IResolvable = None,
+  dependency_graph_enabled_for_new_repositories: bool | IResolvable = None,
   description: str = None,
   email: str = None,
-  has_organization_projects: typing.Union[bool, IResolvable] = None,
-  has_repository_projects: typing.Union[bool, IResolvable] = None,
+  has_organization_projects: bool | IResolvable = None,
+  has_repository_projects: bool | IResolvable = None,
   id: str = None,
   location: str = None,
-  members_can_create_internal_repositories: typing.Union[bool, IResolvable] = None,
-  members_can_create_pages: typing.Union[bool, IResolvable] = None,
-  members_can_create_private_pages: typing.Union[bool, IResolvable] = None,
-  members_can_create_private_repositories: typing.Union[bool, IResolvable] = None,
-  members_can_create_public_pages: typing.Union[bool, IResolvable] = None,
-  members_can_create_public_repositories: typing.Union[bool, IResolvable] = None,
-  members_can_create_repositories: typing.Union[bool, IResolvable] = None,
-  members_can_fork_private_repositories: typing.Union[bool, IResolvable] = None,
+  members_can_create_internal_repositories: bool | IResolvable = None,
+  members_can_create_pages: bool | IResolvable = None,
+  members_can_create_private_pages: bool | IResolvable = None,
+  members_can_create_private_repositories: bool | IResolvable = None,
+  members_can_create_public_pages: bool | IResolvable = None,
+  members_can_create_public_repositories: bool | IResolvable = None,
+  members_can_create_repositories: bool | IResolvable = None,
+  members_can_fork_private_repositories: bool | IResolvable = None,
   name: str = None,
-  secret_scanning_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
-  secret_scanning_push_protection_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
+  secret_scanning_enabled_for_new_repositories: bool | IResolvable = None,
+  secret_scanning_push_protection_enabled_for_new_repositories: bool | IResolvable = None,
   twitter_username: str = None,
-  web_commit_signoff_required: typing.Union[bool, IResolvable] = None
+  web_commit_signoff_required: bool | IResolvable = None
 )
 ```
 
@@ -55,40 +55,40 @@ organizationSettings.OrganizationSettings(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.billingEmail">billing_email</a></code> | <code>str</code> | The billing email address for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.advancedSecurityEnabledForNewRepositories">advanced_security_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not advanced security is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.advancedSecurityEnabledForNewRepositories">advanced_security_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not advanced security is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.blog">blog</a></code> | <code>str</code> | The blog URL for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.company">company</a></code> | <code>str</code> | The company name for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.defaultRepositoryPermission">default_repository_permission</a></code> | <code>str</code> | The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotAlertsEnabledForNewRepositories">dependabot_alerts_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not dependabot alerts are enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotSecurityUpdatesEnabledForNewRepositories">dependabot_security_updates_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not dependabot security updates are enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependencyGraphEnabledForNewRepositories">dependency_graph_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not dependency graph is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotAlertsEnabledForNewRepositories">dependabot_alerts_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not dependabot alerts are enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotSecurityUpdatesEnabledForNewRepositories">dependabot_security_updates_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not dependabot security updates are enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependencyGraphEnabledForNewRepositories">dependency_graph_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not dependency graph is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.description">description</a></code> | <code>str</code> | The description for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.email">email</a></code> | <code>str</code> | The email address for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasOrganizationProjects">has_organization_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization projects are enabled for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasRepositoryProjects">has_repository_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not repository projects are enabled for the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasOrganizationProjects">has_organization_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization projects are enabled for the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasRepositoryProjects">has_repository_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not repository projects are enabled for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateInternalRepositories">members_can_create_internal_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePages">members_can_create_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivatePages">members_can_create_private_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new private pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivateRepositories">members_can_create_private_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new private repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicPages">members_can_create_public_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new public pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicRepositories">members_can_create_public_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new public repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateRepositories">members_can_create_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanForkPrivateRepositories">members_can_fork_private_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can fork private repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateInternalRepositories">members_can_create_internal_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePages">members_can_create_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivatePages">members_can_create_private_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new private pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivateRepositories">members_can_create_private_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new private repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicPages">members_can_create_public_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new public pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicRepositories">members_can_create_public_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new public repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateRepositories">members_can_create_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanForkPrivateRepositories">members_can_fork_private_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can fork private repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.name">name</a></code> | <code>str</code> | The name for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningEnabledForNewRepositories">secret_scanning_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not secret scanning is enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningPushProtectionEnabledForNewRepositories">secret_scanning_push_protection_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not secret scanning push protection is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningEnabledForNewRepositories">secret_scanning_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not secret scanning is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningPushProtectionEnabledForNewRepositories">secret_scanning_push_protection_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not secret scanning push protection is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.twitterUsername">twitter_username</a></code> | <code>str</code> | The Twitter username for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.webCommitSignoffRequired">web_commit_signoff_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not commit signatures are required for commits to the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.webCommitSignoffRequired">web_commit_signoff_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not commit signatures are required for commits to the organization. |
 
 ---
 
@@ -112,13 +112,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -148,7 +148,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `advanced_security_enabled_for_new_repositories`<sup>Optional</sup> <a name="advanced_security_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.advancedSecurityEnabledForNewRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not advanced security is enabled for new repositories.
 
@@ -204,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `dependabot_alerts_enabled_for_new_repositories`<sup>Optional</sup> <a name="dependabot_alerts_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotAlertsEnabledForNewRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not dependabot alerts are enabled for new repositories.
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `dependabot_security_updates_enabled_for_new_repositories`<sup>Optional</sup> <a name="dependabot_security_updates_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotSecurityUpdatesEnabledForNewRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not dependabot security updates are enabled for new repositories.
 
@@ -224,7 +224,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `dependency_graph_enabled_for_new_repositories`<sup>Optional</sup> <a name="dependency_graph_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependencyGraphEnabledForNewRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not dependency graph is enabled for new repositories.
 
@@ -254,7 +254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `has_organization_projects`<sup>Optional</sup> <a name="has_organization_projects" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasOrganizationProjects"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization projects are enabled for the organization.
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `has_repository_projects`<sup>Optional</sup> <a name="has_repository_projects" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasRepositoryProjects"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not repository projects are enabled for the organization.
 
@@ -295,7 +295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `members_can_create_internal_repositories`<sup>Optional</sup> <a name="members_can_create_internal_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateInternalRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new internal repositories. For Enterprise Organizations only.
 
@@ -305,7 +305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `members_can_create_pages`<sup>Optional</sup> <a name="members_can_create_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePages"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new pages.
 
@@ -315,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `members_can_create_private_pages`<sup>Optional</sup> <a name="members_can_create_private_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivatePages"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new private pages.
 
@@ -325,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `members_can_create_private_repositories`<sup>Optional</sup> <a name="members_can_create_private_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivateRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new private repositories.
 
@@ -335,7 +335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `members_can_create_public_pages`<sup>Optional</sup> <a name="members_can_create_public_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicPages"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new public pages.
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `members_can_create_public_repositories`<sup>Optional</sup> <a name="members_can_create_public_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new public repositories.
 
@@ -355,7 +355,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `members_can_create_repositories`<sup>Optional</sup> <a name="members_can_create_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new repositories.
 
@@ -365,7 +365,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `members_can_fork_private_repositories`<sup>Optional</sup> <a name="members_can_fork_private_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanForkPrivateRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can fork private repositories.
 
@@ -385,7 +385,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `secret_scanning_enabled_for_new_repositories`<sup>Optional</sup> <a name="secret_scanning_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningEnabledForNewRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not secret scanning is enabled for new repositories.
 
@@ -395,7 +395,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `secret_scanning_push_protection_enabled_for_new_repositories`<sup>Optional</sup> <a name="secret_scanning_push_protection_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningPushProtectionEnabledForNewRepositories"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not secret scanning push protection is enabled for new repositories.
 
@@ -415,7 +415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `web_commit_signoff_required`<sup>Optional</sup> <a name="web_commit_signoff_required" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.webCommitSignoffRequired"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not commit signatures are required for commits to the organization.
 
@@ -701,7 +701,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.importFrom"></a>
@@ -764,7 +764,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -780,7 +780,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1097,67 +1097,67 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositoriesInput">advanced_security_enabled_for_new_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositoriesInput">advanced_security_enabled_for_new_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.billingEmailInput">billing_email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.blogInput">blog_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.companyInput">company_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.defaultRepositoryPermissionInput">default_repository_permission_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositoriesInput">dependabot_alerts_enabled_for_new_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositoriesInput">dependabot_security_updates_enabled_for_new_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositoriesInput">dependency_graph_enabled_for_new_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositoriesInput">dependabot_alerts_enabled_for_new_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositoriesInput">dependabot_security_updates_enabled_for_new_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositoriesInput">dependency_graph_enabled_for_new_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjectsInput">has_organization_projects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjectsInput">has_repository_projects_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjectsInput">has_organization_projects_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjectsInput">has_repository_projects_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositoriesInput">members_can_create_internal_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePagesInput">members_can_create_pages_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePagesInput">members_can_create_private_pages_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositoriesInput">members_can_create_private_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPagesInput">members_can_create_public_pages_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositoriesInput">members_can_create_public_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositoriesInput">members_can_create_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositoriesInput">members_can_fork_private_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositoriesInput">members_can_create_internal_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePagesInput">members_can_create_pages_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePagesInput">members_can_create_private_pages_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositoriesInput">members_can_create_private_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPagesInput">members_can_create_public_pages_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositoriesInput">members_can_create_public_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositoriesInput">members_can_create_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositoriesInput">members_can_fork_private_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositoriesInput">secret_scanning_enabled_for_new_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositoriesInput">secret_scanning_push_protection_enabled_for_new_repositories_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositoriesInput">secret_scanning_enabled_for_new_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositoriesInput">secret_scanning_push_protection_enabled_for_new_repositories_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.twitterUsernameInput">twitter_username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequiredInput">web_commit_signoff_required_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositories">advanced_security_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequiredInput">web_commit_signoff_required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositories">advanced_security_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.billingEmail">billing_email</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.blog">blog</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.company">company</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.defaultRepositoryPermission">default_repository_permission</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositories">dependabot_alerts_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabot_security_updates_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositories">dependency_graph_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositories">dependabot_alerts_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabot_security_updates_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositories">dependency_graph_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjects">has_organization_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjects">has_repository_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjects">has_organization_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjects">has_repository_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositories">members_can_create_internal_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePages">members_can_create_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePages">members_can_create_private_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositories">members_can_create_private_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPages">members_can_create_public_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositories">members_can_create_public_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositories">members_can_create_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositories">members_can_fork_private_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositories">members_can_create_internal_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePages">members_can_create_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePages">members_can_create_private_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositories">members_can_create_private_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPages">members_can_create_public_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositories">members_can_create_public_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositories">members_can_create_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositories">members_can_fork_private_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositories">secret_scanning_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositories">secret_scanning_push_protection_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositories">secret_scanning_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositories">secret_scanning_push_protection_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.twitterUsername">twitter_username</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequired">web_commit_signoff_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequired">web_commit_signoff_required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1236,20 +1236,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1296,20 +1296,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `advanced_security_enabled_for_new_repositories_input`<sup>Optional</sup> <a name="advanced_security_enabled_for_new_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositoriesInput"></a>
 
 ```python
-advanced_security_enabled_for_new_repositories_input: typing.Union[bool, IResolvable]
+advanced_security_enabled_for_new_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1356,30 +1356,30 @@ default_repository_permission_input: str
 ##### `dependabot_alerts_enabled_for_new_repositories_input`<sup>Optional</sup> <a name="dependabot_alerts_enabled_for_new_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositoriesInput"></a>
 
 ```python
-dependabot_alerts_enabled_for_new_repositories_input: typing.Union[bool, IResolvable]
+dependabot_alerts_enabled_for_new_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `dependabot_security_updates_enabled_for_new_repositories_input`<sup>Optional</sup> <a name="dependabot_security_updates_enabled_for_new_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositoriesInput"></a>
 
 ```python
-dependabot_security_updates_enabled_for_new_repositories_input: typing.Union[bool, IResolvable]
+dependabot_security_updates_enabled_for_new_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `dependency_graph_enabled_for_new_repositories_input`<sup>Optional</sup> <a name="dependency_graph_enabled_for_new_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositoriesInput"></a>
 
 ```python
-dependency_graph_enabled_for_new_repositories_input: typing.Union[bool, IResolvable]
+dependency_graph_enabled_for_new_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1406,20 +1406,20 @@ email_input: str
 ##### `has_organization_projects_input`<sup>Optional</sup> <a name="has_organization_projects_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjectsInput"></a>
 
 ```python
-has_organization_projects_input: typing.Union[bool, IResolvable]
+has_organization_projects_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `has_repository_projects_input`<sup>Optional</sup> <a name="has_repository_projects_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjectsInput"></a>
 
 ```python
-has_repository_projects_input: typing.Union[bool, IResolvable]
+has_repository_projects_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1446,80 +1446,80 @@ location_input: str
 ##### `members_can_create_internal_repositories_input`<sup>Optional</sup> <a name="members_can_create_internal_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositoriesInput"></a>
 
 ```python
-members_can_create_internal_repositories_input: typing.Union[bool, IResolvable]
+members_can_create_internal_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_pages_input`<sup>Optional</sup> <a name="members_can_create_pages_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePagesInput"></a>
 
 ```python
-members_can_create_pages_input: typing.Union[bool, IResolvable]
+members_can_create_pages_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_private_pages_input`<sup>Optional</sup> <a name="members_can_create_private_pages_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePagesInput"></a>
 
 ```python
-members_can_create_private_pages_input: typing.Union[bool, IResolvable]
+members_can_create_private_pages_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_private_repositories_input`<sup>Optional</sup> <a name="members_can_create_private_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositoriesInput"></a>
 
 ```python
-members_can_create_private_repositories_input: typing.Union[bool, IResolvable]
+members_can_create_private_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_public_pages_input`<sup>Optional</sup> <a name="members_can_create_public_pages_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPagesInput"></a>
 
 ```python
-members_can_create_public_pages_input: typing.Union[bool, IResolvable]
+members_can_create_public_pages_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_public_repositories_input`<sup>Optional</sup> <a name="members_can_create_public_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositoriesInput"></a>
 
 ```python
-members_can_create_public_repositories_input: typing.Union[bool, IResolvable]
+members_can_create_public_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_repositories_input`<sup>Optional</sup> <a name="members_can_create_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositoriesInput"></a>
 
 ```python
-members_can_create_repositories_input: typing.Union[bool, IResolvable]
+members_can_create_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_fork_private_repositories_input`<sup>Optional</sup> <a name="members_can_fork_private_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositoriesInput"></a>
 
 ```python
-members_can_fork_private_repositories_input: typing.Union[bool, IResolvable]
+members_can_fork_private_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1536,20 +1536,20 @@ name_input: str
 ##### `secret_scanning_enabled_for_new_repositories_input`<sup>Optional</sup> <a name="secret_scanning_enabled_for_new_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositoriesInput"></a>
 
 ```python
-secret_scanning_enabled_for_new_repositories_input: typing.Union[bool, IResolvable]
+secret_scanning_enabled_for_new_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `secret_scanning_push_protection_enabled_for_new_repositories_input`<sup>Optional</sup> <a name="secret_scanning_push_protection_enabled_for_new_repositories_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositoriesInput"></a>
 
 ```python
-secret_scanning_push_protection_enabled_for_new_repositories_input: typing.Union[bool, IResolvable]
+secret_scanning_push_protection_enabled_for_new_repositories_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1566,20 +1566,20 @@ twitter_username_input: str
 ##### `web_commit_signoff_required_input`<sup>Optional</sup> <a name="web_commit_signoff_required_input" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequiredInput"></a>
 
 ```python
-web_commit_signoff_required_input: typing.Union[bool, IResolvable]
+web_commit_signoff_required_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `advanced_security_enabled_for_new_repositories`<sup>Required</sup> <a name="advanced_security_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositories"></a>
 
 ```python
-advanced_security_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+advanced_security_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1626,30 +1626,30 @@ default_repository_permission: str
 ##### `dependabot_alerts_enabled_for_new_repositories`<sup>Required</sup> <a name="dependabot_alerts_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositories"></a>
 
 ```python
-dependabot_alerts_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+dependabot_alerts_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `dependabot_security_updates_enabled_for_new_repositories`<sup>Required</sup> <a name="dependabot_security_updates_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositories"></a>
 
 ```python
-dependabot_security_updates_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+dependabot_security_updates_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `dependency_graph_enabled_for_new_repositories`<sup>Required</sup> <a name="dependency_graph_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositories"></a>
 
 ```python
-dependency_graph_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+dependency_graph_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1676,20 +1676,20 @@ email: str
 ##### `has_organization_projects`<sup>Required</sup> <a name="has_organization_projects" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjects"></a>
 
 ```python
-has_organization_projects: typing.Union[bool, IResolvable]
+has_organization_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `has_repository_projects`<sup>Required</sup> <a name="has_repository_projects" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjects"></a>
 
 ```python
-has_repository_projects: typing.Union[bool, IResolvable]
+has_repository_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1716,80 +1716,80 @@ location: str
 ##### `members_can_create_internal_repositories`<sup>Required</sup> <a name="members_can_create_internal_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositories"></a>
 
 ```python
-members_can_create_internal_repositories: typing.Union[bool, IResolvable]
+members_can_create_internal_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_pages`<sup>Required</sup> <a name="members_can_create_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePages"></a>
 
 ```python
-members_can_create_pages: typing.Union[bool, IResolvable]
+members_can_create_pages: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_private_pages`<sup>Required</sup> <a name="members_can_create_private_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePages"></a>
 
 ```python
-members_can_create_private_pages: typing.Union[bool, IResolvable]
+members_can_create_private_pages: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_private_repositories`<sup>Required</sup> <a name="members_can_create_private_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositories"></a>
 
 ```python
-members_can_create_private_repositories: typing.Union[bool, IResolvable]
+members_can_create_private_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_public_pages`<sup>Required</sup> <a name="members_can_create_public_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPages"></a>
 
 ```python
-members_can_create_public_pages: typing.Union[bool, IResolvable]
+members_can_create_public_pages: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_public_repositories`<sup>Required</sup> <a name="members_can_create_public_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositories"></a>
 
 ```python
-members_can_create_public_repositories: typing.Union[bool, IResolvable]
+members_can_create_public_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_create_repositories`<sup>Required</sup> <a name="members_can_create_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositories"></a>
 
 ```python
-members_can_create_repositories: typing.Union[bool, IResolvable]
+members_can_create_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `members_can_fork_private_repositories`<sup>Required</sup> <a name="members_can_fork_private_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositories"></a>
 
 ```python
-members_can_fork_private_repositories: typing.Union[bool, IResolvable]
+members_can_fork_private_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1806,20 +1806,20 @@ name: str
 ##### `secret_scanning_enabled_for_new_repositories`<sup>Required</sup> <a name="secret_scanning_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositories"></a>
 
 ```python
-secret_scanning_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+secret_scanning_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `secret_scanning_push_protection_enabled_for_new_repositories`<sup>Required</sup> <a name="secret_scanning_push_protection_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositories"></a>
 
 ```python
-secret_scanning_push_protection_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+secret_scanning_push_protection_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1836,10 +1836,10 @@ twitter_username: str
 ##### `web_commit_signoff_required`<sup>Required</sup> <a name="web_commit_signoff_required" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequired"></a>
 
 ```python
-web_commit_signoff_required: typing.Union[bool, IResolvable]
+web_commit_signoff_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1871,40 +1871,40 @@ tfResourceType: str
 from cdktf_cdktf_provider_github import organization_settings
 
 organizationSettings.OrganizationSettingsConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   billing_email: str,
-  advanced_security_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
+  advanced_security_enabled_for_new_repositories: bool | IResolvable = None,
   blog: str = None,
   company: str = None,
   default_repository_permission: str = None,
-  dependabot_alerts_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
-  dependabot_security_updates_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
-  dependency_graph_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
+  dependabot_alerts_enabled_for_new_repositories: bool | IResolvable = None,
+  dependabot_security_updates_enabled_for_new_repositories: bool | IResolvable = None,
+  dependency_graph_enabled_for_new_repositories: bool | IResolvable = None,
   description: str = None,
   email: str = None,
-  has_organization_projects: typing.Union[bool, IResolvable] = None,
-  has_repository_projects: typing.Union[bool, IResolvable] = None,
+  has_organization_projects: bool | IResolvable = None,
+  has_repository_projects: bool | IResolvable = None,
   id: str = None,
   location: str = None,
-  members_can_create_internal_repositories: typing.Union[bool, IResolvable] = None,
-  members_can_create_pages: typing.Union[bool, IResolvable] = None,
-  members_can_create_private_pages: typing.Union[bool, IResolvable] = None,
-  members_can_create_private_repositories: typing.Union[bool, IResolvable] = None,
-  members_can_create_public_pages: typing.Union[bool, IResolvable] = None,
-  members_can_create_public_repositories: typing.Union[bool, IResolvable] = None,
-  members_can_create_repositories: typing.Union[bool, IResolvable] = None,
-  members_can_fork_private_repositories: typing.Union[bool, IResolvable] = None,
+  members_can_create_internal_repositories: bool | IResolvable = None,
+  members_can_create_pages: bool | IResolvable = None,
+  members_can_create_private_pages: bool | IResolvable = None,
+  members_can_create_private_repositories: bool | IResolvable = None,
+  members_can_create_public_pages: bool | IResolvable = None,
+  members_can_create_public_repositories: bool | IResolvable = None,
+  members_can_create_repositories: bool | IResolvable = None,
+  members_can_fork_private_repositories: bool | IResolvable = None,
   name: str = None,
-  secret_scanning_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
-  secret_scanning_push_protection_enabled_for_new_repositories: typing.Union[bool, IResolvable] = None,
+  secret_scanning_enabled_for_new_repositories: bool | IResolvable = None,
+  secret_scanning_push_protection_enabled_for_new_repositories: bool | IResolvable = None,
   twitter_username: str = None,
-  web_commit_signoff_required: typing.Union[bool, IResolvable] = None
+  web_commit_signoff_required: bool | IResolvable = None
 )
 ```
 
@@ -1912,60 +1912,60 @@ organizationSettings.OrganizationSettingsConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.billingEmail">billing_email</a></code> | <code>str</code> | The billing email address for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.advancedSecurityEnabledForNewRepositories">advanced_security_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not advanced security is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.advancedSecurityEnabledForNewRepositories">advanced_security_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not advanced security is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.blog">blog</a></code> | <code>str</code> | The blog URL for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.company">company</a></code> | <code>str</code> | The company name for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.defaultRepositoryPermission">default_repository_permission</a></code> | <code>str</code> | The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotAlertsEnabledForNewRepositories">dependabot_alerts_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not dependabot alerts are enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabot_security_updates_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not dependabot security updates are enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependencyGraphEnabledForNewRepositories">dependency_graph_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not dependency graph is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotAlertsEnabledForNewRepositories">dependabot_alerts_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not dependabot alerts are enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabot_security_updates_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not dependabot security updates are enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependencyGraphEnabledForNewRepositories">dependency_graph_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not dependency graph is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.description">description</a></code> | <code>str</code> | The description for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.email">email</a></code> | <code>str</code> | The email address for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasOrganizationProjects">has_organization_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization projects are enabled for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasRepositoryProjects">has_repository_projects</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not repository projects are enabled for the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasOrganizationProjects">has_organization_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization projects are enabled for the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasRepositoryProjects">has_repository_projects</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not repository projects are enabled for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.location">location</a></code> | <code>str</code> | The location for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateInternalRepositories">members_can_create_internal_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePages">members_can_create_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivatePages">members_can_create_private_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new private pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivateRepositories">members_can_create_private_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new private repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicPages">members_can_create_public_pages</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new public pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicRepositories">members_can_create_public_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new public repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateRepositories">members_can_create_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can create new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanForkPrivateRepositories">members_can_fork_private_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not organization members can fork private repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateInternalRepositories">members_can_create_internal_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePages">members_can_create_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivatePages">members_can_create_private_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new private pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivateRepositories">members_can_create_private_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new private repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicPages">members_can_create_public_pages</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new public pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicRepositories">members_can_create_public_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new public repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateRepositories">members_can_create_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can create new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanForkPrivateRepositories">members_can_fork_private_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not organization members can fork private repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.name">name</a></code> | <code>str</code> | The name for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningEnabledForNewRepositories">secret_scanning_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not secret scanning is enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningPushProtectionEnabledForNewRepositories">secret_scanning_push_protection_enabled_for_new_repositories</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not secret scanning push protection is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningEnabledForNewRepositories">secret_scanning_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not secret scanning is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningPushProtectionEnabledForNewRepositories">secret_scanning_push_protection_enabled_for_new_repositories</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not secret scanning push protection is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.twitterUsername">twitter_username</a></code> | <code>str</code> | The Twitter username for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.webCommitSignoffRequired">web_commit_signoff_required</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether or not commit signatures are required for commits to the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.webCommitSignoffRequired">web_commit_signoff_required</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not commit signatures are required for commits to the organization. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -2012,10 +2012,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -2036,10 +2036,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `advanced_security_enabled_for_new_repositories`<sup>Optional</sup> <a name="advanced_security_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.advancedSecurityEnabledForNewRepositories"></a>
 
 ```python
-advanced_security_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+advanced_security_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not advanced security is enabled for new repositories.
 
@@ -2092,10 +2092,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `dependabot_alerts_enabled_for_new_repositories`<sup>Optional</sup> <a name="dependabot_alerts_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotAlertsEnabledForNewRepositories"></a>
 
 ```python
-dependabot_alerts_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+dependabot_alerts_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not dependabot alerts are enabled for new repositories.
 
@@ -2106,10 +2106,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `dependabot_security_updates_enabled_for_new_repositories`<sup>Optional</sup> <a name="dependabot_security_updates_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotSecurityUpdatesEnabledForNewRepositories"></a>
 
 ```python
-dependabot_security_updates_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+dependabot_security_updates_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not dependabot security updates are enabled for new repositories.
 
@@ -2120,10 +2120,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `dependency_graph_enabled_for_new_repositories`<sup>Optional</sup> <a name="dependency_graph_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependencyGraphEnabledForNewRepositories"></a>
 
 ```python
-dependency_graph_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+dependency_graph_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not dependency graph is enabled for new repositories.
 
@@ -2162,10 +2162,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `has_organization_projects`<sup>Optional</sup> <a name="has_organization_projects" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasOrganizationProjects"></a>
 
 ```python
-has_organization_projects: typing.Union[bool, IResolvable]
+has_organization_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization projects are enabled for the organization.
 
@@ -2176,10 +2176,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `has_repository_projects`<sup>Optional</sup> <a name="has_repository_projects" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasRepositoryProjects"></a>
 
 ```python
-has_repository_projects: typing.Union[bool, IResolvable]
+has_repository_projects: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not repository projects are enabled for the organization.
 
@@ -2219,10 +2219,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `members_can_create_internal_repositories`<sup>Optional</sup> <a name="members_can_create_internal_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateInternalRepositories"></a>
 
 ```python
-members_can_create_internal_repositories: typing.Union[bool, IResolvable]
+members_can_create_internal_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new internal repositories. For Enterprise Organizations only.
 
@@ -2233,10 +2233,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `members_can_create_pages`<sup>Optional</sup> <a name="members_can_create_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePages"></a>
 
 ```python
-members_can_create_pages: typing.Union[bool, IResolvable]
+members_can_create_pages: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new pages.
 
@@ -2247,10 +2247,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `members_can_create_private_pages`<sup>Optional</sup> <a name="members_can_create_private_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivatePages"></a>
 
 ```python
-members_can_create_private_pages: typing.Union[bool, IResolvable]
+members_can_create_private_pages: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new private pages.
 
@@ -2261,10 +2261,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `members_can_create_private_repositories`<sup>Optional</sup> <a name="members_can_create_private_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivateRepositories"></a>
 
 ```python
-members_can_create_private_repositories: typing.Union[bool, IResolvable]
+members_can_create_private_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new private repositories.
 
@@ -2275,10 +2275,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `members_can_create_public_pages`<sup>Optional</sup> <a name="members_can_create_public_pages" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicPages"></a>
 
 ```python
-members_can_create_public_pages: typing.Union[bool, IResolvable]
+members_can_create_public_pages: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new public pages.
 
@@ -2289,10 +2289,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `members_can_create_public_repositories`<sup>Optional</sup> <a name="members_can_create_public_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicRepositories"></a>
 
 ```python
-members_can_create_public_repositories: typing.Union[bool, IResolvable]
+members_can_create_public_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new public repositories.
 
@@ -2303,10 +2303,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `members_can_create_repositories`<sup>Optional</sup> <a name="members_can_create_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateRepositories"></a>
 
 ```python
-members_can_create_repositories: typing.Union[bool, IResolvable]
+members_can_create_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can create new repositories.
 
@@ -2317,10 +2317,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `members_can_fork_private_repositories`<sup>Optional</sup> <a name="members_can_fork_private_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanForkPrivateRepositories"></a>
 
 ```python
-members_can_fork_private_repositories: typing.Union[bool, IResolvable]
+members_can_fork_private_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not organization members can fork private repositories.
 
@@ -2345,10 +2345,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `secret_scanning_enabled_for_new_repositories`<sup>Optional</sup> <a name="secret_scanning_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningEnabledForNewRepositories"></a>
 
 ```python
-secret_scanning_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+secret_scanning_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not secret scanning is enabled for new repositories.
 
@@ -2359,10 +2359,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `secret_scanning_push_protection_enabled_for_new_repositories`<sup>Optional</sup> <a name="secret_scanning_push_protection_enabled_for_new_repositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningPushProtectionEnabledForNewRepositories"></a>
 
 ```python
-secret_scanning_push_protection_enabled_for_new_repositories: typing.Union[bool, IResolvable]
+secret_scanning_push_protection_enabled_for_new_repositories: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not secret scanning push protection is enabled for new repositories.
 
@@ -2387,10 +2387,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `web_commit_signoff_required`<sup>Optional</sup> <a name="web_commit_signoff_required" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.webCommitSignoffRequired"></a>
 
 ```python
-web_commit_signoff_required: typing.Union[bool, IResolvable]
+web_commit_signoff_required: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether or not commit signatures are required for commits to the organization.
 

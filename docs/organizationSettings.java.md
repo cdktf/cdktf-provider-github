@@ -12,61 +12,40 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 import com.hashicorp.cdktf.providers.github.organization_settings.OrganizationSettings;
 
 OrganizationSettings.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .billingEmail(java.lang.String)
-//  .advancedSecurityEnabledForNewRepositories(java.lang.Boolean)
-//  .advancedSecurityEnabledForNewRepositories(IResolvable)
+//  .advancedSecurityEnabledForNewRepositories(java.lang.Boolean|IResolvable)
 //  .blog(java.lang.String)
 //  .company(java.lang.String)
 //  .defaultRepositoryPermission(java.lang.String)
-//  .dependabotAlertsEnabledForNewRepositories(java.lang.Boolean)
-//  .dependabotAlertsEnabledForNewRepositories(IResolvable)
-//  .dependabotSecurityUpdatesEnabledForNewRepositories(java.lang.Boolean)
-//  .dependabotSecurityUpdatesEnabledForNewRepositories(IResolvable)
-//  .dependencyGraphEnabledForNewRepositories(java.lang.Boolean)
-//  .dependencyGraphEnabledForNewRepositories(IResolvable)
+//  .dependabotAlertsEnabledForNewRepositories(java.lang.Boolean|IResolvable)
+//  .dependabotSecurityUpdatesEnabledForNewRepositories(java.lang.Boolean|IResolvable)
+//  .dependencyGraphEnabledForNewRepositories(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .email(java.lang.String)
-//  .hasOrganizationProjects(java.lang.Boolean)
-//  .hasOrganizationProjects(IResolvable)
-//  .hasRepositoryProjects(java.lang.Boolean)
-//  .hasRepositoryProjects(IResolvable)
+//  .hasOrganizationProjects(java.lang.Boolean|IResolvable)
+//  .hasRepositoryProjects(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
-//  .membersCanCreateInternalRepositories(java.lang.Boolean)
-//  .membersCanCreateInternalRepositories(IResolvable)
-//  .membersCanCreatePages(java.lang.Boolean)
-//  .membersCanCreatePages(IResolvable)
-//  .membersCanCreatePrivatePages(java.lang.Boolean)
-//  .membersCanCreatePrivatePages(IResolvable)
-//  .membersCanCreatePrivateRepositories(java.lang.Boolean)
-//  .membersCanCreatePrivateRepositories(IResolvable)
-//  .membersCanCreatePublicPages(java.lang.Boolean)
-//  .membersCanCreatePublicPages(IResolvable)
-//  .membersCanCreatePublicRepositories(java.lang.Boolean)
-//  .membersCanCreatePublicRepositories(IResolvable)
-//  .membersCanCreateRepositories(java.lang.Boolean)
-//  .membersCanCreateRepositories(IResolvable)
-//  .membersCanForkPrivateRepositories(java.lang.Boolean)
-//  .membersCanForkPrivateRepositories(IResolvable)
+//  .membersCanCreateInternalRepositories(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePages(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePrivatePages(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePrivateRepositories(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePublicPages(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePublicRepositories(java.lang.Boolean|IResolvable)
+//  .membersCanCreateRepositories(java.lang.Boolean|IResolvable)
+//  .membersCanForkPrivateRepositories(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
-//  .secretScanningEnabledForNewRepositories(java.lang.Boolean)
-//  .secretScanningEnabledForNewRepositories(IResolvable)
-//  .secretScanningPushProtectionEnabledForNewRepositories(java.lang.Boolean)
-//  .secretScanningPushProtectionEnabledForNewRepositories(IResolvable)
+//  .secretScanningEnabledForNewRepositories(java.lang.Boolean|IResolvable)
+//  .secretScanningPushProtectionEnabledForNewRepositories(java.lang.Boolean|IResolvable)
 //  .twitterUsername(java.lang.String)
-//  .webCommitSignoffRequired(java.lang.Boolean)
-//  .webCommitSignoffRequired(IResolvable)
+//  .webCommitSignoffRequired(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -74,40 +53,40 @@ OrganizationSettings.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.billingEmail">billingEmail</a></code> | <code>java.lang.String</code> | The billing email address for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.advancedSecurityEnabledForNewRepositories">advancedSecurityEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not advanced security is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.advancedSecurityEnabledForNewRepositories">advancedSecurityEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not advanced security is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.blog">blog</a></code> | <code>java.lang.String</code> | The blog URL for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.company">company</a></code> | <code>java.lang.String</code> | The company name for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.defaultRepositoryPermission">defaultRepositoryPermission</a></code> | <code>java.lang.String</code> | The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotAlertsEnabledForNewRepositories">dependabotAlertsEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not dependabot alerts are enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotSecurityUpdatesEnabledForNewRepositories">dependabotSecurityUpdatesEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not dependabot security updates are enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependencyGraphEnabledForNewRepositories">dependencyGraphEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not dependency graph is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotAlertsEnabledForNewRepositories">dependabotAlertsEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not dependabot alerts are enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotSecurityUpdatesEnabledForNewRepositories">dependabotSecurityUpdatesEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not dependabot security updates are enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependencyGraphEnabledForNewRepositories">dependencyGraphEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not dependency graph is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | The description for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | The email address for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasOrganizationProjects">hasOrganizationProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization projects are enabled for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasRepositoryProjects">hasRepositoryProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not repository projects are enabled for the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasOrganizationProjects">hasOrganizationProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization projects are enabled for the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasRepositoryProjects">hasRepositoryProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not repository projects are enabled for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.location">location</a></code> | <code>java.lang.String</code> | The location for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateInternalRepositories">membersCanCreateInternalRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePages">membersCanCreatePages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivatePages">membersCanCreatePrivatePages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new private pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivateRepositories">membersCanCreatePrivateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new private repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicPages">membersCanCreatePublicPages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new public pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicRepositories">membersCanCreatePublicRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new public repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateRepositories">membersCanCreateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanForkPrivateRepositories">membersCanForkPrivateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can fork private repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateInternalRepositories">membersCanCreateInternalRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePages">membersCanCreatePages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivatePages">membersCanCreatePrivatePages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new private pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivateRepositories">membersCanCreatePrivateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new private repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicPages">membersCanCreatePublicPages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new public pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicRepositories">membersCanCreatePublicRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new public repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateRepositories">membersCanCreateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanForkPrivateRepositories">membersCanForkPrivateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can fork private repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningEnabledForNewRepositories">secretScanningEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not secret scanning is enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningPushProtectionEnabledForNewRepositories">secretScanningPushProtectionEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not secret scanning push protection is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningEnabledForNewRepositories">secretScanningEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not secret scanning is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningPushProtectionEnabledForNewRepositories">secretScanningPushProtectionEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not secret scanning push protection is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.twitterUsername">twitterUsername</a></code> | <code>java.lang.String</code> | The Twitter username for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not commit signatures are required for commits to the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not commit signatures are required for commits to the organization. |
 
 ---
 
@@ -131,13 +110,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -167,7 +146,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -183,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `advancedSecurityEnabledForNewRepositories`<sup>Optional</sup> <a name="advancedSecurityEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.advancedSecurityEnabledForNewRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not advanced security is enabled for new repositories.
 
@@ -223,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `dependabotAlertsEnabledForNewRepositories`<sup>Optional</sup> <a name="dependabotAlertsEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotAlertsEnabledForNewRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not dependabot alerts are enabled for new repositories.
 
@@ -233,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `dependabotSecurityUpdatesEnabledForNewRepositories`<sup>Optional</sup> <a name="dependabotSecurityUpdatesEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependabotSecurityUpdatesEnabledForNewRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not dependabot security updates are enabled for new repositories.
 
@@ -243,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `dependencyGraphEnabledForNewRepositories`<sup>Optional</sup> <a name="dependencyGraphEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.dependencyGraphEnabledForNewRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not dependency graph is enabled for new repositories.
 
@@ -273,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `hasOrganizationProjects`<sup>Optional</sup> <a name="hasOrganizationProjects" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasOrganizationProjects"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization projects are enabled for the organization.
 
@@ -283,7 +262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `hasRepositoryProjects`<sup>Optional</sup> <a name="hasRepositoryProjects" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.hasRepositoryProjects"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not repository projects are enabled for the organization.
 
@@ -314,7 +293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `membersCanCreateInternalRepositories`<sup>Optional</sup> <a name="membersCanCreateInternalRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateInternalRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new internal repositories. For Enterprise Organizations only.
 
@@ -324,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `membersCanCreatePages`<sup>Optional</sup> <a name="membersCanCreatePages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePages"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new pages.
 
@@ -334,7 +313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `membersCanCreatePrivatePages`<sup>Optional</sup> <a name="membersCanCreatePrivatePages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivatePages"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new private pages.
 
@@ -344,7 +323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `membersCanCreatePrivateRepositories`<sup>Optional</sup> <a name="membersCanCreatePrivateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePrivateRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new private repositories.
 
@@ -354,7 +333,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `membersCanCreatePublicPages`<sup>Optional</sup> <a name="membersCanCreatePublicPages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicPages"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new public pages.
 
@@ -364,7 +343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `membersCanCreatePublicRepositories`<sup>Optional</sup> <a name="membersCanCreatePublicRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreatePublicRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new public repositories.
 
@@ -374,7 +353,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `membersCanCreateRepositories`<sup>Optional</sup> <a name="membersCanCreateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanCreateRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new repositories.
 
@@ -384,7 +363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `membersCanForkPrivateRepositories`<sup>Optional</sup> <a name="membersCanForkPrivateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.membersCanForkPrivateRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can fork private repositories.
 
@@ -404,7 +383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `secretScanningEnabledForNewRepositories`<sup>Optional</sup> <a name="secretScanningEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningEnabledForNewRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not secret scanning is enabled for new repositories.
 
@@ -414,7 +393,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `secretScanningPushProtectionEnabledForNewRepositories`<sup>Optional</sup> <a name="secretScanningPushProtectionEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.secretScanningPushProtectionEnabledForNewRepositories"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not secret scanning push protection is enabled for new repositories.
 
@@ -434,7 +413,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `webCommitSignoffRequired`<sup>Optional</sup> <a name="webCommitSignoffRequired" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.Initializer.parameter.webCommitSignoffRequired"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not commit signatures are required for commits to the organization.
 
@@ -695,7 +674,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.importFrom"></a>
@@ -751,7 +730,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -766,7 +745,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1070,67 +1049,67 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositoriesInput">advancedSecurityEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositoriesInput">advancedSecurityEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.billingEmailInput">billingEmailInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.blogInput">blogInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.companyInput">companyInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.defaultRepositoryPermissionInput">defaultRepositoryPermissionInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositoriesInput">dependabotAlertsEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositoriesInput">dependabotSecurityUpdatesEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositoriesInput">dependencyGraphEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositoriesInput">dependabotAlertsEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositoriesInput">dependabotSecurityUpdatesEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositoriesInput">dependencyGraphEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.emailInput">emailInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjectsInput">hasOrganizationProjectsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjectsInput">hasRepositoryProjectsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjectsInput">hasOrganizationProjectsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjectsInput">hasRepositoryProjectsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.locationInput">locationInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositoriesInput">membersCanCreateInternalRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePagesInput">membersCanCreatePagesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePagesInput">membersCanCreatePrivatePagesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositoriesInput">membersCanCreatePrivateRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPagesInput">membersCanCreatePublicPagesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositoriesInput">membersCanCreatePublicRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositoriesInput">membersCanCreateRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositoriesInput">membersCanForkPrivateRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositoriesInput">membersCanCreateInternalRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePagesInput">membersCanCreatePagesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePagesInput">membersCanCreatePrivatePagesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositoriesInput">membersCanCreatePrivateRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPagesInput">membersCanCreatePublicPagesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositoriesInput">membersCanCreatePublicRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositoriesInput">membersCanCreateRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositoriesInput">membersCanForkPrivateRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositoriesInput">secretScanningEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositoriesInput">secretScanningPushProtectionEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositoriesInput">secretScanningEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositoriesInput">secretScanningPushProtectionEnabledForNewRepositoriesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.twitterUsernameInput">twitterUsernameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequiredInput">webCommitSignoffRequiredInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositories">advancedSecurityEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequiredInput">webCommitSignoffRequiredInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositories">advancedSecurityEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.billingEmail">billingEmail</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.blog">blog</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.company">company</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.defaultRepositoryPermission">defaultRepositoryPermission</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositories">dependabotAlertsEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabotSecurityUpdatesEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositories">dependencyGraphEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositories">dependabotAlertsEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabotSecurityUpdatesEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositories">dependencyGraphEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjects">hasOrganizationProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjects">hasRepositoryProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjects">hasOrganizationProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjects">hasRepositoryProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.location">location</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositories">membersCanCreateInternalRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePages">membersCanCreatePages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePages">membersCanCreatePrivatePages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositories">membersCanCreatePrivateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPages">membersCanCreatePublicPages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositories">membersCanCreatePublicRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositories">membersCanCreateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositories">membersCanForkPrivateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositories">membersCanCreateInternalRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePages">membersCanCreatePages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePages">membersCanCreatePrivatePages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositories">membersCanCreatePrivateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPages">membersCanCreatePublicPages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositories">membersCanCreatePublicRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositories">membersCanCreateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositories">membersCanForkPrivateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositories">secretScanningEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositories">secretScanningPushProtectionEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositories">secretScanningEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositories">secretScanningPushProtectionEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.twitterUsername">twitterUsername</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1209,20 +1188,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1269,20 +1248,20 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
 ##### `advancedSecurityEnabledForNewRepositoriesInput`<sup>Optional</sup> <a name="advancedSecurityEnabledForNewRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getAdvancedSecurityEnabledForNewRepositoriesInput();
+public java.lang.Boolean|IResolvable getAdvancedSecurityEnabledForNewRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1329,30 +1308,30 @@ public java.lang.String getDefaultRepositoryPermissionInput();
 ##### `dependabotAlertsEnabledForNewRepositoriesInput`<sup>Optional</sup> <a name="dependabotAlertsEnabledForNewRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getDependabotAlertsEnabledForNewRepositoriesInput();
+public java.lang.Boolean|IResolvable getDependabotAlertsEnabledForNewRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `dependabotSecurityUpdatesEnabledForNewRepositoriesInput`<sup>Optional</sup> <a name="dependabotSecurityUpdatesEnabledForNewRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getDependabotSecurityUpdatesEnabledForNewRepositoriesInput();
+public java.lang.Boolean|IResolvable getDependabotSecurityUpdatesEnabledForNewRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `dependencyGraphEnabledForNewRepositoriesInput`<sup>Optional</sup> <a name="dependencyGraphEnabledForNewRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getDependencyGraphEnabledForNewRepositoriesInput();
+public java.lang.Boolean|IResolvable getDependencyGraphEnabledForNewRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1379,20 +1358,20 @@ public java.lang.String getEmailInput();
 ##### `hasOrganizationProjectsInput`<sup>Optional</sup> <a name="hasOrganizationProjectsInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjectsInput"></a>
 
 ```java
-public java.lang.Object getHasOrganizationProjectsInput();
+public java.lang.Boolean|IResolvable getHasOrganizationProjectsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasRepositoryProjectsInput`<sup>Optional</sup> <a name="hasRepositoryProjectsInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjectsInput"></a>
 
 ```java
-public java.lang.Object getHasRepositoryProjectsInput();
+public java.lang.Boolean|IResolvable getHasRepositoryProjectsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1419,80 +1398,80 @@ public java.lang.String getLocationInput();
 ##### `membersCanCreateInternalRepositoriesInput`<sup>Optional</sup> <a name="membersCanCreateInternalRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getMembersCanCreateInternalRepositoriesInput();
+public java.lang.Boolean|IResolvable getMembersCanCreateInternalRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePagesInput`<sup>Optional</sup> <a name="membersCanCreatePagesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePagesInput"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePagesInput();
+public java.lang.Boolean|IResolvable getMembersCanCreatePagesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePrivatePagesInput`<sup>Optional</sup> <a name="membersCanCreatePrivatePagesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePagesInput"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePrivatePagesInput();
+public java.lang.Boolean|IResolvable getMembersCanCreatePrivatePagesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePrivateRepositoriesInput`<sup>Optional</sup> <a name="membersCanCreatePrivateRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePrivateRepositoriesInput();
+public java.lang.Boolean|IResolvable getMembersCanCreatePrivateRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePublicPagesInput`<sup>Optional</sup> <a name="membersCanCreatePublicPagesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPagesInput"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePublicPagesInput();
+public java.lang.Boolean|IResolvable getMembersCanCreatePublicPagesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePublicRepositoriesInput`<sup>Optional</sup> <a name="membersCanCreatePublicRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePublicRepositoriesInput();
+public java.lang.Boolean|IResolvable getMembersCanCreatePublicRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreateRepositoriesInput`<sup>Optional</sup> <a name="membersCanCreateRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getMembersCanCreateRepositoriesInput();
+public java.lang.Boolean|IResolvable getMembersCanCreateRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanForkPrivateRepositoriesInput`<sup>Optional</sup> <a name="membersCanForkPrivateRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getMembersCanForkPrivateRepositoriesInput();
+public java.lang.Boolean|IResolvable getMembersCanForkPrivateRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1509,20 +1488,20 @@ public java.lang.String getNameInput();
 ##### `secretScanningEnabledForNewRepositoriesInput`<sup>Optional</sup> <a name="secretScanningEnabledForNewRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getSecretScanningEnabledForNewRepositoriesInput();
+public java.lang.Boolean|IResolvable getSecretScanningEnabledForNewRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `secretScanningPushProtectionEnabledForNewRepositoriesInput`<sup>Optional</sup> <a name="secretScanningPushProtectionEnabledForNewRepositoriesInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositoriesInput"></a>
 
 ```java
-public java.lang.Object getSecretScanningPushProtectionEnabledForNewRepositoriesInput();
+public java.lang.Boolean|IResolvable getSecretScanningPushProtectionEnabledForNewRepositoriesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1539,20 +1518,20 @@ public java.lang.String getTwitterUsernameInput();
 ##### `webCommitSignoffRequiredInput`<sup>Optional</sup> <a name="webCommitSignoffRequiredInput" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequiredInput"></a>
 
 ```java
-public java.lang.Object getWebCommitSignoffRequiredInput();
+public java.lang.Boolean|IResolvable getWebCommitSignoffRequiredInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `advancedSecurityEnabledForNewRepositories`<sup>Required</sup> <a name="advancedSecurityEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.advancedSecurityEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getAdvancedSecurityEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getAdvancedSecurityEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1599,30 +1578,30 @@ public java.lang.String getDefaultRepositoryPermission();
 ##### `dependabotAlertsEnabledForNewRepositories`<sup>Required</sup> <a name="dependabotAlertsEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotAlertsEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getDependabotAlertsEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getDependabotAlertsEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `dependabotSecurityUpdatesEnabledForNewRepositories`<sup>Required</sup> <a name="dependabotSecurityUpdatesEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependabotSecurityUpdatesEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getDependabotSecurityUpdatesEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getDependabotSecurityUpdatesEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `dependencyGraphEnabledForNewRepositories`<sup>Required</sup> <a name="dependencyGraphEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.dependencyGraphEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getDependencyGraphEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getDependencyGraphEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1649,20 +1628,20 @@ public java.lang.String getEmail();
 ##### `hasOrganizationProjects`<sup>Required</sup> <a name="hasOrganizationProjects" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasOrganizationProjects"></a>
 
 ```java
-public java.lang.Object getHasOrganizationProjects();
+public java.lang.Boolean|IResolvable getHasOrganizationProjects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasRepositoryProjects`<sup>Required</sup> <a name="hasRepositoryProjects" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.hasRepositoryProjects"></a>
 
 ```java
-public java.lang.Object getHasRepositoryProjects();
+public java.lang.Boolean|IResolvable getHasRepositoryProjects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1689,80 +1668,80 @@ public java.lang.String getLocation();
 ##### `membersCanCreateInternalRepositories`<sup>Required</sup> <a name="membersCanCreateInternalRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateInternalRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanCreateInternalRepositories();
+public java.lang.Boolean|IResolvable getMembersCanCreateInternalRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePages`<sup>Required</sup> <a name="membersCanCreatePages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePages"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePages();
+public java.lang.Boolean|IResolvable getMembersCanCreatePages();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePrivatePages`<sup>Required</sup> <a name="membersCanCreatePrivatePages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivatePages"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePrivatePages();
+public java.lang.Boolean|IResolvable getMembersCanCreatePrivatePages();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePrivateRepositories`<sup>Required</sup> <a name="membersCanCreatePrivateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePrivateRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePrivateRepositories();
+public java.lang.Boolean|IResolvable getMembersCanCreatePrivateRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePublicPages`<sup>Required</sup> <a name="membersCanCreatePublicPages" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicPages"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePublicPages();
+public java.lang.Boolean|IResolvable getMembersCanCreatePublicPages();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreatePublicRepositories`<sup>Required</sup> <a name="membersCanCreatePublicRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreatePublicRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePublicRepositories();
+public java.lang.Boolean|IResolvable getMembersCanCreatePublicRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanCreateRepositories`<sup>Required</sup> <a name="membersCanCreateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanCreateRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanCreateRepositories();
+public java.lang.Boolean|IResolvable getMembersCanCreateRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `membersCanForkPrivateRepositories`<sup>Required</sup> <a name="membersCanForkPrivateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.membersCanForkPrivateRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanForkPrivateRepositories();
+public java.lang.Boolean|IResolvable getMembersCanForkPrivateRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1779,20 +1758,20 @@ public java.lang.String getName();
 ##### `secretScanningEnabledForNewRepositories`<sup>Required</sup> <a name="secretScanningEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getSecretScanningEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getSecretScanningEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `secretScanningPushProtectionEnabledForNewRepositories`<sup>Required</sup> <a name="secretScanningPushProtectionEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.secretScanningPushProtectionEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getSecretScanningPushProtectionEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getSecretScanningPushProtectionEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1809,10 +1788,10 @@ public java.lang.String getTwitterUsername();
 ##### `webCommitSignoffRequired`<sup>Required</sup> <a name="webCommitSignoffRequired" id="@cdktf/provider-github.organizationSettings.OrganizationSettings.property.webCommitSignoffRequired"></a>
 
 ```java
-public java.lang.Object getWebCommitSignoffRequired();
+public java.lang.Boolean|IResolvable getWebCommitSignoffRequired();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1844,61 +1823,40 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.github.organization_settings.OrganizationSettingsConfig;
 
 OrganizationSettingsConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .billingEmail(java.lang.String)
-//  .advancedSecurityEnabledForNewRepositories(java.lang.Boolean)
-//  .advancedSecurityEnabledForNewRepositories(IResolvable)
+//  .advancedSecurityEnabledForNewRepositories(java.lang.Boolean|IResolvable)
 //  .blog(java.lang.String)
 //  .company(java.lang.String)
 //  .defaultRepositoryPermission(java.lang.String)
-//  .dependabotAlertsEnabledForNewRepositories(java.lang.Boolean)
-//  .dependabotAlertsEnabledForNewRepositories(IResolvable)
-//  .dependabotSecurityUpdatesEnabledForNewRepositories(java.lang.Boolean)
-//  .dependabotSecurityUpdatesEnabledForNewRepositories(IResolvable)
-//  .dependencyGraphEnabledForNewRepositories(java.lang.Boolean)
-//  .dependencyGraphEnabledForNewRepositories(IResolvable)
+//  .dependabotAlertsEnabledForNewRepositories(java.lang.Boolean|IResolvable)
+//  .dependabotSecurityUpdatesEnabledForNewRepositories(java.lang.Boolean|IResolvable)
+//  .dependencyGraphEnabledForNewRepositories(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .email(java.lang.String)
-//  .hasOrganizationProjects(java.lang.Boolean)
-//  .hasOrganizationProjects(IResolvable)
-//  .hasRepositoryProjects(java.lang.Boolean)
-//  .hasRepositoryProjects(IResolvable)
+//  .hasOrganizationProjects(java.lang.Boolean|IResolvable)
+//  .hasRepositoryProjects(java.lang.Boolean|IResolvable)
 //  .id(java.lang.String)
 //  .location(java.lang.String)
-//  .membersCanCreateInternalRepositories(java.lang.Boolean)
-//  .membersCanCreateInternalRepositories(IResolvable)
-//  .membersCanCreatePages(java.lang.Boolean)
-//  .membersCanCreatePages(IResolvable)
-//  .membersCanCreatePrivatePages(java.lang.Boolean)
-//  .membersCanCreatePrivatePages(IResolvable)
-//  .membersCanCreatePrivateRepositories(java.lang.Boolean)
-//  .membersCanCreatePrivateRepositories(IResolvable)
-//  .membersCanCreatePublicPages(java.lang.Boolean)
-//  .membersCanCreatePublicPages(IResolvable)
-//  .membersCanCreatePublicRepositories(java.lang.Boolean)
-//  .membersCanCreatePublicRepositories(IResolvable)
-//  .membersCanCreateRepositories(java.lang.Boolean)
-//  .membersCanCreateRepositories(IResolvable)
-//  .membersCanForkPrivateRepositories(java.lang.Boolean)
-//  .membersCanForkPrivateRepositories(IResolvable)
+//  .membersCanCreateInternalRepositories(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePages(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePrivatePages(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePrivateRepositories(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePublicPages(java.lang.Boolean|IResolvable)
+//  .membersCanCreatePublicRepositories(java.lang.Boolean|IResolvable)
+//  .membersCanCreateRepositories(java.lang.Boolean|IResolvable)
+//  .membersCanForkPrivateRepositories(java.lang.Boolean|IResolvable)
 //  .name(java.lang.String)
-//  .secretScanningEnabledForNewRepositories(java.lang.Boolean)
-//  .secretScanningEnabledForNewRepositories(IResolvable)
-//  .secretScanningPushProtectionEnabledForNewRepositories(java.lang.Boolean)
-//  .secretScanningPushProtectionEnabledForNewRepositories(IResolvable)
+//  .secretScanningEnabledForNewRepositories(java.lang.Boolean|IResolvable)
+//  .secretScanningPushProtectionEnabledForNewRepositories(java.lang.Boolean|IResolvable)
 //  .twitterUsername(java.lang.String)
-//  .webCommitSignoffRequired(java.lang.Boolean)
-//  .webCommitSignoffRequired(IResolvable)
+//  .webCommitSignoffRequired(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1906,60 +1864,60 @@ OrganizationSettingsConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.billingEmail">billingEmail</a></code> | <code>java.lang.String</code> | The billing email address for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.advancedSecurityEnabledForNewRepositories">advancedSecurityEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not advanced security is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.advancedSecurityEnabledForNewRepositories">advancedSecurityEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not advanced security is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.blog">blog</a></code> | <code>java.lang.String</code> | The blog URL for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.company">company</a></code> | <code>java.lang.String</code> | The company name for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.defaultRepositoryPermission">defaultRepositoryPermission</a></code> | <code>java.lang.String</code> | The default permission for organization members to create new repositories. Can be one of 'read', 'write', 'admin' or 'none'. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotAlertsEnabledForNewRepositories">dependabotAlertsEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not dependabot alerts are enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabotSecurityUpdatesEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not dependabot security updates are enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependencyGraphEnabledForNewRepositories">dependencyGraphEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not dependency graph is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotAlertsEnabledForNewRepositories">dependabotAlertsEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not dependabot alerts are enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotSecurityUpdatesEnabledForNewRepositories">dependabotSecurityUpdatesEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not dependabot security updates are enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependencyGraphEnabledForNewRepositories">dependencyGraphEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not dependency graph is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.description">description</a></code> | <code>java.lang.String</code> | The description for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.email">email</a></code> | <code>java.lang.String</code> | The email address for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasOrganizationProjects">hasOrganizationProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization projects are enabled for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasRepositoryProjects">hasRepositoryProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not repository projects are enabled for the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasOrganizationProjects">hasOrganizationProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization projects are enabled for the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasRepositoryProjects">hasRepositoryProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not repository projects are enabled for the organization. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/organization_settings#id OrganizationSettings#id}. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.location">location</a></code> | <code>java.lang.String</code> | The location for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateInternalRepositories">membersCanCreateInternalRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePages">membersCanCreatePages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivatePages">membersCanCreatePrivatePages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new private pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivateRepositories">membersCanCreatePrivateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new private repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicPages">membersCanCreatePublicPages</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new public pages. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicRepositories">membersCanCreatePublicRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new public repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateRepositories">membersCanCreateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanForkPrivateRepositories">membersCanForkPrivateRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can fork private repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateInternalRepositories">membersCanCreateInternalRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new internal repositories. For Enterprise Organizations only. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePages">membersCanCreatePages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivatePages">membersCanCreatePrivatePages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new private pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivateRepositories">membersCanCreatePrivateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new private repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicPages">membersCanCreatePublicPages</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new public pages. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicRepositories">membersCanCreatePublicRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new public repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateRepositories">membersCanCreateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can create new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanForkPrivateRepositories">membersCanForkPrivateRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not organization members can fork private repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningEnabledForNewRepositories">secretScanningEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not secret scanning is enabled for new repositories. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningPushProtectionEnabledForNewRepositories">secretScanningPushProtectionEnabledForNewRepositories</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not secret scanning push protection is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningEnabledForNewRepositories">secretScanningEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not secret scanning is enabled for new repositories. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningPushProtectionEnabledForNewRepositories">secretScanningPushProtectionEnabledForNewRepositories</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not secret scanning push protection is enabled for new repositories. |
 | <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.twitterUsername">twitterUsername</a></code> | <code>java.lang.String</code> | The Twitter username for the organization. |
-| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether or not commit signatures are required for commits to the organization. |
+| <code><a href="#@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether or not commit signatures are required for commits to the organization. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -2006,10 +1964,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -2030,10 +1988,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `advancedSecurityEnabledForNewRepositories`<sup>Optional</sup> <a name="advancedSecurityEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.advancedSecurityEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getAdvancedSecurityEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getAdvancedSecurityEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not advanced security is enabled for new repositories.
 
@@ -2086,10 +2044,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `dependabotAlertsEnabledForNewRepositories`<sup>Optional</sup> <a name="dependabotAlertsEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotAlertsEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getDependabotAlertsEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getDependabotAlertsEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not dependabot alerts are enabled for new repositories.
 
@@ -2100,10 +2058,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `dependabotSecurityUpdatesEnabledForNewRepositories`<sup>Optional</sup> <a name="dependabotSecurityUpdatesEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependabotSecurityUpdatesEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getDependabotSecurityUpdatesEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getDependabotSecurityUpdatesEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not dependabot security updates are enabled for new repositories.
 
@@ -2114,10 +2072,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `dependencyGraphEnabledForNewRepositories`<sup>Optional</sup> <a name="dependencyGraphEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.dependencyGraphEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getDependencyGraphEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getDependencyGraphEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not dependency graph is enabled for new repositories.
 
@@ -2156,10 +2114,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `hasOrganizationProjects`<sup>Optional</sup> <a name="hasOrganizationProjects" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasOrganizationProjects"></a>
 
 ```java
-public java.lang.Object getHasOrganizationProjects();
+public java.lang.Boolean|IResolvable getHasOrganizationProjects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization projects are enabled for the organization.
 
@@ -2170,10 +2128,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `hasRepositoryProjects`<sup>Optional</sup> <a name="hasRepositoryProjects" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.hasRepositoryProjects"></a>
 
 ```java
-public java.lang.Object getHasRepositoryProjects();
+public java.lang.Boolean|IResolvable getHasRepositoryProjects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not repository projects are enabled for the organization.
 
@@ -2213,10 +2171,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `membersCanCreateInternalRepositories`<sup>Optional</sup> <a name="membersCanCreateInternalRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateInternalRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanCreateInternalRepositories();
+public java.lang.Boolean|IResolvable getMembersCanCreateInternalRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new internal repositories. For Enterprise Organizations only.
 
@@ -2227,10 +2185,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `membersCanCreatePages`<sup>Optional</sup> <a name="membersCanCreatePages" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePages"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePages();
+public java.lang.Boolean|IResolvable getMembersCanCreatePages();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new pages.
 
@@ -2241,10 +2199,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `membersCanCreatePrivatePages`<sup>Optional</sup> <a name="membersCanCreatePrivatePages" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivatePages"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePrivatePages();
+public java.lang.Boolean|IResolvable getMembersCanCreatePrivatePages();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new private pages.
 
@@ -2255,10 +2213,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `membersCanCreatePrivateRepositories`<sup>Optional</sup> <a name="membersCanCreatePrivateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePrivateRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePrivateRepositories();
+public java.lang.Boolean|IResolvable getMembersCanCreatePrivateRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new private repositories.
 
@@ -2269,10 +2227,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `membersCanCreatePublicPages`<sup>Optional</sup> <a name="membersCanCreatePublicPages" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicPages"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePublicPages();
+public java.lang.Boolean|IResolvable getMembersCanCreatePublicPages();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new public pages.
 
@@ -2283,10 +2241,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `membersCanCreatePublicRepositories`<sup>Optional</sup> <a name="membersCanCreatePublicRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreatePublicRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanCreatePublicRepositories();
+public java.lang.Boolean|IResolvable getMembersCanCreatePublicRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new public repositories.
 
@@ -2297,10 +2255,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `membersCanCreateRepositories`<sup>Optional</sup> <a name="membersCanCreateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanCreateRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanCreateRepositories();
+public java.lang.Boolean|IResolvable getMembersCanCreateRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can create new repositories.
 
@@ -2311,10 +2269,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `membersCanForkPrivateRepositories`<sup>Optional</sup> <a name="membersCanForkPrivateRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.membersCanForkPrivateRepositories"></a>
 
 ```java
-public java.lang.Object getMembersCanForkPrivateRepositories();
+public java.lang.Boolean|IResolvable getMembersCanForkPrivateRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not organization members can fork private repositories.
 
@@ -2339,10 +2297,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `secretScanningEnabledForNewRepositories`<sup>Optional</sup> <a name="secretScanningEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getSecretScanningEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getSecretScanningEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not secret scanning is enabled for new repositories.
 
@@ -2353,10 +2311,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `secretScanningPushProtectionEnabledForNewRepositories`<sup>Optional</sup> <a name="secretScanningPushProtectionEnabledForNewRepositories" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.secretScanningPushProtectionEnabledForNewRepositories"></a>
 
 ```java
-public java.lang.Object getSecretScanningPushProtectionEnabledForNewRepositories();
+public java.lang.Boolean|IResolvable getSecretScanningPushProtectionEnabledForNewRepositories();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not secret scanning push protection is enabled for new repositories.
 
@@ -2381,10 +2339,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `webCommitSignoffRequired`<sup>Optional</sup> <a name="webCommitSignoffRequired" id="@cdktf/provider-github.organizationSettings.OrganizationSettingsConfig.property.webCommitSignoffRequired"></a>
 
 ```java
-public java.lang.Object getWebCommitSignoffRequired();
+public java.lang.Boolean|IResolvable getWebCommitSignoffRequired();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether or not commit signatures are required for commits to the organization.
 

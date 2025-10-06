@@ -281,7 +281,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-github.release.Release.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-github.release.Release.importFrom"></a>
@@ -335,7 +335,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-github.release.Release.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -350,7 +350,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-github.release.Release.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -546,13 +546,13 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.release.Release.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.assetsUrl">AssetsUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.createdAt">CreatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
@@ -566,21 +566,21 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.release.Release.property.zipballUrl">ZipballUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.bodyInput">BodyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.discussionCategoryNameInput">DiscussionCategoryNameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.draftInput">DraftInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.generateReleaseNotesInput">GenerateReleaseNotesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.draftInput">DraftInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.generateReleaseNotesInput">GenerateReleaseNotesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.prereleaseInput">PrereleaseInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.prereleaseInput">PrereleaseInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.repositoryInput">RepositoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.tagNameInput">TagNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.targetCommitishInput">TargetCommitishInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.body">Body</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.discussionCategoryName">DiscussionCategoryName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.draft">Draft</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.generateReleaseNotes">GenerateReleaseNotes</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.draft">Draft</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.generateReleaseNotes">GenerateReleaseNotes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.Release.property.prerelease">Prerelease</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.Release.property.prerelease">Prerelease</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.repository">Repository</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.tagName">TagName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.Release.property.targetCommitish">TargetCommitish</a></code> | <code>string</code> | *No description.* |
@@ -662,20 +662,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-github.release.Release.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.release.Release.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -722,10 +722,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-github.release.Release.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -862,20 +862,20 @@ public string DiscussionCategoryNameInput { get; }
 ##### `DraftInput`<sup>Optional</sup> <a name="DraftInput" id="@cdktf/provider-github.release.Release.property.draftInput"></a>
 
 ```csharp
-public object DraftInput { get; }
+public bool|IResolvable DraftInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GenerateReleaseNotesInput`<sup>Optional</sup> <a name="GenerateReleaseNotesInput" id="@cdktf/provider-github.release.Release.property.generateReleaseNotesInput"></a>
 
 ```csharp
-public object GenerateReleaseNotesInput { get; }
+public bool|IResolvable GenerateReleaseNotesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -902,10 +902,10 @@ public string NameInput { get; }
 ##### `PrereleaseInput`<sup>Optional</sup> <a name="PrereleaseInput" id="@cdktf/provider-github.release.Release.property.prereleaseInput"></a>
 
 ```csharp
-public object PrereleaseInput { get; }
+public bool|IResolvable PrereleaseInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -962,20 +962,20 @@ public string DiscussionCategoryName { get; }
 ##### `Draft`<sup>Required</sup> <a name="Draft" id="@cdktf/provider-github.release.Release.property.draft"></a>
 
 ```csharp
-public object Draft { get; }
+public bool|IResolvable Draft { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `GenerateReleaseNotes`<sup>Required</sup> <a name="GenerateReleaseNotes" id="@cdktf/provider-github.release.Release.property.generateReleaseNotes"></a>
 
 ```csharp
-public object GenerateReleaseNotes { get; }
+public bool|IResolvable GenerateReleaseNotes { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1002,10 +1002,10 @@ public string Name { get; }
 ##### `Prerelease`<sup>Required</sup> <a name="Prerelease" id="@cdktf/provider-github.release.Release.property.prerelease"></a>
 
 ```csharp
-public object Prerelease { get; }
+public bool|IResolvable Prerelease { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1067,22 +1067,22 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Github;
 
 new ReleaseConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Repository,
     string TagName,
     string Body = null,
     string DiscussionCategoryName = null,
-    object Draft = null,
-    object GenerateReleaseNotes = null,
+    bool|IResolvable Draft = null,
+    bool|IResolvable GenerateReleaseNotes = null,
     string Id = null,
     string Name = null,
-    object Prerelease = null,
+    bool|IResolvable Prerelease = null,
     string TargetCommitish = null
 };
 ```
@@ -1091,22 +1091,22 @@ new ReleaseConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.repository">Repository</a></code> | <code>string</code> | The name of the repository. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.tagName">TagName</a></code> | <code>string</code> | The name of the tag. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.body">Body</a></code> | <code>string</code> | Text describing the contents of the tag. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.discussionCategoryName">DiscussionCategoryName</a></code> | <code>string</code> | If specified, a discussion of the specified category is created and linked to the release. |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.draft">Draft</a></code> | <code>object</code> | Set to 'false' to create a published release. |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.generateReleaseNotes">GenerateReleaseNotes</a></code> | <code>object</code> | Set to 'true' to automatically generate the name and body for this release. |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.draft">Draft</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'false' to create a published release. |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.generateReleaseNotes">GenerateReleaseNotes</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to automatically generate the name and body for this release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/release#id Release#id}. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.name">Name</a></code> | <code>string</code> | The name of the release. |
-| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.prerelease">Prerelease</a></code> | <code>object</code> | Set to 'false' to identify the release as a full release. |
+| <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.prerelease">Prerelease</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'false' to identify the release as a full release. |
 | <code><a href="#@cdktf/provider-github.release.ReleaseConfig.property.targetCommitish">TargetCommitish</a></code> | <code>string</code> | The branch name or commit SHA the tag is created from. |
 
 ---
@@ -1114,20 +1114,20 @@ new ReleaseConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-github.release.ReleaseConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.release.ReleaseConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1174,10 +1174,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-github.release.ReleaseConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1242,10 +1242,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `Draft`<sup>Optional</sup> <a name="Draft" id="@cdktf/provider-github.release.ReleaseConfig.property.draft"></a>
 
 ```csharp
-public object Draft { get; set; }
+public bool|IResolvable Draft { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'false' to create a published release.
 
@@ -1256,10 +1256,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `GenerateReleaseNotes`<sup>Optional</sup> <a name="GenerateReleaseNotes" id="@cdktf/provider-github.release.ReleaseConfig.property.generateReleaseNotes"></a>
 
 ```csharp
-public object GenerateReleaseNotes { get; set; }
+public bool|IResolvable GenerateReleaseNotes { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to automatically generate the name and body for this release.
 
@@ -1301,10 +1301,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `Prerelease`<sup>Optional</sup> <a name="Prerelease" id="@cdktf/provider-github.release.ReleaseConfig.property.prerelease"></a>
 
 ```csharp
-public object Prerelease { get; set; }
+public bool|IResolvable Prerelease { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'false' to identify the release as a full release.
 
