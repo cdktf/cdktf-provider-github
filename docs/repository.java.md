@@ -12,71 +12,48 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 import com.hashicorp.cdktf.providers.github.repository.Repository;
 
 Repository.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
-//  .allowAutoMerge(java.lang.Boolean)
-//  .allowAutoMerge(IResolvable)
-//  .allowMergeCommit(java.lang.Boolean)
-//  .allowMergeCommit(IResolvable)
-//  .allowRebaseMerge(java.lang.Boolean)
-//  .allowRebaseMerge(IResolvable)
-//  .allowSquashMerge(java.lang.Boolean)
-//  .allowSquashMerge(IResolvable)
-//  .allowUpdateBranch(java.lang.Boolean)
-//  .allowUpdateBranch(IResolvable)
-//  .archived(java.lang.Boolean)
-//  .archived(IResolvable)
-//  .archiveOnDestroy(java.lang.Boolean)
-//  .archiveOnDestroy(IResolvable)
-//  .autoInit(java.lang.Boolean)
-//  .autoInit(IResolvable)
+//  .allowAutoMerge(java.lang.Boolean|IResolvable)
+//  .allowMergeCommit(java.lang.Boolean|IResolvable)
+//  .allowRebaseMerge(java.lang.Boolean|IResolvable)
+//  .allowSquashMerge(java.lang.Boolean|IResolvable)
+//  .allowUpdateBranch(java.lang.Boolean|IResolvable)
+//  .archived(java.lang.Boolean|IResolvable)
+//  .archiveOnDestroy(java.lang.Boolean|IResolvable)
+//  .autoInit(java.lang.Boolean|IResolvable)
 //  .defaultBranch(java.lang.String)
-//  .deleteBranchOnMerge(java.lang.Boolean)
-//  .deleteBranchOnMerge(IResolvable)
+//  .deleteBranchOnMerge(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .gitignoreTemplate(java.lang.String)
-//  .hasDiscussions(java.lang.Boolean)
-//  .hasDiscussions(IResolvable)
-//  .hasDownloads(java.lang.Boolean)
-//  .hasDownloads(IResolvable)
-//  .hasIssues(java.lang.Boolean)
-//  .hasIssues(IResolvable)
-//  .hasProjects(java.lang.Boolean)
-//  .hasProjects(IResolvable)
-//  .hasWiki(java.lang.Boolean)
-//  .hasWiki(IResolvable)
+//  .hasDiscussions(java.lang.Boolean|IResolvable)
+//  .hasDownloads(java.lang.Boolean|IResolvable)
+//  .hasIssues(java.lang.Boolean|IResolvable)
+//  .hasProjects(java.lang.Boolean|IResolvable)
+//  .hasWiki(java.lang.Boolean|IResolvable)
 //  .homepageUrl(java.lang.String)
 //  .id(java.lang.String)
-//  .ignoreVulnerabilityAlertsDuringRead(java.lang.Boolean)
-//  .ignoreVulnerabilityAlertsDuringRead(IResolvable)
-//  .isTemplate(java.lang.Boolean)
-//  .isTemplate(IResolvable)
+//  .ignoreVulnerabilityAlertsDuringRead(java.lang.Boolean|IResolvable)
+//  .isTemplate(java.lang.Boolean|IResolvable)
 //  .licenseTemplate(java.lang.String)
 //  .mergeCommitMessage(java.lang.String)
 //  .mergeCommitTitle(java.lang.String)
 //  .pages(RepositoryPages)
-//  .private(java.lang.Boolean)
-//  .private(IResolvable)
+//  .private(java.lang.Boolean|IResolvable)
 //  .securityAndAnalysis(RepositorySecurityAndAnalysis)
 //  .squashMergeCommitMessage(java.lang.String)
 //  .squashMergeCommitTitle(java.lang.String)
 //  .template(RepositoryTemplate)
 //  .topics(java.util.List<java.lang.String>)
 //  .visibility(java.lang.String)
-//  .vulnerabilityAlerts(java.lang.Boolean)
-//  .vulnerabilityAlerts(IResolvable)
-//  .webCommitSignoffRequired(java.lang.Boolean)
-//  .webCommitSignoffRequired(IResolvable)
+//  .vulnerabilityAlerts(java.lang.Boolean|IResolvable)
+//  .webCommitSignoffRequired(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -84,48 +61,48 @@ Repository.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the repository. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowAutoMerge">allowAutoMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to allow auto-merging pull requests on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowMergeCommit">allowMergeCommit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable merge commits on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowRebaseMerge">allowRebaseMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable rebase merges on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowSquashMerge">allowSquashMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable squash merges on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowUpdateBranch">allowUpdateBranch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to always suggest updating pull request branches. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.archived">archived</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.archiveOnDestroy">archiveOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to archive the repository instead of deleting on destroy. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.autoInit">autoInit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to produce an initial commit in the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowAutoMerge">allowAutoMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to allow auto-merging pull requests on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowMergeCommit">allowMergeCommit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable merge commits on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowRebaseMerge">allowRebaseMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable rebase merges on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowSquashMerge">allowSquashMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable squash merges on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.allowUpdateBranch">allowUpdateBranch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to always suggest updating pull request branches. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.archived">archived</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.archiveOnDestroy">archiveOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to archive the repository instead of deleting on destroy. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.autoInit">autoInit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to produce an initial commit in the repository. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.defaultBranch">defaultBranch</a></code> | <code>java.lang.String</code> | Can only be set after initial repository creation, and only if the target branch exists. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.deleteBranchOnMerge">deleteBranchOnMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Automatically delete head branch after a pull request is merged. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.deleteBranchOnMerge">deleteBranchOnMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Automatically delete head branch after a pull request is merged. Defaults to 'false'. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the repository. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.gitignoreTemplate">gitignoreTemplate</a></code> | <code>java.lang.String</code> | Use the name of the template without the extension. For example, 'Haskell'. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasDiscussions">hasDiscussions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasDownloads">hasDownloads</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the (deprecated) downloads features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasIssues">hasIssues</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Issues features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasProjects">hasProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Projects features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasWiki">hasWiki</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Wiki features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasDiscussions">hasDiscussions</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasDownloads">hasDownloads</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the (deprecated) downloads features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasIssues">hasIssues</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Issues features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasProjects">hasProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Projects features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.hasWiki">hasWiki</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Wiki features on the repository. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.homepageUrl">homepageUrl</a></code> | <code>java.lang.String</code> | URL of a page describing the project. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#id Repository#id}. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.ignoreVulnerabilityAlertsDuringRead">ignoreVulnerabilityAlertsDuringRead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.isTemplate">isTemplate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to tell GitHub that this is a template repository. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.ignoreVulnerabilityAlertsDuringRead">ignoreVulnerabilityAlertsDuringRead</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.isTemplate">isTemplate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to tell GitHub that this is a template repository. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.licenseTemplate">licenseTemplate</a></code> | <code>java.lang.String</code> | Use the name of the template without the extension. For example, 'mit' or 'mpl-2.0'. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.mergeCommitMessage">mergeCommitMessage</a></code> | <code>java.lang.String</code> | Can be 'PR_BODY', 'PR_TITLE', or 'BLANK' for a default merge commit message. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.mergeCommitTitle">mergeCommitTitle</a></code> | <code>java.lang.String</code> | Can be 'PR_TITLE' or 'MERGE_MESSAGE' for a default merge commit title. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.pages">pages</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryPages">RepositoryPages</a></code> | pages block. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.private">private</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.private">private</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.securityAndAnalysis">securityAndAnalysis</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositorySecurityAndAnalysis">RepositorySecurityAndAnalysis</a></code> | security_and_analysis block. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.squashMergeCommitMessage">squashMergeCommitMessage</a></code> | <code>java.lang.String</code> | Can be 'PR_BODY', 'COMMIT_MESSAGES', or 'BLANK' for a default squash merge commit message. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.squashMergeCommitTitle">squashMergeCommitTitle</a></code> | <code>java.lang.String</code> | Can be 'PR_TITLE' or 'COMMIT_OR_PR_TITLE' for a default squash merge commit title. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.template">template</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | template block. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.topics">topics</a></code> | <code>java.util.List<java.lang.String></code> | The list of topics of the repository. |
 | <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.visibility">visibility</a></code> | <code>java.lang.String</code> | Can be 'public' or 'private'. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.vulnerabilityAlerts">vulnerabilityAlerts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable security alerts for vulnerable dependencies. |
-| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require contributors to sign off on web-based commits. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.vulnerabilityAlerts">vulnerabilityAlerts</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable security alerts for vulnerable dependencies. |
+| <code><a href="#@cdktf/provider-github.repository.Repository.Initializer.parameter.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Require contributors to sign off on web-based commits. Defaults to 'false'. |
 
 ---
 
@@ -149,13 +126,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -185,7 +162,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -201,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `allowAutoMerge`<sup>Optional</sup> <a name="allowAutoMerge" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.allowAutoMerge"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to allow auto-merging pull requests on the repository.
 
@@ -211,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `allowMergeCommit`<sup>Optional</sup> <a name="allowMergeCommit" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.allowMergeCommit"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'false' to disable merge commits on the repository.
 
@@ -221,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `allowRebaseMerge`<sup>Optional</sup> <a name="allowRebaseMerge" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.allowRebaseMerge"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'false' to disable rebase merges on the repository.
 
@@ -231,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `allowSquashMerge`<sup>Optional</sup> <a name="allowSquashMerge" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.allowSquashMerge"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'false' to disable squash merges on the repository.
 
@@ -241,7 +218,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `allowUpdateBranch`<sup>Optional</sup> <a name="allowUpdateBranch" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.allowUpdateBranch"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to always suggest updating pull request branches.
 
@@ -251,7 +228,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `archived`<sup>Optional</sup> <a name="archived" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.archived"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving.
 
@@ -261,7 +238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `archiveOnDestroy`<sup>Optional</sup> <a name="archiveOnDestroy" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.archiveOnDestroy"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to archive the repository instead of deleting on destroy.
 
@@ -271,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `autoInit`<sup>Optional</sup> <a name="autoInit" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.autoInit"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to produce an initial commit in the repository.
 
@@ -291,7 +268,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `deleteBranchOnMerge`<sup>Optional</sup> <a name="deleteBranchOnMerge" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.deleteBranchOnMerge"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Automatically delete head branch after a pull request is merged. Defaults to 'false'.
 
@@ -321,7 +298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `hasDiscussions`<sup>Optional</sup> <a name="hasDiscussions" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.hasDiscussions"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'.
 
@@ -331,7 +308,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `hasDownloads`<sup>Optional</sup> <a name="hasDownloads" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.hasDownloads"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable the (deprecated) downloads features on the repository.
 
@@ -341,7 +318,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `hasIssues`<sup>Optional</sup> <a name="hasIssues" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.hasIssues"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Issues features on the repository.
 
@@ -351,7 +328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `hasProjects`<sup>Optional</sup> <a name="hasProjects" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.hasProjects"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Projects features on the repository.
 
@@ -363,7 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `hasWiki`<sup>Optional</sup> <a name="hasWiki" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.hasWiki"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Wiki features on the repository.
 
@@ -394,7 +371,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `ignoreVulnerabilityAlertsDuringRead`<sup>Optional</sup> <a name="ignoreVulnerabilityAlertsDuringRead" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.ignoreVulnerabilityAlertsDuringRead"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
 
@@ -404,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `isTemplate`<sup>Optional</sup> <a name="isTemplate" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.isTemplate"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to tell GitHub that this is a template repository.
 
@@ -454,7 +431,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `private`<sup>Optional</sup> <a name="private" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.private"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}.
 
@@ -524,7 +501,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `vulnerabilityAlerts`<sup>Optional</sup> <a name="vulnerabilityAlerts" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.vulnerabilityAlerts"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable security alerts for vulnerable dependencies.
 
@@ -536,7 +513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `webCommitSignoffRequired`<sup>Optional</sup> <a name="webCommitSignoffRequired" id="@cdktf/provider-github.repository.Repository.Initializer.parameter.webCommitSignoffRequired"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Require contributors to sign off on web-based commits. Defaults to 'false'.
 
@@ -808,7 +785,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-github.repository.Repository.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-github.repository.Repository.importFrom"></a>
@@ -864,7 +841,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -879,7 +856,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-github.repository.Repository.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -1267,13 +1244,13 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.fullName">fullName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitCloneUrl">gitCloneUrl</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -1287,73 +1264,73 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.sshCloneUrl">sshCloneUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.svnUrl">svnUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.template">template</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference">RepositoryTemplateOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowAutoMergeInput">allowAutoMergeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowMergeCommitInput">allowMergeCommitInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowRebaseMergeInput">allowRebaseMergeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowSquashMergeInput">allowSquashMergeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowUpdateBranchInput">allowUpdateBranchInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.archivedInput">archivedInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.archiveOnDestroyInput">archiveOnDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.autoInitInput">autoInitInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowAutoMergeInput">allowAutoMergeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowMergeCommitInput">allowMergeCommitInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowRebaseMergeInput">allowRebaseMergeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowSquashMergeInput">allowSquashMergeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowUpdateBranchInput">allowUpdateBranchInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.archivedInput">archivedInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.archiveOnDestroyInput">archiveOnDestroyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.autoInitInput">autoInitInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.defaultBranchInput">defaultBranchInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMergeInput">deleteBranchOnMergeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMergeInput">deleteBranchOnMergeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitignoreTemplateInput">gitignoreTemplateInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussionsInput">hasDiscussionsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloadsInput">hasDownloadsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasIssuesInput">hasIssuesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasProjectsInput">hasProjectsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasWikiInput">hasWikiInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussionsInput">hasDiscussionsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloadsInput">hasDownloadsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasIssuesInput">hasIssuesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasProjectsInput">hasProjectsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasWikiInput">hasWikiInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.homepageUrlInput">homepageUrlInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringReadInput">ignoreVulnerabilityAlertsDuringReadInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.isTemplateInput">isTemplateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringReadInput">ignoreVulnerabilityAlertsDuringReadInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.isTemplateInput">isTemplateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.licenseTemplateInput">licenseTemplateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitMessageInput">mergeCommitMessageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitTitleInput">mergeCommitTitleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.pagesInput">pagesInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryPages">RepositoryPages</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.privateInput">privateInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.privateInput">privateInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.securityAndAnalysisInput">securityAndAnalysisInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositorySecurityAndAnalysis">RepositorySecurityAndAnalysis</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitMessageInput">squashMergeCommitMessageInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitTitleInput">squashMergeCommitTitleInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.templateInput">templateInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.topicsInput">topicsInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.visibilityInput">visibilityInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.vulnerabilityAlertsInput">vulnerabilityAlertsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequiredInput">webCommitSignoffRequiredInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowAutoMerge">allowAutoMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowMergeCommit">allowMergeCommit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowRebaseMerge">allowRebaseMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowSquashMerge">allowSquashMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowUpdateBranch">allowUpdateBranch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.archived">archived</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.archiveOnDestroy">archiveOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.autoInit">autoInit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.vulnerabilityAlertsInput">vulnerabilityAlertsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequiredInput">webCommitSignoffRequiredInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowAutoMerge">allowAutoMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowMergeCommit">allowMergeCommit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowRebaseMerge">allowRebaseMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowSquashMerge">allowSquashMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowUpdateBranch">allowUpdateBranch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.archived">archived</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.archiveOnDestroy">archiveOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.autoInit">autoInit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.defaultBranch">defaultBranch</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMerge">deleteBranchOnMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMerge">deleteBranchOnMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitignoreTemplate">gitignoreTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussions">hasDiscussions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloads">hasDownloads</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasIssues">hasIssues</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasProjects">hasProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasWiki">hasWiki</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussions">hasDiscussions</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloads">hasDownloads</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasIssues">hasIssues</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasProjects">hasProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasWiki">hasWiki</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.homepageUrl">homepageUrl</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringRead">ignoreVulnerabilityAlertsDuringRead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.isTemplate">isTemplate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringRead">ignoreVulnerabilityAlertsDuringRead</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.isTemplate">isTemplate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.licenseTemplate">licenseTemplate</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitMessage">mergeCommitMessage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitTitle">mergeCommitTitle</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.private">private</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.private">private</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitMessage">squashMergeCommitMessage</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitTitle">squashMergeCommitTitle</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.topics">topics</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.visibility">visibility</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.vulnerabilityAlerts">vulnerabilityAlerts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.vulnerabilityAlerts">vulnerabilityAlerts</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1432,20 +1409,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.repository.Repository.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repository.Repository.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1492,10 +1469,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.repository.Repository.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1632,80 +1609,80 @@ public RepositoryTemplateOutputReference getTemplate();
 ##### `allowAutoMergeInput`<sup>Optional</sup> <a name="allowAutoMergeInput" id="@cdktf/provider-github.repository.Repository.property.allowAutoMergeInput"></a>
 
 ```java
-public java.lang.Object getAllowAutoMergeInput();
+public java.lang.Boolean|IResolvable getAllowAutoMergeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowMergeCommitInput`<sup>Optional</sup> <a name="allowMergeCommitInput" id="@cdktf/provider-github.repository.Repository.property.allowMergeCommitInput"></a>
 
 ```java
-public java.lang.Object getAllowMergeCommitInput();
+public java.lang.Boolean|IResolvable getAllowMergeCommitInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowRebaseMergeInput`<sup>Optional</sup> <a name="allowRebaseMergeInput" id="@cdktf/provider-github.repository.Repository.property.allowRebaseMergeInput"></a>
 
 ```java
-public java.lang.Object getAllowRebaseMergeInput();
+public java.lang.Boolean|IResolvable getAllowRebaseMergeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowSquashMergeInput`<sup>Optional</sup> <a name="allowSquashMergeInput" id="@cdktf/provider-github.repository.Repository.property.allowSquashMergeInput"></a>
 
 ```java
-public java.lang.Object getAllowSquashMergeInput();
+public java.lang.Boolean|IResolvable getAllowSquashMergeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowUpdateBranchInput`<sup>Optional</sup> <a name="allowUpdateBranchInput" id="@cdktf/provider-github.repository.Repository.property.allowUpdateBranchInput"></a>
 
 ```java
-public java.lang.Object getAllowUpdateBranchInput();
+public java.lang.Boolean|IResolvable getAllowUpdateBranchInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `archivedInput`<sup>Optional</sup> <a name="archivedInput" id="@cdktf/provider-github.repository.Repository.property.archivedInput"></a>
 
 ```java
-public java.lang.Object getArchivedInput();
+public java.lang.Boolean|IResolvable getArchivedInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `archiveOnDestroyInput`<sup>Optional</sup> <a name="archiveOnDestroyInput" id="@cdktf/provider-github.repository.Repository.property.archiveOnDestroyInput"></a>
 
 ```java
-public java.lang.Object getArchiveOnDestroyInput();
+public java.lang.Boolean|IResolvable getArchiveOnDestroyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `autoInitInput`<sup>Optional</sup> <a name="autoInitInput" id="@cdktf/provider-github.repository.Repository.property.autoInitInput"></a>
 
 ```java
-public java.lang.Object getAutoInitInput();
+public java.lang.Boolean|IResolvable getAutoInitInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1722,10 +1699,10 @@ public java.lang.String getDefaultBranchInput();
 ##### `deleteBranchOnMergeInput`<sup>Optional</sup> <a name="deleteBranchOnMergeInput" id="@cdktf/provider-github.repository.Repository.property.deleteBranchOnMergeInput"></a>
 
 ```java
-public java.lang.Object getDeleteBranchOnMergeInput();
+public java.lang.Boolean|IResolvable getDeleteBranchOnMergeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1752,50 +1729,50 @@ public java.lang.String getGitignoreTemplateInput();
 ##### `hasDiscussionsInput`<sup>Optional</sup> <a name="hasDiscussionsInput" id="@cdktf/provider-github.repository.Repository.property.hasDiscussionsInput"></a>
 
 ```java
-public java.lang.Object getHasDiscussionsInput();
+public java.lang.Boolean|IResolvable getHasDiscussionsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasDownloadsInput`<sup>Optional</sup> <a name="hasDownloadsInput" id="@cdktf/provider-github.repository.Repository.property.hasDownloadsInput"></a>
 
 ```java
-public java.lang.Object getHasDownloadsInput();
+public java.lang.Boolean|IResolvable getHasDownloadsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasIssuesInput`<sup>Optional</sup> <a name="hasIssuesInput" id="@cdktf/provider-github.repository.Repository.property.hasIssuesInput"></a>
 
 ```java
-public java.lang.Object getHasIssuesInput();
+public java.lang.Boolean|IResolvable getHasIssuesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasProjectsInput`<sup>Optional</sup> <a name="hasProjectsInput" id="@cdktf/provider-github.repository.Repository.property.hasProjectsInput"></a>
 
 ```java
-public java.lang.Object getHasProjectsInput();
+public java.lang.Boolean|IResolvable getHasProjectsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasWikiInput`<sup>Optional</sup> <a name="hasWikiInput" id="@cdktf/provider-github.repository.Repository.property.hasWikiInput"></a>
 
 ```java
-public java.lang.Object getHasWikiInput();
+public java.lang.Boolean|IResolvable getHasWikiInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1822,20 +1799,20 @@ public java.lang.String getIdInput();
 ##### `ignoreVulnerabilityAlertsDuringReadInput`<sup>Optional</sup> <a name="ignoreVulnerabilityAlertsDuringReadInput" id="@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringReadInput"></a>
 
 ```java
-public java.lang.Object getIgnoreVulnerabilityAlertsDuringReadInput();
+public java.lang.Boolean|IResolvable getIgnoreVulnerabilityAlertsDuringReadInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isTemplateInput`<sup>Optional</sup> <a name="isTemplateInput" id="@cdktf/provider-github.repository.Repository.property.isTemplateInput"></a>
 
 ```java
-public java.lang.Object getIsTemplateInput();
+public java.lang.Boolean|IResolvable getIsTemplateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1892,10 +1869,10 @@ public RepositoryPages getPagesInput();
 ##### `privateInput`<sup>Optional</sup> <a name="privateInput" id="@cdktf/provider-github.repository.Repository.property.privateInput"></a>
 
 ```java
-public java.lang.Object getPrivateInput();
+public java.lang.Boolean|IResolvable getPrivateInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1962,100 +1939,100 @@ public java.lang.String getVisibilityInput();
 ##### `vulnerabilityAlertsInput`<sup>Optional</sup> <a name="vulnerabilityAlertsInput" id="@cdktf/provider-github.repository.Repository.property.vulnerabilityAlertsInput"></a>
 
 ```java
-public java.lang.Object getVulnerabilityAlertsInput();
+public java.lang.Boolean|IResolvable getVulnerabilityAlertsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `webCommitSignoffRequiredInput`<sup>Optional</sup> <a name="webCommitSignoffRequiredInput" id="@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequiredInput"></a>
 
 ```java
-public java.lang.Object getWebCommitSignoffRequiredInput();
+public java.lang.Boolean|IResolvable getWebCommitSignoffRequiredInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowAutoMerge`<sup>Required</sup> <a name="allowAutoMerge" id="@cdktf/provider-github.repository.Repository.property.allowAutoMerge"></a>
 
 ```java
-public java.lang.Object getAllowAutoMerge();
+public java.lang.Boolean|IResolvable getAllowAutoMerge();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowMergeCommit`<sup>Required</sup> <a name="allowMergeCommit" id="@cdktf/provider-github.repository.Repository.property.allowMergeCommit"></a>
 
 ```java
-public java.lang.Object getAllowMergeCommit();
+public java.lang.Boolean|IResolvable getAllowMergeCommit();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowRebaseMerge`<sup>Required</sup> <a name="allowRebaseMerge" id="@cdktf/provider-github.repository.Repository.property.allowRebaseMerge"></a>
 
 ```java
-public java.lang.Object getAllowRebaseMerge();
+public java.lang.Boolean|IResolvable getAllowRebaseMerge();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowSquashMerge`<sup>Required</sup> <a name="allowSquashMerge" id="@cdktf/provider-github.repository.Repository.property.allowSquashMerge"></a>
 
 ```java
-public java.lang.Object getAllowSquashMerge();
+public java.lang.Boolean|IResolvable getAllowSquashMerge();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `allowUpdateBranch`<sup>Required</sup> <a name="allowUpdateBranch" id="@cdktf/provider-github.repository.Repository.property.allowUpdateBranch"></a>
 
 ```java
-public java.lang.Object getAllowUpdateBranch();
+public java.lang.Boolean|IResolvable getAllowUpdateBranch();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `archived`<sup>Required</sup> <a name="archived" id="@cdktf/provider-github.repository.Repository.property.archived"></a>
 
 ```java
-public java.lang.Object getArchived();
+public java.lang.Boolean|IResolvable getArchived();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `archiveOnDestroy`<sup>Required</sup> <a name="archiveOnDestroy" id="@cdktf/provider-github.repository.Repository.property.archiveOnDestroy"></a>
 
 ```java
-public java.lang.Object getArchiveOnDestroy();
+public java.lang.Boolean|IResolvable getArchiveOnDestroy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `autoInit`<sup>Required</sup> <a name="autoInit" id="@cdktf/provider-github.repository.Repository.property.autoInit"></a>
 
 ```java
-public java.lang.Object getAutoInit();
+public java.lang.Boolean|IResolvable getAutoInit();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2072,10 +2049,10 @@ public java.lang.String getDefaultBranch();
 ##### `deleteBranchOnMerge`<sup>Required</sup> <a name="deleteBranchOnMerge" id="@cdktf/provider-github.repository.Repository.property.deleteBranchOnMerge"></a>
 
 ```java
-public java.lang.Object getDeleteBranchOnMerge();
+public java.lang.Boolean|IResolvable getDeleteBranchOnMerge();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2102,50 +2079,50 @@ public java.lang.String getGitignoreTemplate();
 ##### `hasDiscussions`<sup>Required</sup> <a name="hasDiscussions" id="@cdktf/provider-github.repository.Repository.property.hasDiscussions"></a>
 
 ```java
-public java.lang.Object getHasDiscussions();
+public java.lang.Boolean|IResolvable getHasDiscussions();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasDownloads`<sup>Required</sup> <a name="hasDownloads" id="@cdktf/provider-github.repository.Repository.property.hasDownloads"></a>
 
 ```java
-public java.lang.Object getHasDownloads();
+public java.lang.Boolean|IResolvable getHasDownloads();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasIssues`<sup>Required</sup> <a name="hasIssues" id="@cdktf/provider-github.repository.Repository.property.hasIssues"></a>
 
 ```java
-public java.lang.Object getHasIssues();
+public java.lang.Boolean|IResolvable getHasIssues();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasProjects`<sup>Required</sup> <a name="hasProjects" id="@cdktf/provider-github.repository.Repository.property.hasProjects"></a>
 
 ```java
-public java.lang.Object getHasProjects();
+public java.lang.Boolean|IResolvable getHasProjects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `hasWiki`<sup>Required</sup> <a name="hasWiki" id="@cdktf/provider-github.repository.Repository.property.hasWiki"></a>
 
 ```java
-public java.lang.Object getHasWiki();
+public java.lang.Boolean|IResolvable getHasWiki();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2172,20 +2149,20 @@ public java.lang.String getId();
 ##### `ignoreVulnerabilityAlertsDuringRead`<sup>Required</sup> <a name="ignoreVulnerabilityAlertsDuringRead" id="@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringRead"></a>
 
 ```java
-public java.lang.Object getIgnoreVulnerabilityAlertsDuringRead();
+public java.lang.Boolean|IResolvable getIgnoreVulnerabilityAlertsDuringRead();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `isTemplate`<sup>Required</sup> <a name="isTemplate" id="@cdktf/provider-github.repository.Repository.property.isTemplate"></a>
 
 ```java
-public java.lang.Object getIsTemplate();
+public java.lang.Boolean|IResolvable getIsTemplate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2232,10 +2209,10 @@ public java.lang.String getName();
 ##### `private`<sup>Required</sup> <a name="private" id="@cdktf/provider-github.repository.Repository.property.private"></a>
 
 ```java
-public java.lang.Object getPrivate();
+public java.lang.Boolean|IResolvable getPrivate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2282,20 +2259,20 @@ public java.lang.String getVisibility();
 ##### `vulnerabilityAlerts`<sup>Required</sup> <a name="vulnerabilityAlerts" id="@cdktf/provider-github.repository.Repository.property.vulnerabilityAlerts"></a>
 
 ```java
-public java.lang.Object getVulnerabilityAlerts();
+public java.lang.Boolean|IResolvable getVulnerabilityAlerts();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `webCommitSignoffRequired`<sup>Required</sup> <a name="webCommitSignoffRequired" id="@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequired"></a>
 
 ```java
-public java.lang.Object getWebCommitSignoffRequired();
+public java.lang.Boolean|IResolvable getWebCommitSignoffRequired();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2327,71 +2304,48 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.github.repository.RepositoryConfig;
 
 RepositoryConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .name(java.lang.String)
-//  .allowAutoMerge(java.lang.Boolean)
-//  .allowAutoMerge(IResolvable)
-//  .allowMergeCommit(java.lang.Boolean)
-//  .allowMergeCommit(IResolvable)
-//  .allowRebaseMerge(java.lang.Boolean)
-//  .allowRebaseMerge(IResolvable)
-//  .allowSquashMerge(java.lang.Boolean)
-//  .allowSquashMerge(IResolvable)
-//  .allowUpdateBranch(java.lang.Boolean)
-//  .allowUpdateBranch(IResolvable)
-//  .archived(java.lang.Boolean)
-//  .archived(IResolvable)
-//  .archiveOnDestroy(java.lang.Boolean)
-//  .archiveOnDestroy(IResolvable)
-//  .autoInit(java.lang.Boolean)
-//  .autoInit(IResolvable)
+//  .allowAutoMerge(java.lang.Boolean|IResolvable)
+//  .allowMergeCommit(java.lang.Boolean|IResolvable)
+//  .allowRebaseMerge(java.lang.Boolean|IResolvable)
+//  .allowSquashMerge(java.lang.Boolean|IResolvable)
+//  .allowUpdateBranch(java.lang.Boolean|IResolvable)
+//  .archived(java.lang.Boolean|IResolvable)
+//  .archiveOnDestroy(java.lang.Boolean|IResolvable)
+//  .autoInit(java.lang.Boolean|IResolvable)
 //  .defaultBranch(java.lang.String)
-//  .deleteBranchOnMerge(java.lang.Boolean)
-//  .deleteBranchOnMerge(IResolvable)
+//  .deleteBranchOnMerge(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .gitignoreTemplate(java.lang.String)
-//  .hasDiscussions(java.lang.Boolean)
-//  .hasDiscussions(IResolvable)
-//  .hasDownloads(java.lang.Boolean)
-//  .hasDownloads(IResolvable)
-//  .hasIssues(java.lang.Boolean)
-//  .hasIssues(IResolvable)
-//  .hasProjects(java.lang.Boolean)
-//  .hasProjects(IResolvable)
-//  .hasWiki(java.lang.Boolean)
-//  .hasWiki(IResolvable)
+//  .hasDiscussions(java.lang.Boolean|IResolvable)
+//  .hasDownloads(java.lang.Boolean|IResolvable)
+//  .hasIssues(java.lang.Boolean|IResolvable)
+//  .hasProjects(java.lang.Boolean|IResolvable)
+//  .hasWiki(java.lang.Boolean|IResolvable)
 //  .homepageUrl(java.lang.String)
 //  .id(java.lang.String)
-//  .ignoreVulnerabilityAlertsDuringRead(java.lang.Boolean)
-//  .ignoreVulnerabilityAlertsDuringRead(IResolvable)
-//  .isTemplate(java.lang.Boolean)
-//  .isTemplate(IResolvable)
+//  .ignoreVulnerabilityAlertsDuringRead(java.lang.Boolean|IResolvable)
+//  .isTemplate(java.lang.Boolean|IResolvable)
 //  .licenseTemplate(java.lang.String)
 //  .mergeCommitMessage(java.lang.String)
 //  .mergeCommitTitle(java.lang.String)
 //  .pages(RepositoryPages)
-//  .private(java.lang.Boolean)
-//  .private(IResolvable)
+//  .private(java.lang.Boolean|IResolvable)
 //  .securityAndAnalysis(RepositorySecurityAndAnalysis)
 //  .squashMergeCommitMessage(java.lang.String)
 //  .squashMergeCommitTitle(java.lang.String)
 //  .template(RepositoryTemplate)
 //  .topics(java.util.List<java.lang.String>)
 //  .visibility(java.lang.String)
-//  .vulnerabilityAlerts(java.lang.Boolean)
-//  .vulnerabilityAlerts(IResolvable)
-//  .webCommitSignoffRequired(java.lang.Boolean)
-//  .webCommitSignoffRequired(IResolvable)
+//  .vulnerabilityAlerts(java.lang.Boolean|IResolvable)
+//  .webCommitSignoffRequired(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -2399,68 +2353,68 @@ RepositoryConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowAutoMerge">allowAutoMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to allow auto-merging pull requests on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowMergeCommit">allowMergeCommit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable merge commits on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowRebaseMerge">allowRebaseMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable rebase merges on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowSquashMerge">allowSquashMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable squash merges on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowUpdateBranch">allowUpdateBranch</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to always suggest updating pull request branches. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.archived">archived</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.archiveOnDestroy">archiveOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to archive the repository instead of deleting on destroy. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.autoInit">autoInit</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to produce an initial commit in the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowAutoMerge">allowAutoMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to allow auto-merging pull requests on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowMergeCommit">allowMergeCommit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable merge commits on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowRebaseMerge">allowRebaseMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable rebase merges on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowSquashMerge">allowSquashMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'false' to disable squash merges on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowUpdateBranch">allowUpdateBranch</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to always suggest updating pull request branches. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.archived">archived</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.archiveOnDestroy">archiveOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to archive the repository instead of deleting on destroy. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.autoInit">autoInit</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to produce an initial commit in the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.defaultBranch">defaultBranch</a></code> | <code>java.lang.String</code> | Can only be set after initial repository creation, and only if the target branch exists. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.deleteBranchOnMerge">deleteBranchOnMerge</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Automatically delete head branch after a pull request is merged. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.deleteBranchOnMerge">deleteBranchOnMerge</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Automatically delete head branch after a pull request is merged. Defaults to 'false'. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.gitignoreTemplate">gitignoreTemplate</a></code> | <code>java.lang.String</code> | Use the name of the template without the extension. For example, 'Haskell'. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDiscussions">hasDiscussions</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDownloads">hasDownloads</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the (deprecated) downloads features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasIssues">hasIssues</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Issues features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasProjects">hasProjects</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Projects features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasWiki">hasWiki</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Wiki features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDiscussions">hasDiscussions</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDownloads">hasDownloads</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the (deprecated) downloads features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasIssues">hasIssues</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Issues features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasProjects">hasProjects</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Projects features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasWiki">hasWiki</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Wiki features on the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.homepageUrl">homepageUrl</a></code> | <code>java.lang.String</code> | URL of a page describing the project. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#id Repository#id}. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.ignoreVulnerabilityAlertsDuringRead">ignoreVulnerabilityAlertsDuringRead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.isTemplate">isTemplate</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to tell GitHub that this is a template repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.ignoreVulnerabilityAlertsDuringRead">ignoreVulnerabilityAlertsDuringRead</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.isTemplate">isTemplate</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to tell GitHub that this is a template repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.licenseTemplate">licenseTemplate</a></code> | <code>java.lang.String</code> | Use the name of the template without the extension. For example, 'mit' or 'mpl-2.0'. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.mergeCommitMessage">mergeCommitMessage</a></code> | <code>java.lang.String</code> | Can be 'PR_BODY', 'PR_TITLE', or 'BLANK' for a default merge commit message. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.mergeCommitTitle">mergeCommitTitle</a></code> | <code>java.lang.String</code> | Can be 'PR_TITLE' or 'MERGE_MESSAGE' for a default merge commit title. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.pages">pages</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryPages">RepositoryPages</a></code> | pages block. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.private">private</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.private">private</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.securityAndAnalysis">securityAndAnalysis</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositorySecurityAndAnalysis">RepositorySecurityAndAnalysis</a></code> | security_and_analysis block. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.squashMergeCommitMessage">squashMergeCommitMessage</a></code> | <code>java.lang.String</code> | Can be 'PR_BODY', 'COMMIT_MESSAGES', or 'BLANK' for a default squash merge commit message. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.squashMergeCommitTitle">squashMergeCommitTitle</a></code> | <code>java.lang.String</code> | Can be 'PR_TITLE' or 'COMMIT_OR_PR_TITLE' for a default squash merge commit title. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.template">template</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | template block. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.topics">topics</a></code> | <code>java.util.List<java.lang.String></code> | The list of topics of the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.visibility">visibility</a></code> | <code>java.lang.String</code> | Can be 'public' or 'private'. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.vulnerabilityAlerts">vulnerabilityAlerts</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable security alerts for vulnerable dependencies. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Require contributors to sign off on web-based commits. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.vulnerabilityAlerts">vulnerabilityAlerts</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Set to 'true' to enable security alerts for vulnerable dependencies. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.webCommitSignoffRequired">webCommitSignoffRequired</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Require contributors to sign off on web-based commits. Defaults to 'false'. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.repository.RepositoryConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.repository.RepositoryConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -2507,10 +2461,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.repository.RepositoryConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -2531,10 +2485,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `allowAutoMerge`<sup>Optional</sup> <a name="allowAutoMerge" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowAutoMerge"></a>
 
 ```java
-public java.lang.Object getAllowAutoMerge();
+public java.lang.Boolean|IResolvable getAllowAutoMerge();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to allow auto-merging pull requests on the repository.
 
@@ -2545,10 +2499,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `allowMergeCommit`<sup>Optional</sup> <a name="allowMergeCommit" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowMergeCommit"></a>
 
 ```java
-public java.lang.Object getAllowMergeCommit();
+public java.lang.Boolean|IResolvable getAllowMergeCommit();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'false' to disable merge commits on the repository.
 
@@ -2559,10 +2513,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `allowRebaseMerge`<sup>Optional</sup> <a name="allowRebaseMerge" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowRebaseMerge"></a>
 
 ```java
-public java.lang.Object getAllowRebaseMerge();
+public java.lang.Boolean|IResolvable getAllowRebaseMerge();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'false' to disable rebase merges on the repository.
 
@@ -2573,10 +2527,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `allowSquashMerge`<sup>Optional</sup> <a name="allowSquashMerge" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowSquashMerge"></a>
 
 ```java
-public java.lang.Object getAllowSquashMerge();
+public java.lang.Boolean|IResolvable getAllowSquashMerge();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'false' to disable squash merges on the repository.
 
@@ -2587,10 +2541,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `allowUpdateBranch`<sup>Optional</sup> <a name="allowUpdateBranch" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowUpdateBranch"></a>
 
 ```java
-public java.lang.Object getAllowUpdateBranch();
+public java.lang.Boolean|IResolvable getAllowUpdateBranch();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to always suggest updating pull request branches.
 
@@ -2601,10 +2555,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `archived`<sup>Optional</sup> <a name="archived" id="@cdktf/provider-github.repository.RepositoryConfig.property.archived"></a>
 
 ```java
-public java.lang.Object getArchived();
+public java.lang.Boolean|IResolvable getArchived();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving.
 
@@ -2615,10 +2569,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `archiveOnDestroy`<sup>Optional</sup> <a name="archiveOnDestroy" id="@cdktf/provider-github.repository.RepositoryConfig.property.archiveOnDestroy"></a>
 
 ```java
-public java.lang.Object getArchiveOnDestroy();
+public java.lang.Boolean|IResolvable getArchiveOnDestroy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to archive the repository instead of deleting on destroy.
 
@@ -2629,10 +2583,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `autoInit`<sup>Optional</sup> <a name="autoInit" id="@cdktf/provider-github.repository.RepositoryConfig.property.autoInit"></a>
 
 ```java
-public java.lang.Object getAutoInit();
+public java.lang.Boolean|IResolvable getAutoInit();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to produce an initial commit in the repository.
 
@@ -2657,10 +2611,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `deleteBranchOnMerge`<sup>Optional</sup> <a name="deleteBranchOnMerge" id="@cdktf/provider-github.repository.RepositoryConfig.property.deleteBranchOnMerge"></a>
 
 ```java
-public java.lang.Object getDeleteBranchOnMerge();
+public java.lang.Boolean|IResolvable getDeleteBranchOnMerge();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Automatically delete head branch after a pull request is merged. Defaults to 'false'.
 
@@ -2699,10 +2653,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `hasDiscussions`<sup>Optional</sup> <a name="hasDiscussions" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasDiscussions"></a>
 
 ```java
-public java.lang.Object getHasDiscussions();
+public java.lang.Boolean|IResolvable getHasDiscussions();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'.
 
@@ -2713,10 +2667,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `hasDownloads`<sup>Optional</sup> <a name="hasDownloads" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasDownloads"></a>
 
 ```java
-public java.lang.Object getHasDownloads();
+public java.lang.Boolean|IResolvable getHasDownloads();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable the (deprecated) downloads features on the repository.
 
@@ -2727,10 +2681,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `hasIssues`<sup>Optional</sup> <a name="hasIssues" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasIssues"></a>
 
 ```java
-public java.lang.Object getHasIssues();
+public java.lang.Boolean|IResolvable getHasIssues();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Issues features on the repository.
 
@@ -2741,10 +2695,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `hasProjects`<sup>Optional</sup> <a name="hasProjects" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasProjects"></a>
 
 ```java
-public java.lang.Object getHasProjects();
+public java.lang.Boolean|IResolvable getHasProjects();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Projects features on the repository.
 
@@ -2757,10 +2711,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `hasWiki`<sup>Optional</sup> <a name="hasWiki" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasWiki"></a>
 
 ```java
-public java.lang.Object getHasWiki();
+public java.lang.Boolean|IResolvable getHasWiki();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Wiki features on the repository.
 
@@ -2800,10 +2754,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `ignoreVulnerabilityAlertsDuringRead`<sup>Optional</sup> <a name="ignoreVulnerabilityAlertsDuringRead" id="@cdktf/provider-github.repository.RepositoryConfig.property.ignoreVulnerabilityAlertsDuringRead"></a>
 
 ```java
-public java.lang.Object getIgnoreVulnerabilityAlertsDuringRead();
+public java.lang.Boolean|IResolvable getIgnoreVulnerabilityAlertsDuringRead();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
 
@@ -2814,10 +2768,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `isTemplate`<sup>Optional</sup> <a name="isTemplate" id="@cdktf/provider-github.repository.RepositoryConfig.property.isTemplate"></a>
 
 ```java
-public java.lang.Object getIsTemplate();
+public java.lang.Boolean|IResolvable getIsTemplate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to tell GitHub that this is a template repository.
 
@@ -2884,10 +2838,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `private`<sup>Optional</sup> <a name="private" id="@cdktf/provider-github.repository.RepositoryConfig.property.private"></a>
 
 ```java
-public java.lang.Object getPrivate();
+public java.lang.Boolean|IResolvable getPrivate();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}.
 
@@ -2982,10 +2936,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `vulnerabilityAlerts`<sup>Optional</sup> <a name="vulnerabilityAlerts" id="@cdktf/provider-github.repository.RepositoryConfig.property.vulnerabilityAlerts"></a>
 
 ```java
-public java.lang.Object getVulnerabilityAlerts();
+public java.lang.Boolean|IResolvable getVulnerabilityAlerts();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Set to 'true' to enable security alerts for vulnerable dependencies.
 
@@ -2998,10 +2952,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `webCommitSignoffRequired`<sup>Optional</sup> <a name="webCommitSignoffRequired" id="@cdktf/provider-github.repository.RepositoryConfig.property.webCommitSignoffRequired"></a>
 
 ```java
-public java.lang.Object getWebCommitSignoffRequired();
+public java.lang.Boolean|IResolvable getWebCommitSignoffRequired();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Require contributors to sign off on web-based commits. Defaults to 'false'.
 
@@ -3307,8 +3261,7 @@ import com.hashicorp.cdktf.providers.github.repository.RepositoryTemplate;
 RepositoryTemplate.builder()
     .owner(java.lang.String)
     .repository(java.lang.String)
-//  .includeAllBranches(java.lang.Boolean)
-//  .includeAllBranches(IResolvable)
+//  .includeAllBranches(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -3318,7 +3271,7 @@ RepositoryTemplate.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate.property.owner">owner</a></code> | <code>java.lang.String</code> | The GitHub organization or user the template repository is owned by. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate.property.repository">repository</a></code> | <code>java.lang.String</code> | The name of the template repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate.property.includeAllBranches">includeAllBranches</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template). |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate.property.includeAllBranches">includeAllBranches</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template). |
 
 ---
 
@@ -3353,10 +3306,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `includeAllBranches`<sup>Optional</sup> <a name="includeAllBranches" id="@cdktf/provider-github.repository.RepositoryTemplate.property.includeAllBranches"></a>
 
 ```java
-public java.lang.Object getIncludeAllBranches();
+public java.lang.Boolean|IResolvable getIncludeAllBranches();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template).
 
@@ -5464,10 +5417,10 @@ public void resetIncludeAllBranches()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranchesInput">includeAllBranchesInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranchesInput">includeAllBranchesInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.ownerInput">ownerInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.repositoryInput">repositoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranches">includeAllBranches</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranches">includeAllBranches</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.owner">owner</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.repository">repository</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | *No description.* |
@@ -5501,10 +5454,10 @@ public java.lang.String getFqn();
 ##### `includeAllBranchesInput`<sup>Optional</sup> <a name="includeAllBranchesInput" id="@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranchesInput"></a>
 
 ```java
-public java.lang.Object getIncludeAllBranchesInput();
+public java.lang.Boolean|IResolvable getIncludeAllBranchesInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -5531,10 +5484,10 @@ public java.lang.String getRepositoryInput();
 ##### `includeAllBranches`<sup>Required</sup> <a name="includeAllBranches" id="@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranches"></a>
 
 ```java
-public java.lang.Object getIncludeAllBranches();
+public java.lang.Boolean|IResolvable getIncludeAllBranches();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 

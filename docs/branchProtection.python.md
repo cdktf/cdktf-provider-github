@@ -14,27 +14,27 @@ from cdktf_cdktf_provider_github import branch_protection
 branchProtection.BranchProtection(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   pattern: str,
   repository_id: str,
-  allows_deletions: typing.Union[bool, IResolvable] = None,
-  allows_force_pushes: typing.Union[bool, IResolvable] = None,
-  enforce_admins: typing.Union[bool, IResolvable] = None,
+  allows_deletions: bool | IResolvable = None,
+  allows_force_pushes: bool | IResolvable = None,
+  enforce_admins: bool | IResolvable = None,
   force_push_bypassers: typing.List[str] = None,
   id: str = None,
-  lock_branch: typing.Union[bool, IResolvable] = None,
-  require_conversation_resolution: typing.Union[bool, IResolvable] = None,
-  required_linear_history: typing.Union[bool, IResolvable] = None,
-  required_pull_request_reviews: typing.Union[IResolvable, typing.List[BranchProtectionRequiredPullRequestReviews]] = None,
-  required_status_checks: typing.Union[IResolvable, typing.List[BranchProtectionRequiredStatusChecks]] = None,
-  require_signed_commits: typing.Union[bool, IResolvable] = None,
-  restrict_pushes: typing.Union[IResolvable, typing.List[BranchProtectionRestrictPushes]] = None
+  lock_branch: bool | IResolvable = None,
+  require_conversation_resolution: bool | IResolvable = None,
+  required_linear_history: bool | IResolvable = None,
+  required_pull_request_reviews: IResolvable | typing.List[BranchProtectionRequiredPullRequestReviews] = None,
+  required_status_checks: IResolvable | typing.List[BranchProtectionRequiredStatusChecks] = None,
+  require_signed_commits: bool | IResolvable = None,
+  restrict_pushes: IResolvable | typing.List[BranchProtectionRestrictPushes] = None
 )
 ```
 
@@ -42,27 +42,27 @@ branchProtection.BranchProtection(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.pattern">pattern</a></code> | <code>str</code> | Identifies the protection rule pattern. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.repositoryId">repository_id</a></code> | <code>str</code> | The name or node ID of the repository associated with this branch protection rule. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.allowsDeletions">allows_deletions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' to allow the branch to be deleted. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.allowsForcePushes">allows_force_pushes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' to allow force pushes on the branch. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.enforceAdmins">enforce_admins</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' enforces status checks for repository administrators. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.allowsDeletions">allows_deletions</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' to allow the branch to be deleted. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.allowsForcePushes">allows_force_pushes</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' to allow force pushes on the branch. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.enforceAdmins">enforce_admins</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' enforces status checks for repository administrators. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.forcePushBypassers">force_push_bypassers</a></code> | <code>typing.List[str]</code> | The list of actor Names/IDs that are allowed to bypass force push restrictions. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/branch_protection#id BranchProtection#id}. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.lockBranch">lock_branch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' will make the branch read-only and preventing any pushes to it. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requireConversationResolution">require_conversation_resolution</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredLinearHistory">required_linear_history</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredPullRequestReviews">required_pull_request_reviews</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]</code> | required_pull_request_reviews block. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredStatusChecks">required_status_checks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]</code> | required_status_checks block. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requireSignedCommits">require_signed_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' requires all commits to be signed with GPG. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.restrictPushes">restrict_pushes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]</code> | restrict_pushes block. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.lockBranch">lock_branch</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' will make the branch read-only and preventing any pushes to it. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requireConversationResolution">require_conversation_resolution</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredLinearHistory">required_linear_history</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredPullRequestReviews">required_pull_request_reviews</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]</code> | required_pull_request_reviews block. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredStatusChecks">required_status_checks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]</code> | required_status_checks block. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requireSignedCommits">require_signed_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' requires all commits to be signed with GPG. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.restrictPushes">restrict_pushes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]</code> | restrict_pushes block. |
 
 ---
 
@@ -86,13 +86,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `allows_deletions`<sup>Optional</sup> <a name="allows_deletions" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.allowsDeletions"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' to allow the branch to be deleted.
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `allows_force_pushes`<sup>Optional</sup> <a name="allows_force_pushes" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.allowsForcePushes"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' to allow force pushes on the branch.
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `enforce_admins`<sup>Optional</sup> <a name="enforce_admins" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.enforceAdmins"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' enforces status checks for repository administrators.
 
@@ -201,7 +201,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `lock_branch`<sup>Optional</sup> <a name="lock_branch" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.lockBranch"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' will make the branch read-only and preventing any pushes to it.
 
@@ -211,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `require_conversation_resolution`<sup>Optional</sup> <a name="require_conversation_resolution" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requireConversationResolution"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.
 
@@ -221,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `required_linear_history`<sup>Optional</sup> <a name="required_linear_history" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredLinearHistory"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch.
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `required_pull_request_reviews`<sup>Optional</sup> <a name="required_pull_request_reviews" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredPullRequestReviews"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]
 
 required_pull_request_reviews block.
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `required_status_checks`<sup>Optional</sup> <a name="required_status_checks" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requiredStatusChecks"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]
 
 required_status_checks block.
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `require_signed_commits`<sup>Optional</sup> <a name="require_signed_commits" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.requireSignedCommits"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' requires all commits to be signed with GPG.
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 ##### `restrict_pushes`<sup>Optional</sup> <a name="restrict_pushes" id="@cdktf/provider-github.branchProtection.BranchProtection.Initializer.parameter.restrictPushes"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]
 
 restrict_pushes block.
 
@@ -536,7 +536,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-github.branchProtection.BranchProtection.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-github.branchProtection.BranchProtection.importFrom"></a>
@@ -599,7 +599,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -615,7 +615,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-github.branchProtection.BranchProtection.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -643,13 +643,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_required_pull_request_reviews(
-  value: typing.Union[IResolvable, typing.List[BranchProtectionRequiredPullRequestReviews]]
+  value: IResolvable | typing.List[BranchProtectionRequiredPullRequestReviews]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-github.branchProtection.BranchProtection.putRequiredPullRequestReviews.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]
 
 ---
 
@@ -657,13 +657,13 @@ def put_required_pull_request_reviews(
 
 ```python
 def put_required_status_checks(
-  value: typing.Union[IResolvable, typing.List[BranchProtectionRequiredStatusChecks]]
+  value: IResolvable | typing.List[BranchProtectionRequiredStatusChecks]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-github.branchProtection.BranchProtection.putRequiredStatusChecks.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]
 
 ---
 
@@ -671,13 +671,13 @@ def put_required_status_checks(
 
 ```python
 def put_restrict_pushes(
-  value: typing.Union[IResolvable, typing.List[BranchProtectionRestrictPushes]]
+  value: IResolvable | typing.List[BranchProtectionRestrictPushes]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-github.branchProtection.BranchProtection.putRestrictPushes.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]
 
 ---
 
@@ -890,41 +890,41 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredPullRequestReviews">required_pull_request_reviews</a></code> | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList">BranchProtectionRequiredPullRequestReviewsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredStatusChecks">required_status_checks</a></code> | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList">BranchProtectionRequiredStatusChecksList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.restrictPushes">restrict_pushes</a></code> | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList">BranchProtectionRestrictPushesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletionsInput">allows_deletions_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsForcePushesInput">allows_force_pushes_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.enforceAdminsInput">enforce_admins_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletionsInput">allows_deletions_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsForcePushesInput">allows_force_pushes_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.enforceAdminsInput">enforce_admins_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.forcePushBypassersInput">force_push_bypassers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.lockBranchInput">lock_branch_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.lockBranchInput">lock_branch_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.patternInput">pattern_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.repositoryIdInput">repository_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireConversationResolutionInput">require_conversation_resolution_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredLinearHistoryInput">required_linear_history_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredPullRequestReviewsInput">required_pull_request_reviews_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredStatusChecksInput">required_status_checks_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireSignedCommitsInput">require_signed_commits_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.restrictPushesInput">restrict_pushes_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletions">allows_deletions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsForcePushes">allows_force_pushes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.enforceAdmins">enforce_admins</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireConversationResolutionInput">require_conversation_resolution_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredLinearHistoryInput">required_linear_history_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredPullRequestReviewsInput">required_pull_request_reviews_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredStatusChecksInput">required_status_checks_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireSignedCommitsInput">require_signed_commits_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.restrictPushesInput">restrict_pushes_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletions">allows_deletions</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.allowsForcePushes">allows_force_pushes</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.enforceAdmins">enforce_admins</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.forcePushBypassers">force_push_bypassers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.lockBranch">lock_branch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.lockBranch">lock_branch</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.pattern">pattern</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.repositoryId">repository_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireConversationResolution">require_conversation_resolution</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredLinearHistory">required_linear_history</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireSignedCommits">require_signed_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireConversationResolution">require_conversation_resolution</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requiredLinearHistory">required_linear_history</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtection.property.requireSignedCommits">require_signed_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -1003,20 +1003,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.branchProtection.BranchProtection.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.branchProtection.BranchProtection.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1063,10 +1063,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.branchProtection.BranchProtection.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1103,30 +1103,30 @@ restrict_pushes: BranchProtectionRestrictPushesList
 ##### `allows_deletions_input`<sup>Optional</sup> <a name="allows_deletions_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletionsInput"></a>
 
 ```python
-allows_deletions_input: typing.Union[bool, IResolvable]
+allows_deletions_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allows_force_pushes_input`<sup>Optional</sup> <a name="allows_force_pushes_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.allowsForcePushesInput"></a>
 
 ```python
-allows_force_pushes_input: typing.Union[bool, IResolvable]
+allows_force_pushes_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enforce_admins_input`<sup>Optional</sup> <a name="enforce_admins_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.enforceAdminsInput"></a>
 
 ```python
-enforce_admins_input: typing.Union[bool, IResolvable]
+enforce_admins_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1153,10 +1153,10 @@ id_input: str
 ##### `lock_branch_input`<sup>Optional</sup> <a name="lock_branch_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.lockBranchInput"></a>
 
 ```python
-lock_branch_input: typing.Union[bool, IResolvable]
+lock_branch_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1183,90 +1183,90 @@ repository_id_input: str
 ##### `require_conversation_resolution_input`<sup>Optional</sup> <a name="require_conversation_resolution_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.requireConversationResolutionInput"></a>
 
 ```python
-require_conversation_resolution_input: typing.Union[bool, IResolvable]
+require_conversation_resolution_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `required_linear_history_input`<sup>Optional</sup> <a name="required_linear_history_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.requiredLinearHistoryInput"></a>
 
 ```python
-required_linear_history_input: typing.Union[bool, IResolvable]
+required_linear_history_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `required_pull_request_reviews_input`<sup>Optional</sup> <a name="required_pull_request_reviews_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.requiredPullRequestReviewsInput"></a>
 
 ```python
-required_pull_request_reviews_input: typing.Union[IResolvable, typing.List[BranchProtectionRequiredPullRequestReviews]]
+required_pull_request_reviews_input: IResolvable | typing.List[BranchProtectionRequiredPullRequestReviews]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]
 
 ---
 
 ##### `required_status_checks_input`<sup>Optional</sup> <a name="required_status_checks_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.requiredStatusChecksInput"></a>
 
 ```python
-required_status_checks_input: typing.Union[IResolvable, typing.List[BranchProtectionRequiredStatusChecks]]
+required_status_checks_input: IResolvable | typing.List[BranchProtectionRequiredStatusChecks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]
 
 ---
 
 ##### `require_signed_commits_input`<sup>Optional</sup> <a name="require_signed_commits_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.requireSignedCommitsInput"></a>
 
 ```python
-require_signed_commits_input: typing.Union[bool, IResolvable]
+require_signed_commits_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `restrict_pushes_input`<sup>Optional</sup> <a name="restrict_pushes_input" id="@cdktf/provider-github.branchProtection.BranchProtection.property.restrictPushesInput"></a>
 
 ```python
-restrict_pushes_input: typing.Union[IResolvable, typing.List[BranchProtectionRestrictPushes]]
+restrict_pushes_input: IResolvable | typing.List[BranchProtectionRestrictPushes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]
 
 ---
 
 ##### `allows_deletions`<sup>Required</sup> <a name="allows_deletions" id="@cdktf/provider-github.branchProtection.BranchProtection.property.allowsDeletions"></a>
 
 ```python
-allows_deletions: typing.Union[bool, IResolvable]
+allows_deletions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `allows_force_pushes`<sup>Required</sup> <a name="allows_force_pushes" id="@cdktf/provider-github.branchProtection.BranchProtection.property.allowsForcePushes"></a>
 
 ```python
-allows_force_pushes: typing.Union[bool, IResolvable]
+allows_force_pushes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `enforce_admins`<sup>Required</sup> <a name="enforce_admins" id="@cdktf/provider-github.branchProtection.BranchProtection.property.enforceAdmins"></a>
 
 ```python
-enforce_admins: typing.Union[bool, IResolvable]
+enforce_admins: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1293,10 +1293,10 @@ id: str
 ##### `lock_branch`<sup>Required</sup> <a name="lock_branch" id="@cdktf/provider-github.branchProtection.BranchProtection.property.lockBranch"></a>
 
 ```python
-lock_branch: typing.Union[bool, IResolvable]
+lock_branch: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1323,30 +1323,30 @@ repository_id: str
 ##### `require_conversation_resolution`<sup>Required</sup> <a name="require_conversation_resolution" id="@cdktf/provider-github.branchProtection.BranchProtection.property.requireConversationResolution"></a>
 
 ```python
-require_conversation_resolution: typing.Union[bool, IResolvable]
+require_conversation_resolution: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `required_linear_history`<sup>Required</sup> <a name="required_linear_history" id="@cdktf/provider-github.branchProtection.BranchProtection.property.requiredLinearHistory"></a>
 
 ```python
-required_linear_history: typing.Union[bool, IResolvable]
+required_linear_history: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `require_signed_commits`<sup>Required</sup> <a name="require_signed_commits" id="@cdktf/provider-github.branchProtection.BranchProtection.property.requireSignedCommits"></a>
 
 ```python
-require_signed_commits: typing.Union[bool, IResolvable]
+require_signed_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1378,27 +1378,27 @@ tfResourceType: str
 from cdktf_cdktf_provider_github import branch_protection
 
 branchProtection.BranchProtectionConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   pattern: str,
   repository_id: str,
-  allows_deletions: typing.Union[bool, IResolvable] = None,
-  allows_force_pushes: typing.Union[bool, IResolvable] = None,
-  enforce_admins: typing.Union[bool, IResolvable] = None,
+  allows_deletions: bool | IResolvable = None,
+  allows_force_pushes: bool | IResolvable = None,
+  enforce_admins: bool | IResolvable = None,
   force_push_bypassers: typing.List[str] = None,
   id: str = None,
-  lock_branch: typing.Union[bool, IResolvable] = None,
-  require_conversation_resolution: typing.Union[bool, IResolvable] = None,
-  required_linear_history: typing.Union[bool, IResolvable] = None,
-  required_pull_request_reviews: typing.Union[IResolvable, typing.List[BranchProtectionRequiredPullRequestReviews]] = None,
-  required_status_checks: typing.Union[IResolvable, typing.List[BranchProtectionRequiredStatusChecks]] = None,
-  require_signed_commits: typing.Union[bool, IResolvable] = None,
-  restrict_pushes: typing.Union[IResolvable, typing.List[BranchProtectionRestrictPushes]] = None
+  lock_branch: bool | IResolvable = None,
+  require_conversation_resolution: bool | IResolvable = None,
+  required_linear_history: bool | IResolvable = None,
+  required_pull_request_reviews: IResolvable | typing.List[BranchProtectionRequiredPullRequestReviews] = None,
+  required_status_checks: IResolvable | typing.List[BranchProtectionRequiredStatusChecks] = None,
+  require_signed_commits: bool | IResolvable = None,
+  restrict_pushes: IResolvable | typing.List[BranchProtectionRestrictPushes] = None
 )
 ```
 
@@ -1406,47 +1406,47 @@ branchProtection.BranchProtectionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.pattern">pattern</a></code> | <code>str</code> | Identifies the protection rule pattern. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.repositoryId">repository_id</a></code> | <code>str</code> | The name or node ID of the repository associated with this branch protection rule. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.allowsDeletions">allows_deletions</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' to allow the branch to be deleted. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.allowsForcePushes">allows_force_pushes</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' to allow force pushes on the branch. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.enforceAdmins">enforce_admins</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' enforces status checks for repository administrators. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.allowsDeletions">allows_deletions</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' to allow the branch to be deleted. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.allowsForcePushes">allows_force_pushes</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' to allow force pushes on the branch. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.enforceAdmins">enforce_admins</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' enforces status checks for repository administrators. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.forcePushBypassers">force_push_bypassers</a></code> | <code>typing.List[str]</code> | The list of actor Names/IDs that are allowed to bypass force push restrictions. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/branch_protection#id BranchProtection#id}. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.lockBranch">lock_branch</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' will make the branch read-only and preventing any pushes to it. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireConversationResolution">require_conversation_resolution</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredLinearHistory">required_linear_history</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredPullRequestReviews">required_pull_request_reviews</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]</code> | required_pull_request_reviews block. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredStatusChecks">required_status_checks</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]</code> | required_status_checks block. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireSignedCommits">require_signed_commits</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Setting this to 'true' requires all commits to be signed with GPG. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.restrictPushes">restrict_pushes</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]</code> | restrict_pushes block. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.lockBranch">lock_branch</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' will make the branch read-only and preventing any pushes to it. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireConversationResolution">require_conversation_resolution</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredLinearHistory">required_linear_history</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredPullRequestReviews">required_pull_request_reviews</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]</code> | required_pull_request_reviews block. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredStatusChecks">required_status_checks</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]</code> | required_status_checks block. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireSignedCommits">require_signed_commits</a></code> | <code>bool \| cdktf.IResolvable</code> | Setting this to 'true' requires all commits to be signed with GPG. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.restrictPushes">restrict_pushes</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]</code> | restrict_pushes block. |
 
 ---
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1493,10 +1493,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1531,10 +1531,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `allows_deletions`<sup>Optional</sup> <a name="allows_deletions" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.allowsDeletions"></a>
 
 ```python
-allows_deletions: typing.Union[bool, IResolvable]
+allows_deletions: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' to allow the branch to be deleted.
 
@@ -1545,10 +1545,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `allows_force_pushes`<sup>Optional</sup> <a name="allows_force_pushes" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.allowsForcePushes"></a>
 
 ```python
-allows_force_pushes: typing.Union[bool, IResolvable]
+allows_force_pushes: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' to allow force pushes on the branch.
 
@@ -1559,10 +1559,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `enforce_admins`<sup>Optional</sup> <a name="enforce_admins" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.enforceAdmins"></a>
 
 ```python
-enforce_admins: typing.Union[bool, IResolvable]
+enforce_admins: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' enforces status checks for repository administrators.
 
@@ -1604,10 +1604,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `lock_branch`<sup>Optional</sup> <a name="lock_branch" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.lockBranch"></a>
 
 ```python
-lock_branch: typing.Union[bool, IResolvable]
+lock_branch: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' will make the branch read-only and preventing any pushes to it.
 
@@ -1618,10 +1618,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `require_conversation_resolution`<sup>Optional</sup> <a name="require_conversation_resolution" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireConversationResolution"></a>
 
 ```python
-require_conversation_resolution: typing.Union[bool, IResolvable]
+require_conversation_resolution: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' requires all conversations on code must be resolved before a pull request can be merged.
 
@@ -1632,10 +1632,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `required_linear_history`<sup>Optional</sup> <a name="required_linear_history" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredLinearHistory"></a>
 
 ```python
-required_linear_history: typing.Union[bool, IResolvable]
+required_linear_history: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' enforces a linear commit Git history, which prevents anyone from pushing merge commits to a branch.
 
@@ -1646,10 +1646,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `required_pull_request_reviews`<sup>Optional</sup> <a name="required_pull_request_reviews" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredPullRequestReviews"></a>
 
 ```python
-required_pull_request_reviews: typing.Union[IResolvable, typing.List[BranchProtectionRequiredPullRequestReviews]]
+required_pull_request_reviews: IResolvable | typing.List[BranchProtectionRequiredPullRequestReviews]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]
 
 required_pull_request_reviews block.
 
@@ -1660,10 +1660,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `required_status_checks`<sup>Optional</sup> <a name="required_status_checks" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requiredStatusChecks"></a>
 
 ```python
-required_status_checks: typing.Union[IResolvable, typing.List[BranchProtectionRequiredStatusChecks]]
+required_status_checks: IResolvable | typing.List[BranchProtectionRequiredStatusChecks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]
 
 required_status_checks block.
 
@@ -1674,10 +1674,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `require_signed_commits`<sup>Optional</sup> <a name="require_signed_commits" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.requireSignedCommits"></a>
 
 ```python
-require_signed_commits: typing.Union[bool, IResolvable]
+require_signed_commits: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Setting this to 'true' requires all commits to be signed with GPG.
 
@@ -1688,10 +1688,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `restrict_pushes`<sup>Optional</sup> <a name="restrict_pushes" id="@cdktf/provider-github.branchProtection.BranchProtectionConfig.property.restrictPushes"></a>
 
 ```python
-restrict_pushes: typing.Union[IResolvable, typing.List[BranchProtectionRestrictPushes]]
+restrict_pushes: IResolvable | typing.List[BranchProtectionRestrictPushes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]
 
 restrict_pushes block.
 
@@ -1708,12 +1708,12 @@ from cdktf_cdktf_provider_github import branch_protection
 
 branchProtection.BranchProtectionRequiredPullRequestReviews(
   dismissal_restrictions: typing.List[str] = None,
-  dismiss_stale_reviews: typing.Union[bool, IResolvable] = None,
+  dismiss_stale_reviews: bool | IResolvable = None,
   pull_request_bypassers: typing.List[str] = None,
-  require_code_owner_reviews: typing.Union[bool, IResolvable] = None,
+  require_code_owner_reviews: bool | IResolvable = None,
   required_approving_review_count: typing.Union[int, float] = None,
-  require_last_push_approval: typing.Union[bool, IResolvable] = None,
-  restrict_dismissals: typing.Union[bool, IResolvable] = None
+  require_last_push_approval: bool | IResolvable = None,
+  restrict_dismissals: bool | IResolvable = None
 )
 ```
 
@@ -1722,12 +1722,12 @@ branchProtection.BranchProtectionRequiredPullRequestReviews(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.dismissalRestrictions">dismissal_restrictions</a></code> | <code>typing.List[str]</code> | The list of actor Names/IDs with dismissal access. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.dismissStaleReviews">dismiss_stale_reviews</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Dismiss approved reviews automatically when a new commit is pushed. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.dismissStaleReviews">dismiss_stale_reviews</a></code> | <code>bool \| cdktf.IResolvable</code> | Dismiss approved reviews automatically when a new commit is pushed. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.pullRequestBypassers">pull_request_bypassers</a></code> | <code>typing.List[str]</code> | The list of actor Names/IDs that are allowed to bypass pull request requirements. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.requireCodeOwnerReviews">require_code_owner_reviews</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require an approved review in pull requests including files with a designated code owner. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.requireCodeOwnerReviews">require_code_owner_reviews</a></code> | <code>bool \| cdktf.IResolvable</code> | Require an approved review in pull requests including files with a designated code owner. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.requiredApprovingReviewCount">required_approving_review_count</a></code> | <code>typing.Union[int, float]</code> | Require 'x' number of approvals to satisfy branch protection requirements. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.requireLastPushApproval">require_last_push_approval</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require that The most recent push must be approved by someone other than the last pusher. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.restrictDismissals">restrict_dismissals</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Restrict pull request review dismissals. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.requireLastPushApproval">require_last_push_approval</a></code> | <code>bool \| cdktf.IResolvable</code> | Require that The most recent push must be approved by someone other than the last pusher. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.restrictDismissals">restrict_dismissals</a></code> | <code>bool \| cdktf.IResolvable</code> | Restrict pull request review dismissals. |
 
 ---
 
@@ -1750,10 +1750,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `dismiss_stale_reviews`<sup>Optional</sup> <a name="dismiss_stale_reviews" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.dismissStaleReviews"></a>
 
 ```python
-dismiss_stale_reviews: typing.Union[bool, IResolvable]
+dismiss_stale_reviews: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Dismiss approved reviews automatically when a new commit is pushed.
 
@@ -1780,10 +1780,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `require_code_owner_reviews`<sup>Optional</sup> <a name="require_code_owner_reviews" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.requireCodeOwnerReviews"></a>
 
 ```python
-require_code_owner_reviews: typing.Union[bool, IResolvable]
+require_code_owner_reviews: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require an approved review in pull requests including files with a designated code owner.
 
@@ -1810,10 +1810,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `require_last_push_approval`<sup>Optional</sup> <a name="require_last_push_approval" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.requireLastPushApproval"></a>
 
 ```python
-require_last_push_approval: typing.Union[bool, IResolvable]
+require_last_push_approval: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require that The most recent push must be approved by someone other than the last pusher.
 
@@ -1824,10 +1824,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `restrict_dismissals`<sup>Optional</sup> <a name="restrict_dismissals" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews.property.restrictDismissals"></a>
 
 ```python
-restrict_dismissals: typing.Union[bool, IResolvable]
+restrict_dismissals: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Restrict pull request review dismissals.
 
@@ -1844,7 +1844,7 @@ from cdktf_cdktf_provider_github import branch_protection
 
 branchProtection.BranchProtectionRequiredStatusChecks(
   contexts: typing.List[str] = None,
-  strict: typing.Union[bool, IResolvable] = None
+  strict: bool | IResolvable = None
 )
 ```
 
@@ -1853,7 +1853,7 @@ branchProtection.BranchProtectionRequiredStatusChecks(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks.property.contexts">contexts</a></code> | <code>typing.List[str]</code> | The list of status checks to require in order to merge into this branch. |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks.property.strict">strict</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Require branches to be up to date before merging. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks.property.strict">strict</a></code> | <code>bool \| cdktf.IResolvable</code> | Require branches to be up to date before merging. |
 
 ---
 
@@ -1876,10 +1876,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `strict`<sup>Optional</sup> <a name="strict" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks.property.strict"></a>
 
 ```python
-strict: typing.Union[bool, IResolvable]
+strict: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Require branches to be up to date before merging.
 
@@ -1895,7 +1895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 from cdktf_cdktf_provider_github import branch_protection
 
 branchProtection.BranchProtectionRestrictPushes(
-  blocks_creations: typing.Union[bool, IResolvable] = None,
+  blocks_creations: bool | IResolvable = None,
   push_allowances: typing.List[str] = None
 )
 ```
@@ -1904,7 +1904,7 @@ branchProtection.BranchProtectionRestrictPushes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.property.blocksCreations">blocks_creations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Restrict pushes that create matching branches. |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.property.blocksCreations">blocks_creations</a></code> | <code>bool \| cdktf.IResolvable</code> | Restrict pushes that create matching branches. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.property.pushAllowances">push_allowances</a></code> | <code>typing.List[str]</code> | The list of actor Names/IDs that may push to the branch. |
 
 ---
@@ -1912,10 +1912,10 @@ branchProtection.BranchProtectionRestrictPushes(
 ##### `blocks_creations`<sup>Optional</sup> <a name="blocks_creations" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes.property.blocksCreations"></a>
 
 ```python
-blocks_creations: typing.Union[bool, IResolvable]
+blocks_creations: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Restrict pushes that create matching branches.
 
@@ -2072,7 +2072,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]</code> | *No description.* |
 
 ---
 
@@ -2103,10 +2103,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BranchProtectionRequiredPullRequestReviews]]
+internal_value: IResolvable | typing.List[BranchProtectionRequiredPullRequestReviews]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]
 
 ---
 
@@ -2416,20 +2416,20 @@ def reset_restrict_dismissals() -> None
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.dismissalRestrictionsInput">dismissal_restrictions_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.dismissStaleReviewsInput">dismiss_stale_reviews_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.dismissStaleReviewsInput">dismiss_stale_reviews_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.pullRequestBypassersInput">pull_request_bypassers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireCodeOwnerReviewsInput">require_code_owner_reviews_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireCodeOwnerReviewsInput">require_code_owner_reviews_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requiredApprovingReviewCountInput">required_approving_review_count_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireLastPushApprovalInput">require_last_push_approval_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.restrictDismissalsInput">restrict_dismissals_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireLastPushApprovalInput">require_last_push_approval_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.restrictDismissalsInput">restrict_dismissals_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.dismissalRestrictions">dismissal_restrictions</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.dismissStaleReviews">dismiss_stale_reviews</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.dismissStaleReviews">dismiss_stale_reviews</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.pullRequestBypassers">pull_request_bypassers</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireCodeOwnerReviews">require_code_owner_reviews</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireCodeOwnerReviews">require_code_owner_reviews</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requiredApprovingReviewCount">required_approving_review_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireLastPushApproval">require_last_push_approval</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.restrictDismissals">restrict_dismissals</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireLastPushApproval">require_last_push_approval</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.restrictDismissals">restrict_dismissals</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a></code> | *No description.* |
 
 ---
 
@@ -2470,10 +2470,10 @@ dismissal_restrictions_input: typing.List[str]
 ##### `dismiss_stale_reviews_input`<sup>Optional</sup> <a name="dismiss_stale_reviews_input" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.dismissStaleReviewsInput"></a>
 
 ```python
-dismiss_stale_reviews_input: typing.Union[bool, IResolvable]
+dismiss_stale_reviews_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2490,10 +2490,10 @@ pull_request_bypassers_input: typing.List[str]
 ##### `require_code_owner_reviews_input`<sup>Optional</sup> <a name="require_code_owner_reviews_input" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireCodeOwnerReviewsInput"></a>
 
 ```python
-require_code_owner_reviews_input: typing.Union[bool, IResolvable]
+require_code_owner_reviews_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2510,20 +2510,20 @@ required_approving_review_count_input: typing.Union[int, float]
 ##### `require_last_push_approval_input`<sup>Optional</sup> <a name="require_last_push_approval_input" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireLastPushApprovalInput"></a>
 
 ```python
-require_last_push_approval_input: typing.Union[bool, IResolvable]
+require_last_push_approval_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `restrict_dismissals_input`<sup>Optional</sup> <a name="restrict_dismissals_input" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.restrictDismissalsInput"></a>
 
 ```python
-restrict_dismissals_input: typing.Union[bool, IResolvable]
+restrict_dismissals_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2540,10 +2540,10 @@ dismissal_restrictions: typing.List[str]
 ##### `dismiss_stale_reviews`<sup>Required</sup> <a name="dismiss_stale_reviews" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.dismissStaleReviews"></a>
 
 ```python
-dismiss_stale_reviews: typing.Union[bool, IResolvable]
+dismiss_stale_reviews: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2560,10 +2560,10 @@ pull_request_bypassers: typing.List[str]
 ##### `require_code_owner_reviews`<sup>Required</sup> <a name="require_code_owner_reviews" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireCodeOwnerReviews"></a>
 
 ```python
-require_code_owner_reviews: typing.Union[bool, IResolvable]
+require_code_owner_reviews: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2580,30 +2580,30 @@ required_approving_review_count: typing.Union[int, float]
 ##### `require_last_push_approval`<sup>Required</sup> <a name="require_last_push_approval" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.requireLastPushApproval"></a>
 
 ```python
-require_last_push_approval: typing.Union[bool, IResolvable]
+require_last_push_approval: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `restrict_dismissals`<sup>Required</sup> <a name="restrict_dismissals" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.restrictDismissals"></a>
 
 ```python
-restrict_dismissals: typing.Union[bool, IResolvable]
+restrict_dismissals: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviewsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BranchProtectionRequiredPullRequestReviews]
+internal_value: IResolvable | BranchProtectionRequiredPullRequestReviews
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredPullRequestReviews">BranchProtectionRequiredPullRequestReviews</a>
 
 ---
 
@@ -2739,7 +2739,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]</code> | *No description.* |
 
 ---
 
@@ -2770,10 +2770,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BranchProtectionRequiredStatusChecks]]
+internal_value: IResolvable | typing.List[BranchProtectionRequiredStatusChecks]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]
 
 ---
 
@@ -3048,10 +3048,10 @@ def reset_strict() -> None
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.contextsInput">contexts_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.strictInput">strict_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.strictInput">strict_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.contexts">contexts</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.strict">strict</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.strict">strict</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a></code> | *No description.* |
 
 ---
 
@@ -3092,10 +3092,10 @@ contexts_input: typing.List[str]
 ##### `strict_input`<sup>Optional</sup> <a name="strict_input" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.strictInput"></a>
 
 ```python
-strict_input: typing.Union[bool, IResolvable]
+strict_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3112,20 +3112,20 @@ contexts: typing.List[str]
 ##### `strict`<sup>Required</sup> <a name="strict" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.strict"></a>
 
 ```python
-strict: typing.Union[bool, IResolvable]
+strict: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecksOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BranchProtectionRequiredStatusChecks]
+internal_value: IResolvable | BranchProtectionRequiredStatusChecks
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRequiredStatusChecks">BranchProtectionRequiredStatusChecks</a>
 
 ---
 
@@ -3261,7 +3261,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]</code> | *No description.* |
 
 ---
 
@@ -3292,10 +3292,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[BranchProtectionRestrictPushes]]
+internal_value: IResolvable | typing.List[BranchProtectionRestrictPushes]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]
 
 ---
 
@@ -3569,11 +3569,11 @@ def reset_push_allowances() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreationsInput">blocks_creations_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreationsInput">blocks_creations_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.pushAllowancesInput">push_allowances_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreations">blocks_creations</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreations">blocks_creations</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.pushAllowances">push_allowances</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a></code> | *No description.* |
 
 ---
 
@@ -3604,10 +3604,10 @@ fqn: str
 ##### `blocks_creations_input`<sup>Optional</sup> <a name="blocks_creations_input" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreationsInput"></a>
 
 ```python
-blocks_creations_input: typing.Union[bool, IResolvable]
+blocks_creations_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3624,10 +3624,10 @@ push_allowances_input: typing.List[str]
 ##### `blocks_creations`<sup>Required</sup> <a name="blocks_creations" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.blocksCreations"></a>
 
 ```python
-blocks_creations: typing.Union[bool, IResolvable]
+blocks_creations: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -3644,10 +3644,10 @@ push_allowances: typing.List[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushesOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, BranchProtectionRestrictPushes]
+internal_value: IResolvable | BranchProtectionRestrictPushes
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-github.branchProtection.BranchProtectionRestrictPushes">BranchProtectionRestrictPushes</a>
 
 ---
 

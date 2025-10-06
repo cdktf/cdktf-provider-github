@@ -310,7 +310,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-github.repository.Repository.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-github.repository.Repository.importFrom"></a>
@@ -364,7 +364,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-github.repository.Repository.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -379,7 +379,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-github.repository.Repository.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -767,13 +767,13 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.fullName">FullName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitCloneUrl">GitCloneUrl</a></code> | <code>string</code> | *No description.* |
@@ -787,73 +787,73 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.sshCloneUrl">SshCloneUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.svnUrl">SvnUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.template">Template</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference">RepositoryTemplateOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowAutoMergeInput">AllowAutoMergeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowMergeCommitInput">AllowMergeCommitInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowRebaseMergeInput">AllowRebaseMergeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowSquashMergeInput">AllowSquashMergeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowUpdateBranchInput">AllowUpdateBranchInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.archivedInput">ArchivedInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.archiveOnDestroyInput">ArchiveOnDestroyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.autoInitInput">AutoInitInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowAutoMergeInput">AllowAutoMergeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowMergeCommitInput">AllowMergeCommitInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowRebaseMergeInput">AllowRebaseMergeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowSquashMergeInput">AllowSquashMergeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowUpdateBranchInput">AllowUpdateBranchInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.archivedInput">ArchivedInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.archiveOnDestroyInput">ArchiveOnDestroyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.autoInitInput">AutoInitInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.defaultBranchInput">DefaultBranchInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMergeInput">DeleteBranchOnMergeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMergeInput">DeleteBranchOnMergeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitignoreTemplateInput">GitignoreTemplateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussionsInput">HasDiscussionsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloadsInput">HasDownloadsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasIssuesInput">HasIssuesInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasProjectsInput">HasProjectsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasWikiInput">HasWikiInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussionsInput">HasDiscussionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloadsInput">HasDownloadsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasIssuesInput">HasIssuesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasProjectsInput">HasProjectsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasWikiInput">HasWikiInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.homepageUrlInput">HomepageUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringReadInput">IgnoreVulnerabilityAlertsDuringReadInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.isTemplateInput">IsTemplateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringReadInput">IgnoreVulnerabilityAlertsDuringReadInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.isTemplateInput">IsTemplateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.licenseTemplateInput">LicenseTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitMessageInput">MergeCommitMessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitTitleInput">MergeCommitTitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.pagesInput">PagesInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryPages">RepositoryPages</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.privateInput">PrivateInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.privateInput">PrivateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.securityAndAnalysisInput">SecurityAndAnalysisInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositorySecurityAndAnalysis">RepositorySecurityAndAnalysis</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitMessageInput">SquashMergeCommitMessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitTitleInput">SquashMergeCommitTitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.templateInput">TemplateInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.topicsInput">TopicsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.visibilityInput">VisibilityInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.vulnerabilityAlertsInput">VulnerabilityAlertsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequiredInput">WebCommitSignoffRequiredInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowAutoMerge">AllowAutoMerge</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowMergeCommit">AllowMergeCommit</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowRebaseMerge">AllowRebaseMerge</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowSquashMerge">AllowSquashMerge</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowUpdateBranch">AllowUpdateBranch</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.archived">Archived</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.archiveOnDestroy">ArchiveOnDestroy</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.autoInit">AutoInit</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.vulnerabilityAlertsInput">VulnerabilityAlertsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequiredInput">WebCommitSignoffRequiredInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowAutoMerge">AllowAutoMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowMergeCommit">AllowMergeCommit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowRebaseMerge">AllowRebaseMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowSquashMerge">AllowSquashMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.allowUpdateBranch">AllowUpdateBranch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.archived">Archived</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.archiveOnDestroy">ArchiveOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.autoInit">AutoInit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.defaultBranch">DefaultBranch</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMerge">DeleteBranchOnMerge</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMerge">DeleteBranchOnMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.description">Description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitignoreTemplate">GitignoreTemplate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussions">HasDiscussions</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloads">HasDownloads</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasIssues">HasIssues</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasProjects">HasProjects</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasWiki">HasWiki</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussions">HasDiscussions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloads">HasDownloads</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasIssues">HasIssues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasProjects">HasProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.hasWiki">HasWiki</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.homepageUrl">HomepageUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringRead">IgnoreVulnerabilityAlertsDuringRead</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.isTemplate">IsTemplate</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringRead">IgnoreVulnerabilityAlertsDuringRead</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.isTemplate">IsTemplate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.licenseTemplate">LicenseTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitMessage">MergeCommitMessage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitTitle">MergeCommitTitle</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.name">Name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.private">Private</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.private">Private</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitMessage">SquashMergeCommitMessage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitTitle">SquashMergeCommitTitle</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.topics">Topics</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.visibility">Visibility</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.vulnerabilityAlerts">VulnerabilityAlerts</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequired">WebCommitSignoffRequired</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.vulnerabilityAlerts">VulnerabilityAlerts</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequired">WebCommitSignoffRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -932,20 +932,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-github.repository.Repository.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.repository.Repository.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -992,10 +992,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-github.repository.Repository.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1132,80 +1132,80 @@ public RepositoryTemplateOutputReference Template { get; }
 ##### `AllowAutoMergeInput`<sup>Optional</sup> <a name="AllowAutoMergeInput" id="@cdktf/provider-github.repository.Repository.property.allowAutoMergeInput"></a>
 
 ```csharp
-public object AllowAutoMergeInput { get; }
+public bool|IResolvable AllowAutoMergeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowMergeCommitInput`<sup>Optional</sup> <a name="AllowMergeCommitInput" id="@cdktf/provider-github.repository.Repository.property.allowMergeCommitInput"></a>
 
 ```csharp
-public object AllowMergeCommitInput { get; }
+public bool|IResolvable AllowMergeCommitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowRebaseMergeInput`<sup>Optional</sup> <a name="AllowRebaseMergeInput" id="@cdktf/provider-github.repository.Repository.property.allowRebaseMergeInput"></a>
 
 ```csharp
-public object AllowRebaseMergeInput { get; }
+public bool|IResolvable AllowRebaseMergeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowSquashMergeInput`<sup>Optional</sup> <a name="AllowSquashMergeInput" id="@cdktf/provider-github.repository.Repository.property.allowSquashMergeInput"></a>
 
 ```csharp
-public object AllowSquashMergeInput { get; }
+public bool|IResolvable AllowSquashMergeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowUpdateBranchInput`<sup>Optional</sup> <a name="AllowUpdateBranchInput" id="@cdktf/provider-github.repository.Repository.property.allowUpdateBranchInput"></a>
 
 ```csharp
-public object AllowUpdateBranchInput { get; }
+public bool|IResolvable AllowUpdateBranchInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ArchivedInput`<sup>Optional</sup> <a name="ArchivedInput" id="@cdktf/provider-github.repository.Repository.property.archivedInput"></a>
 
 ```csharp
-public object ArchivedInput { get; }
+public bool|IResolvable ArchivedInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ArchiveOnDestroyInput`<sup>Optional</sup> <a name="ArchiveOnDestroyInput" id="@cdktf/provider-github.repository.Repository.property.archiveOnDestroyInput"></a>
 
 ```csharp
-public object ArchiveOnDestroyInput { get; }
+public bool|IResolvable ArchiveOnDestroyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoInitInput`<sup>Optional</sup> <a name="AutoInitInput" id="@cdktf/provider-github.repository.Repository.property.autoInitInput"></a>
 
 ```csharp
-public object AutoInitInput { get; }
+public bool|IResolvable AutoInitInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1222,10 +1222,10 @@ public string DefaultBranchInput { get; }
 ##### `DeleteBranchOnMergeInput`<sup>Optional</sup> <a name="DeleteBranchOnMergeInput" id="@cdktf/provider-github.repository.Repository.property.deleteBranchOnMergeInput"></a>
 
 ```csharp
-public object DeleteBranchOnMergeInput { get; }
+public bool|IResolvable DeleteBranchOnMergeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1252,50 +1252,50 @@ public string GitignoreTemplateInput { get; }
 ##### `HasDiscussionsInput`<sup>Optional</sup> <a name="HasDiscussionsInput" id="@cdktf/provider-github.repository.Repository.property.hasDiscussionsInput"></a>
 
 ```csharp
-public object HasDiscussionsInput { get; }
+public bool|IResolvable HasDiscussionsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasDownloadsInput`<sup>Optional</sup> <a name="HasDownloadsInput" id="@cdktf/provider-github.repository.Repository.property.hasDownloadsInput"></a>
 
 ```csharp
-public object HasDownloadsInput { get; }
+public bool|IResolvable HasDownloadsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasIssuesInput`<sup>Optional</sup> <a name="HasIssuesInput" id="@cdktf/provider-github.repository.Repository.property.hasIssuesInput"></a>
 
 ```csharp
-public object HasIssuesInput { get; }
+public bool|IResolvable HasIssuesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasProjectsInput`<sup>Optional</sup> <a name="HasProjectsInput" id="@cdktf/provider-github.repository.Repository.property.hasProjectsInput"></a>
 
 ```csharp
-public object HasProjectsInput { get; }
+public bool|IResolvable HasProjectsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasWikiInput`<sup>Optional</sup> <a name="HasWikiInput" id="@cdktf/provider-github.repository.Repository.property.hasWikiInput"></a>
 
 ```csharp
-public object HasWikiInput { get; }
+public bool|IResolvable HasWikiInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1322,20 +1322,20 @@ public string IdInput { get; }
 ##### `IgnoreVulnerabilityAlertsDuringReadInput`<sup>Optional</sup> <a name="IgnoreVulnerabilityAlertsDuringReadInput" id="@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringReadInput"></a>
 
 ```csharp
-public object IgnoreVulnerabilityAlertsDuringReadInput { get; }
+public bool|IResolvable IgnoreVulnerabilityAlertsDuringReadInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsTemplateInput`<sup>Optional</sup> <a name="IsTemplateInput" id="@cdktf/provider-github.repository.Repository.property.isTemplateInput"></a>
 
 ```csharp
-public object IsTemplateInput { get; }
+public bool|IResolvable IsTemplateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1392,10 +1392,10 @@ public RepositoryPages PagesInput { get; }
 ##### `PrivateInput`<sup>Optional</sup> <a name="PrivateInput" id="@cdktf/provider-github.repository.Repository.property.privateInput"></a>
 
 ```csharp
-public object PrivateInput { get; }
+public bool|IResolvable PrivateInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1462,100 +1462,100 @@ public string VisibilityInput { get; }
 ##### `VulnerabilityAlertsInput`<sup>Optional</sup> <a name="VulnerabilityAlertsInput" id="@cdktf/provider-github.repository.Repository.property.vulnerabilityAlertsInput"></a>
 
 ```csharp
-public object VulnerabilityAlertsInput { get; }
+public bool|IResolvable VulnerabilityAlertsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `WebCommitSignoffRequiredInput`<sup>Optional</sup> <a name="WebCommitSignoffRequiredInput" id="@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequiredInput"></a>
 
 ```csharp
-public object WebCommitSignoffRequiredInput { get; }
+public bool|IResolvable WebCommitSignoffRequiredInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowAutoMerge`<sup>Required</sup> <a name="AllowAutoMerge" id="@cdktf/provider-github.repository.Repository.property.allowAutoMerge"></a>
 
 ```csharp
-public object AllowAutoMerge { get; }
+public bool|IResolvable AllowAutoMerge { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowMergeCommit`<sup>Required</sup> <a name="AllowMergeCommit" id="@cdktf/provider-github.repository.Repository.property.allowMergeCommit"></a>
 
 ```csharp
-public object AllowMergeCommit { get; }
+public bool|IResolvable AllowMergeCommit { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowRebaseMerge`<sup>Required</sup> <a name="AllowRebaseMerge" id="@cdktf/provider-github.repository.Repository.property.allowRebaseMerge"></a>
 
 ```csharp
-public object AllowRebaseMerge { get; }
+public bool|IResolvable AllowRebaseMerge { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowSquashMerge`<sup>Required</sup> <a name="AllowSquashMerge" id="@cdktf/provider-github.repository.Repository.property.allowSquashMerge"></a>
 
 ```csharp
-public object AllowSquashMerge { get; }
+public bool|IResolvable AllowSquashMerge { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AllowUpdateBranch`<sup>Required</sup> <a name="AllowUpdateBranch" id="@cdktf/provider-github.repository.Repository.property.allowUpdateBranch"></a>
 
 ```csharp
-public object AllowUpdateBranch { get; }
+public bool|IResolvable AllowUpdateBranch { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Archived`<sup>Required</sup> <a name="Archived" id="@cdktf/provider-github.repository.Repository.property.archived"></a>
 
 ```csharp
-public object Archived { get; }
+public bool|IResolvable Archived { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ArchiveOnDestroy`<sup>Required</sup> <a name="ArchiveOnDestroy" id="@cdktf/provider-github.repository.Repository.property.archiveOnDestroy"></a>
 
 ```csharp
-public object ArchiveOnDestroy { get; }
+public bool|IResolvable ArchiveOnDestroy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `AutoInit`<sup>Required</sup> <a name="AutoInit" id="@cdktf/provider-github.repository.Repository.property.autoInit"></a>
 
 ```csharp
-public object AutoInit { get; }
+public bool|IResolvable AutoInit { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1572,10 +1572,10 @@ public string DefaultBranch { get; }
 ##### `DeleteBranchOnMerge`<sup>Required</sup> <a name="DeleteBranchOnMerge" id="@cdktf/provider-github.repository.Repository.property.deleteBranchOnMerge"></a>
 
 ```csharp
-public object DeleteBranchOnMerge { get; }
+public bool|IResolvable DeleteBranchOnMerge { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1602,50 +1602,50 @@ public string GitignoreTemplate { get; }
 ##### `HasDiscussions`<sup>Required</sup> <a name="HasDiscussions" id="@cdktf/provider-github.repository.Repository.property.hasDiscussions"></a>
 
 ```csharp
-public object HasDiscussions { get; }
+public bool|IResolvable HasDiscussions { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasDownloads`<sup>Required</sup> <a name="HasDownloads" id="@cdktf/provider-github.repository.Repository.property.hasDownloads"></a>
 
 ```csharp
-public object HasDownloads { get; }
+public bool|IResolvable HasDownloads { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasIssues`<sup>Required</sup> <a name="HasIssues" id="@cdktf/provider-github.repository.Repository.property.hasIssues"></a>
 
 ```csharp
-public object HasIssues { get; }
+public bool|IResolvable HasIssues { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasProjects`<sup>Required</sup> <a name="HasProjects" id="@cdktf/provider-github.repository.Repository.property.hasProjects"></a>
 
 ```csharp
-public object HasProjects { get; }
+public bool|IResolvable HasProjects { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `HasWiki`<sup>Required</sup> <a name="HasWiki" id="@cdktf/provider-github.repository.Repository.property.hasWiki"></a>
 
 ```csharp
-public object HasWiki { get; }
+public bool|IResolvable HasWiki { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1672,20 +1672,20 @@ public string Id { get; }
 ##### `IgnoreVulnerabilityAlertsDuringRead`<sup>Required</sup> <a name="IgnoreVulnerabilityAlertsDuringRead" id="@cdktf/provider-github.repository.Repository.property.ignoreVulnerabilityAlertsDuringRead"></a>
 
 ```csharp
-public object IgnoreVulnerabilityAlertsDuringRead { get; }
+public bool|IResolvable IgnoreVulnerabilityAlertsDuringRead { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `IsTemplate`<sup>Required</sup> <a name="IsTemplate" id="@cdktf/provider-github.repository.Repository.property.isTemplate"></a>
 
 ```csharp
-public object IsTemplate { get; }
+public bool|IResolvable IsTemplate { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1732,10 +1732,10 @@ public string Name { get; }
 ##### `Private`<sup>Required</sup> <a name="Private" id="@cdktf/provider-github.repository.Repository.property.private"></a>
 
 ```csharp
-public object Private { get; }
+public bool|IResolvable Private { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1782,20 +1782,20 @@ public string Visibility { get; }
 ##### `VulnerabilityAlerts`<sup>Required</sup> <a name="VulnerabilityAlerts" id="@cdktf/provider-github.repository.Repository.property.vulnerabilityAlerts"></a>
 
 ```csharp
-public object VulnerabilityAlerts { get; }
+public bool|IResolvable VulnerabilityAlerts { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `WebCommitSignoffRequired`<sup>Required</sup> <a name="WebCommitSignoffRequired" id="@cdktf/provider-github.repository.Repository.property.webCommitSignoffRequired"></a>
 
 ```csharp
-public object WebCommitSignoffRequired { get; }
+public bool|IResolvable WebCommitSignoffRequired { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1827,48 +1827,48 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Github;
 
 new RepositoryConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Name,
-    object AllowAutoMerge = null,
-    object AllowMergeCommit = null,
-    object AllowRebaseMerge = null,
-    object AllowSquashMerge = null,
-    object AllowUpdateBranch = null,
-    object Archived = null,
-    object ArchiveOnDestroy = null,
-    object AutoInit = null,
+    bool|IResolvable AllowAutoMerge = null,
+    bool|IResolvable AllowMergeCommit = null,
+    bool|IResolvable AllowRebaseMerge = null,
+    bool|IResolvable AllowSquashMerge = null,
+    bool|IResolvable AllowUpdateBranch = null,
+    bool|IResolvable Archived = null,
+    bool|IResolvable ArchiveOnDestroy = null,
+    bool|IResolvable AutoInit = null,
     string DefaultBranch = null,
-    object DeleteBranchOnMerge = null,
+    bool|IResolvable DeleteBranchOnMerge = null,
     string Description = null,
     string GitignoreTemplate = null,
-    object HasDiscussions = null,
-    object HasDownloads = null,
-    object HasIssues = null,
-    object HasProjects = null,
-    object HasWiki = null,
+    bool|IResolvable HasDiscussions = null,
+    bool|IResolvable HasDownloads = null,
+    bool|IResolvable HasIssues = null,
+    bool|IResolvable HasProjects = null,
+    bool|IResolvable HasWiki = null,
     string HomepageUrl = null,
     string Id = null,
-    object IgnoreVulnerabilityAlertsDuringRead = null,
-    object IsTemplate = null,
+    bool|IResolvable IgnoreVulnerabilityAlertsDuringRead = null,
+    bool|IResolvable IsTemplate = null,
     string LicenseTemplate = null,
     string MergeCommitMessage = null,
     string MergeCommitTitle = null,
     RepositoryPages Pages = null,
-    object Private = null,
+    bool|IResolvable Private = null,
     RepositorySecurityAndAnalysis SecurityAndAnalysis = null,
     string SquashMergeCommitMessage = null,
     string SquashMergeCommitTitle = null,
     RepositoryTemplate Template = null,
     string[] Topics = null,
     string Visibility = null,
-    object VulnerabilityAlerts = null,
-    object WebCommitSignoffRequired = null
+    bool|IResolvable VulnerabilityAlerts = null,
+    bool|IResolvable WebCommitSignoffRequired = null
 };
 ```
 
@@ -1876,68 +1876,68 @@ new RepositoryConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.name">Name</a></code> | <code>string</code> | The name of the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowAutoMerge">AllowAutoMerge</a></code> | <code>object</code> | Set to 'true' to allow auto-merging pull requests on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowMergeCommit">AllowMergeCommit</a></code> | <code>object</code> | Set to 'false' to disable merge commits on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowRebaseMerge">AllowRebaseMerge</a></code> | <code>object</code> | Set to 'false' to disable rebase merges on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowSquashMerge">AllowSquashMerge</a></code> | <code>object</code> | Set to 'false' to disable squash merges on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowUpdateBranch">AllowUpdateBranch</a></code> | <code>object</code> | Set to 'true' to always suggest updating pull request branches. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.archived">Archived</a></code> | <code>object</code> | Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.archiveOnDestroy">ArchiveOnDestroy</a></code> | <code>object</code> | Set to 'true' to archive the repository instead of deleting on destroy. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.autoInit">AutoInit</a></code> | <code>object</code> | Set to 'true' to produce an initial commit in the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowAutoMerge">AllowAutoMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to allow auto-merging pull requests on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowMergeCommit">AllowMergeCommit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'false' to disable merge commits on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowRebaseMerge">AllowRebaseMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'false' to disable rebase merges on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowSquashMerge">AllowSquashMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'false' to disable squash merges on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.allowUpdateBranch">AllowUpdateBranch</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to always suggest updating pull request branches. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.archived">Archived</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.archiveOnDestroy">ArchiveOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to archive the repository instead of deleting on destroy. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.autoInit">AutoInit</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to produce an initial commit in the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.defaultBranch">DefaultBranch</a></code> | <code>string</code> | Can only be set after initial repository creation, and only if the target branch exists. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.deleteBranchOnMerge">DeleteBranchOnMerge</a></code> | <code>object</code> | Automatically delete head branch after a pull request is merged. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.deleteBranchOnMerge">DeleteBranchOnMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Automatically delete head branch after a pull request is merged. Defaults to 'false'. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.description">Description</a></code> | <code>string</code> | A description of the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.gitignoreTemplate">GitignoreTemplate</a></code> | <code>string</code> | Use the name of the template without the extension. For example, 'Haskell'. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDiscussions">HasDiscussions</a></code> | <code>object</code> | Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDownloads">HasDownloads</a></code> | <code>object</code> | Set to 'true' to enable the (deprecated) downloads features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasIssues">HasIssues</a></code> | <code>object</code> | Set to 'true' to enable the GitHub Issues features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasProjects">HasProjects</a></code> | <code>object</code> | Set to 'true' to enable the GitHub Projects features on the repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasWiki">HasWiki</a></code> | <code>object</code> | Set to 'true' to enable the GitHub Wiki features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDiscussions">HasDiscussions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDownloads">HasDownloads</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable the (deprecated) downloads features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasIssues">HasIssues</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Issues features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasProjects">HasProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Projects features on the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasWiki">HasWiki</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Wiki features on the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.homepageUrl">HomepageUrl</a></code> | <code>string</code> | URL of a page describing the project. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#id Repository#id}. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.ignoreVulnerabilityAlertsDuringRead">IgnoreVulnerabilityAlertsDuringRead</a></code> | <code>object</code> | Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.isTemplate">IsTemplate</a></code> | <code>object</code> | Set to 'true' to tell GitHub that this is a template repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.ignoreVulnerabilityAlertsDuringRead">IgnoreVulnerabilityAlertsDuringRead</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.isTemplate">IsTemplate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to tell GitHub that this is a template repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.licenseTemplate">LicenseTemplate</a></code> | <code>string</code> | Use the name of the template without the extension. For example, 'mit' or 'mpl-2.0'. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.mergeCommitMessage">MergeCommitMessage</a></code> | <code>string</code> | Can be 'PR_BODY', 'PR_TITLE', or 'BLANK' for a default merge commit message. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.mergeCommitTitle">MergeCommitTitle</a></code> | <code>string</code> | Can be 'PR_TITLE' or 'MERGE_MESSAGE' for a default merge commit title. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.pages">Pages</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryPages">RepositoryPages</a></code> | pages block. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.private">Private</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.private">Private</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.securityAndAnalysis">SecurityAndAnalysis</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositorySecurityAndAnalysis">RepositorySecurityAndAnalysis</a></code> | security_and_analysis block. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.squashMergeCommitMessage">SquashMergeCommitMessage</a></code> | <code>string</code> | Can be 'PR_BODY', 'COMMIT_MESSAGES', or 'BLANK' for a default squash merge commit message. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.squashMergeCommitTitle">SquashMergeCommitTitle</a></code> | <code>string</code> | Can be 'PR_TITLE' or 'COMMIT_OR_PR_TITLE' for a default squash merge commit title. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.template">Template</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | template block. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.topics">Topics</a></code> | <code>string[]</code> | The list of topics of the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.visibility">Visibility</a></code> | <code>string</code> | Can be 'public' or 'private'. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.vulnerabilityAlerts">VulnerabilityAlerts</a></code> | <code>object</code> | Set to 'true' to enable security alerts for vulnerable dependencies. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.webCommitSignoffRequired">WebCommitSignoffRequired</a></code> | <code>object</code> | Require contributors to sign off on web-based commits. Defaults to 'false'. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.vulnerabilityAlerts">VulnerabilityAlerts</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable security alerts for vulnerable dependencies. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.webCommitSignoffRequired">WebCommitSignoffRequired</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Require contributors to sign off on web-based commits. Defaults to 'false'. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-github.repository.RepositoryConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-github.repository.RepositoryConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1984,10 +1984,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-github.repository.RepositoryConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -2008,10 +2008,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `AllowAutoMerge`<sup>Optional</sup> <a name="AllowAutoMerge" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowAutoMerge"></a>
 
 ```csharp
-public object AllowAutoMerge { get; set; }
+public bool|IResolvable AllowAutoMerge { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to allow auto-merging pull requests on the repository.
 
@@ -2022,10 +2022,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `AllowMergeCommit`<sup>Optional</sup> <a name="AllowMergeCommit" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowMergeCommit"></a>
 
 ```csharp
-public object AllowMergeCommit { get; set; }
+public bool|IResolvable AllowMergeCommit { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'false' to disable merge commits on the repository.
 
@@ -2036,10 +2036,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `AllowRebaseMerge`<sup>Optional</sup> <a name="AllowRebaseMerge" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowRebaseMerge"></a>
 
 ```csharp
-public object AllowRebaseMerge { get; set; }
+public bool|IResolvable AllowRebaseMerge { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'false' to disable rebase merges on the repository.
 
@@ -2050,10 +2050,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `AllowSquashMerge`<sup>Optional</sup> <a name="AllowSquashMerge" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowSquashMerge"></a>
 
 ```csharp
-public object AllowSquashMerge { get; set; }
+public bool|IResolvable AllowSquashMerge { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'false' to disable squash merges on the repository.
 
@@ -2064,10 +2064,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `AllowUpdateBranch`<sup>Optional</sup> <a name="AllowUpdateBranch" id="@cdktf/provider-github.repository.RepositoryConfig.property.allowUpdateBranch"></a>
 
 ```csharp
-public object AllowUpdateBranch { get; set; }
+public bool|IResolvable AllowUpdateBranch { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to always suggest updating pull request branches.
 
@@ -2078,10 +2078,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `Archived`<sup>Optional</sup> <a name="Archived" id="@cdktf/provider-github.repository.RepositoryConfig.property.archived"></a>
 
 ```csharp
-public object Archived { get; set; }
+public bool|IResolvable Archived { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving.
 
@@ -2092,10 +2092,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `ArchiveOnDestroy`<sup>Optional</sup> <a name="ArchiveOnDestroy" id="@cdktf/provider-github.repository.RepositoryConfig.property.archiveOnDestroy"></a>
 
 ```csharp
-public object ArchiveOnDestroy { get; set; }
+public bool|IResolvable ArchiveOnDestroy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to archive the repository instead of deleting on destroy.
 
@@ -2106,10 +2106,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `AutoInit`<sup>Optional</sup> <a name="AutoInit" id="@cdktf/provider-github.repository.RepositoryConfig.property.autoInit"></a>
 
 ```csharp
-public object AutoInit { get; set; }
+public bool|IResolvable AutoInit { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to produce an initial commit in the repository.
 
@@ -2134,10 +2134,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `DeleteBranchOnMerge`<sup>Optional</sup> <a name="DeleteBranchOnMerge" id="@cdktf/provider-github.repository.RepositoryConfig.property.deleteBranchOnMerge"></a>
 
 ```csharp
-public object DeleteBranchOnMerge { get; set; }
+public bool|IResolvable DeleteBranchOnMerge { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Automatically delete head branch after a pull request is merged. Defaults to 'false'.
 
@@ -2176,10 +2176,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `HasDiscussions`<sup>Optional</sup> <a name="HasDiscussions" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasDiscussions"></a>
 
 ```csharp
-public object HasDiscussions { get; set; }
+public bool|IResolvable HasDiscussions { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'.
 
@@ -2190,10 +2190,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `HasDownloads`<sup>Optional</sup> <a name="HasDownloads" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasDownloads"></a>
 
 ```csharp
-public object HasDownloads { get; set; }
+public bool|IResolvable HasDownloads { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to enable the (deprecated) downloads features on the repository.
 
@@ -2204,10 +2204,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `HasIssues`<sup>Optional</sup> <a name="HasIssues" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasIssues"></a>
 
 ```csharp
-public object HasIssues { get; set; }
+public bool|IResolvable HasIssues { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Issues features on the repository.
 
@@ -2218,10 +2218,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `HasProjects`<sup>Optional</sup> <a name="HasProjects" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasProjects"></a>
 
 ```csharp
-public object HasProjects { get; set; }
+public bool|IResolvable HasProjects { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Projects features on the repository.
 
@@ -2234,10 +2234,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `HasWiki`<sup>Optional</sup> <a name="HasWiki" id="@cdktf/provider-github.repository.RepositoryConfig.property.hasWiki"></a>
 
 ```csharp
-public object HasWiki { get; set; }
+public bool|IResolvable HasWiki { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to enable the GitHub Wiki features on the repository.
 
@@ -2277,10 +2277,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `IgnoreVulnerabilityAlertsDuringRead`<sup>Optional</sup> <a name="IgnoreVulnerabilityAlertsDuringRead" id="@cdktf/provider-github.repository.RepositoryConfig.property.ignoreVulnerabilityAlertsDuringRead"></a>
 
 ```csharp
-public object IgnoreVulnerabilityAlertsDuringRead { get; set; }
+public bool|IResolvable IgnoreVulnerabilityAlertsDuringRead { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
 
@@ -2291,10 +2291,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `IsTemplate`<sup>Optional</sup> <a name="IsTemplate" id="@cdktf/provider-github.repository.RepositoryConfig.property.isTemplate"></a>
 
 ```csharp
-public object IsTemplate { get; set; }
+public bool|IResolvable IsTemplate { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to tell GitHub that this is a template repository.
 
@@ -2361,10 +2361,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `Private`<sup>Optional</sup> <a name="Private" id="@cdktf/provider-github.repository.RepositoryConfig.property.private"></a>
 
 ```csharp
-public object Private { get; set; }
+public bool|IResolvable Private { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/repository#private Repository#private}.
 
@@ -2459,10 +2459,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `VulnerabilityAlerts`<sup>Optional</sup> <a name="VulnerabilityAlerts" id="@cdktf/provider-github.repository.RepositoryConfig.property.vulnerabilityAlerts"></a>
 
 ```csharp
-public object VulnerabilityAlerts { get; set; }
+public bool|IResolvable VulnerabilityAlerts { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Set to 'true' to enable security alerts for vulnerable dependencies.
 
@@ -2475,10 +2475,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `WebCommitSignoffRequired`<sup>Optional</sup> <a name="WebCommitSignoffRequired" id="@cdktf/provider-github.repository.RepositoryConfig.property.webCommitSignoffRequired"></a>
 
 ```csharp
-public object WebCommitSignoffRequired { get; set; }
+public bool|IResolvable WebCommitSignoffRequired { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Require contributors to sign off on web-based commits. Defaults to 'false'.
 
@@ -2784,7 +2784,7 @@ using HashiCorp.Cdktf.Providers.Github;
 new RepositoryTemplate {
     string Owner,
     string Repository,
-    object IncludeAllBranches = null
+    bool|IResolvable IncludeAllBranches = null
 };
 ```
 
@@ -2794,7 +2794,7 @@ new RepositoryTemplate {
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate.property.owner">Owner</a></code> | <code>string</code> | The GitHub organization or user the template repository is owned by. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate.property.repository">Repository</a></code> | <code>string</code> | The name of the template repository. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate.property.includeAllBranches">IncludeAllBranches</a></code> | <code>object</code> | Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template). |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate.property.includeAllBranches">IncludeAllBranches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template). |
 
 ---
 
@@ -2829,10 +2829,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 ##### `IncludeAllBranches`<sup>Optional</sup> <a name="IncludeAllBranches" id="@cdktf/provider-github.repository.RepositoryTemplate.property.includeAllBranches"></a>
 
 ```csharp
-public object IncludeAllBranches { get; set; }
+public bool|IResolvable IncludeAllBranches { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template).
 
@@ -4940,10 +4940,10 @@ private void ResetIncludeAllBranches()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranchesInput">IncludeAllBranchesInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranchesInput">IncludeAllBranchesInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.ownerInput">OwnerInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.repositoryInput">RepositoryInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranches">IncludeAllBranches</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranches">IncludeAllBranches</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.owner">Owner</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.repository">Repository</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | *No description.* |
@@ -4977,10 +4977,10 @@ public string Fqn { get; }
 ##### `IncludeAllBranchesInput`<sup>Optional</sup> <a name="IncludeAllBranchesInput" id="@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranchesInput"></a>
 
 ```csharp
-public object IncludeAllBranchesInput { get; }
+public bool|IResolvable IncludeAllBranchesInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -5007,10 +5007,10 @@ public string RepositoryInput { get; }
 ##### `IncludeAllBranches`<sup>Required</sup> <a name="IncludeAllBranches" id="@cdktf/provider-github.repository.RepositoryTemplateOutputReference.property.includeAllBranches"></a>
 
 ```csharp
-public object IncludeAllBranches { get; }
+public bool|IResolvable IncludeAllBranches { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
