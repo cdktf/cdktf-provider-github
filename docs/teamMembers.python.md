@@ -4,7 +4,7 @@
 
 ### TeamMembers <a name="TeamMembers" id="@cdktf/provider-github.teamMembers.TeamMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members github_team_members}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members github_team_members}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.teamMembers.TeamMembers.Initializer"></a>
 
@@ -40,7 +40,7 @@ teamMembers.TeamMembers(
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.Initializer.parameter.members">members</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a>]</code> | members block. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.Initializer.parameter.teamId">team_id</a></code> | <code>str</code> | The GitHub team id or slug. |
-| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#id TeamMembers#id}. |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembers.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#id TeamMembers#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 members block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#members TeamMembers#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#members TeamMembers#members}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The GitHub team id or slug.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#team_id TeamMembers#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#team_id TeamMembers#team_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#id TeamMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#id TeamMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -626,7 +626,7 @@ The construct id used in the generated config for the TeamMembers to import.
 
 The id of the existing TeamMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,7 +921,7 @@ teamMembers.TeamMembersConfig(
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.members">members</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.teamMembers.TeamMembersMembers">TeamMembersMembers</a>]</code> | members block. |
 | <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.teamId">team_id</a></code> | <code>str</code> | The GitHub team id or slug. |
-| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#id TeamMembers#id}. |
+| <code><a href="#@cdktf/provider-github.teamMembers.TeamMembersConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#id TeamMembers#id}. |
 
 ---
 
@@ -1005,7 +1005,7 @@ members: IResolvable | typing.List[TeamMembersMembers]
 
 members block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#members TeamMembers#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#members TeamMembers#members}
 
 ---
 
@@ -1019,7 +1019,7 @@ team_id: str
 
 The GitHub team id or slug.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#team_id TeamMembers#team_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#team_id TeamMembers#team_id}
 
 ---
 
@@ -1031,7 +1031,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#id TeamMembers#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#id TeamMembers#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1070,7 +1070,7 @@ username: str
 
 The user to add to the team.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#username TeamMembers#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#username TeamMembers#username}
 
 ---
 
@@ -1084,7 +1084,7 @@ role: str
 
 The role of the user within the team. Must be one of 'member' or 'maintainer'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/team_members#role TeamMembers#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/team_members#role TeamMembers#role}
 
 ---
 
