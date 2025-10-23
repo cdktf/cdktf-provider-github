@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/repository_custom_properties
+// https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_custom_properties
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubRepositoryCustomPropertiesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/repository_custom_properties#id DataGithubRepositoryCustomProperties#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_custom_properties#id DataGithubRepositoryCustomProperties#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,7 +22,7 @@ export interface DataGithubRepositoryCustomPropertiesConfig extends cdktf.Terraf
   /**
   * Name of the repository which the custom properties should be on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/repository_custom_properties#repository DataGithubRepositoryCustomProperties#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_custom_properties#repository DataGithubRepositoryCustomProperties#repository}
   */
   readonly repository: string;
 }
@@ -108,7 +108,7 @@ export class DataGithubRepositoryCustomPropertiesPropertyList extends cdktf.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/repository_custom_properties github_repository_custom_properties}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_custom_properties github_repository_custom_properties}
 */
 export class DataGithubRepositoryCustomProperties extends cdktf.TerraformDataSource {
 
@@ -124,7 +124,7 @@ export class DataGithubRepositoryCustomProperties extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataGithubRepositoryCustomProperties resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubRepositoryCustomProperties to import
-  * @param importFromId The id of the existing DataGithubRepositoryCustomProperties that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/repository_custom_properties#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubRepositoryCustomProperties that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_custom_properties#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubRepositoryCustomProperties to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -136,7 +136,7 @@ export class DataGithubRepositoryCustomProperties extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/data-sources/repository_custom_properties github_repository_custom_properties} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/data-sources/repository_custom_properties github_repository_custom_properties} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -147,7 +147,7 @@ export class DataGithubRepositoryCustomProperties extends cdktf.TerraformDataSou
       terraformResourceType: 'github_repository_custom_properties',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.6.0',
+        providerVersion: '6.7.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
