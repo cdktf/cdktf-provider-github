@@ -4,7 +4,7 @@
 
 ### UserInvitationAccepter <a name="UserInvitationAccepter" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer"></a>
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the UserInvitationAccepter to 
 
 The id of the existing UserInvitationAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/user_invitation_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/user_invitation_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -782,7 +782,7 @@ new UserInvitationAccepterConfig {
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.allowEmptyId">AllowEmptyId</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Allow the ID to be unset. |
-| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}. |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.invitationId">InvitationId</a></code> | <code>string</code> | ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'. |
 
 ---
@@ -869,7 +869,7 @@ Allow the ID to be unset.
 
 This will result in the resource being skipped when the ID is not set instead of returning an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
 
 ---
 
@@ -881,7 +881,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -898,7 +898,7 @@ public string InvitationId { get; set; }
 
 ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.6.0/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.0/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
 
 ---
 
