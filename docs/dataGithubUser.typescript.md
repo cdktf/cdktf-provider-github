@@ -4,7 +4,7 @@
 
 ### DataGithubUser <a name="DataGithubUser" id="@cdktf/provider-github.dataGithubUser.DataGithubUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/user github_user}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/user github_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubUser.DataGithubUser.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubUser to import.
 
 The id of the existing DataGithubUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,8 +830,8 @@ const dataGithubUserConfig: dataGithubUser.DataGithubUserConfig = { ... }
 | <code><a href="#@cdktf/provider-github.dataGithubUser.DataGithubUserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUser.DataGithubUserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubUser.DataGithubUserConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubUser.DataGithubUserConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/user#username DataGithubUser#username}. |
-| <code><a href="#@cdktf/provider-github.dataGithubUser.DataGithubUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/user#id DataGithubUser#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubUser.DataGithubUserConfig.property.username">username</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/user#username DataGithubUser#username}. |
+| <code><a href="#@cdktf/provider-github.dataGithubUser.DataGithubUserConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/user#id DataGithubUser#id}. |
 
 ---
 
@@ -913,7 +913,7 @@ public readonly username: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/user#username DataGithubUser#username}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/user#username DataGithubUser#username}.
 
 ---
 
@@ -925,7 +925,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/user#id DataGithubUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/user#id DataGithubUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

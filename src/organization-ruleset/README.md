@@ -1,3 +1,3 @@
 # `github_organization_ruleset`
 
-Refer to the Terraform Registry for docs: [`github_organization_ruleset`](https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/organization_ruleset).
+Refer to the Terraform Registry for docs: [`github_organization_ruleset`](https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_ruleset).

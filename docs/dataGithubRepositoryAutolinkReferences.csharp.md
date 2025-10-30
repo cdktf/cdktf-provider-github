@@ -4,7 +4,7 @@
 
 ### DataGithubRepositoryAutolinkReferences <a name="DataGithubRepositoryAutolinkReferences" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_autolink_references github_repository_autolink_references}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/repository_autolink_references github_repository_autolink_references}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferences.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubRepositoryAutoli
 
 The id of the existing DataGithubRepositoryAutolinkReferences that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_autolink_references#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/repository_autolink_references#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -644,8 +644,8 @@ new DataGithubRepositoryAutolinkReferencesConfig {
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_autolink_references#repository DataGithubRepositoryAutolinkReferences#repository}. |
-| <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_autolink_references#id DataGithubRepositoryAutolinkReferences#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.repository">Repository</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/repository_autolink_references#repository DataGithubRepositoryAutolinkReferences#repository}. |
+| <code><a href="#@cdktf/provider-github.dataGithubRepositoryAutolinkReferences.DataGithubRepositoryAutolinkReferencesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/repository_autolink_references#id DataGithubRepositoryAutolinkReferences#id}. |
 
 ---
 
@@ -727,7 +727,7 @@ public string Repository { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_autolink_references#repository DataGithubRepositoryAutolinkReferences#repository}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/repository_autolink_references#repository DataGithubRepositoryAutolinkReferences#repository}.
 
 ---
 
@@ -739,7 +739,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/repository_autolink_references#id DataGithubRepositoryAutolinkReferences#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/repository_autolink_references#id DataGithubRepositoryAutolinkReferences#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### DataGithubOrganizationRoles <a name="DataGithubOrganizationRoles" id="@cdktf/provider-github.dataGithubOrganizationRoles.DataGithubOrganizationRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/organization_roles github_organization_roles}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/organization_roles github_organization_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationRoles.DataGithubOrganizationRoles.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubOrganizationRole
 
 The id of the existing DataGithubOrganizationRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/organization_roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/organization_roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -608,7 +608,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizat
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoles.DataGithubOrganizationRolesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoles.DataGithubOrganizationRolesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoles.DataGithubOrganizationRolesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoles.DataGithubOrganizationRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/organization_roles#id DataGithubOrganizationRoles#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoles.DataGithubOrganizationRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/organization_roles#id DataGithubOrganizationRoles#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/organization_roles#id DataGithubOrganizationRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/organization_roles#id DataGithubOrganizationRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

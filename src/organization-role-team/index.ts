@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/organization_role_team
+// https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationRoleTeamConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/organization_role_team#id OrganizationRoleTeam#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team#id OrganizationRoleTeam#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface OrganizationRoleTeamConfig extends cdktf.TerraformMetaArguments
   /**
   * The ID of the organization role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/organization_role_team#role_id OrganizationRoleTeam#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team#role_id OrganizationRoleTeam#role_id}
   */
   readonly roleId: number;
   /**
   * The slug of the team name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/organization_role_team#team_slug OrganizationRoleTeam#team_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team#team_slug OrganizationRoleTeam#team_slug}
   */
   readonly teamSlug: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/organization_role_team github_organization_role_team}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team github_organization_role_team}
 */
 export class OrganizationRoleTeam extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class OrganizationRoleTeam extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationRoleTeam resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationRoleTeam to import
-  * @param importFromId The id of the existing OrganizationRoleTeam that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/organization_role_team#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationRoleTeam that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationRoleTeam to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class OrganizationRoleTeam extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/organization_role_team github_organization_role_team} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role_team github_organization_role_team} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class OrganizationRoleTeam extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_role_team',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.7.1',
+        providerVersion: '6.7.3',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

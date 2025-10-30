@@ -4,7 +4,7 @@
 
 ### DataGithubCodespacesOrganizationPublicKey <a name="DataGithubCodespacesOrganizationPublicKey" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_organization_public_key github_codespaces_organization_public_key}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_organization_public_key github_codespaces_organization_public_key}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.Initializer"></a>
 
@@ -34,7 +34,7 @@ DataGithubCodespacesOrganizationPublicKey.Builder.create(Construct scope, java.l
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_organization_public_key#id DataGithubCodespacesOrganizationPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKey.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_organization_public_key#id DataGithubCodespacesOrganizationPublicKey#id}. |
 
 ---
 
@@ -102,7 +102,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_organization_public_key#id DataGithubCodespacesOrganizationPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_organization_public_key#id DataGithubCodespacesOrganizationPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -435,7 +435,7 @@ The construct id used in the generated config for the DataGithubCodespacesOrgani
 
 The id of the existing DataGithubCodespacesOrganizationPublicKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_organization_public_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_organization_public_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -682,7 +682,7 @@ DataGithubCodespacesOrganizationPublicKeyConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKeyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKeyConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKeyConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_organization_public_key#id DataGithubCodespacesOrganizationPublicKey#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubCodespacesOrganizationPublicKey.DataGithubCodespacesOrganizationPublicKeyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_organization_public_key#id DataGithubCodespacesOrganizationPublicKey#id}. |
 
 ---
 
@@ -764,7 +764,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/data-sources/codespaces_organization_public_key#id DataGithubCodespacesOrganizationPublicKey#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/codespaces_organization_public_key#id DataGithubCodespacesOrganizationPublicKey#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
