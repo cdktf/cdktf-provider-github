@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions
+// https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,23 +15,23 @@ export interface EnterpriseActionsPermissionsConfig extends cdktf.TerraformMetaA
   /**
   * The permissions policy that controls the actions that are allowed to run. Can be one of: 'all', 'local_only', or 'selected'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#allowed_actions EnterpriseActionsPermissions#allowed_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#allowed_actions EnterpriseActionsPermissions#allowed_actions}
   */
   readonly allowedActions?: string;
   /**
   * The policy that controls the organizations in the enterprise that are allowed to run GitHub Actions. Can be one of: 'all', 'none', or 'selected'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#enabled_organizations EnterpriseActionsPermissions#enabled_organizations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#enabled_organizations EnterpriseActionsPermissions#enabled_organizations}
   */
   readonly enabledOrganizations: string;
   /**
   * The slug of the enterprise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#enterprise_slug EnterpriseActionsPermissions#enterprise_slug}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#enterprise_slug EnterpriseActionsPermissions#enterprise_slug}
   */
   readonly enterpriseSlug: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#id EnterpriseActionsPermissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#id EnterpriseActionsPermissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -40,13 +40,13 @@ export interface EnterpriseActionsPermissionsConfig extends cdktf.TerraformMetaA
   /**
   * allowed_actions_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#allowed_actions_config EnterpriseActionsPermissions#allowed_actions_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#allowed_actions_config EnterpriseActionsPermissions#allowed_actions_config}
   */
   readonly allowedActionsConfig?: EnterpriseActionsPermissionsAllowedActionsConfig;
   /**
   * enabled_organizations_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#enabled_organizations_config EnterpriseActionsPermissions#enabled_organizations_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#enabled_organizations_config EnterpriseActionsPermissions#enabled_organizations_config}
   */
   readonly enabledOrganizationsConfig?: EnterpriseActionsPermissionsEnabledOrganizationsConfig;
 }
@@ -54,19 +54,19 @@ export interface EnterpriseActionsPermissionsAllowedActionsConfig {
   /**
   * Whether GitHub-owned actions are allowed in the enterprise.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#github_owned_allowed EnterpriseActionsPermissions#github_owned_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#github_owned_allowed EnterpriseActionsPermissions#github_owned_allowed}
   */
   readonly githubOwnedAllowed: boolean | cdktf.IResolvable;
   /**
   * Specifies a list of string-matching patterns to allow specific action(s). Wildcards, tags, and SHAs are allowed. For example, 'monalisa/octocat@', 'monalisa/octocat@v2', 'monalisa/'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#patterns_allowed EnterpriseActionsPermissions#patterns_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#patterns_allowed EnterpriseActionsPermissions#patterns_allowed}
   */
   readonly patternsAllowed?: string[];
   /**
   * Whether actions in GitHub Marketplace from verified creators are allowed. Set to 'true' to allow all GitHub Marketplace actions by verified creators.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#verified_allowed EnterpriseActionsPermissions#verified_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#verified_allowed EnterpriseActionsPermissions#verified_allowed}
   */
   readonly verifiedAllowed?: boolean | cdktf.IResolvable;
 }
@@ -207,7 +207,7 @@ export interface EnterpriseActionsPermissionsEnabledOrganizationsConfig {
   /**
   * List of organization IDs to enable for GitHub Actions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#organization_ids EnterpriseActionsPermissions#organization_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#organization_ids EnterpriseActionsPermissions#organization_ids}
   */
   readonly organizationIds: number[];
 }
@@ -288,7 +288,7 @@ export class EnterpriseActionsPermissionsEnabledOrganizationsConfigOutputReferen
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions}
 */
 export class EnterpriseActionsPermissions extends cdktf.TerraformResource {
 
@@ -304,7 +304,7 @@ export class EnterpriseActionsPermissions extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a EnterpriseActionsPermissions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EnterpriseActionsPermissions to import
-  * @param importFromId The id of the existing EnterpriseActionsPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EnterpriseActionsPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EnterpriseActionsPermissions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -316,7 +316,7 @@ export class EnterpriseActionsPermissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.1/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/enterprise_actions_permissions github_enterprise_actions_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -327,7 +327,7 @@ export class EnterpriseActionsPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'github_enterprise_actions_permissions',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.7.1',
+        providerVersion: '6.7.3',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
