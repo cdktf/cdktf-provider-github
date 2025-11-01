@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role
+// https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface OrganizationRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The base role for the organization role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role#base_role OrganizationRole#base_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role#base_role OrganizationRole#base_role}
   */
   readonly baseRole?: string;
   /**
   * The description of the organization role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role#description OrganizationRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role#description OrganizationRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role#id OrganizationRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role#id OrganizationRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface OrganizationRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the organization role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role#name OrganizationRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role#name OrganizationRole#name}
   */
   readonly name: string;
   /**
   * The permissions for the organization role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role#permissions OrganizationRole#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role#permissions OrganizationRole#permissions}
   */
   readonly permissions: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role github_organization_role}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role github_organization_role}
 */
 export class OrganizationRole extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class OrganizationRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationRole to import
-  * @param importFromId The id of the existing OrganizationRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class OrganizationRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_role github_organization_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role github_organization_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class OrganizationRole extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_role',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.7.3',
+        providerVersion: '6.7.5',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

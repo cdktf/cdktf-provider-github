@@ -1,3 +1,3 @@
 # `github_repository`
 
-Refer to the Terraform Registry for docs: [`github_repository`](https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/repository).
+Refer to the Terraform Registry for docs: [`github_repository`](https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository).

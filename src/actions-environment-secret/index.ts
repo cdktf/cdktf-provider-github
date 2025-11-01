@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret
+// https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ActionsEnvironmentSecretConfig extends cdktf.TerraformMetaArgum
   /**
   * Encrypted value of the secret using the GitHub public key in Base64 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret#encrypted_value ActionsEnvironmentSecret#encrypted_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret#encrypted_value ActionsEnvironmentSecret#encrypted_value}
   */
   readonly encryptedValue?: string;
   /**
   * Name of the environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret#environment ActionsEnvironmentSecret#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret#environment ActionsEnvironmentSecret#environment}
   */
   readonly environment: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret#id ActionsEnvironmentSecret#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret#id ActionsEnvironmentSecret#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface ActionsEnvironmentSecretConfig extends cdktf.TerraformMetaArgum
   /**
   * Plaintext value of the secret to be encrypted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret#plaintext_value ActionsEnvironmentSecret#plaintext_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret#plaintext_value ActionsEnvironmentSecret#plaintext_value}
   */
   readonly plaintextValue?: string;
   /**
   * Name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret#repository ActionsEnvironmentSecret#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret#repository ActionsEnvironmentSecret#repository}
   */
   readonly repository: string;
   /**
   * Name of the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret#secret_name ActionsEnvironmentSecret#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret#secret_name ActionsEnvironmentSecret#secret_name}
   */
   readonly secretName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret github_actions_environment_secret}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret github_actions_environment_secret}
 */
 export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ActionsEnvironmentSecret resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActionsEnvironmentSecret to import
-  * @param importFromId The id of the existing ActionsEnvironmentSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActionsEnvironmentSecret that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActionsEnvironmentSecret to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +80,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/actions_environment_secret github_actions_environment_secret} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/actions_environment_secret github_actions_environment_secret} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class ActionsEnvironmentSecret extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_environment_secret',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.7.3',
+        providerVersion: '6.7.5',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

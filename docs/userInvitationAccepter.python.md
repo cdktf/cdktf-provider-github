@@ -4,7 +4,7 @@
 
 ### UserInvitationAccepter <a name="UserInvitationAccepter" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter github_user_invitation_accepter}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer"></a>
 
@@ -39,7 +39,7 @@ userInvitationAccepter.UserInvitationAccepter(
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer.parameter.allowEmptyId">allow_empty_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow the ID to be unset. |
-| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}. |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepter.Initializer.parameter.invitationId">invitation_id</a></code> | <code>str</code> | ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'. |
 
 ---
@@ -112,7 +112,7 @@ Allow the ID to be unset.
 
 This will result in the resource being skipped when the ID is not set instead of returning an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,7 +133,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
 
 ---
 
@@ -627,7 +627,7 @@ The construct id used in the generated config for the UserInvitationAccepter to 
 
 The id of the existing UserInvitationAccepter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -921,7 +921,7 @@ userInvitationAccepter.UserInvitationAccepterConfig(
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.allowEmptyId">allow_empty_id</a></code> | <code>bool \| cdktf.IResolvable</code> | Allow the ID to be unset. |
-| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}. |
+| <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}. |
 | <code><a href="#@cdktf/provider-github.userInvitationAccepter.UserInvitationAccepterConfig.property.invitationId">invitation_id</a></code> | <code>str</code> | ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'. |
 
 ---
@@ -1008,7 +1008,7 @@ Allow the ID to be unset.
 
 This will result in the resource being skipped when the ID is not set instead of returning an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#allow_empty_id UserInvitationAccepter#allow_empty_id}
 
 ---
 
@@ -1020,7 +1020,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#id UserInvitationAccepter#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1037,7 +1037,7 @@ invitation_id: str
 
 ID of the invitation to accept. Must be set when 'allow_empty_id' is 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_invitation_accepter#invitation_id UserInvitationAccepter#invitation_id}
 
 ---
 

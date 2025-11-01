@@ -4,7 +4,7 @@
 
 ### DataGithubDependabotSecrets <a name="DataGithubDependabotSecrets" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets github_dependabot_secrets}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets github_dependabot_secrets}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer"></a>
 
@@ -36,9 +36,9 @@ DataGithubDependabotSecrets.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.fullName">fullName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.fullName">fullName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecrets.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}.
 
 ---
 
@@ -469,7 +469,7 @@ The construct id used in the generated config for the DataGithubDependabotSecret
 
 The id of the existing DataGithubDependabotSecrets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,9 +751,9 @@ DataGithubDependabotSecretsConfig.builder()
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.fullName">fullName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.fullName">fullName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubDependabotSecrets.DataGithubDependabotSecretsConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}. |
 
 ---
 
@@ -835,7 +835,7 @@ public java.lang.String getFullName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#full_name DataGithubDependabotSecrets#full_name}.
 
 ---
 
@@ -847,7 +847,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#id DataGithubDependabotSecrets#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -862,7 +862,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/data-sources/dependabot_secrets#name DataGithubDependabotSecrets#name}.
 
 ---
 
