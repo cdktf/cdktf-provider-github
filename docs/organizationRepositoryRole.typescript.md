@@ -4,7 +4,7 @@
 
 ### OrganizationRepositoryRole <a name="OrganizationRepositoryRole" id="@cdktf/provider-github.organizationRepositoryRole.OrganizationRepositoryRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_repository_role github_organization_repository_role}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_repository_role github_organization_repository_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRepositoryRole.OrganizationRepositoryRole.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the OrganizationRepositoryRole
 
 The id of the existing OrganizationRepositoryRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_repository_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_repository_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,7 +822,7 @@ const organizationRepositoryRoleConfig: organizationRepositoryRole.OrganizationR
 | <code><a href="#@cdktf/provider-github.organizationRepositoryRole.OrganizationRepositoryRoleConfig.property.name">name</a></code> | <code>string</code> | The name of the organization repository role. |
 | <code><a href="#@cdktf/provider-github.organizationRepositoryRole.OrganizationRepositoryRoleConfig.property.permissions">permissions</a></code> | <code>string[]</code> | The permissions for the organization repository role. |
 | <code><a href="#@cdktf/provider-github.organizationRepositoryRole.OrganizationRepositoryRoleConfig.property.description">description</a></code> | <code>string</code> | The description of the organization repository role. |
-| <code><a href="#@cdktf/provider-github.organizationRepositoryRole.OrganizationRepositoryRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_repository_role#id OrganizationRepositoryRole#id}. |
+| <code><a href="#@cdktf/provider-github.organizationRepositoryRole.OrganizationRepositoryRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_repository_role#id OrganizationRepositoryRole#id}. |
 
 ---
 
@@ -906,7 +906,7 @@ public readonly baseRole: string;
 
 The base role for the organization repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_repository_role#base_role OrganizationRepositoryRole#base_role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_repository_role#base_role OrganizationRepositoryRole#base_role}
 
 ---
 
@@ -920,7 +920,7 @@ public readonly name: string;
 
 The name of the organization repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_repository_role#name OrganizationRepositoryRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_repository_role#name OrganizationRepositoryRole#name}
 
 ---
 
@@ -934,7 +934,7 @@ public readonly permissions: string[];
 
 The permissions for the organization repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_repository_role#permissions OrganizationRepositoryRole#permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_repository_role#permissions OrganizationRepositoryRole#permissions}
 
 ---
 
@@ -948,7 +948,7 @@ public readonly description: string;
 
 The description of the organization repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_repository_role#description OrganizationRepositoryRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_repository_role#description OrganizationRepositoryRole#description}
 
 ---
 
@@ -960,7 +960,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.3/docs/resources/organization_repository_role#id OrganizationRepositoryRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_repository_role#id OrganizationRepositoryRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
