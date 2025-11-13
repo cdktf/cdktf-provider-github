@@ -4,7 +4,7 @@
 
 ### IssueLabel <a name="IssueLabel" id="@cdktf/provider-github.issueLabel.IssueLabel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label github_issue_label}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label github_issue_label}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabel.IssueLabel.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.resetEtag">ResetEtag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -372,6 +373,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetDescription()
 ```
 
+##### `ResetEtag` <a name="ResetEtag" id="@cdktf/provider-github.issueLabel.IssueLabel.resetEtag"></a>
+
+```csharp
+private void ResetEtag()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-github.issueLabel.IssueLabel.resetId"></a>
 
 ```csharp
@@ -481,7 +488,7 @@ The construct id used in the generated config for the IssueLabel to import.
 
 The id of the existing IssueLabel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -511,15 +518,16 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.colorInput">ColorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.etagInput">EtagInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.repositoryInput">RepositoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.color">Color</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabel.property.repository">Repository</a></code> | <code>string</code> | *No description.* |
@@ -668,16 +676,6 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
-##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.issueLabel.IssueLabel.property.etag"></a>
-
-```csharp
-public string Etag { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-github.issueLabel.IssueLabel.property.url"></a>
 
 ```csharp
@@ -702,6 +700,16 @@ public string ColorInput { get; }
 
 ```csharp
 public string DescriptionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EtagInput`<sup>Optional</sup> <a name="EtagInput" id="@cdktf/provider-github.issueLabel.IssueLabel.property.etagInput"></a>
+
+```csharp
+public string EtagInput { get; }
 ```
 
 - *Type:* string
@@ -752,6 +760,16 @@ public string Color { get; }
 
 ```csharp
 public string Description { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.issueLabel.IssueLabel.property.etag"></a>
+
+```csharp
+public string Etag { get; }
 ```
 
 - *Type:* string
@@ -827,6 +845,7 @@ new IssueLabelConfig {
     string Name,
     string Repository,
     string Description = null,
+    string Etag = null,
     string Id = null
 };
 ```
@@ -846,7 +865,8 @@ new IssueLabelConfig {
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.name">Name</a></code> | <code>string</code> | The name of the label. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.repository">Repository</a></code> | <code>string</code> | The GitHub repository. |
 | <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.description">Description</a></code> | <code>string</code> | A short description of the label. |
-| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label#id IssueLabel#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.etag">Etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#etag IssueLabel#etag}. |
+| <code><a href="#@cdktf/provider-github.issueLabel.IssueLabelConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#id IssueLabel#id}. |
 
 ---
 
@@ -930,7 +950,7 @@ public string Color { get; set; }
 
 A 6 character hex code, without the leading '#', identifying the color of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label#color IssueLabel#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#color IssueLabel#color}
 
 ---
 
@@ -944,7 +964,7 @@ public string Name { get; set; }
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label#name IssueLabel#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#name IssueLabel#name}
 
 ---
 
@@ -958,7 +978,7 @@ public string Repository { get; set; }
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label#repository IssueLabel#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#repository IssueLabel#repository}
 
 ---
 
@@ -972,7 +992,19 @@ public string Description { get; set; }
 
 A short description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label#description IssueLabel#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#description IssueLabel#description}
+
+---
+
+##### `Etag`<sup>Optional</sup> <a name="Etag" id="@cdktf/provider-github.issueLabel.IssueLabelConfig.property.etag"></a>
+
+```csharp
+public string Etag { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#etag IssueLabel#etag}.
 
 ---
 
@@ -984,7 +1016,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/issue_label#id IssueLabel#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/issue_label#id IssueLabel#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### OrganizationRuleset <a name="OrganizationRuleset" id="@cdktf/provider-github.organizationRuleset.OrganizationRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset github_organization_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset github_organization_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRuleset.Initializer"></a>
 
@@ -527,7 +527,7 @@ The construct id used in the generated config for the OrganizationRuleset to imp
 
 The id of the existing OrganizationRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -939,7 +939,7 @@ public readonly actorType: string;
 
 The type of actor that can bypass a ruleset. See https://docs.github.com/en/rest/orgs/rules for more information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#actor_type OrganizationRuleset#actor_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#actor_type OrganizationRuleset#actor_type}
 
 ---
 
@@ -955,7 +955,7 @@ When the specified actor can bypass the ruleset.
 
 pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`, `exempt`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#bypass_mode OrganizationRuleset#bypass_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#bypass_mode OrganizationRuleset#bypass_mode}
 
 ---
 
@@ -971,7 +971,7 @@ The ID of the actor that can bypass a ruleset.
 
 When `actor_type` is `OrganizationAdmin`, this should be set to `1`. Some resources such as DeployKey do not have an ID and this should be omitted.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#actor_id OrganizationRuleset#actor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#actor_id OrganizationRuleset#actor_id}
 
 ---
 
@@ -1005,7 +1005,7 @@ public readonly refName: OrganizationRulesetConditionsRefName;
 
 ref_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#ref_name OrganizationRuleset#ref_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#ref_name OrganizationRuleset#ref_name}
 
 ---
 
@@ -1019,7 +1019,7 @@ public readonly repositoryId: number[];
 
 The repository IDs that the ruleset applies to. One of these IDs must match for the condition to pass.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#repository_id OrganizationRuleset#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#repository_id OrganizationRuleset#repository_id}
 
 ---
 
@@ -1033,7 +1033,7 @@ public readonly repositoryName: OrganizationRulesetConditionsRepositoryName;
 
 repository_name block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#repository_name OrganizationRuleset#repository_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#repository_name OrganizationRuleset#repository_name}
 
 ---
 
@@ -1066,7 +1066,7 @@ public readonly exclude: string[];
 
 Array of ref names or patterns to exclude. The condition will not pass if any of these patterns match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#exclude OrganizationRuleset#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#exclude OrganizationRuleset#exclude}
 
 ---
 
@@ -1082,7 +1082,7 @@ Array of ref names or patterns to include.
 
 One of these patterns must match for the condition to pass. Also accepts `~DEFAULT_BRANCH` to include the default branch or `~ALL` to include all branches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#include OrganizationRuleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#include OrganizationRuleset#include}
 
 ---
 
@@ -1116,7 +1116,7 @@ public readonly exclude: string[];
 
 Array of repository names or patterns to exclude. The condition will not pass if any of these patterns match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#exclude OrganizationRuleset#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#exclude OrganizationRuleset#exclude}
 
 ---
 
@@ -1132,7 +1132,7 @@ Array of repository names or patterns to include.
 
 One of these patterns must match for the condition to pass. Also accepts `~ALL` to include all repositories.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#include OrganizationRuleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#include OrganizationRuleset#include}
 
 ---
 
@@ -1146,7 +1146,7 @@ public readonly protected: boolean | IResolvable;
 
 Whether renaming of target repositories is prevented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#protected OrganizationRuleset#protected}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#protected OrganizationRuleset#protected}
 
 ---
 
@@ -1177,7 +1177,7 @@ const organizationRulesetConfig: organizationRuleset.OrganizationRulesetConfig =
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetConfig.property.target">target</a></code> | <code>string</code> | Possible values are `branch`, `tag` and `push`. Note: The `push` target is in beta and is subject to change. |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetConfig.property.bypassActors">bypassActors</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetBypassActors">OrganizationRulesetBypassActors</a>[]</code> | bypass_actors block. |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetConfig.property.conditions">conditions</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetConditions">OrganizationRulesetConditions</a></code> | conditions block. |
-| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#id OrganizationRuleset#id}. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#id OrganizationRuleset#id}. |
 
 ---
 
@@ -1261,7 +1261,7 @@ public readonly enforcement: string;
 
 Possible values for Enforcement are `disabled`, `active`, `evaluate`. Note: `evaluate` is currently only supported for owners of type `organization`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#enforcement OrganizationRuleset#enforcement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#enforcement OrganizationRuleset#enforcement}
 
 ---
 
@@ -1275,7 +1275,7 @@ public readonly name: string;
 
 The name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
 
 ---
 
@@ -1289,7 +1289,7 @@ public readonly rules: OrganizationRulesetRules;
 
 rules block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#rules OrganizationRuleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#rules OrganizationRuleset#rules}
 
 ---
 
@@ -1303,7 +1303,7 @@ public readonly target: string;
 
 Possible values are `branch`, `tag` and `push`. Note: The `push` target is in beta and is subject to change.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#target OrganizationRuleset#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#target OrganizationRuleset#target}
 
 ---
 
@@ -1317,7 +1317,7 @@ public readonly bypassActors: IResolvable | OrganizationRulesetBypassActors[];
 
 bypass_actors block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#bypass_actors OrganizationRuleset#bypass_actors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#bypass_actors OrganizationRuleset#bypass_actors}
 
 ---
 
@@ -1331,7 +1331,7 @@ public readonly conditions: OrganizationRulesetConditions;
 
 conditions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#conditions OrganizationRuleset#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#conditions OrganizationRuleset#conditions}
 
 ---
 
@@ -1343,7 +1343,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#id OrganizationRuleset#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#id OrganizationRuleset#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1370,6 +1370,10 @@ const organizationRulesetRules: organizationRuleset.OrganizationRulesetRules = {
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.committerEmailPattern">committerEmailPattern</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitterEmailPattern">OrganizationRulesetRulesCommitterEmailPattern</a></code> | committer_email_pattern block. |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.creation">creation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Only allow users with bypass permission to create matching refs. |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.deletion">deletion</a></code> | <code>boolean \| cdktf.IResolvable</code> | Only allow users with bypass permissions to delete matching refs. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.fileExtensionRestriction">fileExtensionRestriction</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction">OrganizationRulesetRulesFileExtensionRestriction</a></code> | file_extension_restriction block. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.filePathRestriction">filePathRestriction</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction">OrganizationRulesetRulesFilePathRestriction</a></code> | file_path_restriction block. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.maxFilePathLength">maxFilePathLength</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength">OrganizationRulesetRulesMaxFilePathLength</a></code> | max_file_path_length block. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.maxFileSize">maxFileSize</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize">OrganizationRulesetRulesMaxFileSize</a></code> | max_file_size block. |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.nonFastForward">nonFastForward</a></code> | <code>boolean \| cdktf.IResolvable</code> | Prevent users with push access from force pushing to branches. |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.pullRequest">pullRequest</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesPullRequest">OrganizationRulesetRulesPullRequest</a></code> | pull_request block. |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.requiredCodeScanning">requiredCodeScanning</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredCodeScanning">OrganizationRulesetRulesRequiredCodeScanning</a></code> | required_code_scanning block. |
@@ -1392,7 +1396,7 @@ public readonly branchNamePattern: OrganizationRulesetRulesBranchNamePattern;
 
 branch_name_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#branch_name_pattern OrganizationRuleset#branch_name_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#branch_name_pattern OrganizationRuleset#branch_name_pattern}
 
 ---
 
@@ -1406,7 +1410,7 @@ public readonly commitAuthorEmailPattern: OrganizationRulesetRulesCommitAuthorEm
 
 commit_author_email_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#commit_author_email_pattern OrganizationRuleset#commit_author_email_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#commit_author_email_pattern OrganizationRuleset#commit_author_email_pattern}
 
 ---
 
@@ -1420,7 +1424,7 @@ public readonly commitMessagePattern: OrganizationRulesetRulesCommitMessagePatte
 
 commit_message_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#commit_message_pattern OrganizationRuleset#commit_message_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#commit_message_pattern OrganizationRuleset#commit_message_pattern}
 
 ---
 
@@ -1434,7 +1438,7 @@ public readonly committerEmailPattern: OrganizationRulesetRulesCommitterEmailPat
 
 committer_email_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#committer_email_pattern OrganizationRuleset#committer_email_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#committer_email_pattern OrganizationRuleset#committer_email_pattern}
 
 ---
 
@@ -1448,7 +1452,7 @@ public readonly creation: boolean | IResolvable;
 
 Only allow users with bypass permission to create matching refs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#creation OrganizationRuleset#creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#creation OrganizationRuleset#creation}
 
 ---
 
@@ -1462,7 +1466,63 @@ public readonly deletion: boolean | IResolvable;
 
 Only allow users with bypass permissions to delete matching refs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#deletion OrganizationRuleset#deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#deletion OrganizationRuleset#deletion}
+
+---
+
+##### `fileExtensionRestriction`<sup>Optional</sup> <a name="fileExtensionRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.fileExtensionRestriction"></a>
+
+```typescript
+public readonly fileExtensionRestriction: OrganizationRulesetRulesFileExtensionRestriction;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction">OrganizationRulesetRulesFileExtensionRestriction</a>
+
+file_extension_restriction block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#file_extension_restriction OrganizationRuleset#file_extension_restriction}
+
+---
+
+##### `filePathRestriction`<sup>Optional</sup> <a name="filePathRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.filePathRestriction"></a>
+
+```typescript
+public readonly filePathRestriction: OrganizationRulesetRulesFilePathRestriction;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction">OrganizationRulesetRulesFilePathRestriction</a>
+
+file_path_restriction block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#file_path_restriction OrganizationRuleset#file_path_restriction}
+
+---
+
+##### `maxFilePathLength`<sup>Optional</sup> <a name="maxFilePathLength" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.maxFilePathLength"></a>
+
+```typescript
+public readonly maxFilePathLength: OrganizationRulesetRulesMaxFilePathLength;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength">OrganizationRulesetRulesMaxFilePathLength</a>
+
+max_file_path_length block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#max_file_path_length OrganizationRuleset#max_file_path_length}
+
+---
+
+##### `maxFileSize`<sup>Optional</sup> <a name="maxFileSize" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRules.property.maxFileSize"></a>
+
+```typescript
+public readonly maxFileSize: OrganizationRulesetRulesMaxFileSize;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize">OrganizationRulesetRulesMaxFileSize</a>
+
+max_file_size block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#max_file_size OrganizationRuleset#max_file_size}
 
 ---
 
@@ -1476,7 +1536,7 @@ public readonly nonFastForward: boolean | IResolvable;
 
 Prevent users with push access from force pushing to branches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#non_fast_forward OrganizationRuleset#non_fast_forward}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#non_fast_forward OrganizationRuleset#non_fast_forward}
 
 ---
 
@@ -1490,7 +1550,7 @@ public readonly pullRequest: OrganizationRulesetRulesPullRequest;
 
 pull_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#pull_request OrganizationRuleset#pull_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#pull_request OrganizationRuleset#pull_request}
 
 ---
 
@@ -1504,7 +1564,7 @@ public readonly requiredCodeScanning: OrganizationRulesetRulesRequiredCodeScanni
 
 required_code_scanning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_code_scanning OrganizationRuleset#required_code_scanning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_code_scanning OrganizationRuleset#required_code_scanning}
 
 ---
 
@@ -1518,7 +1578,7 @@ public readonly requiredLinearHistory: boolean | IResolvable;
 
 Prevent merge commits from being pushed to matching branches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_linear_history OrganizationRuleset#required_linear_history}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_linear_history OrganizationRuleset#required_linear_history}
 
 ---
 
@@ -1532,7 +1592,7 @@ public readonly requiredSignatures: boolean | IResolvable;
 
 Commits pushed to matching branches must have verified signatures.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_signatures OrganizationRuleset#required_signatures}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_signatures OrganizationRuleset#required_signatures}
 
 ---
 
@@ -1546,7 +1606,7 @@ public readonly requiredStatusChecks: OrganizationRulesetRulesRequiredStatusChec
 
 required_status_checks block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_status_checks OrganizationRuleset#required_status_checks}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_status_checks OrganizationRuleset#required_status_checks}
 
 ---
 
@@ -1560,7 +1620,7 @@ public readonly requiredWorkflows: OrganizationRulesetRulesRequiredWorkflows;
 
 required_workflows block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_workflows OrganizationRuleset#required_workflows}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_workflows OrganizationRuleset#required_workflows}
 
 ---
 
@@ -1574,7 +1634,7 @@ public readonly tagNamePattern: OrganizationRulesetRulesTagNamePattern;
 
 tag_name_pattern block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#tag_name_pattern OrganizationRuleset#tag_name_pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#tag_name_pattern OrganizationRuleset#tag_name_pattern}
 
 ---
 
@@ -1588,7 +1648,7 @@ public readonly update: boolean | IResolvable;
 
 Only allow users with bypass permission to update matching refs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#update OrganizationRuleset#update}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#update OrganizationRuleset#update}
 
 ---
 
@@ -1623,7 +1683,7 @@ public readonly operator: string;
 
 The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
 
 ---
 
@@ -1637,7 +1697,7 @@ public readonly pattern: string;
 
 The pattern to match with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
 
 ---
 
@@ -1651,7 +1711,7 @@ public readonly name: string;
 
 How this rule will appear to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
 
 ---
 
@@ -1665,7 +1725,7 @@ public readonly negate: boolean | IResolvable;
 
 If true, the rule will fail if the pattern matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
 
 ---
 
@@ -1700,7 +1760,7 @@ public readonly operator: string;
 
 The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
 
 ---
 
@@ -1714,7 +1774,7 @@ public readonly pattern: string;
 
 The pattern to match with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
 
 ---
 
@@ -1728,7 +1788,7 @@ public readonly name: string;
 
 How this rule will appear to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
 
 ---
 
@@ -1742,7 +1802,7 @@ public readonly negate: boolean | IResolvable;
 
 If true, the rule will fail if the pattern matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
 
 ---
 
@@ -1777,7 +1837,7 @@ public readonly operator: string;
 
 The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
 
 ---
 
@@ -1791,7 +1851,7 @@ public readonly pattern: string;
 
 The pattern to match with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
 
 ---
 
@@ -1805,7 +1865,7 @@ public readonly name: string;
 
 How this rule will appear to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
 
 ---
 
@@ -1819,7 +1879,7 @@ public readonly negate: boolean | IResolvable;
 
 If true, the rule will fail if the pattern matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
 
 ---
 
@@ -1854,7 +1914,7 @@ public readonly operator: string;
 
 The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
 
 ---
 
@@ -1868,7 +1928,7 @@ public readonly pattern: string;
 
 The pattern to match with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
 
 ---
 
@@ -1882,7 +1942,7 @@ public readonly name: string;
 
 How this rule will appear to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
 
 ---
 
@@ -1896,7 +1956,135 @@ public readonly negate: boolean | IResolvable;
 
 If true, the rule will fail if the pattern matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+
+---
+
+### OrganizationRulesetRulesFileExtensionRestriction <a name="OrganizationRulesetRulesFileExtensionRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction.Initializer"></a>
+
+```typescript
+import { organizationRuleset } from '@cdktf/provider-github'
+
+const organizationRulesetRulesFileExtensionRestriction: organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction.property.restrictedFileExtensions">restrictedFileExtensions</a></code> | <code>string[]</code> | The file extensions that are restricted from being pushed to the commit graph. |
+
+---
+
+##### `restrictedFileExtensions`<sup>Required</sup> <a name="restrictedFileExtensions" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction.property.restrictedFileExtensions"></a>
+
+```typescript
+public readonly restrictedFileExtensions: string[];
+```
+
+- *Type:* string[]
+
+The file extensions that are restricted from being pushed to the commit graph.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#restricted_file_extensions OrganizationRuleset#restricted_file_extensions}
+
+---
+
+### OrganizationRulesetRulesFilePathRestriction <a name="OrganizationRulesetRulesFilePathRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction.Initializer"></a>
+
+```typescript
+import { organizationRuleset } from '@cdktf/provider-github'
+
+const organizationRulesetRulesFilePathRestriction: organizationRuleset.OrganizationRulesetRulesFilePathRestriction = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction.property.restrictedFilePaths">restrictedFilePaths</a></code> | <code>string[]</code> | The file paths that are restricted from being pushed to the commit graph. |
+
+---
+
+##### `restrictedFilePaths`<sup>Required</sup> <a name="restrictedFilePaths" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction.property.restrictedFilePaths"></a>
+
+```typescript
+public readonly restrictedFilePaths: string[];
+```
+
+- *Type:* string[]
+
+The file paths that are restricted from being pushed to the commit graph.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#restricted_file_paths OrganizationRuleset#restricted_file_paths}
+
+---
+
+### OrganizationRulesetRulesMaxFilePathLength <a name="OrganizationRulesetRulesMaxFilePathLength" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength.Initializer"></a>
+
+```typescript
+import { organizationRuleset } from '@cdktf/provider-github'
+
+const organizationRulesetRulesMaxFilePathLength: organizationRuleset.OrganizationRulesetRulesMaxFilePathLength = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength.property.maxFilePathLength">maxFilePathLength</a></code> | <code>number</code> | The maximum allowed length of a file path. |
+
+---
+
+##### `maxFilePathLength`<sup>Required</sup> <a name="maxFilePathLength" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength.property.maxFilePathLength"></a>
+
+```typescript
+public readonly maxFilePathLength: number;
+```
+
+- *Type:* number
+
+The maximum allowed length of a file path.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#max_file_path_length OrganizationRuleset#max_file_path_length}
+
+---
+
+### OrganizationRulesetRulesMaxFileSize <a name="OrganizationRulesetRulesMaxFileSize" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize.Initializer"></a>
+
+```typescript
+import { organizationRuleset } from '@cdktf/provider-github'
+
+const organizationRulesetRulesMaxFileSize: organizationRuleset.OrganizationRulesetRulesMaxFileSize = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize.property.maxFileSize">maxFileSize</a></code> | <code>number</code> | The maximum allowed size of a file in bytes. |
+
+---
+
+##### `maxFileSize`<sup>Required</sup> <a name="maxFileSize" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize.property.maxFileSize"></a>
+
+```typescript
+public readonly maxFileSize: number;
+```
+
+- *Type:* number
+
+The maximum allowed size of a file in bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#max_file_size OrganizationRuleset#max_file_size}
 
 ---
 
@@ -1932,7 +2120,7 @@ public readonly dismissStaleReviewsOnPush: boolean | IResolvable;
 
 New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#dismiss_stale_reviews_on_push OrganizationRuleset#dismiss_stale_reviews_on_push}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#dismiss_stale_reviews_on_push OrganizationRuleset#dismiss_stale_reviews_on_push}
 
 ---
 
@@ -1946,7 +2134,7 @@ public readonly requireCodeOwnerReview: boolean | IResolvable;
 
 Require an approving review in pull requests that modify files that have a designated code owner. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#require_code_owner_review OrganizationRuleset#require_code_owner_review}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#require_code_owner_review OrganizationRuleset#require_code_owner_review}
 
 ---
 
@@ -1960,7 +2148,7 @@ public readonly requiredApprovingReviewCount: number;
 
 The number of approving reviews that are required before a pull request can be merged. Defaults to `0`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_approving_review_count OrganizationRuleset#required_approving_review_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_approving_review_count OrganizationRuleset#required_approving_review_count}
 
 ---
 
@@ -1974,7 +2162,7 @@ public readonly requiredReviewThreadResolution: boolean | IResolvable;
 
 All conversations on code must be resolved before a pull request can be merged. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_review_thread_resolution OrganizationRuleset#required_review_thread_resolution}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_review_thread_resolution OrganizationRuleset#required_review_thread_resolution}
 
 ---
 
@@ -1990,7 +2178,7 @@ Whether the most recent reviewable push must be approved by someone other than t
 
 Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#require_last_push_approval OrganizationRuleset#require_last_push_approval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#require_last_push_approval OrganizationRuleset#require_last_push_approval}
 
 ---
 
@@ -2022,7 +2210,7 @@ public readonly requiredCodeScanningTool: IResolvable | OrganizationRulesetRules
 
 required_code_scanning_tool block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_code_scanning_tool OrganizationRuleset#required_code_scanning_tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_code_scanning_tool OrganizationRuleset#required_code_scanning_tool}
 
 ---
 
@@ -2058,7 +2246,7 @@ The severity level at which code scanning results that raise alerts block a refe
 
 Can be one of: `none`, `errors`, `errors_and_warnings`, `all`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#alerts_threshold OrganizationRuleset#alerts_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#alerts_threshold OrganizationRuleset#alerts_threshold}
 
 ---
 
@@ -2074,7 +2262,7 @@ The severity level at which code scanning results that raise security alerts blo
 
 Can be one of: `none`, `critical`, `high_or_higher`, `medium_or_higher`, `all`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#security_alerts_threshold OrganizationRuleset#security_alerts_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#security_alerts_threshold OrganizationRuleset#security_alerts_threshold}
 
 ---
 
@@ -2088,7 +2276,7 @@ public readonly tool: string;
 
 The name of a code scanning tool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#tool OrganizationRuleset#tool}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#tool OrganizationRuleset#tool}
 
 ---
 
@@ -2122,7 +2310,7 @@ public readonly requiredCheck: IResolvable | OrganizationRulesetRulesRequiredSta
 
 required_check block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_check OrganizationRuleset#required_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_check OrganizationRuleset#required_check}
 
 ---
 
@@ -2136,7 +2324,7 @@ public readonly doNotEnforceOnCreate: boolean | IResolvable;
 
 Allow repositories and branches to be created if a check would otherwise prohibit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
 
 ---
 
@@ -2152,7 +2340,7 @@ Whether pull requests targeting a matching branch must be tested with the latest
 
 This setting will not take effect unless at least one status check is enabled. Defaults to `false`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#strict_required_status_checks_policy OrganizationRuleset#strict_required_status_checks_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#strict_required_status_checks_policy OrganizationRuleset#strict_required_status_checks_policy}
 
 ---
 
@@ -2185,7 +2373,7 @@ public readonly context: string;
 
 The status check context name that must be present on the commit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#context OrganizationRuleset#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#context OrganizationRuleset#context}
 
 ---
 
@@ -2199,7 +2387,7 @@ public readonly integrationId: number;
 
 The optional integration ID that this status check must originate from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#integration_id OrganizationRuleset#integration_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#integration_id OrganizationRuleset#integration_id}
 
 ---
 
@@ -2232,7 +2420,7 @@ public readonly requiredWorkflow: IResolvable | OrganizationRulesetRulesRequired
 
 required_workflow block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#required_workflow OrganizationRuleset#required_workflow}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#required_workflow OrganizationRuleset#required_workflow}
 
 ---
 
@@ -2246,7 +2434,7 @@ public readonly doNotEnforceOnCreate: boolean | IResolvable;
 
 Allow repositories and branches to be created if a check would otherwise prohibit it.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
 
 ---
 
@@ -2280,7 +2468,7 @@ public readonly path: string;
 
 The path to the workflow YAML definition file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#path OrganizationRuleset#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#path OrganizationRuleset#path}
 
 ---
 
@@ -2294,7 +2482,7 @@ public readonly repositoryId: number;
 
 The repository in which the workflow is defined.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#repository_id OrganizationRuleset#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#repository_id OrganizationRuleset#repository_id}
 
 ---
 
@@ -2308,7 +2496,7 @@ public readonly ref: string;
 
 The ref (branch or tag) of the workflow file to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#ref OrganizationRuleset#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#ref OrganizationRuleset#ref}
 
 ---
 
@@ -2343,7 +2531,7 @@ public readonly operator: string;
 
 The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
 
 ---
 
@@ -2357,7 +2545,7 @@ public readonly pattern: string;
 
 The pattern to match with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
 
 ---
 
@@ -2371,7 +2559,7 @@ public readonly name: string;
 
 How this rule will appear to users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
 
 ---
 
@@ -2385,7 +2573,7 @@ public readonly negate: boolean | IResolvable;
 
 If true, the rule will fail if the pattern matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
 
 ---
 
@@ -5265,6 +5453,1090 @@ public readonly internalValue: OrganizationRulesetRulesCommitterEmailPattern;
 ---
 
 
+### OrganizationRulesetRulesFileExtensionRestrictionOutputReference <a name="OrganizationRulesetRulesFileExtensionRestrictionOutputReference" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.Initializer"></a>
+
+```typescript
+import { organizationRuleset } from '@cdktf/provider-github'
+
+new organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.restrictedFileExtensionsInput">restrictedFileExtensionsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.restrictedFileExtensions">restrictedFileExtensions</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction">OrganizationRulesetRulesFileExtensionRestriction</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `restrictedFileExtensionsInput`<sup>Optional</sup> <a name="restrictedFileExtensionsInput" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.restrictedFileExtensionsInput"></a>
+
+```typescript
+public readonly restrictedFileExtensionsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `restrictedFileExtensions`<sup>Required</sup> <a name="restrictedFileExtensions" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.restrictedFileExtensions"></a>
+
+```typescript
+public readonly restrictedFileExtensions: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: OrganizationRulesetRulesFileExtensionRestriction;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction">OrganizationRulesetRulesFileExtensionRestriction</a>
+
+---
+
+
+### OrganizationRulesetRulesFilePathRestrictionOutputReference <a name="OrganizationRulesetRulesFilePathRestrictionOutputReference" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.Initializer"></a>
+
+```typescript
+import { organizationRuleset } from '@cdktf/provider-github'
+
+new organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.restrictedFilePathsInput">restrictedFilePathsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.restrictedFilePaths">restrictedFilePaths</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction">OrganizationRulesetRulesFilePathRestriction</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `restrictedFilePathsInput`<sup>Optional</sup> <a name="restrictedFilePathsInput" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.restrictedFilePathsInput"></a>
+
+```typescript
+public readonly restrictedFilePathsInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `restrictedFilePaths`<sup>Required</sup> <a name="restrictedFilePaths" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.restrictedFilePaths"></a>
+
+```typescript
+public readonly restrictedFilePaths: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: OrganizationRulesetRulesFilePathRestriction;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction">OrganizationRulesetRulesFilePathRestriction</a>
+
+---
+
+
+### OrganizationRulesetRulesMaxFilePathLengthOutputReference <a name="OrganizationRulesetRulesMaxFilePathLengthOutputReference" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.Initializer"></a>
+
+```typescript
+import { organizationRuleset } from '@cdktf/provider-github'
+
+new organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.maxFilePathLengthInput">maxFilePathLengthInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.maxFilePathLength">maxFilePathLength</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength">OrganizationRulesetRulesMaxFilePathLength</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `maxFilePathLengthInput`<sup>Optional</sup> <a name="maxFilePathLengthInput" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.maxFilePathLengthInput"></a>
+
+```typescript
+public readonly maxFilePathLengthInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxFilePathLength`<sup>Required</sup> <a name="maxFilePathLength" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.maxFilePathLength"></a>
+
+```typescript
+public readonly maxFilePathLength: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: OrganizationRulesetRulesMaxFilePathLength;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength">OrganizationRulesetRulesMaxFilePathLength</a>
+
+---
+
+
+### OrganizationRulesetRulesMaxFileSizeOutputReference <a name="OrganizationRulesetRulesMaxFileSizeOutputReference" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.Initializer"></a>
+
+```typescript
+import { organizationRuleset } from '@cdktf/provider-github'
+
+new organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktf.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.maxFileSizeInput">maxFileSizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.maxFileSize">maxFileSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize">OrganizationRulesetRulesMaxFileSize</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `maxFileSizeInput`<sup>Optional</sup> <a name="maxFileSizeInput" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.maxFileSizeInput"></a>
+
+```typescript
+public readonly maxFileSizeInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `maxFileSize`<sup>Required</sup> <a name="maxFileSize" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.maxFileSize"></a>
+
+```typescript
+public readonly maxFileSize: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: OrganizationRulesetRulesMaxFileSize;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize">OrganizationRulesetRulesMaxFileSize</a>
+
+---
+
+
 ### OrganizationRulesetRulesOutputReference <a name="OrganizationRulesetRulesOutputReference" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.Initializer"></a>
@@ -5319,6 +6591,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putCommitAuthorEmailPattern">putCommitAuthorEmailPattern</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putCommitMessagePattern">putCommitMessagePattern</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putCommitterEmailPattern">putCommitterEmailPattern</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putFileExtensionRestriction">putFileExtensionRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putFilePathRestriction">putFilePathRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putMaxFilePathLength">putMaxFilePathLength</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putMaxFileSize">putMaxFileSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putPullRequest">putPullRequest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putRequiredCodeScanning">putRequiredCodeScanning</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putRequiredStatusChecks">putRequiredStatusChecks</a></code> | *No description.* |
@@ -5330,6 +6606,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetCommitterEmailPattern">resetCommitterEmailPattern</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetCreation">resetCreation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetDeletion">resetDeletion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetFileExtensionRestriction">resetFileExtensionRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetFilePathRestriction">resetFilePathRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetMaxFilePathLength">resetMaxFilePathLength</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetMaxFileSize">resetMaxFileSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetNonFastForward">resetNonFastForward</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetPullRequest">resetPullRequest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetRequiredCodeScanning">resetRequiredCodeScanning</a></code> | *No description.* |
@@ -5540,6 +6820,54 @@ public putCommitterEmailPattern(value: OrganizationRulesetRulesCommitterEmailPat
 
 ---
 
+##### `putFileExtensionRestriction` <a name="putFileExtensionRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putFileExtensionRestriction"></a>
+
+```typescript
+public putFileExtensionRestriction(value: OrganizationRulesetRulesFileExtensionRestriction): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putFileExtensionRestriction.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction">OrganizationRulesetRulesFileExtensionRestriction</a>
+
+---
+
+##### `putFilePathRestriction` <a name="putFilePathRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putFilePathRestriction"></a>
+
+```typescript
+public putFilePathRestriction(value: OrganizationRulesetRulesFilePathRestriction): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putFilePathRestriction.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction">OrganizationRulesetRulesFilePathRestriction</a>
+
+---
+
+##### `putMaxFilePathLength` <a name="putMaxFilePathLength" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putMaxFilePathLength"></a>
+
+```typescript
+public putMaxFilePathLength(value: OrganizationRulesetRulesMaxFilePathLength): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putMaxFilePathLength.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength">OrganizationRulesetRulesMaxFilePathLength</a>
+
+---
+
+##### `putMaxFileSize` <a name="putMaxFileSize" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putMaxFileSize"></a>
+
+```typescript
+public putMaxFileSize(value: OrganizationRulesetRulesMaxFileSize): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putMaxFileSize.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize">OrganizationRulesetRulesMaxFileSize</a>
+
+---
+
 ##### `putPullRequest` <a name="putPullRequest" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.putPullRequest"></a>
 
 ```typescript
@@ -5636,6 +6964,30 @@ public resetCreation(): void
 public resetDeletion(): void
 ```
 
+##### `resetFileExtensionRestriction` <a name="resetFileExtensionRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetFileExtensionRestriction"></a>
+
+```typescript
+public resetFileExtensionRestriction(): void
+```
+
+##### `resetFilePathRestriction` <a name="resetFilePathRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetFilePathRestriction"></a>
+
+```typescript
+public resetFilePathRestriction(): void
+```
+
+##### `resetMaxFilePathLength` <a name="resetMaxFilePathLength" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetMaxFilePathLength"></a>
+
+```typescript
+public resetMaxFilePathLength(): void
+```
+
+##### `resetMaxFileSize` <a name="resetMaxFileSize" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetMaxFileSize"></a>
+
+```typescript
+public resetMaxFileSize(): void
+```
+
 ##### `resetNonFastForward` <a name="resetNonFastForward" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.resetNonFastForward"></a>
 
 ```typescript
@@ -5701,6 +7053,10 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.commitAuthorEmailPattern">commitAuthorEmailPattern</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitAuthorEmailPatternOutputReference">OrganizationRulesetRulesCommitAuthorEmailPatternOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.commitMessagePattern">commitMessagePattern</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitMessagePatternOutputReference">OrganizationRulesetRulesCommitMessagePatternOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.committerEmailPattern">committerEmailPattern</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitterEmailPatternOutputReference">OrganizationRulesetRulesCommitterEmailPatternOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.fileExtensionRestriction">fileExtensionRestriction</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference">OrganizationRulesetRulesFileExtensionRestrictionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.filePathRestriction">filePathRestriction</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference">OrganizationRulesetRulesFilePathRestrictionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.maxFilePathLength">maxFilePathLength</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference">OrganizationRulesetRulesMaxFilePathLengthOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.maxFileSize">maxFileSize</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference">OrganizationRulesetRulesMaxFileSizeOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.pullRequest">pullRequest</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesPullRequestOutputReference">OrganizationRulesetRulesPullRequestOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.requiredCodeScanning">requiredCodeScanning</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredCodeScanningOutputReference">OrganizationRulesetRulesRequiredCodeScanningOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.requiredStatusChecks">requiredStatusChecks</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredStatusChecksOutputReference">OrganizationRulesetRulesRequiredStatusChecksOutputReference</a></code> | *No description.* |
@@ -5712,6 +7068,10 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.committerEmailPatternInput">committerEmailPatternInput</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitterEmailPattern">OrganizationRulesetRulesCommitterEmailPattern</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.creationInput">creationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.deletionInput">deletionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.fileExtensionRestrictionInput">fileExtensionRestrictionInput</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction">OrganizationRulesetRulesFileExtensionRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.filePathRestrictionInput">filePathRestrictionInput</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction">OrganizationRulesetRulesFilePathRestriction</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.maxFilePathLengthInput">maxFilePathLengthInput</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength">OrganizationRulesetRulesMaxFilePathLength</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.maxFileSizeInput">maxFileSizeInput</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize">OrganizationRulesetRulesMaxFileSize</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.nonFastForwardInput">nonFastForwardInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.pullRequestInput">pullRequestInput</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesPullRequest">OrganizationRulesetRulesPullRequest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.requiredCodeScanningInput">requiredCodeScanningInput</a></code> | <code><a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesRequiredCodeScanning">OrganizationRulesetRulesRequiredCodeScanning</a></code> | *No description.* |
@@ -5792,6 +7152,46 @@ public readonly committerEmailPattern: OrganizationRulesetRulesCommitterEmailPat
 ```
 
 - *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesCommitterEmailPatternOutputReference">OrganizationRulesetRulesCommitterEmailPatternOutputReference</a>
+
+---
+
+##### `fileExtensionRestriction`<sup>Required</sup> <a name="fileExtensionRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.fileExtensionRestriction"></a>
+
+```typescript
+public readonly fileExtensionRestriction: OrganizationRulesetRulesFileExtensionRestrictionOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestrictionOutputReference">OrganizationRulesetRulesFileExtensionRestrictionOutputReference</a>
+
+---
+
+##### `filePathRestriction`<sup>Required</sup> <a name="filePathRestriction" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.filePathRestriction"></a>
+
+```typescript
+public readonly filePathRestriction: OrganizationRulesetRulesFilePathRestrictionOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestrictionOutputReference">OrganizationRulesetRulesFilePathRestrictionOutputReference</a>
+
+---
+
+##### `maxFilePathLength`<sup>Required</sup> <a name="maxFilePathLength" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.maxFilePathLength"></a>
+
+```typescript
+public readonly maxFilePathLength: OrganizationRulesetRulesMaxFilePathLengthOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLengthOutputReference">OrganizationRulesetRulesMaxFilePathLengthOutputReference</a>
+
+---
+
+##### `maxFileSize`<sup>Required</sup> <a name="maxFileSize" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.maxFileSize"></a>
+
+```typescript
+public readonly maxFileSize: OrganizationRulesetRulesMaxFileSizeOutputReference;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSizeOutputReference">OrganizationRulesetRulesMaxFileSizeOutputReference</a>
 
 ---
 
@@ -5902,6 +7302,46 @@ public readonly deletionInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
+
+---
+
+##### `fileExtensionRestrictionInput`<sup>Optional</sup> <a name="fileExtensionRestrictionInput" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.fileExtensionRestrictionInput"></a>
+
+```typescript
+public readonly fileExtensionRestrictionInput: OrganizationRulesetRulesFileExtensionRestriction;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFileExtensionRestriction">OrganizationRulesetRulesFileExtensionRestriction</a>
+
+---
+
+##### `filePathRestrictionInput`<sup>Optional</sup> <a name="filePathRestrictionInput" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.filePathRestrictionInput"></a>
+
+```typescript
+public readonly filePathRestrictionInput: OrganizationRulesetRulesFilePathRestriction;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesFilePathRestriction">OrganizationRulesetRulesFilePathRestriction</a>
+
+---
+
+##### `maxFilePathLengthInput`<sup>Optional</sup> <a name="maxFilePathLengthInput" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.maxFilePathLengthInput"></a>
+
+```typescript
+public readonly maxFilePathLengthInput: OrganizationRulesetRulesMaxFilePathLength;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFilePathLength">OrganizationRulesetRulesMaxFilePathLength</a>
+
+---
+
+##### `maxFileSizeInput`<sup>Optional</sup> <a name="maxFileSizeInput" id="@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesOutputReference.property.maxFileSizeInput"></a>
+
+```typescript
+public readonly maxFileSizeInput: OrganizationRulesetRulesMaxFileSize;
+```
+
+- *Type:* <a href="#@cdktf/provider-github.organizationRuleset.OrganizationRulesetRulesMaxFileSize">OrganizationRulesetRulesMaxFileSize</a>
 
 ---
 

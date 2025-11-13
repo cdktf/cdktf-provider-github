@@ -4,7 +4,7 @@
 
 ### RepositoryWebhook <a name="RepositoryWebhook" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook github_repository_webhook}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook github_repository_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.putConfiguration">PutConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.resetActive">ResetActive</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.resetConfiguration">ResetConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.resetEtag">ResetEtag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -392,6 +393,12 @@ func ResetActive()
 func ResetConfiguration()
 ```
 
+##### `ResetEtag` <a name="ResetEtag" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.resetEtag"></a>
+
+```go
+func ResetEtag()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.resetId"></a>
 
 ```go
@@ -501,7 +508,7 @@ The construct id used in the generated config for the RepositoryWebhook to impor
 
 The id of the existing RepositoryWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -532,14 +539,15 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfigurationOutputReference">RepositoryWebhookConfigurationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.url">Url</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.activeInput">ActiveInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.configurationInput">ConfigurationInput</a></code> | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfiguration">RepositoryWebhookConfiguration</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.etagInput">EtagInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.eventsInput">EventsInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.repositoryInput">RepositoryInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.active">Active</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.events">Events</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.repository">Repository</a></code> | <code>*string</code> | *No description.* |
@@ -698,16 +706,6 @@ func Configuration() RepositoryWebhookConfigurationOutputReference
 
 ---
 
-##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.etag"></a>
-
-```go
-func Etag() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.url"></a>
 
 ```go
@@ -735,6 +733,16 @@ func ConfigurationInput() RepositoryWebhookConfiguration
 ```
 
 - *Type:* <a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfiguration">RepositoryWebhookConfiguration</a>
+
+---
+
+##### `EtagInput`<sup>Optional</sup> <a name="EtagInput" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.etagInput"></a>
+
+```go
+func EtagInput() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -775,6 +783,16 @@ func Active() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhook.property.etag"></a>
+
+```go
+func Etag() *string
+```
+
+- *Type:* *string
 
 ---
 
@@ -847,6 +865,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 	Repository: *string,
 	Active: interface{},
 	Configuration: github.com/cdktf/cdktf-provider-github-go/github/v15.repositoryWebhook.RepositoryWebhookConfiguration,
+	Etag: *string,
 	Id: *string,
 }
 ```
@@ -866,7 +885,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositorywebhook"
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.repository">Repository</a></code> | <code>*string</code> | The repository name of the webhook, not including the organization, which will be inferred. |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.active">Active</a></code> | <code>interface{}</code> | Indicate if the webhook should receive events. Defaults to 'true'. |
 | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.configuration">Configuration</a></code> | <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfiguration">RepositoryWebhookConfiguration</a></code> | configuration block. |
-| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#id RepositoryWebhook#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.etag">Etag</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#etag RepositoryWebhook#etag}. |
+| <code><a href="#@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#id RepositoryWebhook#id}. |
 
 ---
 
@@ -950,7 +970,7 @@ Events *[]*string
 
 A list of events which should trigger the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#events RepositoryWebhook#events}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#events RepositoryWebhook#events}
 
 ---
 
@@ -964,7 +984,7 @@ Repository *string
 
 The repository name of the webhook, not including the organization, which will be inferred.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#repository RepositoryWebhook#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#repository RepositoryWebhook#repository}
 
 ---
 
@@ -978,7 +998,7 @@ Active interface{}
 
 Indicate if the webhook should receive events. Defaults to 'true'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#active RepositoryWebhook#active}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#active RepositoryWebhook#active}
 
 ---
 
@@ -992,7 +1012,19 @@ Configuration RepositoryWebhookConfiguration
 
 configuration block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#configuration RepositoryWebhook#configuration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#configuration RepositoryWebhook#configuration}
+
+---
+
+##### `Etag`<sup>Optional</sup> <a name="Etag" id="@cdktf/provider-github.repositoryWebhook.RepositoryWebhookConfig.property.etag"></a>
+
+```go
+Etag *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#etag RepositoryWebhook#etag}.
 
 ---
 
@@ -1004,7 +1036,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#id RepositoryWebhook#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#id RepositoryWebhook#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1047,7 +1079,7 @@ Url *string
 
 The URL of the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#url RepositoryWebhook#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#url RepositoryWebhook#url}
 
 ---
 
@@ -1061,7 +1093,7 @@ ContentType *string
 
 The content type for the payload. Valid values are either 'form' or 'json'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#content_type RepositoryWebhook#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#content_type RepositoryWebhook#content_type}
 
 ---
 
@@ -1075,7 +1107,7 @@ InsecureSsl interface{}
 
 Insecure SSL boolean toggle. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#insecure_ssl RepositoryWebhook#insecure_ssl}
 
 ---
 
@@ -1089,7 +1121,7 @@ Secret *string
 
 The shared secret for the webhook.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_webhook#secret RepositoryWebhook#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_webhook#secret RepositoryWebhook#secret}
 
 ---
 

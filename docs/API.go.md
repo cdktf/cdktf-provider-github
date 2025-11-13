@@ -28,6 +28,7 @@ The following submodules are available:
 - [codespacesOrganizationSecretRepositories](./codespacesOrganizationSecretRepositories.go.md)
 - [codespacesSecret](./codespacesSecret.go.md)
 - [codespacesUserSecret](./codespacesUserSecret.go.md)
+- [dataGithubActionsEnvironmentPublicKey](./dataGithubActionsEnvironmentPublicKey.go.md)
 - [dataGithubActionsEnvironmentSecrets](./dataGithubActionsEnvironmentSecrets.go.md)
 - [dataGithubActionsEnvironmentVariables](./dataGithubActionsEnvironmentVariables.go.md)
 - [dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate](./dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.go.md)
@@ -152,6 +153,7 @@ The following submodules are available:
 - [userGpgKey](./userGpgKey.go.md)
 - [userInvitationAccepter](./userInvitationAccepter.go.md)
 - [userSshKey](./userSshKey.go.md)
+- [workflowRepositoryPermissions](./workflowRepositoryPermissions.go.md)
 
 
 

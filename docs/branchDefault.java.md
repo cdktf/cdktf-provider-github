@@ -4,7 +4,7 @@
 
 ### BranchDefault <a name="BranchDefault" id="@cdktf/provider-github.branchDefault.BranchDefault"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default github_branch_default}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default github_branch_default}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branchDefault.BranchDefault.Initializer"></a>
 
@@ -21,6 +21,7 @@ BranchDefault.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .branch(java.lang.String)
     .repository(java.lang.String)
+//  .etag(java.lang.String)
 //  .id(java.lang.String)
 //  .rename(java.lang.Boolean|IResolvable)
     .build();
@@ -39,7 +40,8 @@ BranchDefault.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.Initializer.parameter.branch">branch</a></code> | <code>java.lang.String</code> | The branch (e.g. 'main'). |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.Initializer.parameter.repository">repository</a></code> | <code>java.lang.String</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#id BranchDefault#id}. |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.Initializer.parameter.etag">etag</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#etag BranchDefault#etag}. |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#id BranchDefault#id}. |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.Initializer.parameter.rename">rename</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'. |
 
 ---
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The branch (e.g. 'main').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#branch BranchDefault#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#branch BranchDefault#branch}
 
 ---
 
@@ -120,7 +122,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#repository BranchDefault#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#repository BranchDefault#repository}
+
+---
+
+##### `etag`<sup>Optional</sup> <a name="etag" id="@cdktf/provider-github.branchDefault.BranchDefault.Initializer.parameter.etag"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#etag BranchDefault#etag}.
 
 ---
 
@@ -128,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#id BranchDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#id BranchDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -141,7 +151,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#rename BranchDefault#rename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#rename BranchDefault#rename}
 
 ---
 
@@ -172,6 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.resetEtag">resetEtag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.resetRename">resetRename</a></code> | *No description.* |
 
@@ -467,6 +478,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetEtag` <a name="resetEtag" id="@cdktf/provider-github.branchDefault.BranchDefault.resetEtag"></a>
+
+```java
+public void resetEtag()
+```
+
 ##### `resetId` <a name="resetId" id="@cdktf/provider-github.branchDefault.BranchDefault.resetId"></a>
 
 ```java
@@ -582,7 +599,7 @@ The construct id used in the generated config for the BranchDefault to import.
 
 The id of the existing BranchDefault that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,12 +629,13 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.branchInput">branchInput</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.etagInput">etagInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.renameInput">renameInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.repositoryInput">repositoryInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.branch">branch</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.etag">etag</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.rename">rename</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefault.property.repository">repository</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -766,20 +784,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-github.branchDefault.BranchDefault.property.etag"></a>
+##### `branchInput`<sup>Optional</sup> <a name="branchInput" id="@cdktf/provider-github.branchDefault.BranchDefault.property.branchInput"></a>
 
 ```java
-public java.lang.String getEtag();
+public java.lang.String getBranchInput();
 ```
 
 - *Type:* java.lang.String
 
 ---
 
-##### `branchInput`<sup>Optional</sup> <a name="branchInput" id="@cdktf/provider-github.branchDefault.BranchDefault.property.branchInput"></a>
+##### `etagInput`<sup>Optional</sup> <a name="etagInput" id="@cdktf/provider-github.branchDefault.BranchDefault.property.etagInput"></a>
 
 ```java
-public java.lang.String getBranchInput();
+public java.lang.String getEtagInput();
 ```
 
 - *Type:* java.lang.String
@@ -820,6 +838,16 @@ public java.lang.String getRepositoryInput();
 
 ```java
 public java.lang.String getBranch();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-github.branchDefault.BranchDefault.property.etag"></a>
+
+```java
+public java.lang.String getEtag();
 ```
 
 - *Type:* java.lang.String
@@ -893,6 +921,7 @@ BranchDefaultConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .branch(java.lang.String)
     .repository(java.lang.String)
+//  .etag(java.lang.String)
 //  .id(java.lang.String)
 //  .rename(java.lang.Boolean|IResolvable)
     .build();
@@ -911,7 +940,8 @@ BranchDefaultConfig.builder()
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.branch">branch</a></code> | <code>java.lang.String</code> | The branch (e.g. 'main'). |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.repository">repository</a></code> | <code>java.lang.String</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#id BranchDefault#id}. |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.etag">etag</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#etag BranchDefault#etag}. |
+| <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#id BranchDefault#id}. |
 | <code><a href="#@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.rename">rename</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'. |
 
 ---
@@ -996,7 +1026,7 @@ public java.lang.String getBranch();
 
 The branch (e.g. 'main').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#branch BranchDefault#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#branch BranchDefault#branch}
 
 ---
 
@@ -1010,7 +1040,19 @@ public java.lang.String getRepository();
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#repository BranchDefault#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#repository BranchDefault#repository}
+
+---
+
+##### `etag`<sup>Optional</sup> <a name="etag" id="@cdktf/provider-github.branchDefault.BranchDefaultConfig.property.etag"></a>
+
+```java
+public java.lang.String getEtag();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#etag BranchDefault#etag}.
 
 ---
 
@@ -1022,7 +1064,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#id BranchDefault#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#id BranchDefault#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1039,7 +1081,7 @@ public java.lang.Boolean|IResolvable getRename();
 
 Indicate if it should rename the branch rather than use an existing branch. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch_default#rename BranchDefault#rename}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch_default#rename BranchDefault#rename}
 
 ---
 

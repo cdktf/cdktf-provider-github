@@ -4,7 +4,7 @@
 
 ### Branch <a name="Branch" id="@cdktf/provider-github.branch.Branch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch github_branch}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch github_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branch.Branch.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.branch.Branch.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktf/provider-github.branch.Branch.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-github.branch.Branch.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktf/provider-github.branch.Branch.resetEtag">ResetEtag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.resetSourceBranch">ResetSourceBranch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.resetSourceSha">ResetSourceSha</a></code> | *No description.* |
@@ -367,6 +368,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetEtag` <a name="ResetEtag" id="@cdktf/provider-github.branch.Branch.resetEtag"></a>
+
+```go
+func ResetEtag()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-github.branch.Branch.resetId"></a>
 
 ```go
@@ -488,7 +495,7 @@ The construct id used in the generated config for the Branch to import.
 
 The id of the existing Branch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -518,15 +525,16 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.branch.Branch.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.ref">Ref</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.sha">Sha</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.branchInput">BranchInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branch.Branch.property.etagInput">EtagInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.repositoryInput">RepositoryInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.sourceBranchInput">SourceBranchInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.sourceShaInput">SourceShaInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.branch">Branch</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.branch.Branch.property.etag">Etag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.repository">Repository</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.Branch.property.sourceBranch">SourceBranch</a></code> | <code>*string</code> | *No description.* |
@@ -676,16 +684,6 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.branch.Branch.property.etag"></a>
-
-```go
-func Etag() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `Ref`<sup>Required</sup> <a name="Ref" id="@cdktf/provider-github.branch.Branch.property.ref"></a>
 
 ```go
@@ -710,6 +708,16 @@ func Sha() *string
 
 ```go
 func BranchInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EtagInput`<sup>Optional</sup> <a name="EtagInput" id="@cdktf/provider-github.branch.Branch.property.etagInput"></a>
+
+```go
+func EtagInput() *string
 ```
 
 - *Type:* *string
@@ -760,6 +768,16 @@ func SourceShaInput() *string
 
 ```go
 func Branch() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.branch.Branch.property.etag"></a>
+
+```go
+func Etag() *string
 ```
 
 - *Type:* *string
@@ -843,6 +861,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v15/branch"
 	Provisioners: *[]interface{},
 	Branch: *string,
 	Repository: *string,
+	Etag: *string,
 	Id: *string,
 	SourceBranch: *string,
 	SourceSha: *string,
@@ -862,7 +881,8 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v15/branch"
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.branch">Branch</a></code> | <code>*string</code> | The repository branch to create. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.repository">Repository</a></code> | <code>*string</code> | The GitHub repository name. |
-| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch#id Branch#id}. |
+| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.etag">Etag</a></code> | <code>*string</code> | An etag representing the Branch object. |
+| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch#id Branch#id}. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.sourceBranch">SourceBranch</a></code> | <code>*string</code> | The branch name to start from. Defaults to 'main'. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.sourceSha">SourceSha</a></code> | <code>*string</code> | The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored. |
 
@@ -948,7 +968,7 @@ Branch *string
 
 The repository branch to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch#branch Branch#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch#branch Branch#branch}
 
 ---
 
@@ -962,7 +982,21 @@ Repository *string
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch#repository Branch#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch#repository Branch#repository}
+
+---
+
+##### `Etag`<sup>Optional</sup> <a name="Etag" id="@cdktf/provider-github.branch.BranchConfig.property.etag"></a>
+
+```go
+Etag *string
+```
+
+- *Type:* *string
+
+An etag representing the Branch object.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch#etag Branch#etag}
 
 ---
 
@@ -974,7 +1008,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch#id Branch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch#id Branch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -991,7 +1025,7 @@ SourceBranch *string
 
 The branch name to start from. Defaults to 'main'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch#source_branch Branch#source_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch#source_branch Branch#source_branch}
 
 ---
 
@@ -1005,7 +1039,7 @@ SourceSha *string
 
 The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/branch#source_sha Branch#source_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/branch#source_sha Branch#source_sha}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### RepositoryMilestone <a name="RepositoryMilestone" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone github_repository_milestone}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone github_repository_milestone}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer"></a>
 
@@ -45,7 +45,7 @@ RepositoryMilestone.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer.parameter.title">title</a></code> | <code>java.lang.String</code> | The title of the milestone. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | A description of the milestone. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer.parameter.dueDate">dueDate</a></code> | <code>java.lang.String</code> | The milestone due date. In 'yyyy-mm-dd' format. |
-| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#id RepositoryMilestone#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#id RepositoryMilestone#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestone.Initializer.parameter.state">state</a></code> | <code>java.lang.String</code> | The state of the milestone. Either 'open' or 'closed'. Default: 'open'. |
 
 ---
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 The owner of the GitHub Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#owner RepositoryMilestone#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#owner RepositoryMilestone#owner}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The name of the GitHub Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#repository RepositoryMilestone#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#repository RepositoryMilestone#repository}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The title of the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#title RepositoryMilestone#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#title RepositoryMilestone#title}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 A description of the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#description RepositoryMilestone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#description RepositoryMilestone#description}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The milestone due date. In 'yyyy-mm-dd' format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#due_date RepositoryMilestone#due_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#due_date RepositoryMilestone#due_date}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#id RepositoryMilestone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#id RepositoryMilestone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -177,7 +177,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The state of the milestone. Either 'open' or 'closed'. Default: 'open'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#state RepositoryMilestone#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#state RepositoryMilestone#state}
 
 ---
 
@@ -632,7 +632,7 @@ The construct id used in the generated config for the RepositoryMilestone to imp
 
 The id of the existing RepositoryMilestone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1033,7 +1033,7 @@ RepositoryMilestoneConfig.builder()
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.title">title</a></code> | <code>java.lang.String</code> | The title of the milestone. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.description">description</a></code> | <code>java.lang.String</code> | A description of the milestone. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.dueDate">dueDate</a></code> | <code>java.lang.String</code> | The milestone due date. In 'yyyy-mm-dd' format. |
-| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#id RepositoryMilestone#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#id RepositoryMilestone#id}. |
 | <code><a href="#@cdktf/provider-github.repositoryMilestone.RepositoryMilestoneConfig.property.state">state</a></code> | <code>java.lang.String</code> | The state of the milestone. Either 'open' or 'closed'. Default: 'open'. |
 
 ---
@@ -1118,7 +1118,7 @@ public java.lang.String getOwner();
 
 The owner of the GitHub Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#owner RepositoryMilestone#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#owner RepositoryMilestone#owner}
 
 ---
 
@@ -1132,7 +1132,7 @@ public java.lang.String getRepository();
 
 The name of the GitHub Repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#repository RepositoryMilestone#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#repository RepositoryMilestone#repository}
 
 ---
 
@@ -1146,7 +1146,7 @@ public java.lang.String getTitle();
 
 The title of the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#title RepositoryMilestone#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#title RepositoryMilestone#title}
 
 ---
 
@@ -1160,7 +1160,7 @@ public java.lang.String getDescription();
 
 A description of the milestone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#description RepositoryMilestone#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#description RepositoryMilestone#description}
 
 ---
 
@@ -1174,7 +1174,7 @@ public java.lang.String getDueDate();
 
 The milestone due date. In 'yyyy-mm-dd' format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#due_date RepositoryMilestone#due_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#due_date RepositoryMilestone#due_date}
 
 ---
 
@@ -1186,7 +1186,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#id RepositoryMilestone#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#id RepositoryMilestone#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1203,7 +1203,7 @@ public java.lang.String getState();
 
 The state of the milestone. Either 'open' or 'closed'. Default: 'open'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_milestone#state RepositoryMilestone#state}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_milestone#state RepositoryMilestone#state}
 
 ---
 

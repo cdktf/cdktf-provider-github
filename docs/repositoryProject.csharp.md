@@ -4,7 +4,7 @@
 
 ### RepositoryProject <a name="RepositoryProject" id="@cdktf/provider-github.repositoryProject.RepositoryProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project github_repository_project}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project github_repository_project}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryProject.RepositoryProject.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.resetBody">ResetBody</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.resetEtag">ResetEtag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.resetId">ResetId</a></code> | *No description.* |
 
 ---
@@ -372,6 +373,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetBody()
 ```
 
+##### `ResetEtag` <a name="ResetEtag" id="@cdktf/provider-github.repositoryProject.RepositoryProject.resetEtag"></a>
+
+```csharp
+private void ResetEtag()
+```
+
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-github.repositoryProject.RepositoryProject.resetId"></a>
 
 ```csharp
@@ -481,7 +488,7 @@ The construct id used in the generated config for the RepositoryProject to impor
 
 The id of the existing RepositoryProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -511,13 +518,14 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.url">Url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.bodyInput">BodyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.etagInput">EtagInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.repositoryInput">RepositoryInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.body">Body</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProject.property.repository">Repository</a></code> | <code>string</code> | *No description.* |
@@ -666,16 +674,6 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
-##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.repositoryProject.RepositoryProject.property.etag"></a>
-
-```csharp
-public string Etag { get; }
-```
-
-- *Type:* string
-
----
-
 ##### `Url`<sup>Required</sup> <a name="Url" id="@cdktf/provider-github.repositoryProject.RepositoryProject.property.url"></a>
 
 ```csharp
@@ -690,6 +688,16 @@ public string Url { get; }
 
 ```csharp
 public string BodyInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `EtagInput`<sup>Optional</sup> <a name="EtagInput" id="@cdktf/provider-github.repositoryProject.RepositoryProject.property.etagInput"></a>
+
+```csharp
+public string EtagInput { get; }
 ```
 
 - *Type:* string
@@ -730,6 +738,16 @@ public string RepositoryInput { get; }
 
 ```csharp
 public string Body { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.repositoryProject.RepositoryProject.property.etag"></a>
+
+```csharp
+public string Etag { get; }
 ```
 
 - *Type:* string
@@ -804,6 +822,7 @@ new RepositoryProjectConfig {
     string Name,
     string Repository,
     string Body = null,
+    string Etag = null,
     string Id = null
 };
 ```
@@ -822,7 +841,8 @@ new RepositoryProjectConfig {
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.name">Name</a></code> | <code>string</code> | The name of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.repository">Repository</a></code> | <code>string</code> | The repository of the project. |
 | <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.body">Body</a></code> | <code>string</code> | The body of the project. |
-| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#id RepositoryProject#id}. |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.etag">Etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#etag RepositoryProject#etag}. |
+| <code><a href="#@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#id RepositoryProject#id}. |
 
 ---
 
@@ -906,7 +926,7 @@ public string Name { get; set; }
 
 The name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#name RepositoryProject#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#name RepositoryProject#name}
 
 ---
 
@@ -920,7 +940,7 @@ public string Repository { get; set; }
 
 The repository of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#repository RepositoryProject#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#repository RepositoryProject#repository}
 
 ---
 
@@ -934,7 +954,19 @@ public string Body { get; set; }
 
 The body of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#body RepositoryProject#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#body RepositoryProject#body}
+
+---
+
+##### `Etag`<sup>Optional</sup> <a name="Etag" id="@cdktf/provider-github.repositoryProject.RepositoryProjectConfig.property.etag"></a>
+
+```csharp
+public string Etag { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#etag RepositoryProject#etag}.
 
 ---
 
@@ -946,7 +978,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#id RepositoryProject#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#id RepositoryProject#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

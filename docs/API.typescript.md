@@ -28,6 +28,7 @@ The following submodules are available:
 - [codespacesOrganizationSecretRepositories](./codespacesOrganizationSecretRepositories.typescript.md)
 - [codespacesSecret](./codespacesSecret.typescript.md)
 - [codespacesUserSecret](./codespacesUserSecret.typescript.md)
+- [dataGithubActionsEnvironmentPublicKey](./dataGithubActionsEnvironmentPublicKey.typescript.md)
 - [dataGithubActionsEnvironmentSecrets](./dataGithubActionsEnvironmentSecrets.typescript.md)
 - [dataGithubActionsEnvironmentVariables](./dataGithubActionsEnvironmentVariables.typescript.md)
 - [dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate](./dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.typescript.md)
@@ -152,6 +153,7 @@ The following submodules are available:
 - [userGpgKey](./userGpgKey.typescript.md)
 - [userInvitationAccepter](./userInvitationAccepter.typescript.md)
 - [userSshKey](./userSshKey.typescript.md)
+- [workflowRepositoryPermissions](./workflowRepositoryPermissions.typescript.md)
 
 
 

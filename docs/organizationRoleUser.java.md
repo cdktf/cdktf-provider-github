@@ -4,7 +4,7 @@
 
 ### OrganizationRoleUser <a name="OrganizationRoleUser" id="@cdktf/provider-github.organizationRoleUser.OrganizationRoleUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user github_organization_role_user}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user github_organization_role_user}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRoleUser.OrganizationRoleUser.Initializer"></a>
 
@@ -38,7 +38,7 @@ OrganizationRoleUser.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUser.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUser.Initializer.parameter.login">login</a></code> | <code>java.lang.String</code> | The login for the GitHub user account. |
 | <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUser.Initializer.parameter.roleId">roleId</a></code> | <code>java.lang.Number</code> | The unique identifier of the organization role. |
-| <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#id OrganizationRoleUser#id}. |
+| <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUser.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#id OrganizationRoleUser#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The login for the GitHub user account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#login OrganizationRoleUser#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#login OrganizationRoleUser#login}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The unique identifier of the organization role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#role_id OrganizationRoleUser#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#role_id OrganizationRoleUser#role_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#id OrganizationRoleUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#id OrganizationRoleUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -563,7 +563,7 @@ The construct id used in the generated config for the OrganizationRoleUser to im
 
 The id of the existing OrganizationRoleUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -858,7 +858,7 @@ OrganizationRoleUserConfig.builder()
 | <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUserConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUserConfig.property.login">login</a></code> | <code>java.lang.String</code> | The login for the GitHub user account. |
 | <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUserConfig.property.roleId">roleId</a></code> | <code>java.lang.Number</code> | The unique identifier of the organization role. |
-| <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#id OrganizationRoleUser#id}. |
+| <code><a href="#@cdktf/provider-github.organizationRoleUser.OrganizationRoleUserConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#id OrganizationRoleUser#id}. |
 
 ---
 
@@ -942,7 +942,7 @@ public java.lang.String getLogin();
 
 The login for the GitHub user account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#login OrganizationRoleUser#login}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#login OrganizationRoleUser#login}
 
 ---
 
@@ -956,7 +956,7 @@ public java.lang.Number getRoleId();
 
 The unique identifier of the organization role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#role_id OrganizationRoleUser#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#role_id OrganizationRoleUser#role_id}
 
 ---
 
@@ -968,7 +968,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/organization_role_user#id OrganizationRoleUser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#id OrganizationRoleUser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
