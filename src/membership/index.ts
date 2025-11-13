@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/membership
+// https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/membership
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface MembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * Instead of removing the member from the org, you can choose to downgrade their membership to 'member' when this resource is destroyed. This is useful when wanting to downgrade admins while keeping them in the organization
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/membership#downgrade_on_destroy Membership#downgrade_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/membership#downgrade_on_destroy Membership#downgrade_on_destroy}
   */
   readonly downgradeOnDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/membership#id Membership#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/membership#id Membership#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface MembershipConfig extends cdktf.TerraformMetaArguments {
   /**
   * The role of the user within the organization. Must be one of 'member' or 'admin'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/membership#role Membership#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/membership#role Membership#role}
   */
   readonly role?: string;
   /**
   * The user to add to the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/membership#username Membership#username}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/membership#username Membership#username}
   */
   readonly username: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/membership github_membership}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/membership github_membership}
 */
 export class Membership extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class Membership extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Membership resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Membership to import
-  * @param importFromId The id of the existing Membership that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/membership#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Membership that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/membership#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Membership to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class Membership extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/membership github_membership} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/membership github_membership} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class Membership extends cdktf.TerraformResource {
       terraformResourceType: 'github_membership',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.7.5',
+        providerVersion: '6.8.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

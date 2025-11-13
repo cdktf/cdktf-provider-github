@@ -28,6 +28,7 @@ The following submodules are available:
 - [codespacesOrganizationSecretRepositories](./codespacesOrganizationSecretRepositories.java.md)
 - [codespacesSecret](./codespacesSecret.java.md)
 - [codespacesUserSecret](./codespacesUserSecret.java.md)
+- [dataGithubActionsEnvironmentPublicKey](./dataGithubActionsEnvironmentPublicKey.java.md)
 - [dataGithubActionsEnvironmentSecrets](./dataGithubActionsEnvironmentSecrets.java.md)
 - [dataGithubActionsEnvironmentVariables](./dataGithubActionsEnvironmentVariables.java.md)
 - [dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate](./dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate.java.md)
@@ -152,6 +153,7 @@ The following submodules are available:
 - [userGpgKey](./userGpgKey.java.md)
 - [userInvitationAccepter](./userInvitationAccepter.java.md)
 - [userSshKey](./userSshKey.java.md)
+- [workflowRepositoryPermissions](./workflowRepositoryPermissions.java.md)
 
 
 

@@ -4,7 +4,7 @@
 
 ### Repository <a name="Repository" id="@cdktf/provider-github.repository.Repository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository github_repository}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository github_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repository.Repository.Initializer"></a>
 
@@ -87,6 +87,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetDefaultBranch">ResetDefaultBranch</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetDeleteBranchOnMerge">ResetDeleteBranchOnMerge</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.resetEtag">ResetEtag</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.resetFork">ResetFork</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetGitignoreTemplate">ResetGitignoreTemplate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetHasDiscussions">ResetHasDiscussions</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetHasDownloads">ResetHasDownloads</a></code> | *No description.* |
@@ -103,6 +105,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetPages">ResetPages</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetPrivate">ResetPrivate</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetSecurityAndAnalysis">ResetSecurityAndAnalysis</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.resetSourceOwner">ResetSourceOwner</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.resetSourceRepo">ResetSourceRepo</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetSquashMergeCommitMessage">ResetSquashMergeCommitMessage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetSquashMergeCommitTitle">ResetSquashMergeCommitTitle</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.resetTemplate">ResetTemplate</a></code> | *No description.* |
@@ -503,6 +507,18 @@ private void ResetDeleteBranchOnMerge()
 private void ResetDescription()
 ```
 
+##### `ResetEtag` <a name="ResetEtag" id="@cdktf/provider-github.repository.Repository.resetEtag"></a>
+
+```csharp
+private void ResetEtag()
+```
+
+##### `ResetFork` <a name="ResetFork" id="@cdktf/provider-github.repository.Repository.resetFork"></a>
+
+```csharp
+private void ResetFork()
+```
+
 ##### `ResetGitignoreTemplate` <a name="ResetGitignoreTemplate" id="@cdktf/provider-github.repository.Repository.resetGitignoreTemplate"></a>
 
 ```csharp
@@ -597,6 +613,18 @@ private void ResetPrivate()
 
 ```csharp
 private void ResetSecurityAndAnalysis()
+```
+
+##### `ResetSourceOwner` <a name="ResetSourceOwner" id="@cdktf/provider-github.repository.Repository.resetSourceOwner"></a>
+
+```csharp
+private void ResetSourceOwner()
+```
+
+##### `ResetSourceRepo` <a name="ResetSourceRepo" id="@cdktf/provider-github.repository.Repository.resetSourceRepo"></a>
+
+```csharp
+private void ResetSourceRepo()
 ```
 
 ##### `ResetSquashMergeCommitMessage` <a name="ResetSquashMergeCommitMessage" id="@cdktf/provider-github.repository.Repository.resetSquashMergeCommitMessage"></a>
@@ -744,7 +772,7 @@ The construct id used in the generated config for the Repository to import.
 
 The id of the existing Repository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,7 +802,6 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.repository.Repository.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.fullName">FullName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitCloneUrl">GitCloneUrl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.htmlUrl">HtmlUrl</a></code> | <code>string</code> | *No description.* |
@@ -798,6 +825,8 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.defaultBranchInput">DefaultBranchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMergeInput">DeleteBranchOnMergeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.etagInput">EtagInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.forkInput">ForkInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitignoreTemplateInput">GitignoreTemplateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussionsInput">HasDiscussionsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloadsInput">HasDownloadsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -815,6 +844,8 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.pagesInput">PagesInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryPages">RepositoryPages</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.privateInput">PrivateInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.securityAndAnalysisInput">SecurityAndAnalysisInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositorySecurityAndAnalysis">RepositorySecurityAndAnalysis</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.sourceOwnerInput">SourceOwnerInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.sourceRepoInput">SourceRepoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitMessageInput">SquashMergeCommitMessageInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitTitleInput">SquashMergeCommitTitleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.templateInput">TemplateInput</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | *No description.* |
@@ -833,6 +864,8 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.defaultBranch">DefaultBranch</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.deleteBranchOnMerge">DeleteBranchOnMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.description">Description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.etag">Etag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.fork">Fork</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.gitignoreTemplate">GitignoreTemplate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDiscussions">HasDiscussions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.hasDownloads">HasDownloads</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
@@ -848,6 +881,8 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.mergeCommitTitle">MergeCommitTitle</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.private">Private</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.sourceOwner">SourceOwner</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.repository.Repository.property.sourceRepo">SourceRepo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitMessage">SquashMergeCommitMessage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.squashMergeCommitTitle">SquashMergeCommitTitle</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.repository.Repository.property.topics">Topics</a></code> | <code>string[]</code> | *No description.* |
@@ -996,16 +1031,6 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 ```
 
 - *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
-
----
-
-##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.repository.Repository.property.etag"></a>
-
-```csharp
-public string Etag { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -1239,6 +1264,26 @@ public string DescriptionInput { get; }
 
 ---
 
+##### `EtagInput`<sup>Optional</sup> <a name="EtagInput" id="@cdktf/provider-github.repository.Repository.property.etagInput"></a>
+
+```csharp
+public string EtagInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ForkInput`<sup>Optional</sup> <a name="ForkInput" id="@cdktf/provider-github.repository.Repository.property.forkInput"></a>
+
+```csharp
+public bool|IResolvable ForkInput { get; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+---
+
 ##### `GitignoreTemplateInput`<sup>Optional</sup> <a name="GitignoreTemplateInput" id="@cdktf/provider-github.repository.Repository.property.gitignoreTemplateInput"></a>
 
 ```csharp
@@ -1406,6 +1451,26 @@ public RepositorySecurityAndAnalysis SecurityAndAnalysisInput { get; }
 ```
 
 - *Type:* <a href="#@cdktf/provider-github.repository.RepositorySecurityAndAnalysis">RepositorySecurityAndAnalysis</a>
+
+---
+
+##### `SourceOwnerInput`<sup>Optional</sup> <a name="SourceOwnerInput" id="@cdktf/provider-github.repository.Repository.property.sourceOwnerInput"></a>
+
+```csharp
+public string SourceOwnerInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceRepoInput`<sup>Optional</sup> <a name="SourceRepoInput" id="@cdktf/provider-github.repository.Repository.property.sourceRepoInput"></a>
+
+```csharp
+public string SourceRepoInput { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1589,6 +1654,26 @@ public string Description { get; }
 
 ---
 
+##### `Etag`<sup>Required</sup> <a name="Etag" id="@cdktf/provider-github.repository.Repository.property.etag"></a>
+
+```csharp
+public string Etag { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Fork`<sup>Required</sup> <a name="Fork" id="@cdktf/provider-github.repository.Repository.property.fork"></a>
+
+```csharp
+public bool|IResolvable Fork { get; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+---
+
 ##### `GitignoreTemplate`<sup>Required</sup> <a name="GitignoreTemplate" id="@cdktf/provider-github.repository.Repository.property.gitignoreTemplate"></a>
 
 ```csharp
@@ -1739,6 +1824,26 @@ public bool|IResolvable Private { get; }
 
 ---
 
+##### `SourceOwner`<sup>Required</sup> <a name="SourceOwner" id="@cdktf/provider-github.repository.Repository.property.sourceOwner"></a>
+
+```csharp
+public string SourceOwner { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SourceRepo`<sup>Required</sup> <a name="SourceRepo" id="@cdktf/provider-github.repository.Repository.property.sourceRepo"></a>
+
+```csharp
+public string SourceRepo { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `SquashMergeCommitMessage`<sup>Required</sup> <a name="SquashMergeCommitMessage" id="@cdktf/provider-github.repository.Repository.property.squashMergeCommitMessage"></a>
 
 ```csharp
@@ -1846,6 +1951,8 @@ new RepositoryConfig {
     string DefaultBranch = null,
     bool|IResolvable DeleteBranchOnMerge = null,
     string Description = null,
+    string Etag = null,
+    bool|IResolvable Fork = null,
     string GitignoreTemplate = null,
     bool|IResolvable HasDiscussions = null,
     bool|IResolvable HasDownloads = null,
@@ -1862,6 +1969,8 @@ new RepositoryConfig {
     RepositoryPages Pages = null,
     bool|IResolvable Private = null,
     RepositorySecurityAndAnalysis SecurityAndAnalysis = null,
+    string SourceOwner = null,
+    string SourceRepo = null,
     string SquashMergeCommitMessage = null,
     string SquashMergeCommitTitle = null,
     RepositoryTemplate Template = null,
@@ -1895,6 +2004,8 @@ new RepositoryConfig {
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.defaultBranch">DefaultBranch</a></code> | <code>string</code> | Can only be set after initial repository creation, and only if the target branch exists. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.deleteBranchOnMerge">DeleteBranchOnMerge</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Automatically delete head branch after a pull request is merged. Defaults to 'false'. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.description">Description</a></code> | <code>string</code> | A description of the repository. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.etag">Etag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#etag Repository#etag}. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.fork">Fork</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to fork an existing repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.gitignoreTemplate">GitignoreTemplate</a></code> | <code>string</code> | Use the name of the template without the extension. For example, 'Haskell'. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDiscussions">HasDiscussions</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasDownloads">HasDownloads</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable the (deprecated) downloads features on the repository. |
@@ -1902,15 +2013,17 @@ new RepositoryConfig {
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasProjects">HasProjects</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Projects features on the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.hasWiki">HasWiki</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to enable the GitHub Wiki features on the repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.homepageUrl">HomepageUrl</a></code> | <code>string</code> | URL of a page describing the project. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#id Repository#id}. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#id Repository#id}. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.ignoreVulnerabilityAlertsDuringRead">IgnoreVulnerabilityAlertsDuringRead</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.isTemplate">IsTemplate</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Set to 'true' to tell GitHub that this is a template repository. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.licenseTemplate">LicenseTemplate</a></code> | <code>string</code> | Use the name of the template without the extension. For example, 'mit' or 'mpl-2.0'. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.mergeCommitMessage">MergeCommitMessage</a></code> | <code>string</code> | Can be 'PR_BODY', 'PR_TITLE', or 'BLANK' for a default merge commit message. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.mergeCommitTitle">MergeCommitTitle</a></code> | <code>string</code> | Can be 'PR_TITLE' or 'MERGE_MESSAGE' for a default merge commit title. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.pages">Pages</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryPages">RepositoryPages</a></code> | pages block. |
-| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.private">Private</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#private Repository#private}. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.private">Private</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#private Repository#private}. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.securityAndAnalysis">SecurityAndAnalysis</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositorySecurityAndAnalysis">RepositorySecurityAndAnalysis</a></code> | security_and_analysis block. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.sourceOwner">SourceOwner</a></code> | <code>string</code> | The owner of the source repository to fork from. |
+| <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.sourceRepo">SourceRepo</a></code> | <code>string</code> | The name of the source repository to fork from. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.squashMergeCommitMessage">SquashMergeCommitMessage</a></code> | <code>string</code> | Can be 'PR_BODY', 'COMMIT_MESSAGES', or 'BLANK' for a default squash merge commit message. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.squashMergeCommitTitle">SquashMergeCommitTitle</a></code> | <code>string</code> | Can be 'PR_TITLE' or 'COMMIT_OR_PR_TITLE' for a default squash merge commit title. |
 | <code><a href="#@cdktf/provider-github.repository.RepositoryConfig.property.template">Template</a></code> | <code><a href="#@cdktf/provider-github.repository.RepositoryTemplate">RepositoryTemplate</a></code> | template block. |
@@ -2001,7 +2114,7 @@ public string Name { get; set; }
 
 The name of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#name Repository#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#name Repository#name}
 
 ---
 
@@ -2015,7 +2128,7 @@ public bool|IResolvable AllowAutoMerge { get; set; }
 
 Set to 'true' to allow auto-merging pull requests on the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#allow_auto_merge Repository#allow_auto_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#allow_auto_merge Repository#allow_auto_merge}
 
 ---
 
@@ -2029,7 +2142,7 @@ public bool|IResolvable AllowMergeCommit { get; set; }
 
 Set to 'false' to disable merge commits on the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#allow_merge_commit Repository#allow_merge_commit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#allow_merge_commit Repository#allow_merge_commit}
 
 ---
 
@@ -2043,7 +2156,7 @@ public bool|IResolvable AllowRebaseMerge { get; set; }
 
 Set to 'false' to disable rebase merges on the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#allow_rebase_merge Repository#allow_rebase_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#allow_rebase_merge Repository#allow_rebase_merge}
 
 ---
 
@@ -2057,7 +2170,7 @@ public bool|IResolvable AllowSquashMerge { get; set; }
 
 Set to 'false' to disable squash merges on the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#allow_squash_merge Repository#allow_squash_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#allow_squash_merge Repository#allow_squash_merge}
 
 ---
 
@@ -2071,7 +2184,7 @@ public bool|IResolvable AllowUpdateBranch { get; set; }
 
 Set to 'true' to always suggest updating pull request branches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#allow_update_branch Repository#allow_update_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#allow_update_branch Repository#allow_update_branch}
 
 ---
 
@@ -2085,7 +2198,7 @@ public bool|IResolvable Archived { get; set; }
 
 Specifies if the repository should be archived. Defaults to 'false'. NOTE Currently, the API does not support unarchiving.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#archived Repository#archived}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#archived Repository#archived}
 
 ---
 
@@ -2099,7 +2212,7 @@ public bool|IResolvable ArchiveOnDestroy { get; set; }
 
 Set to 'true' to archive the repository instead of deleting on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#archive_on_destroy Repository#archive_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#archive_on_destroy Repository#archive_on_destroy}
 
 ---
 
@@ -2113,7 +2226,7 @@ public bool|IResolvable AutoInit { get; set; }
 
 Set to 'true' to produce an initial commit in the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#auto_init Repository#auto_init}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#auto_init Repository#auto_init}
 
 ---
 
@@ -2127,7 +2240,7 @@ public string DefaultBranch { get; set; }
 
 Can only be set after initial repository creation, and only if the target branch exists.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#default_branch Repository#default_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#default_branch Repository#default_branch}
 
 ---
 
@@ -2141,7 +2254,7 @@ public bool|IResolvable DeleteBranchOnMerge { get; set; }
 
 Automatically delete head branch after a pull request is merged. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#delete_branch_on_merge Repository#delete_branch_on_merge}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#delete_branch_on_merge Repository#delete_branch_on_merge}
 
 ---
 
@@ -2155,7 +2268,33 @@ public string Description { get; set; }
 
 A description of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#description Repository#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#description Repository#description}
+
+---
+
+##### `Etag`<sup>Optional</sup> <a name="Etag" id="@cdktf/provider-github.repository.RepositoryConfig.property.etag"></a>
+
+```csharp
+public string Etag { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#etag Repository#etag}.
+
+---
+
+##### `Fork`<sup>Optional</sup> <a name="Fork" id="@cdktf/provider-github.repository.RepositoryConfig.property.fork"></a>
+
+```csharp
+public bool|IResolvable Fork { get; set; }
+```
+
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
+
+Set to 'true' to fork an existing repository.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#fork Repository#fork}
 
 ---
 
@@ -2169,7 +2308,7 @@ public string GitignoreTemplate { get; set; }
 
 Use the name of the template without the extension. For example, 'Haskell'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#gitignore_template Repository#gitignore_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#gitignore_template Repository#gitignore_template}
 
 ---
 
@@ -2183,7 +2322,7 @@ public bool|IResolvable HasDiscussions { get; set; }
 
 Set to 'true' to enable GitHub Discussions on the repository. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#has_discussions Repository#has_discussions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#has_discussions Repository#has_discussions}
 
 ---
 
@@ -2197,7 +2336,7 @@ public bool|IResolvable HasDownloads { get; set; }
 
 Set to 'true' to enable the (deprecated) downloads features on the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#has_downloads Repository#has_downloads}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#has_downloads Repository#has_downloads}
 
 ---
 
@@ -2211,7 +2350,7 @@ public bool|IResolvable HasIssues { get; set; }
 
 Set to 'true' to enable the GitHub Issues features on the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#has_issues Repository#has_issues}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#has_issues Repository#has_issues}
 
 ---
 
@@ -2227,7 +2366,7 @@ Set to 'true' to enable the GitHub Projects features on the repository.
 
 Per the GitHub documentation when in an organization that has disabled repository projects it will default to 'false' and will otherwise default to 'true'. If you specify 'true' when it has been disabled it will return an error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#has_projects Repository#has_projects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#has_projects Repository#has_projects}
 
 ---
 
@@ -2241,7 +2380,7 @@ public bool|IResolvable HasWiki { get; set; }
 
 Set to 'true' to enable the GitHub Wiki features on the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#has_wiki Repository#has_wiki}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#has_wiki Repository#has_wiki}
 
 ---
 
@@ -2255,7 +2394,7 @@ public string HomepageUrl { get; set; }
 
 URL of a page describing the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#homepage_url Repository#homepage_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#homepage_url Repository#homepage_url}
 
 ---
 
@@ -2267,7 +2406,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#id Repository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#id Repository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2284,7 +2423,7 @@ public bool|IResolvable IgnoreVulnerabilityAlertsDuringRead { get; set; }
 
 Set to true to not call the vulnerability alerts endpoint so the resource can also be used without admin permissions during read.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#ignore_vulnerability_alerts_during_read Repository#ignore_vulnerability_alerts_during_read}
 
 ---
 
@@ -2298,7 +2437,7 @@ public bool|IResolvable IsTemplate { get; set; }
 
 Set to 'true' to tell GitHub that this is a template repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#is_template Repository#is_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#is_template Repository#is_template}
 
 ---
 
@@ -2312,7 +2451,7 @@ public string LicenseTemplate { get; set; }
 
 Use the name of the template without the extension. For example, 'mit' or 'mpl-2.0'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#license_template Repository#license_template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#license_template Repository#license_template}
 
 ---
 
@@ -2326,7 +2465,7 @@ public string MergeCommitMessage { get; set; }
 
 Can be 'PR_BODY', 'PR_TITLE', or 'BLANK' for a default merge commit message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#merge_commit_message Repository#merge_commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#merge_commit_message Repository#merge_commit_message}
 
 ---
 
@@ -2340,7 +2479,7 @@ public string MergeCommitTitle { get; set; }
 
 Can be 'PR_TITLE' or 'MERGE_MESSAGE' for a default merge commit title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#merge_commit_title Repository#merge_commit_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#merge_commit_title Repository#merge_commit_title}
 
 ---
 
@@ -2354,7 +2493,7 @@ public RepositoryPages Pages { get; set; }
 
 pages block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#pages Repository#pages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#pages Repository#pages}
 
 ---
 
@@ -2366,7 +2505,7 @@ public bool|IResolvable Private { get; set; }
 
 - *Type:* bool|HashiCorp.Cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#private Repository#private}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#private Repository#private}.
 
 ---
 
@@ -2380,7 +2519,35 @@ public RepositorySecurityAndAnalysis SecurityAndAnalysis { get; set; }
 
 security_and_analysis block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#security_and_analysis Repository#security_and_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#security_and_analysis Repository#security_and_analysis}
+
+---
+
+##### `SourceOwner`<sup>Optional</sup> <a name="SourceOwner" id="@cdktf/provider-github.repository.RepositoryConfig.property.sourceOwner"></a>
+
+```csharp
+public string SourceOwner { get; set; }
+```
+
+- *Type:* string
+
+The owner of the source repository to fork from.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#source_owner Repository#source_owner}
+
+---
+
+##### `SourceRepo`<sup>Optional</sup> <a name="SourceRepo" id="@cdktf/provider-github.repository.RepositoryConfig.property.sourceRepo"></a>
+
+```csharp
+public string SourceRepo { get; set; }
+```
+
+- *Type:* string
+
+The name of the source repository to fork from.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#source_repo Repository#source_repo}
 
 ---
 
@@ -2394,7 +2561,7 @@ public string SquashMergeCommitMessage { get; set; }
 
 Can be 'PR_BODY', 'COMMIT_MESSAGES', or 'BLANK' for a default squash merge commit message.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#squash_merge_commit_message Repository#squash_merge_commit_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#squash_merge_commit_message Repository#squash_merge_commit_message}
 
 ---
 
@@ -2408,7 +2575,7 @@ public string SquashMergeCommitTitle { get; set; }
 
 Can be 'PR_TITLE' or 'COMMIT_OR_PR_TITLE' for a default squash merge commit title.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#squash_merge_commit_title Repository#squash_merge_commit_title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#squash_merge_commit_title Repository#squash_merge_commit_title}
 
 ---
 
@@ -2422,7 +2589,7 @@ public RepositoryTemplate Template { get; set; }
 
 template block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#template Repository#template}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#template Repository#template}
 
 ---
 
@@ -2436,7 +2603,7 @@ public string[] Topics { get; set; }
 
 The list of topics of the repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#topics Repository#topics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#topics Repository#topics}
 
 ---
 
@@ -2452,7 +2619,7 @@ Can be 'public' or 'private'.
 
 If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, visibility can also be 'internal'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#visibility Repository#visibility}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#visibility Repository#visibility}
 
 ---
 
@@ -2468,7 +2635,7 @@ Set to 'true' to enable security alerts for vulnerable dependencies.
 
 Enabling requires alerts to be enabled on the owner level. (Note for importing: GitHub enables the alerts on public repos but disables them on private repos by default). Note that vulnerability alerts have not been successfully tested on any GitHub Enterprise instance and may be unavailable in those settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#vulnerability_alerts Repository#vulnerability_alerts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#vulnerability_alerts Repository#vulnerability_alerts}
 
 ---
 
@@ -2482,7 +2649,7 @@ public bool|IResolvable WebCommitSignoffRequired { get; set; }
 
 Require contributors to sign off on web-based commits. Defaults to 'false'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#web_commit_signoff_required Repository#web_commit_signoff_required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#web_commit_signoff_required Repository#web_commit_signoff_required}
 
 ---
 
@@ -2520,7 +2687,7 @@ public string BuildType { get; set; }
 
 The type the page should be sourced.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#build_type Repository#build_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#build_type Repository#build_type}
 
 ---
 
@@ -2534,7 +2701,7 @@ public string Cname { get; set; }
 
 The custom domain for the repository. This can only be set after the repository has been created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#cname Repository#cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#cname Repository#cname}
 
 ---
 
@@ -2548,7 +2715,7 @@ public RepositoryPagesSource Source { get; set; }
 
 source block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#source Repository#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#source Repository#source}
 
 ---
 
@@ -2584,7 +2751,7 @@ public string Branch { get; set; }
 
 The repository branch used to publish the site's source files. (i.e. 'main' or 'gh-pages').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#branch Repository#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#branch Repository#branch}
 
 ---
 
@@ -2598,7 +2765,7 @@ public string Path { get; set; }
 
 The repository directory from which the site publishes (Default: '/').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#path Repository#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#path Repository#path}
 
 ---
 
@@ -2636,7 +2803,7 @@ public RepositorySecurityAndAnalysisAdvancedSecurity AdvancedSecurity { get; set
 
 advanced_security block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#advanced_security Repository#advanced_security}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#advanced_security Repository#advanced_security}
 
 ---
 
@@ -2650,7 +2817,7 @@ public RepositorySecurityAndAnalysisSecretScanning SecretScanning { get; set; }
 
 secret_scanning block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#secret_scanning Repository#secret_scanning}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#secret_scanning Repository#secret_scanning}
 
 ---
 
@@ -2664,7 +2831,7 @@ public RepositorySecurityAndAnalysisSecretScanningPushProtection SecretScanningP
 
 secret_scanning_push_protection block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#secret_scanning_push_protection Repository#secret_scanning_push_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#secret_scanning_push_protection Repository#secret_scanning_push_protection}
 
 ---
 
@@ -2698,7 +2865,7 @@ public string Status { get; set; }
 
 Set to 'enabled' to enable advanced security features on the repository. Can be 'enabled' or 'disabled'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#status Repository#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#status Repository#status}
 
 ---
 
@@ -2734,7 +2901,7 @@ Set to 'enabled' to enable secret scanning on the repository.
 
 Can be 'enabled' or 'disabled'. If set to 'enabled', the repository's visibility must be 'public' or 'security_and_analysis[0].advanced_security[0].status' must also be set to 'enabled'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#status Repository#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#status Repository#status}
 
 ---
 
@@ -2770,7 +2937,7 @@ Set to 'enabled' to enable secret scanning push protection on the repository.
 
 Can be 'enabled' or 'disabled'. If set to 'enabled', the repository's visibility must be 'public' or 'security_and_analysis[0].advanced_security[0].status' must also be set to 'enabled'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#status Repository#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#status Repository#status}
 
 ---
 
@@ -2808,7 +2975,7 @@ public string Owner { get; set; }
 
 The GitHub organization or user the template repository is owned by.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#owner Repository#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#owner Repository#owner}
 
 ---
 
@@ -2822,7 +2989,7 @@ public string Repository { get; set; }
 
 The name of the template repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#repository Repository#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#repository Repository#repository}
 
 ---
 
@@ -2836,7 +3003,7 @@ public bool|IResolvable IncludeAllBranches { get; set; }
 
 Whether the new repository should include all the branches from the template repository (defaults to 'false', which includes only the default branch from the template).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository#include_all_branches Repository#include_all_branches}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository#include_all_branches Repository#include_all_branches}
 
 ---
 

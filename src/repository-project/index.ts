@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project
+// https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,15 @@ export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * The body of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#body RepositoryProject#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#body RepositoryProject#body}
   */
   readonly body?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#id RepositoryProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#etag RepositoryProject#etag}
+  */
+  readonly etag?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#id RepositoryProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +32,19 @@ export interface RepositoryProjectConfig extends cdktf.TerraformMetaArguments {
   /**
   * The name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#name RepositoryProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#name RepositoryProject#name}
   */
   readonly name: string;
   /**
   * The repository of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#repository RepositoryProject#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#repository RepositoryProject#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project github_repository_project}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project github_repository_project}
 */
 export class RepositoryProject extends cdktf.TerraformResource {
 
@@ -56,7 +60,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RepositoryProject resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RepositoryProject to import
-  * @param importFromId The id of the existing RepositoryProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RepositoryProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RepositoryProject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +72,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_project github_repository_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_project github_repository_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +83,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_project',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.7.5',
+        providerVersion: '6.8.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -91,6 +95,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._body = config.body;
+    this._etag = config.etag;
     this._id = config.id;
     this._name = config.name;
     this._repository = config.repository;
@@ -116,9 +121,20 @@ export class RepositoryProject extends cdktf.TerraformResource {
     return this._body;
   }
 
-  // etag - computed: true, optional: false, required: false
+  // etag - computed: true, optional: true, required: false
+  private _etag?: string; 
   public get etag() {
     return this.getStringAttribute('etag');
+  }
+  public set etag(value: string) {
+    this._etag = value;
+  }
+  public resetEtag() {
+    this._etag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get etagInput() {
+    return this._etag;
   }
 
   // id - computed: true, optional: true, required: false
@@ -175,6 +191,7 @@ export class RepositoryProject extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       body: cdktf.stringToTerraform(this._body),
+      etag: cdktf.stringToTerraform(this._etag),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       repository: cdktf.stringToTerraform(this._repository),
@@ -185,6 +202,12 @@ export class RepositoryProject extends cdktf.TerraformResource {
     const attrs = {
       body: {
         value: cdktf.stringToHclTerraform(this._body),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      etag: {
+        value: cdktf.stringToHclTerraform(this._etag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

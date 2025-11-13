@@ -1,3 +1,3 @@
 # `github_user_gpg_key`
 
-Refer to the Terraform Registry for docs: [`github_user_gpg_key`](https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/user_gpg_key).
+Refer to the Terraform Registry for docs: [`github_user_gpg_key`](https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/user_gpg_key).

@@ -81,6 +81,8 @@ export * as teamSyncGroupMapping from './team-sync-group-mapping';
 export * as userGpgKey from './user-gpg-key';
 export * as userInvitationAccepter from './user-invitation-accepter';
 export * as userSshKey from './user-ssh-key';
+export * as workflowRepositoryPermissions from './workflow-repository-permissions';
+export * as dataGithubActionsEnvironmentPublicKey from './data-github-actions-environment-public-key';
 export * as dataGithubActionsEnvironmentSecrets from './data-github-actions-environment-secrets';
 export * as dataGithubActionsEnvironmentVariables from './data-github-actions-environment-variables';
 export * as dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate from './data-github-actions-organization-oidc-subject-claim-customization-template';
