@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy
+// https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,17 @@ export interface RepositoryDeploymentBranchPolicyConfig extends cdktf.TerraformM
   /**
   * The target environment name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy#environment_name RepositoryDeploymentBranchPolicy#environment_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy#environment_name RepositoryDeploymentBranchPolicy#environment_name}
   */
   readonly environmentName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy#id RepositoryDeploymentBranchPolicy#id}
+  * An etag representing the Branch object.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy#etag RepositoryDeploymentBranchPolicy#etag}
+  */
+  readonly etag?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy#id RepositoryDeploymentBranchPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +34,19 @@ export interface RepositoryDeploymentBranchPolicyConfig extends cdktf.TerraformM
   /**
   * The name of the branch
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy#name RepositoryDeploymentBranchPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy#name RepositoryDeploymentBranchPolicy#name}
   */
   readonly name: string;
   /**
   * The GitHub repository name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy#repository RepositoryDeploymentBranchPolicy#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy#repository RepositoryDeploymentBranchPolicy#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy}
 */
 export class RepositoryDeploymentBranchPolicy extends cdktf.TerraformResource {
 
@@ -56,7 +62,7 @@ export class RepositoryDeploymentBranchPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a RepositoryDeploymentBranchPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RepositoryDeploymentBranchPolicy to import
-  * @param importFromId The id of the existing RepositoryDeploymentBranchPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RepositoryDeploymentBranchPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RepositoryDeploymentBranchPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +74,7 @@ export class RepositoryDeploymentBranchPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.7.5/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/repository_deployment_branch_policy github_repository_deployment_branch_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +85,7 @@ export class RepositoryDeploymentBranchPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'github_repository_deployment_branch_policy',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.7.5',
+        providerVersion: '6.8.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
@@ -91,6 +97,7 @@ export class RepositoryDeploymentBranchPolicy extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._environmentName = config.environmentName;
+    this._etag = config.etag;
     this._id = config.id;
     this._name = config.name;
     this._repository = config.repository;
@@ -113,9 +120,20 @@ export class RepositoryDeploymentBranchPolicy extends cdktf.TerraformResource {
     return this._environmentName;
   }
 
-  // etag - computed: true, optional: false, required: false
+  // etag - computed: true, optional: true, required: false
+  private _etag?: string; 
   public get etag() {
     return this.getStringAttribute('etag');
+  }
+  public set etag(value: string) {
+    this._etag = value;
+  }
+  public resetEtag() {
+    this._etag = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get etagInput() {
+    return this._etag;
   }
 
   // id - computed: true, optional: true, required: false
@@ -167,6 +185,7 @@ export class RepositoryDeploymentBranchPolicy extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       environment_name: cdktf.stringToTerraform(this._environmentName),
+      etag: cdktf.stringToTerraform(this._etag),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
       repository: cdktf.stringToTerraform(this._repository),
@@ -177,6 +196,12 @@ export class RepositoryDeploymentBranchPolicy extends cdktf.TerraformResource {
     const attrs = {
       environment_name: {
         value: cdktf.stringToHclTerraform(this._environmentName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      etag: {
+        value: cdktf.stringToHclTerraform(this._etag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

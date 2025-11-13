@@ -81,6 +81,8 @@ Object.defineProperty(exports, 'teamSyncGroupMapping', { get: function () { retu
 Object.defineProperty(exports, 'userGpgKey', { get: function () { return require('./user-gpg-key'); } });
 Object.defineProperty(exports, 'userInvitationAccepter', { get: function () { return require('./user-invitation-accepter'); } });
 Object.defineProperty(exports, 'userSshKey', { get: function () { return require('./user-ssh-key'); } });
+Object.defineProperty(exports, 'workflowRepositoryPermissions', { get: function () { return require('./workflow-repository-permissions'); } });
+Object.defineProperty(exports, 'dataGithubActionsEnvironmentPublicKey', { get: function () { return require('./data-github-actions-environment-public-key'); } });
 Object.defineProperty(exports, 'dataGithubActionsEnvironmentSecrets', { get: function () { return require('./data-github-actions-environment-secrets'); } });
 Object.defineProperty(exports, 'dataGithubActionsEnvironmentVariables', { get: function () { return require('./data-github-actions-environment-variables'); } });
 Object.defineProperty(exports, 'dataGithubActionsOrganizationOidcSubjectClaimCustomizationTemplate', { get: function () { return require('./data-github-actions-organization-oidc-subject-claim-customization-template'); } });
