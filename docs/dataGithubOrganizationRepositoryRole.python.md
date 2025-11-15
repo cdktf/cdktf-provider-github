@@ -4,7 +4,7 @@
 
 ### DataGithubOrganizationRepositoryRole <a name="DataGithubOrganizationRepositoryRole" id="@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_repository_role github_organization_repository_role}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role github_organization_repository_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole(
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.Initializer.parameter.roleId">role_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the organization repository role. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the organization repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_repository_role#role_id DataGithubOrganizationRepositoryRole#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#role_id DataGithubOrganizationRepositoryRole#role_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -485,7 +485,7 @@ The construct id used in the generated config for the DataGithubOrganizationRepo
 
 The id of the existing DataGithubOrganizationRepositoryRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_repository_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,7 +778,7 @@ dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRoleConfig(
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRoleConfig.property.roleId">role_id</a></code> | <code>typing.Union[int, float]</code> | The ID of the organization repository role. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}. |
 
 ---
 
@@ -862,7 +862,7 @@ role_id: typing.Union[int, float]
 
 The ID of the organization repository role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_repository_role#role_id DataGithubOrganizationRepositoryRole#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#role_id DataGithubOrganizationRepositoryRole#role_id}
 
 ---
 
@@ -874,7 +874,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
