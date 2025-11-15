@@ -4,7 +4,7 @@
 
 ### OrganizationRoleTeam <a name="OrganizationRoleTeam" id="@cdktf/provider-github.organizationRoleTeam.OrganizationRoleTeam"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_team github_organization_role_team}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team github_organization_role_team}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRoleTeam.OrganizationRoleTeam.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the OrganizationRoleTeam to im
 
 The id of the existing OrganizationRoleTeam that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_team#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ new OrganizationRoleTeamConfig {
 | <code><a href="#@cdktf/provider-github.organizationRoleTeam.OrganizationRoleTeamConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationRoleTeam.OrganizationRoleTeamConfig.property.roleId">RoleId</a></code> | <code>double</code> | The ID of the organization role. |
 | <code><a href="#@cdktf/provider-github.organizationRoleTeam.OrganizationRoleTeamConfig.property.teamSlug">TeamSlug</a></code> | <code>string</code> | The slug of the team name. |
-| <code><a href="#@cdktf/provider-github.organizationRoleTeam.OrganizationRoleTeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_team#id OrganizationRoleTeam#id}. |
+| <code><a href="#@cdktf/provider-github.organizationRoleTeam.OrganizationRoleTeamConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team#id OrganizationRoleTeam#id}. |
 
 ---
 
@@ -853,7 +853,7 @@ public double RoleId { get; set; }
 
 The ID of the organization role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_team#role_id OrganizationRoleTeam#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team#role_id OrganizationRoleTeam#role_id}
 
 ---
 
@@ -867,7 +867,7 @@ public string TeamSlug { get; set; }
 
 The slug of the team name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_team#team_slug OrganizationRoleTeam#team_slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team#team_slug OrganizationRoleTeam#team_slug}
 
 ---
 
@@ -879,7 +879,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_team#id OrganizationRoleTeam#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_team#id OrganizationRoleTeam#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

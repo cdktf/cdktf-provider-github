@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role
+// https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface OrganizationRepositoryRoleConfig extends cdktf.TerraformMetaArg
   /**
   * The base role for the organization repository role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role#base_role OrganizationRepositoryRole#base_role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role#base_role OrganizationRepositoryRole#base_role}
   */
   readonly baseRole: string;
   /**
   * The description of the organization repository role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role#description OrganizationRepositoryRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role#description OrganizationRepositoryRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role#id OrganizationRepositoryRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role#id OrganizationRepositoryRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,19 +34,19 @@ export interface OrganizationRepositoryRoleConfig extends cdktf.TerraformMetaArg
   /**
   * The name of the organization repository role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role#name OrganizationRepositoryRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role#name OrganizationRepositoryRole#name}
   */
   readonly name: string;
   /**
   * The permissions for the organization repository role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role#permissions OrganizationRepositoryRole#permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role#permissions OrganizationRepositoryRole#permissions}
   */
   readonly permissions: string[];
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role github_organization_repository_role}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role github_organization_repository_role}
 */
 export class OrganizationRepositoryRole extends cdktf.TerraformResource {
 
@@ -62,7 +62,7 @@ export class OrganizationRepositoryRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationRepositoryRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationRepositoryRole to import
-  * @param importFromId The id of the existing OrganizationRepositoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationRepositoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationRepositoryRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -74,7 +74,7 @@ export class OrganizationRepositoryRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_repository_role github_organization_repository_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_repository_role github_organization_repository_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class OrganizationRepositoryRole extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_repository_role',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.8.0',
+        providerVersion: '6.8.2',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
