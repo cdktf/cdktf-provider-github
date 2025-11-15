@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user
+// https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface OrganizationRoleUserConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#id OrganizationRoleUser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user#id OrganizationRoleUser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,19 +22,19 @@ export interface OrganizationRoleUserConfig extends cdktf.TerraformMetaArguments
   /**
   * The login for the GitHub user account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#login OrganizationRoleUser#login}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user#login OrganizationRoleUser#login}
   */
   readonly login: string;
   /**
   * The unique identifier of the organization role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#role_id OrganizationRoleUser#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user#role_id OrganizationRoleUser#role_id}
   */
   readonly roleId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user github_organization_role_user}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user github_organization_role_user}
 */
 export class OrganizationRoleUser extends cdktf.TerraformResource {
 
@@ -50,7 +50,7 @@ export class OrganizationRoleUser extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationRoleUser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationRoleUser to import
-  * @param importFromId The id of the existing OrganizationRoleUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationRoleUser that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationRoleUser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class OrganizationRoleUser extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/organization_role_user github_organization_role_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/organization_role_user github_organization_role_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class OrganizationRoleUser extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_role_user',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.8.0',
+        providerVersion: '6.8.2',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

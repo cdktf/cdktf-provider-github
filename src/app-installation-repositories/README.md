@@ -1,3 +1,3 @@
 # `github_app_installation_repositories`
 
-Refer to the Terraform Registry for docs: [`github_app_installation_repositories`](https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/app_installation_repositories).
+Refer to the Terraform Registry for docs: [`github_app_installation_repositories`](https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/app_installation_repositories).

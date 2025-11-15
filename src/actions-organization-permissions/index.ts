@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions
+// https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface ActionsOrganizationPermissionsConfig extends cdktf.TerraformMet
   /**
   * The permissions policy that controls the actions that are allowed to run. Can be one of: 'all', 'local_only', or 'selected'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#allowed_actions ActionsOrganizationPermissions#allowed_actions}
   */
   readonly allowedActions?: string;
   /**
   * The policy that controls the repositories in the organization that are allowed to run GitHub Actions. Can be one of: 'all', 'none', or 'selected'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#enabled_repositories ActionsOrganizationPermissions#enabled_repositories}
   */
   readonly enabledRepositories: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#id ActionsOrganizationPermissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#id ActionsOrganizationPermissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface ActionsOrganizationPermissionsConfig extends cdktf.TerraformMet
   /**
   * allowed_actions_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#allowed_actions_config ActionsOrganizationPermissions#allowed_actions_config}
   */
   readonly allowedActionsConfig?: ActionsOrganizationPermissionsAllowedActionsConfig;
   /**
   * enabled_repositories_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#enabled_repositories_config ActionsOrganizationPermissions#enabled_repositories_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#enabled_repositories_config ActionsOrganizationPermissions#enabled_repositories_config}
   */
   readonly enabledRepositoriesConfig?: ActionsOrganizationPermissionsEnabledRepositoriesConfig;
 }
@@ -48,19 +48,19 @@ export interface ActionsOrganizationPermissionsAllowedActionsConfig {
   /**
   * Whether GitHub-owned actions are allowed in the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#github_owned_allowed ActionsOrganizationPermissions#github_owned_allowed}
   */
   readonly githubOwnedAllowed: boolean | cdktf.IResolvable;
   /**
   * Specifies a list of string-matching patterns to allow specific action(s). Wildcards, tags, and SHAs are allowed. For example, 'monalisa/octocat@', 'monalisa/octocat@v2', 'monalisa/'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#patterns_allowed ActionsOrganizationPermissions#patterns_allowed}
   */
   readonly patternsAllowed?: string[];
   /**
   * Whether actions in GitHub Marketplace from verified creators are allowed. Set to 'true' to allow all GitHub Marketplace actions by verified creators.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#verified_allowed ActionsOrganizationPermissions#verified_allowed}
   */
   readonly verifiedAllowed?: boolean | cdktf.IResolvable;
 }
@@ -201,7 +201,7 @@ export interface ActionsOrganizationPermissionsEnabledRepositoriesConfig {
   /**
   * List of repository IDs to enable for GitHub Actions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#repository_ids ActionsOrganizationPermissions#repository_ids}
   */
   readonly repositoryIds: number[];
 }
@@ -282,7 +282,7 @@ export class ActionsOrganizationPermissionsEnabledRepositoriesConfigOutputRefere
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions github_actions_organization_permissions}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions github_actions_organization_permissions}
 */
 export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
 
@@ -298,7 +298,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a ActionsOrganizationPermissions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ActionsOrganizationPermissions to import
-  * @param importFromId The id of the existing ActionsOrganizationPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ActionsOrganizationPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ActionsOrganizationPermissions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -310,7 +310,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/actions_organization_permissions github_actions_organization_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_permissions github_actions_organization_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -321,7 +321,7 @@ export class ActionsOrganizationPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'github_actions_organization_permissions',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.8.0',
+        providerVersion: '6.8.2',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

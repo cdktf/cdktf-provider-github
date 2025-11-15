@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/workflow_repository_permissions
+// https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/workflow_repository_permissions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface WorkflowRepositoryPermissionsConfig extends cdktf.TerraformMeta
   /**
   * Whether GitHub Actions can approve pull requests. Enabling this can be a security risk.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/workflow_repository_permissions#can_approve_pull_request_reviews WorkflowRepositoryPermissions#can_approve_pull_request_reviews}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/workflow_repository_permissions#can_approve_pull_request_reviews WorkflowRepositoryPermissions#can_approve_pull_request_reviews}
   */
   readonly canApprovePullRequestReviews?: boolean | cdktf.IResolvable;
   /**
   * The default workflow permissions granted to the GITHUB_TOKEN when running workflows.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/workflow_repository_permissions#default_workflow_permissions WorkflowRepositoryPermissions#default_workflow_permissions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/workflow_repository_permissions#default_workflow_permissions WorkflowRepositoryPermissions#default_workflow_permissions}
   */
   readonly defaultWorkflowPermissions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,13 +34,13 @@ export interface WorkflowRepositoryPermissionsConfig extends cdktf.TerraformMeta
   /**
   * The GitHub repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/workflow_repository_permissions#repository WorkflowRepositoryPermissions#repository}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/workflow_repository_permissions#repository WorkflowRepositoryPermissions#repository}
   */
   readonly repository: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/workflow_repository_permissions github_workflow_repository_permissions}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/workflow_repository_permissions github_workflow_repository_permissions}
 */
 export class WorkflowRepositoryPermissions extends cdktf.TerraformResource {
 
@@ -56,7 +56,7 @@ export class WorkflowRepositoryPermissions extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a WorkflowRepositoryPermissions resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkflowRepositoryPermissions to import
-  * @param importFromId The id of the existing WorkflowRepositoryPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/workflow_repository_permissions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkflowRepositoryPermissions that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/workflow_repository_permissions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkflowRepositoryPermissions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +68,7 @@ export class WorkflowRepositoryPermissions extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.0/docs/resources/workflow_repository_permissions github_workflow_repository_permissions} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/workflow_repository_permissions github_workflow_repository_permissions} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class WorkflowRepositoryPermissions extends cdktf.TerraformResource {
       terraformResourceType: 'github_workflow_repository_permissions',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.8.0',
+        providerVersion: '6.8.2',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
