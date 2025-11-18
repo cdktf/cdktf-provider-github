@@ -4,7 +4,7 @@
 
 ### IssueLabels <a name="IssueLabels" id="@cdktf/provider-github.issueLabels.IssueLabels"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels github_issue_labels}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels github_issue_labels}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.issueLabels.IssueLabels.Initializer"></a>
 
@@ -39,7 +39,7 @@ issueLabels.IssueLabels(
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.repository">repository</a></code> | <code>str</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#id IssueLabels#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#id IssueLabels#id}. |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabels.Initializer.parameter.label">label</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.issueLabels.IssueLabelsLabel">IssueLabelsLabel</a>]</code> | label block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#repository IssueLabels#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#repository IssueLabels#repository}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#id IssueLabels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#id IssueLabels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -131,7 +131,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#label IssueLabels#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#label IssueLabels#label}
 
 ---
 
@@ -633,7 +633,7 @@ The construct id used in the generated config for the IssueLabels to import.
 
 The id of the existing IssueLabels that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -927,7 +927,7 @@ issueLabels.IssueLabelsConfig(
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.repository">repository</a></code> | <code>str</code> | The GitHub repository. |
-| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#id IssueLabels#id}. |
+| <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#id IssueLabels#id}. |
 | <code><a href="#@cdktf/provider-github.issueLabels.IssueLabelsConfig.property.label">label</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-github.issueLabels.IssueLabelsLabel">IssueLabelsLabel</a>]</code> | label block. |
 
 ---
@@ -1012,7 +1012,7 @@ repository: str
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#repository IssueLabels#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#repository IssueLabels#repository}
 
 ---
 
@@ -1024,7 +1024,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#id IssueLabels#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#id IssueLabels#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1041,7 +1041,7 @@ label: IResolvable | typing.List[IssueLabelsLabel]
 
 label block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#label IssueLabels#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#label IssueLabels#label}
 
 ---
 
@@ -1079,7 +1079,7 @@ color: str
 
 A 6 character hex code, without the leading '#', identifying the color of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#color IssueLabels#color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#color IssueLabels#color}
 
 ---
 
@@ -1093,7 +1093,7 @@ name: str
 
 The name of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#name IssueLabels#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#name IssueLabels#name}
 
 ---
 
@@ -1107,7 +1107,7 @@ description: str
 
 A short description of the label.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/issue_labels#description IssueLabels#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/issue_labels#description IssueLabels#description}
 
 ---
 

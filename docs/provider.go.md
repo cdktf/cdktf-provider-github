@@ -4,7 +4,7 @@
 
 ### GithubProvider <a name="GithubProvider" id="@cdktf/provider-github.provider.GithubProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs github}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs github}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.provider.GithubProvider.Initializer"></a>
 
@@ -331,7 +331,7 @@ The construct id used in the generated config for the GithubProvider to import.
 
 The id of the existing GithubProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -802,7 +802,7 @@ Id *string
 
 The GitHub App ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#id GithubProvider#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#id GithubProvider#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -819,7 +819,7 @@ InstallationId *string
 
 The GitHub App installation instance ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#installation_id GithubProvider#installation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#installation_id GithubProvider#installation_id}
 
 ---
 
@@ -833,7 +833,7 @@ PemFile *string
 
 The GitHub App PEM file contents.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#pem_file GithubProvider#pem_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#pem_file GithubProvider#pem_file}
 
 ---
 
@@ -893,7 +893,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#alias GithubProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#alias GithubProvider#alias}
 
 ---
 
@@ -907,7 +907,7 @@ AppAuth GithubProviderAppAuth
 
 app_auth block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#app_auth GithubProvider#app_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#app_auth GithubProvider#app_auth}
 
 ---
 
@@ -921,7 +921,7 @@ BaseUrl *string
 
 The GitHub Base API URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#base_url GithubProvider#base_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#base_url GithubProvider#base_url}
 
 ---
 
@@ -935,7 +935,7 @@ Insecure interface{}
 
 Enable `insecure` mode for testing purposes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#insecure GithubProvider#insecure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#insecure GithubProvider#insecure}
 
 ---
 
@@ -949,7 +949,7 @@ MaxPerPage *f64
 
 Number of items per page for paginationDefaults to 100.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#max_per_page GithubProvider#max_per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#max_per_page GithubProvider#max_per_page}
 
 ---
 
@@ -963,7 +963,7 @@ MaxRetries *f64
 
 Number of times to retry a request after receiving an error status codeDefaults to 3.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#max_retries GithubProvider#max_retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#max_retries GithubProvider#max_retries}
 
 ---
 
@@ -977,7 +977,7 @@ Organization *string
 
 The GitHub organization name to manage. Use this field instead of `owner` when managing organization accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#organization GithubProvider#organization}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#organization GithubProvider#organization}
 
 ---
 
@@ -991,7 +991,7 @@ Owner *string
 
 The GitHub owner name to manage. Use this field instead of `organization` when managing individual accounts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#owner GithubProvider#owner}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#owner GithubProvider#owner}
 
 ---
 
@@ -1007,7 +1007,7 @@ Allow the provider to make parallel API calls to GitHub.
 
 You may want to set it to true when you have a private Github Enterprise without strict rate limits. While it is possible to enable this setting on github.com, github.com's best practices recommend using serialization to avoid hitting abuse rate limitsDefaults to false if not set
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#parallel_requests GithubProvider#parallel_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#parallel_requests GithubProvider#parallel_requests}
 
 ---
 
@@ -1023,7 +1023,7 @@ Amount of time in milliseconds to sleep in between non-write requests to GitHub 
 
 Defaults to 0ms if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#read_delay_ms GithubProvider#read_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#read_delay_ms GithubProvider#read_delay_ms}
 
 ---
 
@@ -1037,7 +1037,7 @@ RetryableErrors *[]*f64
 
 Allow the provider to retry after receiving an error status code, the max_retries should be set for this to workDefaults to [500, 502, 503, 504].
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#retryable_errors GithubProvider#retryable_errors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#retryable_errors GithubProvider#retryable_errors}
 
 ---
 
@@ -1053,7 +1053,7 @@ Amount of time in milliseconds to sleep in between requests to GitHub API after 
 
 Defaults to 1000ms or 1s if not set, the max_retries must be set to greater than zero.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#retry_delay_ms GithubProvider#retry_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#retry_delay_ms GithubProvider#retry_delay_ms}
 
 ---
 
@@ -1069,7 +1069,7 @@ The OAuth token used to connect to GitHub.
 
 Anonymous mode is enabled if both `token` and `app_auth` are not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#token GithubProvider#token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#token GithubProvider#token}
 
 ---
 
@@ -1085,7 +1085,7 @@ Amount of time in milliseconds to sleep in between writes to GitHub API.
 
 Defaults to 1000ms or 1s if not set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs#write_delay_ms GithubProvider#write_delay_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs#write_delay_ms GithubProvider#write_delay_ms}
 
 ---
 
