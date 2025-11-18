@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role
+// https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_repository_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubOrganizationRepositoryRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_repository_role#id DataGithubOrganizationRepositoryRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGithubOrganizationRepositoryRoleConfig extends cdktf.Terraf
   /**
   * The ID of the organization repository role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#role_id DataGithubOrganizationRepositoryRole#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_repository_role#role_id DataGithubOrganizationRepositoryRole#role_id}
   */
   readonly roleId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role github_organization_repository_role}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_repository_role github_organization_repository_role}
 */
 export class DataGithubOrganizationRepositoryRole extends cdktf.TerraformDataSource {
 
@@ -44,7 +44,7 @@ export class DataGithubOrganizationRepositoryRole extends cdktf.TerraformDataSou
   * Generates CDKTF code for importing a DataGithubOrganizationRepositoryRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubOrganizationRepositoryRole to import
-  * @param importFromId The id of the existing DataGithubOrganizationRepositoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubOrganizationRepositoryRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_repository_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubOrganizationRepositoryRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +56,7 @@ export class DataGithubOrganizationRepositoryRole extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/data-sources/organization_repository_role github_organization_repository_role} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_repository_role github_organization_repository_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class DataGithubOrganizationRepositoryRole extends cdktf.TerraformDataSou
       terraformResourceType: 'github_organization_repository_role',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.8.2',
+        providerVersion: '6.8.3',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

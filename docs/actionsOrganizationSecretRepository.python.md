@@ -4,7 +4,7 @@
 
 ### ActionsOrganizationSecretRepository <a name="ActionsOrganizationSecretRepository" id="@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepository"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository github_actions_organization_secret_repository}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository github_actions_organization_secret_repository}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepository.Initializer"></a>
 
@@ -40,7 +40,7 @@ actionsOrganizationSecretRepository.ActionsOrganizationSecretRepository(
 | <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepository.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepository.Initializer.parameter.repositoryId">repository_id</a></code> | <code>typing.Union[int, float]</code> | The repository ID that can access the organization secret. |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepository.Initializer.parameter.secretName">secret_name</a></code> | <code>str</code> | Name of the existing secret. |
-| <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepository.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#id ActionsOrganizationSecretRepository#id}. |
+| <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepository.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#id ActionsOrganizationSecretRepository#id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The repository ID that can access the organization secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#repository_id ActionsOrganizationSecretRepository#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#repository_id ActionsOrganizationSecretRepository#repository_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Name of the existing secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#secret_name ActionsOrganizationSecretRepository#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#secret_name ActionsOrganizationSecretRepository#secret_name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#id ActionsOrganizationSecretRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#id ActionsOrganizationSecretRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -611,7 +611,7 @@ The construct id used in the generated config for the ActionsOrganizationSecretR
 
 The id of the existing ActionsOrganizationSecretRepository that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -906,7 +906,7 @@ actionsOrganizationSecretRepository.ActionsOrganizationSecretRepositoryConfig(
 | <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepositoryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepositoryConfig.property.repositoryId">repository_id</a></code> | <code>typing.Union[int, float]</code> | The repository ID that can access the organization secret. |
 | <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepositoryConfig.property.secretName">secret_name</a></code> | <code>str</code> | Name of the existing secret. |
-| <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepositoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#id ActionsOrganizationSecretRepository#id}. |
+| <code><a href="#@cdktf/provider-github.actionsOrganizationSecretRepository.ActionsOrganizationSecretRepositoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#id ActionsOrganizationSecretRepository#id}. |
 
 ---
 
@@ -990,7 +990,7 @@ repository_id: typing.Union[int, float]
 
 The repository ID that can access the organization secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#repository_id ActionsOrganizationSecretRepository#repository_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#repository_id ActionsOrganizationSecretRepository#repository_id}
 
 ---
 
@@ -1004,7 +1004,7 @@ secret_name: str
 
 Name of the existing secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#secret_name ActionsOrganizationSecretRepository#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#secret_name ActionsOrganizationSecretRepository#secret_name}
 
 ---
 
@@ -1016,7 +1016,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.2/docs/resources/actions_organization_secret_repository#id ActionsOrganizationSecretRepository#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/actions_organization_secret_repository#id ActionsOrganizationSecretRepository#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
