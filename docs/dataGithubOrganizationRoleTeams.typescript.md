@@ -4,7 +4,7 @@
 
 ### DataGithubOrganizationRoleTeams <a name="DataGithubOrganizationRoleTeams" id="@cdktf/provider-github.dataGithubOrganizationRoleTeams.DataGithubOrganizationRoleTeams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role_teams github_organization_role_teams}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role_teams github_organization_role_teams}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationRoleTeams.DataGithubOrganizationRoleTeams.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubOrganizationRole
 
 The id of the existing DataGithubOrganizationRoleTeams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role_teams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role_teams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -622,7 +622,7 @@ const dataGithubOrganizationRoleTeamsConfig: dataGithubOrganizationRoleTeams.Dat
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoleTeams.DataGithubOrganizationRoleTeamsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoleTeams.DataGithubOrganizationRoleTeamsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoleTeams.DataGithubOrganizationRoleTeamsConfig.property.roleId">roleId</a></code> | <code>number</code> | The unique identifier of the organization role. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoleTeams.DataGithubOrganizationRoleTeamsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role_teams#id DataGithubOrganizationRoleTeams#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationRoleTeams.DataGithubOrganizationRoleTeamsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role_teams#id DataGithubOrganizationRoleTeams#id}. |
 
 ---
 
@@ -706,7 +706,7 @@ public readonly roleId: number;
 
 The unique identifier of the organization role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role_teams#role_id DataGithubOrganizationRoleTeams#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role_teams#role_id DataGithubOrganizationRoleTeams#role_id}
 
 ---
 
@@ -718,7 +718,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role_teams#id DataGithubOrganizationRoleTeams#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role_teams#id DataGithubOrganizationRoleTeams#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

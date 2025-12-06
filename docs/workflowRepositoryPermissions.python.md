@@ -4,7 +4,7 @@
 
 ### WorkflowRepositoryPermissions <a name="WorkflowRepositoryPermissions" id="@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions github_workflow_repository_permissions}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions github_workflow_repository_permissions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissions.Initializer"></a>
 
@@ -42,7 +42,7 @@ workflowRepositoryPermissions.WorkflowRepositoryPermissions(
 | <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissions.Initializer.parameter.repository">repository</a></code> | <code>str</code> | The GitHub repository. |
 | <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissions.Initializer.parameter.canApprovePullRequestReviews">can_approve_pull_request_reviews</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether GitHub Actions can approve pull requests. Enabling this can be a security risk. |
 | <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissions.Initializer.parameter.defaultWorkflowPermissions">default_workflow_permissions</a></code> | <code>str</code> | The default workflow permissions granted to the GITHUB_TOKEN when running workflows. |
-| <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}. |
+| <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissions.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#repository WorkflowRepositoryPermissions#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#repository WorkflowRepositoryPermissions#repository}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 Whether GitHub Actions can approve pull requests. Enabling this can be a security risk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#can_approve_pull_request_reviews WorkflowRepositoryPermissions#can_approve_pull_request_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#can_approve_pull_request_reviews WorkflowRepositoryPermissions#can_approve_pull_request_reviews}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The default workflow permissions granted to the GITHUB_TOKEN when running workflows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#default_workflow_permissions WorkflowRepositoryPermissions#default_workflow_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#default_workflow_permissions WorkflowRepositoryPermissions#default_workflow_permissions}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -637,7 +637,7 @@ The construct id used in the generated config for the WorkflowRepositoryPermissi
 
 The id of the existing WorkflowRepositoryPermissions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -956,7 +956,7 @@ workflowRepositoryPermissions.WorkflowRepositoryPermissionsConfig(
 | <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissionsConfig.property.repository">repository</a></code> | <code>str</code> | The GitHub repository. |
 | <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissionsConfig.property.canApprovePullRequestReviews">can_approve_pull_request_reviews</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether GitHub Actions can approve pull requests. Enabling this can be a security risk. |
 | <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissionsConfig.property.defaultWorkflowPermissions">default_workflow_permissions</a></code> | <code>str</code> | The default workflow permissions granted to the GITHUB_TOKEN when running workflows. |
-| <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}. |
+| <code><a href="#@cdktf/provider-github.workflowRepositoryPermissions.WorkflowRepositoryPermissionsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}. |
 
 ---
 
@@ -1040,7 +1040,7 @@ repository: str
 
 The GitHub repository.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#repository WorkflowRepositoryPermissions#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#repository WorkflowRepositoryPermissions#repository}
 
 ---
 
@@ -1054,7 +1054,7 @@ can_approve_pull_request_reviews: bool | IResolvable
 
 Whether GitHub Actions can approve pull requests. Enabling this can be a security risk.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#can_approve_pull_request_reviews WorkflowRepositoryPermissions#can_approve_pull_request_reviews}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#can_approve_pull_request_reviews WorkflowRepositoryPermissions#can_approve_pull_request_reviews}
 
 ---
 
@@ -1068,7 +1068,7 @@ default_workflow_permissions: str
 
 The default workflow permissions granted to the GITHUB_TOKEN when running workflows.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#default_workflow_permissions WorkflowRepositoryPermissions#default_workflow_permissions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#default_workflow_permissions WorkflowRepositoryPermissions#default_workflow_permissions}
 
 ---
 
@@ -1080,7 +1080,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/workflow_repository_permissions#id WorkflowRepositoryPermissions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
