@@ -4,7 +4,7 @@
 
 ### OrganizationCustomProperties <a name="OrganizationCustomProperties" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties github_organization_custom_properties}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties github_organization_custom_properties}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer"></a>
 
@@ -27,6 +27,7 @@ organizationCustomProperties.OrganizationCustomProperties(
   description: str = None,
   id: str = None,
   required: bool | IResolvable = None,
+  values_editable_by: str = None,
   value_type: str = None
 )
 ```
@@ -46,8 +47,9 @@ organizationCustomProperties.OrganizationCustomProperties(
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.allowedValues">allowed_values</a></code> | <code>typing.List[str]</code> | The allowed values of the custom property. |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.defaultValue">default_value</a></code> | <code>str</code> | The default value of the custom property. |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the custom property. |
-| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#id OrganizationCustomProperties#id}. |
+| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#id OrganizationCustomProperties#id}. |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the custom property is required. |
+| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.valuesEditableBy">values_editable_by</a></code> | <code>str</code> | Who can edit the values of the custom property. |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.valueType">value_type</a></code> | <code>str</code> | The type of the custom property. |
 
 ---
@@ -118,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The name of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#property_name OrganizationCustomProperties#property_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#property_name OrganizationCustomProperties#property_name}
 
 ---
 
@@ -128,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The allowed values of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#allowed_values OrganizationCustomProperties#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#allowed_values OrganizationCustomProperties#allowed_values}
 
 ---
 
@@ -138,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The default value of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#default_value OrganizationCustomProperties#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#default_value OrganizationCustomProperties#default_value}
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The description of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#description OrganizationCustomProperties#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#description OrganizationCustomProperties#description}
 
 ---
 
@@ -156,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#id OrganizationCustomProperties#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#id OrganizationCustomProperties#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,7 +171,19 @@ If you experience problems setting this value it might not be settable. Please t
 
 Whether the custom property is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#required OrganizationCustomProperties#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#required OrganizationCustomProperties#required}
+
+---
+
+##### `values_editable_by`<sup>Optional</sup> <a name="values_editable_by" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.Initializer.parameter.valuesEditableBy"></a>
+
+- *Type:* str
+
+Who can edit the values of the custom property.
+
+Can be one of 'org_actors' or 'org_and_repo_actors'. If not specified, the default is 'org_actors' (only organization owners can edit values)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#values_editable_by OrganizationCustomProperties#values_editable_by}
 
 ---
 
@@ -179,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 The type of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#value_type OrganizationCustomProperties#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#value_type OrganizationCustomProperties#value_type}
 
 ---
 
@@ -215,6 +229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.resetRequired">reset_required</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.resetValuesEditableBy">reset_values_editable_by</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.resetValueType">reset_value_type</a></code> | *No description.* |
 
 ---
@@ -574,6 +589,12 @@ def reset_id() -> None
 def reset_required() -> None
 ```
 
+##### `reset_values_editable_by` <a name="reset_values_editable_by" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.resetValuesEditableBy"></a>
+
+```python
+def reset_values_editable_by() -> None
+```
+
 ##### `reset_value_type` <a name="reset_value_type" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.resetValueType"></a>
 
 ```python
@@ -694,7 +715,7 @@ The construct id used in the generated config for the OrganizationCustomProperti
 
 The id of the existing OrganizationCustomProperties that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,6 +751,7 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.propertyNameInput">property_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.requiredInput">required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.valuesEditableByInput">values_editable_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.valueTypeInput">value_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.allowedValues">allowed_values</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.defaultValue">default_value</a></code> | <code>str</code> | *No description.* |
@@ -737,6 +759,7 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.propertyName">property_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.valuesEditableBy">values_editable_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.valueType">value_type</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -943,6 +966,16 @@ required_input: bool | IResolvable
 
 ---
 
+##### `values_editable_by_input`<sup>Optional</sup> <a name="values_editable_by_input" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.valuesEditableByInput"></a>
+
+```python
+values_editable_by_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `value_type_input`<sup>Optional</sup> <a name="value_type_input" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.valueTypeInput"></a>
 
 ```python
@@ -1013,6 +1046,16 @@ required: bool | IResolvable
 
 ---
 
+##### `values_editable_by`<sup>Required</sup> <a name="values_editable_by" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.valuesEditableBy"></a>
+
+```python
+values_editable_by: str
+```
+
+- *Type:* str
+
+---
+
 ##### `value_type`<sup>Required</sup> <a name="value_type" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomProperties.property.valueType"></a>
 
 ```python
@@ -1064,6 +1107,7 @@ organizationCustomProperties.OrganizationCustomPropertiesConfig(
   description: str = None,
   id: str = None,
   required: bool | IResolvable = None,
+  values_editable_by: str = None,
   value_type: str = None
 )
 ```
@@ -1083,8 +1127,9 @@ organizationCustomProperties.OrganizationCustomPropertiesConfig(
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.allowedValues">allowed_values</a></code> | <code>typing.List[str]</code> | The allowed values of the custom property. |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.defaultValue">default_value</a></code> | <code>str</code> | The default value of the custom property. |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.description">description</a></code> | <code>str</code> | The description of the custom property. |
-| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#id OrganizationCustomProperties#id}. |
+| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#id OrganizationCustomProperties#id}. |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the custom property is required. |
+| <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.valuesEditableBy">values_editable_by</a></code> | <code>str</code> | Who can edit the values of the custom property. |
 | <code><a href="#@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.valueType">value_type</a></code> | <code>str</code> | The type of the custom property. |
 
 ---
@@ -1169,7 +1214,7 @@ property_name: str
 
 The name of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#property_name OrganizationCustomProperties#property_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#property_name OrganizationCustomProperties#property_name}
 
 ---
 
@@ -1183,7 +1228,7 @@ allowed_values: typing.List[str]
 
 The allowed values of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#allowed_values OrganizationCustomProperties#allowed_values}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#allowed_values OrganizationCustomProperties#allowed_values}
 
 ---
 
@@ -1197,7 +1242,7 @@ default_value: str
 
 The default value of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#default_value OrganizationCustomProperties#default_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#default_value OrganizationCustomProperties#default_value}
 
 ---
 
@@ -1211,7 +1256,7 @@ description: str
 
 The description of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#description OrganizationCustomProperties#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#description OrganizationCustomProperties#description}
 
 ---
 
@@ -1223,7 +1268,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#id OrganizationCustomProperties#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#id OrganizationCustomProperties#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1240,7 +1285,23 @@ required: bool | IResolvable
 
 Whether the custom property is required.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#required OrganizationCustomProperties#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#required OrganizationCustomProperties#required}
+
+---
+
+##### `values_editable_by`<sup>Optional</sup> <a name="values_editable_by" id="@cdktf/provider-github.organizationCustomProperties.OrganizationCustomPropertiesConfig.property.valuesEditableBy"></a>
+
+```python
+values_editable_by: str
+```
+
+- *Type:* str
+
+Who can edit the values of the custom property.
+
+Can be one of 'org_actors' or 'org_and_repo_actors'. If not specified, the default is 'org_actors' (only organization owners can edit values)
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#values_editable_by OrganizationCustomProperties#values_editable_by}
 
 ---
 
@@ -1254,7 +1315,7 @@ value_type: str
 
 The type of the custom property.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_custom_properties#value_type OrganizationCustomProperties#value_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_custom_properties#value_type OrganizationCustomProperties#value_type}
 
 ---
 

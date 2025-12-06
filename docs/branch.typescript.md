@@ -4,7 +4,7 @@
 
 ### Branch <a name="Branch" id="@cdktf/provider-github.branch.Branch"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch github_branch}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch github_branch}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.branch.Branch.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the Branch to import.
 
 The id of the existing Branch that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +868,7 @@ const branchConfig: branch.BranchConfig = { ... }
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.branch">branch</a></code> | <code>string</code> | The repository branch to create. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.repository">repository</a></code> | <code>string</code> | The GitHub repository name. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.etag">etag</a></code> | <code>string</code> | An etag representing the Branch object. |
-| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch#id Branch#id}. |
+| <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch#id Branch#id}. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.sourceBranch">sourceBranch</a></code> | <code>string</code> | The branch name to start from. Defaults to 'main'. |
 | <code><a href="#@cdktf/provider-github.branch.BranchConfig.property.sourceSha">sourceSha</a></code> | <code>string</code> | The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored. |
 
@@ -954,7 +954,7 @@ public readonly branch: string;
 
 The repository branch to create.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch#branch Branch#branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch#branch Branch#branch}
 
 ---
 
@@ -968,7 +968,7 @@ public readonly repository: string;
 
 The GitHub repository name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch#repository Branch#repository}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch#repository Branch#repository}
 
 ---
 
@@ -982,7 +982,7 @@ public readonly etag: string;
 
 An etag representing the Branch object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch#etag Branch#etag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch#etag Branch#etag}
 
 ---
 
@@ -994,7 +994,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch#id Branch#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch#id Branch#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1011,7 +1011,7 @@ public readonly sourceBranch: string;
 
 The branch name to start from. Defaults to 'main'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch#source_branch Branch#source_branch}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch#source_branch Branch#source_branch}
 
 ---
 
@@ -1025,7 +1025,7 @@ public readonly sourceSha: string;
 
 The commit hash to start from. Defaults to the tip of 'source_branch'. If provided, 'source_branch' is ignored.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/branch#source_sha Branch#source_sha}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/branch#source_sha Branch#source_sha}
 
 ---
 

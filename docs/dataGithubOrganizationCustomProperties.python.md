@@ -4,7 +4,7 @@
 
 ### DataGithubOrganizationCustomProperties <a name="DataGithubOrganizationCustomProperties" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties github_organization_custom_properties}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties github_organization_custom_properties}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer"></a>
 
@@ -27,6 +27,7 @@ dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties(
   description: str = None,
   id: str = None,
   required: bool | IResolvable = None,
+  values_editable_by: str = None,
   value_type: str = None
 )
 ```
@@ -42,13 +43,14 @@ dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties(
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.propertyName">property_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#property_name DataGithubOrganizationCustomProperties#property_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.allowedValues">allowed_values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#allowed_values DataGithubOrganizationCustomProperties#allowed_values}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.defaultValue">default_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#default_value DataGithubOrganizationCustomProperties#default_value}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#description DataGithubOrganizationCustomProperties#description}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#id DataGithubOrganizationCustomProperties#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#required DataGithubOrganizationCustomProperties#required}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.valueType">value_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#value_type DataGithubOrganizationCustomProperties#value_type}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.propertyName">property_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#property_name DataGithubOrganizationCustomProperties#property_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.allowedValues">allowed_values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#allowed_values DataGithubOrganizationCustomProperties#allowed_values}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.defaultValue">default_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#default_value DataGithubOrganizationCustomProperties#default_value}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#description DataGithubOrganizationCustomProperties#description}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#id DataGithubOrganizationCustomProperties#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#required DataGithubOrganizationCustomProperties#required}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.valuesEditableBy">values_editable_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#values_editable_by DataGithubOrganizationCustomProperties#values_editable_by}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.valueType">value_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#value_type DataGithubOrganizationCustomProperties#value_type}. |
 
 ---
 
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#property_name DataGithubOrganizationCustomProperties#property_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#property_name DataGithubOrganizationCustomProperties#property_name}.
 
 ---
 
@@ -124,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#allowed_values DataGithubOrganizationCustomProperties#allowed_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#allowed_values DataGithubOrganizationCustomProperties#allowed_values}.
 
 ---
 
@@ -132,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#default_value DataGithubOrganizationCustomProperties#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#default_value DataGithubOrganizationCustomProperties#default_value}.
 
 ---
 
@@ -140,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#description DataGithubOrganizationCustomProperties#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#description DataGithubOrganizationCustomProperties#description}.
 
 ---
 
@@ -148,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#id DataGithubOrganizationCustomProperties#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#id DataGithubOrganizationCustomProperties#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +161,15 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#required DataGithubOrganizationCustomProperties#required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#required DataGithubOrganizationCustomProperties#required}.
+
+---
+
+##### `values_editable_by`<sup>Optional</sup> <a name="values_editable_by" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer.parameter.valuesEditableBy"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#values_editable_by DataGithubOrganizationCustomProperties#values_editable_by}.
 
 ---
 
@@ -167,7 +177,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#value_type DataGithubOrganizationCustomProperties#value_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#value_type DataGithubOrganizationCustomProperties#value_type}.
 
 ---
 
@@ -197,6 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.resetRequired">reset_required</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.resetValuesEditableBy">reset_values_editable_by</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.resetValueType">reset_value_type</a></code> | *No description.* |
 
 ---
@@ -448,6 +459,12 @@ def reset_id() -> None
 def reset_required() -> None
 ```
 
+##### `reset_values_editable_by` <a name="reset_values_editable_by" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.resetValuesEditableBy"></a>
+
+```python
+def reset_values_editable_by() -> None
+```
+
 ##### `reset_value_type` <a name="reset_value_type" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.resetValueType"></a>
 
 ```python
@@ -568,7 +585,7 @@ The construct id used in the generated config for the DataGithubOrganizationCust
 
 The id of the existing DataGithubOrganizationCustomProperties that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -602,6 +619,7 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.propertyNameInput">property_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.requiredInput">required_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.valuesEditableByInput">values_editable_by_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.valueTypeInput">value_type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.allowedValues">allowed_values</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.defaultValue">default_value</a></code> | <code>str</code> | *No description.* |
@@ -609,6 +627,7 @@ Refer to the {@link https://registry.terraform.io/providers/integrations/github/
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.propertyName">property_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.valuesEditableBy">values_editable_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.valueType">value_type</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -795,6 +814,16 @@ required_input: bool | IResolvable
 
 ---
 
+##### `values_editable_by_input`<sup>Optional</sup> <a name="values_editable_by_input" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.valuesEditableByInput"></a>
+
+```python
+values_editable_by_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `value_type_input`<sup>Optional</sup> <a name="value_type_input" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.valueTypeInput"></a>
 
 ```python
@@ -865,6 +894,16 @@ required: bool | IResolvable
 
 ---
 
+##### `values_editable_by`<sup>Required</sup> <a name="values_editable_by" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.valuesEditableBy"></a>
+
+```python
+values_editable_by: str
+```
+
+- *Type:* str
+
+---
+
 ##### `value_type`<sup>Required</sup> <a name="value_type" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.property.valueType"></a>
 
 ```python
@@ -916,6 +955,7 @@ dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesCon
   description: str = None,
   id: str = None,
   required: bool | IResolvable = None,
+  values_editable_by: str = None,
   value_type: str = None
 )
 ```
@@ -931,13 +971,14 @@ dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesCon
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.propertyName">property_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#property_name DataGithubOrganizationCustomProperties#property_name}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.allowedValues">allowed_values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#allowed_values DataGithubOrganizationCustomProperties#allowed_values}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.defaultValue">default_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#default_value DataGithubOrganizationCustomProperties#default_value}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#description DataGithubOrganizationCustomProperties#description}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#id DataGithubOrganizationCustomProperties#id}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#required DataGithubOrganizationCustomProperties#required}. |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.valueType">value_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#value_type DataGithubOrganizationCustomProperties#value_type}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.propertyName">property_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#property_name DataGithubOrganizationCustomProperties#property_name}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.allowedValues">allowed_values</a></code> | <code>typing.List[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#allowed_values DataGithubOrganizationCustomProperties#allowed_values}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.defaultValue">default_value</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#default_value DataGithubOrganizationCustomProperties#default_value}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#description DataGithubOrganizationCustomProperties#description}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#id DataGithubOrganizationCustomProperties#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.required">required</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#required DataGithubOrganizationCustomProperties#required}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.valuesEditableBy">values_editable_by</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#values_editable_by DataGithubOrganizationCustomProperties#values_editable_by}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.valueType">value_type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#value_type DataGithubOrganizationCustomProperties#value_type}. |
 
 ---
 
@@ -1019,7 +1060,7 @@ property_name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#property_name DataGithubOrganizationCustomProperties#property_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#property_name DataGithubOrganizationCustomProperties#property_name}.
 
 ---
 
@@ -1031,7 +1072,7 @@ allowed_values: typing.List[str]
 
 - *Type:* typing.List[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#allowed_values DataGithubOrganizationCustomProperties#allowed_values}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#allowed_values DataGithubOrganizationCustomProperties#allowed_values}.
 
 ---
 
@@ -1043,7 +1084,7 @@ default_value: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#default_value DataGithubOrganizationCustomProperties#default_value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#default_value DataGithubOrganizationCustomProperties#default_value}.
 
 ---
 
@@ -1055,7 +1096,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#description DataGithubOrganizationCustomProperties#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#description DataGithubOrganizationCustomProperties#description}.
 
 ---
 
@@ -1067,7 +1108,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#id DataGithubOrganizationCustomProperties#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#id DataGithubOrganizationCustomProperties#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1123,19 @@ required: bool | IResolvable
 
 - *Type:* bool | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#required DataGithubOrganizationCustomProperties#required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#required DataGithubOrganizationCustomProperties#required}.
+
+---
+
+##### `values_editable_by`<sup>Optional</sup> <a name="values_editable_by" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.property.valuesEditableBy"></a>
+
+```python
+values_editable_by: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#values_editable_by DataGithubOrganizationCustomProperties#values_editable_by}.
 
 ---
 
@@ -1094,7 +1147,7 @@ value_type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_custom_properties#value_type DataGithubOrganizationCustomProperties#value_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_custom_properties#value_type DataGithubOrganizationCustomProperties#value_type}.
 
 ---
 

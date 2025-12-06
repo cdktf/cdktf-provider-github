@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset
+// https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface OrganizationRulesetConfig extends cdktf.TerraformMetaArguments 
   /**
   * Possible values for Enforcement are `disabled`, `active`, `evaluate`. Note: `evaluate` is currently only supported for owners of type `organization`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#enforcement OrganizationRuleset#enforcement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#enforcement OrganizationRuleset#enforcement}
   */
   readonly enforcement: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#id OrganizationRuleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#id OrganizationRuleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface OrganizationRulesetConfig extends cdktf.TerraformMetaArguments 
   /**
   * The name of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
   */
   readonly name: string;
   /**
   * Possible values are `branch`, `tag` and `push`. Note: The `push` target is in beta and is subject to change.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#target OrganizationRuleset#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#target OrganizationRuleset#target}
   */
   readonly target: string;
   /**
   * bypass_actors block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#bypass_actors OrganizationRuleset#bypass_actors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#bypass_actors OrganizationRuleset#bypass_actors}
   */
   readonly bypassActors?: OrganizationRulesetBypassActors[] | cdktf.IResolvable;
   /**
   * conditions block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#conditions OrganizationRuleset#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#conditions OrganizationRuleset#conditions}
   */
   readonly conditions?: OrganizationRulesetConditions;
   /**
   * rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#rules OrganizationRuleset#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#rules OrganizationRuleset#rules}
   */
   readonly rules: OrganizationRulesetRules;
 }
@@ -60,19 +60,19 @@ export interface OrganizationRulesetBypassActors {
   /**
   * The ID of the actor that can bypass a ruleset. When `actor_type` is `OrganizationAdmin`, this should be set to `1`. Some resources such as DeployKey do not have an ID and this should be omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#actor_id OrganizationRuleset#actor_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#actor_id OrganizationRuleset#actor_id}
   */
   readonly actorId?: number;
   /**
   * The type of actor that can bypass a ruleset. See https://docs.github.com/en/rest/orgs/rules for more information
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#actor_type OrganizationRuleset#actor_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#actor_type OrganizationRuleset#actor_type}
   */
   readonly actorType: string;
   /**
   * When the specified actor can bypass the ruleset. pull_request means that an actor can only bypass rules on pull requests. Can be one of: `always`, `pull_request`, `exempt`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#bypass_mode OrganizationRuleset#bypass_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#bypass_mode OrganizationRuleset#bypass_mode}
   */
   readonly bypassMode: string;
 }
@@ -242,13 +242,13 @@ export interface OrganizationRulesetConditionsRefName {
   /**
   * Array of ref names or patterns to exclude. The condition will not pass if any of these patterns match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#exclude OrganizationRuleset#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#exclude OrganizationRuleset#exclude}
   */
   readonly exclude: string[];
   /**
   * Array of ref names or patterns to include. One of these patterns must match for the condition to pass. Also accepts `~DEFAULT_BRANCH` to include the default branch or `~ALL` to include all branches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#include OrganizationRuleset#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#include OrganizationRuleset#include}
   */
   readonly include: string[];
 }
@@ -357,19 +357,19 @@ export interface OrganizationRulesetConditionsRepositoryName {
   /**
   * Array of repository names or patterns to exclude. The condition will not pass if any of these patterns match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#exclude OrganizationRuleset#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#exclude OrganizationRuleset#exclude}
   */
   readonly exclude: string[];
   /**
   * Array of repository names or patterns to include. One of these patterns must match for the condition to pass. Also accepts `~ALL` to include all repositories.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#include OrganizationRuleset#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#include OrganizationRuleset#include}
   */
   readonly include: string[];
   /**
   * Whether renaming of target repositories is prevented.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#protected OrganizationRuleset#protected}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#protected OrganizationRuleset#protected}
   */
   readonly protected?: boolean | cdktf.IResolvable;
 }
@@ -507,19 +507,19 @@ export interface OrganizationRulesetConditions {
   /**
   * The repository IDs that the ruleset applies to. One of these IDs must match for the condition to pass.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#repository_id OrganizationRuleset#repository_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#repository_id OrganizationRuleset#repository_id}
   */
   readonly repositoryId?: number[];
   /**
   * ref_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#ref_name OrganizationRuleset#ref_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#ref_name OrganizationRuleset#ref_name}
   */
   readonly refName: OrganizationRulesetConditionsRefName;
   /**
   * repository_name block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#repository_name OrganizationRuleset#repository_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#repository_name OrganizationRuleset#repository_name}
   */
   readonly repositoryName?: OrganizationRulesetConditionsRepositoryName;
 }
@@ -660,25 +660,25 @@ export interface OrganizationRulesetRulesBranchNamePattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -845,25 +845,25 @@ export interface OrganizationRulesetRulesCommitAuthorEmailPattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -1030,25 +1030,25 @@ export interface OrganizationRulesetRulesCommitMessagePattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -1215,25 +1215,25 @@ export interface OrganizationRulesetRulesCommitterEmailPattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -1400,7 +1400,7 @@ export interface OrganizationRulesetRulesFileExtensionRestriction {
   /**
   * The file extensions that are restricted from being pushed to the commit graph.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#restricted_file_extensions OrganizationRuleset#restricted_file_extensions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#restricted_file_extensions OrganizationRuleset#restricted_file_extensions}
   */
   readonly restrictedFileExtensions: string[];
 }
@@ -1483,7 +1483,7 @@ export interface OrganizationRulesetRulesFilePathRestriction {
   /**
   * The file paths that are restricted from being pushed to the commit graph.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#restricted_file_paths OrganizationRuleset#restricted_file_paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#restricted_file_paths OrganizationRuleset#restricted_file_paths}
   */
   readonly restrictedFilePaths: string[];
 }
@@ -1566,7 +1566,7 @@ export interface OrganizationRulesetRulesMaxFilePathLength {
   /**
   * The maximum allowed length of a file path.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#max_file_path_length OrganizationRuleset#max_file_path_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#max_file_path_length OrganizationRuleset#max_file_path_length}
   */
   readonly maxFilePathLength: number;
 }
@@ -1647,9 +1647,9 @@ export class OrganizationRulesetRulesMaxFilePathLengthOutputReference extends cd
 }
 export interface OrganizationRulesetRulesMaxFileSize {
   /**
-  * The maximum allowed size of a file in bytes.
+  * The maximum allowed size of a file in megabytes (MB). Valid range is 1-100 MB.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#max_file_size OrganizationRuleset#max_file_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#max_file_size OrganizationRuleset#max_file_size}
   */
   readonly maxFileSize: number;
 }
@@ -1732,31 +1732,31 @@ export interface OrganizationRulesetRulesPullRequest {
   /**
   * New, reviewable commits pushed will dismiss previous pull request review approvals. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#dismiss_stale_reviews_on_push OrganizationRuleset#dismiss_stale_reviews_on_push}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#dismiss_stale_reviews_on_push OrganizationRuleset#dismiss_stale_reviews_on_push}
   */
   readonly dismissStaleReviewsOnPush?: boolean | cdktf.IResolvable;
   /**
   * Require an approving review in pull requests that modify files that have a designated code owner. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#require_code_owner_review OrganizationRuleset#require_code_owner_review}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#require_code_owner_review OrganizationRuleset#require_code_owner_review}
   */
   readonly requireCodeOwnerReview?: boolean | cdktf.IResolvable;
   /**
   * Whether the most recent reviewable push must be approved by someone other than the person who pushed it. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#require_last_push_approval OrganizationRuleset#require_last_push_approval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#require_last_push_approval OrganizationRuleset#require_last_push_approval}
   */
   readonly requireLastPushApproval?: boolean | cdktf.IResolvable;
   /**
   * The number of approving reviews that are required before a pull request can be merged. Defaults to `0`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_approving_review_count OrganizationRuleset#required_approving_review_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_approving_review_count OrganizationRuleset#required_approving_review_count}
   */
   readonly requiredApprovingReviewCount?: number;
   /**
   * All conversations on code must be resolved before a pull request can be merged. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_review_thread_resolution OrganizationRuleset#required_review_thread_resolution}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_review_thread_resolution OrganizationRuleset#required_review_thread_resolution}
   */
   readonly requiredReviewThreadResolution?: boolean | cdktf.IResolvable;
 }
@@ -1958,19 +1958,19 @@ export interface OrganizationRulesetRulesRequiredCodeScanningRequiredCodeScannin
   /**
   * The severity level at which code scanning results that raise alerts block a reference update. Can be one of: `none`, `errors`, `errors_and_warnings`, `all`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#alerts_threshold OrganizationRuleset#alerts_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#alerts_threshold OrganizationRuleset#alerts_threshold}
   */
   readonly alertsThreshold: string;
   /**
   * The severity level at which code scanning results that raise security alerts block a reference update. Can be one of: `none`, `critical`, `high_or_higher`, `medium_or_higher`, `all`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#security_alerts_threshold OrganizationRuleset#security_alerts_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#security_alerts_threshold OrganizationRuleset#security_alerts_threshold}
   */
   readonly securityAlertsThreshold: string;
   /**
   * The name of a code scanning tool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#tool OrganizationRuleset#tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#tool OrganizationRuleset#tool}
   */
   readonly tool: string;
 }
@@ -2137,7 +2137,7 @@ export interface OrganizationRulesetRulesRequiredCodeScanning {
   /**
   * required_code_scanning_tool block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_code_scanning_tool OrganizationRuleset#required_code_scanning_tool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_code_scanning_tool OrganizationRuleset#required_code_scanning_tool}
   */
   readonly requiredCodeScanningTool: OrganizationRulesetRulesRequiredCodeScanningRequiredCodeScanningTool[] | cdktf.IResolvable;
 }
@@ -2220,13 +2220,13 @@ export interface OrganizationRulesetRulesRequiredStatusChecksRequiredCheck {
   /**
   * The status check context name that must be present on the commit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#context OrganizationRuleset#context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#context OrganizationRuleset#context}
   */
   readonly context: string;
   /**
   * The optional integration ID that this status check must originate from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#integration_id OrganizationRuleset#integration_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#integration_id OrganizationRuleset#integration_id}
   */
   readonly integrationId?: number;
 }
@@ -2370,19 +2370,19 @@ export interface OrganizationRulesetRulesRequiredStatusChecks {
   /**
   * Allow repositories and branches to be created if a check would otherwise prohibit it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
   */
   readonly doNotEnforceOnCreate?: boolean | cdktf.IResolvable;
   /**
   * Whether pull requests targeting a matching branch must be tested with the latest code. This setting will not take effect unless at least one status check is enabled. Defaults to `false`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#strict_required_status_checks_policy OrganizationRuleset#strict_required_status_checks_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#strict_required_status_checks_policy OrganizationRuleset#strict_required_status_checks_policy}
   */
   readonly strictRequiredStatusChecksPolicy?: boolean | cdktf.IResolvable;
   /**
   * required_check block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_check OrganizationRuleset#required_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_check OrganizationRuleset#required_check}
   */
   readonly requiredCheck: OrganizationRulesetRulesRequiredStatusChecksRequiredCheck[] | cdktf.IResolvable;
 }
@@ -2523,19 +2523,19 @@ export interface OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflow {
   /**
   * The path to the workflow YAML definition file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#path OrganizationRuleset#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#path OrganizationRuleset#path}
   */
   readonly path: string;
   /**
   * The ref (branch or tag) of the workflow file to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#ref OrganizationRuleset#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#ref OrganizationRuleset#ref}
   */
   readonly ref?: string;
   /**
   * The repository in which the workflow is defined.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#repository_id OrganizationRuleset#repository_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#repository_id OrganizationRuleset#repository_id}
   */
   readonly repositoryId: number;
 }
@@ -2705,13 +2705,13 @@ export interface OrganizationRulesetRulesRequiredWorkflows {
   /**
   * Allow repositories and branches to be created if a check would otherwise prohibit it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#do_not_enforce_on_create OrganizationRuleset#do_not_enforce_on_create}
   */
   readonly doNotEnforceOnCreate?: boolean | cdktf.IResolvable;
   /**
   * required_workflow block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_workflow OrganizationRuleset#required_workflow}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_workflow OrganizationRuleset#required_workflow}
   */
   readonly requiredWorkflow: OrganizationRulesetRulesRequiredWorkflowsRequiredWorkflow[] | cdktf.IResolvable;
 }
@@ -2823,25 +2823,25 @@ export interface OrganizationRulesetRulesTagNamePattern {
   /**
   * How this rule will appear to users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#name OrganizationRuleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#name OrganizationRuleset#name}
   */
   readonly name?: string;
   /**
   * If true, the rule will fail if the pattern matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#negate OrganizationRuleset#negate}
   */
   readonly negate?: boolean | cdktf.IResolvable;
   /**
   * The operator to use for matching. Can be one of: `starts_with`, `ends_with`, `contains`, `regex`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#operator OrganizationRuleset#operator}
   */
   readonly operator: string;
   /**
   * The pattern to match with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#pattern OrganizationRuleset#pattern}
   */
   readonly pattern: string;
 }
@@ -3008,115 +3008,115 @@ export interface OrganizationRulesetRules {
   /**
   * Only allow users with bypass permission to create matching refs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#creation OrganizationRuleset#creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#creation OrganizationRuleset#creation}
   */
   readonly creation?: boolean | cdktf.IResolvable;
   /**
   * Only allow users with bypass permissions to delete matching refs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#deletion OrganizationRuleset#deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#deletion OrganizationRuleset#deletion}
   */
   readonly deletion?: boolean | cdktf.IResolvable;
   /**
   * Prevent users with push access from force pushing to branches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#non_fast_forward OrganizationRuleset#non_fast_forward}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#non_fast_forward OrganizationRuleset#non_fast_forward}
   */
   readonly nonFastForward?: boolean | cdktf.IResolvable;
   /**
   * Prevent merge commits from being pushed to matching branches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_linear_history OrganizationRuleset#required_linear_history}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_linear_history OrganizationRuleset#required_linear_history}
   */
   readonly requiredLinearHistory?: boolean | cdktf.IResolvable;
   /**
   * Commits pushed to matching branches must have verified signatures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_signatures OrganizationRuleset#required_signatures}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_signatures OrganizationRuleset#required_signatures}
   */
   readonly requiredSignatures?: boolean | cdktf.IResolvable;
   /**
   * Only allow users with bypass permission to update matching refs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#update OrganizationRuleset#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#update OrganizationRuleset#update}
   */
   readonly update?: boolean | cdktf.IResolvable;
   /**
   * branch_name_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#branch_name_pattern OrganizationRuleset#branch_name_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#branch_name_pattern OrganizationRuleset#branch_name_pattern}
   */
   readonly branchNamePattern?: OrganizationRulesetRulesBranchNamePattern;
   /**
   * commit_author_email_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#commit_author_email_pattern OrganizationRuleset#commit_author_email_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#commit_author_email_pattern OrganizationRuleset#commit_author_email_pattern}
   */
   readonly commitAuthorEmailPattern?: OrganizationRulesetRulesCommitAuthorEmailPattern;
   /**
   * commit_message_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#commit_message_pattern OrganizationRuleset#commit_message_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#commit_message_pattern OrganizationRuleset#commit_message_pattern}
   */
   readonly commitMessagePattern?: OrganizationRulesetRulesCommitMessagePattern;
   /**
   * committer_email_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#committer_email_pattern OrganizationRuleset#committer_email_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#committer_email_pattern OrganizationRuleset#committer_email_pattern}
   */
   readonly committerEmailPattern?: OrganizationRulesetRulesCommitterEmailPattern;
   /**
   * file_extension_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#file_extension_restriction OrganizationRuleset#file_extension_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#file_extension_restriction OrganizationRuleset#file_extension_restriction}
   */
   readonly fileExtensionRestriction?: OrganizationRulesetRulesFileExtensionRestriction;
   /**
   * file_path_restriction block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#file_path_restriction OrganizationRuleset#file_path_restriction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#file_path_restriction OrganizationRuleset#file_path_restriction}
   */
   readonly filePathRestriction?: OrganizationRulesetRulesFilePathRestriction;
   /**
   * max_file_path_length block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#max_file_path_length OrganizationRuleset#max_file_path_length}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#max_file_path_length OrganizationRuleset#max_file_path_length}
   */
   readonly maxFilePathLength?: OrganizationRulesetRulesMaxFilePathLength;
   /**
   * max_file_size block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#max_file_size OrganizationRuleset#max_file_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#max_file_size OrganizationRuleset#max_file_size}
   */
   readonly maxFileSize?: OrganizationRulesetRulesMaxFileSize;
   /**
   * pull_request block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#pull_request OrganizationRuleset#pull_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#pull_request OrganizationRuleset#pull_request}
   */
   readonly pullRequest?: OrganizationRulesetRulesPullRequest;
   /**
   * required_code_scanning block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_code_scanning OrganizationRuleset#required_code_scanning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_code_scanning OrganizationRuleset#required_code_scanning}
   */
   readonly requiredCodeScanning?: OrganizationRulesetRulesRequiredCodeScanning;
   /**
   * required_status_checks block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_status_checks OrganizationRuleset#required_status_checks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_status_checks OrganizationRuleset#required_status_checks}
   */
   readonly requiredStatusChecks?: OrganizationRulesetRulesRequiredStatusChecks;
   /**
   * required_workflows block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#required_workflows OrganizationRuleset#required_workflows}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#required_workflows OrganizationRuleset#required_workflows}
   */
   readonly requiredWorkflows?: OrganizationRulesetRulesRequiredWorkflows;
   /**
   * tag_name_pattern block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#tag_name_pattern OrganizationRuleset#tag_name_pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#tag_name_pattern OrganizationRuleset#tag_name_pattern}
   */
   readonly tagNamePattern?: OrganizationRulesetRulesTagNamePattern;
 }
@@ -3722,7 +3722,7 @@ export class OrganizationRulesetRulesOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset github_organization_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset github_organization_ruleset}
 */
 export class OrganizationRuleset extends cdktf.TerraformResource {
 
@@ -3738,7 +3738,7 @@ export class OrganizationRuleset extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a OrganizationRuleset resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationRuleset to import
-  * @param importFromId The id of the existing OrganizationRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationRuleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -3750,7 +3750,7 @@ export class OrganizationRuleset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/resources/organization_ruleset github_organization_ruleset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/resources/organization_ruleset github_organization_ruleset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3761,7 +3761,7 @@ export class OrganizationRuleset extends cdktf.TerraformResource {
       terraformResourceType: 'github_organization_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.8.3',
+        providerVersion: '6.9.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,

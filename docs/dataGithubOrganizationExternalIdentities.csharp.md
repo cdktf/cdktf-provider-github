@@ -4,7 +4,7 @@
 
 ### DataGithubOrganizationExternalIdentities <a name="DataGithubOrganizationExternalIdentities" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities"></a>
 
-Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_external_identities github_organization_external_identities}.
+Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_external_identities github_organization_external_identities}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentities.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataGithubOrganizationExte
 
 The id of the existing DataGithubOrganizationExternalIdentities that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_external_identities#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_external_identities#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -608,7 +608,7 @@ new DataGithubOrganizationExternalIdentitiesConfig {
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_external_identities#id DataGithubOrganizationExternalIdentities#id}. |
+| <code><a href="#@cdktf/provider-github.dataGithubOrganizationExternalIdentities.DataGithubOrganizationExternalIdentitiesConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_external_identities#id DataGithubOrganizationExternalIdentities#id}. |
 
 ---
 
@@ -690,7 +690,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_external_identities#id DataGithubOrganizationExternalIdentities#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_external_identities#id DataGithubOrganizationExternalIdentities#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role
+// https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktf from 'cdktf';
 
 export interface DataGithubOrganizationRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role#id DataGithubOrganizationRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role#id DataGithubOrganizationRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,13 +22,13 @@ export interface DataGithubOrganizationRoleConfig extends cdktf.TerraformMetaArg
   /**
   * The ID of the organization role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role#role_id DataGithubOrganizationRole#role_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role#role_id DataGithubOrganizationRole#role_id}
   */
   readonly roleId: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role github_organization_role}
+* Represents a {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role github_organization_role}
 */
 export class DataGithubOrganizationRole extends cdktf.TerraformDataSource {
 
@@ -44,7 +44,7 @@ export class DataGithubOrganizationRole extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataGithubOrganizationRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataGithubOrganizationRole to import
-  * @param importFromId The id of the existing DataGithubOrganizationRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataGithubOrganizationRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataGithubOrganizationRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -56,7 +56,7 @@ export class DataGithubOrganizationRole extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.8.3/docs/data-sources/organization_role github_organization_role} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/integrations/github/6.9.0/docs/data-sources/organization_role github_organization_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class DataGithubOrganizationRole extends cdktf.TerraformDataSource {
       terraformResourceType: 'github_organization_role',
       terraformGeneratorMetadata: {
         providerName: 'github',
-        providerVersion: '6.8.3',
+        providerVersion: '6.9.0',
         providerVersionConstraint: '~> 6.0'
       },
       provider: config.provider,
