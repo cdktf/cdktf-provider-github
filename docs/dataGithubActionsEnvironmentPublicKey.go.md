@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubActionsEnvironmentPublicKey.DataGithubActionsEnvironmentPublicKey.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubactionsenvironmentpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentpublickey"
 
 datagithubactionsenvironmentpublickey.NewDataGithubActionsEnvironmentPublicKey(scope Construct, id *string, config DataGithubActionsEnvironmentPublicKeyConfig) DataGithubActionsEnvironmentPublicKey
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubActionsEnvironmentPublicKey.DataGithubActionsEnvironmentPublicKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubactionsenvironmentpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentpublickey"
 
 datagithubactionsenvironmentpublickey.DataGithubActionsEnvironmentPublicKey_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubActionsEnvironmentPublicKey.DataGithubActionsEnvironmentPublicKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubactionsenvironmentpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentpublickey"
 
 datagithubactionsenvironmentpublickey.DataGithubActionsEnvironmentPublicKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubactionsenvironmentpublickey.DataGithubActionsEnvironmentPublicKey_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubActionsEnvironmentPublicKey.DataGithubActionsEnvironmentPublicKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubactionsenvironmentpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentpublickey"
 
 datagithubactionsenvironmentpublickey.DataGithubActionsEnvironmentPublicKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubactionsenvironmentpublickey.DataGithubActionsEnvironmentPublicKey_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubActionsEnvironmentPublicKey.DataGithubActionsEnvironmentPublicKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubactionsenvironmentpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentpublickey"
 
 datagithubactionsenvironmentpublickey.DataGithubActionsEnvironmentPublicKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubActionsEnvironmentPublicKey.DataGithubActionsEnvironmentPublicKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubactionsenvironmentpublickey"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubactionsenvironmentpublickey"
 
 &datagithubactionsenvironmentpublickey.DataGithubActionsEnvironmentPublicKeyConfig {
 	Connection: interface{},

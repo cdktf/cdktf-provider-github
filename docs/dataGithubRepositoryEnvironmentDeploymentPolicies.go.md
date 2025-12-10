@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 datagithubrepositoryenvironmentdeploymentpolicies.NewDataGithubRepositoryEnvironmentDeploymentPolicies(scope Construct, id *string, config DataGithubRepositoryEnvironmentDeploymentPoliciesConfig) DataGithubRepositoryEnvironmentDeploymentPolicies
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 datagithubrepositoryenvironmentdeploymentpolicies.DataGithubRepositoryEnvironmentDeploymentPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 datagithubrepositoryenvironmentdeploymentpolicies.DataGithubRepositoryEnvironmentDeploymentPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubrepositoryenvironmentdeploymentpolicies.DataGithubRepositoryEnvironmen
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 datagithubrepositoryenvironmentdeploymentpolicies.DataGithubRepositoryEnvironmentDeploymentPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubrepositoryenvironmentdeploymentpolicies.DataGithubRepositoryEnvironmen
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 datagithubrepositoryenvironmentdeploymentpolicies.DataGithubRepositoryEnvironmentDeploymentPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 &datagithubrepositoryenvironmentdeploymentpolicies.DataGithubRepositoryEnvironmentDeploymentPoliciesConfig {
 	Connection: interface{},
@@ -778,7 +778,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 &datagithubrepositoryenvironmentdeploymentpolicies.DataGithubRepositoryEnvironmentDeploymentPoliciesPolicies {
 
@@ -793,7 +793,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositor
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 datagithubrepositoryenvironmentdeploymentpolicies.NewDataGithubRepositoryEnvironmentDeploymentPoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryEnvironmentDeploymentPoliciesPoliciesList
 ```
@@ -942,7 +942,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryEnvironmentDeploymentPolicies.DataGithubRepositoryEnvironmentDeploymentPoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryenvironmentdeploymentpolicies"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryenvironmentdeploymentpolicies"
 
 datagithubrepositoryenvironmentdeploymentpolicies.NewDataGithubRepositoryEnvironmentDeploymentPoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryEnvironmentDeploymentPoliciesPoliciesOutputReference
 ```

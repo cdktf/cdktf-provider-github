@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.NewRepositoryEnvironment(scope Construct, id *string, config RepositoryEnvironmentConfig) RepositoryEnvironment
 ```
@@ -446,7 +446,7 @@ func ResetWaitTimer()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.RepositoryEnvironment_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.RepositoryEnvironment_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ repositoryenvironment.RepositoryEnvironment_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.RepositoryEnvironment_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ repositoryenvironment.RepositoryEnvironment_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.RepositoryEnvironment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -911,7 +911,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 &repositoryenvironment.RepositoryEnvironmentConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironme
 	Environment: *string,
 	Repository: *string,
 	CanAdminsBypass: interface{},
-	DeploymentBranchPolicy: github.com/cdktf/cdktf-provider-github-go/github/v15.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy,
+	DeploymentBranchPolicy: github.com/cdktf/cdktf-provider-github-go/github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy,
 	Id: *string,
 	PreventSelfReview: interface{},
 	Reviewers: interface{},
@@ -1142,7 +1142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 &repositoryenvironment.RepositoryEnvironmentDeploymentBranchPolicy {
 	CustomBranchPolicies: interface{},
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentReviewers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 &repositoryenvironment.RepositoryEnvironmentReviewers {
 	Teams: *[]*f64,
@@ -1248,7 +1248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentDeploymentBranchPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.NewRepositoryEnvironmentDeploymentBranchPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) RepositoryEnvironmentDeploymentBranchPolicyOutputReference
 ```
@@ -1541,7 +1541,7 @@ func InternalValue() RepositoryEnvironmentDeploymentBranchPolicy
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentReviewersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.NewRepositoryEnvironmentReviewersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) RepositoryEnvironmentReviewersList
 ```
@@ -1701,7 +1701,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.repositoryEnvironment.RepositoryEnvironmentReviewersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/repositoryenvironment"
+import "github.com/cdktf/cdktf-provider-github-go/github/repositoryenvironment"
 
 repositoryenvironment.NewRepositoryEnvironmentReviewersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) RepositoryEnvironmentReviewersOutputReference
 ```

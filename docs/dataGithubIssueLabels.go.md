@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 datagithubissuelabels.NewDataGithubIssueLabels(scope Construct, id *string, config DataGithubIssueLabelsConfig) DataGithubIssueLabels
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabels.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 datagithubissuelabels.DataGithubIssueLabels_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabels.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 datagithubissuelabels.DataGithubIssueLabels_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubissuelabels.DataGithubIssueLabels_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabels.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 datagithubissuelabels.DataGithubIssueLabels_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubissuelabels.DataGithubIssueLabels_IsTerraformDataSource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabels.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 datagithubissuelabels.DataGithubIssueLabels_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -605,7 +605,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabelsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 &datagithubissuelabels.DataGithubIssueLabelsConfig {
 	Connection: interface{},
@@ -738,7 +738,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabelsLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 &datagithubissuelabels.DataGithubIssueLabelsLabels {
 
@@ -753,7 +753,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabe
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabelsLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 datagithubissuelabels.NewDataGithubIssueLabelsLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubIssueLabelsLabelsList
 ```
@@ -902,7 +902,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubIssueLabels.DataGithubIssueLabelsLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubissuelabels"
+import "github.com/cdktf/cdktf-provider-github-go/github/datagithubissuelabels"
 
 datagithubissuelabels.NewDataGithubIssueLabelsLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubIssueLabelsLabelsOutputReference
 ```

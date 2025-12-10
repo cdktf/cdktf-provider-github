@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.enterpriseActionsWorkflowPermissions.EnterpriseActionsWorkflowPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/enterpriseactionsworkflowpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionsworkflowpermissions"
 
 enterpriseactionsworkflowpermissions.NewEnterpriseActionsWorkflowPermissions(scope Construct, id *string, config EnterpriseActionsWorkflowPermissionsConfig) EnterpriseActionsWorkflowPermissions
 ```
@@ -399,7 +399,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.enterpriseActionsWorkflowPermissions.EnterpriseActionsWorkflowPermissions.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/enterpriseactionsworkflowpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionsworkflowpermissions"
 
 enterpriseactionsworkflowpermissions.EnterpriseActionsWorkflowPermissions_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.enterpriseActionsWorkflowPermissions.EnterpriseActionsWorkflowPermissions.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/enterpriseactionsworkflowpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionsworkflowpermissions"
 
 enterpriseactionsworkflowpermissions.EnterpriseActionsWorkflowPermissions_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ enterpriseactionsworkflowpermissions.EnterpriseActionsWorkflowPermissions_IsTerr
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.enterpriseActionsWorkflowPermissions.EnterpriseActionsWorkflowPermissions.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/enterpriseactionsworkflowpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionsworkflowpermissions"
 
 enterpriseactionsworkflowpermissions.EnterpriseActionsWorkflowPermissions_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ enterpriseactionsworkflowpermissions.EnterpriseActionsWorkflowPermissions_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.enterpriseActionsWorkflowPermissions.EnterpriseActionsWorkflowPermissions.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/enterpriseactionsworkflowpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionsworkflowpermissions"
 
 enterpriseactionsworkflowpermissions.EnterpriseActionsWorkflowPermissions_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -776,7 +776,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.enterpriseActionsWorkflowPermissions.EnterpriseActionsWorkflowPermissionsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/enterpriseactionsworkflowpermissions"
+import "github.com/cdktf/cdktf-provider-github-go/github/enterpriseactionsworkflowpermissions"
 
 &enterpriseactionsworkflowpermissions.EnterpriseActionsWorkflowPermissionsConfig {
 	Connection: interface{},

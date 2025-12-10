@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.organizationRole.OrganizationRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/organizationrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationrole"
 
 organizationrole.NewOrganizationRole(scope Construct, id *string, config OrganizationRoleConfig) OrganizationRole
 ```
@@ -399,7 +399,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.organizationRole.OrganizationRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/organizationrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationrole"
 
 organizationrole.OrganizationRole_IsConstruct(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.organizationRole.OrganizationRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/organizationrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationrole"
 
 organizationrole.OrganizationRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ organizationrole.OrganizationRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-github.organizationRole.OrganizationRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/organizationrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationrole"
 
 organizationrole.OrganizationRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ organizationrole.OrganizationRole_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.organizationRole.OrganizationRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/organizationrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationrole"
 
 organizationrole.OrganizationRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -809,7 +809,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.organizationRole.OrganizationRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/v15/organizationrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/organizationrole"
 
 &organizationrole.OrganizationRoleConfig {
 	Connection: interface{},
