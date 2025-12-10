@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomproperties"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationcustomproperties"
 
 datagithuborganizationcustomproperties.NewDataGithubOrganizationCustomProperties(scope Construct, id *string, config DataGithubOrganizationCustomPropertiesConfig) DataGithubOrganizationCustomProperties
 ```
@@ -325,7 +325,7 @@ func ResetValueType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomproperties"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationcustomproperties"
 
 datagithuborganizationcustomproperties.DataGithubOrganizationCustomProperties_IsConstruct(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomproperties"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationcustomproperties"
 
 datagithuborganizationcustomproperties.DataGithubOrganizationCustomProperties_IsTerraformElement(x interface{}) *bool
 ```
@@ -371,7 +371,7 @@ datagithuborganizationcustomproperties.DataGithubOrganizationCustomProperties_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomproperties"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationcustomproperties"
 
 datagithuborganizationcustomproperties.DataGithubOrganizationCustomProperties_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -385,7 +385,7 @@ datagithuborganizationcustomproperties.DataGithubOrganizationCustomProperties_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomProperties.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomproperties"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationcustomproperties"
 
 datagithuborganizationcustomproperties.DataGithubOrganizationCustomProperties_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationCustomProperties.DataGithubOrganizationCustomPropertiesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationcustomproperties"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationcustomproperties"
 
 &datagithuborganizationcustomproperties.DataGithubOrganizationCustomPropertiesConfig {
 	Connection: interface{},

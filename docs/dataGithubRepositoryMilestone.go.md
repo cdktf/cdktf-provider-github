@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestone.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositorymilestone"
 
 datagithubrepositorymilestone.NewDataGithubRepositoryMilestone(scope Construct, id *string, config DataGithubRepositoryMilestoneConfig) DataGithubRepositoryMilestone
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestone.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositorymilestone"
 
 datagithubrepositorymilestone.DataGithubRepositoryMilestone_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestone.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositorymilestone"
 
 datagithubrepositorymilestone.DataGithubRepositoryMilestone_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithubrepositorymilestone.DataGithubRepositoryMilestone_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestone.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositorymilestone"
 
 datagithubrepositorymilestone.DataGithubRepositoryMilestone_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubrepositorymilestone.DataGithubRepositoryMilestone_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestone.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositorymilestone"
 
 datagithubrepositorymilestone.DataGithubRepositoryMilestone_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -682,7 +682,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryMilestone.DataGithubRepositoryMilestoneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorymilestone"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositorymilestone"
 
 &datagithubrepositorymilestone.DataGithubRepositoryMilestoneConfig {
 	Connection: interface{},

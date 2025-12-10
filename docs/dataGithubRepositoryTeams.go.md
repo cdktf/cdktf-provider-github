@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 datagithubrepositoryteams.NewDataGithubRepositoryTeams(scope Construct, id *string, config DataGithubRepositoryTeamsConfig) DataGithubRepositoryTeams
 ```
@@ -297,7 +297,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 datagithubrepositoryteams.DataGithubRepositoryTeams_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 datagithubrepositoryteams.DataGithubRepositoryTeams_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithubrepositoryteams.DataGithubRepositoryTeams_IsTerraformElement(x interfa
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 datagithubrepositoryteams.DataGithubRepositoryTeams_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagithubrepositoryteams.DataGithubRepositoryTeams_IsTerraformDataSource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeams.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 datagithubrepositoryteams.DataGithubRepositoryTeams_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 &datagithubrepositoryteams.DataGithubRepositoryTeamsConfig {
 	Connection: interface{},
@@ -788,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/integ
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsTeams.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 &datagithubrepositoryteams.DataGithubRepositoryTeamsTeams {
 
@@ -803,7 +803,7 @@ import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositorytea
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsTeamsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 datagithubrepositoryteams.NewDataGithubRepositoryTeamsTeamsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGithubRepositoryTeamsTeamsList
 ```
@@ -952,7 +952,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubRepositoryTeams.DataGithubRepositoryTeamsTeamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithubrepositoryteams"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithubrepositoryteams"
 
 datagithubrepositoryteams.NewDataGithubRepositoryTeamsTeamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGithubRepositoryTeamsTeamsOutputReference
 ```

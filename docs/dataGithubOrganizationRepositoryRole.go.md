@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/integrations/github/
 #### Initializers <a name="Initializers" id="@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationrepositoryrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationrepositoryrole"
 
 datagithuborganizationrepositoryrole.NewDataGithubOrganizationRepositoryRole(scope Construct, id *string, config DataGithubOrganizationRepositoryRoleConfig) DataGithubOrganizationRepositoryRole
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationrepositoryrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationrepositoryrole"
 
 datagithuborganizationrepositoryrole.DataGithubOrganizationRepositoryRole_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationrepositoryrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationrepositoryrole"
 
 datagithuborganizationrepositoryrole.DataGithubOrganizationRepositoryRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagithuborganizationrepositoryrole.DataGithubOrganizationRepositoryRole_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationrepositoryrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationrepositoryrole"
 
 datagithuborganizationrepositoryrole.DataGithubOrganizationRepositoryRole_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagithuborganizationrepositoryrole.DataGithubOrganizationRepositoryRole_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRole.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationrepositoryrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationrepositoryrole"
 
 datagithuborganizationrepositoryrole.DataGithubOrganizationRepositoryRole_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-github.dataGithubOrganizationRepositoryRole.DataGithubOrganizationRepositoryRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-github-go/github/datagithuborganizationrepositoryrole"
+import "github.com/cdktf/cdktf-provider-github-go/github/v15/datagithuborganizationrepositoryrole"
 
 &datagithuborganizationrepositoryrole.DataGithubOrganizationRepositoryRoleConfig {
 	Connection: interface{},
